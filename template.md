@@ -47,6 +47,21 @@ List all references using the **IEEE format**. Ensure that your bibliography inc
 (Optional)
 * Create and link to a public Zotero library for this paper to provide easy access to your references.
 
+### 5.1 How to attach references?
+
+Export your Zotero library in BibTex format. Then put the content into `_bibliography/references.bib`.
+
+You can now add citations and lists of references following the syntax described [here][jekyll-scholar-citations]. 
+
+For example, here is a reference to a paper about DevOps in Regulated Software Development {% cite laukkarinen_devops_2017 %}. 
+
+If you need a multiple citation, simply list all the cites {% cite abrahamsson_leanagile_2010 lie_devops_2020 %}
+
+#### Generated List of References
+
+{% bibliography --cited %}
+
+
 > ## 6.🔔 AI-Generated Content Disclaimers 🤖
 >  
 > Authors must declare the extent to which AI tools were used in the preparation of their paper. This ensures transparency and academic integrity.
@@ -65,3 +80,6 @@ List all references using the **IEEE format**. Ensure that your bibliography inc
 ## 7. Reviewers' Comments ✍️
 
 Feedback will be provided by reviewers, which will include a summary of the strengths and areas for improvement of your paper. This feedback aims to guide both the author and potential readers.
+
+
+[jekyll-scholar-citations]: https://github.com/inukshuk/jekyll-scholar#citations
