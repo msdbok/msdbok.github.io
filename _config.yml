@@ -6,7 +6,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-scholar
 
-repository: Samatgator/msdbok.github.io
+repository: msdbok/msdbok.github.io
 title: Managing Software Development Body of Knowledge
 description: Review of the research in software development management
 
