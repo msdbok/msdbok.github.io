@@ -7,5 +7,5 @@ group :jekyll_plugins do
   gem 'jekyll-github-metadata'
   gem 'jekyll-figure'
   gem 'jekyll-scholar'
-  gem 'faraday-retry'
+  gem 'faraday-retry'#was there before
 end
