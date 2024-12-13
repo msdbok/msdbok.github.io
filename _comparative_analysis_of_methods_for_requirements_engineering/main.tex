@@ -1,0 +1,488 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Comparative analysis of methods for requirements engineering}
+
+\author{\IEEEauthorblockN{Egor Shalagin}
+\IEEEauthorblockA{\textit{Innopolis University}\\
+Innopolis, Russia \\
+e.shalagin@innopolis.university}
+}
+
+\maketitle
+
+\begin{abstract}
+Requirements Engineering is one of the most critical stages of software development, enabling the full compliance of systems with the needs of stakeholders and the efficient functioning of the system. The article provides a comparison of different methods used in the Requirements Engineering process such as interviews, surveys, brainstorming, user observation, and document analysis. Each of these method used varies in terms of data richness, degree of stakeholder involvement, duration, and degree of adaptability. This article elaborates on the advantages and disadvantages and the corresponding scope that accompany the use of these methods at different stages of the Requirements Engineering process. In summary, the study provides useful information on the ways that requirements methods can be best defined and integrated, enhancing project success, scope control, and alignment with stakeholder expectations.
+\end{abstract}
+
+\section{Introduction}
+
+Requirements Engineering is a primary software development aspect, which makes sure that the system's functional and non-functional requirements are accurately defined, documented, and managed throughout the development process. The success of a software project depends on the level of clarity and precision in requirements gathering and understanding. The requirements engineering process involves several methods, each with its advantages, drawbacks, and applicability at different phases, for example, from initial feasibility studies to final validation. Through these methods, we are able to identify and focus on the stakeholder needs and expectations thus, lowering such risks as the scope of work not being achievable, missed deadlines or, even exceeding the budget.
+
+This paper deals with a comparative analysis of six widely used methods in Requirements Engineering: Brainstorming, Questionnaires or Surveys, Interviews, Use Cases, Document Analysis, and Focus Groups. The aim of the comparison of these methods is to find out which one works best in terms of performance on nine given metrics, and thereby, giving practical sound advice on the project for the various different cases.
+
+\subsection{Motivation}
+
+The motivation behind this study is driven by several key factors that highlight the importance of understanding and optimizing the requirements elicitation process. 
+
+\begin{itemize}
+    \item \textbf{Advancement of Best Practices:} With software projects growing in complexity, we face a challenge to the most efficient methods of collecting, analyzing, and documenting requirements. Comparative analysis allows us to elicit best practices that have the potential to be the same for all projects, which in turn, will result in a more effective and efficient requirements engineering approach. By comparing the methods, we can show the most reliable and practical techniques, which then can be adapted by various teams and industries to make the entire requirements elicitation and management process better \cite{cite1}.
+    
+    \item \textbf{Increased Accessibility and Inclusivity:} Analyzing the choices of methods for requirements identification can also influence the inclusiveness of the process. Some methods could be more modified and flexible, primarily for diverse teams or underprivileged sectors. Just like surveys or user observation may be the ones that are more inclusive due to the fact that more stakeholders across the organization can get involved, including those who probably will not be available for face-to-face interviews or brainstorming sessions. This study will also differentiate between each method and explore the potential of each one to develop diversity in teams by allowing all the stakeholders to be the part of the elicitation process thus promoting the inclusiveness as well as representing all the concerned parties properly. 
+\end{itemize}
+
+\subsection{Problem Statement}
+
+Although the variety of elicitation techniques is available and implemented, a comprehensive comparative analysis of its effectiveness and its appropriateness in different project contexts has not been done. For this reason, while each method has been the subject of separate studies, there is little to no research that makes a comparison of these same methods, especially in terms of such a range of important aspects like stakeholder engagement, involvement of actors, cost efficiency, timelines, flexibility, and data quality. This article's purpose is to fill in the gap by using six classical means—Brainstorming, Questionnaires or Surveys, Interviews, Use Cases, Document Analysis, and Focus Groups—along with the following nine metrics:
+\begin{itemize}
+    \item \textbf{Questionnaires/Surveys}
+    \item \textbf{Stakeholder Involvement}
+    \item \textbf{Time and Cost Efficiency}
+    \item \textbf{Clarity and Precision of Output}
+    \item \textbf{Flexibility/Adaptability}
+    \item \textbf{Miscommunication or Misinterpretation Risks}
+    \item \textbf{Data Quality}
+    \item \textbf{Scalability}
+    \item \textbf{Suitability for Complex Projects}
+    \item \textbf{Reliability}
+\end{itemize}
+
+The objective is to aim at a comprehensive wits of the techniques which are proper for particular projects, several of these will however reflect the needs of the practice people, offering the action-oriented stakeholders a firm foundation for choosing and applying these techniques. This research aims to improve the existing requirements elicitation practices and make them more effective, standardized, and participatory by ensuring that projects are aligned closely with stakeholder needs and expectations from start to finish.
+
+
+\section{Related Work}
+\subsection{Overview of the Requirements Engineering Process}
+
+The Requirements Engineering process consists of five stages: Feasibility Study, Requirements Elicitation, Requirements Specification, Requirements Verification and Validation, and Requirements Management. Each stage helps ensure the development of a functional, efficient, and high-quality system by addressing the complexity of understanding, documenting, and refining system requirements.
+
+\subsubsection{Feasibility Study}
+
+Before moving to other stages of requirements engineering, a Feasibility Study should be conducted. Through the Feasibility Study step, the software project that is proposed is estimated, in terms of its realizability, from different angles. The feasibility study assesses five main areas, such as technical, operational, economic, legal, and schedule feasibility \cite{cite2}. Technical feasibility implies the evaluation of the existing resources, technologies, and analytical skills to confirm that the necessary base is there to support the development \cite{cite3}. Operational feasibility means exploring how the system would be used in the real world, the primary factors to be considered being usability and maintainability \cite{cite3}. Economic feasibility is defined as the project is worth doing (profitable or useful) the benefits should outshine the costs. Legal feasibility is a field where the project is analyzed for compliance with laws, regulations, and intellectual property rights  \cite{cite3}. The schedule feasibility is determined by the project timeline and it is achievable neture  \cite{cite3}.
+
+\subsubsection{Requirements Elicitation}
+
+When a project is identified to be realistic, the next step is Requirements Elicitation, which is the collection of information concerning the system’s required functions and features. This is a key phase for getting to know the users and stakeholders, which include the customers and other bodies  \cite{cite2}. Different strategies are used for the elicitation of the responses; some of the techniques are interviews, surveys, focus groups, observation, and prototyping. These methods contribute to gathering the variety of views and discovering a textual and idiomatic requirements. Elicitation is not only formalization but more like deepening the comprehension of the problem domain and providing the basis for the next phase which is formal documentation. This phase of the requirements engineering process is where our research is taking place.
+
+\subsubsection{Requirements Specification}
+
+After sufficient information has been gathered, the phase of Requirements Specification formalizes the system’s requirements. This is the place where the functional and non-functional requirements are accurately recorded \cite{cite4}. Functional requirements are the system's distinct characteristics that define the interactivity between the users and the process of information. On the other hand, non-functional requirements are the ones that define the system’s usability, security, reliability, and other quality attributes. Typically, the system is demonstrated through diagrammatic descriptions of data flow diagrams (DFDs), entity-relationship diagrams (ERDs), and function decomposition diagrams (FDDs) \cite{cite4}. A document that has been created with care allows the development team to follow it as a guideline, and it becomes a basis for verification as well as validation.
+
+\subsubsection{Requirements Verification and Validation}
+
+Verification and Validation (V\&V) are the main processes after the requirements of the system have been specified. Verification checks whether the requirements are defined properly and completely as well as tests for consistency, accuracy, and feasibility \cite{cite5}. The main stage of verification of requirements is the analysis of the requirements relative to the generally accepted criteria, such as completeness, clarity, and testability. At the same time, validation is concerned with the degree to which stakeholders' needs are truly reflected in the requirements, which are thereby guaranteed to lead to the right product as the final solution. The V\&V process is mainly the engagement with stakeholders and repetitive checks to block any mistakes that might spread to later phases of development.
+
+\subsubsection{Requirements Management}
+Finally, with its ability to adapt to the changing environment of the software development process, Requirements Management is the tool for the requirements that are upgraded due to modifying the trends in the marketplace, the introduction of new technologies, or user feedback. Thi s phase is the one that follows through with the requirements, making certain that they are properly communicated, updated, and tracked throughout the development process. Main activities in the requirements management phase are: dealing with the changes to the requirements, making version control, securing the traceability of requirements to the other development material, and handling the communication between the stakeholders \cite{cite6}.
+
+
+
+\subsection{Key Methods for Managing the Requirements Engineering Process}
+
+This section will dive deeper into several prominent methods used to manage requirements engineering. This section will describe each method, its characteristics, and the primary approach it advocates for requirements management.
+
+\subsubsection{Interviews}
+
+An interview is one of the most popular methods of collecting stakeholder data in requirements engineering because it enables the direct questioning of people whose responses are important. In this strategy, engineers’ face-to-face participation and conversations with the relevant stakeholders stand out as the prime requirement elicitation tools applied in the initial stages of the project life cycle.
+
+\textbf{Types of Interviews}
+
+\begin{itemize}
+    \item \textbf{Individual Interviews}: In this scenario, an individual respondent converses with the interviewee. Such a private setting provides the perfect platform for a focused dialogue based on one person’s experiences and skills \cite{cite7}.
+    \item \textbf{Group Interviews}: Group interviews, a type of interview, involve getting answers to questions from several different people. It can be an environment of excited discussion, where the words of one respondent may stimulate the ideas of others or lead to an explanation that others doubt \cite{cite7}.
+\end{itemize}
+
+\textbf{Interview Structures}
+
+\begin{itemize}
+    \item \textbf{Unstructured Interviews}: An unstructured interview is informal and gives the interviewer plenty of space to wander off the subject \cite{cite8}. In this regard, the interviewer's open general questions result in the natural direction of the dialogue, with responses being the base. Although it may initiate dynamic and deep-level discussions, it is often seen as ineffective since the discussion may drift off-topic easily and thus require the moderator to direct the talk on its path. Unstructured interviews are good for discovering new areas and also for dealing with the clients' feelings/suggestions, yet they are generally not as concentrated as structured.
+    \item \textbf{Structured Interviews}: In a structured interview, the interviewer follows a prearranged list of questions which includes all relevant topics and is done in a gradual manner \cite{cite8}. The method of structured interview is time-saving and at the same time assures that the same data is collected from all the participants. Structured interviews are mostly given in the case when the researcher only requires specific, quantifiable data, and when the participation of many respondents in the research is necessary for the results to be credible.
+\end{itemize}
+
+\textbf{Structured Interview Process}
+
+\begin{itemize}
+    \item \textbf{Pre-Interview}: Define it, the goals, our stakeholders (e.g., product owners, end-users), and the questions—both open-ended (to encourage detailed responses) and closed (to gather specific data) should be prepared.
+    \item \textbf{In the Interview}: Communicate the purpose of the interview to someone by saying your name, give a brief overview. Pay attention, ask follow-up questions, and take notes. Meeting closure and summary constitute the final stages in the process of confirming the truth of delivered information.
+    \item \textbf{After the Interview}: Examination and organization of the analyzed data. Identify inconsistencies or gaps and present them for the validation process to the respective stakeholders.
+\end{itemize}
+
+
+\textbf{Positives}
+\begin{itemize}
+    \item \textbf{Accessibility}: One-on-one interviews may require the presence of several individuals, but it is easier to schedule them and they can be conducted with people who are busy and may not be available for longer meetings, such as workshops.
+    \item \textbf{Personalized Input}: Stakeholders can represent their original opinions, and the interviewer can delve into the details of the features that the project might need to be unique.
+    \item \textbf{Rich Information}: Aside from the defined requirements through interviews, stakeholdersmay also express their conceptions in anindirectmanner or provide their unnoticedrequirements,  needs,  and  problemsin the conversation.
+    \item \textbf{Flexibility}: Interviewers have the ability to modify the questions instantly as the respondents progress, thereby facilitating a more personalized and approach in the discussion \cite{cite9}.
+\end{itemize}
+
+\textbf{Negatives}
+\begin{itemize}
+    \item \textbf{Time-Consuming}: Interviews are usually serious concerns for time. They take a lot of time for both preparationand the actual meetings, especially when working with many stakeholders. Scheduling may also jump challenges-up.
+    \item \textbf{Limited Scope}: In the case of interviews, the individual perspective is given most emphasis, and for this reason, we may miss or overlook the bigger picture or misrepresent the full spectrum of user needs.
+    \item \textbf{Bias Risk}: Incorrect or incomplete information may be related to the interviewer's personal perceptions or assumptions, which may eventually have an effect on the interview questions.
+    \item \textbf{Time Constraints}: Interview timekeeping is among the limits in some cases that can thwart the interviewer from getting detailed information.
+\end{itemize}
+
+\subsubsection{Questionnaires or Surveys}
+
+The use of questionnaires or surveys is a way to get information from a lot of people, usually written summaries. They are good for getting numbers and opinions from the people that are using it and can be employed to approve guesses, get feedback, or recognize the user requirements of many people \cite{cite7}.
+
+\textbf{Types of Questions}
+
+\begin{itemize}
+    \item \textbf{Single Ease Question (SEQ)}: Respondents answer the question based on scale (e.g., “Very difficult” to “Very easy”).
+    \item \textbf{After-Scenario Questionnaire (ASQ)}: Respondents rate statements on a scale (e.g., "strongly agree" to "strongly disagree").
+    \item \textbf{System Usability Scale (SUS)}: Questionnaire used to assess the overall usability of a system, providing a numerical score based on user feedback to evaluate the system's ease of use.
+    \item \textbf{Open-ended questions}: Allow for open-ended responses, providing richer insights but requiring more time to analyze.
+\end{itemize}
+
+\textbf{Positives}
+
+\begin{itemize}
+    \item \textbf{Cost-Effective}: Generally, they are priced more reasonably than other techniques as they could be given to a great number of individuals without demanding a significant amount of time or resources\cite{cite10}.
+    \item \textbf{Wide Reach}: A significant number of participants could be involved in the data collection process and this method is quite beneficial when dealing with varying or large user bases \cite{cite10}.
+    \item \textbf{Standardized Data}: Data is collected from all the individuals in the same set of questions, leading to consistencies and an easy way of analyzing quantitative data \cite{cite10}.
+    \item \textbf{Anonymity}: By this means, it is possible to fill in the questionnaire and it may be filled in anonymously, which is likely to create a situation where the individual includes issues from very personal histories \cite{cite10}.
+\end{itemize}
+
+\textbf{Negatives}
+
+\begin{itemize}
+    \item \textbf{Limited Interaction}: Unlike interviews, questionnaires are devoid of opportunities for clarification, or immediate follow-up, which could result in misinformation or missing context \cite{cite10}.
+    \item \textbf{Limited Depth}: Questionnaires are generally not meant for digging into answers, thus they are incapable of capturing fine-tuned, dense, or complete answers that could be gotten in interviews \cite{cite10}.
+    \item \textbf{Lack of Flexibility}: Once a questionnaire is given out, it is hard to respond to or follow the answers; this limits the ability to delve into unanticipated insights \cite{cite9}.
+\end{itemize}
+
+\subsubsection{Brainstorming}
+
+Brainstorming is a participatory idea-generation strategy in which a set of interested parties is called upon to present as many ideas as possible without censure \cite{cite11}. The emphasis is on originality and devising a plethora of ideas, which can then be improved and ranked.
+
+\textbf{Process}
+
+\begin{itemize}
+    \item \textbf{Preparation}: State the main goal and make sure everyone can properly identify the problem or objective. Assign a neutral participant to moderate the event.
+    \item \textbf{Idea Generation}: Inspire the participants to freely express ideas without being criticized at first. Secure the session in the spirit of openness and non-judgmentalness.
+    \item \textbf{Refinement}: After the session consolidate the similar ideas that came up and assess them with the help of a set of criteria that have been already designed to prioritize them.
+\end{itemize}
+
+\textbf{Positives}
+
+\begin{itemize}
+    \item \textbf{Encourage Creativity}: Brainstorming creates a creative atmosphere that permits the persons involved to ponder freely; as a result, the people come up with a large number of ideas and alternative solutions without immediate judgment or restrictions.
+    \item \textbf{Diverse Input}: It engages the participation of multiple stakeholders giving them an opportunity to express diverse ideas which can then be synthesized in a way that includes fantastic and imaginative requirements.
+    \item \textbf{Creative Solution}: You allow for quick idea generation, as you just get a quick burst of ideas within the usual short time, typically when you are thinking of a new project in which several options are being considered.
+    \item \textbf{Collaboration and Teamwork}: Enhances collaboration and promotes team decisions that are endorsed by the group, thereby making the underlying concepts more acceptable to the relevant parties.
+    \item \textbf{Flexibility}: Can be employed in both macro-level brainstorming of broad concepts and micro-focusing sessions of the project part \cite{cite9}.
+\end{itemize}
+
+\textbf{Negatives}
+
+\begin{itemize}
+    \item \textbf{Unfocused Output}: In the absence of proper moderation, brainstorming sessions may result in a lot of ideas, some of which are not valuable, impractical or the objectives of the project are not understandable.
+    \item \textbf{Groupthink}: There's a danger that the strong personalities present in a group can guide it to certain ideas, thus stifling the creative process and the contributions from the rest of the participants.
+    \item \textbf{Time-Consuming}: Though the creation of a number of brilliant concepts out of nothing would occur quickly, the organization of ideas, the interaction among members, and the evaluation of them, will necessarily take a lot of time after the brainstorming session is over.
+\end{itemize}
+
+\subsubsection{Use Cases}
+
+A use case is a technique for requirements gathering that concentrates on the users' behavior that the systems demonstrate. In essence, it's about the detection of the main actors (that is, users and other systems) and the definition of some specific scenarios in which they deal with the system to obtain a goal \cite{cite12}. It is a technique that clarifies system requirements by explaining functional interactions and gives a good explanation of how the system will be used in the real environment.
+
+\textbf{Types of Use Cases}
+
+\begin{itemize}
+    \item \textbf{Base Use Cases}: These cover the main features of the system as perceived by the primary user or actor, giving a brief description of the crucial actions required to accomplish the goal.
+    \item \textbf{Alternate Use Cases}: Other options of the main usage scenario that are responsible for alternative steps or exceptional circumstances of the process.
+    \item \textbf{Extended Use Cases}: Use cases that involve additional functionality or steps beyond the basic scenario, often including extended system behavior or interactions.
+    \item \textbf{Non-functional Use Cases}: Describe the system's qualities and constraints rather than its specific behavior or functionality.
+\end{itemize}
+
+\textbf{Positives}
+
+\begin{itemize}
+    \item \textbf{Customer-Centered}: Focuses on the user and their need for a system that is user-friendly.
+    \item \textbf{Clear and Organized}: Use cases are a set of structured details for capturing functional requirements that lend themselves to the unambiguous expression of ideas that everyone, the technical as well as the non-technical stakeholders, can catch.
+    \item \textbf{Communication}: It gives a balanced, the technical and non-technical stakeholder's easily understandable format both.
+\end{itemize}
+
+\textbf{Negatives}
+
+\begin{itemize}
+    \item \textbf{Time-Consuming}: Filling in use cases component might take a longer period of time to correctly document and enumerate a substantial amount of information.
+    \item \textbf{Limited Focus}: In this case, use cases are mainly concerned with functions and the interconnection of such systems; however, they may not pay attention at all to nonfunctional requirements such as performance and security of the entire system \cite{cite6}.
+    \item \textbf{Over-Simplification}: If use cases do not supply enough specifics, they may find themselves explaining away such complex process or situations away, which, in turn, may lose out on some crucial points or special cases.
+    \item \textbf{Ambiguous for Complex Scenarios}: Struggles to manage complex interactions or multiple actors.
+\end{itemize}
+
+\subsubsection{Document Analysis}
+
+Document analysis is the review of existing records in order to comprehend present processes, systems or business methods \cite{cite13}. It is a vital aspect of the initial examination when some people are not available or the process is already recorded.
+
+\textbf{Types of Documents Analysis}
+
+\begin{itemize}
+    \item \textbf{Benchmarking Studies}: Surveys the industry's norms and the performance of the competitors' systems to discover best practices and set performance or feature benchmarks for the new system.
+    \item \textbf{Business Plans}: Analyzing the plans, goals, and objectives of the corporation for comparing the requirement of the system along with the business goals and future growth.
+    \item \textbf{Business Architecture Diagrams}: I check the diagrams, which display all business processes and organizational structures, to find out workflows, dependencies, and system touchpoints.
+    \item \textbf{User Manuals}: Investigates the current user manuals in order to find user needs, system functionality, and areas to improve in user experience.
+    \item \textbf{System Specifications}: Reads technical documents detailing the current system features, functions, and limitations to be able to set the requirements for system updates or replacements properly.
+\end{itemize}
+
+\textbf{Positives}
+
+\begin{itemize}
+    \item \textbf{Initial Data}: It serves as a basis for all the projects, mainly when the other methods of obtaining information are not possible.
+    \item \textbf{Comparing}: Serves as an additional level of assurance from other sources of data or stakeholders.
+    \item \textbf{Time-Saving}: The new sectors have this advantage by a broad margin.
+\end{itemize}
+
+\textbf{Negatives}
+
+\begin{itemize}
+    \item \textbf{Outdated Information}: Documentation may no longer correspond with prevailing practices or systems.
+    \item \textbf{Limited Scope}: It follows information in its current state, but there must be a preference for future-oriented things, and surely it cannot be the only one.
+    \item \textbf{Time-Consuming}: The process of going through a lot of documentation can be monotonous and also nonproductive.
+    \item \textbf{No Customer Interaction}: A considerable loss in part of some customer needs is highly likely.
+\end{itemize}
+
+\subsubsection{Focus Groups}
+
+Focus Groups are defined as those made up of people united for this specific reason to deliberate the subject of one product, issue, or another kind of topic under the guidance of a facilitator. A way that often is used to gain detailed data about a certain phenomenon through group talk among individuals who do not know each other is often used, thus, the method includes attitudes, perceptions, and the ideas in the company \cite{cite14}.
+
+\textbf{Types of Focus Groups}
+
+\begin{itemize}
+    \item \textbf{Traditional Focus Groups}: Face-to-face meetings with a limited number of stakeholders who come from various areas to give their perspectives and insights on the requirements and system needs.
+    \item \textbf{Virtual Focus Groups}: Virtual meetings with participants that go through and submit feedback on the requirements, which allows for bigger participation across the different regions, are utilized.
+    \item \textbf{Targeted Focus Groups}: These are panels that are made up of members with knowledge in a certain area or with roles that are needed for the system or project and therefore they give thorough, specialized feedback.
+    \item \textbf{Mini Focus Groups}: Smaller, more focused groups, usually with about 3-5 participants, to get brief, precise intelligence on some selected parts of the system or requirements.
+\end{itemize}
+
+\textbf{Positives}
+
+\begin{itemize}
+    \item \textbf{Rich Insights}: One of the key advantages of this operation research method, is that data collection is from different and real participants, which tend to reveal even deeper contexts and meanings that do not otherwise appear through other methods.
+    \item \textbf{Interactive Discussions}: The phenomenon of interaction among the people can be seen as groups setting the example and guiding each other, thus they create a wider and more versatile perspective than those which could be generated by an individual.
+    \item \textbf{Exploration of Nuances}: Facilitators will alternate between probing questions and in-depth reflection, the effect of which is to clear up confusion, discover dormant aspirations or concerns, and thus promote the full engagement of the session.
+    \item \textbf{Cost-Effective}: This is a better way of using resources, for instance, we can save time and money, mainly because it is the only part where we have direct contact with resources.
+\end{itemize}
+
+\textbf{Negatives}
+
+\begin{itemize}
+    \item \textbf{Groupthink Risk}: Some participants might conform to those opinions that are popular, while others may be reluctant to express a view that is contrary to the dominant, thereby the universe of ideas becomes very limited.
+    \item \textbf{Moderator Bias}: The moderator’s manner of conversation and the questions put to the respondents may describe or guide responses inadvertently and make the findings biased.
+    \item \textbf{Limited Generalizability}: On account of the fact that not many people were interviewed within the focus groups, the outcomes of focus groups may be invalidated by the error of insufficient externalities, thus it may not be possible to generalize from the results of the focus groups to the larger group.
+    \item \textbf{Limited Representativeness}: The small study group may not be completely representative of all users or even all the stakeholder groups, and as a result, this may be one of the reasons for biased or incomplete findings.
+\end{itemize}
+
+
+\section{Discussion: Comparative Analysis of the Methods}
+
+\subsection*{Interviews}
+They engage a wide range of stakeholders and draw out their life stories in a more personalized way through one-on-one conversations. They are most successful for in-depth data collection and for better understanding of the users' subtle differences in needs. However, they are time-consuming and expensive, especially when dealing with several interviews. Even if the generated data is often narrow in scope, interviews are quick and usually high-quality, although they involve a low number of participants. The interviewer may modify their questions to reveal insights, so it is favorable for the jobs that require detailed and complex requirements. Also they come with the risk of interviewer bias, which can affect data validity and bad data reliability \cite{cite15}.
+
+{\color{red}
+\begin{table}[htbp]
+\caption{Interviews}
+\label{tab1}
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|}
+\hline
+\textbf{Metric}                     & \textbf{Interviews}                                          \\ \hline
+\textbf{Stakeholder Involvement}     & High: One-on-one discussions, rich insights.                  \\ \hline
+\textbf{Time and Cost Efficiency}    & Low: Time-consuming, costly due to logistics.                \\ \hline
+\textbf{Clarity and Precision of Output} & High: Personalized, in-depth insights.                      \\ \hline
+\textbf{Flexibility/Adaptability}    & High: Can adapt on-the-fly to new insights.                  \\ \hline
+\textbf{Miscommunication or Misinterpretation Risks} & High: Interviewer's bias can influence interpretation.     \\ \hline
+\textbf{Data Quality}                    & High: Detailed, nuanced data can be gathered.               \\ \hline
+\textbf{Scalability}                     & Low: The number of people who can be interviewed is limited. \\ \hline
+\textbf{Suitability for Complex Projects} & Medium: It is good for understanding specific user needs but it does not extually cover all the usability areas of the complex projects. \\ \hline
+\textbf{Reliability}                     & Medium: The degree of data quality depends on the interviewer’s skills and the stakeholders’ availability. \\ \hline
+\end{tabular}
+\end{table}}
+
+\subsection*{Questionnaires and Surveys}
+These methods are characterized by low cost and efficiency, enabling distribution to a large number of stakeholders at minimal cost. This scalability makes them suitable for a variety of applications across a wide range of audiences. The drawback is the physical absence of interlocutors, which limits the ability to clarify or deeply probe answers, increasing the risk of misunderstandings.While they supply simple and detailed data that can be readily analyzed and compared among themselves, they do not include the means of catching the instability or uncertainness of requirements \cite{cite15}. Moreover, questionnaires and surveys are the kinds of tools that cannot be molded to serve more complex projects or repeat the customer satisfaction question afterward.
+
+\begin{table}[htbp]
+\caption{Questionnaires/Surveys}
+\label{tab2}
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|}
+\hline
+\textbf{Metric}                     & \textbf{Questionnaires/Surveys}                              \\ \hline
+\textbf{Stakeholder Involvement}     & Medium: Limited interaction; responses are mostly anonymous. \\ \hline
+\textbf{Time and Cost Efficiency}    & High: Low cost per respondent, quick distribution.           \\ \hline
+\textbf{Clarity and Precision of Output} & Medium: Structured data, but limited by question design.    \\ \hline
+\textbf{Flexibility/Adaptability}    & Low: No room for follow-up or clarification.                 \\ \hline
+\textbf{Miscommunication or Misinterpretation Risks} & Medium: Lack of interaction increases risk of misinterpretation. \\ \hline
+\textbf{Data Quality}                    & Medium: Standardized data is easy to analyze, but may lack depth. \\ \hline
+\textbf{Scalability}                     & High: Can scale to a large number of stakeholders.           \\ \hline
+\textbf{Suitability for Complex Projects} & Low: May struggle with complex requirements or nuanced needs. \\ \hline
+\textbf{Reliability}                     & High: Standardized responses provide consistent data.       \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection*{Brainstorming}
+Brainstorming calls for active participation and idea generation from different stakeholders, promoting creativity and divergent thinking. It is flexible, as the implementation of ideas is affected by group contributions, making it suitable for the early stages of a project or for generating a variety of potential solutions. Nevertheless, brainstorming can be time-consuming, specifically when organizing and refining ideas \cite{cite15}. It is prone to such problems as groupthink, where the people with control can steer the result in one direction. The resulted data the ideas bring can sometimes be insufficient and even inaccurate, which can be a barrier to further structured and specific demands.
+
+\begin{table}[htbp]
+\caption{Brainstorming}
+\label{tab3}
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|}
+\hline
+\textbf{Metric}                     & \textbf{Brainstorming}                                        \\ \hline
+\textbf{Stakeholder Involvement}     & High: Active participation from multiple stakeholders.       \\ \hline
+\textbf{Time and Cost Efficiency}    & Medium: Time-consuming in generating and organizing ideas.   \\ \hline
+\textbf{Clarity and Precision of Output} & Medium: Output is diverse but lacks clear direction.         \\ \hline
+\textbf{Flexibility/Adaptability}    & High: Ideas can evolve rapidly based on group input.         \\ \hline
+\textbf{Miscommunication or Misinterpretation Risks} & Medium: Groupthink and dominant voices can lead to skewed ideas. \\ \hline
+\textbf{Data Quality}                    & Medium: Can generate many ideas, but quality can vary.       \\ \hline
+\textbf{Scalability}                     & Medium: Effective for small to medium groups but may become inefficient with larger teams. \\ \hline
+\textbf{Suitability for Complex Projects} & Medium: May not provide a comprehensive solution for complex projects. \\ \hline
+\textbf{Reliability}                     & Medium: Output can be inconsistent and rely on moderator skill. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection*{Use Cases}
+Use cases offer a structured and precise method of system interactions and functional requirements and are especially helpful in knowing the way users will interact with the system, ensuring immediate and clear solutions. Use cases involve supplying specific descriptions which therefore reduce confusion and errors in communication to a minimum. Although their emphasis on predefined scenarios causes inflexibility, they are not easily adaptable to changing needs that might come up in a project. Yet, they are effective in smaller, more focused projects. However, the problem with use cases is that they do not fit large and complex projects easily where more broader, flexible methods are needed.
+
+\begin{table}[htbp]
+\caption{Use Cases}
+\label{tab4}
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|}
+\hline
+\textbf{Metric}                     & \textbf{Use Cases}                                            \\ \hline
+\textbf{Stakeholder Involvement}     & Medium: Focuses on specific users or system interactions.     \\ \hline
+\textbf{Time and Cost Efficiency}    & Medium: Detailed, but can be time-consuming to document.      \\ \hline
+\textbf{Clarity and Precision of Output} & High: Well-structured, clear for both technical and non-technical stakeholders. \\ \hline
+\textbf{Flexibility/Adaptability}    & Low: Limited to predefined system interactions.              \\ \hline
+\textbf{Miscommunication or Misinterpretation Risks} & Low: Structured format reduces misinterpretation risks.      \\ \hline
+\textbf{Data Quality}                    & High: Provides a clear, structured format for functional requirements. \\ \hline
+\textbf{Scalability}                     & Low: Less effective for large-scale projects due to its narrow scope. \\ \hline
+\textbf{Suitability for Complex Projects} & High: Well-suited for defining functional requirements but less so for complex systems. \\ \hline
+\textbf{Reliability}                     & High: Structured format reduces chances of ambiguity or misinterpretation. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection*{Document Analysis}
+Analysis of currently existing documentation is the fastest way to get information this technique is useful to get information most efficiently. Given that the requirement for an accurate and detailed documents, it can also be a good way to increase the awareness of more information. But not only the bright side, document analysis can also have setbacks, such as overemphasizing the dependence on information that might have been outdated, incomplete, or inaccurate. Once  the  docs  are  checked,  little  information  (of  errors  and  omissions)  is  left  to  befollowed up or cleared up, thus, it becomes less adaptable. Althoughdocument  analysis  does  solicit  of  mess  the  way  of  catching  the  big  picture, but it cannot be considered feasible for tracking short-termor changing requirements in messy, not well-defined projects.
+
+\begin{table}[htbp]
+\caption{Document Analysis}
+\label{tab5}
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|}
+\hline
+\textbf{Metric}                     & \textbf{Document Analysis}                                    \\ \hline
+\textbf{Stakeholder Involvement}     & Low: Primarily based on existing documents, not stakeholder interactions. \\ \hline
+\textbf{Time and Cost Efficiency}    & High: Time-efficient if documents exist, but can be monotonous. \\ \hline
+\textbf{Clarity and Precision of Output} & Medium: Can be outdated or incomplete, impacting clarity.    \\ \hline
+\textbf{Flexibility/Adaptability}    & Low: Limited adaptability once the documents are reviewed.    \\ \hline
+\textbf{Miscommunication or Misinterpretation Risks} & High: Risks misinterpreting outdated or incomplete documents.  \\ \hline
+\textbf{Data Quality}                    & Medium: Provides a base of reliable data but may not be up-to-date. \\ \hline
+\textbf{Scalability}                     & High: Scalable to handle large volumes of documentation.      \\ \hline
+\textbf{Suitability for Complex Projects} & Low: May not be sufficient for capturing complex or evolving requirements. \\ \hline
+\textbf{Reliability}                     & Medium: Relies on existing documentation; quality depends on its accuracy. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection*{Focus Groups}
+The use of focus groups is successful in involving a wide range of experts as well as novices which creates a great variety of ideas. Along with the stimulus effect of brainstorming, focus groups promote interaction and collaboration as there is a lot of helping each other to clarify ideas. Nevertheless, focus groups have issues like the amount of money needed to carry out the study as well as problems with the group dynamic in which, for example, one person will lead the discussion or the facilitator can introduce bias. Although focus groups are flexible and easily adaptable, the limited time which is available may lead to insufficient data. They are normally relied on for the purpose of finding peoples' thoughts however, they may not supply a sufficient level of information to handle some technical issues.
+
+\begin{table}[htbp]
+\caption{Focus Groups}
+\label{tab6}
+\centering
+\begin{tabular}{|p{4cm}|p{4cm}|}
+\hline
+\textbf{Metric}                     & \textbf{Focus Groups}                                          \\ \hline
+\textbf{Stakeholder Involvement}     & High: Direct interaction with stakeholders in a group setting. \\ \hline
+\textbf{Time and Cost Efficiency}    & Medium: Resource-intensive but cost-effective compared to interviews. \\ \hline
+\textbf{Clarity and Precision of Output} & High: Rich, diverse insights from participants.              \\ \hline
+\textbf{Flexibility/Adaptability}    & Medium: Facilitator can guide the discussion, but time is limited. \\ \hline
+\textbf{Miscommunication or Misinterpretation Risks} & Medium: Groupthink or facilitator bias may affect results.     \\ \hline
+\textbf{Data Quality}                    & High: Provides in-depth insights, though quality depends on group dynamics. \\ \hline
+\textbf{Scalability}                     & Medium: Works well for small groups but may be less effective with larger groups. \\ \hline
+\textbf{Suitability for Complex Projects} & Medium: Suitable for gathering diverse perspectives, but may lack the depth needed for complex projects. \\ \hline
+\textbf{Reliability}                     & Medium: Reliability depends on facilitator skill and group composition. \\ \hline
+\end{tabular}
+\end{table}
+
+
+\section{Discussion: Combinations of Requirements Engineering}
+
+\subsection{Interviews + Questionnaires/Surveys}
+This composite deals with the advantages of the two most popular techniques in data collection, qualitative and quantitative. Interviews that carry a deep understanding of the subject are the first way to get more information from suppliers, having their personal history and vision  \cite{cite16}. However, they are not suitable for numerous attendees and take up much time. On the opposite side, questionnaires and surveys are the techniques most useful in collection of repeatable data from respondents at the cheapest rate. So, we can say that these methods are complementary. The first one is able to supply the quantitative data covered by many individuals so that a broad range of people may be employed. This fact particularly holds true when the surveys are well constructed and can exist in the absence of the latter. On the other hand, interviews help to remove ambiguity and inspire people to express themselves at their best by giving information. This method ensures both extensive coverage and detailed, nuanced insights, giving it a special advantage. It is particularly effective for projects with varied stakeholders.
+
+\subsection{Brainstorming + Use Cases}
+Brainstorming is an impressive tool for generating numerous innovative ideas and possible solutions to specific problems, especially at the very beginning of the requirement-gathering process \cite{cite16}. However, brainstorming may lead to an array of disorganized ideas, which are not supported by a general structure. The creativity that is elicited by brainstorming can be pared down to specific and implementable requirements by developing it with the aid of use cases. Among others use cases are a form of the structured representation and detailed description of user-system interactions that are to be the separate ideas from brainstorming and the necessary parts of the project as well as the technical systems limits. This combination is a powerful one for the creation of functional requirements, as it contains both the solid ideas and making sure that the ideas are actually achievable from a human perspective and that all system functions are properly read.
+
+\subsection{Interviews + Focus Groups}
+Interviews and focus groups are employed in getting the most insight into the individual perceptions in the most comprehensive and detailed way possible through the collaboration in group work. Interviews are the most effective method for finding complete, personalized contributions from the individual key stakeholders. Identifying the requirements or concerns specifically not discussed in group settings, as well as other factors, can be facilitated by interviews. In contrast, the focus group approach is to gather a multi-faceted set of perspectives, which contributes to the collective success of brainstorming. This in turn results in room for the open discussions and confirming of ideas. The partnership of interviews and focus groups brings a perfect possibility to firstly get a deep understanding of the problem and then use the focus groups to adjust, and improve the solutions, verify that the results are correct, and fill in the missing parts. This approach is particularly useful when attempting to reconcile the individual requirements with the entire group's will, while at the same time, making sure that the ideas of every stakeholder are noted and a unified understanding is reflected in the final requirements.
+
+\subsection{Document Analysis + Focus Groups}
+Document analysis provides an efficient way to get information that is necessary, for example, age-old methods, business regulations, and laws. Document analysis is a very good method when a firm works with the existing systems or when historical context is needed for the understanding of the system requirements. Nevertheless, document analysis frequently involves topics such as document availability and quality and may fail to identify or capture the new and vital aspects of documents \cite{cite16}.  Using focus groups as part of the process of document analysis is a useful tool for they are actively involved and can give to the researcher instant, which helps to fill in missing information that the documents do not have. Together, these two methods ensure the correct interpretation of existing documentation and bring in different viewpoints from stakeholders, highlighting requirements not found in the documentation.
+
+\subsection{Use Cases + Focus Groups}
+Use cases are most effective for collecting functional requirements and ensure all user interactions are well understood. However, some aspects covered in use cases may be too much narrowly defined to include the wider concerns of the interested parties or their viewpoints entirely. Focus groups, which are primary to learning and information exchange, add another dimension to the use cases, as they enhance and bring more dimensions to the use cases. Focus groups could also be used for the check of use cases, if they cover all pertinent scenarios and if stakeholders would give feedback or suggest other possible purposes for them. With this, we also make sure that the operational requirements as listed in the use cases are applicable to members of all groups, which they have properly expressed their complaints and that the entire system is whole.
+
+\section{Conclusion}
+
+In the domain of requirements engineering, the selection of the appropriate elicitation methods is essential if the system requirements accurate, and exhaustive and actionable system requirements are to be gathered. The discussions that were conducted on the strategies of elicitation such as interviews, questionnaires/surveys, brainstorming, use cases, document analysis, and focus groups had their pros and cons to them, so they were each more appropriate for different stakeholders’ needs in various project contexts.
+Interviews provide deep and detailed insights and are also time-consuming and not scalable. Questionnaires/Surveys are highly efficient but they can only be used to collect standardized data from a large number of stakeholders but they are not the best option to use when dealing with complex or nuanced requirements. Brainstorming is the one that is known for generating creative ideas but the lack of structure may be its disadvantage, while use cases provide clear and well-structured documentation of-system interactions. Document analysis is affordable and saves time as it helps to recognize existing systems, although it can be limited by the quality and scope of the available documentation. Focus groups are the most demanding out of all the methods but they are the ones that provide an opportunity for people to collaborate and create awareness among each other, but they are also prone to groupthink and facilitator bias.
+The combination of these methods, allowing for the complementary strengths of both data collection techniques, improves the relevance and the depth of the elicitation process. The methods such as interviews together with questionnaires/surveys offer broad data collection as well as in-depth exploration, while brainstorming, and use cases guarantee both creativity and structure in defining system requirements. Parallelly, document analysis and focus groups expand and validate the current documentation while use cases and focus groups ensure that functional requirements include a wide range of interests.
+Eventually, the essentials of requirements engineering include studying the project's particular needs, character of the stakeholders, and tasks to be resolved. By utilizing a combination of the identified methods, requirements engineers can incorporate a more comprehensive approach, thus compensating for the weaknesses of single methods and ensuring the accuracy and dependability of the acquired requirements. Quick and a mixed-method approach of an organization provided it with knowledge of the stakeholder needs at a deeper level thus it helped design the final system that will be close to the expectation and the business goals as defined by the users.
+
+
+\begin{thebibliography}{00}
+
+\bibitem{cite1} J. P. Mestre and B. H. Ross, ``Chapter Seven - The Power of Comparison in Learning and Instruction: Learning Outcomes Supported by Different Types of Comparisons,'' \textit{Journal is required!}, vol. 55, pp. 199–225, 2011.
+
+\bibitem{cite2} A. Van Lamsweerde, "Requirements engineering in the year 00: A research perspective," in Proceedings of the 22nd international conference on Software engineering, 2000, pp. 5–19.
+
+\bibitem{cite3} W. Behrens, P. Hawranek, Manual for the preparation of industrial feasibility studies. United Nations Industrial Development Organization Vienna, 1991.
+
+\bibitem{cite4} P. Haumer, K. Pohl, K. Weidenhaupt. "Requirements elicitation and validation with real world scenes," in IEEE Transactions on Software Engineering, vol. 24, no. 12, pp. 1036-1054, 1998.
+
+\bibitem{cite5} Bilal, H., et al. "Requirements validation techniques: An empirical study," in International Journal of Computer Applications, vol. 148, no. 14, 2016.
+
+\bibitem{cite6} B. Fabian, S. Gürses, M. Heisel, et al., ``A comparison of security requirements engineering methods,'' \textit{Requirements Eng.}, vol. 15, pp. 7--40, 2010. doi: \url{https://doi.org/10.1007/s00766-009-0092-x}.
+
+\bibitem{cite7} S. Sharma, S. Pandey. "Revisiting requirements elicitation techniques," in International Journal of Computer Applications, vol. 75, no. 12, 2013.
+
+\bibitem{cite8} M. Yousuf and M. Asger, ``Comparison of various requirements elicitation techniques,'' \textit{Int. J. Computer Applications}, vol. 116, no. 4, 2015.
+
+\bibitem{cite9} A. Batool, et al., ``Comparative study of traditional requirement engineering and Agile requirement engineering,'' in \textit{Proc. 2013 15th Int. Conf. on Advanced Communications Technology (ICACT)}, PyeongChang, Korea, 2013, pp. 1006-1014.
+
+\bibitem{cite10} S.-U.-Arif, Q. Khan, S. A. K. Gahyyur, ``Requirements Engineering Processes, Tools/Technologies, \& Methodologies,'' \textit{Int. J. Reviews in Computing}, pp. 42–56, 2009.
+
+\bibitem{cite11} F. Paetsch, A. Eberlein, and F. Maurer, ``Requirements Engineering and Agile Software Development,'' \textit{Enabling Technologies, IEEE}, pp. 308-313, 2003.
+
+\bibitem{cite12} A. Shui, S. Mustafiz, and J. Kienzle, ``Exception-aware requirements elicitation with use cases,'' in \textit{Advanced Topics in Exception Handling Techniques}, pp. 221–242, 2006.
+
+\bibitem{cite13} L. Jiang, A. Eberlein, B. H. Far, et al., ``A methodology for the selection of requirements engineering techniques,'' \textit{Softw. Syst. Model.}, vol. 7, pp. 303--328, 2008. doi: \url{https://doi.org/10.1007/s10270-007-0055-y}.
+
+\bibitem{cite14} A. Massey, W. Wallace. "Focus groups as a knowledge elicitation technique: an exploratory study," in IEEE Transactions on Knowledge and Data Engineering, vol. 3, no. 2, pp. 193-200, 1991.
+
+\bibitem{cite15} Z. Zhang, ``Effective requirements development-A comparison of requirements elicitation techniques,'' \textit{Software Quality Management XV: Software Quality in the Knowledge Society}, pp. 225–240, 2007.
+
+\bibitem{cite16} S. Tiwari and S. S. Rathore, ``A methodology for the selection of requirement elicitation techniques,'' \textit{arXiv preprint arXiv:1709.08481}, 2017.
+
+\bibitem{cite17} D. Firesmith. "Modern requirements specification," in Journal of Object Technology, vol. 2, no. 2, pp. 53–64, 2003.
+
+\end{thebibliography}
+
+\end{document}
