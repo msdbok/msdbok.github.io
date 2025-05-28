@@ -47,7 +47,7 @@ unlock(&devExt->writeListLock); // S4
 
 ### Control Flow Representation
 
-{% mermaid %}
+```mermaid
 flowchart TD
   S0["S0: lock(&devExt->writeListLock)"] --> S1["S1: if (request && request->status)"]
   S1 -- "true" --> S2["S2: unlock(&devExt->writeListLock)"]
@@ -55,7 +55,7 @@ flowchart TD
   S2 --> S3
   S3 -- "true" --> S0
   S3 -- "false" --> S4["S4: unlock(&devExt->writeListLock)"]
-{% endmermaid %}
+```
 
 ---
 
@@ -70,7 +70,7 @@ We model the allowed states of a lock as a **finite state machine** (FSM). Thi
 - `P2`: Error (violation of locking discipline)
     
 
-{% mermaid %}
+```mermaid
 stateDiagram
   [*] --> P0
   P0 --> P1 : lock
@@ -88,7 +88,7 @@ stateDiagram
   state "P2" as P2
   note right of P2: Error state
   style P2 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
-{% endmermaid %}
+```
 
 ---
 
@@ -96,7 +96,7 @@ stateDiagram
 
 We now combine the control flow of the code with the locking FSM into a _product automaton_. This lets us track both the control state of the program and the lock state.
 
-{% mermaid %}
+```mermaid
 stateDiagram
   [*] --> P0S0
 
@@ -122,7 +122,7 @@ stateDiagram
   style P2S3 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
   style P1S0 fill:#ffcccc,stroke:#ff0000,stroke-width:2px
 
-{% endmermaid %}
+```
 
 ---
 

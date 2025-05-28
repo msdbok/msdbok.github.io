@@ -26,7 +26,7 @@ The relative importance of each dimension varies according to different consumer
 
 McCall's Quality Factors {% cite mccall_factors_1977 %} are a set of characteristics introduced by Jim McCall in 1977 to measure and assess the quality of software systems. These factors help to evaluate software based on various attributes, contributing to a well-rounded understanding of software quality. McCall identified 11 quality factors, divided into three categories: **product operation**, **product revision**, and **product transition**.
 
-{% mermaid %}
+```mermaid
 flowchart LR
   A[McCall's Quality Factors]
   A --> B[Product Operation 📊]
@@ -36,7 +36,7 @@ flowchart LR
   B --> B1[Correctness ✅<br>Reliability 🔒<br>Efficiency ⚡<br>Integrity 🔐<br>Usability 🖥️]
   C --> C1[Maintainability 🔄<br>Flexibility 🛠️<br>Testability 🧪]
   D --> D1[Portability 🌍<br>Reusability ♻️<br>Interoperability 🔗]
-{% endmermaid %}
+```
 
 | **Factor**                     | **Description**                                                                                       | **Sub-Characteristics**                                       |
 |---------------------------------|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
