@@ -416,7 +416,7 @@ layout: default
 
 - **Description**: A static code analysis tool that identifies software security, quality, and reliability issues in C, C++, Java, JavaScript, Python, and Kotlin code.
     
-- **Example**: Klocwork is used in DevSecOps pipelines to enforce coding standards and detect vulnerabilities. ([perforce.com](https://www.perforce.com/video-tutorials/kw/static-code-analysis-and-why-klocwork-different "Static Code Analysis and Why Klocwork is Different | Perforce"), [perforce.com](https://www.perforce.com/products/klocwork "Perforce Klocwork"))
+- **Example**: Klocwork is used in DevSecOps pipelines to enforce coding standards and detect vulnerabilities. ([perforce.com](https://www.perforce.com/video-tutorials/kw/static-code-analysis-and-why-klocwork-different "Static Code Analysis and Why Klocwork is Different, Perforce"), [perforce.com](https://www.perforce.com/products/klocwork "Perforce Klocwork"))
     
 
 ### 10. **Microsoft PREfast & SDV**

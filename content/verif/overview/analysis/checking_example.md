@@ -7,7 +7,8 @@ layout: default
 
 
 ## Model Checking Example: Locking Discipline
-_Reference: G. Holzmann, Software Analysis and Model Checking {% cite holzmann2002checking %} _
+  
+  _Reference: G. Holzmann, Software Analysis and Model Checking {% cite holzmann2002checking %}_
 
 We aim to verify whether a piece of code respects the _normal locking discipline_. Violations of this discipline can cause concurrency errors. According to this discipline, a single thread must **not**:
 
