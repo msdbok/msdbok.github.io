@@ -36,7 +36,6 @@ flowchart LR
   B --> B1[Correctness ✅<br>Reliability 🔒<br>Efficiency ⚡<br>Integrity 🔐<br>Usability 🖥️]
   C --> C1[Maintainability 🔄<br>Flexibility 🛠️<br>Testability 🧪]
   D --> D1[Portability 🌍<br>Reusability ♻️<br>Interoperability 🔗]
-{% endmermaid %}
 ```
 
 | **Factor**                     | **Description**                                                                                       | **Sub-Characteristics**                                       |
