@@ -5,8 +5,6 @@ title: Software Properties
 layout: default
 ---
 
----
-
 ## 🔐 Software Properties Verified by Static Analysis
 
 **Definition:**  

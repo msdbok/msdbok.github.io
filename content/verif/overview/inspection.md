@@ -80,3 +80,7 @@ timeline
     Pair programming: Two developers work together at one workstation, sharing the task of writing and reviewing code in real-time.
     Adhoc review: The least formal technique, involving unstructured and spontaneous reviews without predefined rules or documentation.
 ```
+
+### References
+
+{% bibliography --cited %}

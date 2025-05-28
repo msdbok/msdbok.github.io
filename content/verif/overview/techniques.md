@@ -229,4 +229,8 @@ The industry average defect rate is **0.5–5 defects per 1,000 lines of code** 
 
 - **Key Takeaway**: Combining multiple techniques enhances defect detection and quality assurance.  
 
-*(Adapted from G. Holzmann, Software Analysis and Model Checking, 2002)*  
+*Adapted from G. Holzmann, Software Analysis and Model Checking, 2002 {% cite holzmann2002checking %}*
+
+### References
+
+{% bibliography --cited %}
