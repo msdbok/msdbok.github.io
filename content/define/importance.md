@@ -1,7 +1,7 @@
 ---
 parent: Define Quality
 nav_order: 1
-title: Software Quality Importance
+title: Importance
 layout: default
 ---
 
