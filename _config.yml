@@ -7,8 +7,9 @@ mermaid:
   # src_config: '/js/mermaid_config.js'
 
 
-title: Software Quality and Reliability Course Handbook (SQRBOK)
-description: "Collection of resources and handouts"
+title: SQRBOK - Handbook
+author: Andrey Sadovykh
+description: "Software Quality and Reliability Course Handbook (SQRBOK) - Collection of resources and handouts"
 theme: just-the-docs
 
 url: https://msdbok.github.io/justdocs/

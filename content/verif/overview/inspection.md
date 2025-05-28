@@ -69,7 +69,7 @@ layout: default
 Below is a timeline of inspection techniques ranging from **most formal** to **least formal**:
  
 
-{% mermaid %}
+```mermaid
 
 timeline
 
@@ -82,4 +82,4 @@ timeline
     Adhoc review: The least formal technique, involving unstructured and spontaneous reviews without predefined rules or documentation.
  
 
-{% endmermaid %}
+```
