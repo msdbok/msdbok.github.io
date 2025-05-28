@@ -1,8 +1,17 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+plugins:
+  - jekyll-scholar
+  - jekyll-mermaid
+
+mermaid:
+  src: 'https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js'
+  # src_config: '/js/mermaid_config.js'
+
+
+title: Software Quality and Reliability Course Handbook (SQRBOK)
+description: "Collection of resources and handouts"
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://msdbok.github.io/justdocs/
 
 aux_links:
   Template Repository: https://github.com/just-the-docs/just-the-docs-template
