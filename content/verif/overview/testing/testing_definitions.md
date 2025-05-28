@@ -101,7 +101,7 @@ Understanding how testing is classified helps in selecting the right kind of tes
 
 ## Visual summary
 
-{: .note }
+{: .highlight }
 Note: Good tests are those that cause the program to FAIL (reveal bugs).
 
 ```mermaid
