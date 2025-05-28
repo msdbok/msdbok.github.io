@@ -2,6 +2,7 @@
 parent: Define Quality
 nav_order: 4
 title: Quality Metrics
+layout: default
 ---
 
 

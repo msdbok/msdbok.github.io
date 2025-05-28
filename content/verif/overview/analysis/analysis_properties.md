@@ -2,6 +2,7 @@
 parent: Analysis
 nav_order: 2
 title: Software Properties
+layout: default
 ---
 
 ---

@@ -2,6 +2,7 @@
 parent: Overview
 nav_order: 1
 title: Software Verification Overview
+layout: default
 ---
 
 # 🧪 **Software Verification**

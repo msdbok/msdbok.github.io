@@ -2,6 +2,7 @@
 parent: Analysis
 nav_order: 4
 title: Static Analysis Tools
+layout: default
 ---
 
 

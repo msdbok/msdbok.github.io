@@ -2,6 +2,7 @@
 parent: Analysis
 nav_order: 1
 title: Definitions
+layout: default
 ---
 
 ## 📘 What is (Static) Analysis?

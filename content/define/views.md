@@ -2,6 +2,7 @@
 parent: Define Quality
 nav_order: 2
 title: Quality Views by David A. Garvin
+layout: default
 ---
 
 David A. Garvin {% cite garvin_what_1984 %} identifies five key perspectives on quality. These views help organizations assess and improve quality in various contexts. Each perspective offers a unique lens for understanding quality.

@@ -2,6 +2,7 @@
 parent: Define Quality
 nav_order: 6
 title: More Definitions
+layout: default
 ---
 
 # 🔍 Verification and Validation  

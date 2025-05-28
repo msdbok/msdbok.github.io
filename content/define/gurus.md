@@ -2,6 +2,7 @@
 parent: Define Quality
 nav_order: 5
 title: Quality Gurus
+layout: default
 ---
 
 

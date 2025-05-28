@@ -2,6 +2,7 @@
 parent: Overview
 nav_order: 4
 title: Testing Methods Overview
+layout: default
 ---
 
 # 3. Testing

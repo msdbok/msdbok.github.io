@@ -2,6 +2,7 @@
 parent: Define Quality
 nav_order: 3
 title: Quality Models
+layout: default
 ---
 
 # Quality Dimensions by David A. Garvin (1984)

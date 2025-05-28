@@ -2,6 +2,7 @@
 parent: Overview
 nav_order: 2
 title: Inspection Methods
+layout: default
 ---
 
 
