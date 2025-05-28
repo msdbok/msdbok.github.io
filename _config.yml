@@ -3,8 +3,9 @@ plugins:
   - jekyll-mermaid
 
 mermaid:
-  src: 'https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js'
+  # src: 'https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js'
   # src_config: '/js/mermaid_config.js'
+  version: "11.4.1"
 
 
 title: SQRBOK - Handbook

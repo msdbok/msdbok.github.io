@@ -1,7 +1,7 @@
 ---
 parent: Define Quality
 nav_order: 2
-title: Quality Views by David A. Garvin
+title: Quality Views
 layout: default
 ---
 

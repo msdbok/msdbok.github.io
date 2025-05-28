@@ -1,7 +1,7 @@
 ---
 parent: Overview
 nav_order: 1
-title: Software Verification Overview
+title: Techniques
 layout: default
 ---
 
