@@ -46,13 +46,13 @@ layout: default
 
 2. **Quantifiable Business Impact**:  
    - Hewlett-Packard: **10:1 ROI**; savings of **$21.4 million/year**.  
-     *(Source: Grady & Van Slack, IEEE Software, 1994)*  
+     *(Source: Grady & Van Slack, IEEE Software, 1994) {% cite grady2002key %}*  
    - AT&T Bell Labs: **10x improvement in quality**; **14% productivity gain**.  
-     *(Source: Watts Humphrey, Managing the Software Process, 1989)*  
+     *(Source: Watts Humphrey, Managing the Software Process, 1989) {% cite humphrey1989managing %}*  
    - Bell Northern Research: Average savings of **33 hours/defect**.  
-     *(Source: Russell, IEEE Software, 1991)*  
+     *(Source: Russell, IEEE Software, 1991) {% cite russell1991bell %}*  
    - Cisco: Practical outcomes aligned with academic research.  
-     *(Source: J. Cohen, Code Review at Cisco Systems, 2006)*  
+     *(Source: J. Cohen, Code Review at Cisco Systems, 2006) {% cite cohen2006code %}*  
 
 3. **Comprehensive Defect Discovery**:  
    Identifies issues that may be **impossible or difficult to find** through testing alone.  
@@ -64,7 +64,7 @@ layout: default
 
 ## 🛠️ **Family of Inspection Techniques**
 
-> **Adapted from K. Wiegers, Peer Reviews in Software: A Practical Guide (2002).**  
+> *Adapted from K. Wiegers, Peer Reviews in Software: A Practical Guide (2002).{% cite wiegers2002peer %}*  
 
 Below is a timeline of inspection techniques ranging from **most formal** to **least formal**:
  
