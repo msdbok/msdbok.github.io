@@ -73,7 +73,7 @@ These factors assess how well the software can be transferred from one environme
 ISO 9126 is an international standard for software quality, which defines a set of **quality attributes** to assess and measure software quality. The standard consists of six main quality characteristics, each with specific sub-characteristics.
  > *Note:* it is currently replaced by the **ISO/IEC 25002:2024**
 
-{% mermaid %}
+```mermaid
 flowchart LR
   A[ISO 9126 Quality Attributes]
   A --> B[Functionality ✅]
@@ -89,7 +89,7 @@ flowchart LR
   E --> E1[Time Behavior<br>Resource Utilization<br>Capacity]
   F --> F1[Analyzability<br>Changeability<br>Stability<br>Testability]
   G --> G1[Adaptability<br>Installability<br>Co-existence<br>Replaceability]
-{% endmermaid %}
+```
 
 | **Quality Attribute**    | **Description**                                                              | **Sub-Characteristics**                                              |
 |--------------------------|------------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -155,7 +155,7 @@ flowchart LR
 
 ISO/IEC 25002:2024 builds on the previous work in quality models, particularly ISO/IEC 25010 (which defines product quality characteristics), but offers a more comprehensive overview for different contexts. The standard provides an organized structure for understanding and evaluating quality across systems, software, and IT services. Here are the primary quality attributes within the model:
 
-{% mermaid %}
+```mermaid
 flowchart LR
   A[ISO/IEC 25002:2024 Quality Model]
   
@@ -178,7 +178,7 @@ flowchart LR
   H --> H1[Modularity<br>Reusability<br>Analyzability<br>Modifiability<br>Testability]
   I --> I1[Adaptability<br>Installability<br>Replaceability]
   J --> J1[Effectiveness<br>Efficiency<br>Satisfaction<br>Freedom from Risk]
-{% endmermaid %}
+```
 
 | **Main Attribute**        | **Sub-Characteristics**                                                   |
 |---------------------------|---------------------------------------------------------------------------|
@@ -269,7 +269,7 @@ flowchart LR
 ---
 # Comparing Quality Models
 
-{% mermaid %}
+```mermaid
 graph LR
   A[Garvin's Quality Dimensions]
   B[McCall's Quality Factors]
@@ -310,7 +310,7 @@ graph LR
   style B fill:#ADD8E6,stroke:#000,stroke-width:2px
   style C fill:#90EE90,stroke:#000,stroke-width:2px
 
-{% endmermaid %}
+```
 
 | **Garvin's Quality Dimensions** | **McCall's Quality Factors**           | **ISO 9126 Quality Characteristics**      |
 |---------------------------------|---------------------------------------|------------------------------------------|

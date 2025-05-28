@@ -77,7 +77,7 @@ Adequacy measured through statement, branch, basis path, MC/DC coverage or mutat
 
 ![alt text](image-2.png)
 
-{% mermaid %}
+```mermaid
 sequenceDiagram
     actor Customer
     participant SC as ShoppingCart
@@ -92,10 +92,10 @@ sequenceDiagram
     I-->>O: Return item prices
     O-->>SC: Return total price
     SC-->>Customer: Display total price
-{% endmermaid %}
+```
 
 #### Mocking
-{% mermaid %}
+```mermaid
 sequenceDiagram
     actor Developer
     participant TestFramework
@@ -113,7 +113,7 @@ sequenceDiagram
     else Output does not match expected
         TestFramework->>Developer: Test failed
     end
-{% endmermaid %}
+```
 
 ### Integration testing
 
@@ -129,7 +129,7 @@ Adequacy measured through node or edge coverage of immediate neighbors
 > Interface Misuse - A calling unit calls another unit and makes an error in its use of interface, probably by calling/passing parameters in the wrong sequence.
 Interface Misunderstanding - A calling unit makes some assumption about the other unit’s behavior which is incorrect.
 
-{% mermaid %}
+```mermaid
 sequenceDiagram
     actor Customer
     participant SC as ShoppingCart
@@ -145,7 +145,7 @@ sequenceDiagram
     I-->>O: Return item prices
     O-->>SC: Return total price
     SC-->>Customer: Display total price
-{% endmermaid %}
+```
 
 
 ### Thread, function, integration testing
@@ -157,7 +157,7 @@ Defects are usually reported
 Runs in a development environment
 
 
-{% mermaid %}
+```mermaid
 sequenceDiagram
     actor Customer
     box "Function Test"
@@ -173,7 +173,7 @@ sequenceDiagram
     I-->>O: Return item prices
     O-->>SC: Return total price
     SC-->>Customer: Display total price
-{% endmermaid %}
+```
 
 ### System testing
 
@@ -185,7 +185,7 @@ Runs in a real environment
 Adequacy measured by combinatorial coverage or  mutation testing
 
 
-{% mermaid %}
+```mermaid
 sequenceDiagram
     box "System Test"
         actor Customer
@@ -201,7 +201,7 @@ sequenceDiagram
     I-->>O: Return item prices
     O-->>SC: Return total price
     SC-->>Customer: Display total price
-{% endmermaid %}
+```
 
 
 ### Purpose-based testing
@@ -248,7 +248,7 @@ Robustness Testing. Imagine calamities. The possibilities are endless. How will 
 
 ![wb](image-3.png)
 
-{% mermaid %}
+```mermaid
 flowchart LR
     subgraph WhiteBox["White Box"]
         direction TB
@@ -267,7 +267,7 @@ flowchart LR
 
     WhiteBox --> Output1["Output X"]
     WhiteBox --> Output2["Output Y"]
-{% endmermaid %}
+```
 
 
 
@@ -281,7 +281,7 @@ Design test cases such as
 
 > To stimulate the program we need inputs, how do we choose them? If we base our selection we might miss unspecified behaviors implemented in the program. If we select values based on the structure we might miss required behaviors that were not implemented. If the condition is not satisfied we will analyze the code to see what values must be provided as input to force the execution along the desired path
 
-{% mermaid %}
+```mermaid
 
 ---
 config:
@@ -329,7 +329,7 @@ flowchart TB
     linkStyle 8 stroke:#ff0000,stroke-width:2px,fill:none
     linkStyle 11 stroke:#008000,stroke-width:2px,fill:none
 
-{% endmermaid %}
+```
 
 
 #### Black box testing
@@ -341,7 +341,7 @@ flowchart TB
 
 ![bb](image-4.png)
 
-{% mermaid %}
+```mermaid
 flowchart LR
     subgraph BlackBox["Black Box"]
         direction TB
@@ -355,7 +355,7 @@ flowchart LR
     BlackBox --> Output1["Output 1"]
     BlackBox --> Output2["Output 2"]
     BlackBox --> Output3["Output 3"]
-{% endmermaid %}
+```
 
 ##### More about BB
 

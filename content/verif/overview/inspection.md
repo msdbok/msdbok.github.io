@@ -70,7 +70,6 @@ Below is a timeline of inspection techniques ranging from **most formal** to **l
  
 
 ```mermaid
-
 timeline
 
     title Inspection Techniques (From Most Formal to Least Formal)
@@ -80,6 +79,4 @@ timeline
     Tool-assisted code review: An integral part of the coding process. One developer writes code, another developer is asked to review that code providing a line-by-line critique. Assisted by tools, e.g., diff, annotations, email, review history, online commenting.
     Pair programming: Two developers work together at one workstation, sharing the task of writing and reviewing code in real-time.
     Adhoc review: The least formal technique, involving unstructured and spontaneous reviews without predefined rules or documentation.
- 
-
 ```
