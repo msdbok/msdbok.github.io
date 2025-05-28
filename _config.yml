@@ -1,6 +1,6 @@
 plugins:
   - jekyll-scholar
-  - jekyll-mermaid
+#  - jekyll-mermaid
 
 mermaid:
   # src: 'https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js'
