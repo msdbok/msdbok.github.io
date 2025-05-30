@@ -11,8 +11,9 @@ layout: default
 ## Everything is Measurable
 
 {: .highlight }
-*(D. Hubbard, How to Measure Anything, 2010) {% cite hubbard_how_2014 %}*  
 "Everything is measurable."
+
+*(D. Hubbard, How to Measure Anything, 2010) {% cite hubbard_how_2014 %}*  
 
 If **X** is something we care about, then **X**, by definition, must be detectable. Consider concepts like “quality,” “risk,” “security,” or “public image.” If these concepts were entirely undetectable, how could we care about them? The very act of caring about these concepts implies they correspond to desirable or undesirable outcomes. 
 
