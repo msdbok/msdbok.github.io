@@ -7,8 +7,6 @@ layout: default
 
 # 🧪 **Software Verification**
 
----
-
 ## 🎯 **Purpose of Software Verification**
 
 Software verification ensures the quality, reliability, and correctness of a system.  
@@ -51,6 +49,7 @@ Each technique addresses specific aspects of verification, and combining them en
 ---
 
 ### 🧰 **Uses of Inspection**
+
 - Detects issues early in the process, often before testing begins.  
 - Effective for identifying:  
   - **Faults of omission** (e.g., missing functionality).  
@@ -60,6 +59,7 @@ Each technique addresses specific aspects of verification, and combining them en
 ---
 
 ### 🔍 **Examples of Inspection**
+
 - Reviewing source code to check for:  
   - Proper commenting and adherence to style guidelines.  
   - Inconsistencies or duplication in the design.  
@@ -68,6 +68,7 @@ Each technique addresses specific aspects of verification, and combining them en
 ---
 
 ### 🌟 **Benefits of Inspection**
+
 1. **Early Detection of Defects**:  
    Reduces the cost of fixing issues later in the development cycle.  
 2. **Quantifiable Results**:  
@@ -97,13 +98,17 @@ Each technique addresses specific aspects of verification, and combining them en
 - **Definition (Practitioner’s View)**:  
   Static analysis examines software’s **syntactic, structural, or behavioral properties** without execution.  
 
-> **Two Types**:  
+> **Two Types**:
+
 > - **Static Analysis**: No execution; relies on code or model examination.  
 > - **Dynamic Analysis**: Execution under controlled conditions.  
 
 ---
 
 ### 🧰 **Uses of Static Analysis**
+
+The Static Analysis
+
 - Identifies:  
   - Style issues or unsafe coding practices (e.g., use of dangerous constructs).  
   - Security vulnerabilities (e.g., buffer overflows).  
@@ -116,6 +121,7 @@ Each technique addresses specific aspects of verification, and combining them en
 ---
 
 ### 🔍 **Examples of Static Analysis**
+
 - Detecting **memory leaks** or dangling pointers.  
 - Verifying compliance with standards (e.g., MISRA for C/C++).  
 - Identifying inefficient resource usage or potential deadlocks.  
@@ -123,10 +129,12 @@ Each technique addresses specific aspects of verification, and combining them en
 ---
 
 ### 🌟 **Benefits**
+
 1. **Automation**: Many tools automate defect detection.  
 2. **Early Insights**: Identifies issues before execution.  
 
 ### ⚠️ **Limitations**
+
 - **False Positives**: May flag harmless code as errors, requiring manual review.  
 - Cannot identify runtime errors caused by dynamic inputs or environment changes.  
 
@@ -147,12 +155,14 @@ Each technique addresses specific aspects of verification, and combining them en
 ---
 
 ### 🧰 **Uses of Testing**
+
 - **Functional Verification**: Confirms the software meets user requirements.  
 - **Performance Verification**: Ensures the system handles expected workloads.  
 
 ---
 
 ### 🔍 **Examples**
+
 - Testing user login functionality.  
 - Conducting load tests for 1,000 transactions per minute.  
 
@@ -197,12 +207,14 @@ Each technique addresses specific aspects of verification, and combining them en
 ---
 
 ### 🧰 **Uses of Demonstration**
+
 - Typically for **user acceptance testing** or early feedback.  
 - Verifies that the system functions correctly under representative scenarios.  
 
 ---
 
 ### 🔍 **Examples**
+
 - Walking users through application workflows.  
 - Observing system behavior in production environments.  
 
@@ -218,6 +230,7 @@ Each technique addresses specific aspects of verification, and combining them en
 ---
 
 ### ⚠️ **Trade-Offs in Commercial Tools**
+
 - Tools like **Coverity**, **CodeSonar**, and **Fortify** prioritize practicality over theoretical guarantees.  
 - Simpler tools (e.g., **Lint**, **FindBugs**) are effective for detecting common issues but lack semantic depth.  
 
