@@ -16,13 +16,16 @@ layout: default
 
 If **X** is something we care about, then **X**, by definition, must be detectable. Consider concepts like “quality,” “risk,” “security,” or “public image.” If these concepts were entirely undetectable, how could we care about them? The very act of caring about these concepts implies they correspond to desirable or undesirable outcomes. 
 
-### Key Principles:
+### Key Principles:4
+
 1. **Detectability**: If we care about something, it must be detectable directly or indirectly.
 2. **Observability**: If it is detectable, we can observe it in some amount. For example, we can observe "more" or "less" of quality.
 3. **Measurability**: If we can observe it in some amount, it must be measurable.
 
 ### Example: Measuring Quality in Art
-Consider Garvin's transcendental view of quality. Imagine comparing two famous artworks: a painting by **Manet** and another by **Picasso**.  
+
+Consider Garvin's transcendental view of quality. Imagine comparing two famous artworks: a painting by **Manet** and another by **Picasso**.
+
 - **Question for Discussion**: Which artwork is of higher quality?  
   - This question demonstrates the subjective and context-dependent nature of quality. In art, "quality" might depend on emotional impact, technical skill, historical importance, etc. The challenge lies in defining measurable criteria for such an abstract concept.
 
@@ -30,8 +33,8 @@ Consider Garvin's transcendental view of quality. Imagine comparing two famous a
 
 ## How This Applies to Software Quality
 
-
 ### Key Points:
+
 - **Control During Development**: Metrics provide a structured way to control quality throughout the software lifecycle.
 - **Release Validation**: Before release, metrics act as quality gates to ensure the product meets predefined standards.
 - **Goal Setting**: Companies set quality targets using metrics to ensure consistent outcomes.
@@ -40,6 +43,7 @@ Consider Garvin's transcendental view of quality. Imagine comparing two famous a
 For instance, the **usability** attribute might map to metrics like **task success rate** or **average time on task**.
 
 ### Importance of Metrics:
+
 - Helps identify issues early.
 - Enables comparison between current and past performance.
 - Provides a common language for evaluating quality.
@@ -51,6 +55,7 @@ For instance, the **usability** attribute might map to metrics like **task succe
 ## Key Definitions
 
 ### Software Quality Metric
+
 According to **IEEE 1061**:  
 
 {: .highlight }
@@ -71,12 +76,14 @@ According to **IEEE 1061**:
 ## Measurement Basics
 
 When considering any measurement, ask the following:
+
 1. **What does the measurement represent?**
 2. **How accurate is the measurement?**
 3. **How precise is the measurement?**
 4. **What is the resolution of the measurement?**
 
 ### Key Concepts:
+
 - **Accuracy**: How close the measurement is to the true value.
 - **Precision**: The degree to which repeated measurements under unchanged conditions produce the same results.
 - **Resolution**: The smallest detectable difference between values.
@@ -90,6 +97,7 @@ When considering any measurement, ask the following:
 Understanding and applying software quality metrics is essential for delivering reliable, maintainable, and user-friendly systems. By focusing on measurable attributes, setting appropriate goals, and critically evaluating measurement techniques, software engineers can ensure their products meet the highest quality standards.
 
 ---
+
 ### References
 
 {% bibliography --cited %}
