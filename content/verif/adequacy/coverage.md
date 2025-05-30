@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Coverage
 parent: Adequacy
 nav_order: 1
 layout: default
