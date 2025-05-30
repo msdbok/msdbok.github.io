@@ -13,6 +13,9 @@ layout: default
 
 *(Adapted from A. Hass, *Guide to Advanced Software Testing*, 2008) {% cite hass2014guide %}*
 
+{: .warning }
+to be converted in mermaid
+
 1. **Statement**
 
    * The smallest executable unit in code (non-comment, non-whitespace).
@@ -79,6 +82,11 @@ Instead of one node per statement, we can merge consecutive non-branching statem
 
 ---
 
+### Execution PATH
+
+{: .warning }
+todo
+
 ## Example: Simple IF/ELSE CFG
 
 ```mermaid
@@ -110,6 +118,9 @@ flowchart TD
 
 
 ```
+
+{: .warning }
+test suite, test case, execution path
 
 ---
 
