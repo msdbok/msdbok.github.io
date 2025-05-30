@@ -11,7 +11,7 @@ layout: default
 
 ![Node](image-2.png)
 
-*(Adapted from A. Hass, *Guide to Advanced Software Testing*, 2008) {% cite hass2014guide %}*
+*(Adapted from A. Hass, Guide to Advanced Software Testing, 2008) {% cite hass2014guide %}*
 
 {: .warning }
 to be converted in mermaid
