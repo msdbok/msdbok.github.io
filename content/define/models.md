@@ -6,6 +6,7 @@ layout: default
 ---
 
 # Quality Dimensions by David A. Garvin (1984)
+
 David A. Garvin {% cite garvin_what_1984 %} describes eight dimensions of quality that can be used to evaluate a product. These dimensions provide a framework for understanding the various aspects of what makes a product "good" and can help companies to strategically focus on particular elements of quality.
 
 *   **Performance:** This refers to a product's primary operating characteristics. It involves measurable attributes and is often ranked on a scale. For instance, the acceleration of a car or the sound and picture quality of a television would fall under performance.
@@ -22,6 +23,7 @@ It is important to note that these dimensions are not always independent of each
 The relative importance of each dimension varies according to different consumer needs. For example, the dimensions of quality that are important for a piano may differ greatly from the dimensions that are important for an automobile. Furthermore, it is difficult to improve all dimensions of quality simultaneously, as there are trade-offs that must be made. Therefore, businesses often need to focus on specific quality dimensions to gain a competitive advantage.
 
 ---
+
 # McCall's Quality Factors (1977)
 
 McCall's Quality Factors {% cite mccall_factors_1977 %} are a set of characteristics introduced by Jim McCall in 1977 to measure and assess the quality of software systems. These factors help to evaluate software based on various attributes, contributing to a well-rounded understanding of software quality. McCall identified 11 quality factors, divided into three categories: **product operation**, **product revision**, and **product transition**.
@@ -44,8 +46,8 @@ flowchart LR
 | **Product Revision** 🔧        | Relates to the software's ability to evolve and adapt to changes.                                      | Maintainability 🔄, Flexibility 🛠️, Testability 🧪            |
 | **Product Transition** 🌐     | Assesses how well the software can be transferred from one environment to another.                     | Portability 🌍, Reusability ♻️, Interoperability 🔗            |
 
-
 ## 1. Product Operation (Functional Characteristics) 📊
+
 These factors are related to the system's performance during operation, focusing on how well it meets the user's needs.
 
 - **Correctness** ✅: The extent to which the software meets its specified requirements.
@@ -55,6 +57,7 @@ These factors are related to the system's performance during operation, focusing
 - **Usability** 🖥️: The ease with which users can learn and operate the software.
 
 ## 2. Product Revision (Maintainability Characteristics) 🔧
+
 These factors relate to the software's ability to evolve and adapt to changes.
 
 - **Maintainability** 🔄: The ease with which software can be modified to correct defects, improve performance, or adapt to a changed environment.
@@ -62,6 +65,7 @@ These factors relate to the software's ability to evolve and adapt to changes.
 - **Testability** 🧪: The ease with which software can be tested to ensure correctness and identify defects.
 
 ## 3. Product Transition (Adaptability Characteristics) 🌐
+
 These factors assess how well the software can be transferred from one environment to another.
 
 - **Portability** 🌍: The ability of the software to operate in different environments or on different platforms without significant modification.
@@ -71,7 +75,9 @@ These factors assess how well the software can be transferred from one environme
 # ISO 9126 Quality Attributes
 
 ISO 9126 is an international standard for software quality, which defines a set of **quality attributes** to assess and measure software quality. The standard consists of six main quality characteristics, each with specific sub-characteristics.
- > *Note:* it is currently replaced by the **ISO/IEC 25002:2024**
+
+{: .note }
+It is currently replaced by the **ISO/IEC 25002:2024**
 
 ```mermaid
 flowchart LR
@@ -100,41 +106,44 @@ flowchart LR
 | **Maintainability** 🔄    | The ease with which the software can be modified to correct defects or adapt to changes. | Analyzability, Changeability, Stability, Testability                  |
 | **Portability** 🌍       | The ability of the software to be transferred from one environment to another. | Adaptability, Installability, Co-existence, Replaceability            |
 
-
- 
 ## 1. **Functionality** ✅
-   The set of features and capabilities the software offers to meet specified requirements.
-   
-   - **Suitability**: The software provides the correct functionality for its intended tasks.
-   - **Accuracy**: The software provides correct results.
-   - **Interoperability**: The software can interact with other systems or components.
-   - **Compliance**: The software adheres to standards, regulations, or guidelines.
-   - **Security**: The software protects against unauthorized access and data breaches.
+
+The set of features and capabilities the software offers to meet specified requirements.
+
+- **Suitability**: The software provides the correct functionality for its intended tasks.
+- **Accuracy**: The software provides correct results.
+- **Interoperability**: The software can interact with other systems or components.
+- **Compliance**: The software adheres to standards, regulations, or guidelines.
+- **Security**: The software protects against unauthorized access and data breaches.
 
 ## 2. **Reliability** 🔒
-   The ability of the software to maintain its performance under specified conditions for a given period of time.
-   
-   - **Maturity**: The likelihood of the software to fail based on its history and development.
-   - **Fault Tolerance**: The ability to continue functioning correctly even when some components fail.
-   - **Recoverability**: The ability of the software to recover from faults or failures.
+
+The ability of the software to maintain its performance under specified conditions for a given period of time.
+
+- **Maturity**: The likelihood of the software to fail based on its history and development.
+- **Fault Tolerance**: The ability to continue functioning correctly even when some components fail.
+- **Recoverability**: The ability of the software to recover from faults or failures.
 
 ## 3. **Usability** 🖥️
-   The ease with which users can learn, operate, and find value in the software.
-   
-   - **Understandability**: The ease with which users can understand how the software works.
-   - **Learnability**: The ease with which users can learn to operate the software.
-   - **Operability**: The ease with which users can interact with the software to accomplish their tasks.
-   - **Attractiveness**: The aesthetic and emotional appeal of the software to users.
+
+The ease with which users can learn, operate, and find value in the software.
+
+- **Understandability**: The ease with which users can understand how the software works.
+- **Learnability**: The ease with which users can learn to operate the software.
+- **Operability**: The ease with which users can interact with the software to accomplish their tasks.
+- **Attractiveness**: The aesthetic and emotional appeal of the software to users.
 
 ## 4. **Efficiency** ⚡
-   The ability of the software to perform its functions using minimal system resources.
-   
+
+The ability of the software to perform its functions using minimal system resources.
+
    - **Time Behavior**: The software’s responsiveness in terms of speed and processing time.
    - **Resource Utilization**: The software’s use of system resources (e.g., CPU, memory).
    - **Capacity**: The ability of the software to handle the workload or data volume it is required to process.
 
 ## 5. **Maintainability** 🔄
-   The ease with which the software can be modified to correct defects, improve performance, or adapt to changes in the environment.
+
+The ease with which the software can be modified to correct defects, improve performance, or adapt to changes in the environment.
    
    - **Analyzability**: The ease with which the software can be examined for issues.
    - **Changeability**: The ease with which the software can be modified.
@@ -142,7 +151,8 @@ flowchart LR
    - **Testability**: The ease with which the software can be tested for correctness.
 
 ## 6. **Portability** 🌍
-   The ability of the software to be transferred from one environment to another without significant modification.
+
+The ability of the software to be transferred from one environment to another without significant modification.
    
    - **Adaptability**: The ease with which the software can be adapted to different environments.
    - **Installability**: The ease with which the software can be installed in a new environment.
@@ -150,7 +160,9 @@ flowchart LR
    - **Replaceability**: The ease with which the software can be replaced with other software.
 
 [Source:Wiki](https://en.wikipedia.org/wiki/ISO/IEC_9126)
+
 ---
+
 # Quality Attributes in ISO/IEC 25002:2024
 
 ISO/IEC 25002:2024 builds on the previous work in quality models, particularly ISO/IEC 25010 (which defines product quality characteristics), but offers a more comprehensive overview for different contexts. The standard provides an organized structure for understanding and evaluating quality across systems, software, and IT services. Here are the primary quality attributes within the model:
@@ -194,6 +206,7 @@ flowchart LR
 
 
 ## 1. Functional Suitability ⚙️
+
 - **Definition**: The degree to which a system or software provides functions that meet stated and implied needs under specified conditions.
 - **Characteristics**:
   - **Functional Completeness** ✅: Provides all required functions.
@@ -201,6 +214,7 @@ flowchart LR
   - **Functional Appropriateness** 🔧: Functions are appropriate for their intended purpose.
 
 ## 2. Performance Efficiency 🚀
+
 - **Definition**: The performance relative to the amount of resources used under specified conditions.
 - **Characteristics**:
   - **Time Behavior** ⏱️: How well the system performs over time.
@@ -208,12 +222,14 @@ flowchart LR
   - **Capacity** 📦: The system's ability to handle demands.
 
 ## 3. Compatibility 🔗
+
 - **Definition**: The degree to which a system or software can operate in conjunction with other systems, software, or environments.
 - **Characteristics**:
   - **Coexistence** 🧑‍🤝‍🧑: Ability to work alongside other systems.
   - **Interoperability** 🌐: Ability to interact with different systems.
 
 ## 4. Usability 🧑‍💻
+
 - **Definition**: The degree to which a system or software can be used by specified users to achieve goals with effectiveness, efficiency, and satisfaction in a specific context of use.
 - **Characteristics**:
   - **Appropriateness Recognizability** 👁️: Users can quickly recognize functions.
@@ -223,6 +239,7 @@ flowchart LR
   - **User Interface Aesthetics** 🎨: Appeal and design of the interface.
 
 ## 5. Reliability ⚡
+
 - **Definition**: The degree to which a system or software performs its intended functions under specified conditions without failure.
 - **Characteristics**:
   - **Maturity** 📈: The stability and experience of the system.
@@ -231,6 +248,7 @@ flowchart LR
   - **Recoverability** 🔄: Ease of recovery from failure.
 
 ## 6. Security 🔒
+
 - **Definition**: The degree to which a system or software protects information and data from unauthorized access and ensures the integrity of data and operations.
 - **Characteristics**:
   - **Confidentiality** 🕵️‍♂️: Ensures privacy of data.
@@ -240,6 +258,7 @@ flowchart LR
   - **Authenticity** ✔️: Verifies the legitimacy of data or operations.
 
 ## 7. Maintainability 🔧
+
 - **Definition**: The degree to which a system or software can be modified to correct faults, improve performance, or adapt to a changed environment.
 - **Characteristics**:
   - **Modularity** 🧩: Ability to break the system into modules.
@@ -249,6 +268,7 @@ flowchart LR
   - **Testability** 🧪: Ease of performing tests on the system.
 
 ## 8. Portability 🚚
+
 - **Definition**: The degree to which a system or software can be transferred from one environment to another.
 - **Characteristics**:
   - **Adaptability** 🔄: Ease of adapting to new environments.
@@ -256,6 +276,7 @@ flowchart LR
   - **Replaceability** 🔄: Ability to be replaced with minimal disruption.
 
 ## 9. Quality in Use 🏆
+
 - **Definition**: The degree to which a system or software achieves its intended purposes when used in a specific environment and by specific users.
 - **Characteristics**:
   - **Effectiveness** 🎯: Achieving intended goals.
@@ -265,8 +286,8 @@ flowchart LR
 
 [Source: ISO](https://www.iso.org/standard/78175.html)
 
-
 ---
+
 # Comparing Quality Models
 
 ```mermaid
@@ -357,8 +378,8 @@ Perry’s model {% cite perry_effective_1988 %} defines three types of relations
 | **Portability vs. Reusability**           | Direct (+): Portable code is often well-structured and reusable.                                    |
 | **Correctness vs. Efficiency**            | Neutral (N): Correct code can be either efficient or inefficient.                                   |
 
-
 ### Limitations:
+
 - **Based on common sense**: Relationships may vary in complex, application-specific cases.
 - **Commutativity assumption**: Relationships may not always be commutative (the same in both directions).
 
@@ -408,8 +429,7 @@ Gilleis {% cite gillies_software_2011 %} presented its own model model and dicus
 *(**O** No relationship or that the relationship is heavily context-dependent,**+** Direct, **−** Inverse)*
 
 ---
+
 ### References
 
 {% bibliography --cited %}
-
-
