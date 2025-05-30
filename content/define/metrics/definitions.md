@@ -17,7 +17,7 @@ layout: default
 
 If **X** is something we care about, then **X**, by definition, must be detectable. Consider concepts like “quality,” “risk,” “security,” or “public image.” If these concepts were entirely undetectable, how could we care about them? The very act of caring about these concepts implies they correspond to desirable or undesirable outcomes. 
 
-### Key Principles:4
+### Key Principles:
 
 1. **Detectability**: If we care about something, it must be detectable directly or indirectly.
 2. **Observability**: If it is detectable, we can observe it in some amount. For example, we can observe "more" or "less" of quality.
