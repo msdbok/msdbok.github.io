@@ -6,7 +6,7 @@ layout: default
 ---
 
 
-# Part 1: Why metrics?
+# Why metrics?
 
 ## Everything is Measurable
 
