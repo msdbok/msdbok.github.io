@@ -1,7 +1,7 @@
 ---
-parent: Define Quality
+parent: Quality
 nav_order: 2
-title: Quality Views
+title: Views
 layout: default
 ---
 

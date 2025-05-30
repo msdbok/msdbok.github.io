@@ -1,7 +1,7 @@
 ---
-parent: Define Quality
+parent: Quality
 nav_order: 6
-title: More Definitions
+title: Definitions
 layout: default
 ---
 

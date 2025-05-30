@@ -1,7 +1,7 @@
 ---
-parent: Define Quality
+parent: Quality
 nav_order: 5
-title: Quality Gurus
+title: Gurus
 layout: default
 ---
 

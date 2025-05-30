@@ -1,5 +1,5 @@
 ---
-parent: Define Quality
+parent: Quality
 nav_order: 1
 title: Importance
 layout: default

@@ -1,7 +1,7 @@
 ---
-parent: Define Quality
+parent: Quality
 nav_order: 3
-title: Quality Models
+title: Models
 layout: default
 ---
 

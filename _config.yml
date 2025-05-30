@@ -2,6 +2,9 @@ plugins:
   - jekyll-scholar
 #  - jekyll-mermaid
 
+scholar:
+  style: ieee
+
 mermaid:
   # src: 'https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js'
   # src_config: '/js/mermaid_config.js'
@@ -17,3 +20,5 @@ url: https://msdbok.github.io/justdocs/
 
 aux_links:
   Handbook Repo: https://github.com/msdbok/justdocs
+
+
