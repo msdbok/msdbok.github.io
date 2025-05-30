@@ -5,51 +5,107 @@ nav_order: 1
 layout: default
 ---
 
-# Adequacy criteria & coverage
+# Adequacy Criteria & Coverage
 
-Coverage measures the thoroughness of the testing. The quality of the application is measured indirectly under the assumption that a more thorough testing will uncover more faults than a less thorough one
-Adequacy criteria: A measurable condition of what needs to be achieved by a test suite 
-White box criteria - Structural
-All statements are executed
-All branches of all control statements are executed
-All basis paths are executed
-All definition – uses of a variable are tested
-All mutants of a given program are killed
-Black box criteria - Requirements / Specification based criteria
-All unique combinations of n parameters are used as testing inputs
-N-Switch coverage
+In software testing, **coverage** and **adequacy criteria** help us measure how thoroughly a test suite exercises an application. Under the assumption that more thorough testing uncovers more faults, we use these metrics to guide test planning, execution, and assess when to stop.
 
-Coverage is a measure of the extent to which a the condition has been satisfied
+---
 
-Selecting a large number of tests that always test the same portion of the code is not very helpful. What we need to know is the extent to which test planning and execution ensure thorough execution of the system. What criteria can be used to ensure the thorough testing? 
+## 1. What Is Coverage?
 
-To do this testers typically use the coverage criteria, although there are other, e.g. we exhausted the test cases or the budget. As a minimum testers will strive to cover all statements (executing each source line at least once) and covering inputs (applying each externally generated event). But if code and input coverage were sufficient, released products would have very few bugs. 
+> **Coverage** is a quantitative measure of how much of a particular artifact (code, inputs, requirements, etc.) has been exercised by tests.
 
-Concerning the code, it isn’t individual code statements that interest testers but execution paths: sequences of code statements representing an execution of the software. Unfortunately, there are an infinite number of paths. Concerning the input domain, it isn’t the individual inputs that interest testers but input sequences that, taken as a whole, represent scenarios to which the software must respond. There are an infinite number of these, too.
+* A higher coverage percentage generally (but not always) indicates a lower chance of undiscovered bugs.
+* **Pitfall:** Running many tests that all cover the same code or scenarios yields little additional value.
 
-To further complicate things these criteria are used not only as a measurement instrument but as test case generator and sometimes as an stopping rule.
+---
 
-Coverage criteria are traditionally used in one of two ways. One method is to
-directly generate test case values to satisfy a given criterion. This method is often
-assumed by the research community and is the most obvious way to use criteria. It is
-also very hard in some cases, particularly if we do not have enough automated tools
-to support test case value generation. 
+## 2. Adequacy Criteria
 
-The other method is to generate test case
-values externally (by hand or using a pseudo-random tool, for example) and then
-measure the tests against the criteria in terms of their coverage. This method is
-usually favored by industry practitioners, because generating tests to directly satisfy
-the criteria is too hard.
+An **adequacy criterion** defines *what* must be achieved by a test suite. It is often used to:
 
-## Coverage measures can be applied to almost any verification activity
+1. **Generate** test cases (by targeting untested elements).
+2. **Measure** existing tests (by computing what percentage of the criterion is covered).
+3. **Stop** testing (once a target coverage level or budget is reached).
 
-Coverage measures can be applied to any verification activity, although they are most frequently applied to testing activities. Appropriate coverage measures give the people doing, managing, and auditing verification activities a sense of the adequacy of the verification accomplished
+---
 
-We can measure coverage on any artifact produced during software development, e.g., structural coverage of source code, coverage of input space, coverage of complex inputs - e.g., grammar based, coverage of specification, coverage of test
-models, coverage of requirements, coverage of GUI elements, ...
+## 3. White-Box (Structural) Coverage Criteria
 
-Exception exploratory testing
+These criteria examine the *internal* code structure to ensure different parts of the source have been exercised:
 
+| Criterion                        | Description                                                              |
+| -------------------------------- | ------------------------------------------------------------------------ |
+| **Statement Coverage**           | Every executable statement is run at least once.                         |
+| **Branch Coverage**              | Every branch (true/false path) of each control statement is taken.       |
+| **Basis-Path Coverage**          | All independent paths through the control-flow graph are exercised.      |
+| **Definition-Use (DU) Coverage** | For each variable definition, every corresponding use is tested.         |
+| **Mutation Coverage**            | All injected faults (“mutants”) are detected (killed) by the test suite. |
+
+> **Mutation testing** subdivides into:
+>
+> * **Strong mutation**: Test must cause different final output than original.
+> * **Firm mutation**: Test must change some internal state.
+> * **Weak mutation**: Test must detect the mutant immediately after the mutated statement.
+
+---
+
+## 4. Black-Box (Specification-Based) Coverage Criteria
+
+These criteria focus on the *external* behavior of the system as defined by requirements or specifications:
+
+| Criterion                              | Description                                                                  |
+| -------------------------------------- | ---------------------------------------------------------------------------- |
+| **All Combinations of *n* Parameters** | Every unique combination of *n* input parameters is tested (often pairwise). |
+| **N-Switch Coverage**                  | All sequences of *n* events, inputs, or states are exercised.                |
+| **Equivalence Partitioning**           | Each equivalence class of inputs (assumed to behave the same) is tested.     |
+| **Boundary Value Analysis**            | Inputs at or near the edges of valid ranges are tested.                      |
+| **State-Based Coverage**               | All relevant state transitions in a state machine are tested.                |
+| **Negative Testing**                   | Invalid or unexpected inputs to verify graceful failure.                     |
+
+---
+
+## 5. Applying Coverage Beyond Testing
+
+Coverage metrics can be applied to any verification activity or artifact, for example:
+
+* **Source code**: statement, branch, path coverage
+* **Input space**: grammar-based or combinatorial coverage
+* **Requirements**: which requirements have associated test cases
+* **Test models**: coverage of use-case or sequence-diagram elements
+* **GUI**: coverage of screens, buttons, and user flows
+* **Exploratory testing**: session-based charters covered
+
+> Even **exploratory testing** can be assessed by logging which areas (code, features, or scenarios) were explored.
+
+---
+
+## 6. How Coverage Is Used in Practice
+
+1. **Test-case generation**
+
+   * *Research approach*: Automatically generate inputs to satisfy coverage criteria.
+   * *Industry approach*: Manually or semi-automatically create tests, then measure coverage to find gaps.
+
+2. **Progress tracking and stopping rule**
+
+   * Decide to stop when a target coverage level (e.g., 80% statement, 70% branch) or budget/time limit is reached.
+
+3. **Risk management**
+
+   * Low coverage in critical modules or requirements highlights areas needing more focus.
+
+---
+
+## 🔑 Key Takeaways
+
+* **Coverage ≠ Quality**, but it’s a useful proxy: higher coverage usually correlates with finding more bugs.
+* **Balance** structural and specification-based criteria to cover both *how* the code works and *what* it should do.
+* Use coverage metrics to **guide**, **measure**, and **justify** your testing effort—not as the sole goal.
+
+---
+
+---
 
 ## Non-exhaustive list of adequacy criteria
 
@@ -82,11 +138,11 @@ It is possible however, to have a situation where Ci subsumes Cj, Ti satisfies C
 
 ### Example
 ![alt text](image-1.png)
-Criteriai : Branch coverage
-Test suitei : a = 0; a = 2
+Criteria i : Branch coverage
+Test suite i : a = 0; a = 2
 
-Criteriaj : Statement coverage
-Test suitej : a = 1
+Criteria j : Statement coverage
+Test suite j : a = 1
 
 
 ## Terminology
@@ -132,4 +188,8 @@ The computation of a bad value is only revealed when it is used
 Data flow testing consists of the identification of relevant Definition Use pairs and the design of test cases that force the execution of the program thru them
 As an adequacy criteria the number of paths satisfying the criteria (All DUs, All DEFs, All USEs) is counted and compared to the number of paths actually traversed as result of executing the test suite
 Data flow testing should not be confused with data flow analysis which concerns itself with the avoidance of data anomalies, e.g. using an undefined variable, but not with the correctness of the computations
+
+## References
+
+*(Adapted from A. Hass, Guide to Advanced Software Testing, 2008)*
 
