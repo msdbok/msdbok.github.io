@@ -115,8 +115,6 @@ flowchart TD
     D -->|False| F
     E --> End
     F --> End
-
-
 ```
 
 {: .warning }

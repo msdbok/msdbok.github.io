@@ -216,6 +216,38 @@ It isn’t always possible to traverse all topological paths due to semantic dep
 
 ![alt text](image-4.png)
 
+```mermaid
+flowchart TD
+    %% Define start and end as circles
+    Start((Start))
+    End((End))
+
+    %% Decision nodes as diamonds
+    A{Condition: A?}
+    D{Condition: A?}
+
+    %% Action blocks
+    B[Block S1]
+    C[Block S2]
+    E[Block S3]
+    F[Block S4]
+
+    %% Control flow
+    Start --> A
+    A -->|True| B
+    A -->|False| C
+    B --> D
+    C --> D
+    D -->|True| E
+    D -->|False| F
+    E --> End
+    F --> End
+
+    %% Style decision nodes in red
+    style A fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+    style D fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+```
+
 Sometimes, it is not possible to test a complete basis set of paths through the control flow graph of a module. This happens when some paths through the module can not be exercised by any input data. For example, if the module makes the same exact decision twice in sequence, no input data will cause it to vary the first decision outcome while leaving the second constant or vice versa. Can somebody give an example? This happens because the control flow graph does not contain semantic information. When this happens McCabe recommends either to remove the dependency (at a risk of the program becoming unstructured) or to relax the criteria to include only the feasible paths.
 
 Realizable complexity 
