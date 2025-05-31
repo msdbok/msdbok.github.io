@@ -46,8 +46,6 @@ flowchart TD
 
 *(Adapted from A. Hass, Guide to Advanced Software Testing, 2008) {% cite hass2014guide %}*
 
-{: .warning }
-to be converted in mermaid
 
 1. **Statement**
 
@@ -124,7 +122,7 @@ The figure shows a **Test case**: `A=true, B=false`
 
 The execution path for this test case is shown in red on the diagram.
 
-The set of all _test cases_ is a **Test suite**.
+The set of all _selected test cases_ is a **Test suite**. For example, **Test suite** = **Test case 1**: `A=true, B=false` + **Test case 1**: `A=true, B=true`
 
 ```mermaid
 flowchart TD
