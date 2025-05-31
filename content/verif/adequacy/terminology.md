@@ -89,6 +89,10 @@ todo
 
 ## Example: Simple IF/ELSE CFG
 
+Test case: A=true, B=false
+
+The execution path is shown in red on the diagram.
+
 ```mermaid
 flowchart TD
     %% Define start and end as circles
