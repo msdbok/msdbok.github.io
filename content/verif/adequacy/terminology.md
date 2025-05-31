@@ -120,9 +120,11 @@ Instead of one node per statement, we can merge consecutive non-branching statem
 
 The example below demonstrates a CFG with two decision nodes.
 
-The figure shows a **Test case*: `A=true, B=false`
+The figure shows a **Test case**: `A=true, B=false`
 
-The execution path is shown in red on the diagram.
+The execution path for this test case is shown in red on the diagram.
+
+The set of all _test cases_ is a **Test suite**.
 
 ```mermaid
 flowchart TD
