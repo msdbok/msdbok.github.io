@@ -120,8 +120,8 @@ flowchart TD
     linkStyle 0 stroke:#ff0000,stroke-width:3px
     linkStyle 1 stroke:#ff0000,stroke-width:3px
     linkStyle 3 stroke:#ff0000,stroke-width:3px
-    linkStyle 5 stroke:#ff0000,stroke-width:3px
-    linkStyle 7 stroke:#ff0000,stroke-width:3px
+    linkStyle 6 stroke:#ff0000,stroke-width:3px
+    linkStyle 8 stroke:#ff0000,stroke-width:3px
 
 ```
 
