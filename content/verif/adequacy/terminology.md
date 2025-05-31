@@ -9,7 +9,40 @@ layout: default
 
 ## Decisions, Conditions & Branches
 
-![Node](image-2.png)
+
+```mermaid
+flowchart TD
+  %% Nodes
+  Entry(("IN"))
+  OutT(("OUT True"))
+  OutF(("OUT False"))
+  Note["<b>Condition:</b><br/>Logical Operator<br/>(and/or)"]
+
+  %% Subgraph for a Basic Block
+  subgraph BB["Basic Block"]
+    direction TB
+    STMS["a = a + 1;<br/>b[i] = c + 5;<br/>…<br/>char last = argstr.CharAt(0);"]
+    DEC{"Decision:<br/>a > b && c == 1"}
+  end
+
+  %% Control Flow
+  Entry --> BB
+  BB --> STMS
+  STMS --> DEC
+  DEC -->|True| OutT
+  DEC -->|False| OutF
+
+  %% Simulated Note
+  Note -.-> DEC
+
+  %% Styling
+  style STMS fill:#e0f0ff,stroke:#0077cc
+  style DEC  fill:#ffd0d0,stroke:#cc0000,stroke-width:2px
+  style Note fill:#ffffcc,stroke:#999,stroke-dasharray: 5 5,font-size:12px
+
+
+
+```
 
 *(Adapted from A. Hass, Guide to Advanced Software Testing, 2008) {% cite hass2014guide %}*
 
@@ -63,7 +96,7 @@ A **control-flow graph** models all possible execution paths through a program:
 
 * There is a unique **start node** and **end node**.
 * Nodes with **multiple outgoing edges** are decision points.
-* A **path** is any sequence of nodes and edges from start to end (or between any two nodes).
+* An _execution_ **path** is any sequence of nodes and edges from start to end (or between any two nodes).
 
 > **Why CFGs matter:**
 >
@@ -82,14 +115,12 @@ Instead of one node per statement, we can merge consecutive non-branching statem
 
 ---
 
-### Execution PATH
-
-{: .warning }
-todo
 
 ## Example: Simple IF/ELSE CFG
 
-Test case: A=true, B=false
+The example below demonstrates a CFG with two decision nodes.
+
+The figure shows a **Test case*: `A=true, B=false`
 
 The execution path is shown in red on the diagram.
 
@@ -129,8 +160,6 @@ flowchart TD
 
 ```
 
-{: .warning }
-test suite, test case, execution path
 
 ---
 
