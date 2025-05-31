@@ -213,9 +213,6 @@ Without constraints this is mostly a theoretical construction. Constraints inclu
 
 It isn’t always possible to traverse all topological paths due to semantic dependencies not captured in the control flow graph so it might be impossible to achieve 100% path coverage.
 
-
-![alt text](image-4.png)
-
 ```mermaid
 flowchart TD
     %% Define start and end as circles
