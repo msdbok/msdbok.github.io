@@ -27,7 +27,7 @@ flowchart TD
 
   %% Control Flow
   Entry --> BB
-  BB --> STMS
+  %% BB --> STMS
   STMS --> DEC
   DEC -->|True| OutT
   DEC -->|False| OutF
