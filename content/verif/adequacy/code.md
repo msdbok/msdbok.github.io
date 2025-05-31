@@ -254,11 +254,12 @@ The realizable complexity, rc, is the maximum possible actual complexity, i.e., 
 
 ## More too see
 
-Basis Path - reducing number of cases (n+1, n is number of predicates) for thourough testing
-Multiple condition coverage and MCDC
-Linear Code Sequence and Jump (LCSAJ) coverage
-Mutation coverage
-Definition Use coverage
+- Basis Path - reducing number of cases (n+1, n is number of predicates) for thourough testing
+- Multiple condition coverage and MCDC
+- Linear Code Sequence and Jump (LCSAJ) coverage
+- Mutation coverage
+- Combinatorial coverage
+- Definition Use coverage
 
 
 
