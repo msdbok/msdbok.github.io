@@ -115,6 +115,13 @@ flowchart TD
     D -->|False| F
     E --> End
     F --> End
+
+    %% Highlighted execution path: A=true, B=false
+    linkStyle 0 stroke:#ff0000,stroke-width:3px  %% Start --> A
+    linkStyle 1 stroke:#ff0000,stroke-width:3px  %% A --> B
+    linkStyle 4 stroke:#ff0000,stroke-width:3px  %% B --> D
+    linkStyle 7 stroke:#ff0000,stroke-width:3px  %% D --> F
+    linkStyle 9 stroke:#ff0000,stroke-width:3px  %% F --> End
 ```
 
 {: .warning }
