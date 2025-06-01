@@ -44,7 +44,7 @@ flowchart TD
 
 ```
 
-*(Adapted from A. Hass, Guide to Advanced Software Testing, 2008) {% cite hass2014guide %}*
+*Reference: Adapted from A. Hass, Guide to Advanced Software Testing, 2008 {% cite hass2014guide %}*
 
 
 1. **Statement**
