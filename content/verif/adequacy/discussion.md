@@ -2,8 +2,8 @@
 title: Discussion
 parent: Adequacy
 nav_order: 10
-layout: katex
-math: katex
+layout: mathjax
+math: mathjax
 ---
 # Does Coverage Represent Software Quality?
 
