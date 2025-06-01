@@ -145,7 +145,6 @@ Coverage is necessary but insufficient to ensure software quality. Defect detect
     - Recognize that **100% coverage does not mean defect-free software**.
         
 
-
 ### References
 
 {% bibliography --cited %}
