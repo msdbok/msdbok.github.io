@@ -8,6 +8,6 @@ gem "just-the-docs", "0.10.1" # pinned to the current release
 
 gem 'jekyll-scholar'
 
-gem 'jekyll-mathjax'
+# gem 'jekyll-mathjax'
 
 # gem "jekyll-mermaid"
