@@ -3,7 +3,7 @@
 
 markdown: kramdown
 kramdown:
-  math_engine: katex # or 'mathjax'
+  math_engine: mathjax # katex # or 'mathjax'
   syntax_highlighter: rouge
   math_engine_opts:
     preview: true
