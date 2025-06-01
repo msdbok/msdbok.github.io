@@ -17,7 +17,7 @@ Many believe that **code coverage** (how much code is exercised by tests) is a d
 *Reference: T. Williams et al, “Code Coverage: What Does It Mean in Terms of Quality?”, 2001* 
 {% cite williams2001coverage %}
 
-![[quality_cov.png]]
+![Theoretical](quality_cov.png)
 
 ### Popular Belief:
 
@@ -58,7 +58,7 @@ Many believe that **code coverage** (how much code is exercised by tests) is a d
 **Reference: Wei et al, “Is Coverage a Good Measure of Testing Effectiveness?”, 2010**  
 {% cite wei2010coverage %}
 
-![Experiments](image-6.png)
+![Empirical](image-6.png)
 
 - **Experiments** show that **fault detection** initially rises with branch coverage but later continues even when coverage plateaus.
     
