@@ -2,9 +2,24 @@
 title: Discussion
 parent: Adequacy
 nav_order: 10
-layout: mathjax
-math: mathjax
+layout: katex
+math: katex
 ---
+
+
+---
+TEST
+
+Use `$$` on separate lines:
+
+$$
+\int_{-\infty}^\infty e^{-x^2} = \sqrt{\pi}
+$$
+
+---
+
+
+
 # Does Coverage Represent Software Quality?
 
 ## Key Idea
