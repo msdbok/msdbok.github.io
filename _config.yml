@@ -4,6 +4,7 @@
 
 plugins:
   - jekyll-scholar
+  - jekyll-mathjax
 #  - jekyll-mermaid
 
 scholar:
