@@ -2,13 +2,12 @@
 title: Discussion
 parent: Adequacy
 nav_order: 10
-layout: katex
-math: katex
+layout: mathjax
 ---
 
 
 ---
-TEST
+TEST mathjax
 
 Use `$$` on separate lines:
 
