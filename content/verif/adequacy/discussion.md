@@ -97,7 +97,7 @@ $$
 Q = 1 - (1 - P_e)^{n(1 - T)}
 $$
 
-- $$$T$$: code coverage fraction
+- $$T$$: code coverage fraction
     
 - $$P_e$$: defect probability per statement
     
@@ -126,7 +126,7 @@ Coverage is necessary but insufficient to ensure software quality. Defect detect
     Over **50% of faults found during plateau phase**.
     
 3. **Coverage–Fault Correlation Varies**  
-    Correlation between coverage and fault detection varies greatly by code area (from weak r=0.3r = 0.3 to strong r=0.97r = 0.97).
+    Correlation between coverage and fault detection varies greatly by code area (from weak r=0.3 to strong r=0.97).
     
 4. **Implications**
     
