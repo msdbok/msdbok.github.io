@@ -34,15 +34,17 @@ Many believe that **code coverage** (how much code is exercised by tests) is a d
     
 - **Mathematical formula** (simplified):
     
-    $$Q_{\text{actual}}(T) = \left( \frac{1 - p}{1 - pT} \right)^n$$
+$$
+Q_{\text{actual}}(T) = \left( \frac{1 - p}{1 - pT} \right)^n
+$$
     
     where:
     
-    - $T$: coverage fraction (e.g., 0.7 for 70%)
+    - $$T$$: coverage fraction (e.g., 0.7 for 70%)
         
-    - $p$: defect probability per statement
+    - $$p$$: defect probability per statement
         
-    - $n$: number of code statements
+    - $$n$$: number of code statements
         
 
 ### Key Takeaway:
@@ -91,13 +93,15 @@ Caveat -  100% refers to the totality of faults found, not to the totality of fa
 4. **Formula for Quality vs. Coverage**:
     
 
-$$Q = 1 - (1 - P_e)^{n(1 - T)}$$
+$$
+Q = 1 - (1 - P_e)^{n(1 - T)}
+$$
 
-- $T$: code coverage fraction
+- $$$T$$: code coverage fraction
     
-- $P_e$: defect probability per statement
+- $$P_e$$: defect probability per statement
     
-- $n$: total number of statements
+- $$n$$: total number of statements
     
 
 5. **Key Implications**
