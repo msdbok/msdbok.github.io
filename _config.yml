@@ -1,14 +1,6 @@
 # documentation: https://just-the-docs.github.io/just-the-docs/docs/configuration/
 # source: https://github.com/just-the-docs/just-the-docs/blob/main/_config.yml
 
-markdown: kramdown
-kramdown:
-  math_engine: mathjax # katex # or 'mathjax'
-  syntax_highlighter: rouge
-  math_engine_opts:
-    preview: true
-
-
 plugins:
   - jekyll-scholar
 #  - jekyll-mathjax
@@ -21,6 +13,8 @@ mermaid:
   # src: 'https://unpkg.com/mermaid@11.4.1/dist/mermaid.min.js'
   # src_config: '/js/mermaid_config.js'
   version: "11.4.1"
+
+math: mathjax
 
 
 title: SQRBOK - Handbook
