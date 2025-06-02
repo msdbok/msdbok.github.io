@@ -1,6 +1,6 @@
 ---
 title: Code
-parent: Adequacy
+parent: Coverage
 nav_order: 2
 layout: default
 ---

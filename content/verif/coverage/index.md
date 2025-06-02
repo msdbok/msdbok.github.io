@@ -1,5 +1,5 @@
 ---
-title: Adequacy
+title: Coverage
 parent: Verification
 nav_order: 2
 layout: default

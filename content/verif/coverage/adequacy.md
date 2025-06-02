@@ -1,6 +1,6 @@
 ---
-title: Coverage
-parent: Adequacy
+title: Adequacy
+parent: Coverage
 nav_order: 1
 layout: default
 ---

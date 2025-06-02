@@ -1,6 +1,6 @@
 ---
 title: Terminology
-parent: Adequacy
+parent: Coverage
 nav_order: 22
 layout: default
 ---

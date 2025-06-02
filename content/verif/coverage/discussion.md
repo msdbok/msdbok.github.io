@@ -1,6 +1,6 @@
 ---
 title: Discussion
-parent: Adequacy
+parent: Coverage
 nav_order: 10
 layout: default
 ---
