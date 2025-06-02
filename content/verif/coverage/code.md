@@ -5,15 +5,18 @@ nav_order: 2
 layout: default
 ---
 
-# Code Coverage
+# 📘 Code Coverage
 
 ## Overview
+
+**Code Coverage** is a measure used in software testing to describe the degree to which the source code of a program is tested by a particular test suite. It helps identify untested parts of a codebase.
+
+### Types of Code Coverage
 
 ```mermaid
 flowchart TD
 
-  %% Data flow region
-  subgraph DF["Data flow"]
+  subgraph DF["Data Flow"]
     direction TB
     DU["All DU Paths"]
     Uses["All Uses"]
@@ -21,15 +24,13 @@ flowchart TD
     DU --> Uses --> Defs
   end
 
-
-  %% Control flow region
-  subgraph CF["Control flow"]
+  subgraph CF["Control Flow"]
     direction TB
-    Paths["All paths"]
-    Basis["All basis paths"]
+    Paths["All Paths"]
+    Basis["All Basis Paths"]
     LCSAJ["All LCSAJ"]
-    Branches["All branches"]
-    Stmts["All statements"]
+    Branches["All Branches"]
+    Stmts["All Statements"]
     Paths --> Basis
     Paths --> LCSAJ
     Paths --> Branches
@@ -38,229 +39,291 @@ flowchart TD
     Branches --> Stmts
   end
 
-  %% Predicates region
   subgraph PRED["Predicates"]
     direction TB
-    Comp[“All compound conditions”]
-    MCDC[“MC/DC”]
-    Basic[“All basic conditions”]
+    Comp["All Compound Conditions"]
+    MCDC["MC/DC"]
+    Basic["All Basic Conditions"]
     Comp --> MCDC --> Basic
     MCDC --> Branches
   end
 
-  %% Cross-links
   Uses --> Branches
 
-  %% Styling shaded nodes
   style DU fill:#f0f0f0,stroke:#999
   style Uses fill:#f0f0f0,stroke:#999
   style Defs fill:#f0f0f0,stroke:#999
   style Comp fill:#f0f0f0,stroke:#999
   style MCDC fill:#f0f0f0,stroke:#999
   style Basic fill:#f0f0f0,stroke:#999
-
 ```
 
-and Mutation Coverage
+---
 
+### Mutation Testing
 
 ```mermaid
 flowchart TD
 
-%% Mutation testing region
-  subgraph MUT["Mutation"]
+  subgraph MUT["Mutation Coverage"]
     direction TB
-    Strong["Strong mutation"]
-    Firm["Firm mutation"]
-    Weak["Weak mutation"]
+    Strong["Strong Mutation"]
+    Firm["Firm Mutation"]
+    Weak["Weak Mutation"]
     Strong --> Firm --> Weak
   end
 ```
 
+---
+
 ## Statement Coverage
 
-Definition
-Each statement (or node in a CFG) must be executed at least once
-Rationale: 
-A defect in a statement can only be revealed by executing it
-Measure 
-C↓Statement=#Executed/#Statements  
-Advantages – Simplicity 
-Disadvantages – Weak. Insensitive to the execution path
+### Definition
+
+Statement coverage requires **every statement (node in the control flow graph)** to be executed **at least once**.
+
+* **Metric**:
+
+  $$
+  \text{Coverage}_{statement} = \frac{\text{Number of executed statements}}{\text{Total number of statements}}
+  $$
+
+* **Pros**: Simple to measure.
+
+* **Cons**: Weak — it doesn’t consider control flow (e.g., decision paths).
+
+---
 
 ### Example
 
-```pseudo
+```fortran
 input (A)
-
-X=0
-If A <5 then x = 4
-y=z/x
+x = 0
+if A < 5 then
+    x = 4
+end if
+y = z / x
 ```
 
-Test A = 2
+#### Test case: `A = 2`
 
-• All tests succeeded
-All statements executed
-100% statement coverage
-does not imply the program is
-free of faults
-• The test suite fails to detect
-the fault triggered by
+* All statements are executed → ✅ 100% **statement coverage**
+* But if `A >= 5`, `x = 4` is skipped, and division by 0 causes a runtime error ❌
 
-Note: show CFG and highligt execution paths
+---
+
+### CFG for Statement Coverage
+
+```mermaid
+graph TD
+    A1([Start])
+    A2[x = 0]
+    A3{A < 5?}
+    A4[x = 4]
+    A5[y = z / x]
+    A6([End])
+
+    A1 --> A2 --> A3
+    A3 -->|True| A4 --> A5 --> A6
+    A3 -->|False| A5 --> A6
+```
+
+✅ For `A=2`: All nodes visited
+❌ For `A=6`: x remains 0 → division by zero not caught with only 100% statement coverage
+
+---
 
 ### Discussion
 
-Also known as: line coverage, segment coverage, C0/C1 and basic block coverage. Basic block coverage is the same as statement coverage except the unit of code measured is each sequence of non-branching statements.
+Also known as:
 
-Every statement present within the system represents some functionality in the real world that the development process (Requirements Process, Design Process, Coding Process, etc.) felt the system had to provide. If statements are left uncovered by the requirements-based verification process, then that process failed to consider some aspect(s) of the systems implemented functionality. Statement coverage ensures that the verification process has considered sufficient operational scenarios to execute every statement in at least one operational context.
+* **Line coverage**
+* **C0/C1 coverage**
+* **Basic block coverage** (sequence of statements with no branches)
 
-Clearly there’s a problem if X>=5
+If some statements are never executed, then the verification process may have ignored some required functionality.
 
+---
 
 ## Branch Coverage
 
-Definition
-Each branch of a decision (or equivalently each edge in a program’s CFG) must be traversed at least once
-Subsumes statement coverage criterion because traversing all edges implies traversing all nodes
-Rationale
-Control statements encompass  “null statements” that are not accounted for in statement coverage
+### Definition
 
-Advantages 
-Simplicity 
-Problems that were not detected under statement coverage will manifest under branch coverage 
-Disadvantage 
-Might not detect problems in compound predicates 
-Might not detect path dependency problems 
+Branch coverage requires **each possible branch (true/false)** of every decision point to be **taken at least once**.
 
-Also known as: branch coverage, all-edges coverage [Roper1994 p.58], basis path coverage [Roper1994 p.48],
-C2 [Beizer1990 p.75], decision-decision-path testing [Roper1994 p.39]. "Basis path" testing selects paths that achieve decision coverage.
+* **Subsumes**: Statement coverage (more thorough)
 
-Every decision present within the system represents a situation in the real world that the development process felt had to be handled specially. This is because each decision partitions (divides) the real world (operational space) into two special cases, one to be handled one way and the other to be handled differently.
-If branches (decision outcomes) are left uncovered by the requirements-based verification process, then that process failed to consider the special cases the development process thought were important. Decision coverage ensures that the verification process has considered sufficient operational scenarios to execute every special case the system was designed for in at least one operational context.
+* **Metric**:
 
-### Example 1 
+  $$
+  \text{Coverage}_{branch} = \frac{\text{Number of executed branches}}{\text{Total branches}}
+  $$
 
-100% Branch coverage reveals the fault in the previous example.
+* **Pros**: Catches more faults than statement coverage
 
-```pseudo
+* **Cons**: May miss faults in compound conditions
+
+---
+
+### Example 1
+
+Same code:
+
+```fortran
 input (A)
-
-X=0
-If A <5 then x = 4
-y=z/x
+x = 0
+if A < 5 then
+    x = 4
+end if
+y = z / x
 ```
 
-Test suite A=2
-The test suite fails to achieve 100% branch coverage.
-Fault is not detected
+#### Test Suite 1: `A = 2`
 
+* Covers only the **true branch**
+* ❌ Branch coverage is not 100%
+* ❌ Fault not revealed
 
-Test suite A=2 and A=6
-The test suite achieve 100% branch coverage.
-Fault is detected for test case A>=5
+#### Test Suite 2: `A = 2`, `A = 6`
 
-Note: show CFG and highligt execution paths
+* Covers **both branches** of the decision
+* ✅ 100% branch coverage
+* ✅ Division by zero fault detected (when `A = 6`)
 
-### Example 2
+---
 
-100% branch coverage does not guaranty that all decision (branch) faults are caught.
+### CFG for Branch Coverage
 
-Here is an example.
+```mermaid
+graph TD
+    B1([Start])
+    B2[x = 0]
+    B3{A < 5?}
+    B4[x = 4]
+    B5[y = z / x]
+    B6([End])
 
-Required behaviour.
+    B1 --> B2 --> B3
+    B3 -->|True| B4 --> B5 --> B6
+    B3 -->|False| B5
+```
 
-A	B	Result
-F	F	0
-F	T	1
-T	F	2
-T	T	2
+Both branches (`True` and `False`) from the condition are executed in full branch coverage.
 
+---
 
-Implemented behaviour.
+### Example 2 – Branch Coverage Misses Faults
 
-input (A,B)
-Z=0
-If A then
-2=Z+1
-endif
-If B then
-2= 2
-endif
+#### Requirement:
+
+| A | B | Result |
+| - | - | ------ |
+| F | F | 0      |
+| F | T | 1      |
+| T | F | 2      |
+| T | T | 2      |
+
+#### Buggy implementation:
+
+```fortran
+input (A, B)
+Z = 0
+if A then
+    Z = Z + 1
+end if
+if B then
+    Z = 2
+end if
 print(Z)
+```
 
+#### Test Suite: `(A=T, B=T)` and `(A=F, B=F)`
 
-Test suite (A=T,B=T), (A=F;B=F) 
-100% branch coverage without exposing the error
+* ✅ 100% branch coverage
+* ❌ Bug in `Z = 2` overrides previous `Z = Z + 1`
+* ❌ Output wrong for `(A=T, B=F)` (should be `2`, not `1`)
 
-Note: show CFG and highligt execution paths
+---
 
+### Discussion
 
-## All path coverage
+Also known as:
 
-Definition
-Requires that the test suite forces the execution of all feasible paths from the program’s entry to its exit
-Advantages
-Exhaustive testing
-Disadvantages
-Number of test cases required. For example 2^n for n predicates.
-Every time a single condition is added the number of paths doubles
-Without constraints this is mostly a theoretical construction. Constraints include (non-exhaustive list): All statements, All basis paths, All LCSAJ, All DU pairs, All uses and All defs pairs
+* **All-edges coverage** {% cite RoperMarc1994testing %}
+* **C2 coverage** {% cite beizer2003testing %}
+* **Decision-decision-path testing**
 
+Each decision divides operational scenarios into distinct cases. Good tests must explore all such cases.
+
+---
+
+## All Path Coverage
+
+### Definition
+
+All-path coverage requires that **every feasible path** through a program is executed.
+
+* ✅ **Most thorough**
+* ❌ **Impractical** for large programs:
+
+  * With `n` decisions → up to `2^n` paths
+  * Infeasible for complex software
+  * Instead **basis path** coverage is used
+
+---
 
 ## Unfeasible Paths
 
-It isn’t always possible to traverse all topological paths due to semantic dependencies not captured in the control flow graph so it might be impossible to achieve 100% path coverage.
+Some paths **can’t be executed** due to **semantic constraints**, even though they appear valid in the CFG.
+
+#### Example:
 
 ```mermaid
 flowchart TD
-    %% Define start and end as circles
     Start((Start))
-    End((End))
-
-    %% Decision nodes as diamonds
-    A{Condition: A?}
-    D{Condition: A?}
-
-    %% Action blocks
+    A{Condition A?}
     B[Block S1]
     C[Block S2]
+    D{Condition A again?}
     E[Block S3]
     F[Block S4]
+    End((End))
 
-    %% Control flow
     Start --> A
-    A -->|True| B
-    A -->|False| C
-    B --> D
-    C --> D
-    D -->|True| E
-    D -->|False| F
-    E --> End
-    F --> End
+    A -->|True| B --> D
+    A -->|False| C --> D
+    D -->|True| E --> End
+    D -->|False| F --> End
 
-    %% Style decision nodes in red
-    style A fill:#ffdddd,stroke:#ff0000,stroke-width:2px
-    style D fill:#ffdddd,stroke:#ff0000,stroke-width:2px
+    style A fill:#ffdddd,stroke:#ff0000
+    style D fill:#ffdddd,stroke:#ff0000
 ```
 
-Sometimes, it is not possible to test a complete basis set of paths through the control flow graph of a module. This happens when some paths through the module can not be exercised by any input data. For example, if the module makes the same exact decision twice in sequence, no input data will cause it to vary the first decision outcome while leaving the second constant or vice versa. Can somebody give an example? This happens because the control flow graph does not contain semantic information. When this happens McCabe recommends either to remove the dependency (at a risk of the program becoming unstructured) or to relax the criteria to include only the feasible paths.
+Here, Condition A is checked **twice**, making some path combinations logically impossible (e.g., A true first, then false later).
 
-Realizable complexity 
+---
 
-The realizable complexity, rc, is the maximum possible actual complexity, i.e., the rank of the set of the paths induced by all possible tests. This is similar to the characterization of cyclomatic complexity as the rank of the set of all possible paths, except that some paths may not be induced by any test. In the “classify” example, rc is 3 whereas v(G) is 4. Although rc is an objective and well-defined metric, it may be hard to calculate. In fact, calculating rc is theoretically undecidable (HOPCROFT), since, if it were possible to calculate rc, it would also be possible to determine whether rc is at least 1, which would indicate whether at least one complete path could be executed, which is equivalent to the module halting on some input.
+### Realizable Complexity (rc)
 
+_Reference: Beizer, B. Software Testing Techniques {% cite hopcroft2001automata %}_
 
-## More too see
+* **Realizable complexity (rc)**: Max number of distinct, testable paths
+* May be **less than cyclomatic complexity** due to unfeasible paths
+* **Undecidable** in theory: You can’t always determine which paths are testable (linked to the Halting Problem)
 
-- Basis Path - reducing number of cases (n+1, n is number of predicates) for thourough testing
-- Multiple condition coverage and MCDC
-- Linear Code Sequence and Jump (LCSAJ) coverage
-- Mutation coverage
-- Combinatorial coverage
-- Definition Use coverage
+---
 
+## More Coverage Criteria
 
+* **Basis Path Coverage**: Cover enough paths using only `n + 1` (where `n` is the number of predicates)
+* **Multiple Condition Coverage & MC/DC**
+* **LCSAJ Coverage** (Linear Code Sequence And Jump)
+* **Mutation Coverage**
+* **Combinatorial Coverage**
+* **Definition-Use (DU) Coverage**
 
+---
 
+### References
+
+{% bibliography --cited %}
