@@ -31,9 +31,9 @@ $$
 
 Where:
 
-* $E$: Number of edges in the CFG
-* $N$: Number of nodes
-* $P$: Number of connected components (usually 1 for a single function/module)
+* $$E$$: Number of edges in the CFG
+* $$N$$: Number of nodes
+* $$P$$: Number of connected components (usually 1 for a single function/module)
 
 ### Advantages
 
