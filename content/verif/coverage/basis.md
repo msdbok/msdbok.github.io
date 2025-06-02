@@ -35,6 +35,17 @@ Where:
 - $$N$$: Number of nodes
 - $$P$$: Number of connected components (usually 1 for a single function/module)
 
+
+Alternativly, in simple cases, we may use:
+
+$$
+V(G) = n+1
+$$
+
+Where:
+
+- $$n$$: Number of predicates (e.g. IFs, WHILE, FOR, etc.)
+
 ### Advantages
 
 * Ensures thorough testing with relatively few test cases
@@ -90,6 +101,12 @@ $$
 V(G) = 6 - 6 + 2 = 2
 $$
 
+same with
+
+$$
+V(G) = 1+1 = 2
+$$
+
 **Basis Paths:**
 
 1. `Start → D1(true) → S1 → P → End`
@@ -143,6 +160,12 @@ flowchart TD
 
 $$
 V(G) = 8 - 7 + 2 = 3
+$$
+
+same with
+
+$$
+V(G) = 2+1 = 3
 $$
 
 **Basis Paths:**
@@ -206,6 +229,12 @@ flowchart TD
 
 $$
 V(G) = 12 - 10 + 2 = 4
+$$
+
+same with
+
+$$
+V(G) = 3+1 = 4
 $$
 
 **Basis Paths:**
