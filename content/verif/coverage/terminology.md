@@ -16,7 +16,7 @@ flowchart TD
   Entry(("IN"))
   OutT(("OUT True"))
   OutF(("OUT False"))
-  Note["<b>Condition:</b><br/>Logical Operator<br/>(and/or)"]
+  Note["<b>Conditions:</b><br/>Logical Operators<br/>(AND/OR)"]
 
   %% Subgraph for a Basic Block
   subgraph BB["Basic Block"]
