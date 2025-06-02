@@ -54,8 +54,8 @@ where:
 
 ## Empirical Findings
 
-**Reference: Wei et al, “Is Coverage a Good Measure of Testing Effectiveness?”, 2010**  
-{% cite wei2010coverage %}
+_Reference: Wei et al, “Is Coverage a Good Measure of Testing Effectiveness?”, 2010 
+{% cite wei2010coverage %}_
 
 ![Empirical](image-6.png)
 

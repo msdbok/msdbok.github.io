@@ -6,8 +6,6 @@ layout: default
 ---
 
 ## Combinatorial Coverage
-{: .warning }
-TODO:
 
 ### Definition
 
@@ -59,11 +57,4 @@ T T F
 ✅ Covers all pairs (A-B, A-C, B-C)
 
 ---
-
-## References
-
-* \[Beizer 1990] Boris Beizer, *Software Testing Techniques*, 2nd ed.
-* \[Roper 1994] Marc Roper, *Software Testing*
-* \[McCabe] Thomas McCabe, *A Complexity Measure* (1976)
-* \[RTCA DO-178C] Software Considerations in Airborne Systems and Equipment Certification
 
