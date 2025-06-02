@@ -406,24 +406,24 @@ Perry’s model {% cite perry_effective_1988 %} defines three types of relations
 
 Gilleis {% cite gillies_software_2011 %} presented its own model model and dicussed relationships which are often not commutative. This means that although attribute A may reinforce attribute B, attribute B may not reinforce attribute A.
 
-| Criteria                | R  | E  | I  | S  | U  | F  | EI | P  | U  | A  | T  | T  | A  | U  | C  |
-|-------------------------|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
-| **Reliability**          | O |+ |+ |O |O |O |O |O |O |O |O |O |O |O |O |
-| **Efficiency**           | O  | −  | −  | −  | −  | −  | −  | −  | O  | −  | +  | −  | −  | O  | −  |
-| **Integrity**            | +  | −  | +|+|O| −  | −  | +  | +  | −  | O  | O  | −  | O  | +  |    |   |
-| **Security**             | +  | −  | +|+|O| −  | −  | +  | +  | −  | O  | O  | −  | O  | −  |    |   |
-| **Understandability**    | O  | −  | O|O|+| O  | O  | O  |O| −  | −  | O  | O  | O  | O   |
-| **Flexibility**          | O  | −  | O|O|+| O  | O  | O  | O| −  | −  | O  | −  | O  |  -  |
-| **Ease of interfacing**  | O  | O  | +  | +  | +  | +  | +  | +  | −  | −  | O  | O  | O  | O  | O  |
-| **Portability**          | O  | −  | O  | O|O|+| +  | O|O | −  | O  | O  | O  | O | −  |
-| **User consultation**    | O  | O  | +  | O  | +  | O  | O  | O  | O  | −  | O  | O  | O  | O  | O |
-| **Accuracy**             | +  | O  | +  | +  | +  | O  | O  | O  | +  | −  | O  | O  | O  | O  | O |
-| **Timeliness**           | −  | O  | −  | −  | O  | −  | −  | −  | −  | −  | −  | −  | −  | O | −
-| **Time to use**          | +  | +  | O  | O  | −  | −  | −  | O  | O|O|+| +  | −  | O  | −  |   |
-| **Appeal**               | +  | +  | O  | +  | +  | +  | +  | +  | +  | +  | +  | +  | +  |
-| **User flexibility**     | O  | −  | O  | O|O|+| O|+ | +  | +  | O  | −  | O  | O  | O  |
-| **Cost/benefit**         | +  | +  | +  | +  | +  | +  | O  | O  | +  | +  | + |+  | O  |+|+|
-| **User friendliness**    | +  | O  | O  | O  | O  | O  | O  | O  | +  | O  |− | O  | +|+|O  |
+| Criteria                | R   | E   | I   | S   | U   | F   | EI  | P   | U   | A   | T   | T   | A   | U   | C   |
+| ----------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Reliability**         | O   | +   | +   | O   | O   | O   | O   | O   | O   | O   | O   | O   | O   | O   | O   |
+| **Efficiency**          | O   | −   | −   | −   | −   | −   | −   | −   | O   | −   | +   | −   | −   | O   | −   |
+| **Integrity**           | +   | −   | +   | +   | O   | −   | −   | +   | +   | −   | O   | O   | −   | O   | +   |
+| **Security**            | +   | −   | +   | +   | O   | −   | −   | +   | +   | −   | O   | O   | −   | O   | −   |
+| **Understandability**   | O   | −   | O   | O   | +   | O   | O   | O   | O   | −   | −   | O   | O   | O   | O   |
+| **Flexibility**         | O   | −   | O   | O   | +   | O   | O   | O   | O   | −   | −   | O   | −   | O   | -   |
+| **Ease of interfacing** | O   | O   | +   | +   | +   | +   | +   | +   | −   | −   | O   | O   | O   | O   | O   |
+| **Portability**         | O   | −   | O   | O   | O   | +   | +   | O   | O   | −   | O   | O   | O   | O   | −   |
+| **User consultation**   | O   | O   | +   | O   | +   | O   | O   | O   | O   | −   | O   | O   | O   | O   | O   |
+| **Accuracy**            | +   | O   | +   | +   | +   | O   | O   | O   | +   | −   | O   | O   | O   | O   | O   |
+| **Timeliness**          | −   | O   | −   | −   | O   | −   | −   | −   | −   | −   | −   | −   | −   | O   | −   |
+| **Time to use**         | +   | +   | O   | O   | −   | −   | −   | O   | O   | O   | +   | +   | −   | O   | −   |
+| **Appeal**              | +   | +   | O   | +   | +   | +   | +   | +   | +   | +   | +   | +   | +   |     |     |
+| **User flexibility**    | O   | −   | O   | O   | O   | +   | O   | +   | +   | +   | O   | −   | O   | O   | O   |
+| **Cost/benefit**        | +   | +   | +   | +   | +   | +   | O   | O   | +   | +   | +   | +   | O   | +   | +   |
+| **User friendliness**   | +   | O   | O   | O   | O   | O   | O   | O   | +   | O   | −   | O   | +   | +   | O   |
 
 *Figure. Gillies’ relational model of software quality criteria*
 *(**O** No relationship or that the relationship is heavily context-dependent,**+** Direct, **−** Inverse)*
