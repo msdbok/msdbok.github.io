@@ -15,4 +15,6 @@ _site/
 vendor/
 
 .obsidian/
-.DS_store/
+.DS_Store/
+.DS_Store*
+content/verif/.DS_Store

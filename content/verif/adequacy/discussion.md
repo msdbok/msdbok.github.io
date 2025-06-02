@@ -2,21 +2,21 @@
 title: Discussion
 parent: Adequacy
 nav_order: 10
-layout: mathjax
+layout: katex
 ---
 
+---
+TEST
+
+- $T$: coverage fraction (e.g., 0.7 for 70%)
+        
+- $p$: defect probability per statement
+        
+- $n$: number of code statements
+
+$Q_{\text{actual}}(T) = \left( \frac{1 - p}{1 - pT} \right)^n$        
 
 ---
-TEST mathjax
-
-Use `$$` on separate lines:
-
-$$
-\int_{-\infty}^\infty e^{-x^2} = \sqrt{\pi}
-$$
-
----
-
 
 
 # Does Coverage Represent Software Quality?
@@ -52,13 +52,13 @@ $$
 Q_{\text{actual}}(T) = \left( \frac{1 - p}{1 - pT} \right)^n
 $$
     
-    where:
+where:
     
-    - $$T$$: coverage fraction (e.g., 0.7 for 70%)
+- $$T$$: coverage fraction (e.g., 0.7 for 70%)
         
-    - $$p$$: defect probability per statement
+- $$p$$: defect probability per statement
         
-    - $$n$$: number of code statements
+- $$n$$: number of code statements
         
 
 ### Key Takeaway:
