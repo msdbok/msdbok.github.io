@@ -8,6 +8,21 @@ layout: default
 
 ## Modified Condition/Decision Coverage (MC/DC)
 
+{: .warning }
+TODO:
+
+## Motivation
+
+
+
+## All Multiple Conditions Coverage
+
+
+## Modified Condition/Decision Coverage (MC/DC)
+
+{: .warning }
+TODO: To be rewritten. It is currently mostly wrong.
+
 ### Definition
 
 MC/DC requires that:
