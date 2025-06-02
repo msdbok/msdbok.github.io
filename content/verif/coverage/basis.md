@@ -5,18 +5,11 @@ nav_order: 3
 layout: default
 ---
 
-# Basis Path Coverage
-
-Great! Here's a continuation of your study notes, formatted in the same clear, structured, and educational style. The new sections cover:
-
-* Basis Path Coverage
-* Modified Condition/Decision Coverage (MC/DC)
-* Mutation Coverage
-* Combinatorial Coverage
-
----
-
 ## Basis Path Coverage
+
+{: .highlight }
+Basis Path coverage is a practical alternative when All Path coverage requires too many test cases (almost everytime).
+
 
 ### Definition
 
@@ -36,7 +29,7 @@ Where:
 - $$P$$: Number of connected components (usually 1 for a single function/module)
 
 
-Alternativly, in simple cases, we may use:
+Alternativly, in simple cases (e.g. mostly IFs), we may use:
 
 $$
 V(G) = n+1
@@ -44,7 +37,7 @@ $$
 
 Where:
 
-- $$n$$: Number of predicates (e.g. IFs, WHILE, FOR, etc.)
+- $$n$$: Number of predicates (e.g. IFs)
 
 ### Advantages
 
@@ -252,7 +245,7 @@ $$
 
 | Property            | Basis Path Coverage                           | All Path Coverage                                            |
 | ------------------- | --------------------------------------------- | ------------------------------------------------------------ |
-| **# of test cases** | Linear in number of decisions (≤ n+1)         | Exponential: $$2^n$$ for n decisions                           |
+| **# of test cases** | Linear in number of decisions (n+1)         | Exponential: $$2^n$$ for n decisions                           |
 | **Goal**            | Cover all **edges** and **independent paths** | Cover **every possible execution path**                      |
 | **Feasibility**     | Practical                                     | Often infeasible (many paths may be redundant or untestable) |
 | **Redundancy**      | Minimal                                       | High (many paths may test the same logic repeatedly)         |
