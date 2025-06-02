@@ -10,26 +10,51 @@ layout: default
 {: .highlight }
 Basis Path coverage is a practical alternative when All Path coverage requires too many test cases (almost everytime).
 
-
 ## Definition
 
-Basis path coverage is a white-box testing technique that uses the program’s **control flow graph (CFG)** to identify a set of **linearly independent paths**.
-The goal is to execute each of these paths at least once.
+**Basis Path Coverage** requires exercising a set of paths such that:
 
-The number of basis paths is determined by **cyclomatic complexity**:
+* Each path runs **from the entry to the exit** point of the **Control Flow Graph (CFG)**.
+* Each path **introduces at least one edge** that is **not included** in any other path in the set.
 
-$$
-V(G) = E - N + 2P
-$$
+This forms a **linearly independent set of paths**, known as a **basis set**.
 
-Where:
+> ✅ **Note:** Basis Path Coverage **subsumes branch coverage**, since covering all paths in a basis ensures that **all edges** in the CFG are traversed.
 
-- $$E$$: Number of edges in the CFG
-- $$N$$: Number of nodes
-- $$P$$: Number of connected components (usually 1 for a single function/module)
+---
+
+### Rationale
+
+The main idea is to test each decision point **independently**:
+
+* Each new basis path **flips exactly one previously executed decision**, while keeping all other decisions the same.
+* This allows for detecting faults related to **individual decisions**, without relying on the interplay of multiple conditions.
+* **Loop coverage**:
+
+  * **Pre-test loops** (e.g., `while`, `for`) are executed:
+
+    * **Zero times** (to test loop exit immediately).
+    * **Once** (to test minimum loop entry).
+  * **Post-test loops** (e.g., `do-while`) are executed **twice** (to test the loop condition after at least one iteration).
+
+---
+
+### Advantages
+
+* ✅ Helps prevent **pathological test suites** that achieve statement or branch coverage without actually testing meaningful scenarios.
+* ✅ Known **upper bound** on number of test cases:
+
+  $$
+  \text{# basis paths} = \text{Cyclomatic Complexity} = V(G) = e - n + 2
+  $$
+
+  Where:
+
+  * $e$: number of edges
+  * $n$: number of nodes
 
 
-Alternativly, in simple cases (e.g. mostly IFs), we may use:
+* Alternativly, in simple cases (e.g. mostly IFs), we may use:
 
 $$
 V(G) = n+1
@@ -37,17 +62,34 @@ $$
 
 Where:
 
-- $$n$$: Number of predicates (e.g. IFs)
+   * $$n$$: Number of predicates (e.g. IFs)
 
-### Advantages
+* ✅ There is a well-defined **algorithm** to determine basis paths.
+* ✅ More efficient than exhaustive **All Path Coverage**.
 
-* Ensures thorough testing with relatively few test cases
-* Subsumes statement and branch coverage
+---
 
 ### Disadvantages
 
-* Can be hard to identify basis paths manually
-* Assumes all paths are feasible (some may not be)
+* ❌ May **miss faults** in **compound predicates**, where logical sub-conditions are not tested independently (see MCDC for stronger criteria).
+* ❌ **Unfeasible paths** in the CFG (paths that can never be executed due to semantic constraints) reduce the practical applicability of 100% basis path coverage.
+
+  * Causes:
+
+    * **Duplicated decisions** (e.g., same condition used twice in a row).
+    * **Data dependencies** that restrict path execution.
+  * These reduce the effectiveness of the method to detect faults.
+
+---
+
+### Philosophical Justification
+
+Every **decision** in a program corresponds to a **real-world situation** where the system must behave differently based on the input or state.
+
+> If a decision (branch outcome) is not tested, the **requirements-based verification process** has failed to check whether the system behaves correctly in that **real-world case**.
+
+* **Basis Path Testing** ensures that **each decision** is tested in **at least one operational context**.
+* It guarantees that **special cases** identified by the developers are validated during testing.
 
 
 ## Discussion
