@@ -29,16 +29,16 @@ Mutants are created by making small changes to the original program. Common type
 
 ### Program-Level Mutations
 
-|Mutation Type|Description|Example Change|
-|---|---|---|
-|Relational Operator|Change `>` to `>=`, `==` to `!=`, etc.|`if (x > 0)` → `if (x >= 0)`|
-|Conditional Operator|Change `&&` to `||
-|Arithmetic Operator|Change `+` to `-`, `*` to `/`, etc.|`x + y` → `x - y`|
-|Absolute Value|Introduce `abs()` functions unnecessarily|`x` → `abs(x)`|
-|Value Shifting|Increase/decrease constants by 1|`x = 10` → `x = 9`|
-|Variable Replacement|Replace one variable with another|`y = x` → `y = z`|
-|Constant Change|Change numeric or string constants|`"abc"` → `"xyz"`|
-|Inject "Bomb" Functions|Insert a function that throws an error|`if (x) ...` → `Bomb()`|
+| Mutation Type           | Description                               | Example Change               |
+| ----------------------- | ----------------------------------------- | ---------------------------- |
+| Relational Operator     | Change `>` to `>=`, `==` to `!=`, etc.    | `if (x > 0)` → `if (x >= 0)` |
+| Conditional Operator    | Change `AND` to `OR`                      |                              |
+| Arithmetic Operator     | Change `+` to `-`, `*` to `/`, etc.       | `x + y` → `x - y`            |
+| Absolute Value          | Introduce `abs()` functions unnecessarily | `x` → `abs(x)`               |
+| Value Shifting          | Increase/decrease constants by 1          | `x = 10` → `x = 9`           |
+| Variable Replacement    | Replace one variable with another         | `y = x` → `y = z`            |
+| Constant Change         | Change numeric or string constants        | `"abc"` → `"xyz"`            |
+| Inject "Bomb" Functions | Insert a function that throws an error    | `if (x) ...` → `Bomb()`      |
 
 ### Interface/Integration Mutations
 
