@@ -12,9 +12,9 @@ TEST
         
 - $p$: defect probability per statement
         
-- $n$: number of code statements
+- $$n$$: number of code statements
 
-$Q_{\text{actual}}(T) = \left( \frac{1 - p}{1 - pT} \right)^n$        
+$$Q_{\text{actual}}(T) = \left( \frac{1 - p}{1 - pT} \right)^n$$
 
 ---
 
