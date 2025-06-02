@@ -6,35 +6,149 @@ layout: default
 ---
 
 
-### Purpose-based testing
+# Purpose-Based Testing
 
-What things do we want to test? A non-exhaustive list of the software characteristic being tested
+**Purpose-based testing** focuses on **why** we are testing—not just whether code runs, but what characteristics of the software we want to validate. This approach ensures the system behaves correctly, efficiently, and robustly under a variety of conditions and usage scenarios.
 
-Functions. See that each function does what it’s supposed to do and not what it isn’t supposed to do
-Look for any data processed by the product. Look at outputs as well as inputs
-Decide which particular data to test with. Consider things like boundary values, typical values, convenient values, and invalid values
-Consider combinations of data worth testing together
+---
 
-Regression - Re-testing of something that was already working, usually with existing test cases, to provide confidence that the system under test (SUT) still functions correctly following modification or extension of the system (such as user enhancements or upgrades or following new builds or releases of the software)
+Here’s a non-exhaustive list of **software characteristics** typically targeted in purpose-based testing:
 
+## Functional Correctness
 
-Scenarios. Test to a compelling story. Do one thing after another
-Define test procedures or high level cases that incorporate multiple activities connected end-to-end 
-Don’t reset the system between tests. 
-Vary timing and ordering of events
+- **Functions:**  
+    Ensure each function:
+    
+    - Does **what it’s supposed to do**.
+        
+    - **Does not** do what it’s **not supposed to do**.
+        
+- **Data Handling:**
+    
+    - Analyze both **inputs and outputs**.
+        
+    - Consider:
+        
+        - **Typical values** (normal cases)
+            
+        - **Boundary values** (limits)
+            
+        - **Invalid values** (incorrect or out-of-range inputs)
+            
+        - **Convenient values** (for setup or debugging)
+            
+- **Input Combinations:**
+    
+    - Explore combinations of values that are **likely to interact**, such as:
+        
+        - Form fields submitted together
+            
+        - Configurations in tandem
+            
+        - State transitions
+            
 
-Efficiency. Does the system provide appropriate performance, relative to the amount of resources used, under stated conditions
+## Regression Testing
 
+> Re-testing previously working features to ensure they still behave correctly after changes.
 
-Performance testing
-Testing done to evaluate system’s response time, throughput and resource utilization
-Performed under “normal” operating conditions
+- Typically done using **existing test cases**.
+    
+- Helps confirm system integrity after:
+    
+    - Bug fixes
+        
+    - Feature enhancements
+        
+    - Version upgrades or builds
+        
 
-Load testing
-Process of exercising the system by feeding it the largest  specified task or workload
+---
 
-Stress testing
-Trying to break the system  with the purpose of assuring  that the system fails and recovers gracefully. This testing is performed by overwhelming the system’s resources or by taking them away from it beyond the specified conditions
+## Scenario-Based Testing
 
-Robustness Testing. Imagine calamities. The possibilities are endless. How will the system react to them?
+**Test a realistic usage flow**, not just isolated actions:
 
+- Develop test cases that form a **coherent story**.
+    
+    - Example: "User logs in → updates profile → logs out"
+        
+- Link **multiple activities** end-to-end into one test.
+    
+- Avoid **resetting system state** between steps—test as a real user would.
+    
+- **Vary the timing and order** of events:
+    
+    - E.g., submit form before all fields are filled, or perform actions in a different sequence.
+        
+
+This kind of testing helps uncover **integration issues** and **state-related bugs**.
+
+---
+
+## Efficiency and Performance Testing
+
+**Does the system use resources wisely under expected conditions?**
+
+### Performance Testing
+
+- Assesses:
+    
+    - **Response time**
+        
+    - **Throughput** (how much work is done in a time frame)
+        
+    - **Resource usage** (CPU, memory, bandwidth)
+        
+- Done under **normal load conditions**.
+    
+- Goal: verify the system performs **within acceptable thresholds**.
+    
+
+### Load Testing
+
+> “How does the system behave under **maximum expected usage**?”
+
+- Simulate **realistic peak usage scenarios**, such as:
+    
+    - Maximum number of concurrent users
+        
+    - Large data inputs
+        
+- Objective: ensure system does not slow down or fail.
+    
+
+### Stress Testing
+
+> “What happens when the system is **pushed beyond its limits**?”
+
+- Intentionally overwhelm or **deprive the system of resources**:
+    
+    - CPU, memory, network, disk I/O
+        
+- Observe if the system:
+    
+    - **Fails gracefully**
+        
+    - **Recovers** once conditions return to normal
+        
+- Helps ensure **stability and fault tolerance**.
+    
+
+---
+
+## Robustness Testing
+
+> “How well does the system **handle the unexpected**?”
+
+- Imagine and simulate **unexpected or extreme events**:
+    
+    - Power failure
+        
+    - Disk full
+        
+    - Malformed input
+        
+    - System API misbehavior
+        
+- Goal: assess the system’s **resilience and recovery behavior**.
