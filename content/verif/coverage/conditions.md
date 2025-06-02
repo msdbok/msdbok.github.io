@@ -5,11 +5,6 @@ nav_order: 4
 layout: default
 ---
 
-
-Here’s your slide content reformatted into clear, structured, and student-friendly study notes. I've explained key ideas, corrected grammar, added examples, and included Mermaid diagrams for control flow graphs (CFGs).
-
----
-
 # Multiple Condition Coverage & MC/DC
 
 ## Motivation
