@@ -5,13 +5,13 @@ nav_order: 3
 layout: default
 ---
 
-## Basis Path Coverage
+# Basis Path Coverage
 
 {: .highlight }
 Basis Path coverage is a practical alternative when All Path coverage requires too many test cases (almost everytime).
 
 
-### Definition
+## Definition
 
 Basis path coverage is a white-box testing technique that uses the program’s **control flow graph (CFG)** to identify a set of **linearly independent paths**.
 The goal is to execute each of these paths at least once.
@@ -50,7 +50,7 @@ Where:
 * Assumes all paths are feasible (some may not be)
 
 
-### Discussion
+## Discussion
 
 * Basis path testing uses **cyclomatic complexity** to define the number of **linearly independent paths** through a control flow graph (CFG).
 * It ensures that **each edge** in the graph is exercised at least once, but **not necessarily every possible path**.
@@ -255,7 +255,7 @@ So, for **n decision points**, Basis Path typically requires only $$n + 1$$ test
 
 
 
-## References
+### References
 
 * \[Beizer 1990] Boris Beizer, *Software Testing Techniques*, 2nd ed.
 * \[Roper 1994] Marc Roper, *Software Testing*
