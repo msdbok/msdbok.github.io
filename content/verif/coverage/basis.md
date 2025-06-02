@@ -85,7 +85,7 @@ Every **decision** in a program corresponds to a **real-world situation** where 
 * It guarantees that **special cases** identified by the developers are validated during testing.
 
 
-## Discussion
+## Examples
 
 * Basis path testing uses **cyclomatic complexity** to define the number of **linearly independent paths** through a control flow graph (CFG).
 * It ensures that **each edge** in the graph is exercised at least once, but **not necessarily every possible path**.

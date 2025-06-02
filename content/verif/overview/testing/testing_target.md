@@ -5,7 +5,7 @@ title: Targeted faults
 layout: default
 ---
 
-# 🎯 Testing Target Fault Model
+# Testing Target Fault Model
 
 Software testing aims to uncover faults by targeting likely problem areas using systematic or randomized strategies. Two main approaches are:
 
@@ -14,7 +14,7 @@ Software testing aims to uncover faults by targeting likely problem areas using 
 
 ---
 
-### 🧩 Partition-Based Testing
+## Partition-Based Testing
 
 **Definition**:
 Partition testing involves dividing the input domain into subsets called **partitions** or **equivalence classes**, where each class is assumed to behave similarly for all its values. A single representative value from each class is tested.
@@ -36,21 +36,21 @@ We want to minimize the number of test cases without missing potential faults. E
 
 ---
 
-### 🎲 Random Testing
+## Random Testing
 
-_Reference: When Only Random Testing Will Do Dick Hamlet, 2006 {% cite hamlet2006random %}_
+_Reference: When Only Random Testing Will Do, Dick Hamlet, 2006 {% cite hamlet2006random %}_
 
 **Definition**:
 Random testing systematically selects inputs from the entire input space using a random distribution. The goal is to explore software behavior without bias.
 
 > This is not just picking a few inputs by chance. It's a **deliberate**, **automated**, and **systematic** method of testing.
 
-#### Advantages:
+### Advantages:
 
 * Helps identify **abnormal outputs** or patterns not considered during design.
 * Especially useful when input space is large or poorly understood.
 
-#### The Oracle Problem:
+### The Oracle Problem:
 
 A core challenge in random testing is knowing the **correct output** for the randomly chosen inputs. This is called the **oracle problem**.
 
@@ -75,7 +75,7 @@ A core challenge in random testing is knowing the **correct output** for the ran
 
 ---
 
-### 🧪 Fuzz Testing
+###  Fuzz Testing
 
 **A form of random testing** where malformed or unexpected inputs are sent to the system to discover:
 
@@ -87,7 +87,7 @@ A core challenge in random testing is knowing the **correct output** for the ran
 
 ---
 
-### ✅ Summary Table
+## Summary Table
 
 | Category              | Key Idea                            | Examples                                | Goal                                      |
 | --------------------- | ----------------------------------- | --------------------------------------- | ----------------------------------------- |
