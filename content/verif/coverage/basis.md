@@ -111,7 +111,7 @@ Formally:
 
 **Decision:**
 
-```pseudo
+```fortran
 if (A and B) then
     action
 end if
@@ -187,7 +187,7 @@ flowchart TD
 
 **Original code:**
 
-```pseudo
+```fortran
 if x > 0 then
     y = 1
 end if
@@ -195,7 +195,7 @@ end if
 
 **Mutant:**
 
-```pseudo
+```fortran
 if x >= 0 then
     y = 1
 end if
@@ -266,7 +266,5 @@ T T F
 * \[McCabe] Thomas McCabe, *A Complexity Measure* (1976)
 * \[RTCA DO-178C] Software Considerations in Airborne Systems and Equipment Certification
 
----
 
-Would you like illustrations added for LCSAJ, Definition-Use (DU), or path-specific examples next?
 
