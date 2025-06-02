@@ -19,7 +19,8 @@ Basis Path coverage is a practical alternative when All Path coverage requires t
 
 This forms a **linearly independent set of paths**, known as a **basis set**.
 
-> ✅ **Note:** Basis Path Coverage **subsumes branch coverage**, since covering all paths in a basis ensures that **all edges** in the CFG are traversed.
+{: .note }
+Basis Path Coverage **subsumes branch coverage**, since covering all paths in a basis ensures that **all edges** in the CFG are traversed.
 
 ---
 
