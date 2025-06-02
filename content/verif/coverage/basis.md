@@ -42,16 +42,16 @@ The main idea is to test each decision point **independently**:
 ### Advantages
 
 * ✅ Helps prevent **pathological test suites** that achieve statement or branch coverage without actually testing meaningful scenarios.
-* ✅ Known **upper bound** on number of test cases:
+* ✅ Known **upper bound** on number of test cases, McCabe Cyclomatic Complexity {% cite mccabe1976complexity %} :
 
-  $$
+$$
   \text{# basis paths} = \text{Cyclomatic Complexity} = V(G) = e - n + 2
-  $$
+$$
 
-  Where:
+Where:
 
-  * $e$: number of edges
-  * $n$: number of nodes
+  * $$e$$: number of edges
+  * $$n$$: number of nodes
 
 
 * Alternativly, in simple cases (e.g. mostly IFs), we may use:
@@ -295,14 +295,6 @@ $$
 
 So, for **n decision points**, Basis Path typically requires only $$n + 1$$ test cases, while All Path Coverage requires $$2^n$$ — which grows very quickly.
 
-
-
 ### References
 
-* \[Beizer 1990] Boris Beizer, *Software Testing Techniques*, 2nd ed.
-* \[Roper 1994] Marc Roper, *Software Testing*
-* \[McCabe] Thomas McCabe, *A Complexity Measure* (1976)
-* \[RTCA DO-178C] Software Considerations in Airborne Systems and Equipment Certification
-
-
-
+{% bibliography --cited %}
