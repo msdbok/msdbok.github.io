@@ -53,16 +53,8 @@ Where:
   * $$e$$: number of edges
   * $$n$$: number of nodes
 
-
-* Alternativly, in simple cases (e.g. mostly IFs), we may use:
-
-$$
-V(G) = n+1
-$$
-
-Where:
-
-   * $$n$$: Number of predicates (e.g. IFs)
+{: .highlight }
+Alternativly, in simple cases, we may use $$V(G) = n+1$$, where $$n$$ is number of predicates (e.g. IFs).
 
 * ✅ There is a well-defined **algorithm** to determine basis paths.
 * ✅ More efficient than exhaustive **All Path Coverage**.
