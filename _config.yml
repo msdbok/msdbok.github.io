@@ -14,8 +14,6 @@ mermaid:
   # src_config: '/js/mermaid_config.js'
   version: "11.4.1"
 
-math: mathjax
-
 
 title: SQRBOK - Handbook
 author: Andrey Sadovykh
