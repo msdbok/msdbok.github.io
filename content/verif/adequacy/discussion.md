@@ -2,23 +2,8 @@
 title: Discussion
 parent: Adequacy
 nav_order: 10
-layout: katex
+layout: default
 ---
-
----
-TEST
-
-- $T$: coverage fraction (e.g., 0.7 for 70%)
-        
-- $p$: defect probability per statement
-        
-- $$n$$: number of code statements
-
-$$Q_{\text{actual}}(T) = \left( \frac{1 - p}{1 - pT} \right)^n$$
-
----
-
-
 # Does Coverage Represent Software Quality?
 
 ## Key Idea
