@@ -124,7 +124,7 @@ graph TD
     A6([End])
 
     A1 --> A2 --> A3
-    A3 -->|True| A4 --> A5 --> A6
+    A3 -->|True| A4 --> A5
     A3 -->|False| A5 --> A6
 ```
 
