@@ -4,14 +4,14 @@ layout: home
 nav_order: 1
 ---
 
-# Software Quality and Reliability 📘
+# Managing Software Development
 
-Welcome to the course notes repository for **Software Quality and Reliability** (with occasional insights on Security and other properties). 
+Welcome to the course notes repository for **Managing Software Development**.
 This resource aims to provide a comprehensive overview of key topics, combining theoretical foundations with practical applications. Whether you're a student, professional, or curious learner, these notes are here to guide you.
 
 ---
 
-## 📊 Overview  
+## Overview  
 
 Below is a visual overview of the key topics covered in this repository:
 
@@ -19,18 +19,18 @@ Below is a visual overview of the key topics covered in this repository:
 
 ---
 
-## 📂 Areas Covered  
+## Areas Covered  
 
-### 1. [Defining Quality](/content/define/) 👥  
-Understand the essence of software quality:  
-- Quality views and perspectives  
-- Quality models and metrics  
-- Evaluating the adequacy of quality measures  
+### 1. [People](/content/define/)
+Understand the essence of managing technical people:  
+- Technical person
+- Manading teams
+- Decision making
 
 ---
 
-### 2. [Organizing Quality](/sqrbok/organization/) 🔄  
-Explore how to manage and assure quality effectively:  
+### 2. [Processes](/content/proc/)
+Explore how to manage "human variability":  
 - The cost of quality  
 - Project-level quality management  
 - Quality processes in organizations  
@@ -38,7 +38,7 @@ Explore how to manage and assure quality effectively:
 
 ---
 
-### 3. [Verification and Validation](/content/verif/) 📏  
+### 3. [Requirements](/content/reqs/) 
 Learn methods to ensure software reliability and correctness:  
 - Functional testing (Black Box testing)  
 - Structural testing (White Box testing)  
@@ -46,7 +46,7 @@ Learn methods to ensure software reliability and correctness:
 
 ---
 
-### 4. [Quality Attributes](/sqrbok/attributes/) 🧩  
+### 4. [Scope](/content/scope/)
 Dive into key software quality attributes:  
 - Maintainability  
 - Reliability  
@@ -55,7 +55,25 @@ Dive into key software quality attributes:
 
 ---
 
-### 5. [Selected Materials](/sqrbok/material/) 📚  
+### 5. [Planning](/content/plan/)
+Dive into key software quality attributes:  
+- Maintainability  
+- Reliability  
+- Security  
+- Usability  
+
+---
+
+### 6. [Tracking](/content/track/)
+Dive into key software quality attributes:  
+- Maintainability  
+- Reliability  
+- Security  
+- Usability  
+
+---
+
+### 7. [Selected Materials](/content/material/)
 Access curated references and resources:  
 - Books  
 - Research papers  
@@ -70,10 +88,10 @@ Access curated references and resources:
 
 ---
 
-### 🎯 Objective  
+### Objective  
 
 These course notes aim to:  
-- Provide a structured and accessible overview of software quality and reliability topics.  
+- Provide a structured and accessible overview of Managing Software Development topics.  
 - Equip readers with insights that bridge theoretical concepts and real-world applications.  
 - Encourage collaboration and knowledge-sharing within the community.
 
