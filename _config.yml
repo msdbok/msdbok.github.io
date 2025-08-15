@@ -19,13 +19,13 @@ math: mathjax
 
 title: SQRBOK - Handbook
 author: Andrey Sadovykh
-description: "Software Quality and Reliability Course Handbook (SQRBOK) - Collection of resources and handouts"
+description: "Managing Software Development Course Handbook (MSDBOK) - Collection of resources and handouts"
 theme: just-the-docs
 
-url: https://msdbok.github.io/justdocs/
+url: https://msdbok.github.io/msd/
 
 aux_links:
-  Handbook Repo: https://github.com/msdbok/justdocs
+  Handbook Repo: https://github.com/msdbok/msd
 
 callouts_level: quiet # or loud
 callouts:
