@@ -1,5 +1,5 @@
 ---
-parent: Quality
+parent: People
 nav_order: 1
 title: Importance
 layout: default
