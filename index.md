@@ -21,7 +21,7 @@ Below is a visual overview of the key topics covered in this repository:
 
 ## 📂 Areas Covered  
 
-### 1. [Defining Quality](/sqrbok/definition/) 👥  
+### 1. [Defining Quality](/content/define/) 👥  
 Understand the essence of software quality:  
 - Quality views and perspectives  
 - Quality models and metrics  
@@ -38,7 +38,7 @@ Explore how to manage and assure quality effectively:
 
 ---
 
-### 3. [Verification and Validation](/sqrbok/verification/) 📏  
+### 3. [Verification and Validation](/content/verif/) 📏  
 Learn methods to ensure software reliability and correctness:  
 - Functional testing (Black Box testing)  
 - Structural testing (White Box testing)  
