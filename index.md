@@ -16,7 +16,7 @@ This resource provides a comprehensive, practical, and accessible guide to the k
 Explore the major areas covered in this course:
 
 ```mermaid
-graph TD
+graph LR
     A[Managing Software Development]
     A --> B[People]
     A --> C[Processes]
