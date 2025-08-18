@@ -6,107 +6,125 @@ nav_order: 1
 
 # Managing Software Development
 
-Welcome to the course notes repository for **Managing Software Development**.
-This resource aims to provide a comprehensive overview of key topics, combining theoretical foundations with practical applications. Whether you're a student, professional, or curious learner, these notes are here to guide you.
+Welcome to the course notes repository for **Managing Software Development**.  
+This resource provides a comprehensive, practical, and accessible guide to the key topics in the field. Whether you are an MS student, a professional, or simply curious, these notes are designed to support your learning and growth.
 
 ---
 
-## Overview  
+## Overview
 
-Below is a visual overview of the key topics covered in this repository:
+Explore the major areas covered in this course:
 
-![Overview of Topics](images/overview.png)  
+```mermaid
+graph TD
+    A[Managing Software Development]
+    A --> B[People]
+    A --> C[Processes]
+    A --> D[Scope]
+    A --> E[Planning]
+
+    B --> B1["What is a technical person?"]
+    B --> B2["Managing & motivating teams"]
+    B --> B3["Decision making"]
+
+    C --> C1["Project lifecycle stages"]
+    C --> C2["Process frameworks & models"]
+    C --> C3["Choosing the right process"]
+
+    D --> D1["Work Breakdown Structure (WBS)"]
+    D --> D2["Estimation methods"]
+
+    E --> E1["Agile vs. plan-driven"]
+    E --> E2["Milestone & activity planning"]
+    E --> E3["Critical path analysis"]
+```
 
 ---
 
-## Areas Covered  
+## Areas Covered
 
 ### 1. [People](/content/define/)
-Understand the essence of managing technical people:  
-- Technical person
-- Manading teams
-- Decision making
+Understand what makes technical teams tick:
+- What is a "technical person"?
+- Managing and motivating teams
+- Decision making in software projects
 
 ---
 
 ### 2. [Processes](/content/proc/)
-Explore how to manage "human variability":  
-- The cost of quality  
-- Project-level quality management  
-- Quality processes in organizations  
-- Organizational strategies for software quality  
+Learn how to manage the variability of human factors:
+- Project lifecycle stages
+- Process frameworks and models
+- Choosing the right process for your context
 
 ---
 
-### 3. [Requirements](/content/reqs/) 
-Learn methods to ensure software reliability and correctness:  
-- Functional testing (Black Box testing)  
-- Structural testing (White Box testing)  
-- Static analysis techniques  
+### 3. [Requirements](/content/reqs/)
+Master the art of managing expectations and risks:
+- Understanding customer needs
+- Requirements gathering and management
+- Risk identification and mitigation
 
 ---
 
 ### 4. [Scope](/content/scope/)
-Dive into key software quality attributes:  
-- Maintainability  
-- Reliability  
-- Security  
-- Usability  
+Define and estimate project boundaries:
+- Work Breakdown Structure (WBS)
+- Estimation methods for time and effort
 
 ---
 
 ### 5. [Planning](/content/plan/)
-Dive into key software quality attributes:  
-- Maintainability  
-- Reliability  
-- Security  
-- Usability  
+Plan for quality and success:
+- Agile vs. plan-driven approaches
+- Milestone and activity planning
+- Critical path analysis
 
 ---
 
 ### 6. [Tracking](/content/track/)
-Dive into key software quality attributes:  
-- Maintainability  
-- Reliability  
-- Security  
-- Usability  
+Monitor progress and adapt:
+- Release planning (Buffered MoSCoW method)
+- Tracking and control (Earned Value, etc.)
 
 ---
 
 ### 7. [Selected Materials](/content/material/)
-Access curated references and resources:  
-- Books  
-- Research papers  
-- Guides and online courses  
+Access curated resources to deepen your understanding:
+- Books
+- Research papers
+- Guides and online courses
 
 ---
 
-## Resources  
+## Resources
 
-- **Contribution Template**: [Get started with the contribution template](/content/template/)  
-  Help us improve these notes by following the provided contribution guidelines.
+- **Contribution Template**: [Start contributing here](/content/template/)  
+  Help us improve these notes by following the provided guidelines.
 
 ---
 
-### Objective  
+### Objective
 
-These course notes aim to:  
-- Offer a structured and accessible overview of Managing Software Development topics.  
-- Bridge the gap between theory and real-world practice, equipping readers with actionable insights.  
-- Foster collaboration and knowledge-sharing within the software development community.
+These course notes aim to:
+- Provide a structured and accessible overview of Managing Software Development topics.
+- Equip readers with insights that bridge theory and real-world application.
+- Encourage collaboration and knowledge-sharing within the software development community.
 
 **Approach:**  
 - Focus on breadth over depth, introducing a wide range of concepts and practices.
 - Present current and leading industry techniques, highlighting their strengths and limitations.
 - Emphasize understanding the differences between approaches, rather than immediate mastery.
-- Encourage critical thinking:  
-    - Reason about which techniques to apply in different contexts  
-    - Justify your choices with clear arguments  
+- Encourage critical thinking:
+    - Reason about which techniques to apply in different contexts
+    - Justify your choices with clear arguments
     - Explicitly state your assumptions, based on available facts
 
 Our goal is to help you build a foundation for making informed decisions in software development management.
 
-
 ---
 
 Feel free to explore, contribute, and enhance your understanding of software quality and reliability!
+
+{: .highlight }
+**Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
