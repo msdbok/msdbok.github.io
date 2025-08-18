@@ -1,5 +1,6 @@
 ---
-title: People
-nav_order: 2
+parent: People
+title: Teams
+nav_order: 3
 layout: default
 ---
