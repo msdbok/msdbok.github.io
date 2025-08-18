@@ -9,6 +9,8 @@ layout: default
 
 ## Why do so many projects fail?
 
+![CHAOS 2015](image.png)
+
 The Standish Group CHAOS report (2015) claims:
 - **19%** of projects failed outright
 - **45%** were "challenged" (late, over budget, or missing key features)
@@ -32,6 +34,8 @@ Yet, software development remains unpredictable compared to other engineering di
 
 ### Software is Different
 
+![Dilbert complexity](image-1.png)
+
 - **Orders of magnitude complexity**: Software systems can be vastly more complex than physical systems.
 - **Intangible**: You can't touch or see software; it's abstract.
 - **Perceived as "soft"**: Easy to change, but changes can have unexpected consequences.
@@ -45,6 +49,8 @@ Yet, software development remains unpredictable compared to other engineering di
 
 ### The Human Variable
 
+![Dilbert motivation](image-2.png)
+
 - **#1 problem for managers:** How to motivate people?
 - **Standardization challenges:**  
     - Experience varies  
@@ -54,6 +60,8 @@ Yet, software development remains unpredictable compared to other engineering di
 - **First fit problem:** Matching people to tasks is rarely perfect.
 
 ### Constraining the Human Variable
+
+![Dilber process](image-3.png)
 
 - **Processes:**  
     - Define acceptable behavior norms  
