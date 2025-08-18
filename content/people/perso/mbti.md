@@ -7,8 +7,7 @@ layout: default
 
 # MBTI: An Example of Personality Typing
 
-The Myers-Briggs Type Indicator (MBTI) is a popular framework for understanding personality differences.  
-It is based on research by Carl Jung, Katherine C. Briggs, and Isabel Briggs Myers.
+The Myers-Briggs Type Indicator (MBTI) is a popular framework for understanding personality differences. It is based on research by **Carl Jung, Katherine C. Briggs, and Isabel Briggs Myers**.
 
 ## Four Basic Personality Areas
 
@@ -43,9 +42,11 @@ It is based on research by Carl Jung, Katherine C. Briggs, and Isabel Briggs Mye
 Research shows that the distribution of MBTI types among software engineers is very different from the general US population.
 
 ![MBTI US population](image-3.png)
+
 *MBTI distribution in the general US population*
 
 ![MBTI SE](image-7.png)
+
 *MBTI distribution among software engineers*
 
 ### Notable MBTI Differences in Software Engineers
