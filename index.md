@@ -81,9 +81,9 @@ Access curated references and resources:
 
 ---
 
-## 🛠️ Resources  
+## Resources  
 
-- **Contribution Template**: [Get started with the contribution template](/sqrbok/template/)  
+- **Contribution Template**: [Get started with the contribution template](/content/template/)  
   Help us improve these notes by following the provided contribution guidelines.
 
 ---
@@ -91,9 +91,21 @@ Access curated references and resources:
 ### Objective  
 
 These course notes aim to:  
-- Provide a structured and accessible overview of Managing Software Development topics.  
-- Equip readers with insights that bridge theoretical concepts and real-world applications.  
-- Encourage collaboration and knowledge-sharing within the community.
+- Offer a structured and accessible overview of Managing Software Development topics.  
+- Bridge the gap between theory and real-world practice, equipping readers with actionable insights.  
+- Foster collaboration and knowledge-sharing within the software development community.
+
+**Approach:**  
+- Focus on breadth over depth, introducing a wide range of concepts and practices.
+- Present current and leading industry techniques, highlighting their strengths and limitations.
+- Emphasize understanding the differences between approaches, rather than immediate mastery.
+- Encourage critical thinking:  
+    - Reason about which techniques to apply in different contexts  
+    - Justify your choices with clear arguments  
+    - Explicitly state your assumptions, based on available facts
+
+Our goal is to help you build a foundation for making informed decisions in software development management.
+
 
 ---
 
