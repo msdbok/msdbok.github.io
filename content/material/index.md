@@ -13,3 +13,9 @@ layout: default
 
 - Paul Glen, “Leading Geeks”
 - Lani Arredondo, Communicating Effectively
+
+# Papers
+
+## People
+
+Capretz, Luiz Fernando. "Personality types in software engineering." International Journal of Human-Computer Studies 58.2 (2003): 207-214.
