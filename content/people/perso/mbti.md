@@ -48,38 +48,54 @@ Research shows that the distribution of MBTI types among software engineers is v
 ![MBTI SE](image-2.png)
 *MBTI distribution among software engineers*
 
-### Huge disproportion/difference examples:
-- **ISTJ:** 2x more common among software engineers (24% vs 12%)
-- **ISFJ:** 10x more common
-- **INTJ:** 3x more common
-- **ESFP:** 8x more common
+### Notable MBTI Differences in Software Engineers
+
+Research highlights significant differences between the MBTI profiles of software engineers and the general US population:
+
+- **ISTJ:** About twice as common among software engineers (24% vs 12%).  
+  *ISTJs are detail-oriented, logical, and reliable—traits that fit well with the demands of software development.*
+- **ISFJ:** About five times less common among software engineers.  
+  *ISFJs tend to be more focused on harmony and personal values, which may be less emphasized in technical roles.*
+- **INTJ:** Roughly three times more common among software engineers.  
+  *INTJs are strategic, independent, and enjoy solving complex problems—qualities highly valued in engineering.*
+- **ESFP:** About eight times less common among software engineers.  
+  *ESFPs are outgoing and spontaneous, preferring hands-on activities and social interaction, which are less central in most software roles.*
 
 ---
 
-## How can this be explained?
+## Why is this the case?
 
 Software engineering tends to attract people who:
-- Prefer working independently or in small groups (Introverts)
-- Value logic, structure, and detail (Thinking, Judging, Sensing)
-- Enjoy solving complex problems and thinking abstractly (Intuitive, Thinking)
-- Appreciate clear goals and organized environments (Judging)
+- Prefer working independently or in small groups (**Introverts**)
+- Value logic, structure, and detail (**Thinking**, **Judging**, **Sensing**)
+- Enjoy solving complex problems and thinking abstractly (**Intuitive**, **Thinking**)
+- Appreciate clear goals and organized environments (**Judging**)
 
 **Example:**  
-An ISTJ (Introverted, Sensing, Thinking, Judging) may thrive in roles requiring careful analysis, attention to detail, and methodical problem-solving—traits highly valued in software development.
+An ISTJ (Introverted, Sensing, Thinking, Judging) may thrive in roles requiring careful analysis, attention to detail, and methodical problem-solving—traits highly valued in software development.  
+An INTJ (Introverted, Intuitive, Thinking, Judging) might excel at designing system architecture or developing innovative solutions, thanks to their strategic and analytical mindset.
 
 ---
 
-## How can this knowledge be used in leading software engineers?
+## Applying MBTI Insights to Team Leadership
 
 Understanding MBTI profiles can help managers:
-- **Tailor communication:** Introverts may prefer written updates or one-on-one meetings; extraverts may enjoy group discussions.
-- **Assign tasks:** Judging types may excel at planning and deadlines; Perceiving types may be better at adapting to change and brainstorming.
-- **Motivate teams:** Thinking types respond well to logical arguments and clear goals; Feeling types appreciate recognition and team harmony.
-- **Build balanced teams:** Mix personality types to cover strengths and weaknesses (e.g., pair detail-oriented ISTJs with big-picture INTJs).
+
+- **Tailor communication:**  
+  - *Introverts* may prefer written updates or one-on-one meetings.  
+  - *Extraverts* may enjoy group discussions and brainstorming sessions.
+- **Assign tasks:**  
+  - *Judging types* often excel at planning, meeting deadlines, and organizing work.  
+  - *Perceiving types* may be better at adapting to change, handling uncertainty, and generating creative ideas.
+- **Motivate teams:**  
+  - *Thinking types* respond well to logical arguments, clear goals, and constructive feedback.  
+  - *Feeling types* appreciate recognition, team harmony, and supportive environments.
+- **Build balanced teams:**  
+  - Mix personality types to cover strengths and weaknesses.  
+  - For example, pair detail-oriented ISTJs with big-picture INTJs, or add Perceiving types to encourage flexibility and innovation.
 
 **Example:**  
-If your team is mostly INTJs and ISTJs, you may need to consciously encourage brainstorming and creative risk-taking, or add more Perceiving types to foster adaptability.
-
+If your team is mostly INTJs and ISTJs, you may need to consciously encourage brainstorming and creative risk-taking, or recruit more Perceiving types to foster adaptability and openness to new
 ---
 
 {: .highlight }
