@@ -1,6 +1,6 @@
 ---
 parent: Persona
-title: MBTI
-nav_order: 3
+title: Leadership
+nav_order: 5
 layout: default
 ---
