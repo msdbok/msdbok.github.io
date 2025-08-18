@@ -1,7 +1,7 @@
 ---
 parent: People
 nav_order: 1
-title: Introduction
+title: Intro
 layout: default
 ---
 
