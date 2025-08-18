@@ -42,10 +42,10 @@ It is based on research by Carl Jung, Katherine C. Briggs, and Isabel Briggs Mye
 
 Research shows that the distribution of MBTI types among software engineers is very different from the general US population.
 
-![MBTI US population](image-1.png)
+![MBTI US population](image-3.png)
 *MBTI distribution in the general US population*
 
-![MBTI SE](image-2.png)
+![MBTI SE](image-7.png)
 *MBTI distribution among software engineers*
 
 ### Notable MBTI Differences in Software Engineers
