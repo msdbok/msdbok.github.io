@@ -19,3 +19,6 @@ layout: default
 ## People
 
 Capretz, Luiz Fernando. "Personality types in software engineering." International Journal of Human-Computer Studies 58.2 (2003): 207-214.
+
+Goleman, Daniel. "Leadership that gets results." Leadership perspectives. Routledge, 2017. 85-96.
+
