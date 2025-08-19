@@ -1,7 +1,7 @@
 ---
 parent: Persona
 title: Leadership
-nav_order: 5
+nav_order: 4
 layout: default
 ---
 
