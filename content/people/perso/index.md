@@ -1,6 +1,6 @@
 ---
 parent: People
-title: Persona
+title: Personality
 nav_order: 2
 layout: default
 ---

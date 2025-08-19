@@ -1,5 +1,5 @@
 ---
-parent: Persona
+parent: Personality
 title: Culture
 nav_order: 5
 layout: default

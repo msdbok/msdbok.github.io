@@ -1,5 +1,5 @@
 ---
-parent: Persona
+parent: Personality
 title: Leadership
 nav_order: 4
 layout: default

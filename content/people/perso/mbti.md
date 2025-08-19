@@ -1,5 +1,5 @@
 ---
-parent: Persona
+parent: Personality
 title: MBTI
 nav_order: 3
 layout: default
