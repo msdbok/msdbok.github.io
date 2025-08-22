@@ -4,21 +4,40 @@ nav_order: 8
 layout: default
 ---
 
+# Materials & References
 
-# Course books
-- Presmann
-- Tsui  
+A curated list of books, papers, and resources referenced throughout the course.
 
-# Books metioned in notes
+---
 
-- Paul Glen, “Leading Geeks”
-- Lani Arredondo, Communicating Effectively
+## Course Books
 
-# Papers
+- **Roger S. Pressman**  
+  *Software Engineering: A Practitioner's Approach*. Palgrave Macmillan, 2005.
 
-## People
+- **Frank Tsui, Orlando Karam, Barbara Bernal**  
+  *Essentials of Software Engineering*. Jones & Bartlett Learning, 2022.
 
-Capretz, Luiz Fernando. "Personality types in software engineering." International Journal of Human-Computer Studies 58.2 (2003): 207-214.
+---
 
-Goleman, Daniel. "Leadership that gets results." Leadership perspectives. Routledge, 2017. 85-96.
+## Books Mentioned in Notes
 
+- **Paul Glen**  
+  *Leading Geeks: How to Manage and Lead the People Who Deliver Technology*. John Wiley & Sons, 2002.
+
+- **Lani Arredondo**  
+  *Communicating Effectively*
+
+---
+
+## Key Papers
+
+### People
+
+- **Luiz Fernando Capretz**  
+  "Personality types in software engineering."  
+  *International Journal of Human-Computer Studies* 58.2 (2003): 207-214.
+
+- **Daniel Goleman**  
+  "Leadership that gets results."  
+  In *Leadership Perspectives*. Routledge, 2017. pp.
