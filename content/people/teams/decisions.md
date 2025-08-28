@@ -1,146 +1,188 @@
 ---
 parent: Teams
-title: Motivation
-nav_order: 4
+title: Decision Making
+nav_order: 5
 layout: default
 ---
 
-# Teams Problems & Motivation
+# Teams Problems: Decision Making
 
-## The Classic Team Story
+## Basics
 
-A very common scenario in teams:
+### Decision Levels
 
-> "This is the story of four people named Everybody, Somebody, Anybody, and Nobody.  
-> There was an important job to be done and Everybody was asked to do it.  
-> Anybody could have done it, but Nobody did it. Somebody got angry about that because it was Everybody's job.  
-> Everybody thought Anybody could do it, but Nobody realized that Everybody wouldn't do it.  
-> Consequently, it wound up that Nobody told Anybody, so Everybody blamed Somebody."
+- **Operational:**  
+  Everyday decisions, often made quickly with little structure.  
+  *Example:* Assigning today’s coding task or approving a pull request.
 
-**Lesson:**  
-Lack of clarity in roles and accountability leads to confusion, frustration, and blame.
+- **Tactical:**  
+  Medium-term decisions that support strategy and direct resources.  
+  *Example:* Choosing a testing framework for the project.
 
-**Software Example:**  
-In a Scrum team, if “Everybody” assumes someone else will write unit tests, tests never get written. The sprint fails, and “Somebody” complains—but no one feels directly responsible.
-
----
-
-## Social Loafing & The Freerider Problem
-
-**Social Loafing**  
-(Source: Greenberg, 1996, *Managing Behaviors in Organizations*)  
-People in groups or teams often don’t work as hard as they do when working alone.  
-While team performance increases with team size, the rate of increase slows down—sometimes individual effort drops. A few motivated members carry the workload, while others contribute less.
-
-![Dilbert Freerider](image.png)
-
-### What is the Freerider Problem?
-
-- **Free riders** are team members who contribute less, relying on others to carry the workload.
-
-#### Causes of Social Loafing
-
-- **Diffusion of responsibility:**  
-  It’s difficult to distinguish individual contributions, so people feel less accountable.
-- **Lack of recognition:**  
-  People don’t feel their efforts will be noticed or rewarded.
-- **Dispensability of effort:**  
-  Members may feel their work isn’t essential or impactful.
-- **Sucker aversion:**  
-  Fear of being taken advantage of—doing all the work and getting little credit.
-
-**Software Example:**  
-In a hackathon, one person ends up coding all night while others just brainstorm, then all claim equal credit.
+- **Strategic:**  
+  Long-term decisions about direction, goals, values.  
+  *Example:* Deciding to adopt Agile development across the organization.
 
 ---
 
-## Enhancing Team Performance
+### Major Problem – Analysis Paralysis
 
-(Source: Leigh Thompson, *Making the Team*)
+When teams spend too much time analyzing options, they fail to act.
 
-- **Increase identifiability:**  
-  Make individual contributions visible and recognized.
-- **Promote involvement:**  
-  Encourage active participation and engagement from all members.
-- **Reward team members for performance:**  
-  Use incentives and recognition to motivate effort.
-- **Strengthen team cohesion:**  
-  Build trust, shared goals, and a sense of belonging.
-
-### How to Strengthen Teams
-
-- **Increase personal responsibility:**  
-  Assign clear roles and tasks.
-- **Provide team performance and review feedback:**  
-  Give constructive feedback regularly.
-- **Maintain appropriate staffing levels:**  
-  Avoid teams that are too large or too small for the task.
-
-**Tip:**  
-Feedback and accountability should be positive and supportive, not punitive.  
-Celebrate successes and address issues constructively.
+- **Buridan’s Ass:** A paradox where too many choices prevent decision.
+- **Focus on drawbacks:** Overemphasis on risks stalls progress.
+- **Result:** Delay, lost opportunities, wasted energy.
 
 ---
 
-## Additional Motivational Theories for Teams
+### Basic Techniques
 
-### 1. Herzberg’s Two-Factor Theory
-
-- **Motivators:** Achievement, recognition, responsibility, growth.
-- **Hygiene factors:** Pay, working conditions, policies (removes dissatisfaction but doesn’t motivate by itself).
-
-*Example:*  
-Developers stay motivated when trusted to design solutions (motivator), but poor tooling (hygiene) can frustrate them.
-
-### 2. Self-Determination Theory (Deci & Ryan)
-
-People are motivated when three needs are met:
-- **Autonomy:** Control over work.
-- **Competence:** Ability to grow skills.
-- **Relatedness:** Belonging to a team.
-
-*Example:*  
-Giving a developer freedom to choose a framework (autonomy), providing learning resources (competence), and fostering supportive stand-ups (relatedness).
-
-### 3. Expectancy Theory (Vroom)
-
-Motivation depends on:
-- **Expectancy:** Effort → performance link.
-- **Instrumentality:** Performance → reward link.
-- **Valence:** Value of the reward.
-
-*Example:*  
-If a developer knows that fixing bugs quickly (effort) will be noticed (performance) and lead to recognition or promotion (reward), they’re more motivated.
+- **T-Chart (+/–):** Compare pros and cons.
+- **SWOT Analysis:** Strengths, Weaknesses, Opportunities, Threats.
+- **Pareto Analysis (80/20 Rule):** Focus on the small % of causes that yield big results.
+- **Pair-Wise Comparison:** Compare options against each other, one by one.
+- **Cost-Benefit Analysis:** Compare expected gains vs. expected costs.
 
 ---
 
-## Practical Motivation Techniques in Software Teams
+### Decision Making Model
 
-- **Gamification:** Use leaderboards for bug fixes, coding challenges, or test coverage.
-- **Visible progress:** Kanban boards or burndown charts to show team achievements.
-- **Celebrating wins:** End-of-sprint demos and pizza Fridays to acknowledge progress.
-- **Peer recognition:** “Kudos” channels in Slack or Trello cards highlighting contributions.
-- **Job rotation:** Switch between front-end, back-end, and testing tasks to keep skills fresh.
-- **Team rituals:** Regular stand-ups, retrospectives, or fun check-ins to build team spirit.
+(*Source: Hoover et al, Evaluating Project Decisions*)
+
+**Inputs**
+- Problem (requirements, constraints)
+- Assumptions
+- Knowledge (facts, data)
+- Experience (skills, intuition)
+
+**Decision Process**
+- Select and apply a decision technique (e.g., SWOT, cost-benefit).
+
+**Outputs**
+- Solution chosen
+- Assumed risks documented
+
+---
+
+## Influencing Factors
+
+### Decision-Driven Organizations
+
+(*Source: Rogers & Blenko*)
+
+- Some decisions matter more than others → focus on high-impact ones.
+- Action is the goal (Standish Report).
+- Ambiguity is the enemy → clarify.
+- Speed & adaptability are crucial.
+- Roles > org chart → empower decision-owners.
+- Fear of overstepping must be overcome.
+- Well-aligned organizations reinforce roles.
+- Practice builds capability: “practicing beats preaching.”
+
+**Core problem:**  
+How much information is “enough” before deciding?
+
+---
+
+### Intuitive Decision Making
+
+(*Source: Gary Klein, The Power of Intuition*)
+
+- **Definition:** Translating experience into action, often without formal analysis.
+- **Origins:** Firefighters, military, police — high-pressure environments.
+- **Premise:** Intuition is a skill → can be built, applied, safeguarded.
+
+**Advantages**
+- Very fast, based on pattern recognition.
+- Allows action under uncertainty and time pressure.
+
+**Risks**
+- Over-reliance on familiar patterns → blind spots.
+- Experienced people can still make fatal mistakes (“Deep Survival” – Gonzales).
+- Low risk ≠ no risk.
+
+**Barriers**
+- Rigid policies, remote/distributed teams, turnover, constant change.
+- Procedures, metrics-driven culture, IT constraints.
+
+---
+
+### Theory of Thin Slicing
+
+(*Source: Malcolm Gladwell, Blink*)
+
+- **Definition:** Ability to make accurate judgments based on very small “slices” of information.
+
+**Examples**
+- **John Gottman’s Love Lab:** Predicting relationship success by coding emotional signals (SPAFF).
+- **Military interceptors:** Interpreting Morse code patterns.
+- **Medical research (Levinson, Ambadi):** Malpractice risk depends on *tone* and *empathy*, not just content.
+
+**Key Point:**  
+Thin slicing is part of human cognition, not a rare talent.
+
+---
+
+### Time and Decision Making
+
+(*Source: Gary Klein*)
+
+**Chess Experiment**
+- Blitz vs. regular → skilled players made similar % of good moves.
+
+**Observations**
+- Skilled decision makers can make good choices even under pressure.
+- Often their *first considered action* is already a good one.
+
+---
+
+### Group Decision Making
+
+(*Source: Marlene K. Rebori*)
+
+**Common outcomes in groups:**
+- No decision (paralysis)
+- Self-appointed decision maker
+- Minority rule
+- Majority rule
+- Consensus
+
+**How to choose method?**
+- Based on timeliness, appropriateness, relationships.
+
+**Problems in group decisions**
+- Deciding too soon (rushing).
+- Analysis paralysis (stalling).
+- No clear criteria.
+- Poor listening → debate instead of dialogue.
+- Perceptions of unfairness.
+- Groupthink / *Abilene Paradox* (agreement without real support).
 
 ---
 
 ## Sources
 
-- Greenberg, Jerald. *Managing Behavior in Organizations: Science in Service to Practice*. 2nd ed., Prentice Hall, 1999.
-- Thompson, Leigh L. *Making the Team: A Guide for Managers*. 6th ed., Pearson Education, 2017.
-- Baron, Robert A., and Jerald Greenberg. *Behavior in Organizations*. 9th ed., Pearson, 2008.
-- Herzberg, Frederick. "One More Time: How Do You Motivate Employees." Vol. 65, Harvard Business Review, Boston, MA, 1968.
-- Deci, Edward L., and Richard M. Ryan. “Self-Determination Theory.” *Handbook of Theories of Social Psychology*, Vol. 1, Ch. 20, 2012, pp. 416-436.
-- Vroom, Victor H., Lyman W. Porter, and Edward E. Lawler. “Expectancy Theories.” In *Organizational Behavior*, Vol. 1, Routledge, 2015, pp. 94-113.
-- Wikipedia contributors. "Social loafing." Wikipedia, Wikimedia Foundation. https://en.wikipedia.org/wiki/Social_loafing
+- **Hoover, C. L., Rosso-Llopart, M., & Taran, G.**  
+  *Evaluating Project Decisions: Case Studies in Software Engineering*. Addison-Wesley Professional, 2009.
+
+- **Blenko, M. W., Mankins, M. C., & Rogers, P.**  
+  *The Decision-Driven Organization*. Harvard Business Review, June 2010.
+
+- **Rogers, P. & Blenko, M.**  
+  *Who Has the D? How Clear Decision Roles Enhance Organizational Performance*. Harvard Business Review.
+
+- **Klein, G.**  
+  *Sources of Power: How People Make Decisions*. MIT Press, 1998.
+
+- **Gladwell, M.**  
+  *Blink: The Power of Thinking Without Thinking*. Little, Brown, 2005.
+
+- **Ambady, N. & Rosenthal, R.**  
+  Thin Slicing Research (Psychology studies referenced in *Blink*).
+
+- **Gonzales, L.**  
+  *Deep Survival*. WW Norton & Company, 2003.
 
 ---
-
-{: .highlight }
-**Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
-
----
-
 {: .highlight }
 **Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
