@@ -148,6 +148,17 @@ Three major cycles to manage for team success:
 - Redirection
 - *Example:* Pivoting project direction after stakeholder feedback.
 
+## Sources
+
+- Thompson, Leigh L. *Making the Team: A Guide for Managers*, 3rd ed. Pearson Education, 2008.
+- Steiner, I. D. (1966). Models for inferring relationship between group size and potential productivity. *Behavioural Science*, 11, 273–283.
+- Steiner, I. D. (1972). *Group process and productivity*. New York: Academic Press.
+- Steiner, I. D. (1974). Whatever happened to the group in social psychology? *Journal of Experimental Social Psychology*, 10, 94–108.
+- Steiner, I. D. (1976). Task-performing groups. In J. W. Thibaut, J. T. Spence, & R. C. Carson (Eds.), *Contemporary topics in social psychology* (pp. 393–422). Morristown, NJ: General learning Press.
+- Steiner, I. D. (1983). Whatever happened to the touted revival of the group? In H. H. Blumberg, P. A. Hare, M. V. Kent, & M. Davies (Eds.), *Small groups and social interaction* (pp. 539–547). New York: John Wiley & Sons Ltd.
+- Steiner, I. D. (1986). Paradigms and groups. *Advances in Experimental Social Psychology*, 19, 251–289.
+- Tuckman, Bruce W. “Developmental Sequence in Small Groups.” *Psychological Bulletin*, vol. 63, no. 6, 1965, pp. 384–399. Adjourning added later in: Tuckman, Bruce W., and Mary Ann C. Jensen. “Stability and Changes in Group Development.” *Group & Organizational Studies*, vol. 2, no. 4, 1977, pp. 419–427.
+
 ---
 
 {: .highlight }
