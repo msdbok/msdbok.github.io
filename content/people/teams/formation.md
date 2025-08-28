@@ -86,6 +86,14 @@ When forming a software development team, consider three key areas (Source: Thom
 
 Tuckman’s model describes how teams evolve through five stages. Understanding these helps software teams work more effectively.
 
+```mermaid
+flowchart LR
+    A[Forming<br/>- Getting to know each other<br/>- Roles unclear] --> B[Storming<br/>- Conflicts arise<br/>- Power struggles]
+    B --> C[Norming<br/>- Rules established<br/>- Team cohesion]
+    C --> D[Performing<br/>- High trust<br/>- Effective collaboration]
+    D --> E[Adjourning<br/>- Project ends<br/>- Reflection & closure]
+```
+
 ### 1. Forming
 - **Definition:** Team members meet and start to understand the project.
 - **Characteristics:** Polite, uncertain, roles unclear, leader-driven.
