@@ -43,6 +43,9 @@ When teams spend too much time analyzing options, they fail to act.
 - **Pair-Wise Comparison:** Compare options against each other, one by one.
 - **Cost-Benefit Analysis:** Compare expected gains vs. expected costs.
 
+**Software example:** Pareto Analysis helps software teams find the few issues that cause most pain. For example, a team collects bug reports and measures user impact and frequency. Sorting defects by cumulative user-reported incidents reveals that 20% of bugs account for roughly 80% of errors and customer complaints. The team prioritizes those high-impact defects, fixes them, and reduces support load dramatically. Developers pair-code on the top items, add regression tests, and monitor metrics to confirm improvement. By focusing limited time on the critical minority, the team delivers faster value and frees capacity for new features and improves customer satisfaction each release.
+
+
 ---
 
 ### Decision Making Model
