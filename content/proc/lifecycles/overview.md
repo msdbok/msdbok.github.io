@@ -13,6 +13,14 @@ This page outlines seven widely used lifecycle models—**Waterfall, V-Model, It
 
 ## Waterfall
 
+```mermaid
+flowchart TD
+    A[Requirements] --> B[Design]
+    B --> C[Implementation]
+    C --> D[Testing]
+    D --> E[Deployment & Maintenance]
+```
+
 **What it is.** A linear, once-through sequence (Requirements → Design → Implementation → Testing → Maintenance). Each phase is completed and signed off before the next.  
 **Why it’s used.** Strong structure and documentation; predictable milestones and contracts. Limited adaptability: feedback arrives late and change is costly.
 
@@ -28,6 +36,24 @@ This page outlines seven widely used lifecycle models—**Waterfall, V-Model, It
 ---
 
 ## V-Model
+
+```mermaid
+flowchart LR
+    A[Requirements] --> B[System Design]
+    B --> C[Architectural Design]
+    C --> D[Module Design]
+    D --> E[Implementation]
+    E --> F[Unit Testing]
+    F --> G[Integration Testing]
+    G --> H[System Testing]
+    H --> I[Acceptance Testing]
+
+    %% Cross-links for V shape
+    A -.-> I
+    B -.-> H
+    C -.-> G
+    D -.-> F
+```
 
 **What it is.** A refinement of Waterfall pairing each development stage with a corresponding test stage (e.g., requirements ↔ acceptance test; design ↔ integration/unit).  
 **Why it’s used.** Early test planning and traceability improve quality; still largely sequential and change-averse.
