@@ -5,118 +5,124 @@ nav_order: 2
 layout: default
 ---
 
-# History of Process in Software Engineering
 
-## Early History: Smith and Taylor
+# Defining Process
 
-### Adam Smith (1776) — *The Wealth of Nations*
-
-Smith described the division of labor in manufacturing:
-> _“One man draws out the wire, another straights it, a third cuts it, a fourth points it, a fifth grinds it at the top for receiving the head: to make the head requires two or three distinct operations: to put it on is a particular business, to whiten the pins is another ... and the important business of making a pin is, in this manner, divided into about eighteen distinct operations, which in some manufactories are all performed by distinct hands, though in others the same man will sometime perform two or three of them.”_
-
-**Key Idea:**  
-- Breaking work into specialized tasks increases efficiency and quality.
-
-### Frederick Winslow Taylor (1856–1915) — Scientific Management
-
-Taylor’s principles revolutionized industrial work:
-- Replace rule-of-thumb methods with scientific study of tasks.
-- Scientifically select, train, and develop each employee.
-- Provide detailed instruction and supervision for each worker’s task.
-- Divide work nearly equally between managers (planning) and workers (execution).
-
-**Impact:**  
-- Laid the foundation for process thinking in engineering and management.
+A well-defined process is essential for consistent results and improvement in software engineering.  
+Defining, applying, measuring, and improving processes helps teams deliver quality outcomes and adapt to change.
 
 ---
 
-## The Quality Movement: Deming
+## Key Steps in Process Management
 
-### Early Approach
+1. **Define the Process:**  
+   - Clearly describe each step and its purpose.
+   - Justify why each step exists (“the why”).
+   - Avoid “just because” or “we’ve always done it that way” as sole reasons.
 
-- **Design → Build → Test/Check → Discard rejects**
-- Quality was ensured by inspecting and removing defective products after production.
+2. **Apply Standards:**  
+   - Use industry or organizational standards to guide process definition.
+   - Standards help ensure consistency and best practices.
 
-### W. Edwards Deming (1900–1993)
+3. **Measure Conformance and Results:**  
+   - Check if the process is followed and if it delivers expected results.
+   - Use inspections, reviews, audits, and checklists.
 
-- Worked on census and manufacturing in Japan (1950s).
-- Introduced process analysis, data collection, and defect prevention.
-- Emphasized **prevention** over **post-inspection**.
-- Focused on continuous improvement and root cause analysis.
+4. **Assess:**  
+   - Analyze process effectiveness and identify areas for improvement.
+   - Use both planned and random checks (e.g., Monte Carlo sampling).
 
-**Key Concepts:**
-- Analyze processes, not just products.
-- Collect data to identify sources of defects.
-- Take action to prevent defects before they occur.
-
-**Question:**  
-Does this apply to software?  
-*Hint: The SEI (Software Engineering Institute) thinks so!*
-
----
-
-## Why Process in Software Engineering?
-
-Software projects face unique challenges:
-- **Human variation:** People work differently; process helps standardize.
-- **Complexity:** Software systems are intricate and interconnected.
-- **Volatility:** Requirements and environments change rapidly.
-- **Invisible:** Software is intangible; defects are hard to spot.
-- **Defect propagation:** Small errors can spread and multiply through the lifecycle.
+5. **Suggest Improvements:**  
+   - Recommend changes based on measurement and assessment.
+   - Continuous improvement is key.
 
 ---
 
-### Defect Propagation
+## Deming Cycle — PDCA
 
-**Software Project Work Products:**  
-Defects can occur at any stage and impact downstream work:
+The PDCA (Plan-Do-Check-Act) cycle is a classic framework for process improvement:
 
-- Estimations
-- Use cases, scenarios, elicitation/refinement tools
-- Software requirements specification
-- Statement of work
-- Design and architecture documents
-- Test plans
-- Code (primary artifact)
-- Others (deployment, operations, etc.)
+- **Plan:**  
+  Establish objectives and processes needed to achieve goals.
+- **Do:**  
+  Implement the plan and collect data.
+- **Check:**  
+  Analyze results, compare to expectations, and retain data.
+- **Act:**  
+  Take corrective action—change the process or metrics as needed.
 
-**Impact:**  
-A defect in early stages (e.g., requirements) can propagate and become much more costly to fix later.
-
-![NASA - Defect propagation](image.png)
+  ![PDCA](image-1.png)
 
 ---
 
-## Quality Assurance (QA) — More Than Just Testing
+## Process Definition Challenges
 
-**QA applies to the process, not just the product!**
-
-### Product Delivered
-
-- Bug/defect free
-- Answers the problem (conforms to requirements)
-- Passes validation and verification (testing, reviews, inspections)
-
-### Processes That Build the Product
-
-- Limit human variation and defect injection
-- Ensure consistent, high-quality outcomes
-- Closely tied to the product’s quality
-
-**QA Activities:**
-- Audits
-- Inspections
-- Standards (e.g., CMMI)
-- Formalized processes
+- Every team has a process, but not all are formalized.
+- Formalization means documenting specific steps and their justification.
+- Avoid defining a process just for tradition’s sake.
+- The goal is to understand and improve, not just to follow blindly.
+- Don’t use lack of definition as an excuse for poor practices (“hacking”).
 
 ---
 
-## Key Takeaways
+## How to Define a Process
 
-- Process thinking originated in manufacturing but is essential in software engineering.
-- Quality is best achieved by preventing defects through good processes, not just by catching them at the end.
-- Software projects require structured processes to manage complexity, change, and human factors.
-- QA is a continuous activity that applies to both the product and the process.
+- Ask: “How do you do it?” or “How would I do it?”
+- Keep asking until you can describe each step clearly.
+- Good starting points:
+  - Training materials
+  - “Ride along” with experienced team members
+  - Ask the “doers,” not just managers
+
+---
+
+## Measuring Your Process
+
+- Similar to product quality checks:
+  - Inspections, reviews, audits
+  - Checklist compliance
+- When to measure:
+  - Planned cycles
+  - Unannounced random checks (Monte Carlo)
+  - Postmortem analysis/evaluation
+  - Defect seeding (intentionally adding defects to test detection)
+
+---
+
+### How to Measure
+
+- Use meaningful metrics:
+  - Objective or relative measures
+  - Establish a baseline (but beware of misleading baselines)
+  - Metrics should show change and be analyzable
+  - Not all metrics need to be quantitative
+- Use goals carefully—poorly chosen goals can cause problems.
+
+- Appropriate analysis:
+  - Metrics should make sense and be useful for decision-making.
+
+---
+
+### Metrics Examples
+
+- **Simple Boolean:**  
+  Is the process being used or not?
+- **Count of problems encountered:**  
+  Compare to resources used to find them.
+- **Change requests:**  
+  Frequency and type.
+- **Problem frequency:**  
+  How often do issues repeat?
+- **Accuracy and consistency:**  
+  Estimation reliability.
+
+---
+
+## Example: Meeting Process and Metrics
+
+- Define steps for organizing and running meetings.
+- Measure attendance, agenda adherence, action item completion.
+- Use feedback to improve future meetings.
 
 ---
 
