@@ -1,6 +1,6 @@
 ---
 parent: Basics
-title: Measurement
+title: GQM
 nav_order: 4
 layout: default
 ---
