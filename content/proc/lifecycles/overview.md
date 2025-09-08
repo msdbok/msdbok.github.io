@@ -135,6 +135,8 @@ Link: [ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf](https://i
 ---
 
 ## Spiral
+![Spiral model](image.png)
+Source. Wikipedia
 
 **What it is.** A **risk-driven** cycle: set objectives → analyze risks → engineer → evaluate; repeat, mixing methods as risks dictate.  
 **Why it’s used.** Makes risk mitigation the central driver; highly adaptable but requires strong risk expertise and governance.
