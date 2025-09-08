@@ -5,6 +5,8 @@ nav_order: 5
 layout: default
 ---
 
+# Scoreboard for process measurement (Mota, 2009)
+
 **Source:**  Mota, Pedro João. "Scoreboard: a support for management information needs." _MSE Reflection Paper_ (2009).
 ## 1. Core Idea
 
