@@ -176,7 +176,7 @@ Source. Wikipedia
     
 - **SWEBOK v3**. IEEE Computer Society (section on Prototyping). _Software Engineering Body of Knowledge, Version 3.0_. IEEE Computer Society (SWEBOK V3) [ieeecs-media.computer.org](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf).
     
-- Falcão, R., et al. (2024). _Experiences in Using the V-Model…_ (Springer chapter). Falcão, Rodrigo, et al. "Experiences in Using the V-Model as a Framework for Applied Doctoral Research." _Handbook on Teaching Empirical Software Engineering_. Cham: Springer Nature Switzerland, 2024. 255-276. [researchgate.net](https://www.researchgate.net/publication/382066222_Experiences_in_Using_the_V-Model_as_a_Framework_for_Applied_Doctoral_Research#:~:text=The%20introduction%20of%20the%20V,was%20%EF%AC%81rst%20featured%20in%20the).
+- Falcão, R., et al. (2024). _Experiences in Using the V-Model…_ (Springer chapter). Falcão, Rodrigo, et al. "Experiences in Using the V-Model as a Framework for Applied Doctoral Research." _Handbook on Teaching Empirical Software Engineering_. Cham: Springer Nature Switzerland, 2024. 255-276. [researchgate](https://www.researchgate.net/publication/382066222_Experiences_in_Using_the_V-Model_as_a_Framework_for_Applied_Doctoral_Research).
     
 {: .note }
 Tip: In practice, teams often **combine** models (e.g., incremental delivery developed iteratively, with prototypes and spiral-style risk spikes). Choose the mix that fits **risk, volatility, compliance, and time-to-value**.
