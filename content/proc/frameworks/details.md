@@ -44,6 +44,31 @@ Source. Cusumano, M.A. and D.B. Yoffie, “Software Development on Internet Time
 
 ### Team Software Process (TSP)
 
+```mermaid
+flowchart LR
+    subgraph A[Cycle 1 Launch]
+        B[Strategy 1<br>Plan 1<br>Requirements 1<br>Design 1<br>Implementation 1<br>Test 1<br>Postmortem 1]
+    end
+
+    subgraph C[Cycle 2 Launch]
+        D[Strategy 2<br>Plan 2<br>Requirements 2<br>Design 2<br>Implementation 2<br>Test 2<br>Postmortem 2]
+    end
+
+    subgraph E[Cycle 3 Launch]
+        F[Strategy 3<br>Plan 3<br>Requirements 3<br>Design 3<br>Implementation 3<br>Test 3<br>Postmortem 3]
+    end
+
+    A --> C --> E
+
+    style A fill:#66ccff,stroke:#333,stroke-width:1px
+    style C fill:#66ccff,stroke:#333,stroke-width:1px
+    style E fill:#66ccff,stroke:#333,stroke-width:1px
+
+    style B fill:#99cc99,stroke:#333,stroke-width:1px
+    style D fill:#99cc99,stroke:#333,stroke-width:1px
+    style F fill:#99cc99,stroke:#333,stroke-width:1px
+```
+
 - **Summary:** A **high-discipline, metrics-driven** team process defined by Watts Humphrey at the SEI (Software Engineering Institute). TSP extends the Personal Software Process (PSP) to team scale, aiming to create **self-directed teams** that plan and track their work meticulously. It provides scripts for project launch, role definitions (e.g. team leader, quality manager), and emphasizes **quantitative management** – tracking time, size, defects, and yielding detailed project data. The philosophy is that **measured, defined processes lead to predictably high-quality software**.
     
 - **Strengths:** **Predictability and quality.** TSP has a track record of dramatically reducing defects and improving estimation accuracy by forcing rigor in planning and execution. Each developer using PSP practices means code is reviewed and tested at the personal level; the team’s consolidated data allows accurate status and early warning of issues. TSP’s focus on **continuous improvement** and retrospection (through post-mortems) means the process gets better each cycle. It’s great for **critical systems** where defects are unacceptable – teams have reported near-zero post-release defects with TSP. Also, it instills **engineering discipline** in teams – from design and code reviews to risk management (there is even a defined step to identify and mitigate risks during the launch phase).
@@ -56,6 +81,9 @@ Source. Cusumano, M.A. and D.B. Yoffie, “Software Development on Internet Time
     
 
 ### Extreme Programming (XP)
+
+![XP](image-3.png)
+Source. [nimblework](https://www.nimblework.com/agile/extreme-programming-xp/)
 
 - **Summary:** A **pioneering Agile methodology** (created by Kent Beck) that pushes iterative development to the extreme. XP is built on 5 values (communication, simplicity, feedback, courage, respect) and 12 hallmark practices (such as **Pair Programming**, **Test-Driven Development**, **Continuous Integration**, **Refactoring**, and **Small Releases**). XP teams plan in very short cycles, continuously refactoring and integrating, with a heavy emphasis on **involving the customer** and improving code quality through testing. The goal is to **embrace change** even late in development and deliver working software at a very rapid cadence.
     
