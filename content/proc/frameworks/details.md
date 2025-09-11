@@ -12,6 +12,7 @@ Finally, let’s summarize each of the eight frameworks with their core philosop
 ### Rational Unified Process (RUP)
 
 ![RUP "Hump Chart"](image-1.png)
+
 Source. [architectureportal.org](http://architectureportal.org/rational-unified-process)
 
 - **Summary:** A **heavyweight, plan-driven** iterative framework from IBM Rational. Organizes development into four phases (Inception, Elaboration, Construction, Transition) with defined milestones and extensive use of UML modeling and documentation. Emphasizes **architecture-first** and **risk-driven** development – tackle high-risk elements early in the project.
@@ -29,6 +30,7 @@ Source. [architectureportal.org](http://architectureportal.org/rational-unified-
 
 
 ![MSS](image-2.png)
+
 Source. Cusumano, M.A. and D.B. Yoffie, “Software Development on Internet Time”, IEEE Computer, Vol. 32, No. 10, 1999, pp. 60-69.
 
 - **Summary:** A **milestone-driven iterative model** developed at Microsoft in the 1990s for products like Windows and Office. Multiple small teams work **concurrently** on different features; they **“synchronize”** by integrating code frequently (often daily) and **“stabilize”** by fixing bugs at the end of each milestone. Emphasizes achieving runnable builds early and often, even if not feature-complete, to enable testing and feedback.
@@ -83,6 +85,7 @@ flowchart LR
 ### Extreme Programming (XP)
 
 ![XP](image-3.png)
+
 Source. [nimblework](https://www.nimblework.com/agile/extreme-programming-xp/)
 
 - **Summary:** A **pioneering Agile methodology** (created by Kent Beck) that pushes iterative development to the extreme. XP is built on 5 values (communication, simplicity, feedback, courage, respect) and 12 hallmark practices (such as **Pair Programming**, **Test-Driven Development**, **Continuous Integration**, **Refactoring**, and **Small Releases**). XP teams plan in very short cycles, continuously refactoring and integrating, with a heavy emphasis on **involving the customer** and improving code quality through testing. The goal is to **embrace change** even late in development and deliver working software at a very rapid cadence.
@@ -101,6 +104,7 @@ _Scrum vs. XP: While both are Agile, XP takes engineering practices to extremes 
 ### Scrum
 
 ![SCRUM](image-4.png)
+
 Source. [scrum.org](https://www.scrum.org/resources/what-scrum-module)
 
 - **Summary:** **Scrum** is a lightweight Agile framework focused on managing work in **short, fixed iterations** (called Sprints). It defines just three roles – Product Owner, Scrum Master, Development Team – and a simple set of ceremonies (Sprint Planning, Daily Scrum stand-ups, Sprint Review, Sprint Retrospective). Work is organized via a **Product Backlog** (prioritized list of user stories) and each Sprint, the team commits to a Sprint Backlog of items to deliver. Scrum doesn’t prescribe specific technical practices (unlike XP); it’s more about **project management and team self-organization**.
@@ -117,6 +121,7 @@ Source. [scrum.org](https://www.scrum.org/resources/what-scrum-module)
 ### 
 
 ![kanban](image-5.png)
+
 Source. [agilegnostic](https://agilegnostic.wordpress.com/2015/09/13/lean-kanban-methodology-to-application-support-and-maintenance/)
 
 - **Summary:** **Kanban** is an Agile method originating from lean manufacturing, focused on **visualizing work and limiting work-in-progress (WIP)** to improve flow. In software, a Kanban system is typically a board divided into columns that represent process stages (e.g. “Backlog”, “In Development”, “Testing”, “Done”), with cards (tasks/user stories) flowing across the board as they are worked on. Unlike Scrum, Kanban has **no fixed time iterations**; it’s a **continuous flow model**. Teams pull in new work whenever capacity is available, and they strive to optimize the cycle time (time from start to finish) of work items. Core practices include setting WIP limits per column, measuring flow metrics, and continuously improving the process.
