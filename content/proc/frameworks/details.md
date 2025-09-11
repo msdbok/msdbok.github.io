@@ -175,7 +175,7 @@ Source. Image is under Copyright by [Scaled Agile Inc](https://framework.scaleda
 - [ones.com](https://ones.com/blog/rup-vs-agile-methodology-comparison/)
 - [slideshare.net](https://www.slideshare.net/slideshow/software-lifecycle-model-report/15843737)
 - [go.gale.com](https://go.gale.com/ps/i.do?id=GALE%7CA19656552&sid=googleScholar&v=2.1&it=r&linkaccess=abs&issn=00010782&p=AONE&sw=w)
-- [jamesmccaffrey.wordpress.com](https://jamesmccaffrey.wordpress.com/2009/01/03/the-synchronize-and-stabilize-software-development-methodology-paradigm/)
+- [jamesmccaffrey](https://jamesmccaffrey.wordpress.com/2009/01/03/the-synchronize-and-stabilize-software-development-methodology-paradigm/)
 - [en.wikipedia.org](https://en.wikipedia.org/wiki/Team_software_process)
 - [sei.cmu.edu](https://www.sei.cmu.edu/documents/645/2000_005_001_13754.pdf)
 - [altexsoft.com](https://www.altexsoft.com/blog/extreme-programming-values-principles-and-practices/)
