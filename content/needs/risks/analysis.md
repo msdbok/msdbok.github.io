@@ -102,11 +102,11 @@ Plot these in a matrix: Risks like R1 & R2 land in upper right (“urgent”), R
 - AuditBoard: “What is a Risk Assessment Matrix?”
 - SafetyCulture: “5x5 Risk Matrix”.
 
-- [Project Management Academy](https://projectmanagementacademy.net/resources/blog/risk-matrix/?utm_source=chatgpt.com)
-- [ISO/IEC 31010 - Wikipedia](https://en.wikipedia.org/wiki/ISO/IEC_31010?utm_source=chatgpt.com)
-- [PlaybookTeam](https://playbookteam.com/resources/blog/calculate-risk-exposure?utm_source=chatgpt.com)
-- [AuditBoard](https://auditboard.com/blog/what-is-a-risk-assessment-matrix?utm_source=chatgpt.com)
-- [SafetyCulture](https://safetyculture.com/topics/risk-assessment/5x5-risk-matrix/?utm_source=chatgpt.com)
+- [Project Management Academy](https://projectmanagementacademy.net/resources/blog/risk-matrix/)
+- [ISO/IEC 31010 - Wikipedia](https://en.wikipedia.org/wiki/ISO/IEC_31010)
+- [PlaybookTeam](https://playbookteam.com/resources/blog/calculate-risk-exposure)
+- [AuditBoard](https://auditboard.com/blog/what-is-a-risk-assessment-matrix)
+- [SafetyCulture](https://safetyculture.com/topics/risk-assessment/5x5-risk-matrix/)
 
 ---
 

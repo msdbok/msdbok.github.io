@@ -74,9 +74,9 @@ layout: default
 
 ## Sources
 
-- ISO 31000: risk management standard – emphasizes roles, integrating risk into decisions, monitoring, etc. [Wikipedia](https://en.wikipedia.org/wiki/ISO_31000?utm_source=chatgpt.com)
-- PMI / PMBOK guides: frequency of risk review / communication depends on project nature; status updates / risk reporting schedule form part of risk management plan. [Project Management Institute](https://www.pmi.org/learning/library/project-risk-management-success-tool-6078?utm_source=chatgpt.com) [Project Management Stack Exchange](https://pm.stackexchange.com/questions/1291/how-often-should-risk-management-be-analysed-and-tracked?utm_source=chatgpt.com)
-- Best practices articles (e.g. AuditBoard, Everbridge, IBM) on mitigation strategies: set clear roles, involve stakeholders, use tools / templates, monitor continuously. [AuditBoard](https://auditboard.com/blog/risk-mitigation?utm_source=chatgpt.com) [Everbridge](https://www.everbridge.com/blog/risk-mitigation-strategies/?utm_source=chatgpt.com)
+- ISO 31000: risk management standard – emphasizes roles, integrating risk into decisions, monitoring, etc. [Wikipedia](https://en.wikipedia.org/wiki/ISO_31000)
+- PMI / PMBOK guides: frequency of risk review / communication depends on project nature; status updates / risk reporting schedule form part of risk management plan. [Project Management Institute](https://www.pmi.org/learning/library/project-risk-management-success-tool-6078) [Project Management Stack Exchange](https://pm.stackexchange.com/questions/1291/how-often-should-risk-management-be-analysed-and-tracked)
+- Best practices articles (e.g. AuditBoard, Everbridge, IBM) on mitigation strategies: set clear roles, involve stakeholders, use tools / templates, monitor continuously. [AuditBoard](https://auditboard.com/blog/risk-mitigation) [Everbridge](https://www.everbridge.com/blog/risk-mitigation-strategies/)
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
