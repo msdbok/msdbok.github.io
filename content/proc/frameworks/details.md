@@ -184,3 +184,6 @@ Source. Image is under Copyright by [Scaled Agile Inc](https://framework.scaleda
 - [6sigma.us](https://www.6sigma.us/lean-six-sigma-articles/principles-of-lean-software-development/)
 - [planview.com](https://www.planview.com/resources/guide/scaled-agile-framework-how-technology-enables-agility/safe-framework/)
 - [reddit.com](https://www.reddit.com/r/agile/comments/1ili7su/if_youre_working_with_a_large_organization_which/)
+
+{: .highlight }
+**Disclaimer:** AI is used for text summarization, explaining and formating. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
