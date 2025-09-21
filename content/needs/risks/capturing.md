@@ -1,7 +1,7 @@
 ---
 parent: Risks
-title: Risk Capturing
-nav_order: 2
+title: Capturing
+nav_order: 3
 layout: default
 ---
 

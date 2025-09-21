@@ -1,6 +1,6 @@
 ---
 parent: Requirements
-title: Requirement Documentation
+title: Documentation
 nav_order: 6
 layout: default
 ---

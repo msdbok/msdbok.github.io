@@ -1,7 +1,7 @@
 ---
 parent: Risks
-title: Risk Analysis
-nav_order: 2
+title: Analysis
+nav_order: 4
 layout: default
 ---
 

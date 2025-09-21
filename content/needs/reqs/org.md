@@ -1,6 +1,6 @@
 ---
 parent: Requirements
-title: Requirements Organization
+title: Organization
 nav_order: 5
 layout: default
 ---

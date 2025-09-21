@@ -1,6 +1,6 @@
 ---
 parent: Risks
-title: Risk Identification
+title: Identification
 nav_order: 2
 layout: default
 ---

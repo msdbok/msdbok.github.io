@@ -1,6 +1,6 @@
 ---
 parent: Requirements
-title: Requirements Statements
+title: Statements
 nav_order: 2
 layout: default
 ---
