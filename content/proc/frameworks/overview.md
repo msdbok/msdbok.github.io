@@ -7,7 +7,7 @@ layout: default
 
 # Framework Summaries and Examples
 
-This page summarizes eight major software development frameworks. For each, you’ll find its core philosophy, strengths and weaknesses, typical use cases, and a brief example scenario. Use the comparison table and references at the end for quick review.
+This page summarizes eight major software development frameworks. For each, you’ll find its core philosophy, strengths and weaknesses, typical use cases, and a brief example scenario.
 
 ---
 
@@ -88,46 +88,6 @@ This page summarizes eight major software development frameworks. For each, you�
 - **Weaknesses:** Can be complex and bureaucratic, requires training and buy-in.
 - **Use Cases:** Large organizations with many agile teams, portfolio-level oversight.
 - **Example:** A global bank uses SAFe to coordinate 15 teams on its online banking platform, improving release reliability and business alignment.
-
----
-
-## Comparison Table
-
-| **Framework** | **Team Size** | **Project Size & Complexity** | **Risk Tolerance** | **Process Discipline** | **Documentation** | **Iteration Cadence** | **Customer Involvement** | **Tooling Needs** |
-|---------------|--------------|------------------------------|--------------------|-----------------------|-------------------|----------------------|--------------------------|-------------------|
-| RUP           | Medium/Large | Large, complex               | Low                | High                  | Extensive         | Long, iterative      | Moderate                 | High              |
-| Sync-&-Stabilize | Large      | Large-scale products         | Moderate           | Moderate              | Light             | Milestone-driven     | Low                      | High              |
-| TSP           | Small/Medium | Small to large, critical     | Very Low           | Very High             | High              | Phased, weekly checks| Low                      | Moderate          |
-| XP            | Small        | Small/Medium, changing       | High               | Moderate/High         | Minimal           | Very short cycles    | Very High                | Moderate          |
-| Scrum         | Small        | Small/Medium                 | Moderate/High      | Moderate              | Minimal           | Fixed sprints        | High                     | Low/Moderate      |
-| Kanban        | Flexible     | Any, continuous flow         | High               | Moderate              | Minimal           | Continuous           | Moderate                 | Low               |
-| Lean          | Any          | Any, value-focused           | High               | Moderate              | Minimal           | Adaptive             | High                     | Low               |
-| SAFe          | Very Large   | Large, enterprise            | Low/Moderate       | High                  | Moderate          | Multi-level, iterative| Moderate                | High              |
-
----
-
-## Decision Guidance Flowchart
-
-```mermaid
-flowchart TD
-    Start([Start:<br/>Evaluate your project context]) --> TeamSize{Team size?}
-    TeamSize -->|Large, many teams| LargeScale{Need large scale coordination?}
-    LargeScale -->|Yes| SAFe[[SAFe]]
-    LargeScale -->|No| Structured[[RUP or Sync-&-Stabilize]]
-    TeamSize -->|Small/Medium| Customer{Customer available for frequent feedback?}
-    Customer -->|Yes| Discipline{Process style?}
-    Discipline -->|Lightweight| XP[[XP]]
-    Discipline -->|Managed iterations| Scrum[[Scrum]]
-    Customer -->|No| Flexibility{Priority?}
-    Flexibility -->|Adapt to continuous work| Kanban[[Kanban]]
-    Flexibility -->|Efficiency & eliminate waste| Lean[[Lean]]
-    click SAFe href "https://framework.scaledagile.com/safe-for-lean-enterprises/" _blank
-    click Structured href "https://www.ibm.com/docs/en/rup" _blank
-    click XP href "https://www.agilealliance.org/glossary/xp" _blank
-    click Scrum href "https://www.scrumguides.org/" _blank
-    click Kanban href "https://kanban.university/about-kanban/" _blank
-    click Lean href "https://en.wikipedia.org/wiki/Lean_software_development" _blank
-```
 
 ---
 
