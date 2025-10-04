@@ -59,7 +59,7 @@ Learn how to manage the variability of human factors:
 
 ---
 
-### 3. [Requirements](/content/reqs/)
+### 3. [Needs](/content/needs/)
 Master the art of managing expectations and risks:
 - Understanding customer needs
 - Requirements gathering and management
