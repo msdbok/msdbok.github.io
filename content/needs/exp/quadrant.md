@@ -63,7 +63,7 @@ In _Evaluating Project Decisions_, a team faced performance problems after adopt
 
 ## Impact of Project Time on Customer–Developer Views
 
-![[Pasted image 20250915184445.png]]
+![[quad_time.png]]
 
 *Source: Hoover et al., Evaluating Project Decisions*
 
