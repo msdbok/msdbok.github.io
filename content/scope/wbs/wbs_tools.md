@@ -23,14 +23,14 @@ Choose a tool that fits your workflow—some are free, some offer advanced featu
 
 - [Critical Tools: WBS Schedule Pro](https://www.criticaltools.com/)
 - [MindView by MatchWare](https://www.matchware.com/mind-mapping-software)
-- [Canva Whiteboards](https://www.canva.com/online-whiteboard/?utm_source=chatgpt.com)
-- [Markdown Map](https://markdown-map.com/?utm_source=chatgpt.com)
-- [Obsidian (Wikipedia)](https://en.wikipedia.org/wiki/Obsidian_%28software%29?utm_source=chatgpt.com)
-- [XMind](https://xmind.com/?utm_source=chatgpt.com)
-- [Whimsical Mind Maps](https://whimsical.com/mind-maps?utm_source=chatgpt.com)
-- [MindMap AI](https://mindmapai.app/?utm_source=chatgpt.com)
-- [Markmap](https://markmap.js.org/?utm_source=chatgpt.com)
-- [Logseq (Wikipedia)](https://en.wikipedia.org/wiki/Logseq?utm_source=chatgpt.com)
+- [Canva Whiteboards](https://www.canva.com/online-whiteboard/)
+- [Markdown Map](https://markdown-map.com/)
+- [Obsidian (Wikipedia)](https://en.wikipedia.org/wiki/Obsidian_%28software%29)
+- [XMind](https://xmind.com/)
+- [Whimsical Mind Maps](https://whimsical.com/mind-maps)
+- [MindMap AI](https://mindmapai.app/)
+- [Markmap](https://markmap.js.org/)
+- [Logseq (Wikipedia)](https://en.wikipedia.org/wiki/Logseq
 
 ---
 
