@@ -30,7 +30,7 @@ Choose a tool that fits your workflow—some are free, some offer advanced featu
 - [Whimsical Mind Maps](https://whimsical.com/mind-maps)
 - [MindMap AI](https://mindmapai.app/)
 - [Markmap](https://markmap.js.org/)
-- [Logseq (Wikipedia)](https://en.wikipedia.org/wiki/Logseq
+- [Logseq (Wikipedia)](https://en.wikipedia.org/wiki/Logseq)
 
 ---
 
