@@ -37,7 +37,7 @@ This shared understanding prevents many classic estimation errors.
 
 ---
 
-## 3. What Is **Planning Poker**
+## 3. What Is Planning Poker
 
 - **Proposed by:** _James Grenning (2002)_
 - **Popularized by:** _Mike Cohn (2005)_
@@ -61,7 +61,7 @@ This shared understanding prevents many classic estimation errors.
 
 ---
 
-## Planning Poker Procedures: Standard vs. Miranda’s Enhanced Version
+## 5. Planning Poker Procedures: Standard vs. Miranda’s Enhanced Version
 
 | **Step**                   | **Standard Planning Poker (Grenning 2002 / Cohn 2005)**                                                                   | **Eduardo Miranda’s Enhanced Version (2008)**                                                                                                                                                 |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -78,7 +78,7 @@ This shared understanding prevents many classic estimation errors.
 
 ---
 
-## 7. Strengths of Planning Poker
+## 6. Strengths of Planning Poker
 
 - Uses the **collective knowledge** of the whole team.
 - **Reduces anchoring and conformity** by keeping initial estimates secret.
@@ -89,7 +89,7 @@ This shared understanding prevents many classic estimation errors.
 
 ---
 
-## Weaknesses and Limitations of Planning Poker
+## 7. Weaknesses and Limitations of Planning Poker
 
 1. **Lack of External Calibration**  
     Planning Poker depends entirely on the **team’s internal experience**. There is no external benchmark or use of historical data, which makes estimates subjective and potentially inconsistent across projects.
@@ -106,7 +106,7 @@ This shared understanding prevents many classic estimation errors.
 
 ---
 
-## 9. Example
+## 8. Example
 
 **User Story:** “As a user, I can reset my password by email.”
 
@@ -121,7 +121,7 @@ This shared understanding prevents many classic estimation errors.
 
 ---
 
-## 10. Summary Table
+## 9. Summary Table
 
 | **Aspect**         | **Planning Poker**         | **Wideband Delphi**         |
 |--------------------|---------------------------|-----------------------------|
@@ -141,4 +141,3 @@ Cohn, Mike. _Agile estimating and planning_. Pearson Education, 2005.
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
-
