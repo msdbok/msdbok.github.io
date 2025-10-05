@@ -1,6 +1,6 @@
 ---
 parent: WBS
-title: WBS Process
+title: Building WBS
 nav_order: 2
 layout: default
 ---
