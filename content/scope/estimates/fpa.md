@@ -96,15 +96,17 @@ $$\text{Cost} = \text{Effort} \times \text{Cost per Person-Month}$$
 |Members table|ILF|Avg|10|
 |External supplier file|EIF|Low|5|
 
-$UFP = 4 + 4 + 7 + 4 + 10 + 10 + 5 = 44$
+$$UFP = 4 + 4 + 7 + 4 + 10 + 10 + 5 = 44$$
 
-Assume total GSC score = 30 ⇒ $VAF = 0.65 + 0.01×30 = 0.95$
+Assume total GSC score = 30 ⇒ 
 
-$FP = 44 × 0.95 = 41.8 ≈ 42$
+$$VAF = 0.65 + 0.01×30 = 0.95$$
+
+$$FP = 44 × 0.95 = 41.8 ≈ 42$$
 
 If the historical productivity is 12 FP/PM →
 
-$\text{Effort} = 42 / 12 ≈ 3.5 \text{ person-months}$
+$$\text{Effort} = 42 / 12 ≈ 3.5 \text{ person-months}$$
 
 ---
 
