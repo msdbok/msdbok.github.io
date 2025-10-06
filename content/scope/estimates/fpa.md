@@ -50,7 +50,7 @@ Each function type is assigned a **complexity weight** (Low, Average, High) depe
 
 The sum gives the **Unadjusted Function Point (UFP)**.
 
-$UFP = \sum \text{(Number of functions × Weight)}$
+$$UFP = \sum \text{(Number of functions × Weight)}$$
 
 ---
 
@@ -58,11 +58,11 @@ $UFP = \sum \text{(Number of functions × Weight)}$
 
 To account for system characteristics, IFPUG defines **14 General System Characteristics (GSCs)**, rated 0–5 each, covering aspects like data communication, performance, complexity, reusability, and end-user efficiency.
 
-$\text{VAF} = 0.65 + 0.01 \times \text{(Total GSC Score)}$
+$$\text{VAF} = 0.65 + 0.01 \times \text{(Total GSC Score)}$$
 
 The **Adjusted Function Points** are then:
 
-$FP = UFP \times VAF$
+$$FP = UFP \times VAF$$
 
 ---
 
@@ -70,7 +70,7 @@ $FP = UFP \times VAF$
 
 Once FP is known, **effort estimation** is done using **historical productivity rates**, typically expressed as:
 
-$\text{Effort (Person-Months)} = \frac{FP}{\text{Productivity (FP/PM)}}​$
+$$\text{Effort (Person-Months)} = \frac{FP}{\text{Productivity (FP/PM)}}​$$
 
 Example:  
 If a team’s productivity is 10 FP/PM and the system size is 300 FP:  
@@ -78,7 +78,7 @@ If a team’s productivity is 10 FP/PM and the system size is 300 FP:
 
 To estimate **cost**:
 
-$\text{Cost} = \text{Effort} \times \text{Cost per Person-Month}$
+$$\text{Cost} = \text{Effort} \times \text{Cost per Person-Month}$$
 
 ---
 

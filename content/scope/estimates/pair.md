@@ -135,7 +135,7 @@ If C = 2000 SLOC (reference), then:
 The **Inconsistency Index (II)** measures how logically consistent the comparisons are.  
 A perfectly consistent matrix satisfies:
 
-$a_{ij} \times a_{jk} = a_{ik}​$
+$$a_{ij} \times a_{jk} = a_{ik}​$$
 
 When II ≤ 0.35 → results are considered reliable.  
 Higher values mean the estimator should review their judgments.
