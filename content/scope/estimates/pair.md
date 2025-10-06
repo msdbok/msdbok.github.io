@@ -1,6 +1,6 @@
 ---
 parent: Estimates
-title: Pair Comparison
+title: Paired Comparison
 nav_order: 4
 layout: default
 ---

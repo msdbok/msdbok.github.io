@@ -1,6 +1,6 @@
 ---
 parent: Estimates
-title: Function Points
+title: Function Point Analysis
 nav_order: 5
 layout: default
 ---

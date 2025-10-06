@@ -1,6 +1,6 @@
 ---
 parent: Estimates
-title: Poker
+title: Planning Poker
 nav_order: 3
 layout: default
 ---
