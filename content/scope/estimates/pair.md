@@ -187,9 +187,9 @@ It’s particularly suited for:
 
 ## 12. Sources
 
-- Miranda, E., Bourque, P., & Abran, A. (2009). _Sizing User Stories Using Paired Comparisons._ Information and Software Technology.
-- Hihn, J., & Lum, K. (2004). _Improving Software Size Estimates by Using Probabilistic Pairwise Comparison Matrices._ IEEE Int. Symposium on Software Metrics.
-- Miranda, E. (2001). _Improving Subjective Estimates Using Paired Comparisons._ IEEE Software, 18(1), 87–91.
+1. Miranda, E., Bourque, P., & Abran, A. (2009). _Sizing User Stories Using Paired Comparisons._ Information and Software Technology.
+2. Hihn, J., & Lum, K. (2004). _Improving Software Size Estimates by Using Probabilistic Pairwise Comparison Matrices._ IEEE Int. Symposium on Software Metrics.
+3. Miranda, E. (2001). _Improving Subjective Estimates Using Paired Comparisons._ IEEE Software, 18(1), 87–91.
 
 ---
 
