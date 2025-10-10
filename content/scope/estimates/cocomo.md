@@ -56,7 +56,7 @@ Where:
 - *A* is a calibration constant (nominal productivity)
 - *Size* is measured in thousands of source lines of code (KSLOC) (after adjusting for reuse)
 - *E* is the _scale exponent_, which captures economies/diseconomies of scale
-- $EM_i$ are the _effort multipliers_ (cost drivers) — multiplicative modifiers for various project attributes
+- *EM_i* are the _effort multipliers_ (cost drivers) — multiplicative modifiers for various project attributes
 - *n* is the number of cost drivers (e.g. ~6 for Early Design, ~17 for Post-Architecture)
 
 The exponent *E* is computed as:
@@ -68,7 +68,7 @@ $$
 Where:
 
 - *B* is a base exponent (e.g. 0.91 in default calibration)
-- $SF_j$ for $j=1..5$ are the 5 _scale factors_ (precedentedness, flexibility, architecture/risk resolution, team cohesion, process maturity) that capture how project scale interacts nonlinearly.
+- *SF_j*$* for *j=1..5* are the 5 _scale factors_ (precedentedness, flexibility, architecture/risk resolution, team cohesion, process maturity) that capture how project scale interacts nonlinearly.
 
 Thus:
 
@@ -141,7 +141,7 @@ In short, the model can discount the effort for portions of code reused or trans
 
 ---
 
-## 4. Worked (Detailed) Example
+## 4. Example
 
 Below is a (simplified) worked example adapted from standard textbook/case examples. Some cost driver values are simplified for clarity but retain core methodology.
 
@@ -159,7 +159,7 @@ Suppose you are developing a software system which, after requirements and preli
 | TEAM   | High     | 1.10             |
 | PMAT   | Nominal  | 3.12             |
 
-Sum of $SF_j$ = 3.72 + 2.03 + 4.24 + 1.10 + 3.12 = **14.21**
+$$\sum SF_j = 3.72 + 2.03 + 4.24 + 1.10 + 3.12 = 14.21$$
 
 Let base *B = 0.91* (a typical default from calibration).
 
@@ -211,11 +211,11 @@ $$
 \text{Effort (PM)} = 2.94 \times (50)^{1.0521} \times 1.066
 $$
 
-Compute $50^{1.0521}$:
+$$\text{Compute 50}^{1.0521}:$$
 
-- $\ln(50) \approx 3.9120$
-- $1.0521 \times 3.9120 = 4.120$
-- $e^{4.120} \approx 61.58$
+$$\ln(50) \approx 3.9120$$
+$$1.0521 \times 3.9120 = 4.120$$
+$$e^{4.120} \approx 61.58$$
 
 Thus:
 
@@ -251,9 +251,9 @@ $$
 
 Compute exponent:
 
-- $\ln(192.82) = 5.257$
-- $0.30842 \times 5.257 = 1.621$
-- $e^{1.621} \approx 5.06$
+$$\ln(192.82) = 5.257$$
+$$0.30842 \times 5.257 = 1.621$$
+$$e^{1.621} \approx 5.06$$
 
 Thus:
 
