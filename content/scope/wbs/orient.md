@@ -390,7 +390,7 @@ flowchart TB
 | **Drop Chapter 2 – impact on total cost?**    | **Easy**         | Medium             | Medium              |
 | **Which chapter is more expensive (2 vs 3)?** | **Easy**         | Medium             | Medium              |
 | **Add a new chapter – what changes?**         | **Easy**         | Medium             | Medium              |
-| **Chapter 3 has heavy illustrations – where does that work live?** | Medium | **Easy** | Medium |
+| **Chapter 3 has heavy illustrations – where does that work live?** | **Easy** | Medium | Medium |
 
 > Takeaway: **Outcome orientation best answers scope & sponsor questions.**  
 > **Discipline** best answers staffing/ownership.  
