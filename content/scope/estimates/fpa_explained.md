@@ -5,8 +5,6 @@ nav_order: 6
 layout: default
 ---
 
-
-
 # Function Point Analysis (FPA) Explained
 
 ## 1. Why size with Function Points?
@@ -122,9 +120,9 @@ class Address {
 Customer "1" --> "*" CreditCard : creditCard / owner
 Customer "1" --> "*" Address : lives at
 
-note for Customer "ILF with 2+ RETs\nDET=5"
-note for Address "If 2 addresses → 2 RETs\neach DET=3"
-note for CreditCard "ILF if stored separately\nDET=7 for each stored card"
+note for Customer "ILF with 2+ RET<br>DET=5"
+note for Address "If 2 addresses → 2 RETs<br>each DET=3"
+note for CreditCard "ILF if stored separately<br>DET=7 for each stored card"
 ```
 
 - Customer is an ILF (system maintains it), with DETs=5 and 2+ RETs (e.g., personal info + repeated related info).
