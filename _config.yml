@@ -24,6 +24,10 @@ theme: just-the-docs
 
 url: https://msdbok.github.io
 
+logo: "/images/msdbok_logo.png"
+
+favicon_ico: "/images/favicon.ico"
+
 aux_links:
   Handbook Repo: https://github.com/msdbok/msdbok.github.io
 
