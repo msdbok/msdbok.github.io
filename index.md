@@ -7,7 +7,9 @@ nav_order: 1
 # Managing Software Development
 
 
-![MSDBOK Logo](/images/msdbok_logo.png)
+<div align="center">
+  <img src="/images/msdbok_logo.png" alt="MSDBOK Logo" style="width:180px; margin-bottom: 1em;" />
+</div>
 
 
 Welcome to the course notes repository for **Managing Software Development**.  
