@@ -4,13 +4,12 @@ layout: home
 nav_order: 1
 ---
 
-# Managing Software Development
-
-
 <div align="center">
   <img src="/images/msdbok_logo.png" alt="MSDBOK Logo" style="width:180px; margin-bottom: 1em;" />
 </div>
 
+
+# Managing Software Development
 
 Welcome to the course notes repository for **Managing Software Development**.  
 This resource provides a comprehensive, practical, and accessible guide to the key topics in the field. Whether you are an MS student, a professional, or simply curious, these notes are designed to support your learning and growth.
