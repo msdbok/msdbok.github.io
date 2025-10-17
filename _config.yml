@@ -17,14 +17,14 @@ mermaid:
 math: mathjax
 
 
-title: MSDBOK - Handbook
+title: MSDBOK
 author: Andrey Sadovykh
 description: "Managing Software Development Course Handbook (MSDBOK) - Collection of resources and handouts"
 theme: just-the-docs
 
 url: https://msdbok.github.io
 
-logo: "/assets/images/msdbok_logo.png"
+# logo: "/images/msdbok_logo.png"
 
 favicon_ico: "/images/favicon.ico"
 
