@@ -25,3 +25,15 @@
   {% when "mathjax" %}
     {% include mathjax.html %}
 {% endcase %}
+
+
+{%- comment -%}
+  This file is injected into <head> by Just the Docs *after* the theme's default head logic.
+{%- endcomment -%}
+
+<link rel="icon" href="{{ "/favicon.ico" | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon-32x32.png" | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/images/favicon-16x16.png" | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/images/apple-touch-icon.png" | relative_url }}">
+<link rel="manifest" href="{{ "/site.webmanifest" | relative_url }}">
+<meta name="theme-color" content="#008080">
