@@ -22,10 +22,10 @@ author: Andrey Sadovykh
 description: "Managing Software Development Course Handbook (MSDBOK) - Collection of resources and handouts"
 theme: just-the-docs
 
-url: https://msdbok.github.io/msd/
+url: https://msdbok.github.io
 
 aux_links:
-  Handbook Repo: https://github.com/msdbok/msd
+  Handbook Repo: https://github.com/msdbok/msdbok.github.io
 
 callouts_level: quiet # or loud
 callouts:
