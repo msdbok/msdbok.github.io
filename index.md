@@ -6,8 +6,14 @@ nav_order: 1
 
 # Managing Software Development
 
+
+![MSDBOK Logo](/images/msdbok_logo.png)
+
+
 Welcome to the course notes repository for **Managing Software Development**.  
 This resource provides a comprehensive, practical, and accessible guide to the key topics in the field. Whether you are an MS student, a professional, or simply curious, these notes are designed to support your learning and growth.
+
+
 
 ---
 
