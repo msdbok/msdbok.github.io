@@ -26,6 +26,7 @@ graph LR
     A[Managing Software Development]
     A --> B[People]
     A --> C[Processes]
+    A --> F[Needs]
     A --> D[Scope]
     A --> E[Planning]
 
@@ -36,6 +37,10 @@ graph LR
     C --> C1["Project lifecycle stages"]
     C --> C2["Process frameworks & models"]
     C --> C3["Choosing the right process"]
+
+    F --> F1["Customer Expectations"]
+    F --> F2["Requirements Management"]
+    F --> F3["Risks management"]
 
     D --> D1["Work Breakdown Structure (WBS)"]
     D --> D2["Estimation methods"]
