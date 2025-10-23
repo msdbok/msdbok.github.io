@@ -99,13 +99,17 @@ Goldratt applies his Theory of Constraints (TOC) to project management and p
 ## 7. Sources
 
 - Goldratt, Eliyahu M. _Critical Chain_. North River Press, 1997.
+- Rand, Graham K. “Critical Chain: The Theory of Constraints Applied to Project Management.” International Journal of Project Management, vol. 18, no. 3, June 2000, pp. 173–77.
+[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0263786399000198?casa_token=jvcAGR40TdgAAAAA:lywZ-XFcSy8AkA2wjyR09YpCI9j42YAf2mYOKwGtW1RJAz3WieLA8h0wEAtVf1AzY8gkNmIq6aI)
+- Ghaffari, Mahdi, and Margaret W. Emsley. “Current Status and Future Potential of the Research on Critical Chain Project Management.” Surveys in Operations Research and Management Science, vol. 20, no. 2, Dec. 2015, pp. 43–54.
+ [PM World Library](https://pmworldlibrary.net/wp-content/uploads/2015/09/pmwj38-Sep2015-Ghaffari-Emsley-research-on-critical-chain-second-edition.pdf)
 - [Wikipedia](https://en.wikipedia.org/wiki/Critical_Chain_%28novel%29)
 - [Project Management Institute](https://www.pmi.org/learning/library/pmbok-critical-chain-approach-4646)
-- [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0263786399000198)
+
 - [marris-consulting.com](https://www.marris-consulting.com/en/faq/what-is-critical-chain-project-management)
 - [critical-chain-projects.com](https://www.critical-chain-projects.com/the-method)
 - [ProjectManager](https://www.projectmanager.com/blog/critical-chain-in-project-management-a-quick-guide)
-- [PM World Library](https://pmworldlibrary.net/wp-content/uploads/2015/09/pmwj38-Sep2015-Ghaffari-Emsley-research-on-critical-chain-second-edition.pdf)
+
 - [Asana](https://asana.com/resources/critical-chain-project-management)
 
 ---
