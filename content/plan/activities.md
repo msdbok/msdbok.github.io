@@ -198,19 +198,29 @@ flowchart LR
 
 **Illustration – Simple Gantt (planned vs. actual)**
 ```mermaid
+
 gantt
-    title Sample Feature Delivery Timeline
+    title Website MVP Plan
     dateFormat  YYYY-MM-DD
-    section Design
-    Research & Wireframes      :done,    des1, 2025-10-01, 2025-10-05
-    UI Design                  :active,  des2, 2025-10-06, 2025-10-10
+    axisFormat  %b %d
+    excludes    weekends
+
+    section Inception
+    Kickoff workshop       :done, a1, 2025-10-27, 2d
+    Vision & scope         :done,a2, after a1, 2d
+    Go/No-Go Gate          :milestone, m1, after a2, 0d
+
     section Build
-    API Spec                   :         api1, 2025-10-06, 2025-10-08
-    Backend Implementation     :         back, 2025-10-09, 2025-10-16
-    Frontend Implementation    :         front,2025-10-09, 2025-10-16
-    section Integration & Test
-    Integration                :         int1, 2025-10-17, 2025-10-20
-    System Test                :         test, 2025-10-21, 2025-10-23
+    Backend API (crit)     :active, b1, 2025-11-03, 7d
+    Frontend UI (crit)     :b2, after b1, 7d
+    Payments integration   :b3, after b1, 5d
+
+    section Test & Release
+    System testing (crit)  :c1, after b2, 3d
+    Integration testing    :c2, after b3, 3d
+    Fix & hardening        :c3, after c1, 3d
+    Release Candidate      :milestone, m2, after c3, 0d
+    Production Launch      :milestone, m3, after c2, 0d
 ```
 
 **Legend suggestion:**  
