@@ -28,7 +28,7 @@ Two major styles exist:
 
 ## 2. Activity Planning in Scrum and Plan-Oriented Approaches
 
-### Scrum-Based Activity Planning
+### 2.1 Scrum-Based Activity Planning
 
 | **When** | **Artifacts / Events** | **Characteristics** |
 |---|---|---|
@@ -50,7 +50,7 @@ Two major styles exist:
 
 ---
 
-### Plan-Oriented Activity Planning
+### 2.2 Plan-Oriented Activity Planning
 
 | **When** | **Mechanism** | **Artifacts** |
 |---|---|---|
@@ -105,8 +105,7 @@ Two major styles exist:
 
 ---
 
-
-## 7. Gantt Charts
+## 5. Gantt Charts
 
 **What it is:** a task‑oriented view that uses horizontal bars on a time scale to depict:  
 - When tasks are **planned** to run  
@@ -154,7 +153,7 @@ gantt
 
 ---
 
-## 5. Alternatives to CPM
+## 6. Alternatives to CPM
 
 | Method | Description | Distinct Feature |
 |---|---|---|
@@ -165,9 +164,9 @@ gantt
 
 ---
 
-## 6. Merge Bias and Critical Chain
+## 7. Merge Bias and Critical Chain
 
-### 6.1 Merge Path Bias (why CPM underestimates)
+### 7.1 Merge Path Bias (why CPM underestimates)
 Definition. In networks where multiple parallel paths merge into one successor, the project’s completion time depends on the maximum of those path durations. Using only expected path times (as in vanilla PERT) underestimates the true expected completion time — this is merge path bias.
 
 Why it happens (intuition). At a merge, all predecessors must finish. With variability, there’s a good chance at least one path runs late → the merge waits → project finish skews later than the longest mean path.
@@ -194,7 +193,7 @@ When it grows. More merges, more parallel variability → stronger bias.
 
 ---
 
-### 6.2 Critical Chain Project Planning (CCPM)
+### 7.2 Critical Chain Project Planning (CCPM)
 
 **Premises (Goldratt):** uncertainty is pervasive; people add safety; Parkinson’s Law; Student Syndrome; resource contention matters; merging paths pass delays; multitasking hurts.
 
@@ -228,7 +227,6 @@ gantt
 **Cons:** assumes everyone adds safety; does not model correlated risks across tasks.
 
 ---
-
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
