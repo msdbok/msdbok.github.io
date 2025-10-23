@@ -105,6 +105,55 @@ Two major styles exist:
 
 ---
 
+
+## 7. Gantt Charts
+
+**What it is:** a task‑oriented view that uses horizontal bars on a time scale to depict:  
+- When tasks are **planned** to run  
+- When they **actually** ran and finish  
+- Who is assigned (optional)
+
+**Key concepts:**
+- Incorporates **resource availability**  
+- Anchored in time; shows **absolute dates**  
+- Supports **roll‑up** (summary) and **drill‑down**  
+- Common presentation tool (e.g., **MS Project**)
+
+**Limitations of CPM (context for Gantt):** under uncertainty, CPM can understate finish; cannot directly model alternatives/iterations — complements like buffers or probabilistic methods are helpful.
+
+```mermaid
+
+gantt
+    title Website MVP Plan
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
+    excludes    weekends
+
+    section Inception
+    Kickoff workshop       :done, a1, 2025-10-27, 2d
+    Vision & scope         :done,a2, after a1, 2d
+    Go/No-Go Gate          :milestone, m1, after a2, 0d
+
+    section Build
+    Backend API (crit)     :active, b1, 2025-11-03, 7d
+    Frontend UI (crit)     :b2, after b1, 7d
+    Payments integration   :b3, after b1, 5d
+
+    section Test & Release
+    System testing (crit)  :c1, after b2, 3d
+    Integration testing    :c2, after b3, 3d
+    Fix & hardening        :c3, after c1, 3d
+    Release Candidate      :milestone, m2, after c3, 0d
+    Production Launch      :milestone, m3, after c2, 0d
+```
+
+**Legend suggestion:**  
+- _done_ = completed as planned  
+- _active_ = in progress  
+- unstyled = planned (not yet started)
+
+---
+
 ## 5. Alternatives to CPM
 
 | Method | Description | Distinct Feature |
@@ -155,25 +204,24 @@ When it grows. More merges, more parallel variability → stronger bias.
 
 **Illustration – Critical Chain with Buffers & Resources**
 ```mermaid
-flowchart LR
-  classDef buf stroke-dasharray: 5 5
-  %% Tasks and resource constraints
-  A[Design<br>R: UX] --> B[API Spec<br>R: Arch]
-  B --> C[Backend Impl<br>R: Dev1]
-  A --> D[UI Impl<br>R: Dev2]
-  C --> E[Integration<br>R: Dev1+Dev2]
-  D --> E
-  E --> PB((Project Buffer)):::buf
+gantt
+    title Critical Chain — Simplified
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
 
-  %% Feeder buffer protecting merge into critical chain
-  D -.-> FB1((Feeder Buffer)):::buf -.-> E
+    section Feeding Chains
+    Feature B (feeds C)           :b2,           2025-11-03, 4d
+    FB1 (buffer to C)             :done, fb1b,         after b2,   4d
+    Feature D (feeds E)           :d2,           2025-11-04, 4d
+    FB2 (buffer to E)             :done, fb2b,         after d2,   4d
 
-  %% Resource buffers as alerts before critical tasks
-  RB1((Resource Buffer: Dev1)):::buf -.-> C
-  RB2((Resource Buffer: Dev2)):::buf -.-> D
+    section Critical Chain
+    Design A                      :a2,           2025-11-03, 3d
+    Build C (after FB1)           :c2,           after fb1b, 4d
+    Integrate & Test E (after FB2):e2,           after fb2b, 10d
+    Project Buffer (PB)           :done, pb2,          after e2,   4d
+    Release                       :milestone,    after pb2,  0d
 
-  %% Notes
-  class RB1,RB2,PB,FB1 buf;
 ```
 
 **Pros:** safety made explicit; aggregated protection; focus and single‑tasking; control via **buffer consumption**.  
@@ -181,60 +229,6 @@ flowchart LR
 
 ---
 
-## 7. Gantt Charts
-
-**What it is:** a task‑oriented view that uses horizontal bars on a time scale to depict:  
-- When tasks are **planned** to run  
-- When they **actually** ran and finish  
-- Who is assigned (optional)
-
-**Key concepts:**
-- Incorporates **resource availability**  
-- Anchored in time; shows **absolute dates**  
-- Supports **roll‑up** (summary) and **drill‑down**  
-- Common presentation tool (e.g., **MS Project**)
-
-**Limitations of CPM (context for Gantt):** under uncertainty, CPM can understate finish; cannot directly model alternatives/iterations — complements like buffers or probabilistic methods are helpful.
-
-**Illustration – Simple Gantt (planned vs. actual)**
-```mermaid
-
-gantt
-    title Website MVP Plan
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %d
-    excludes    weekends
-
-    section Inception
-    Kickoff workshop       :done, a1, 2025-10-27, 2d
-    Vision & scope         :done,a2, after a1, 2d
-    Go/No-Go Gate          :milestone, m1, after a2, 0d
-
-    section Build
-    Backend API (crit)     :active, b1, 2025-11-03, 7d
-    Frontend UI (crit)     :b2, after b1, 7d
-    Payments integration   :b3, after b1, 5d
-
-    section Test & Release
-    System testing (crit)  :c1, after b2, 3d
-    Integration testing    :c2, after b3, 3d
-    Fix & hardening        :c3, after c1, 3d
-    Release Candidate      :milestone, m2, after c3, 0d
-    Production Launch      :milestone, m3, after c2, 0d
-```
-
-**Legend suggestion:**  
-- _done_ = completed as planned  
-- _active_ = in progress  
-- unstyled = planned (not yet started)
-
----
-
-## Quick Review (self-check)
-- How do AoN and AoA differ, and when would you prefer each?  
-- Where does float exist, and how is it used to handle over-allocation?  
-- Why does merge bias push expected completion later than CPM suggests?  
-- In CCPM, where would you place project, feeder, and resource buffers on your current project?
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
