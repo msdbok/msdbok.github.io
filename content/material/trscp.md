@@ -5,11 +5,10 @@ nav_order: 4
 layout: default
 ---
 
-
-## 1. Time Reporting System – Critical Path and Critical Chain
+# Time Reporting System – Critical Path and Critical Chain
 _Adapted from Eduardo Miranda (2013)_
 
-### 1.1 Context
+## 1. Context
 
 Your company is developing the **Time Reporting System (TRS)** — a web-based application allowing employees to report hours worked on different projects so that customers can be billed.  
 You are managing the **first increment**, which must demonstrate the core time reporting capabilities.
@@ -19,7 +18,7 @@ Your team must plan, analyze, and improve the schedule using **Critical Path** a
 
 ---
 
-### 1.2 Objectives
+## 2. Objectives
 
 By completing this case study, your group will:
 
@@ -33,7 +32,7 @@ By completing this case study, your group will:
 
 ---
 
-### 1.3 Case Inputs
+## 3. Case Inputs
 
 The project team has identified the following tasks and feature developments.  
 The **duration** and **effort** are estimated based on a standard development team working 8-hour days.
@@ -43,7 +42,7 @@ The **duration** and **effort** are estimated based on a standard development te
     - Features duration, and effort are listed in **Table 1**
 - **Integration** will be conducted in parallel with development
 
-#### Table 1. Project Activities, Effort, and Duration
+### 3.1 Table 1. Project Activities, Effort, and Duration
 
 | Activity / Feature                | Effort (person-hours) | Duration (days) |
 |-----------------------------------|----------------------|-----------------|
@@ -70,24 +69,24 @@ The **duration** and **effort** are estimated based on a standard development te
 
 ---
 
-### 1.4 Tasks
+## 4. Tasks
 
-#### 1.4.1 Model the Activity Network
+### 4.1 Model the Activity Network
 
 - Define reasonable dependencies between tasks and features.
 - Construct a dependency table, network diagram, or Gantt chart showing your assumptions.
 
-#### 1.4.2 Calculate the Critical Path
+### 4.2 Calculate the Critical Path
 
 - Compute Early Start (ES), Early Finish (EF), Late Start (LS), and floats (Free and Total).
 - Identify and highlight the **critical path**.
 
-#### 1.4.3 Analyze Schedule Risks
+### 4.3 Analyze Schedule Risks
 
 - Discuss potential issues such as task coupling, parallelism, and resource conflicts.
 - Identify where multitasking or bottlenecks might occur.
 
-#### 1.4.4 Apply the Critical Chain Method
+### 4.4 Apply the Critical Chain Method
 
 - Assume that development and testing share limited resources.
 - Suggest how to introduce **buffers**:
@@ -96,14 +95,16 @@ The **duration** and **effort** are estimated based on a standard development te
     - **Resource buffers** for constrained roles
 - Propose how to monitor buffer consumption and project progress.
 
-#### 1.4.5 Recommend Improvements
+### 4.5 Recommend Improvements
 
 - Summarize how applying **Critical Chain principles** (focus, buffer management, elimination of multitasking) could improve:
     - Predictability
     - Lead time
     - Team throughput
 
-#### 1.4.6 Deliverables
+---
+
+## 5. Deliverables
 
 - Dependency table or network diagram
 - Gantt chart
