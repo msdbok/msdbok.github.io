@@ -6,6 +6,7 @@ layout: default
 ---
 
 # Time Reporting System (TRS) — WBS & FPA Assignment
+_Adapted from Eduardo Miranda (2014)_
 
 ## 1. Introduction
 
