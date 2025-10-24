@@ -122,7 +122,7 @@ Customer "1" --> "*" Address : lives at
 
 note for Customer "ILF with 2+ RET<br>DET=5"
 note for Address "If 2 addresses → 2 RETs<br>each DET=3"
-note for CreditCard "ILF if stored separately<br>DET=7 for each stored card"
+note for CreditCard "ILF if stored separately<br>DET=6 for each stored card"
 ```
 
 - Customer is an ILF (system maintains it), with DETs=5 and 2+ RETs (e.g., personal info + repeated related info).
@@ -135,7 +135,7 @@ note for CreditCard "ILF if stored separately<br>DET=7 for each stored card"
 |------------|------|----------------------------|------|
 | Customer   | ILF  | ≥2 (personal, related sets) | 5    |
 | Address    | RETs under Customer or separate ILF/EIF | 2 (in example) | 3    |
-| CreditCard | ILF (if maintained) / EIF (if external) | n (per stored card) | 7    |
+| CreditCard | ILF (if maintained) / EIF (if external) | n (per stored card) | 6    |
 
 **Card illustration:**
 
@@ -143,7 +143,7 @@ note for CreditCard "ILF if stored separately<br>DET=7 for each stored card"
 flowchart LR
   subgraph CC[Credit Card]
     direction TB
-    CC1["Card number: 9999 8888 7777 6666<br/>Card Type: STANDARD VISA<br/>Issue Date: 03/15/2020<br/>Valid thru: 03/2025<br/>Valid: true<br/>Card Owner ID: 100 200<br/>Name on card: Alex Doe<br/><b>DET=7</b>"]
+    CC1["Card number: 9999 8888 7777 6666<br/>Card Type: STANDARD VISA<br/>Issue Date: 03/15/2020<br/>Valid thru: 03/2025<br/>Valid: true<br/>Name on card: Alex Doe<br/><b>DET=6</b>"]
   end
 
   subgraph C[Customer]
