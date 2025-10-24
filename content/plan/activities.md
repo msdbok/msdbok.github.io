@@ -221,7 +221,7 @@ gantt
     Feature D (feeds E)           :active, d2,           2025-11-04, 4d
     Feed buffer 2           :done, fb2b,         after d2,   4d
     Integrate & Test E (after FB2):active, e2,           after fb2b, 10d
-    Project Buffer (PB)           :done, pb2,          after e2,   4d
+    Project Buffer           :done, pb2,          after e2,   4d
     Release                       :milestone,    after pb2,  0d
     
 ```
