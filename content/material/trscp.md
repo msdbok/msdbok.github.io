@@ -1,6 +1,6 @@
 ---
 parent: Materials
-title: TRS Critical Path
+title: TRS Critical Path Case
 nav_order: 4
 layout: default
 ---

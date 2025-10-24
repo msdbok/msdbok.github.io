@@ -1,6 +1,6 @@
 ---
 parent: Materials
-title: TRS Assignment
+title: TRS WBS Case
 nav_order: 3
 layout: default
 ---
