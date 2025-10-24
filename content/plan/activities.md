@@ -223,14 +223,9 @@ gantt
     Integrate & Test E (after FB2):active, e2,           after fb2b, 10d
     Project Buffer (PB)           :done, pb2,          after e2,   4d
     Release                       :milestone,    after pb2,  0d
-
-    section Feeding Chains
     
-
-
-
-
 ```
+    Note: Critical chain is in light blue.
 
 **Pros:** safety made explicit; aggregated protection; focus and single‑tasking; control via **buffer consumption**.  
 **Cons:** assumes everyone adds safety; does not model correlated risks across tasks.
