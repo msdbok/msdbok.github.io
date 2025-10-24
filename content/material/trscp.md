@@ -106,10 +106,10 @@ The **duration** and **effort** are estimated based on a standard development te
 #### 1.4.6 Deliverables
 
 - Dependency table or network diagram
-- Gantt chart (optional, if using MS Project or Smartsheet)
+- Gantt chart
 - Table of calculated schedule attributes (ES, EF, LS, floats)
 - 15 minutes presentation (white background, bullet points, Minto style)
-- 5 pages report explaining:
+- 5 pages (max) report explaining:
     - Your dependency rationale
     - Critical path findings
     - Critical Chain adjustments
