@@ -6,6 +6,7 @@ layout: default
 ---
 
 # Time Reporting System — System Description
+_Adapted from Eduardo Miranda (2014)_
 
 ## 1) Overall Context
 

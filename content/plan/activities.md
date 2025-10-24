@@ -208,18 +208,27 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
 
-    section Feeding Chains
-    Feature B (feeds C)           :b2,           2025-11-03, 4d
-    FB1 (buffer to C)             :done, fb1b,         after b2,   4d
-    Feature D (feeds E)           :d2,           2025-11-04, 4d
-    FB2 (buffer to E)             :done, fb2b,         after d2,   4d
+
 
     section Critical Chain
-    Design A                      :a2,           2025-11-03, 3d
+    Design A                      :active, a2,           2025-10-31, 3d
+
+    Feature B (feeds C)           :b2,           2025-11-03, 4d
+    Feed buffer 1             :done, fb1b,         after b2,   4d
+    
     Build C (after FB1)           :c2,           after fb1b, 4d
-    Integrate & Test E (after FB2):e2,           after fb2b, 10d
+
+    Feature D (feeds E)           :active, d2,           2025-11-04, 4d
+    Feed buffer 2           :done, fb2b,         after d2,   4d
+    Integrate & Test E (after FB2):active, e2,           after fb2b, 10d
     Project Buffer (PB)           :done, pb2,          after e2,   4d
     Release                       :milestone,    after pb2,  0d
+
+    section Feeding Chains
+    
+
+
+
 
 ```
 
