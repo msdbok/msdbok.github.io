@@ -72,11 +72,5 @@ Thresholds should be **unambiguous** and stated as clear requirements in each ar
 
 ---
 
-## Sources
-
-- Hoover, Carol L., Mel Rosso-Llopart, and Gil Taran, _Evaluating Project Decisions: Case Studies in Software Engineering_. Addison-Wesley Professional, 2010. ISBN-13: 978‐0321544568. [O'Reilly Media](https://www.oreilly.com/library/view/evaluating-project-decisions/9780321685629/)
-
----
-
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining, and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
