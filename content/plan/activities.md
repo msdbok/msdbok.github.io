@@ -204,28 +204,33 @@ When it grows. More merges, more parallel variability → stronger bias.
 **Illustration – Critical Chain with Buffers & Resources**
 ```mermaid
 gantt
-    title Critical Chain — Simplified
+    title Critical Chain — Just-in-Time Feeds & Buffers
     dateFormat  YYYY-MM-DD
     axisFormat  %b %d
+    excludes    weekends
 
+    section Plan (Chain + Feeds)
 
+    %% Critical chain starts
+    Design A                            :crit, a2, 2025-10-27, 9d
 
-    section Critical Chain
-    Design A                      :active, a2,           2025-10-31, 3d
+    %% Feed for C runs in parallel and lands just before C
+    Feature B → feeds C                 :active, b2,   2025-10-30, 4d
+    Feed Buffer → C                     :fb1b, after b2,   2d
+    Build C (after FB→C)                :crit, c2,   after fb1b, 4d
 
-    Feature B (feeds C)           :b2,           2025-11-03, 4d
-    Feed buffer 1             :done, fb1b,         after b2,   4d
-    
-    Build C (after FB1)           :c2,           after fb1b, 4d
+    %% Feed for E runs in parallel and lands just before E
+    Feature D → feeds E                 :active, d2,   2025-11-04, 6d
+    Feed Buffer → E                     :fb2b, after d2,   2d
+    Integrate & Test E (after FB→E)     :crit, e2,   after fb2b, 10d
 
-    Feature D (feeds E)           :active, d2,           2025-11-04, 4d
-    Feed buffer 2           :done, fb2b,         after d2,   4d
-    Integrate & Test E (after FB2):active, e2,           after fb2b, 10d
-    Project Buffer           :done, pb2,          after e2,   4d
-    Release                       :milestone,    after pb2,  0d
+    %% Finish with project buffer & release
+    Project Buffer                      :pb,   after e2,   4d
+    Release                             :milestone, rel, after pb, 0d
+
     
 ```
-    Note: Critical chain is in light blue.
+    Note: Critical chain is in light red.
 
 **Pros:** safety made explicit; aggregated protection; focus and single‑tasking; control via **buffer consumption**.  
 **Cons:** assumes everyone adds safety; does not model correlated risks across tasks.
