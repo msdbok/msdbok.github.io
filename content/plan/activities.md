@@ -134,12 +134,12 @@ gantt
     Go/No-Go Gate          :milestone, m1, after a2, 0d
 
     section Build
-    Backend API (crit)     :active, b1, 2025-11-03, 7d
-    Frontend UI (crit)     :b2, after b1, 7d
+    Backend API    :crit, b1, 2025-11-03, 7d
+    Frontend UI     :crit, b2, after b1, 7d
     Payments integration   :b3, after b1, 5d
 
     section Test & Release
-    System testing (crit)  :c1, after b2, 3d
+    System testing  :crit, c1, after b2, 3d
     Integration testing    :c2, after b3, 3d
     Fix & hardening        :c3, after c1, 3d
     Release Candidate      :milestone, m2, after c3, 0d
@@ -147,8 +147,9 @@ gantt
 ```
 
 **Legend suggestion:**  
-- _done_ = completed as planned  
-- _active_ = in progress  
+- _done_ = (gray) completed as planned  
+- _active_ = (blue) in progress
+- _critical_ = (reg) critical path
 - unstyled = planned (not yet started)
 
 ---
