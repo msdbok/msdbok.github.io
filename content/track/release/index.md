@@ -7,7 +7,7 @@ layout: default
 
 # Release Planning
 
-_adapted from Miranda, 2104_
+_* adapted from Miranda, 2104_
 
 ---
 # Release Planning

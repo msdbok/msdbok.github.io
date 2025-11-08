@@ -7,7 +7,7 @@ layout: default
 
 # Contracts, Incentives, and Estimation Limits
 
-_adapted from Miranda, 2104_
+_* adapted from Miranda, 2104_
 
 ---
 
