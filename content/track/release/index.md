@@ -21,8 +21,6 @@ This tension exists in both *predictive* (“Big Up-Front”) and *Agile* approa
 
 ---
 
-## 2. Objectives
-
 By the end of this part, you should be able to:
 
 1. Explain the purpose of release planning.  
@@ -31,7 +29,7 @@ By the end of this part, you should be able to:
 
 ---
 
-## 3. Releases vs Iterations
+## 2. Releases vs Iterations
 
 | Concept               | Purpose                                         | Typical Duration         |
 |:----------------------|:-----------------------------------------------|:------------------------|
@@ -42,7 +40,7 @@ By the end of this part, you should be able to:
 
 ---
 
-## 4. Defining Release Content
+## 3. Defining Release Content
 
 > **Release planning** = deciding *when* and *with what features* to deliver working software.
 
@@ -61,7 +59,7 @@ Project time box = *knapsack* with limited capacity.
 
 ---
 
-## 5. Overview of Release Planning Methods
+## 4. Overview of Release Planning Methods
 
 | Method                       | Description                                                                 | Notes                    |
 |:-----------------------------|:---------------------------------------------------------------------------|:-------------------------|
