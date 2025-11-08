@@ -141,7 +141,7 @@ gantt
     section Test & Release
     System testing  :crit, c1, after b2, 3d
     Integration testing    :c2, after b3, 3d
-    Fix & hardening        :c3, after c1, 3d
+    Fix & hardening        :crit, c3, after c1, 3d
     Release Candidate      :milestone, m2, after c3, 0d
     Production Launch      :milestone, m3, after c2, 0d
 ```
