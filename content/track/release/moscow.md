@@ -124,5 +124,11 @@ If assumptions are wrong → results will be consistently wrong.
 
 ---
 
+## 7. References
+
+[1] E. Miranda, “Time boxing planning: buffered moscow rules,” SIGSOFT Softw. Eng. Notes, vol. 36, no. 6, pp. 1–5, Nov. 2011, doi: 10.1145/2047414.2047428.
+
+
+---
 {: .highlight }
 **Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
