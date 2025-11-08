@@ -11,7 +11,7 @@ _adapted from Miranda, 2104_
 
 ---
 
-## 1. Context – The Problem
+## 1. The Problem
 
 Release dates are often fixed — but the content is not.  
 This tension exists in both *predictive* (“Big Up-Front”) and *Agile* approaches.
@@ -69,14 +69,7 @@ Project time box = *knapsack* with limited capacity.
 | **SPID** (*Statistically Planned Incremental Delivery*, Miranda 2002) | Quantitative method using subjective probabilities to guarantee delivery consistent with *worst-case* estimates. | Adds statistical confidence. |
 | **EVOLVE** (Greer & Ruhe 2003) | Uses a genetic algorithm to maximize value-benefit function; produces *k* optimal release plans. | Complex optimization. |
 | **IFM** (*Incremental Funding Method*, Denne & Cleland-Huang 2004) | Divides system into *Minimal Marketable Features (MMFs)* and *Architectural Elements (AEs)*; maximizes Weighted Sequence-Adjusted NPV. | Financially oriented. |
-| **Buffered MoSCoW Rules** (Miranda 2011) | Simplified quantitative approach for Agile teams; combines MoSCoW priorities with buffered estimates. | Focus of this lecture. |
-
----
-
-## 6. Transition to Buffered MoSCoW
-
-The **Buffered MoSCoW** method bridges qualitative prioritization and quantitative assurance.  
-It aims to deliver the most valuable functionality within a fixed time box — without “wasteful” buffers.
+| **Buffered MoSCoW Rules** (Miranda 2011) | Simplified quantitative approach for Agile teams; combines MoSCoW priorities with buffered estimates. | Focus on most valuable functionality within a fixed time box. |
 
 ---
 
