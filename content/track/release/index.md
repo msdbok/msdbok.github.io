@@ -73,11 +73,11 @@ Project time box = *knapsack* with limited capacity.
 
 ## References
 
-[1] M. Denne and J. Cleland-Huang, “The incremental funding method: data-driven software development,” IEEE Software, vol. 21, no. 3, pp. 39–47, May 2004, doi: 10.1109/MS.2004.1293071.
-[2] D. Greer and G. Ruhe, “Software release planning: an evolutionary and iterative approach,” Information and Software Technology, vol. 46, no. 4, pp. 243–253, Mar. 2004, doi: 10.1016/j.infsof.2003.07.002.
-[3] E. Miranda, “Improving subjective estimates using paired comparisons,” IEEE Software, vol. 18, no. 1, pp. 87–91, Jan. 2001, doi: 10.1109/52.903173.
-[4] E. Miranda, “Planning and executing time-bound projects,” Computer, vol. 35, no. 3, pp. 73–79, Mar. 2002, doi: 10.1109/2.989933.
-[5] E. Miranda, “Time boxing planning: buffered moscow rules,” SIGSOFT Softw. Eng. Notes, vol. 36, no. 6, pp. 1–5, Nov. 2011, doi: 10.1145/2047414.2047428.
+1. M. Denne and J. Cleland-Huang, “The incremental funding method: data-driven software development,” IEEE Software, vol. 21, no. 3, pp. 39–47, May 2004, doi: 10.1109/MS.2004.1293071.
+2. D. Greer and G. Ruhe, “Software release planning: an evolutionary and iterative approach,” Information and Software Technology, vol. 46, no. 4, pp. 243–253, Mar. 2004, doi: 10.1016/j.infsof.2003.07.002.
+3. E. Miranda, “Improving subjective estimates using paired comparisons,” IEEE Software, vol. 18, no. 1, pp. 87–91, Jan. 2001, doi: 10.1109/52.903173.
+4. E. Miranda, “Planning and executing time-bound projects,” Computer, vol. 35, no. 3, pp. 73–79, Mar. 2002, doi: 10.1109/2.989933.
+5. E. Miranda, “Time boxing planning: buffered moscow rules,” SIGSOFT Softw. Eng. Notes, vol. 36, no. 6, pp. 1–5, Nov. 2011, doi: 10.1145/2047414.2047428.
 
 
 {: .highlight }
