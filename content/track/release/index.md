@@ -79,6 +79,7 @@ Project time box = *knapsack* with limited capacity.
 4. E. Miranda, “Planning and executing time-bound projects,” Computer, vol. 35, no. 3, pp. 73–79, Mar. 2002, doi: 10.1109/2.989933.
 5. E. Miranda, “Time boxing planning: buffered moscow rules,” SIGSOFT Softw. Eng. Notes, vol. 36, no. 6, pp. 1–5, Nov. 2011, doi: 10.1145/2047414.2047428.
 
+---
 
 {: .highlight }
-**Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
