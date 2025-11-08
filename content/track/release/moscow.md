@@ -7,7 +7,7 @@ layout: default
 
 # The Buffered MoSCoW Method
 
-_adapted from Miranda, 2104_
+_*adapted from Miranda, 2104_
 
 ---
 
