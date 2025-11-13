@@ -109,12 +109,34 @@ These features form the **Must Have** set — the minimum viable release.
 
 ### 3.4 Buffered MoSCoW Project Structure
 
-```
- ---------------------------------------------------------
-|                TIME BOX  (180h total)                   |
-|  Must Have (worst-case filled)  |  Should  |  Could  |→|
-|  <-- buffer zone absorbs overruns -->                   |
- ---------------------------------------------------------
+```mermaid
+gantt
+    title MoSCoW Example — 180h timebox (≈60h setup + 120h delivery)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
+
+    %% --- Setup (~60h) ---
+    section Setup (≈60h)
+    Increment Planning (≈24h)        :ip, 2025-01-01, 3d
+    System Engineering (overlaps, ≈24–36h) :se, 2025-01-02, 5d
+    System Architecting (overlaps, ≈24–36h):sa, 2025-01-04, 5d
+    Gate to Delivery (T+≈60h)        :milestone, gate, 2025-01-09, 0d
+
+    %% --- Delivery timebox (~120h) ---
+    section Delivery Timebox (≈120h)
+    Must Have — F, D, E, A, B, C, K (≈71h) :crit, must, 2025-01-09, 9d
+    Buffer after Must (≈49h)               :milestone, b1, 2025-01-20, 0d
+
+    Should Have — G (≈20h)                 :should, 2025-01-20, 3d
+    Buffer after Should (≈29h)             :milestone, b2, 2025-01-23, 0d
+
+    Could Have — L (≈10h)                  :could, 2025-01-23, 2d
+    Buffer after Could (≈19h)              :milestone, b3, 2025-01-27, 0d
+
+    %% --- Fixed date / end of timebox ---
+    section Fixed date
+    Fixed Delivery Date                    :milestone, dd, 2025-02-03, 0d
+
 ```
 
 > 🧠 **Interpretation:** The Must set fits the worst-case budget;  
