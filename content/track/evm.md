@@ -1,5 +1,5 @@
 ---
-parent: Control
+parent: Tracking
 title: Earned-Value
 nav_order: 5
 layout: default

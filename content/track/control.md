@@ -1,5 +1,5 @@
 ---
-parent: Control
+parent: Tracking
 title: Controlling
 nav_order: 4
 layout: default

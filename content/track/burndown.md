@@ -1,5 +1,5 @@
 ---
-parent: Control
+parent: Tracking
 title: Burndown Chart
 nav_order: 6
 layout: default
