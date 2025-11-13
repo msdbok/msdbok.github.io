@@ -10,10 +10,6 @@ layout: default
 _* adapted from Miranda, 2104_
 
 ---
-# Release Planning
-_adapted from Eduardo Miranda, 2014_
-
----
 
 ## 1. The Problem: Fixed Dates, Flexible Content
 
