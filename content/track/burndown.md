@@ -16,6 +16,8 @@ A burndown chart is a visual tool that shows how much work remains (vertical axi
 - Typical elements: an ideal line (straight) and an actual line showing team progress.  
 - Comparing actual to ideal shows whether the team is on track, ahead, or behind.
 
+![Release Burndown Chart](burn.png)
+
 ---
 
 ## 2. Why use burndown charts?
