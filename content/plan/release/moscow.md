@@ -27,8 +27,22 @@ The **Buffered MoSCoW** approach extends this by adding _buffers_ to account for
 
 ### 1.1 DSDM Buffering Scheme
 
-```
-|<------60% Must------>|<---20% Should--->|<---20% Could--->|                 ^ buffer absorbs uncertainty ^
+```mermaid
+gantt
+    title DSDM Buffering Scheme — Fixed delivery date, flexible scope
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
+    %% Example: 10-week (70-day) timebox
+    section Release Timebox (100%)
+    Must Have (≈60%)        :crit, m1, 2025-01-01, 42d
+    Should Have (≈20%)      :s1, 2025-02-12, 14d
+    Could Have (≈20%)       :c1, 2025-02-26, 14d
+    Fixed Delivery Date     :milestone, md, 2025-03-12, 0d
+
+    section Buffer behavior (scope flex)
+    Scope buffer zone (trade-off S/C) :active, b1, 2025-02-12, 28d
+
+
 ```
 
 This model assumes that only about **60% of total effort** can safely be allocated to _Must Have_ features.  
