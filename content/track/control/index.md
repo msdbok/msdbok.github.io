@@ -7,7 +7,7 @@ layout: default
 
 #  Tracking
 
-_* adapted from Miranda, 2104_
+_* adapted from Miranda, 2014_
 
 ## 1. Purpose of Tracking
 

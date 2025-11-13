@@ -7,7 +7,7 @@ layout: default
 
 # Release Planning
 
-_* adapted from Miranda, 2104_
+_* adapted from Miranda, 2014_
 
 ---
 
@@ -83,7 +83,7 @@ Imagine you are packing a **backpack (knapsack)** for a trip:
 
 Your goal is to **maximize the total value** of items that fit **without exceeding** the available time.
 
-> 💭 _“You can’t take everything on the trip — so take what’s most valuable.”_
+> _“You can’t take everything on the trip — so take what’s most valuable.”_
 
 This analogy explains why **release planning** is both a **technical** and **strategic** decision.
 
