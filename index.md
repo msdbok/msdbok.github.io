@@ -55,7 +55,7 @@ graph LR
 
 ## Areas Covered
 
-### 1. [People](/content/define/)
+### 1. [People](/content/people/)
 Understand what makes technical teams tick:
 - What is a "technical person"?
 - Managing and motivating teams

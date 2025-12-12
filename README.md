@@ -1,174 +1,105 @@
-# just-the-docs-template
+# MSDBOK - Managing Software Development Body of Knowledge
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+A comprehensive course handbook and knowledge repository for **Managing Software Development**, covering key topics in software project management, team leadership, and development processes.
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+**Live Site:** [msdbok.github.io](https://msdbok.github.io)
 
-More specifically, the created site:
+## About
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+This repository contains structured course notes and resources designed for MS students, professionals, and anyone interested in learning about software development management. The content focuses on breadth over depth, introducing a wide range of concepts and practices while emphasizing critical thinking and decision-making.
 
-To get started with creating a site, simply:
+## Content Areas
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+The handbook is organized into 7 major knowledge areas:
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+1. **[People](content/people/)** - Managing technical teams, motivation, and decision-making
+2. **[Processes](content/proc/)** - Project lifecycle stages, frameworks, and process selection
+3. **[Needs](content/needs/)** - Customer expectations, requirements, and risk management
+4. **[Scope](content/scope/)** - Work Breakdown Structure (WBS) and estimation methods
+5. **[Planning](content/plan/)** - Agile vs plan-driven approaches, Gantt charts, critical path
+6. **[Tracking](content/track/)** - Progress monitoring, burndown charts, Earned Value Management
+7. **[Materials](content/material/)** - Curated resources, books, and research papers
 
-After completing the creation of your new site on GitHub, update it as needed:
+## Technology Stack
 
-## Replace the content of the template pages
+- **Jekyll** (v4.4.1) - Static site generator
+- **Just the Docs** - Documentation theme
+- **jekyll-scholar** - Bibliography and citation management (IEEE style)
+- **GitHub Pages** - Hosting and deployment
 
-Update the following files to your own content:
+## Building Locally
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+### Prerequisites
 
-## Changing the version of the theme and/or Jekyll
+- Ruby 3.3 or higher
+- Bundler
 
-Simply edit the relevant line(s) in the `Gemfile`.
+### Setup
 
-## Adding a plugin
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/msdbok/msdbok.github.io.git
+   cd msdbok.github.io
+   ```
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+3. Build and serve locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
 
-- Add the following to your site's `Gemfile`:
+4. Open your browser to `http://localhost:4000`
 
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
+## Project Structure
 
-- And add the following to your site's `_config.yml`:
+```
+.
+├── content/           # Main course content organized by topic
+│   ├── people/       # Team management and leadership
+│   ├── proc/         # Processes and frameworks
+│   ├── needs/        # Requirements and risk management
+│   ├── scope/        # Work breakdown and estimation
+│   ├── plan/         # Planning approaches
+│   ├── track/        # Progress tracking methods
+│   └── material/     # Curated resources
+├── _includes/        # Reusable Jekyll components
+├── _layouts/         # Page layout templates
+├── _sass/            # Stylesheets and color schemes
+├── _bibliography/    # Bibliography files for citations
+└── images/           # Static assets
+```
 
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
+## Contributing
 
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
+Contributions are welcome! Whether it's fixing typos, improving explanations, or adding new content, your help is appreciated.
 
-## Publishing your site on GitHub Pages
+- Follow the existing content structure and style
+- Ensure all facts and claims are verified
+- Use IEEE citation style for references
+- Test changes locally before submitting
 
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
+## Deployment
 
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
+The site is automatically built and deployed to GitHub Pages via GitHub Actions whenever changes are pushed to the `main` branch.
 
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
+## License
 
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
+This work is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE).
 
-2.  Push your updated `_config.yml` to your site on GitHub.
+You are free to share and adapt the material for any purpose, even commercially, as long as you give appropriate credit.
 
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
+## Author
 
-## Building and previewing your site locally
+**Andrey Sadovykh**
 
-Assuming [Jekyll] and [Bundler] are installed on your computer:
+## Acknowledgments
 
-1.  Change your working directory to the root directory of your site.
+AI tools were used for text polishing and improving explanations. All facts and claims have been verified by the authors.
 
-2.  Run `bundle install`.
+## Disclaimer
 
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/_site/
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+In case of an error, feel free to [file an issue](https://github.com/msdbok/msdbok.github.io/issues).
