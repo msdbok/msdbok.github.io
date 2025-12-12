@@ -62,7 +62,7 @@ In _Evaluating Project Decisions_, a team faced performance problems after adopt
 ---
 
 ## Impact of Project Time on Customer–Developer Views
-xs
+
 ![Quadrant - Time Impact](<quad_time.png>)
 
 *Source: Hoover et al., Evaluating Project Decisions*
