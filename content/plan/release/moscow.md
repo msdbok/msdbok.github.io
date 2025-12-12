@@ -91,6 +91,7 @@ The remaining capacity acts as a **buffer** — absorbing overruns in estimates 
 ---
 
 ### 3.2 Step 1 — Define “Must Have” (120-hour development budget)
+Assume that the preferred order is: F, D, A, G, K, E, L, J, H, I, B, C
 
 Using **worst-case** estimates and prioritizing by business value:  
 `F + D + E + A + B + C + K ≈ 109 hours.`
