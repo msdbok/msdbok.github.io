@@ -110,6 +110,7 @@ class CreditCard {
   -issueDate
   -validThru
   -valid
+  -ownerId
   -nameOnCard
 }
 class Address {
