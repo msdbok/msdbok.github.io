@@ -1,0 +1,52 @@
+// MSDBOK Color Scheme
+// Based on logo colors: Teal elephant and professional book aesthetic
+
+// Logo teal colors
+$teal-000: #E6F5F5;  // Very light teal (backgrounds)
+$teal-100: #B3E0E0;  // Light teal
+$teal-200: #4DB8B8;  // Medium teal
+$teal-300: #1A9999;  // Logo teal
+$teal-400: #0B7A7F;  // Dark teal (primary)
+$teal-500: #065A5E;  // Darker teal
+
+// Warm accents for book feel
+$cream-000: #FFFEF9;  // Cream/off-white (page background)
+$cream-100: #F9F7F0;  // Warm light background
+$warm-grey: #5A5550;  // Warm dark grey for text
+
+// Override Just the Docs variables with logo colors
+$body-background-color: $cream-000;
+$body-text-color: $warm-grey;
+$body-heading-color: $teal-500;
+
+$link-color: $teal-400;
+$btn-primary-color: $teal-400;
+
+$sidebar-color: $cream-100;
+$nav-list-link-color: $warm-grey;
+$nav-list-link-color-hover: $teal-400;
+$nav-list-link-color-active: $teal-500;
+
+// Search
+$search-background-color: $cream-100;
+$search-result-preview-color: $warm-grey;
+
+// Code blocks - keep professional
+$code-background-color: $cream-100;
+$code-linenumber-color: $teal-300;
+
+// Tables
+$table-background-color: $cream-000;
+$table-header-background-color: $teal-000;
+
+// Borders
+$border-color: $teal-100;
+
+// Breadcrumbs
+$breadcrumb-nav-color: $teal-300;
+
+// Callouts - use teal variants
+$blue-000: $teal-000;
+$blue-100: $teal-100;
+$blue-200: $teal-200;
+$blue-300: $teal-300;

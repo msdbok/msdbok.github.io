@@ -1,14 +1,79 @@
+// Book-style enhancements
+
+// Typography - more book-like
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+}
+
+.main-content {
+  max-width: 50rem;  // Book-like reading width
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+  }
+
+  h1 {
+    border-bottom: 2px solid $teal-400;
+    padding-bottom: 0.3em;
+  }
+
+  h2 {
+    border-bottom: 1px solid $teal-100;
+    padding-bottom: 0.2em;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+  }
+
+  // Book-style blockquotes
+  blockquote {
+    border-left: 4px solid $teal-400;
+    background-color: $teal-000;
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    font-style: italic;
+  }
+}
+
+// Enhanced tables
 tr:nth-child(even), th {
   background-color: $grey-lt-000
 }
 
 td {
   background-color: inherit;
-  // padding: $sp-2;
 }
 
 th,
 td {
   min-width: 60px;
   padding: $sp-2 $sp-3;
+}
+
+// Navigation - warmer look
+.side-bar {
+  border-right: 1px solid $teal-100;
+}
+
+// Logo styling
+.site-header {
+  border-bottom: 1px solid $teal-100;
+}
+
+.site-title {
+  color: $teal-500 !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+// Breadcrumb refinement
+.breadcrumb-nav {
+  font-size: 0.9em;
+  color: $teal-300;
 }

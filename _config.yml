@@ -21,10 +21,11 @@ title: MSDBOK
 author: Andrey Sadovykh
 description: "Managing Software Development Course Handbook (MSDBOK) - Collection of resources and handouts"
 theme: just-the-docs
+color_scheme: msdbok
 
 url: https://msdbok.github.io
 
-# logo: "/images/msdbok_logo.png"
+logo: "/images/msdbok_logo.png"
 
 favicon_ico: "/images/favicon.ico"
 
