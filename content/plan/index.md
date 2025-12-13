@@ -273,7 +273,7 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 
 - Sutherland, Jeff, and Ken Schwaber. "The Scrum Papers: Nut, Bolts, and Origins of an Agile Framework." Scrum Inc., 2007. https://www.scruminc.com/scrumpapers.pdf
 
-- Miranda, Eduardo. "Managing Software Development Projects." Lecture materials, 2014.
+- Miranda, Eduardo. "Managing Software Development." Lecture materials, 2014.
 
 ---
 
