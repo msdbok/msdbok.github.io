@@ -124,7 +124,7 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 
 - Brown, William H. "Risky Business: Navigating the World of Software Productivity." *International Cost Estimating and Analysis Association (ICEAA)*, 2024. [https://www.iceaaonline.com/wp-content/uploads/2024/06/SWR09-Brown-Risky-Business-Software-Productivity-Paper.pdf](https://www.iceaaonline.com/wp-content/uploads/2024/06/SWR09-Brown-Risky-Business-Software-Productivity-Paper.pdf)
 
-- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, Carnegie Mellon University, 2014.
+- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, 2014.
 
 ---
 

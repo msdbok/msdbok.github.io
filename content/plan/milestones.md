@@ -301,7 +301,7 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 
 - Madan, Sumeet. "Done - Understanding Definition of Done." *Scrum.org*, 2019. [https://www.scrum.org/resources/blog/done-understanding-definition-done](https://www.scrum.org/resources/blog/done-understanding-definition-done)
 
-- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, Carnegie Mellon University, 2014.
+- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, 2014.
 
 ---
 

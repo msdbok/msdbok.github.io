@@ -468,7 +468,7 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 
 ## Sources
 
-- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, Carnegie Mellon University, 2014.
+- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, 2014.
 
 ---
 
