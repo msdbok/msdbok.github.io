@@ -109,10 +109,17 @@ Access curated resources to deepen your understanding:
 
 ---
 
-## Resources
+## Contributing
 
-- **Contribution Template**: [Start contributing here](/content/template/)  
-  Help us improve these notes by following the provided guidelines.
+We welcome contributions from students, practitioners, and educators!
+
+### How to Contribute
+
+- **Fix content issues**: typos, fact checks, source validation → [See guidelines](https://github.com/msdbok/msdbok.github.io/blob/main/CONTRIBUTING.md)
+- **Add method descriptions**: 1-2 page technique descriptions → [Use template](https://github.com/msdbok/msdbok.github.io/blob/main/templates/method-template.md)
+- **Write analysis papers**: 3-4 page comparative studies → [Use template](https://github.com/msdbok/msdbok.github.io/blob/main/templates/analysis-template.md)
+
+📖 **[Read full contribution guidelines](https://github.com/msdbok/msdbok.github.io/blob/main/CONTRIBUTING.md)**
 
 ---
 
