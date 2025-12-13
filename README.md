@@ -104,8 +104,23 @@ You are free to share and adapt the material for any purpose, even commercially,
 
 ## Acknowledgments
 
-AI tools were used for text polishing and improving explanations. All facts and claims have been verified by the authors.
+Much of the content in this handbook is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management at Carnegie Mellon University. The structure, examples, and pedagogical approach throughout the planning, processes, and materials sections reflect their teaching materials and frameworks.
+
+Pages with significant lecture-based content include an **Acknowledgments section** crediting the original instructors, along with proper citations in the **Sources section**.
+
+## Attribution and Citations
+
+This project maintains rigorous attribution practices:
+
+- **All content pages** include a Sources section with full citations
+- **Lecture-based materials** have dedicated Acknowledgments sections
+- **Academic citations** follow IEEE style via jekyll-scholar
+- **Original frameworks and methods** are attributed to their creators
+
+See our [Citation Standardization Plan](docs/citation-standardization-plan.md) for details on our citation practices.
 
 ## Disclaimer
+
+AI tools were used for text polishing and improving explanations. All facts and claims have been verified by the authors.
 
 In case of an error, feel free to [file an issue](https://github.com/msdbok/msdbok.github.io/issues).

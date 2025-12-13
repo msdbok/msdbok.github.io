@@ -143,7 +143,15 @@ Our goal is to help you build a foundation for making informed decisions in soft
 
 ---
 
-Feel free to explore, contribute, and enhance your understanding of software quality and reliability!
+## Acknowledgments
+
+Much of the content in this handbook is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management at Carnegie Mellon University. The structure, examples, and pedagogical approach throughout the planning, processes, and materials sections reflect their teaching materials and frameworks.
+
+Pages with significant lecture-based content include an **Acknowledgments section** crediting the original instructors, along with proper citations in the **Sources section**. All content pages maintain rigorous attribution practices with full citations for frameworks, methods, and research.
+
+---
+
+Feel free to explore, contribute, and enhance your understanding of software development management!
 
 {: .highlight }
 **Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
