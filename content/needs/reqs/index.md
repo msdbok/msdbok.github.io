@@ -6,6 +6,7 @@ layout: default
 ---
 
 ## Requirements Management
+_Adapted from David Root (2014)_
 
 - **Definition:**  
     > “A set of activities that help a project team to identify, control, track requirements and changes to requirements at any time as the project proceeds.”
@@ -177,6 +178,20 @@ layout: default
   [cwnp.com](https://www.cwnp.com/req-eng/)
 - IBM article “What is requirements management?” — general description of RM processes: document, trace, analyze, prioritize, agree, managing change.  
   [IBM](https://www.ibm.com/think/topics/what-is-requirements-management)
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 ---
 

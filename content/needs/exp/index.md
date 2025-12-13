@@ -31,6 +31,7 @@ layout: default
 ---
 
 ## Customer Expectations in Software Engineering
+_Adapted from David Root (2014)_
 
 - **Agile Development:**  
   Customers often see Agile as _“pay as you go”_—they expect flexibility, adaptability, and ongoing collaboration.
@@ -60,6 +61,20 @@ layout: default
 - Managing expectations is as important as delivering results.
 - Understand that perceptions, not just facts, drive satisfaction.
 - Set realistic, clear expectations and communicate openly to avoid misunderstandings.
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 ---
 

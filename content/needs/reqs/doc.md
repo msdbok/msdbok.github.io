@@ -6,6 +6,7 @@ layout: default
 ---
 
 # Requirements Documentation
+_Adapted from David Root (2014)_
 
 ### Types of Artifacts
 
@@ -105,6 +106,20 @@ A good requirements specification should include:
   [https://www.servicenow.com/docs/bundle/zurich-it-business-management/page/product/agile-development/concept/how-to-write-stories.html](https://www.servicenow.com/docs/bundle/zurich-it-business-management/page/product/agile-development/concept/how-to-write-stories.html)
 - Academic studies: Documenting Non-Functional Requirements in Agile; test cases as requirements artifacts.  
   [https://arxiv.org/abs/1711.08894](https://arxiv.org/abs/1711.08894)
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 ---
 

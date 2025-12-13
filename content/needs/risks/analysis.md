@@ -6,6 +6,7 @@ layout: default
 ---
 
 ## Risk Analysis
+_Adapted from David Root (2014)_
 
 ---
 
@@ -107,6 +108,20 @@ Plot these in a matrix: Risks like R1 & R2 land in upper right (“urgent”), R
 - [PlaybookTeam](https://playbookteam.com/resources/blog/calculate-risk-exposure)
 - [AuditBoard](https://auditboard.com/blog/what-is-a-risk-assessment-matrix)
 - [SafetyCulture](https://safetyculture.com/topics/risk-assessment/5x5-risk-matrix/)
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 ---
 

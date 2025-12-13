@@ -6,6 +6,7 @@ layout: default
 ---
 
 # Teams Problems & Motivation
+_Adapted from David Root (2014)_
 
 ## The Classic Team Story
 
@@ -134,6 +135,20 @@ If a developer knows that fixing bugs quickly (effort) will be noticed (performa
 - Deci, Edward L., and Richard M. Ryan. “Self-Determination Theory.” *Handbook of Theories of Social Psychology*, Vol. 1, Ch. 20, 2012, pp. 416-436.
 - Vroom, Victor H., Lyman W. Porter, and Edward E. Lawler. “Expectancy Theories.” In *Organizational Behavior*, Vol. 1, Routledge, 2015, pp. 94-113.
 - Wikipedia contributors. "Social loafing." Wikipedia, Wikimedia Foundation. https://en.wikipedia.org/wiki/Social_loafing
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 ---
 

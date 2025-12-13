@@ -6,6 +6,7 @@ layout: default
 ---
 
 # Requirements Engineering
+_Adapted from David Root (2014)_
 
 ## Key Activities / Steps
 
@@ -108,16 +109,26 @@ Verification ensures the _quality of the specification itself_. Validation ensur
 
 ---
 
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
 ## Sources
 
-- GeeksforGeeks: _Requirements Engineering Process_ — definitions of verification vs validation, specification, elicitation etc.  
+- GeeksforGeeks: _Requirements Engineering Process_ — definitions of verification vs validation, specification, elicitation etc.
   [GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering/software-engineering-requirements-engineering-process/)
-- Visure Solutions: guide on requirements verification and validation.  
+- Visure Solutions: guide on requirements verification and validation.
   [visuresolutions.com](https://visuresolutions.com/alm-guide/requirements-verification-and-validation/)
-- Xebrio: Requirements engineering, how raw requirements are refined, testability etc.  
+- Xebrio: Requirements engineering, how raw requirements are refined, testability etc.
   [Xebrio | Project Management Software](https://xebrio.com/requirements-engineering/)
-- SEBoK (Wikipedia entries also good summaries) for “Verification vs Validation”, “Requirements Engineering” definitions.  
+- SEBoK (Wikipedia entries also good summaries) for "Verification vs Validation", "Requirements Engineering" definitions.
   [Wikipedia](https://en.wikipedia.org/wiki/Verification_and_validation)
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

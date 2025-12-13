@@ -6,6 +6,7 @@ layout: default
 ---
 
 # Requirement Statements
+_Adapted from David Root (2014)_
 
 ## Types of Requirements
 
@@ -119,6 +120,20 @@ Also provocative or informal ones:
   [Medium](https://priyalwalpita.medium.com/quality-attributes-in-software-architecture-cacffe0995aa)
 - UBC “System Qualities & Scenarios (Non-functional Requirements)” lecture — defines concrete vs general scenarios, gives the 6-part scenario pattern.  
   [Electrical and Computer Engineering](https://people.ece.ubc.ca/matei/EECE417/BASS/ch04lev1sec4.html)
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 ---
 

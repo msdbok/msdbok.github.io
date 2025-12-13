@@ -6,6 +6,7 @@ layout: default
 ---
 
 ## Risk Identification
+_Adapted from David Root (2014)_
 
 ---
 
@@ -92,11 +93,21 @@ Sometimes cause may be optional or less known; event and consequence are essenti
 
 ---
 
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
 ## Sources
 
 - DEPARTMENT OF ENERGY software risk management guide (SQAS21.01.00) — gives process, forms, templates. [energy.gov](https://energy.gov/sites/prod/files/cioprod/documents/Risk_Management.pdf)
 - PRINCE2 Risk Theme (Cause-Event-Effect) for how to articulate and manage risk statements. [prince2.wiki](https://prince2.wiki/practices/risk/) [projex.com](https://www.projex.com/identifying-prince2-risks/)
 - DoD RIO Guide — best practices on risk statement including cause / event / consequence. [dau.edu](https://www.dau.edu/library/damag/november-december2017/how-write-good-risk-statement)
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

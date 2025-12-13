@@ -6,6 +6,7 @@ layout: default
 ---
 
 # Team Formation
+_Adapted from David Root (2014)_
 
 ## Building a Team: Tasks, People, Relationships
 
@@ -158,6 +159,20 @@ Three major cycles to manage for team success:
 - Steiner, I. D. (1983). Whatever happened to the touted revival of the group? In H. H. Blumberg, P. A. Hare, M. V. Kent, & M. Davies (Eds.), *Small groups and social interaction* (pp. 539–547). New York: John Wiley & Sons Ltd.
 - Steiner, I. D. (1986). Paradigms and groups. *Advances in Experimental Social Psychology*, 19, 251–289.
 - Tuckman, Bruce W. “Developmental Sequence in Small Groups.” *Psychological Bulletin*, vol. 63, no. 6, 1965, pp. 384–399. Adjourning added later in: Tuckman, Bruce W., and Mary Ann C. Jensen. “Stability and Changes in Group Development.” *Group & Organizational Studies*, vol. 2, no. 4, 1977, pp. 419–427.
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 ---
 

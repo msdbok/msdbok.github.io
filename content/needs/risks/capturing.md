@@ -6,6 +6,7 @@ layout: default
 ---
 
 ## Capturing & Tracking Risks
+_Adapted from David Root (2014)_
 
 ---
 
@@ -72,11 +73,21 @@ layout: default
 
 ---
 
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
 ## Sources
 
 - ISO 31000: risk management standard – emphasizes roles, integrating risk into decisions, monitoring, etc. [Wikipedia](https://en.wikipedia.org/wiki/ISO_31000)
 - PMI / PMBOK guides: frequency of risk review / communication depends on project nature; status updates / risk reporting schedule form part of risk management plan. [Project Management Institute](https://www.pmi.org/learning/library/project-risk-management-success-tool-6078) [Project Management Stack Exchange](https://pm.stackexchange.com/questions/1291/how-often-should-risk-management-be-analysed-and-tracked)
 - Best practices articles (e.g. AuditBoard, Everbridge, IBM) on mitigation strategies: set clear roles, involve stakeholders, use tools / templates, monitor continuously. [AuditBoard](https://auditboard.com/blog/risk-mitigation) [Everbridge](https://www.everbridge.com/blog/risk-mitigation-strategies/)
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
