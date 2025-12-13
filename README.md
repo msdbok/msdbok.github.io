@@ -75,12 +75,18 @@ The handbook is organized into 7 major knowledge areas:
 
 ## Contributing
 
-Contributions are welcome! Whether it's fixing typos, improving explanations, or adding new content, your help is appreciated.
+Contributions are welcome! We accept:
+- **Content fixes**: typos, fact checks, source validation, clarifications
+- **Method descriptions**: 1-2 page focused technique descriptions
+- **Comparative analyses**: 3-4 page papers comparing different approaches
 
-- Follow the existing content structure and style
-- Ensure all facts and claims are verified
-- Use IEEE citation style for references
-- Test changes locally before submitting
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines and templates.
+
+**Quick start:**
+- Use [templates/method-template.md](templates/method-template.md) for new methods
+- Use [templates/analysis-template.md](templates/analysis-template.md) for comparative papers
+- Follow the atomic page principle - each page is self-contained
+- Include proper citations and sources
 
 ## Deployment
 
