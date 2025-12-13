@@ -104,7 +104,7 @@ You are free to share and adapt the material for any purpose, even commercially,
 
 ## Acknowledgments
 
-Much of the content in this handbook is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management at Carnegie Mellon University. The structure, examples, and pedagogical approach throughout the planning, processes, and materials sections reflect their teaching materials and frameworks.
+Much of the content in this handbook is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach throughout the planning, processes, and materials sections reflect their teaching materials and frameworks.
 
 Pages with significant lecture-based content include an **Acknowledgments section** crediting the original instructors, along with proper citations in the **Sources section**.
 
