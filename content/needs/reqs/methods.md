@@ -26,7 +26,7 @@ layout: default
 
 ## User Stories (Agile)
 
-**What they are.** Thin, user-value slices for planning and collaboration (XP/Scrum): _“As a <user>, I want <capability> so that <benefit>.”_ Ron Jeffries framed the **3Cs**: Card, Conversation, Confirmation. Bill Wake’s **INVEST** gives quality checks (Independent, Negotiable, Valuable, Estimable, Small, Testable).
+**What they are.** Thin, user-value slices for planning and collaboration (XP/Scrum): _"As a \<user\>, I want \<capability\> so that \<benefit\>."_ Ron Jeffries framed the **3Cs**: Card, Conversation, Confirmation. Bill Wake's **INVEST** gives quality checks (Independent, Negotiable, Valuable, Estimable, Small, Testable).
 
 **Good practice:**
 
