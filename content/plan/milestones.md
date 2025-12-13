@@ -289,5 +289,21 @@ Milestones must be:
 
 ---
 
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Radice, R. A., et al. "A Programming Process Architecture." *IBM Systems Journal*, vol. 24, no. 2, 1985, pp. 79–90.
+
+- Madan, Sumeet. "Done - Understanding Definition of Done." *Scrum.org*, 2019. [https://www.scrum.org/resources/blog/done-understanding-definition-done](https://www.scrum.org/resources/blog/done-understanding-definition-done)
+
+- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, Carnegie Mellon University, 2014.
+
+---
+
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.

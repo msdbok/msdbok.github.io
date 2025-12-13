@@ -109,5 +109,24 @@ Tip: Make three short tables before counting: **Files (ILF/EIF with RETs/DETs)**
 
 ## 10. Practical conversion rate FP→PMs
 
-**Practical bracket for coursework:** use **~10 FP/PM** as a plausible range.  
+**Practical bracket for coursework:** use **~10 FP/PM** as a plausible range.
 Source: [Risky Business: Navigating the World of Software Productivity](https://www.iceaaonline.com/wp-content/uploads/2024/06/SWR09-Brown-Risky-Business-Software-Productivity-Paper.pdf)
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Brown, William H. "Risky Business: Navigating the World of Software Productivity." *International Cost Estimating and Analysis Association (ICEAA)*, 2024. [https://www.iceaaonline.com/wp-content/uploads/2024/06/SWR09-Brown-Risky-Business-Software-Productivity-Paper.pdf](https://www.iceaaonline.com/wp-content/uploads/2024/06/SWR09-Brown-Risky-Business-Software-Productivity-Paper.pdf)
+
+- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, Carnegie Mellon University, 2014.
+
+---
+
+{: .highlight }
+**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
