@@ -261,11 +261,21 @@ It should:
 
 ---
 
-## 4. Sources
+## Acknowledgments
 
-Herbsleb, James D. “Global Software Engineering: The Future of Socio-Technical Coordination.” Future of Software Engineering (FOSE ’07), 2007, pp. 188–98. IEEE Xplore, https://doi.org/10.1109/FOSE.2007.11.
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
 
-Sutherland, Jeff. NUT, BOLTS, AND ORIGINS OF AN AGILE FRAMEWORK, https://www.scruminc.com/scrumpapers.pdf.
+---
+
+## Sources
+
+- Herbsleb, James D. "Global Software Engineering: The Future of Socio-Technical Coordination." *Future of Software Engineering (FOSE '07)*, 2007, pp. 188–98. IEEE Xplore, https://doi.org/10.1109/FOSE.2007.11.
+
+- Sutherland, Jeff, and Ken Schwaber. "The Scrum Papers: Nut, Bolts, and Origins of an Agile Framework." Scrum Inc., 2007. https://www.scruminc.com/scrumpapers.pdf
+
+- Miranda, Eduardo. "Managing Software Development Projects." Lecture materials, 2014.
+
+---
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
