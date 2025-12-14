@@ -23,11 +23,17 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 
 **Pages that need this:**
 - ✅ content/plan/index.md (DONE)
-- content/plan/activities.md
-- content/plan/milestones.md
-- content/material/trscp.md
-- content/material/trsd.md
-- content/material/trswbs.md
+- ✅ content/plan/activities.md (DONE)
+- ✅ content/plan/milestones.md (DONE)
+- ✅ content/material/trscp.md (DONE)
+- ✅ content/material/trsd.md (DONE)
+- ✅ content/material/trswbs.md (DONE)
+- ✅ content/people/index.md (DONE)
+- ✅ content/people/teams/*.md (DONE - 4 files)
+- ✅ content/people/perso/index.md (DONE)
+- ✅ content/needs/reqs/*.md (DONE - 4 files)
+- ✅ content/needs/risks/*.md (DONE - 4 files)
+- ✅ content/needs/exp/index.md (DONE)
 
 ---
 
@@ -67,19 +73,43 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 | content/people/perso/glen.md | Extensive Paul Glen content | Add Glen, Paul. *Leading Geeks* citation |
 | content/scope/wbs/index.md | References NASA handbook | Add NASA citation |
 
-### B. Header Standardization
+### B. Header Standardization - UPDATED APPROACH
 
-**Change all instances of:**
-- `## References` → `## Sources`
-- `## Source` (singular) → `## Sources`
-- `## Sources & References` → `## Sources`
+**New best practice: Dual-header pattern**
 
-**Files to update:**
-- content/proc/frameworks/overview.md
-- content/proc/frameworks/details.md
-- content/track/burndown.md
-- content/scope/wbs/*.md (check all)
-- Others identified in analysis (5+ pages)
+When content cites BOTH academic papers AND educational materials, use BOTH headers:
+
+```markdown
+## References
+
+1. [Academic papers, journal articles with DOI]
+
+---
+
+## Acknowledgments
+
+[Standard acknowledgments text]
+
+---
+
+## Sources
+
+- [Books, handbooks, lecture materials]
+```
+
+**When to use each:**
+- **References** = Academic papers, journal articles (IEEE/ACM style, with DOI)
+- **Sources** = Books, handbooks, lecture materials, websites
+- Files can have both if they cite both types
+
+**Files already using dual-header pattern:** ✅
+- content/plan/release/index.md (References + Sources)
+- content/plan/release/moscow.md (References + Sources)
+
+**Files with only "References" - need review:**
+- content/proc/frameworks/overview.md (check if needs Sources too)
+- content/proc/frameworks/details.md (check if needs Sources too)
+- content/track/burndown.md (check if needs Sources too)
 
 ### C. Duplicate Citations - Hoover et al.
 
@@ -102,17 +132,19 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 - content/people/teams/decisions.md
 - Others using Hoover reference
 
-### D. Eduardo Miranda Full Citation
+### D. Eduardo Miranda and David Root Full Citations
 
-**Add to all pages with "Adapted from Eduardo Miranda":**
-
+**Standard format for Miranda:**
 ```markdown
-## Sources
-
-- Miranda, Eduardo. *Managing Software Development Projects*. Lecture materials, Carnegie Mellon University, 2014.
+- Miranda, Eduardo. *Managing Software Development*. Lecture materials, 2014.
 ```
 
-**Note:** Verify exact title and affiliation
+**Standard format for Root:**
+```markdown
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+```
+
+**Note:** University affiliation removed as lectures were not at CMU. Title confirmed as "Managing Software Development" (not "Projects").
 
 ---
 
@@ -249,11 +281,53 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 
 ---
 
+## Progress Status (Updated 2025-01-XX)
+
+### ✅ Completed
+
+**Format standardization (10 files):**
+- Changed format from `_Adapted from Author (Year)_` to `_* adapted from Author, Year_`
+- Added Acknowledgments sections
+- Added proper Sources citations
+
+**Miranda-based (6 files):**
+1. ✅ content/track/index.md
+2. ✅ content/plan/release/moscow.md
+3. ✅ content/plan/release/index.md
+4. ✅ content/plan/release/incentives.md
+5. ✅ content/scope/estimates/index.md
+6. ✅ content/scope/wbs/index.md
+
+**Root-based (4 files):**
+1. ✅ content/proc/basics/index.md
+2. ✅ content/proc/index.md
+3. ✅ content/proc/lifecycles/index.md
+4. ✅ content/proc/frameworks/index.md
+
+### 🔄 Remaining Work
+
+**21 files still need format update:**
+- All have old `_Adapted from Author (Year)_` format
+- Most already have Acknowledgments sections
+- Just need format change to `_* adapted from Author, Year_`
+
+**Files to update:**
+- content/plan/index.md, activities.md, milestones.md (3 files)
+- content/material/trscp.md, trsd.md, trswbs.md (3 files)
+- content/needs/reqs/*.md (4 files)
+- content/needs/risks/*.md (4 files)
+- content/needs/exp/index.md (1 file)
+- content/people/index.md, teams/*.md, perso/*.md (6 files)
+
+---
+
 ## Success Metrics
 
-- [ ] All pages have `## Sources` (not References/Source)
-- [ ] 0 pages with missing citations on methodology content
-- [ ] Eduardo Miranda cited in all 6 "Adapted from" pages
+- [x] Dual-header pattern (References + Sources) established
+- [x] Miranda citation standardized (removed CMU, fixed title)
+- [x] Root citation standardized
+- [x] 10 files updated with new format
+- [ ] All 31 files use new `_* adapted from Author, Year_` format
 - [ ] Hoover citations standardized (1 canonical format)
 - [ ] All high-priority missing citations added
 - [ ] Templates updated with citation standards
