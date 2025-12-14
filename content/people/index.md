@@ -9,12 +9,18 @@ _Adapted from David Root (2014)_
 
 ## Why do so many projects fail?
 
-![CHAOS 2015](image.png)
+**CHAOS Report 2015 - Project Success Rates:**
 
-The Standish Group CHAOS report (2015) claims:
+| Project Outcome | All Projects | Large Projects |
+|-----------------|--------------|----------------|
+| **Successful** | 36% | 6% |
+| **Challenged** | 45% | — |
+| **Failed** | 19% | — |
+
+The Standish Group CHAOS report (2015) shows that:
 - **19%** of projects failed outright
 - **45%** were "challenged" (late, over budget, or missing key features)
-- Only **36%** were successful  
+- Only **36%** were successful
 For large-scale projects, the numbers are even worse: only **6%** succeed.
 
 **Success**: Delivered on time, within budget, and with the required features  
