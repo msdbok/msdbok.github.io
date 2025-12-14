@@ -8,6 +8,8 @@ layout: default
 
 ## Work Breakdown Structure (WBS) - Introduction
 
+_* adapted from Miranda, 2014_
+
 A **Work Breakdown Structure (WBS)** is a fundamental project management technique used to decompose the total scope of work into smaller, more manageable components. According to NASA’s Systems Engineering Handbook, the WBS serves as both a **planning tool** and a **framework for integration and control** throughout the project lifecycle. It provides a structured way to capture **what needs to be delivered** (outcomes) and **what work must be performed** to achieve those outcomes.
 
 ### Definition and Purpose
@@ -150,14 +152,20 @@ In short, the **WBS is not just a breakdown of tasks—it is the foundation of p
 
 ---
 
-**Sources:**
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
 
 - NASA Systems Engineering Handbook (2007).
-    
 - Essentials of Software Engineering, 3rd Ed., F. Tsui & O. Karam, 2022.
-    
 - K. Rubin, _Essential Scrum: A Practical Guide to the Most Popular Agile Process_, 2012.
+- Miranda, Eduardo. *Managing Software Development*. Lecture materials, 2014.
 
+---
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.

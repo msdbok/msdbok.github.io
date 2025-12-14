@@ -7,6 +7,8 @@ layout: default
 
 # Process Frameworks
 
+_* adapted from Root, 2014_
+
 ```mermaid
 timeline
     title Software Process Frameworks Spectrum
@@ -49,10 +51,19 @@ timeline
 
 ---
 
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
 ## Sources
 
 - Rockwood, Justin. "Choose Your Weapon Wisely." (2003 Edition)
 - Boehm, Barry, and Richard N. Turner. *Balancing agility and discipline: A guide for the perplexed*. Addison-Wesley, 2003.
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
+
+---
 
 {: .highlight }
 **Disclaimer:** AI is used for text summarization, explaining and formating. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

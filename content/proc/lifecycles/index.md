@@ -7,6 +7,8 @@ layout: default
 
 # Why Care About Lifecycles?
 
+_* adapted from Root, 2014_
+
 Understanding software lifecycles is essential for effective communication and project management:
 
 - **Communication:**  
@@ -92,6 +94,18 @@ The concept of software process is rarely presented in undergraduate education, 
 - Lifecycle models help teams and organizations plan, communicate, and manage software projects from start to finish.
 - Understanding the difference between process and lifecycle is crucial for defining roles, responsibilities, and activities.
 - Choosing the right lifecycle model depends on project needs, team experience, and organizational context.
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
 
 ---
 

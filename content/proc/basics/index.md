@@ -8,6 +8,8 @@ layout: default
 
 # Defining Process
 
+_* adapted from Root, 2014_
+
 A well-defined process is essential for consistent results and improvement in software engineering.  
 Defining, applying, measuring, and improving processes helps teams deliver quality outcomes and adapt to change.
 
@@ -123,6 +125,18 @@ The PDCA (Plan-Do-Check-Act) cycle is a classic framework for process improvemen
 - Define steps for organizing and running meetings.
 - Measure attendance, agenda adherence, action item completion.
 - Use feedback to improve future meetings.
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
 
 ---
 

@@ -6,6 +6,8 @@ layout: default
 
 # History of Process in Software Engineering
 
+_* adapted from Root, 2014_
+
 ## Early History: Smith and Taylor
 
 ### Adam Smith (1776) — *The Wealth of Nations*
@@ -116,6 +118,18 @@ A defect in early stages (e.g., requirements) can propagate and become much more
 - Quality is best achieved by preventing defects through good processes, not just by catching them at the end.
 - Software projects require structured processes to manage complexity, change, and human factors.
 - QA is a continuous activity that applies to both the product and the process.
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Root, David. *Managing Software Development*. Lecture materials, 2014.
 
 ---
 

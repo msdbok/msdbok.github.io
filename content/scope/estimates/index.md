@@ -5,7 +5,9 @@ nav_order: 3
 layout: default
 ---
 
-# Software Estimation Techniques 
+# Software Estimation Techniques
+
+_* adapted from Miranda, 2014_
 
 ## 1. What Estimation Answers
 
@@ -164,6 +166,18 @@ Suppose a company estimates a CRM system:
 - Apply COCOMO → 75 person-months.
 - Experts adjust for complexity (+10%) → 83 PM.
 - Add 15% contingency for uncertainty → final = 95 PM.
+
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+
+---
+
+## Sources
+
+- Miranda, Eduardo. *Managing Software Development*. Lecture materials, 2014.
 
 ---
 
