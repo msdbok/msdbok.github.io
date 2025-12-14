@@ -9,19 +9,21 @@ _Adapted from David Root (2014)_
 
 ## Why do so many projects fail?
 
-**CHAOS Report 2015 - Project Success Rates:**
+**CHAOS Report 2015 - Project Success Rates by Size:**
 
-| Project Outcome | All Projects | Large Projects |
-|-----------------|--------------|----------------|
-| **Successful** | 36% | 6% |
-| **Challenged** | 45% | — |
-| **Failed** | 19% | — |
+| Project Size | Successful | Challenged | Failed | Total |
+|--------------|-----------|-----------|---------|-------|
+| **Grand** | 6% | 51% | 43% | 100% |
+| **Large** | 11% | 59% | 30% | 100% |
+| **Medium** | 12% | 62% | 26% | 100% |
+| **Moderate** | 24% | 64% | 12% | 100% |
+| **Small** | 61% | 32% | 7% | 100% |
 
-The Standish Group CHAOS report (2015) shows that:
-- **19%** of projects failed outright
-- **45%** were "challenged" (late, over budget, or missing key features)
-- Only **36%** were successful
-For large-scale projects, the numbers are even worse: only **6%** succeed.
+The Standish Group CHAOS report (2015) shows a clear correlation between project size and failure rates. Larger projects face significantly worse outcomes:
+- **Grand projects**: Only 6% succeed, with 51% challenged and 43% failed
+- **Small projects**: 61% succeed, with 32% challenged and only 7% failed
+
+Overall across all project sizes, approximately 36% of projects are successful, 45% are challenged, and 19% fail.
 
 **Success**: Delivered on time, within budget, and with the required features  
 **Failure**: Cancelled before completion, or delivered but never used  
