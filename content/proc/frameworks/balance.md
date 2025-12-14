@@ -85,12 +85,12 @@ A **polar (radar) chart** helps visualize where your project sits on each factor
 - Most projects are a mix—use a hybrid approach.
 
 ![Polar Chart Example](image.png)
-Source: https://www.cs3240.org/modules/process/the-polar-chart/
+Source: [cs3240](https://www.cs3240.org/modules/process/the-polar-chart/)
 
 ---
 
 ## Risk-Based Decision Process
-Source. Taylor, Philip & Greer, Des & Sage, Paul & Coleman, Gerry & Mcdaid, Kevin & Lawthers, Ian & Corr, Ronan. (2006). Applying an Agility/Discipline Assessment for a Small Software Organisation. 290-304. 10.1007/11767718_25. (researchgate.net)
+Source. Taylor, Philip & Greer, Des & Sage, Paul & Coleman, Gerry & Mcdaid, Kevin & Lawthers, Ian & Corr, Ronan. (2006). Applying an Agility/Discipline Assessment for a Small Software Organisation. 290-304. 10.1007/11767718_25. ([researchgate.net](https://www.researchgate.net/figure/Five-critical-factors-affecting-method-selection-4-p-56_fig2_221219158#:~:text=are%20categorised%20as%20follows%3A%20Environmental,Rate%20the%20project%E2%80%99s%20environmental))
 
 - **Assess risks:**  
   - Environmental (context, domain uncertainties)
