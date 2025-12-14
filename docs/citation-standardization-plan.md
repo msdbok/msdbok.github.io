@@ -334,9 +334,96 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 
 ---
 
+## New Citation Rules (2025 Update)
+
+### 1. Inline Source Attribution
+
+**Rule:** When sources are mentioned close to section headers or specific content, keep explicit attribution inline.
+
+**Format:**
+```markdown
+## Section Title
+
+_Based on Author (Year, Title)_ • [Link](URL)
+
+Content here...
+```
+
+**Examples:**
+- `_Based on Boehm (1988, Spiral Model)_ • [IEEE](URL)`
+- `_Based on Miranda (2014, Release Planning lecture)_`
+
+### 2. Image/Figure Sources
+
+**Rule:** Always include source attribution directly under images.
+
+**Format:**
+```markdown
+![Description](image.png)
+
+_Source:_ Author, Title • [Link](URL)
+```
+
+**Example:**
+```markdown
+![CHAOS 2015 Data](image.png)
+
+_Source:_ Standish Group (2015, CHAOS Report) • [standishgroup.com](URL)
+```
+
+### 3. End-of-Page Citation Structure
+
+**For lecture-adapted content:**
+
+```markdown
+---
+
+## Acknowledgments
+
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management.
+
+---
+
+## References
+
+1. [Academic papers with DOI - if any]
+
+---
+
+## Sources
+
+- [Books, handbooks, websites]
+- Miranda, Eduardo. *Managing Software Development*. Lecture materials, 2014.
+
+---
+
+{: .highlight }
+**Disclaimer:** ...
+```
+
+**Rules:**
+- Lecture citations ALWAYS in Sources section
+- Academic papers in References section
+- References section to be generated from inline citations (future automation via Zotero)
+- Images/figures keep inline source attribution
+
+### 4. Zotero Workflow
+
+**Master list:** `docs/zotero-import-list.md` (125 unique citations grouped by topic)
+
+**Process:**
+1. Update Zotero library with all citations from master list
+2. Tag citations by topic in Zotero
+3. Generate References sections from Zotero (future automation)
+4. Keep Sources section manual (lecture materials, handbooks)
+
+---
+
 ## Notes
 
 - Keep "Adapted from" headers - they signal heavy inspiration
 - Acknowledgments section provides context and transparency
 - This improves academic rigor and transparency
 - Supports fair use by proper attribution
+- Inline sources preserved for context-specific attributions
+- Image sources always inline for immediate visibility
