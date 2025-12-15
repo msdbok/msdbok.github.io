@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Requirements Documentation
-_Adapted from David Root (2014)_
+_*Adapted from David Root (2014)_
 
 ### Types of Artifacts
 

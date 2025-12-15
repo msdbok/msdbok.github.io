@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Teams Problems: Decision Making
-_Adapted from David Root (2014)_
+_*Adapted from David Root (2014)_
 
 ## Basics
 

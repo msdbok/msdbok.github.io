@@ -31,7 +31,7 @@ layout: default
 ---
 
 ## Customer Expectations in Software Engineering
-_Adapted from David Root (2014)_
+_*Adapted from David Root (2014)_
 
 - **Agile Development:**  
   Customers often see Agile as _“pay as you go”_—they expect flexibility, adaptability, and ongoing collaboration.

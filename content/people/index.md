@@ -5,7 +5,7 @@ layout: default
 ---
 
 # Why do we need Management of Software Development?
-_Adapted from David Root (2014)_
+_*Adapted from David Root (2014)_
 
 ## Why do so many projects fail?
 

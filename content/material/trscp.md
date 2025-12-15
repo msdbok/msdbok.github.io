@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Time Reporting System – Critical Path and Critical Chain
-_Adapted from Eduardo Miranda (2013)_
+_*Adapted from Eduardo Miranda (2013)_
 
 ## 1. Context
 

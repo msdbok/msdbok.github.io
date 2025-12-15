@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Teams Basics
-_Adapted from David Root (2014)_
+_*Adapted from David Root (2014)_
 
 ## What is a Team?
 

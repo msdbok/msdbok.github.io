@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Activity Planning
-_Adapted from Eduardo Miranda (2014)_
+_*Adapted from Eduardo Miranda (2014)_
 
 ---
 

@@ -6,7 +6,7 @@ layout: default
 ---
 
 ## Requirements Management
-_Adapted from David Root (2014)_
+_*Adapted from David Root (2014)_
 
 - **Definition:**  
     > “A set of activities that help a project team to identify, control, track requirements and changes to requirements at any time as the project proceeds.”

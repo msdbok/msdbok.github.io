@@ -6,7 +6,7 @@ layout: default
 ---
 
 # Team Formation
-_Adapted from David Root (2014)_
+_*Adapted from David Root (2014)_
 
 ## Building a Team: Tasks, People, Relationships
 

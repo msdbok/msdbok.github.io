@@ -7,7 +7,7 @@ layout: default
 
 
 # Personalities and Management Styles
-_Adapted from David Root (2014)_
+_*Adapted from David Root (2014)_
 
 ## Objectives
 
