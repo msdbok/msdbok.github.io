@@ -14,11 +14,16 @@ This page outlines seven widely used lifecycle models—**Waterfall, V-Model, It
 ## Waterfall
 
 ```mermaid
-flowchart TD
-    A[Requirements] --> B[Design]
-    B --> C[Implementation]
-    C --> D[Testing]
-    D --> E[Deployment & Maintenance]
+gantt
+    title Waterfall Lifecycle
+    dateFormat YYYY-MM-DD
+    section Phases
+    Requirements           :a1, 2024-01-01, 60d
+    Design                :a2, after a1, 45d
+    Implementation        :a3, after a2, 90d
+    Testing               :a4, after a3, 40d
+    Deployment & Maintenance :a5, after a4, 120d
+
 ```
 
 **What it is.** A linear, once-through sequence (Requirements → Design → Implementation → Testing → Maintenance). Each phase is completed and signed off before the next.  
