@@ -30,6 +30,7 @@ graph LR
     A --> F[Needs]
     A --> D[Scope]
     A --> E[Planning]
+    A --> G[Tracking]
 
     B --> B1["What is a technical person?"]
     B --> B2["Managing & motivating teams"]
@@ -49,6 +50,10 @@ graph LR
     E --> E1["Agile vs. plan-driven"]
     E --> E2["Milestone & activity planning"]
     E --> E3["Critical path analysis"]
+
+    G --> G1["Progress monitoring"]
+    G --> G2["Earned Value Management"]
+    G --> G3["Burndown charts"]
 ```
 
 ---
@@ -91,13 +96,16 @@ Plan for quality and success:
 - Agile vs. plan-driven approaches
 - Milestone and activity planning
 - Critical path analysis
+- Release planning (Buffered MoSCoW method)
 
 ---
 
 ### 6. [Tracking](/content/track/)
 Monitor progress and adapt:
-- Release planning (Buffered MoSCoW method)
-- Tracking and control (Earned Value, etc.)
+
+- Progress monitoring and metrics
+- Earned Value Management (EVM)
+- Burndown and burnup charts
 
 ---
 
@@ -106,6 +114,7 @@ Access curated resources to deepen your understanding:
 - Books
 - Research papers
 - Guides and online courses
+- Teaching materials (e.g. Assignments)
 
 ---
 
