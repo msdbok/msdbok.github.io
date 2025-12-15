@@ -7,7 +7,7 @@ layout: default
 
 # Scoreboard for process measurement (Mota, 2009)
 
-**Source:**  Mota, Pedro João. "Scoreboard: a support for management information needs." _MSE Reflection Paper_ (2009).
+_**Based on:**  Mota, Pedro João. "Scoreboard: a support for management information needs." _MSE Reflection Paper_ (2009)._
 ## 1. Core Idea
 
 The **Scoreboard** is a lightweight tool to support project and team managers by collecting **qualitative insights** directly from team members.

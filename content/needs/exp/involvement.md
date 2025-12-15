@@ -7,7 +7,7 @@ layout: default
 
 # Customer Involvement in Managing Expectations
 
-**Source:** Heskett, Sasser & Wheeler, _HBR: Putting Customers to Work_ (2008)
+_**Based on:** Heskett, Sasser & Wheeler, _HBR: Putting Customers to Work_ (2008)._
 
 ---
 

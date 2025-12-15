@@ -7,7 +7,7 @@ layout: default
 
 # Cultural dimensions Geert Hofstede
 
-**Source:** Hofstede, Geert. "Dimensionalizing cultures: The Hofstede model in context." Online readings in psychology and culture 2.1 (2011): 8.
+_**Based on:** Hofstede, Geert. "Dimensionalizing cultures: The Hofstede model in context." Online readings in psychology and culture 2.1 (2011): 8._
 
 Hofstede’s method originated in the 1960s–70s as a large-scale cross-national survey of IBM employees. Using standardized questionnaires, Hofstede collected responses about workplace values and behaviors, then applied statistical techniques (factor analysis) to identify recurring cultural dimensions. Early work produced four dimensions (Power Distance, Individualism, Masculinity, Uncertainty Avoidance); later research added Long-term Orientation and Indulgence, yielding six commonly used indices. For each country Hofstede computed average scores on each dimension, normalized to a 0–100 scale, enabling cross-country comparisons.
 

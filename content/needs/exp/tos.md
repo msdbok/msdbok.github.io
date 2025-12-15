@@ -5,10 +5,9 @@ nav_order: 5
 layout: default
 ---
 
-# Threshold of Success (TOS)  
-*Based on Gil Taran, Hoover et al.*
+# Threshold of Success (TOS) by Gil Taran et al.
 
-**Source:** Hoover, Carol L., Mel Rosso-Llopart, and Gil Taran, _Evaluating Project Decisions: Case Studies in Software Engineering_. Addison-Wesley Professional, 2010. ISBN-13: 978‐0321544568. [O'Reilly Media](https://www.oreilly.com/library/view/evaluating-project-decisions/9780321685629/)
+_**Based on:** Hoover, Carol L., Mel Rosso-Llopart, and Gil Taran, _Evaluating Project Decisions: Case Studies in Software Engineering_. Addison-Wesley Professional, 2010. ISBN-13: 978‐0321544568. [O'Reilly Media](https://www.oreilly.com/library/view/evaluating-project-decisions/9780321685629/)._
 
 ---
 

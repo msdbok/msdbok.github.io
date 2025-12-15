@@ -32,12 +32,13 @@ The Myers-Briggs Type Indicator (MBTI) is a popular framework for understanding 
   - P: Prefer flexible, adaptable, and open-ended environments
 
 ![MBTI brief](image.png)
+_Myers-Briggs personality types._ ([Source](https://commons.wikimedia.org/wiki/File:MyersBriggsTypes.svg))
 
 ---
 
 ## MBTI with Software Engineers
 
-**Source:** Capretz, Luiz Fernando. "Personality types in software engineering." International Journal of Human-Computer Studies 58.2 (2003): 207-214.
+_**Based on:** Capretz, Luiz Fernando. "Personality types in software engineering." International Journal of Human-Computer Studies 58.2 (2003): 207-214._
 
 Research shows that the distribution of MBTI types among software engineers is very different from the general US population.
 

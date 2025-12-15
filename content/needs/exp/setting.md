@@ -6,9 +6,8 @@ layout: default
 ---
 
 # Setting Customer Expectations  
-*Based on Leicht and Sauter*
 
-**Source:** Leicht, Michael, and Vicki Sauter. "Managing user expectations." University of Missouri St. Louis epublication. [umsl.edu](http://www.umsl.edu/~sauter/analysis/user_expectations.html)
+_**Based on:** Leicht, Michael, and Vicki Sauter. "Managing user expectations." University of Missouri St. Louis epublication. [umsl.edu](http://www.umsl.edu/~sauter/analysis/user_expectations.html)._
 
 ---
 

@@ -31,7 +31,7 @@ flowchart TD
 - Domains demanding documentation and stage gates (e.g., certain defense/legacy contexts).
     
 
-**Source:** Larman & Basili (2003), _IEEE Computer_. [cs.umd.edu](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf) • IEEE/EIA 12207.2 excerpt via DoD: [dote.osd.mil](https://www.dote.osd.mil/Portals/97/docs/TEMPGuide/IEEE_EIA_12207.2_1997.pdf)
+_**Based on:** Larman & Basili (2003), _IEEE Computer_. [cs.umd.edu](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf) • IEEE/EIA 12207.2 excerpt via DoD: [dote.osd.mil](https://www.dote.osd.mil/Portals/97/docs/TEMPGuide/IEEE_EIA_12207.2_1997.pdf)._
 
 ---
 
@@ -65,39 +65,39 @@ flowchart LR
 - Projects requiring end-to-end traceability from requirements to tests.
     
 
-**Source:** Falcão et al. (2024). Chapter on V-Model experience. (Springer/[researchgate.net](https://www.researchgate.net/publication/382066222_Experiences_in_Using_the_V-Model_as_a_Framework_for_Applied_Doctoral_Research#:~:text=The%20introduction%20of%20the%20V,was%20%EF%AC%81rst%20featured%20in%20the))
+_**Based on:** Falcão et al. (2024). Chapter on V-Model experience. (Springer/[researchgate.net](https://www.researchgate.net/publication/382066222_Experiences_in_Using_the_V-Model_as_a_Framework_for_Applied_Doctoral_Research#:~:text=The%20introduction%20of%20the%20V,was%20%EF%AC%81rst%20featured%20in%20the))._
 
 ---
 
 ## Iterative
 
-**What it is.** Build in repeated mini-cycles; reassess and refine requirements, design, and implementation each iteration.  
-**Why it’s used.** High adaptability and continuous learning reduce late-stage surprises; needs scope discipline to avoid “endless iteration.”
+**What it is.** Build in repeated mini-cycles; reassess and refine requirements, design, and implementation each iteration.
+**Why it's used.** High adaptability and continuous learning reduce late-stage surprises; needs scope discipline to avoid "endless iteration."
 
 **Good fits (examples).**
 
 - Evolving or uncertain requirements; product and R&D work.
-    
-- Historic example: NASA Shuttle primary avionics—17 iterations over ~31 months to accommodate changing needs.
-    
 
-**Sources:** Larman & Basili (2003), _IEEE Computer_ [cs.umd.edu copy](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf); IEEE/EIA 12207.2 (evolutionary strategies).
+- Historic example: NASA Shuttle primary avionics—17 iterations over ~31 months to accommodate changing needs.
+
+
+_**Based on:** Larman & Basili (2003), IEEE Computer ([Link](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf)); IEEE/EIA 12207.2 (evolutionary strategies)._
 
 ---
 
 ## Incremental
 
-**What it is.** Deliver the system in **increments**—each a usable slice—until complete.  
-**Why it’s used.** Early value and staged integration; can prioritize risky/valuable features first. Requires careful integration planning.
+**What it is.** Deliver the system in **increments**—each a usable slice—until complete.
+**Why it's used.** Early value and staged integration; can prioritize risky/valuable features first. Requires careful integration planning.
 
 **Good fits (examples).**
 
 - Large enterprise systems rolled out by module (e.g., core customer accounts → billing → reporting).
-    
-- MVP then progressive enhancements; standards historically allowed evolutionary/incremental builds (e.g., MIL-STD-498).
-    
 
-**Sources:** Larman & Basili (2003) [cs.umd.edu copy](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf), _IEEE Computer_; DoD/MIL-STD-498 guidance.
+- MVP then progressive enhancements; standards historically allowed evolutionary/incremental builds (e.g., MIL-STD-498).
+
+
+_**Based on:** Larman & Basili (2003), IEEE Computer ([Link](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf)); DoD/MIL-STD-498 guidance._
 
 ---
 
@@ -113,8 +113,7 @@ flowchart LR
 - Feasibility spikes for new algorithms or integrations; early client demos for complex business rules.
     
 
-**Source:** **SWEBOK v3**, IEEE Computer Society (Prototyping).  
-Link: [ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf)
+_**Based on:** **SWEBOK v3**, IEEE Computer Society ([Link](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf))._
 
 ---
 
@@ -130,7 +129,7 @@ Link: [ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf](https://i
 - Process re-engineering efforts where users co-design workflows in workshops.
     
 
-**Source:** Larman & Basili (2003) discussing RAD’s origins (James Martin), _IEEE Computer_ [cs.umd.edu copy](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf).
+_**Based on:** Larman & Basili (2003) discussing RAD’s origins (James Martin), IEEE Computer ([Link](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf))._
 
 ---
 
@@ -148,7 +147,7 @@ Source. Wikipedia
 - Projects needing phased “specify → prototype → evaluate → refine” with explicit risk burn-down.
     
 
-**Source:** Boehm (1988/2002), _IEEE Computer_ [cse.msu.edu copy](https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf).
+_**Based on:** Boehm (1988/2002), IEEE Computer ([Link](https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf))._
 
 ---
 
@@ -166,6 +165,9 @@ Source. Wikipedia
 
 ---
 
+{: .note }
+Tip: In practice, teams often **combine** models (e.g., incremental delivery developed iteratively, with prototypes and spiral-style risk spikes). Choose the mix that fits **risk, volatility, compliance, and time-to-value**.
+
 ### Selected References
 
 - Boehm, B. W. (1988/2002). _A Spiral Model of Software Development and Enhancement_. **IEEE Computer**. [cse.msu.edu copy](https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf) 
@@ -177,9 +179,7 @@ Source. Wikipedia
 - **SWEBOK v3**. IEEE Computer Society (section on Prototyping). _Software Engineering Body of Knowledge, Version 3.0_. IEEE Computer Society (SWEBOK V3) [ieeecs-media.computer.org](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf).
     
 - Falcão, R., et al. (2024). _Experiences in Using the V-Model…_ (Springer chapter). Falcão, Rodrigo, et al. "Experiences in Using the V-Model as a Framework for Applied Doctoral Research." _Handbook on Teaching Empirical Software Engineering_. Cham: Springer Nature Switzerland, 2024. 255-276. [researchgate](https://www.researchgate.net/publication/382066222_Experiences_in_Using_the_V-Model_as_a_Framework_for_Applied_Doctoral_Research).
-    
-{: .note }
-Tip: In practice, teams often **combine** models (e.g., incremental delivery developed iteratively, with prototypes and spiral-style risk spikes). Choose the mix that fits **risk, volatility, compliance, and time-to-value**.
+
 
 {: .highlight }
 **Disclaimer:** AI is used for text polishing, explaining and summarization. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

@@ -7,7 +7,7 @@ layout: default
 
 # Customer Types
 
-**Source:** Jones, T.O. and Sasser, W.E., 1995. Why satisfied customers defect. _Harvard Business Review_, 73(6), p.88.  
+_**Based on:** Jones, T.O. and Sasser, W.E., 1995. Why satisfied customers defect. _Harvard Business Review_, 73(6), p.88._
 [Read the article (PDF)](https://www.van-haaften.nl/images/documents/pdf/Why%20satisfied%20customers%20defect.pdf)
 
 ---
