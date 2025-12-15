@@ -41,13 +41,139 @@ The Myers-Briggs Type Indicator (MBTI) is a popular framework for understanding 
 
 Research shows that the distribution of MBTI types among software engineers is very different from the general US population.
 
-![MBTI US population](image-3.png)
+**MBTI distribution in the general US population:**
 
-*MBTI distribution in the general US population*
+<div style="overflow-x: auto;">
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th style="background-color: #e8f4f8;">ISTJ</th>
+<th style="background-color: #f8e8e8;">ISFJ</th>
+<th style="background-color: #e8f4f8;">INFJ</th>
+<th style="background-color: #f8e8e8;">INTJ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>%</strong></td>
+<td style="background-color: #e8f4f8;">11.6%</td>
+<td style="background-color: #f8e8e8;">11.6%</td>
+<td style="background-color: #e8f4f8;">1.5%</td>
+<td style="background-color: #f8e8e8;">2.1%</td>
+</tr>
+<tr>
+<th>Type</th>
+<th style="background-color: #f8e8e8;">ISTP</th>
+<th style="background-color: #e8f4f8;">ISFP</th>
+<th style="background-color: #f8e8e8;">INFP</th>
+<th style="background-color: #e8f4f8;">INTP</th>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td style="background-color: #f8e8e8;">5.4%</td>
+<td style="background-color: #e8f4f8;">8.8%</td>
+<td style="background-color: #f8e8e8;">4.4%</td>
+<td style="background-color: #e8f4f8;">3.3%</td>
+</tr>
+<tr>
+<th>Type</th>
+<th style="background-color: #e8f4f8;">ESTP</th>
+<th style="background-color: #f8e8e8;">ESFP</th>
+<th style="background-color: #e8f4f8;">ENFP</th>
+<th style="background-color: #f8e8e8;">ENTP</th>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td style="background-color: #e8f4f8;">4.3%</td>
+<td style="background-color: #f8e8e8;">8.5%</td>
+<td style="background-color: #e8f4f8;">8.1%</td>
+<td style="background-color: #f8e8e8;">3.2%</td>
+</tr>
+<tr>
+<th>Type</th>
+<th style="background-color: #f8e8e8;">ESTJ</th>
+<th style="background-color: #e8f4f8;">ESFJ</th>
+<th style="background-color: #f8e8e8;">ENFJ</th>
+<th style="background-color: #e8f4f8;">ENTJ</th>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td style="background-color: #f8e8e8;">8.7%</td>
+<td style="background-color: #e8f4f8;">12.3%</td>
+<td style="background-color: #f8e8e8;">2.5%</td>
+<td style="background-color: #e8f4f8;">1.8%</td>
+</tr>
+</tbody>
+</table>
+</div>
 
-![MBTI SE](image-7.png)
+**MBTI distribution among software engineers:**
 
-*MBTI distribution among software engineers*
+<div style="overflow-x: auto;">
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th style="background-color: #fffacd;">ISTJ</th>
+<th style="background-color: #e6e6fa;">ISFJ</th>
+<th style="background-color: #fffacd;">INFJ</th>
+<th style="background-color: #e6e6fa;">INTJ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>%</strong></td>
+<td style="background-color: #fffacd;">24%</td>
+<td style="background-color: #e6e6fa;">2%</td>
+<td style="background-color: #fffacd;">1%</td>
+<td style="background-color: #e6e6fa;">7%</td>
+</tr>
+<tr>
+<th>Type</th>
+<th style="background-color: #e6e6fa;">ISTP</th>
+<th style="background-color: #fffacd;">ISFP</th>
+<th style="background-color: #e6e6fa;">INFP</th>
+<th style="background-color: #fffacd;">INTP</th>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td style="background-color: #e6e6fa;">8%</td>
+<td style="background-color: #fffacd;">5%</td>
+<td style="background-color: #e6e6fa;">2%</td>
+<td style="background-color: #fffacd;">8%</td>
+</tr>
+<tr>
+<th>Type</th>
+<th style="background-color: #fffacd;">ESTP</th>
+<th style="background-color: #e6e6fa;">ESFP</th>
+<th style="background-color: #fffacd;">ENFP</th>
+<th style="background-color: #e6e6fa;">ENTP</th>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td style="background-color: #fffacd;">8%</td>
+<td style="background-color: #e6e6fa;">1%</td>
+<td style="background-color: #fffacd;">3%</td>
+<td style="background-color: #e6e6fa;">7%</td>
+</tr>
+<tr>
+<th>Type</th>
+<th style="background-color: #e6e6fa;">ESTJ</th>
+<th style="background-color: #fffacd;">ESFJ</th>
+<th style="background-color: #e6e6fa;">ENFJ</th>
+<th style="background-color: #fffacd;">ENTJ</th>
+</tr>
+<tr>
+<td><strong>%</strong></td>
+<td style="background-color: #e6e6fa;">15%</td>
+<td style="background-color: #fffacd;">4%</td>
+<td style="background-color: #e6e6fa;">1%</td>
+<td style="background-color: #fffacd;">4%</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 ### Notable MBTI Differences in Software Engineers
 
