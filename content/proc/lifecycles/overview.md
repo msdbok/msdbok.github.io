@@ -31,7 +31,7 @@ flowchart TD
 - Domains demanding documentation and stage gates (e.g., certain defense/legacy contexts).
     
 
-_**Based on:** Larman & Basili (2003), _IEEE Computer_. [cs.umd.edu](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf) • IEEE/EIA 12207.2 excerpt via DoD: [dote.osd.mil](https://www.dote.osd.mil/Portals/97/docs/TEMPGuide/IEEE_EIA_12207.2_1997.pdf)._
+_**Based on:** Larman & Basili (2003), _IEEE Computer_. [Link](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf) • IEEE/EIA 12207.2 excerpt via DoD: [Link](https://www.dote.osd.mil/Portals/97/docs/TEMPGuide/IEEE_EIA_12207.2_1997.pdf)._
 
 ---
 
