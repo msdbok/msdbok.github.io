@@ -9,20 +9,7 @@ layout: default
 # Personalities and Management Styles
 _*Adapted from David Root (2014)_
 
-## Objectives
-
-Technical people are still people!  
-To manage effectively, you must:
-- Communicate clearly and listen actively
-- Be predictable and transparent
-- Show appreciation and respect
-
-**Goals for this section:**
-- Refine your understanding of technical people
-- Recognize how various factors impact human interactions
-- Learn to understand others by reflecting on yourself
-- Analyze and address people-related problems in teams
-- Strengthen your skills in managing people
+Technical people require management approaches that account for their unique characteristics, communication styles, and motivations. Understanding personality types and individual differences is essential for effective leadership and team dynamics.
 
 ---
 
