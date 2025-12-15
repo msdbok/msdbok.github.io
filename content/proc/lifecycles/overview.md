@@ -170,15 +170,15 @@ Tip: In practice, teams often **combine** models (e.g., incremental delivery dev
 
 ### Selected References
 
-- Boehm, B. W. (1988/2002). _A Spiral Model of Software Development and Enhancement_. **IEEE Computer**. [cse.msu.edu copy](https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf) 
+- Boehm, B. W. (1988/2002). _A Spiral Model of Software Development and Enhancement_. **IEEE Computer**. ([Link](https://www.cse.msu.edu/~cse435/Homework/HW3/boehm.pdf))
     
-- Larman, C., & Basili, V. R. (2003). _Iterative and Incremental Development: A Brief History_. **IEEE Computer**. [cs.umd.edu copy](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf)
+- Larman, C., & Basili, V. R. (2003). _Iterative and Incremental Development: A Brief History_. **IEEE Computer**. ([Link](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf))
     
-- IEEE/EIA 12207.2. _Software Life Cycle Processes—Implementation Considerations_ (Annex on once-through vs. evolutionary strategies). Link: [dote.osd.mil](https://www.dote.osd.mil/Portals/97/docs/TEMPGuide/IEEE_EIA_12207.2_1997.pdf)
+- IEEE/EIA 12207.2. _Software Life Cycle Processes—Implementation Considerations_ (Annex on once-through vs. evolutionary strategies). ([Link](https://www.dote.osd.mil/Portals/97/docs/TEMPGuide/IEEE_EIA_12207.2_1997.pdf))
     
-- **SWEBOK v3**. IEEE Computer Society (section on Prototyping). _Software Engineering Body of Knowledge, Version 3.0_. IEEE Computer Society (SWEBOK V3) [ieeecs-media.computer.org](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf).
+- **SWEBOK v3**. IEEE Computer Society (section on Prototyping). _Software Engineering Body of Knowledge, Version 3.0_. IEEE Computer Society (SWEBOK V3). ([Link](https://ieeecs-media.computer.org/media/education/swebok/swebok-v3.pdf))
     
-- Falcão, R., et al. (2024). _Experiences in Using the V-Model…_ (Springer chapter). Falcão, Rodrigo, et al. "Experiences in Using the V-Model as a Framework for Applied Doctoral Research." _Handbook on Teaching Empirical Software Engineering_. Cham: Springer Nature Switzerland, 2024. 255-276. [researchgate](https://www.researchgate.net/publication/382066222_Experiences_in_Using_the_V-Model_as_a_Framework_for_Applied_Doctoral_Research).
+- Falcão, R., et al. (2024). _Experiences in Using the V-Model…_ (Springer chapter). Falcão, Rodrigo, et al. "Experiences in Using the V-Model as a Framework for Applied Doctoral Research." _Handbook on Teaching Empirical Software Engineering_. Cham: Springer Nature Switzerland, 2024. 255-276. ([Link](https://www.researchgate.net/publication/382066222_Experiences_in_Using_the_V-Model_as_a_Framework_for_Applied_Doctoral_Research))
 
 
 {: .highlight }
