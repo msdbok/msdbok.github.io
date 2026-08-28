@@ -43,6 +43,45 @@ When teams spend too much time analyzing options, they fail to act.
 - **Pareto Analysis (80/20 Rule):** Focus on the small % of causes that yield big results.
 - **Pair-Wise Comparison:** Compare options against each other, one by one.
 - **Cost-Benefit Analysis:** Compare expected gains vs. expected costs.
+- **Fishbone (cause-and-effect) diagram:** Structure a discussion of *root causes* by repeatedly
+  asking "what is a potential cause of…?" {% cite rebori1997problemsolving %}. Best used when you
+  know which area is failing but not which part of it.
+- **Dot voting:** Give each member 3–5 adhesive dots to allocate across the listed options in any
+  pattern. Fast, keeps everyone active, and makes areas of agreement visible
+  {% cite rebori1997problemsolving %}.
+
+### A structured method for group problem solving
+
+Rebori's extension guidance {% cite rebori1997problemsolving %} sets out **seven** steps, and the
+ordering carries the substance:
+
+1. **Define the problem** — state the current situation as *facts* and the desired situation as an
+   *objective*. The statement "should not imply any solutions or causes."
+2. **Identify and define root causes** — causes, not symptoms. Brainstorm under explicit ground
+   rules: no criticism · go for quantity · encourage wild ideas · build on others'.
+3. **Generate alternative solutions** — generate, do not evaluate. Doing both at once "reduces the
+   number of potentially viable solutions."
+4. **Evaluate the alternatives** — **establish criteria first**, objective and preferably
+   measurable. Then score, by weighted matrix or by dot voting.
+5. **Agree on the best solution** — using a decision rule the group agreed *beforehand*.
+6. **Develop an action plan** — goal, strategy, timeframe, owner, expected outcome.
+7. **Implement and evaluate the solution** — put status on a standing agenda; scale the evaluation
+   to the complexity of the problem.
+
+Two of these are worth more than the rest. **Step 4 precedes step 5**: criteria are fixed before
+options are scored, which is the remedy for the "no clear criteria" failure listed below. And
+**step 7 exists at all** — Rebori observes that evaluating whether the solution actually worked is
+"probably the step most groups underemphasize", and that the reasons are political rather than
+procedural: "time, cost, political climate, uneasiness in evaluation, and fear of being challenged
+in their decided upon solution." A team that never reaches step 7 cannot tell a good decision from
+a lucky one, which is the thread running through the whole of this page.
+
+{: .warning }
+**This is practitioner guidance, not evidence.** Fact Sheet 97-26 is a four-page university
+extension leaflet with no study, no data and no peer review behind it, written for community and
+organizational groups rather than software teams. Cite it for *what the method is*; it establishes
+nothing about the method working. Rebori is candid about the tools in it: evaluation matrices and
+dot votes "should not be thought of as formulas that will automatically produce correct answers."
 
 **Software example:** Pareto Analysis helps software teams find the few issues that cause most pain. A team collects bug reports and measures user impact and frequency, sorts defects by cumulative user-reported incidents, and expects to find that a small minority of defects accounts for a large majority of the incidents and complaints. It then prioritizes those defects, pair-codes on the top items, adds regression tests, and watches the metrics to confirm the improvement.
 
@@ -288,8 +327,6 @@ experienced one. The primary study is Calderwood, Klein and Crandall
 
 ### Group Decision Making
 
-(*Source: Marlene K. Rebori*)
-
 **Common outcomes in groups:**
 - No decision (paralysis)
 - Self-appointed decision maker
@@ -300,12 +337,27 @@ experienced one. The primary study is Calderwood, Klein and Crandall
 **How to choose method?**
 - Based on timeliness, appropriateness, relationships.
 
+{: .note }
+**This taxonomy is credited to Marlene K. Rebori, but not to a publication.** The lecture slide it
+comes from says only "Work by Marlene K. Rebori, University of Nevada" — no title, no year. She is
+a real and identifiable author, and this handbook now holds and cites one of her fact sheets
+{% cite rebori1997problemsolving %} — **but that is a different work and does not contain this
+list.** The five methods and the three criteria appear nowhere in it. The originating publication
+has not been located, so the taxonomy stands here **unattributed to a source** rather than
+carrying a citation that would not survive checking. Whatever its provenance, note that the useful
+move it encodes is choosing the decision rule *before* the decision, which is step 5 of the method
+above.
+
 **Problems in group decisions**
 - Deciding too soon (rushing).
 - Analysis paralysis (stalling).
-- No clear criteria.
+- **No clear criteria** — the remedy is procedural and cheap: fix the criteria *before* scoring
+  the options, not after {% cite rebori1997problemsolving %}. Criteria invented while looking at
+  the candidates tend to describe the favourite.
 - Poor listening → debate instead of dialogue.
 - Perceptions of unfairness.
+- **Never checking whether it worked.** Groups routinely stop at the decision and skip evaluation,
+  for reasons that are political rather than practical {% cite rebori1997problemsolving %}.
 - **Groupthink** — conformity pressure inside a cohesive group suppresses dissent, so alternatives
   are never voiced and the group converges early on a poor option. Named by Irving Janis in 1972
   from case studies of foreign-policy fiascos — the Bay of Pigs, Pearl Harbor, Korea, Vietnam,
@@ -480,12 +532,10 @@ page rests on a page number from any of them:
 - **Rogers, P. & Blenko, M.** *Who Has the D? How Clear Decision Roles Enhance Organizational
   Performance*, and Blenko, Mankins & Rogers, *The Decision-Driven Organization* — *Harvard
   Business Review* — the "Influencing Factors" section.
-- **Rebori, M. K.** — the group decision-method list. The lecture slide credits only "Work by
-  Marlene K. Rebori, University of Nevada", with no title or year. She is a real and identifiable
-  author — Professor and Community Development Specialist at University of Nevada, Reno Extension,
-  who published fact sheets on group process and facilitation — but the specific publication
-  carrying this taxonomy has not been located, and the Extension fact sheets of that period are no
-  longer retrievable.
+- **Rebori, M. K.** — **the group decision-method taxonomy only.** Her *Effective Problem-Solving
+  Techniques for Groups* (Fact Sheet 97-26) is now held and cited above, but it is a different work
+  and does not contain the five methods or the three selection criteria. The publication that does
+  has not been located.
 - **Janis, I.** *Victims of Groupthink* (1972) / *Groupthink* (1982) — reported here only through
   {% cite thart1991groupthink %}, which is a review essay, not Janis.
 - **Harvey, J. B.**, "The Abilene Paradox" (1974) — see the note above.
