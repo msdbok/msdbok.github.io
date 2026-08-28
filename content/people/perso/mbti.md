@@ -258,6 +258,11 @@ reliably predict success in the field.
 
 ---
 
+### Acknowledgments
+
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
+
 ### References
 
 {% bibliography --cited %}

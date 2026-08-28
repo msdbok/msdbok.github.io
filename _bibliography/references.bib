@@ -343,7 +343,7 @@ Publisher: {INFORMS}},
 	keywords = {Systematic literature review, Agile approaches, Communication challenges, Communication techniques, Geographically distributed agile development},
 }
 
-@article{mccleskey_emotional_2014,
+@article{mccleskey2014emotional,
 	title = {Emotional intelligence and leadership: A review of the progress, controversy, and criticism},
 	volume = {22},
 	issn = {1934-8835},
@@ -621,7 +621,7 @@ Publisher: {INFORMS}},
 
 
 
-@inproceedings{mccarthy_participative_2003,
+@inproceedings{mccarthy2003participative,
 	title = {Participative Leadership in team formulation},
 	doi = {10.1109/IEMC.2003.1252337},
 	abstract = {The concept of Participative Leadership is developed in this article, as an extension of the concept of Participative Management. Leadership activities and responsibilities are shared with the empowered team members, rather than remaining with the manager with input from the team members. Most central to team success is the formulation of the team. Thus, in the ideal Participate Leadership, the team constitutes itself. The case study describes the development of the process, its implementation and the results. Impact of the change of how the team is constituted is evaluated. The impact on acceptance and inclusion as motivational capital is also evaluated. Finally, some practical suggestions are offered as to how to apply this approach in day-to-day leadership activities.},
@@ -630,10 +630,14 @@ Publisher: {INFORMS}},
 	booktitle = {{IEMC} '03 Proceedings. Managing Technologically Driven Organizations: The Human Side of Innovation and Change},
 	author = {{McCarthy}, C.C.},
 	date = {2003-11},
+	note = {The title word is "formulation", not "formation" -- the misquotation is
+	        common, including in our own filenames. A single self-authored experience
+	        report, n = 1 team of 26 engineers; not a measured effect. Key renamed
+	        from mccarthy_participative_2003 on 2026-08-28},
 	keywords = {Computer aided software engineering, Control systems, Humans, Instruments, Design engineering, Animals, Fabrication, Moon, Mouth, Safety devices},
 }
 
-@inproceedings{thite_leadership_1999,
+@inproceedings{thite1999leadership,
 	title = {Leadership: a critical success factor in {IT} project management},
 	doi = {10.1109/PICMET.1999.787819},
 	shorttitle = {Leadership},
@@ -643,6 +647,9 @@ Publisher: {INFORMS}},
 	booktitle = {{PICMET} '99: Portland International Conference on Management of Engineering and Technology. Proceedings Vol-1: Book of Summaries ({IEEE} Cat. No.99CH36310)},
 	author = {Thite, M.},
 	date = {1999-07},
+	note = {36 of 111 Australian organisations; 70 project managers, 228 subordinates,
+	        18 senior IT managers. The rating scale runs 5 = low to 1 = high, so lower
+	        means are better. Key renamed from thite_leadership_1999 on 2026-08-28},
 	keywords = {Resource management, Testing, Project management, Delay, Energy management, Information technology, Risk management, Feedback, Disaster management, Human resource management},
 }
 
@@ -2103,4 +2110,58 @@ In order to diminish social loafing from a group, several strategies could be pu
   pages   = {860--878},
   year    = {2008},
   doi     = {10.1016/j.infsof.2007.09.004},
+}
+
+@book{greenberg2011behavior,
+  title     = {Behavior in Organizations},
+  author    = {Greenberg, Jerald},
+  edition   = {10, Global},
+  year      = {2011},
+  publisher = {Pearson Education Limited},
+  isbn      = {978-0-273-75447-1},
+  note      = {The copy this handbook works from. Social loafing at ch. 8,
+               pp. 294--297, including the section "Is Social Loafing a Universal
+               Phenomenon?" -- loafing in the US, the effect reversed in China and
+               Israel. Cited elsewhere as 1996 "Managing Behaviors in
+               Organizations" (no such title), 1999 2nd ed., and 2010 5th ed.
+               "Managing behavior in organizations", which is a different book},
+}
+
+@article{corgnet2026aimotivation,
+  title   = {Beyond Performance: Replacing a Human Coworker with {AI} Enhances
+             Motivation},
+  author  = {Corgnet, Brice and Fumagalli, Elena and Rezaei, Sarah},
+  journal = {SSRN Electronic Journal},
+  year    = {2026},
+  note    = {SSRN 6924498. Working paper, not peer-reviewed. n = 1,091 (698
+             human--human / 393 human--AI), newly formed teams on creative tasks
+             only; the authors state it does not extend to replacing a familiar
+             teammate. Counterweight to wu2025motivation -- cite the two together},
+}
+
+@misc{puppart2025overreliance,
+  title        = {Short-Term {AI} Literacy Intervention Does Not Reduce Over-Reliance
+                  on Incorrect {ChatGPT} Recommendations},
+  author       = {Puppart, Kadi and Aru, Jaan},
+  year         = {2025},
+  eprint       = {2503.10556},
+  archiveprefix = {arXiv},
+  primaryclass = {cs.HC},
+  note         = {Preprint, not peer-reviewed. n = 36 twelfth-grade Estonian school
+                  students solving math puzzles. The 52.1\% over-reliance figure must
+                  never be quoted without that population attached},
+}
+
+@inproceedings{schemmer2022reliance,
+  title        = {Should {I} Follow {AI}-Based Advice? Measuring Appropriate Reliance
+                  in Human-{AI} Decision-Making},
+  author       = {Schemmer, Max and Hemmer, Patrick and K{\"u}hl, Niklas and
+                  Benz, Carina and Satzger, Gerhard},
+  booktitle    = {CHI '22 Workshop on Trust and Reliance in AI-Human Teams (TRAIT)},
+  year         = {2022},
+  eprint       = {2204.06916},
+  archiveprefix = {arXiv},
+  note         = {Workshop paper, not CHI main track; no DOI. Its own experiment found
+                  UNDER-reliance (RAIR 0.30, below chance) -- never cite it as evidence
+                  that people over-rely on AI},
 }
