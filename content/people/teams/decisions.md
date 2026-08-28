@@ -114,68 +114,171 @@ contradicts. See the [People overview](../) for why CHAOS figures need
 ### Intuitive Decision Making — the Recognition-Primed Decision model
 
 The model behind this section has a name the page has never given it: Gary Klein's
-**Recognition-Primed Decision (RPD)** model, developed from studies of fireground commanders and
-other high-tempo professionals. Its chain is:
-
-**Situation → Cues → Patterns → Action Scripts**, assessed by **Mental Simulation** against the
-decision maker's **mental models**.
+**Recognition-Primed Decision (RPD)** model {% cite klein1998sourcesofpower %}, developed from
+studies of fireground commanders and other high-tempo professionals.
 
 The claim is not that experts choose well among options — it is that they usually do not generate
 options at all. A recognised pattern produces a single candidate action, which is then run
 forward mentally; if the simulation exposes a problem, the action is modified or the next
-candidate considered. This is why an expert's *first considered action* is so often workable.
+candidate considered. Klein ties this to Herbert Simon's **satisficing**: options are evaluated
+**one at a time**, and the first workable one is taken. This is why an expert's *first considered
+action* is so often workable.
 
-{: .warning }
-**We do not hold either Klein book.** This handbook's account of RPD comes through the course
-lecture materials {% cite root2014lectures %}, and the lecture slide cites "Klein p. 16" without
-naming the book; earlier versions of this page attributed the section to *The Power of Intuition*
-(2003) in one place and *Sources of Power* (1998) in another. Neither is in our bibliography, and
-neither has been read for this page — so no page-level citation is offered, and RPD is presented
-here as **a described model whose primary source we have not verified**, not as a finding. That
-matters more than usual for this section, because the page's negative account of decision making
-(the biases below) now rests on a systematic review, while its positive account does not.
-
-- **Definition:** Translating experience into action, often without formal analysis.
+- **Definition:** "I define intuition as the way we translate our experience into action"
+  {% cite klein2003intuition %}.
 - **Origins:** Firefighters, military, police — high-pressure environments.
 - **Premise:** Intuition is a skill → can be built, applied, safeguarded.
+
+**The chain**, as *The Power of Intuition* states it: cues let us recognise **patterns** →
+patterns activate **action scripts** → action scripts are assessed by **mental simulation** →
+driven by **mental models**.
+
+Two pieces this handbook used to omit, both from the research monograph:
+
+- **RPD has three variations, not one chain.** *(1) Simple match* — situation recognised, action
+  taken. *(2) Diagnose the situation* — cues do not match cleanly, so the decision maker gathers
+  more, feature-matches, or builds a story. *(3) Evaluate a course of action* — the recognised
+  action is simulated, then modified or rejected.
+- **Expectancies are a first-class element**, alongside cues, goals and actions — and they are
+  the *safeguard*. A violated expectancy is how an expert discovers the interpretation was wrong.
+  Leaving them out makes the model merely fast; including them makes it self-correcting.
+
+**How often experts actually work this way** {% cite klein1998sourcesofpower %} — across **more
+than six hundred decision points**, RPD accounted for **46% to 96%** of them depending on domain
+and expertise: urban fireground commanders **80%** of 156 decision points, design engineers
+**60%**, AEGIS commanders **95%**, tank-platoon *trainees* **42%**.
+
+{: .warning }
+**This is a strategy count, not a quality count, and Klein is grading his own programme.** The
+table above establishes that experts do not compare options. It does **not** establish that they
+are right. The studies are Klein's own, coded by his own team, and the independent replications
+he cites are the ones that agreed — so read 46–96% as the range *this research programme* found.
+RPD is also explicitly **descriptive, not prescriptive**: it does not license "train people to
+satisfice." And it does not transfer to domains without consistent, fast feedback — Klein names
+stock selection, public policy and clinical psychology. **Software estimation has weak feedback
+loops, so the transfer to this course's subject matter is a question, not a given.**
 
 **Advantages**
 - Very fast, based on pattern recognition.
 - Allows action under uncertainty and time pressure.
 
-**Risks**
-- Over-reliance on familiar patterns → blind spots.
-- Experienced people can still make fatal mistakes (“Deep Survival” – Gonzales).
-- Low risk ≠ no risk.
+**When singular evaluation beats comparing options** — Klein's own boundary conditions
+{% cite klein1998sourcesofpower %}, which read as a decision rule about decision rules:
+
+| Recognition works when… | Compare options when… |
+|---|---|
+| Time pressure is high | The choice must be justified to others |
+| The decider is experienced **in this domain** | Competing interests must be reconciled |
+| Conditions are dynamic | The decider is optimizing, not satisficing |
+| Goals are ill defined | The problem is computationally complex |
+
+**Where intuition fails.** *The Power of Intuition* names the conditions
+{% cite klein2003intuition %}, and four of them describe software estimation:
+
+- **Unstable or random domains** — roulette, the stock market. Patterns cannot form.
+- **No fast, accurate feedback** — e.g. hiring judged on time-to-fill rather than hire quality.
+- **A distorted experience base** — experience of the wrong thing, repeatedly.
+- **Fixation, or "bending the map"** — expertise closing off the anomaly that should have
+  stopped you.
+- **Arithmetic** — "you're sunk if you don't whip out the calculator."
+- **Conflicting interests** to reconcile, and **decisions that must be auditable**.
+
+{: .note }
+**Klein is not an escape from the analysis paralysis above.** This page once implied he was. He
+writes plainly: "**Neither analysis nor intuition alone is sufficient for effective decision
+making**" {% cite klein2003intuition %}. The claim is that experts *start* from recognition, not
+that analysis is dispensable.
 
 **Barriers**
 - Rigid policies, remote/distributed teams, turnover, constant change.
 - Procedures, metrics-driven culture, IT constraints.
 
+{: .note }
+**Which Klein book?** They do different jobs, and earlier versions of this page cited them
+interchangeably. **Cite *Sources of Power* (1998/2017) for anything with a number in it; cite
+*The Power of Intuition* (2003) for anything a manager is supposed to do.** The confusion is
+forgivable — chapter 4 of the 1998 book is itself titled "The Power of Intuition". Note also
+that our copy of *Sources of Power* is the **20th Anniversary Edition (MIT Press, 2017)**, a
+revised edition whose retrospective preface does not exist in the 1998 original.
+
 ---
 
 ### Theory of Thin Slicing
 
-(*Source: Malcolm Gladwell, Blink*)
+- **Definition:** "'Thin-slicing' refers to the ability of our unconscious to find patterns in
+  situations and behavior based on very narrow slices of experience"
+  {% cite gladwell2005blink %}.
 
-- **Definition:** Ability to make accurate judgments based on very small “slices” of information.
+{: .warning }
+**Everything in this section is second-hand.** *Blink* is trade non-fiction, and Gladwell
+conducts no studies in it — every example below is him reporting someone else's work, and **this
+handbook holds none of those primary sources**: not Gottman, not Ambady, not Levinson, not Nigel
+West. Treat the section as vocabulary and illustration, never as evidence. Gladwell's own Notes
+section gives full journal citations for all of them; that is where to go before any of this
+reaches a slide.
 
 **Examples**
-- **John Gottman’s Love Lab:** Predicting relationship success by coding emotional signals (SPAFF).
-- **Military interceptors:** Interpreting Morse code patterns.
-- **Medical research (Levinson, Ambadi):** Malpractice risk depends on *tone* and *empathy*, not just content.
+- **John Gottman's Love Lab:** more than 3,000 couples filmed discussing a point of contention,
+  with SPAFF coding 20 emotion categories every second. Gladwell reports prediction of divorce
+  15 years out at "95 percent accuracy" from an hour of tape.
+- **Military interceptors:** WWII operators recognised individual German senders by rhythm and
+  spacing — the "fist".
+- **Levinson on malpractice:** never-sued primary care physicians spent **18.3 minutes** per
+  patient against 15, and made more orienting comments — with **no difference in the amount or
+  quality of medical information given**.
+- **Ambady:** silent video of unfamiliar professors at 10, 5 and even 2 seconds produced ratings
+  essentially the same as a full semester's student evaluations. She later took Levinson's tapes,
+  cut them to **two 10-second clips per surgeon** and content-filtered them so only tone
+  survived — a dominant tone marked the sued group.
 
-**Key Point:**  
-Thin slicing is part of human cognition, not a rare talent.
+{: .note }
+**Two corrections this page carried for years.** The name is **Ambady**, not "Ambadi". And
+Levinson and Ambady are **two different studies**: Levinson's 18.3-versus-15-minute finding is
+not itself a thin-slicing result — thin slicing enters only when Ambady re-slices the same tapes
+down to forty seconds.
+
+{: .warning }
+**Do not put the 95% on a slide.** Gladwell's wording is "Gottman has *proven* something
+remarkable" — with no confidence interval, no cross-validation, and no statement of whether the
+equation was ever tested on couples outside the sample it was fitted to. That last point is the
+entire question for any accuracy figure of this kind, and the book does not address it. Gottman's
+prediction accuracies are among the most contested numbers in popular psychology. The
+*direction* — that tone carries signal, that brief clips carry signal — is ordinary and
+defensible. The percentages are what will not survive checking. Likewise "absolute certainty"
+about Morse operators is a historian's phrase, not a measurement.
+
+**Key Point:** Thin slicing is part of human cognition, not a rare talent.
+
+**And it fails, roughly half the book.** *Blink* is not a case for trusting snap judgment; about
+half of it is snap judgment going wrong, and the handbook used to teach only the flattering half:
+
+- **The Warren Harding error** — a face that looks the part is read as competence.
+- **Amadou Diallo** — under extreme arousal rapid cognition collapses into "temporary
+  mind-blindness"; Gladwell puts the degradation band at roughly **115–145 bpm**.
+- **Priming** — behaviour moved by cues the subject never notices.
+- **New Coke** — the sip test is the wrong instrument; sweetness wins a sip and loses a can.
+- **Blind auditions** — a screen removes a bias the listeners sincerely denied holding.
+- **Explaining ruins it** — asked to give reasons, non-experts' jam rankings fell from
+  **r = .55** to **r = .11** against expert judgment.
 
 ---
 
 ### Time and Decision Making
 
-(*Source: Gary Klein*)
+**Chess under time pressure** {% cite klein1998sourcesofpower %} — blitz at **6 seconds** a move
+against roughly **2¼ minutes** under regulation:
 
-**Chess Experiment**
-- Blitz vs. regular → skilled players made similar % of good moves.
+| | Blunder rate, blitz | Blunder rate, regulation |
+|---|---|---|
+| **Masters** | 7% | 8% |
+| **Class B players** | **25%** | 11% |
+
+**The result is an interaction, not a main effect.** Time pressure barely touches masters and
+roughly *doubles* the error rate of weaker players. The lesson is therefore not "people decide
+fine under pressure" — it is that **expertise is what buys immunity to time pressure**, and that
+squeezing the clock on an inexperienced team is a different act from squeezing it on an
+experienced one. The primary study is Calderwood, Klein and Crandall
+{% cite calderwood1988chess %}, not the trade books.
 
 **Observations**
 - Skilled decision makers can make good choices even under pressure.
@@ -204,20 +307,65 @@ Thin slicing is part of human cognition, not a rare talent.
 - Poor listening → debate instead of dialogue.
 - Perceptions of unfairness.
 - **Groupthink** — conformity pressure inside a cohesive group suppresses dissent, so alternatives
-  are never voiced and the group converges early on a poor option. Named by Irving Janis (1972)
-  from case studies of foreign-policy fiascos.
+  are never voiced and the group converges early on a poor option. Named by Irving Janis in 1972
+  from case studies of foreign-policy fiascos — the Bay of Pigs, Pearl Harbor, Korea, Vietnam,
+  Watergate — against two successes where he judged it avoided, the Marshall Plan and the Cuban
+  missile crisis.
 - **The Abilene paradox** — a group unanimously agrees on a course of action that *no individual
   member privately favours*, each mistakenly believing the others want it. Described by Jerry B.
   Harvey (1974). It is not conformity to a majority; it is agreement in the absence of one.
 
+{: .note }
+**Two different phenomena.** These were previously a single bullet — "Groupthink / *Abilene
+Paradox* (agreement without real support)" — which is wrong twice over: groupthink is dissent
+suppressed by pressure, the Abilene paradox is dissent that nobody realises exists.
+
+#### Groupthink is contested in its own discipline
+
+Groupthink is the most famous construct in this whole block, and it is taught almost everywhere as
+settled. It is not. Paul 't Hart's review essay for *Political Psychology*'s "Classics" series
+{% cite thart1991groupthink %} assessed the evidence nineteen years on and found the replications
+"their number is modest, their quality mixed and their findings only partially conclusive".
+
+| Component | State of the evidence as of 1991 |
+|---|---|
+| **Cohesiveness** — the one group-level cause Janis names | **Repeatedly unsupported.** Flowers found leadership mattered and cohesiveness did not; Fodor & Smith and Leana likewise. Raven's study of Watergate found the Nixon group **conflict-laden and competitive** — cohesion was *absent* in one of Janis's own cases |
+| **Directive leadership** | **Supported**, across four independent studies |
+| **Stress** — which Janis ranked *first* among causes | **Largely untested.** Experiments "have rarely succeeded in creating the kind of decisional stress" the theory requires |
+| **Stereotyped out-group images** — one of the eight symptoms | **Disconfirmed** by Tetlock: groupthink decision makers made no more negative references to adversary states |
+| **The founding cases** | Mixed. Barrett re-examined Vietnam escalation and argued groupthink played **no role at all** |
+
+'t Hart's own charge is **circularity**: Janis selected policy failures first and then looked for
+groupthink, so "groupthink is inferred from policy failure and failure is explained in terms of
+groupthink." His alternative mechanism is **anticipatory compliance** — low-status members
+conforming to what they take the leader to want. Power and hierarchy, not friendliness, do the
+work. That is a considerably more plausible fit to a software team than cohesion is.
+
 {: .warning }
-**Two different phenomena, and we hold neither primary source.** These were previously a single
-bullet — "Groupthink / *Abilene Paradox* (agreement without real support)" — which is wrong twice
-over: groupthink is dissent suppressed by pressure, the Abilene paradox is dissent that nobody
-realises exists. Janis 1972 and Harvey 1974 are **not in this handbook's bibliography and have not
-been read for this page**, so they are named and dated here and not cited. Both are useful
-vocabulary from social psychology. Neither has software-engineering evidence behind it — see
-below.
+**Two limits before using any of this.** First, **scope**: 't Hart states that groupthink analysis
+is meaningful only for **high-level groups facing consequential, non-routine choices**, and says
+outright that analysing "regular problem-solving groups at some lower level of management" is not
+interesting. Applying it to a sprint team is an untested extrapolation — scope it to
+architecture, go/no-go and release decisions, or say plainly that the transfer is an assumption.
+Second, **vintage**: this record stops at **1991**. Do not say "the evidence for groupthink is
+weak" full stop; say that as of 1991 its own reviewer described the replications as modest, mixed
+and only partially conclusive. A current claim needs a recent meta-analysis, which this handbook
+does not hold.
+
+{: .note }
+**Which Janis, and what is still missing.** The 1972 first edition is *Victims of Groupthink*; the
+1982 second edition is *Groupthink*. 't Hart notes the **systematic** statement of the theory —
+the flow chart, the antecedent/symptom/effect boxes — is in the **1982** edition. 1972 is the
+right date for the naming, the wrong one for the model. **Janis's own book is still not held
+here**, and neither is Harvey — so the eight symptoms are reported above via 't Hart, and **no
+remedy list is given**, because 't Hart does not reproduce one and inventing it is exactly the
+error this page is trying to stop making. The same applies to the Abilene paradox, which does not
+appear in 't Hart at all and remains the least-sourced named claim on this page.
+
+And there is a closing line worth quoting against ourselves. 't Hart's verdict is that the very
+popularity of groupthink impedes careful work, and that this "emerges clearly from the uncritical
+adoption of sections on 'the dangers of groupthink' in many policy analysis and management
+handbooks." This is a management handbook, and that is what the section above used to be.
 
 ---
 
@@ -257,6 +405,37 @@ thirty-seven biases have any proposed technique, none of them tested, and the au
 debiasing "may have unintended consequences". Its own inter-rater agreement on which category a
 bias belongs to was **55%**. Treat the counts as a map of where the evidence is, not as a ranking
 of what will go wrong on your project.
+
+### The other side of that argument
+
+Klein rejects the premise of the bias literature outright, and the disagreement is worth staging
+rather than hiding. Chapter 16 of *Sources of Power* argues that "those who favor analytical
+approaches to decision making believe poor decisions are caused by biases in the way we think.
+Naturalistic decision-making researchers disagree" {% cite klein1998sourcesofpower %}. His
+methodological charge, via Lopes, is that the classic stimuli were **selected to produce the
+error**: of the twenty possible consonants, twelve are more common in first position, and the
+famous availability demonstration used the eight that are not. He adds that the heuristics and
+biases "do not occur in experienced decision makers working in natural settings".
+
+Klein is not a neutral party — he is defending his own research programme, and he overclaims. But
+he and the mapping study arrive at the **same conclusion from opposite ends**, which is why they
+belong on the same page rather than in separate sections:
+
+| Source | The same claim |
+|---|---|
+| Klein {% cite klein1998sourcesofpower %} | "Poor outcomes are different from poor decisions." |
+| 't Hart {% cite thart1991groupthink %} | "Bad procedures need not always produce bad results; decision-makers may get lucky." |
+| Mohanani et al. {% cite mohanani2018biases %} | "Demonstrating a bias in a lab is not the same as establishing a significant effect on real projects." |
+
+**Judge the process, not the outcome — and do not assume the process research transfers.** That
+is the transferable lesson of this entire page, and it is a project-management lesson rather than
+a psychology one.
+
+There is also a direct conflict students should see. Janis's standard for a good decision is the
+Janis & Mann procedural model — canvass all alternatives, weigh all costs, search for new
+information. **Klein disputes exactly that model**, arguing that experts do not compare options
+and that the prescription is unworkable under time pressure. The two classics of this topic
+disagree about what a good decision even *is*.
 
 ---
 
@@ -301,16 +480,21 @@ page rests on a page number from any of them:
 - **Rogers, P. & Blenko, M.** *Who Has the D? How Clear Decision Roles Enhance Organizational
   Performance*, and Blenko, Mankins & Rogers, *The Decision-Driven Organization* — *Harvard
   Business Review* — the "Influencing Factors" section.
-- **Klein, G.** *Sources of Power* (MIT Press, 1998) and *The Power of Intuition* (2003) — the RPD
-  material. The lecture slide the section derives from cites "Klein p. 16" without naming which.
-- **Gladwell, M.** *Blink* (Little, Brown, 2005), and the Ambady & Rosenthal thin-slicing studies
-  it popularises — the thin-slicing section. Gladwell is a secondary source throughout; the
-  underlying studies have not been checked here.
-- **Gonzales, L.** *Deep Survival* (W. W. Norton, 2003) — the "experienced people still have
-  accidents" caution.
-- **Rebori, M. K.** — the group decision-method list.
-- **Janis, I.** *Victims of Groupthink* (1972) and **Harvey, J. B.**, "The Abilene Paradox" (1974)
-  — see the warning above.
+- **Rebori, M. K.** — the group decision-method list. The lecture slide credits only "Work by
+  Marlene K. Rebori, University of Nevada", with no title or year. She is a real and identifiable
+  author — Professor and Community Development Specialist at University of Nevada, Reno Extension,
+  who published fact sheets on group process and facilitation — but the specific publication
+  carrying this taxonomy has not been located, and the Extension fact sheets of that period are no
+  longer retrievable.
+- **Janis, I.** *Victims of Groupthink* (1972) / *Groupthink* (1982) — reported here only through
+  {% cite thart1991groupthink %}, which is a review essay, not Janis.
+- **Harvey, J. B.**, "The Abilene Paradox" (1974) — see the note above.
+- **Gladwell's primary sources** — Gottman, Ambady & Rosenthal, Levinson, Nigel West. *Blink*
+  itself is now held and cited, but the studies it reports are not.
+
+Three works have **left** this list because they are now held and read: Klein's *Sources of Power*
+and *The Power of Intuition*, and Gladwell's *Blink*. Gonzales's *Deep Survival* has been dropped
+rather than obtained — Klein's named failure conditions do the same job with evidence behind them.
 
 ---
 
