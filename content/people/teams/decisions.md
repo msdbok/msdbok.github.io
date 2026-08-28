@@ -327,26 +327,90 @@ experienced one. The primary study is Calderwood, Klein and Crandall
 
 ### Group Decision Making
 
-**Common outcomes in groups:**
-- No decision (paralysis)
-- Self-appointed decision maker
-- Minority rule
-- Majority rule
-- Consensus
+Rebori {% cite rebori1998decisionstyles %} starts from a problem every team recognises: groups
+often cannot tell **when a decision was made**, which surfaces as "I don't recall us making an
+actual decision on that" or "I thought we already made this decision." Her remedy is to agree the
+decision *style* in advance. Five styles, and the split between them matters more than the list.
 
-**How to choose method?**
-- Based on timeliness, appropriateness, relationships.
+**Three are failure modes — things groups fall into, not methods to choose:**
+
+- **No decision.** Deciding not to decide. It shows up as *topic-jumping*, and as **"the plop"** —
+  a member proposes something and the group simply does not respond. "Avoiding or ignoring actions
+  or decisions is a decision, it is just a decision not to decide."
+- **Self-appointed decision maker.** One member states a decision, nobody agrees or disagrees, and
+  so that member decides for everyone. Fast, but it reflects one person's view, not the group's.
+- **Minority rule.** Three or four members agree while the rest stay silent, usually with no vote.
+  It "can cause frustration among silent members creating the impression their opinion does not
+  count."
+
+**Two are styles you can deliberately adopt:**
+
+- **Majority rule.** At least 51%, usually brief discussion then a show of hands. It moves a group
+  forward quickly, but on complex or high-stake decisions it "often produces a win/lose solution
+  and is considered a competitive style of decision-making."
+- **Consensus.** All members support the decision. Not a compromise — "members work to seek mutual
+  agreement" — and not unanimity either. It is slow and genuinely difficult, and it "fosters board
+  empowerment, builds group cohesion, and improves interpersonal relationships and accountability."
+
+{: .warning }
+**Do not teach these five as parallel options.** Rebori is explicit that the first three are "**not
+recommended** as organized procedures" and "really refer to common situations that many boards may
+fall into." Earlier versions of this page listed all five flat under "common outcomes", which
+inverts her point: three of them are pathologies to recognise and name, and only two are choices.
+
+**How to choose — and this applies only to the majority-versus-consensus choice:**
+
+- **Timeliness** — how much time the group has. One meeting to decide forces the quickest workable
+  method.
+- **Appropriateness** — how complex the decision is. Choosing when to break for lunch does not
+  need consensus; approving an architecture or a release does.
+- **Relationship** — how the decision will affect working relationships. If a style could put
+  those in peril, lean collective.
+
+#### Techniques worth stealing
+
+Over half of Rebori's fact sheet is technique, and this is the part the lecture never taught.
+
+**To soften a majority decision:**
+
+- **70/30 vote** — require 70% agreement rather than 51%. Because you cannot reach 70% without
+  talking, it "borrows from consensus" and blunts the divisiveness a bare majority creates.
+- **Blind vote** — a secret ballot for high-stakes calls; anonymity reduces divisiveness.
+- **Devil's advocate** — one member argues every opposite possibility, specifically to stop the
+  group sliding into groupthink.
+
+**To build consensus:**
+
+- **Levels of consensus** — the single most reusable item here. Rate each member's position 1–5:
+  **1** easily accept · **2** accept, though not my preference · **3** accept with minor changes ·
+  **4** accept the group, though I don't agree · **5** cannot accept. **Anyone at 5 means there is
+  no consensus; everyone at 4 or above means consensus is reached.** Agree the scale in the ground
+  rules before you need it. This converts "does everyone agree?" — which invites silence — into a
+  question people can answer honestly and quickly, and it makes disagreement cheap to voice.
+- **Consensus log** — a running record of what was agreed, so "what did we decide about X?" stops
+  recurring.
+- **Distill concerns** — write every concern up visibly, then group the similar ones to expose what
+  actually needs resolving.
+- **Straw man** — draft a proposal *in order to have it attacked*. Letting the group pull it apart
+  and rebuild it is what produces ownership.
+
+{: .warning }
+**Practitioner guidance, not evidence — and from a different world.** Fact Sheet 98-56 is a
+four-page extension leaflet with no study behind it, written for **community and municipal boards**:
+volunteers advising city councils, not paid engineers making technical decisions. The 51% and 70%
+thresholds are conventions, not findings. Use it for vocabulary and procedure, which is what it is
+good for, and do not claim any of it has been measured on software teams.
 
 {: .note }
-**This taxonomy is credited to Marlene K. Rebori, but not to a publication.** The lecture slide it
-comes from says only "Work by Marlene K. Rebori, University of Nevada" — no title, no year. She is
-a real and identifiable author, and this handbook now holds and cites one of her fact sheets
-{% cite rebori1997problemsolving %} — **but that is a different work and does not contain this
-list.** The five methods and the three criteria appear nowhere in it. The originating publication
-has not been located, so the taxonomy stands here **unattributed to a source** rather than
-carrying a citation that would not survive checking. Whatever its provenance, note that the useful
-move it encodes is choosing the decision rule *before* the decision, which is step 5 of the method
-above.
+**Two things to notice about the devil's advocate.** Rebori recommends it against groupthink in
+1998; {% cite mohanani2018biases %} finds the same technique still circulating in software
+engineering as a proposed debiasing method **with no empirical evaluation** — one of six proposed
+remedies across thirty-seven biases, none of them tested. A technique can be in practitioner
+guidance for nearly thirty years and still be unvalidated. Note too that Rebori's own gloss on
+groupthink — members suppressing dissent "because they believe no one will agree with them" — is
+closer to the **Abilene paradox** than to Janis's construct, and drops cohesion, stress and
+structural faults entirely. It is a tidy live specimen of what 't Hart complained about above. For
+the definition, use the groupthink section, not this one.
 
 **Problems in group decisions**
 - Deciding too soon (rushing).
@@ -532,10 +596,9 @@ page rests on a page number from any of them:
 - **Rogers, P. & Blenko, M.** *Who Has the D? How Clear Decision Roles Enhance Organizational
   Performance*, and Blenko, Mankins & Rogers, *The Decision-Driven Organization* — *Harvard
   Business Review* — the "Influencing Factors" section.
-- **Rebori, M. K.** — **the group decision-method taxonomy only.** Her *Effective Problem-Solving
-  Techniques for Groups* (Fact Sheet 97-26) is now held and cited above, but it is a different work
-  and does not contain the five methods or the three selection criteria. The publication that does
-  has not been located.
+- **Rebori, M. K.** — **resolved and removed from this list.** Both fact sheets are now held and
+  cited above: *Decision-Making Styles and Techniques* (98-56) for the taxonomy, and *Effective
+  Problem-Solving Techniques for Groups* (97-26) for the method.
 - **Janis, I.** *Victims of Groupthink* (1972) / *Groupthink* (1982) — reported here only through
   {% cite thart1991groupthink %}, which is a review essay, not Janis.
 - **Harvey, J. B.**, "The Abilene Paradox" (1974) — see the note above.
