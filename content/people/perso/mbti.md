@@ -38,9 +38,18 @@ _Myers-Briggs personality types._ ([Source](https://commons.wikimedia.org/wiki/F
 
 ## MBTI with Software Engineers
 
-_**Based on:** Capretz, Luiz Fernando. "Personality types in software engineering." International Journal of Human-Computer Studies 58.2 (2003): 207-214._
+Capretz {% cite capretz2003personality %} reports that the distribution of MBTI types among
+software engineers differs markedly from the general US population.
 
-Research shows that the distribution of MBTI types among software engineers is very different from the general US population.
+{: .note }
+**Know the sample before using these numbers.** Capretz surveyed **100** people (80% men) using
+MBTI Form G — a convenience sample of students, government employees and company staff selected
+by occupation, with no sampling frame and **no significance test reported**. The US baseline
+comes from the 1998 *MBTI Manual*, while respondents were Canadian. Capretz himself notes the
+81/19 thinking–feeling split may partly reflect the 80/20 gender split. Treat the contrast as
+suggestive, not as a measured population difference. Cruz and colleagues {% cite cruz2015forty %}
+later surveyed forty years of this literature and found **no consistent software-engineering
+personality profile** across the studies that reported one.
 
 **MBTI distribution in the general US population:**
 
@@ -59,7 +68,7 @@ Research shows that the distribution of MBTI types among software engineers is v
 <tr>
 <td><strong>%</strong></td>
 <td style="background-color: #e8f4f8;">11.6%</td>
-<td style="background-color: #f8e8e8;">11.6%</td>
+<td style="background-color: #f8e8e8;">13.8%</td>
 <td style="background-color: #e8f4f8;">1.5%</td>
 <td style="background-color: #f8e8e8;">2.1%</td>
 </tr>
@@ -180,9 +189,9 @@ Research shows that the distribution of MBTI types among software engineers is v
 
 Research highlights significant differences between the MBTI profiles of software engineers and the general US population:
 
-- **ISTJ:** About twice as common among software engineers (24% vs 12%).  
+- **ISTJ:** About twice as common among software engineers (24% vs 11.6%).  
   *ISTJs are detail-oriented, logical, and reliable—traits that fit well with the demands of software development.*
-- **ISFJ:** About five times less common among software engineers.  
+- **ISFJ:** About seven times less common among software engineers (2% vs 13.8%).  
   *ISFJs tend to be more focused on harmony and personal values, which may be less emphasized in technical roles.*
 - **INTJ:** Roughly three times more common among software engineers.  
   *INTJs are strategic, independent, and enjoy solving complex problems—qualities highly valued in engineering.*
@@ -205,25 +214,54 @@ An INTJ (Introverted, Intuitive, Thinking, Judging) might excel at designing sys
 
 ---
 
-## Applying MBTI Insights to Team Leadership
+## Can you build a team from personality types?
 
-Understanding MBTI profiles can help managers:
+This is the question managers actually want answered, and it is where the MBTI literature stops
+being able to help.
 
-- **Tailor communication:**  
-  - *Introverts* may prefer written updates or one-on-one meetings.  
-  - *Extraverts* may enjoy group discussions and brainstorming sessions.
-- **Assign tasks:**  
-  - *Judging types* often excel at planning, meeting deadlines, and organizing work.  
-  - *Perceiving types* may be better at adapting to change, handling uncertainty, and generating creative ideas.
-- **Motivate teams:**  
-  - *Thinking types* respond well to logical arguments, clear goals, and constructive feedback.  
-  - *Feeling types* appreciate recognition, team harmony, and supportive environments.
-- **Build balanced teams:**  
-  - Mix personality types to cover strengths and weaknesses.  
-  - For example, pair detail-oriented ISTJs with big-picture INTJs, or add Perceiving types to encourage flexibility and innovation.
+{: .warning }
+**There is no evidence that personality composition predicts how a software team performs.**
+Soomro and colleagues {% cite soomro2016personality %} searched 22 years of literature for exactly
+this link. Of 35 studies retrieved, only **12** addressed the question at all, and only **9** of
+those measured personality. **None found an association between personality and team climate.**
 
-**Example:**  
-If your team is mostly INTJs and ISTJs, you may need to consciously encourage brainstorming and creative risk-taking, or recruit more Perceiving types to foster adaptability and openness to new
+Read that carefully: it is *absence of evidence*, not evidence of absence. Too few studies asked
+the question, with too little consistency, to support a pooled estimate either way. What it does
+rule out is confident advice. Recommendations to "mix personality types" or to pair particular
+four-letter codes are not findings — they are folk practice, and this handbook previously
+presented them as guidance.
+
+The same caution applies to type-based prescriptions for communication, task assignment and
+motivation. They are plausible, widely repeated, and untested in software teams.
+
+### What the evidence does support
+
+If the goal is a team that performs well, the literature points somewhere else entirely:
+
+- **Psychological safety** — whether people can admit mistakes, ask questions and raise problems
+  without penalty — predicts team behaviour and software quality with real effect sizes
+  {% cite alami2024safety %}, and outranks every diversity variable tested
+  {% cite verwijs2024diversity %}. See [Trust and psychological safety](../teams/).
+- **Stable membership.** Occasional recomposition of a team degrades its behaviour considerably
+  more than physical distance does {% cite hoffmann2021humanside %}.
+- **Autonomy** is the work-design factor most reliably associated with psychological safety
+  {% cite buvik2021safety %}.
+
+These are things a manager can change. Personality type is not.
+
+### So what is MBTI good for here?
+
+As a **vocabulary for self-reflection** and a prompt for conversations about working style, it
+has value — which is roughly how Capretz uses it. As a **selection, assignment or team-composition
+instrument**, it is unsupported, and Capretz himself notes that no personality instrument will
+reliably predict success in the field.
+
+---
+
+### References
+
+{% bibliography --cited %}
+
 ---
 
 {: .highlight }

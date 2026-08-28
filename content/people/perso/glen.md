@@ -7,6 +7,19 @@ layout: default
 
 # Paul Glen: "Leading Geeks"
 
+This page summarises the framework set out in Paul Glen's *Leading Geeks: How to Manage and Lead
+the People Who Deliver Technology* {% cite glen2003leadinggeeks %}. The characteristics,
+motivators, de-motivators and leadership principles below are his; the examples and
+software-specific framing are ours.
+
+{: .warning }
+**This is a practitioner framework, not a research finding.** Glen states that his account rests
+on "more than fifteen years working with, leading, managing, coaching, and cajoling geeks in
+academic and business environments" — experience presented as argument, with no study behind it.
+It is a well-made framework and a useful vocabulary. It is not evidence, and the archetype it
+describes is a **2003** characterisation of a workforce that has changed considerably since.
+Where the claims below have been tested, this page says so.
+
 **General Characteristics:**
 - Respect for technology and rational thinking
 - Prefer logical, analytical decisions; dislike emotional reasoning
@@ -90,7 +103,9 @@ Rewarding only those who work overtime, rather than those who deliver quality so
 ## Common Obstacles
 
 - **Conflict resolution:**  
-  Most issues stem from a few sources (80/20 rule). Address root causes, not just symptoms.
+  Glen's advice is to address root causes rather than symptoms, on the reasoning that most issues
+  stem from a few sources. *(The "80/20" framing is a rule of thumb here, not a measured
+  distribution of team conflict — treat it as a heuristic.)*
 - **Annoying tasks:**  
   HR paperwork, parking, and other non-technical hassles can demotivate teams.
 - **Culture building:**  
@@ -101,6 +116,45 @@ Rewarding only those who work overtime, rather than those who deliver quality so
   Build trust through transparency and consistency. Help teams manage uncertainty and change.
 - **Patience and intervention:**  
   Know when to step in and when to let teams solve problems independently. Practice patience and support.
+
+---
+
+## Does this still hold?
+
+Glen's central claim is that technical people "deliver most of their value through thought, not
+behavior, so eliminating thought from the work reduces the value." Twenty years on, that turns
+out to be the sharpest available lens on AI-assisted development:
+
+- Vibe coding **does not remove programming expertise** — it redistributes it toward context
+  management, rapid evaluation of generated code, and deciding when to take manual control
+  {% cite sarkar2025vibe %}.
+- Experienced developers describe AI as a **junior colleague**; less experienced ones describe it
+  as a **teacher** {% cite zakharov2025teacher %}. Awareness of the tools is essentially unrelated
+  to experience, so senior reluctance is a considered position rather than an information gap.
+- The review work that verification requires lands on **core** developers, who in one large study
+  reviewed 6.5% more code while their own output fell 19% {% cite xu2025debt %}.
+
+Read together with Glen: if the thinking is what produces the value, then work that removes the
+thinking and adds verification burden is a de-motivator by his own account — and it falls hardest
+on the people the team can least afford to lose.
+
+**Where the evidence points elsewhere.** Glen's motivator list is a framework, not a measurement.
+For evidence on what actually motivates software engineers, see Beecham and colleagues'
+systematic review {% cite beecham2008motivation %}; and note that Herzberg's original
+motivator–hygiene work {% cite herzberg1968motivate %} — 12 investigations, 1,685 employees — was
+carried out on **engineers and accountants**, which makes it unusually well-matched to this
+audience.
+
+---
+
+### Acknowledgments
+
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
+
+### References
+
+{% bibliography --cited %}
 
 ---
 
