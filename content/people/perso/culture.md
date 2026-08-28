@@ -7,11 +7,55 @@ layout: default
 
 # Cultural dimensions Geert Hofstede
 
-_**Based on:** Hofstede, Geert. "Dimensionalizing cultures: The Hofstede model in context." Online readings in psychology and culture 2.1 (2011): 8._
+Based on Hofstede's own account of the model {% cite hofstede_dimensionalizing_2011 %}.
 
-Hofstede’s method originated in the 1960s–70s as a large-scale cross-national survey of IBM employees. Using standardized questionnaires, Hofstede collected responses about workplace values and behaviors, then applied statistical techniques (factor analysis) to identify recurring cultural dimensions. Early work produced four dimensions (Power Distance, Individualism, Masculinity, Uncertainty Avoidance); later research added Long-term Orientation and Indulgence, yielding six commonly used indices. For each country Hofstede computed average scores on each dimension, normalized to a 0–100 scale, enabling cross-country comparisons.
+{: .warning }
+**The Individualism and Long-Term Orientation scores on this page are the post-2023 revision, not
+Hofstede's originals.** In October 2023 The Culture Factor — the company associated with
+Hofstede's framework — **replaced** its IDV and LTO scores with figures derived from Michael
+Minkov's work, citing concerns about the age, representativeness and validity of the original IBM
+data {% cite komisarof2025idv %}. The new index is built on a 2015 survey of 55 countries plus
+World Values Survey data for 47 more, and correlates with the original at **r = .75** — related,
+but not the same instrument.
+<br><br>
+This matters because country scores moved. Under the original index the United States scored **91**
+on Individualism; under the revision it scores **60**. **Japan now scores 62 — slightly *higher*
+than the US** — inverting the single most-repeated contrast in cross-cultural management teaching.
+If a figure here disagrees with a textbook, check which vintage each is using before assuming
+either is wrong.
 
-The method’s practical steps are: design standardized survey items about values and practices; administer across many countries; aggregate responses at the national level; use factor analysis to extract dimensions; compute country scores and interpret patterns. Hofstede’s indices are descriptive heuristics—useful for anticipating cultural tendencies—but scholars warn about limitations: reliance on IBM’s employee sample, ecological fallacy (country averages ≠ individuals), historical staleness, and measurement choices. Despite critiques, Hofstede’s framework remains widely used in management and cross-cultural research as a parsimonious way to think about national-level cultural differences, provided users treat scores as provisional guides and combine them with local context and up-to-date data. In classroom and managerial use, pair Hofstede insights with qualitative local inquiry and iterative validation to avoid stereotyping or outdated assumptions.
+Hofstede's method originated in the 1960s–70s as a large-scale cross-national survey of IBM employees. Using standardized questionnaires, Hofstede collected responses about workplace values and behaviors, then applied statistical techniques (factor analysis) to identify recurring cultural dimensions. Early work produced four dimensions (Power Distance, Individualism, Masculinity, Uncertainty Avoidance); later research added Long-term Orientation and Indulgence, yielding six commonly used indices. For each country Hofstede computed average scores on each dimension, normalized to a 0–100 scale, enabling cross-country comparisons.
+
+The method’s practical steps are: design standardized survey items about values and practices; administer across many countries; aggregate responses at the national level; use factor analysis to extract dimensions; compute country scores and interpret patterns.
+
+### The two criticisms that carry numbers
+
+Hofstede's indices are widely used, and the objections to them are usually summarised as "scholars
+warn about limitations." Two of those warnings are now specific enough to state exactly.
+
+**1. The items do not hold together at the individual level.** Venaik and Brewer
+{% cite venaik2013hofstede %} show that Hofstede's three Uncertainty Avoidance items correlate
+**0.58, 0.46 and 0.44** between countries — and **0.14, 0.00 and −0.11** between individuals. The
+same is true of GLOBE's items. Their conclusion is blunt: "A score created with unrelated items is
+as meaningless in describing individuals as would be a scale that is created, for example, by
+adding an individual's age, height and income."
+
+> **This is the practical consequence:** country scores are valid *between* countries and invalid
+> *within* them. You cannot use a national score to predict how a particular colleague will
+> behave. Any advice on this page that reasons from a country score to an individual or a single
+> team should be read with that limit in mind.
+
+**2. The current instrument performs poorly.** Gerlach and Eriksson {% cite gerlach2021vsm %}
+tested the VSM 2013 scales across **22,863 people in 57 countries** and found Cronbach's alpha of
+**0.04, −0.71 and 0.31** against the conventional 0.70 threshold. A *negative* alpha means the
+items a scale tells you to add together are pulling against each other. For comparison, Hofstede's
+own 1980 figures were 0.84 and 0.77. Their country-level scores correlated only **0.14–0.28** with
+the official ones — while the same samples reproduced nationally representative World Values Survey
+data at **r = 0.65**, so the samples are sound and the instrument is not.
+
+Used as **heuristics** for anticipating where friction may arise, and paired with local inquiry,
+the dimensions remain a parsimonious way to think about national-level differences. Used as
+measurements of a person, they do not work.
 
 {: .highlight }
 **Important caveat:** national scores describe *typical, aggregate tendencies* of societies — they are statistical, not deterministic. There is wide individual variation within every country and organizational / occupational cultures can differ from national averages. Use these dimensions as **heuristics** to design management practices and anticipate friction, not as hard rules or stereotypes.
@@ -20,17 +64,17 @@ The method’s practical steps are: design standardized survey items about value
 
 ## 1. Quick summary of Hofstede’s six dimensions
 
-1. **Power Distance (PDI)** — extent to which less-powerful members of a society accept unequal power distribution. Low PDI → flatter interactions, expect to be consulted; high PDI → hierarchical, expect directives.&#x20;
+1. **Power Distance (PDI)** — extent to which less-powerful members of a society accept unequal power distribution. Low PDI → flatter interactions, expect to be consulted; high PDI → hierarchical, expect directives.
 
-2. **Individualism vs Collectivism (IDV)** — degree to which people are integrated into groups. High individualism → emphasis on personal goals, autonomy and directness; collectivism → emphasis on group harmony, relationships, group loyalty.&#x20;
+2. **Individualism vs Collectivism (IDV)** — degree to which people are integrated into groups. High individualism → emphasis on personal goals, autonomy and directness; collectivism → emphasis on group harmony, relationships, group loyalty.
 
-3. **Masculinity / Motivation toward achievement (MAS)** — often framed as competition/achievement vs caring/quality-of-life. Higher scores indicate stronger emphasis on achievement, performance and success; lower scores emphasize cooperation, work–life balance and consensus. (Hofstede labels this Masculinity/Femininity; your dataset labels it “motivation towards achievement”.)&#x20;
+3. **Masculinity / Motivation toward achievement (MAS)** — often framed as competition/achievement vs caring/quality-of-life. Higher scores indicate stronger emphasis on achievement, performance and success; lower scores emphasize cooperation, work–life balance and consensus. (Hofstede labels this Masculinity/Femininity; The Culture Factor now labels it “motivation towards achievement”.)
 
-4. **Uncertainty Avoidance (UAI)** — tolerance for ambiguity and unstructured situations. High UAI → preference for rules, plans, detailed specs and formal procedures; low UAI → tolerance for experimentation, “learn-as-you-go”, and informal processes.&#x20;
+4. **Uncertainty Avoidance (UAI)** — tolerance for ambiguity and unstructured situations. High UAI → preference for rules, plans, detailed specs and formal procedures; low UAI → tolerance for experimentation, “learn-as-you-go”, and informal processes.
 
-5. **Long-term Orientation (LTO)** — focus on future rewards (thrift, persistence) vs short-term oriented values (tradition, quick results). High LTO → planning, deferred payoff, sustained investment in architecture/tech debt; low LTO → emphasis on tradition, quick wins.&#x20;
+5. **Long-term Orientation (LTO)** — focus on future rewards (thrift, persistence) vs short-term oriented values (tradition, quick results). High LTO → planning, deferred payoff, sustained investment in architecture/tech debt; low LTO → emphasis on tradition, quick wins.
 
-6. **Indulgence vs Restraint (IVR)** — degree to which a society allows relatively free gratification of basic human drives related to enjoying life and having fun. High indulgence → emphasis on leisure, individual enjoyment, expressive behavior; restraint → stricter social norms, less overt emphasis on leisure.&#x20;
+6. **Indulgence vs Restraint (IVR)** — degree to which a society allows relatively free gratification of basic human drives related to enjoying life and having fun. High indulgence → emphasis on leisure, individual enjoyment, expressive behavior; restraint → stricter social norms, less overt emphasis on leisure.
 
 *(Each dimension and its managerial implications are discussed further below.)*
 
@@ -44,7 +88,7 @@ The method’s practical steps are: design standardized survey items about value
 
 * **MAS vs IVR:** Masculinity/Achievement focuses on competitiveness and performance metrics; Indulgence focuses on QoL, leisure and emotional expression. They affect incentives and morale differently — performance pay & public recognition vs social perks and work–life policies.
 
-Hofstede’s work also recommends treating these as **complementary lenses**: when designing practices consider several dimensions together (e.g., high UAI + high PDI will amplify preference for formal approvals and detailed plans).&#x20;
+Hofstede’s work also recommends treating these as **complementary lenses**: when designing practices consider several dimensions together (e.g., high UAI + high PDI will amplify preference for formal approvals and detailed plans).
 
 ---
 
@@ -58,11 +102,11 @@ Hofstede’s work also recommends treating these as **complementary lenses**: wh
 | Dimension                    | US score | France score  | Possible interpretation                                                                                                                   |
 | ---------------------------- | -------------: | -----------------: | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Power Distance (PDI)         |             40 |                 68 | US more egalitarian/flat; France more accepting of hierarchy and formal authority.                                                     |
-| Individualism (IDV)          |             60 |                 74 | Both individualistic, France even more so in your numbers → expect emphasis on personal autonomy and line-of-sight to career outcomes. |
+| Individualism (IDV)          |             60 |                 74 | Both individualistic, France higher on the revised index → expect emphasis on personal autonomy and line-of-sight to career outcomes. |
 | Motivation/Achievement (MAS) |             62 |                 43 | US stronger on achievement/competition; France more moderate, with more emphasis on consensus/quality-of-life.                         |
 | Uncertainty Avoidance (UAI)  |             48 |                 76 | US more tolerant of ambiguity and experimentation; France prefers structure, rules, detailed specs.                                    |
 | Long-term orientation (LTO)  |             50 |                 60 | France slightly more future-oriented (willing to plan/standardize); US more balanced/shorter horizon here.                             |
-| Indulgence (IVR)             |             68 |                 48 | US more indulgent (leisure, expressive), France more restrained in your data.                                                          |
+| Indulgence (IVR)             |             68 |                 48 | US more indulgent (leisure, expressive), France more restrained.                                                          |
 
 > These scores are interpreted **relatively** — they describe tendencies that are useful to anticipate how teams prefer to work and interact.
 
@@ -88,7 +132,7 @@ Below are direct management implications and concrete examples you can use when 
 
 **Implications**
 
-* **Higher IDV (France 74, US 60 in your data):** stronger emphasis on individual contribution, personal recognition, and career ladders.
+* **Higher IDV (France 74, US 60 on the revised index):** stronger emphasis on individual contribution, personal recognition, and career ladders.
 * Team incentives should include individual growth paths and clear personal attribution for work.
 
 **Examples & practices**
@@ -181,7 +225,7 @@ When teams include both US and French members, combine the insights above into o
 ### Example A — Architecture decision that affects multiple squads
 
 * **Context:** CTO proposes a migration to a new message-bus technology.
-* **US team reaction (you data):** expect open debate, prototypes, and rapid A/B testing in prod can be acceptable.
+* **US team reaction:** expect open debate, prototypes, and rapid A/B testing in prod can be acceptable.
 * **France team reaction:** expect formal evaluation, risk analysis, security review, and manager approval before broad rollout.
 * **Manager action:** publish a **decision memo** (satisfies UAI + PDI), run a cross-squad prototyping spike (satisfies US appetite for experiment), and schedule a governance review with named approvers and timeline (satisfies France preferences).
 
@@ -211,6 +255,16 @@ When teams include both US and French members, combine the insights above into o
 * Timebox experimental work with **clear acceptance criteria** so both low-UAI experimenters and high-UAI planners see safeguards.
 * Normalize a **blended recognition scheme**: public shoutouts + formal written testimonials / career credits.
 
+---
+
+### Acknowledgments
+
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
+
+### References
+
+{% bibliography --cited %}
 
 ---
 

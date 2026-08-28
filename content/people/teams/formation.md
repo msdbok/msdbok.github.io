@@ -10,7 +10,8 @@ _*Adapted from David Root (2014)_
 
 ## Building a Team: Tasks, People, Relationships
 
-When forming a software development team, consider three key areas (Source: Thomson 1973):
+When forming a software development team, consider three key areas
+{% cite thompson2015makingtheteam %}:
 
 ### 1. Task Analysis
 - **What work needs to be performed?**  
@@ -50,7 +51,11 @@ When forming a software development team, consider three key areas (Source: Thom
 
 ---
 
-## Successful Team Performance: An Integrated Model (Source: Steiner 1972)
+## Successful Team Performance: An Integrated Model
+
+This framework comes from Thompson {% cite thompson2015makingtheteam %}, who in turn credits the
+essential-conditions criteria to Hackman and Gruenfeld. It was previously attributed on this page
+to Steiner (1972); that attribution was incorrect.
 
 ### Team Context
 - **Organizational Context:**  
@@ -83,9 +88,24 @@ When forming a software development team, consider three key areas (Source: Thom
 
 ---
 
-## Team Development Stages (Bruce Tuckman, 1965)
+## Team Development Stages (Tuckman 1965; Tuckman & Jensen 1977)
 
-Tuckman’s model describes how teams evolve through five stages. Understanding these helps software teams work more effectively.
+Tuckman {% cite tuckman_developmental_1965 %} proposed **four** stages — forming, storming,
+norming, performing. The fifth, **adjourning**, was added twelve years later by Tuckman and
+Jensen {% cite tuckman1977revisited %}. Attributing five stages to the 1965 paper is a common
+error, and this page previously made it.
+
+{: .warning }
+**Know where this model comes from before relying on it.** Tuckman's 1965 review covered **50
+articles**, of which **26 were therapy groups and 11 were human-relations training groups** — not
+work teams, and not software teams. The 1977 follow-up is candid that in the intervening twelve
+years **exactly one study** was designed to test the hypothesis, and its observers were given the
+stage descriptions and asked to fit their observations to them — a design that can confirm but
+cannot disconfirm. The authors call for statistical evidence that had not been supplied.
+
+Teach it as useful shared **vocabulary** for an experience most people recognise — the storming
+phase is familiar to anyone who has done group work — and put the evidential weight on the
+factors below, which were measured in actual software teams.
 
 ```mermaid
 flowchart LR
@@ -149,30 +169,34 @@ Three major cycles to manage for team success:
 - Redirection
 - *Example:* Pivoting project direction after stakeholder feedback.
 
-## Sources
+## What predicts how a team actually performs
 
-- Thompson, Leigh L. *Making the Team: A Guide for Managers*, 3rd ed. Pearson Education, 2008.
-- Steiner, I. D. (1966). Models for inferring relationship between group size and potential productivity. *Behavioural Science*, 11, 273–283.
-- Steiner, I. D. (1972). *Group process and productivity*. New York: Academic Press.
-- Steiner, I. D. (1974). Whatever happened to the group in social psychology? *Journal of Experimental Social Psychology*, 10, 94–108.
-- Steiner, I. D. (1976). Task-performing groups. In J. W. Thibaut, J. T. Spence, & R. C. Carson (Eds.), *Contemporary topics in social psychology* (pp. 393–422). Morristown, NJ: General learning Press.
-- Steiner, I. D. (1983). Whatever happened to the touted revival of the group? In H. H. Blumberg, P. A. Hare, M. V. Kent, & M. Davies (Eds.), *Small groups and social interaction* (pp. 539–547). New York: John Wiley & Sons Ltd.
-- Steiner, I. D. (1986). Paradigms and groups. *Advances in Experimental Social Psychology*, 19, 251–289.
-- Tuckman, Bruce W. “Developmental Sequence in Small Groups.” *Psychological Bulletin*, vol. 63, no. 6, 1965, pp. 384–399. Adjourning added later in: Tuckman, Bruce W., and Mary Ann C. Jensen. “Stability and Changes in Group Development.” *Group & Organizational Studies*, vol. 2, no. 4, 1977, pp. 419–427.
+Stage models describe a trajectory. They do not identify anything a manager can change. Two
+factors measured in software teams do:
+
+- **Autonomy** is the work-design factor most reliably associated with psychological safety
+  {% cite buvik2021safety %} — and notably, interdependence and role clarity were *not*,
+  against expectation.
+- **Membership stability.** Occasional recomposition of a team degrades its behaviour
+  substantially more than geographic distance does {% cite hoffmann2021humanside %}, and it is
+  the only factor in that study that affects mutual respect and interpersonal conflict rather
+  than merely coordination.
+
+Neither appears in Tuckman. Both are available to whoever forms the team.
 
 ---
 
 ## Acknowledgments
 
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and
+**David Root** {% cite root2014lectures %} on software project management. The structure,
+examples, and pedagogical approach reflect their teaching materials and frameworks.
 
 ---
 
-## Sources
+### References
 
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
-
----
+{% bibliography --cited %}
 
 ---
 

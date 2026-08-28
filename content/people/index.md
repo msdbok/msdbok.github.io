@@ -5,11 +5,16 @@ layout: default
 ---
 
 # Why do we need Management of Software Development?
-_*Adapted from David Root (2014)_
+
+_Adapted from lecture materials by David Root {% cite root2014lectures %}._
 
 ## Why do so many projects fail?
 
-**CHAOS Report 2015 - Project Success Rates by Size:**
+The most-quoted answer comes from the Standish Group's CHAOS reports {% cite standish2015chaos %}.
+It is worth reading closely — not because the numbers are dependable, but because seeing why they
+are not is the first lesson of this course.
+
+**CHAOS 2015 — outcomes by project size, under the Modern Resolution definition:**
 
 | Project Size | Successful | Challenged | Failed | Total |
 |--------------|-----------|-----------|---------|-------|
@@ -19,22 +24,50 @@ _*Adapted from David Root (2014)_
 | **Moderate** | 24% | 64% | 12% | 100% |
 | **Small** | 61% | 32% | 7% | 100% |
 
-The Standish Group CHAOS report (2015) shows a clear correlation between project size and failure rates. Larger projects face significantly worse outcomes:
-- **Grand projects**: Only 6% succeed, with 51% challenged and 43% failed
-- **Small projects**: 61% succeed, with 32% challenged and only 7% failed
+Larger projects do fare worse in this data: 6% of Grand projects are recorded successful against
+61% of Small ones.
 
-Overall across all project sizes, approximately 36% of projects are successful, 45% are challenged, and 19% fail.
+### The same projects, two answers
 
-**Success**: Delivered on time, within budget, and with the required features  
-**Failure**: Cancelled before completion, or delivered but never used  
-**Challenged**: Late, over budget, and/or missing required functions
+Standish reports outcomes under **two different definitions**, and the choice moves the headline
+by seven percentage points across the same 25,000 projects:
 
-Despite decades of experience:
-- CMU CS department is 60 years old
-- UC Berkeley’s is 40 years old
-- NASA has used software since the 1950s
+| Definition | What counts as success | FY2015 result |
+|---|---|---|
+| **Traditional** | OnTime, OnBudget, **OnTarget** — the required features | 36% successful · 45% challenged · 19% failed |
+| **Modern** | OnTime, OnBudget, **with a satisfactory result** | **29%** successful · **52%** challenged · 19% failed |
 
-Yet, software development remains unpredictable compared to other engineering disciplines.
+The table above uses the **Modern** definition; the report states that "for the rest of this
+report CHAOS Resolution will refer to the Modern Resolution definition." So quoting the size
+table alongside a "36% succeed" headline mixes the two — a mistake this page previously made.
+
+{: .warning }
+**Neither figure measures what it appears to measure.** Both definitions score a project by
+whether it matched its own *forecast*. Eveleens and Verhoef {% cite eveleens2010chaos %} analysed
+5,457 forecasts across 1,211 real projects and showed what follows: an organization can raise its
+CHAOS score by inflating estimates. In their data the portfolio with the **worst** forecasting —
+half its projects out by 233% or more — scored **67% "successful"**, because its managers
+systematically overstated budgets. Two datasets with *identical* forecast quality scored 5.8% and
+94.2%, differing only in the direction of the bias.
+
+### Three things to check before using any figure like this
+
+1. **The definition is chosen by whoever publishes the number.** Standish's own disclaimer, quoted
+   by Eveleens and Verhoef, says its reports "should be considered Standish opinion and the reader
+   bears all risk in the use of this opinion."
+2. **The publisher may sell the remedy.** The report's top-weighted success factor is
+   "Optimization" — the name of Standish's own paid service — and the text beside the size table
+   offers to "break up large software projects into multiple small projects."
+3. **The report disagrees with itself on its corpus**, giving "25,000-plus projects" on page 1 and
+   50,000 on page 13.
+
+None of this shows that software projects go well. It shows why, of any project metric you are
+handed, the question to ask is **who chose the definition, and what happens to them if the number
+moves.** That question returns in [Tracking](../track/).
+
+Despite decades of accumulated experience — Carnegie Mellon's computer science department was
+founded in 1965, and NASA has been building software since the 1950s — software development
+remains harder to predict than most engineering disciplines.
 
 ---
 
@@ -97,9 +130,9 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 
 ---
 
-## Sources
+### References
 
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
+{% bibliography --cited %}
 
 ---
 
