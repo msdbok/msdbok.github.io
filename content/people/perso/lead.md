@@ -59,7 +59,7 @@ team from organizational bureaucracy, satisfy the desire for autonomy, align ind
 organizational ones, implement upper management's decisions dispassionately. Subordinates on the
 *more* successful projects rated their managers highest on that scale, ahead of the transformational
 one. For example, "prevent organizational bureaucracy from interfering with the work of your
-subordinates" is a better opening line for this course than any of the six styles.
+subordinates" is a better opening line for a software manager than any of the six styles.
 
 ## How solid is this?
 

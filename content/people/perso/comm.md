@@ -35,8 +35,8 @@ Giving it something to do is the technique. **Paraphrasing** is the one move tha
 in your own words, what you think was said, and let the other person correct it. Around that,
 circulate meeting notes and invite corrections, ask questions that are not challenges, and signal
 that you are still there — nods, eye contact, and on a call, the camera. Ask, look, listen, and
-then answer. In this course the payoff is immediate: paraphrasing is the technique a case-discussion
-room notices.
+then answer. Paraphrasing is the one technique a room notices, because it is the only one that
+produces evidence you were listening.
 
 ## 3. Meeting intent decides onsite or remote
 
@@ -64,7 +64,7 @@ team at all — influence without membership, which no media-richness account of
   but no copy is available here, so the contrast and the approach/build-bridges structure come
   through the Fall 2025 lecture deck. No page reference is given, and none should be invented.
 - **The listening material has no citation at all, deliberately.** It traces to Harris and
-  Sherblom's *Small Group and Team Communication*, which this course does not hold and which has no
+  Sherblom's *Small Group and Team Communication*, which this handbook does not hold and which has no
   bibliography key. Nothing in the reviewed corpus evaluates an active-listening technique. It is
   kept as practitioner teaching material because the case presentations need it.
 - **The hybrid-meeting finding is contested, not settled.** Christensen and colleagues studied one

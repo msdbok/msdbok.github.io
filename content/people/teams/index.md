@@ -63,7 +63,6 @@ score is normalised, so do not quote it as a percentage.
 | [Formation](formation.html) | What to settle before the work starts, and how a team develops | Thompson; Tuckman |
 | [Motivation](motivation.html) | What makes engineers want to do the work | Herzberg; Beecham |
 | [Social Loafing](loafing.html) | Why effort per person falls as a team grows | Ringelmann |
-| [Conflict](conflict.html) | Task versus relational conflict, and the C1 case | Verwijs; Amabile |
 
 **Deciding has its own area: [Decisions](decisions.html)** — half that material is about how
 *one person* judges rather than how a group does.

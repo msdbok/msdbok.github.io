@@ -38,7 +38,7 @@ the direction Brooks's Law comes from.
 
 ## 2. Do teams outperform individuals?
 
-This handbook used to answer **yes**, under the heading *Synergy*. No source in this bibliography
+The familiar answer is **yes**, under the heading *synergy*. No source in this bibliography
 supports it, and the two large software studies used below cannot settle it, because **neither
 compares a team with an individual**: Hoegl and Gemuenden interviewed 575 people in 145 German
 teams {% cite hoegl_teamwork_2001 %} and Lindsjørn and colleagues surveyed 477 members of 71 agile
@@ -78,8 +78,14 @@ age diversity** predicted effectiveness (β = .213, p = .041); gender, cultural 
 diversity did not, on effectiveness or on relational conflict {% cite verwijs2024diversity %}.
 Take this as a reason to stop *asserting* the diversity–performance link, not as proof that
 composition is irrelevant — and note what did outrank every composition variable in the same
-study: [psychological safety](safety.html). The other half of that study, on conflict, is on
-[Conflict](conflict.html).
+study: [psychological safety](safety.html).
+
+The same study tested the other half of the folklore and found it equally unsupported:
+**relational conflict did not reduce team effectiveness** either — β = .081, p = .747, against the
+authors' own hypothesis. That is not licence to ignore conflict; it is a warning that the
+confident causal story usually told about team friction is not the one the data tells. Where
+conflict is *expected* rather than exceptional is the storming phase — see
+[Formation](formation.html).
 
 ## How solid is this?
 

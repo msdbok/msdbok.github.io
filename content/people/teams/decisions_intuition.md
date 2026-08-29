@@ -68,7 +68,7 @@ The popular version, and the half that misfires, is [Thin slicing](decisions_thi
 
 - **A strategy count, not a quality count.** The 46–96% range shows experts do not compare options, not that they are right. The studies are Klein's own, coded by his team, and the independent replications he cites are the ones that agreed.
 - **Descriptive, not prescriptive.** RPD does not license "train people to satisfice", and Klein says it does not transfer without consistent, fast feedback — he names stock selection, public policy and clinical psychology. Software estimation has weak feedback loops, so the transfer is a question.
-- **Which Klein book.** *Sources of Power* (1998/2017) for anything with a number in it, *The Power of Intuition* (2003) for anything a manager should do — chapter 4 of the 1998 book is itself titled "The Power of Intuition", hence the confusion. Our copy is the 20th Anniversary Edition (MIT Press, 2017); its preface is not in the original.
+- **Which Klein book.** *Sources of Power* (1998/2017) for anything with a number in it, *The Power of Intuition* (2003) for anything a manager should do — chapter 4 of the 1998 book is itself titled "The Power of Intuition", which is where the confusion starts.
 
 ---
 

@@ -54,7 +54,7 @@ process with no recorded inputs and no assumed risk cannot be judged at all.
 
 ## 4. Using it on a case
 
-PEAK was built for case teaching, which is why it suits this course. A case study hands you the
+PEAK was built for case teaching, which is what makes it practical. A case study hands you the
 **problem**, states some **assumptions** and supplies many facts; you bring the **knowledge** and
 the **experience**. Writing the four inputs out before arguing about the answer usually exposes
 that the disagreement in the room is about an assumption, not about the solution.

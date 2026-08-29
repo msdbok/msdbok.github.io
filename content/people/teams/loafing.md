@@ -80,7 +80,7 @@ what {% cite xu2025debt %} tests at scale and does not find.
 - **Loafing is not a human universal.** Greenberg's own section asks the question and reports that
   the effect **reversed** in the People's Republic of China and in Israel, where working in a group
   produced *more* effort, not less (p. 297). That is one reported study rather than a meta-analysis,
-  so it is not a finding about any individual student either. Teach loafing as contingent on
+  so it is not a finding about any individual either. Loafing is contingent on
   context.
 - **Which Greenberg.** This material was long attributed to "Greenberg, 1996, *Managing Behaviors
   in Organizations*" — a title that does not exist. The copy this handbook works from is Jerald

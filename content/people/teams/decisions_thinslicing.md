@@ -43,7 +43,7 @@ The disciplined version of the same phenomenon, with its boundary conditions sta
 ## How solid is this?
 
 - **This page is second-hand.** *Blink* is trade non-fiction; Gladwell runs no studies. **None of his primary sources is held here** — not Gottman, Ambady and Rosenthal, Levinson or Nigel West — so they are named rather than cited; his Notes give the journal references. "Absolute certainty" about the Morse operators is a historian's phrase, not a measurement.
-- **Two long-standing corrections.** The name is **Ambady**, not "Ambadi", and Levinson and Ambady are different studies: the 18.3-versus-15-minute finding is not itself a thin-slicing result; thin slicing enters only when Ambady re-slices those tapes to forty seconds.
+- **Levinson and Ambady are two different studies.** The 18.3-versus-15-minute consultation finding is not itself a thin-slicing result; thin slicing enters only when Ambady re-slices those same tapes down to forty seconds.
 
 ---
 

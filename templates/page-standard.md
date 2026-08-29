@@ -128,6 +128,34 @@ sentence where it appears and put the detail below. That is the only reason to b
 
 ---
 
+## 5a. No course mechanics on a handbook page
+
+The handbook is durable reference material. It outlives any one semester and is read by people who
+are not taking the course. So a page must not mention **assignments, cases, sessions, quizzes or
+dates** — no *"the course's C1 case"*, no *"you will be marked on…"*, no lecture codes.
+
+That material belongs in the deck, the lecture notes, Moodle and the assignment itself, all of
+which are semester-scoped and revised each year. A page referencing them is stale the moment the
+schedule changes, and meaningless to everyone else.
+
+**The test:** would this sentence still make sense to a practitioner who found the page through a
+search engine? If it names something only an enrolled student would recognise, it belongs
+elsewhere.
+
+## 5b. A page that is mostly pointers is not a page
+
+If most of a page's substance is *"see the MBTI page"*, *"see Formation"*, *"the case
+describes…"* — with one finding of its own — it has not earned a URL. Fold the finding into the
+page that owns its source, and delete it.
+
+This happened to a `teams/conflict` page. Written out, its content was: one null result borrowed
+from the diversity study, a restatement of a case students read anyway, an imported distinction
+whose source is not in this bibliography, and four manager moves each already argued better
+elsewhere. Its *How solid is this?* section was more substantial than its teaching.
+
+**Writing the page is what proved the material was not there.** That is a legitimate outcome and a
+cheaper one than leaving a thin page up — but check for it *before* publishing, not after.
+
 ## 6. Structure and footer
 
 ```markdown
