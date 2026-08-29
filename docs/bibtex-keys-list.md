@@ -799,7 +799,7 @@ _Use Cmd+F (Mac) or Ctrl+F (Windows) to search by title or author._
 - **Type:** book
 - **Title:** The Power of Intuition: How to Use Your Gut Feelings to Make Better Decisions at Work
 - **Author:** Klein, Gary A.
-- **Year:** 2003
+- **Year:** 2004
 - **Publisher:** Currency/Doubleday
 
 ### `komisarof2025idv`
@@ -1149,7 +1149,7 @@ _Use Cmd+F (Mac) or Ctrl+F (Windows) to search by title or author._
 - **Title:** Software engineering: a practitioner's approach
 - **Author:** Pressman, Roger S
 - **Year:** 2005
-- **Publisher:** Palgrave Macmillan
+- **Publisher:** McGraw-Hill
 
 ### `projectmanagementcom_scrum_nodate`
 
@@ -1477,6 +1477,7 @@ _Use Cmd+F (Mac) or Ctrl+F (Windows) to search by title or author._
 - **Author:** 't Hart, Paul
 - **Year:** 1991
 - **Journal:** Political Psychology
+- **DOI:** 10.2307/3791464
 
 ### `theobald_comparing_2019`
 
