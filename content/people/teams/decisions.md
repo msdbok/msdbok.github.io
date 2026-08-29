@@ -589,25 +589,25 @@ experiment, and its metric is defined only for classification tasks.
 
 ## Named on this page but not in our bibliography
 
-These works are the acknowledged origin of sections above. **None of them has been obtained or
-read for this page**, so they are named and dated here rather than cited, and no claim on this
-page rests on a page number from any of them:
+These works are the acknowledged origin of sections above. **None of the works listed below has
+been obtained or read for this page**, so they are named and dated here rather than cited, and no
+claim on this page rests on a page number from any of them:
 
 - **Rogers, P. & Blenko, M.** *Who Has the D? How Clear Decision Roles Enhance Organizational
   Performance*, and Blenko, Mankins & Rogers, *The Decision-Driven Organization* — *Harvard
   Business Review* — the "Influencing Factors" section.
-- **Rebori, M. K.** — **resolved and removed from this list.** Both fact sheets are now held and
-  cited above: *Decision-Making Styles and Techniques* (98-56) for the taxonomy, and *Effective
-  Problem-Solving Techniques for Groups* (97-26) for the method.
 - **Janis, I.** *Victims of Groupthink* (1972) / *Groupthink* (1982) — reported here only through
   {% cite thart1991groupthink %}, which is a review essay, not Janis.
 - **Harvey, J. B.**, "The Abilene Paradox" (1974) — see the note above.
 - **Gladwell's primary sources** — Gottman, Ambady & Rosenthal, Levinson, Nigel West. *Blink*
   itself is now held and cited, but the studies it reports are not.
 
-Three works have **left** this list because they are now held and read: Klein's *Sources of Power*
-and *The Power of Intuition*, and Gladwell's *Blink*. Gonzales's *Deep Survival* has been dropped
-rather than obtained — Klein's named failure conditions do the same job with evidence behind them.
+**Resolved since this list was written.** Klein's *Sources of Power* and *The Power of Intuition*,
+Gladwell's *Blink*, ’t Hart's review essay, and **both** Rebori fact sheets — *Decision-Making
+Styles and Techniques* (98-56) for the taxonomy and *Effective Problem-Solving Techniques for
+Groups* (97-26) for the method — are now held, read and cited above. Gonzales's *Deep Survival*
+was dropped rather than obtained: Klein's named failure conditions do the same job with evidence
+behind them.
 
 ---
 
