@@ -2,7 +2,7 @@
 page_type: deep-dive   # evidence-dense: Ringelmann, Stieglitz correlations, xu2025debt figures
 parent: Teams
 title: Social Loafing
-nav_order: 5
+nav_order: 3
 layout: default
 ---
 

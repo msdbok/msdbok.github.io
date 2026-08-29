@@ -1,7 +1,7 @@
 ---
-parent: Teams
+parent: Decisions
 title: Thin Slicing
-nav_order: 8
+nav_order: 2
 layout: default
 ---
 

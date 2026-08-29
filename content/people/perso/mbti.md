@@ -1,7 +1,7 @@
 ---
 parent: Personality
 title: MBTI
-nav_order: 3
+nav_order: 2
 layout: default
 ---
 

@@ -11,13 +11,15 @@ _Adapted from lecture materials by David Root {% cite root2014lectures %}._
 Software is designed, argued over and delivered by people, and the parts of a project that a
 schedule cannot describe are almost all human: who understands the problem, who is motivated to
 solve it, who talks to whom, and who decides. This area covers those parts — first why projects go
-wrong often enough to need managing at all, then the individual, then the group.
+wrong often enough to need managing at all, then the individual, then the group, then how either
+of them decides.
 
 | Where to go | What it covers | Open it when |
 |---|---|---|
 | [Why Projects Fail](why.html) | The Standish CHAOS figures, what "success" means under two rival definitions, and why any published project statistic needs its provenance attached {% cite standish2015chaos %} | You need a number about project outcomes, or an argument for why management is needed |
 | [Personality](perso/) | Technical people as a population: Paul Glen's *Leading Geeks* archetype, MBTI and its evidential problems, national culture, and Goleman's six leadership styles with the practice page beside them | You are working with one person, or deciding how to lead |
-| [Teams](teams/) | Team formation and the stage models, motivation theories, and how groups actually reach decisions | You are working with a group rather than an individual |
+| [Teams](teams/) | What a team is and what predicts its performance, formation and the stage models, motivation and social loafing | You are working with a group rather than an individual |
+| [Decisions](teams/decisions.html) | How experts decide under pressure, how groups decide badly, which biases are actually established in software engineering, and what changes when the advice comes from a model | Something has to be decided, or a decision has gone wrong |
 
 One habit runs through all three. Management claims arrive with numbers attached — 29% of projects
 succeed, a leadership style correlates .54 with climate, a personality type predicts performance —

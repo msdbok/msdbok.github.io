@@ -1,7 +1,7 @@
 ---
-parent: Teams
+parent: Decisions
 title: Cognitive Bias
-nav_order: 11
+nav_order: 5
 layout: default
 ---
 

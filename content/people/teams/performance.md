@@ -2,7 +2,7 @@
 page_type: deep-dive   # evidence-dense: Steiner data, three predictor studies, the rater-gradient finding
 parent: Teams
 title: Team Performance
-nav_order: 2
+nav_order: 1
 layout: default
 ---
 

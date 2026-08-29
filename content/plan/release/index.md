@@ -1,7 +1,7 @@
 ---
 parent: Planning
 title: Release
-nav_order: 10
+nav_order: 5
 layout: default
 ---
 

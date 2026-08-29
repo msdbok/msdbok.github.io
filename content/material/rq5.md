@@ -1,11 +1,11 @@
 ---
 parent: Materials
-title: SN5
-nav_order: 7
+title: RQ5
+nav_order: 5
 layout: default
 ---
 
-# SN 5 - Planning, Activity, Milestones
+# RQ 5 - Planning, Activity, Milestones
 
 ## 1. Lecture Questions
 

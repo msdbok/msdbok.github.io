@@ -2,7 +2,7 @@
 page_type: deep-dive   # five worked cases plus page-specific caveats on three unsourced practices
 parent: Personality
 title: Leading in Practice
-nav_order: 5
+nav_order: 4
 layout: default
 ---
 

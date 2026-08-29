@@ -2,7 +2,7 @@
 page_type: deep-dive   # evidence-dense: six-style table plus Hay/McBer provenance and the EI dispute
 parent: Personality
 title: Leadership
-nav_order: 4
+nav_order: 3
 layout: default
 ---
 

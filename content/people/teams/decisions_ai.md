@@ -1,7 +1,7 @@
 ---
-parent: Teams
+parent: Decisions
 title: Deciding with AI
-nav_order: 12
+nav_order: 6
 layout: default
 ---
 

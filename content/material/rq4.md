@@ -1,3 +1,12 @@
+---
+parent: Materials
+title: RQ4
+nav_order: 4
+layout: default
+---
+
+# RQ 4 - Scope and Work Breakdown Structure
+
 ## 1. Lecture Questions on WBS
 
 1. Define a Work Breakdown Structure (WBS) in one sentence.
@@ -88,3 +97,8 @@
 4. **Activity-Based Costing** – How does ABC explain differences between civilian and military productivity?
 5. **Reuse and Context** – Why can’t universal ratios or constants exist for software estimation?
 6. **Modern Relevance** – How could Jones’s “manual” methods be adapted for Agile or component-based systems today?
+
+---
+
+{: .highlight }
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

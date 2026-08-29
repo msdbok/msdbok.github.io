@@ -1,14 +1,14 @@
 ---
 page_type: topic-hub
-parent: Teams
-title: Decision Making
-nav_order: 6
+parent: People
+title: Decisions
+nav_order: 4
 layout: default
 ---
 
-# Decision Making
+# Decisions
 
-A decision is a commitment to a course of action taken before the evidence is complete. Six sibling pages carry the detail.
+A decision is a commitment to a course of action taken before the evidence is complete. This page covers what every decision has in common; the six pages beneath it carry the detail, from how an expert decides alone to how a group decides badly.
 
 ## 1. Three levels of decision
 

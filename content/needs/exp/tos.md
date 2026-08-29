@@ -1,7 +1,7 @@
 ---
 parent: Expectations
 title: Taran TOS
-nav_order: 5
+nav_order: 4
 layout: default
 ---
 

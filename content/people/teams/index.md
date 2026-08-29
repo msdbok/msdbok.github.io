@@ -8,8 +8,8 @@ layout: default
 # Teams
 
 A **team** is a small group with complementary skills whose members share one goal and depend on
-each other's work to reach it. That interdependence is what separates a team from a set of people
-who merely report to the same manager.
+each other's work to reach it. That interdependence separates a team from people who merely share
+a manager.
 
 Interdependence also makes a team expensive: it buys shared knowledge at the price of coordination.
 Thompson is careful about the trade — teams "can outperform the best
@@ -19,7 +19,7 @@ they often fail and are frequently overused or poorly designed"
 
 ## Types of teams
 
-Four shapes recur in software organisations, formed for different reasons:
+Four shapes recur in software organisations:
 
 - **Problem-solving teams** are convened around one issue and disband when it is fixed.
   *Example:* a group pulled together for six weeks to cut deployment from a day to an hour.
@@ -27,14 +27,14 @@ Four shapes recur in software organisations, formed for different reasons:
   hand-offs happen in the room rather than between departments.
 - **Self-managed teams** own their day-to-day work without a supervisor allocating it; a Scrum team
   running its own sprints is the everyday case.
-- **Virtual teams** are spread across sites and time zones, coordinating through chat, video and
-  shared boards rather than face to face.
+- **Virtual teams** are spread across sites and time zones, coordinating through chat and shared
+  boards.
 
 ## What goes wrong
 
 Most lists of team problems are folklore; there is a measured one. **192 practitioners** rated
-**33 human challenges** for frequency (0–4) and criticality (0–3), ranked by the product of the two
-{% cite hoffmann2021humanside %}. The top five:
+**33 human challenges** for frequency (0–4) and criticality (0–3)
+{% cite hoffmann2021humanside %}. The top five by the product of the two:
 
 | Rank | Challenge | Freq. | Crit. | Mitigated |
 |---|---|---|---|---|
@@ -60,9 +60,11 @@ score is normalised by scale points, so do not quote it as a percentage.
 |---|---|---|
 | [Team Performance](performance.html) | Does a team beat its members working alone, and what predicts it? | Steiner; safety |
 | [Formation](formation.html) | What to settle before the work starts, and how a team develops | Thompson; Tuckman |
-| [Motivation](motivation.html) | What makes engineers want to do the work | Herzberg; Beecham |
+| [Motivation](motivation.html) | What makes engineers want to do the work (filed under the individual) | Herzberg; Beecham |
 | [Social Loafing](loafing.html) | Why effort per person falls as a team grows | Ringelmann |
-| [Decision Making](decisions.html) | How teams decide, and how that goes wrong | Groupthink; Klein |
+
+**Deciding has its own area: [Decisions](decisions.html)** — half that material, from expert
+intuition to cognitive bias, is about how *one person* judges rather than how a group does.
 
 ---
 
