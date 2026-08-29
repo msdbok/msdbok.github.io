@@ -1,5 +1,5 @@
 ---
-page_type: deep-dive   # evidence-dense: Steiner data, three predictor studies, the rater-gradient finding
+page_type: deep-dive   # evidence-dense: the Steiner/Ringelmann table plus the three-rater gradient
 parent: Teams
 title: Team Performance
 nav_order: 1
@@ -47,22 +47,10 @@ teams.
 
 ## 3. What does predict performance
 
-Three variables have been measured in software teams, and all three are available to whoever runs
-one:
-
-- **Psychological safety** is the strongest predictor so far — β = .660 on team effectiveness,
-  roughly three times any composition variable {% cite verwijs2024diversity %}. Alami and
-  colleagues (N = 423) show what it buys and what it does not: admitting mistakes β = 0.55, but
-  *proposing* quality improvements only β = 0.19 {% cite alami2024safety %}. Safety buys disclosure
-  far more cheaply than invention: it gets the broken migration script reported on Tuesday rather
-  than found on Friday; it does not by itself fill an ideas backlog.
-- **Autonomy** is the work-design factor most reliably associated with psychological safety, while
-  interdependence and role clarity — the expected candidates — were not {% cite buvik2021safety %}.
-- **Stable membership** matters more than co-location. Distributed working raised how *often* the
-  33 measured challenges occurred and almost never how bad they were, while occasional recomposition
-  of the team was the one factor that raised frequently changing members (+0.929), missing respect
-  (+0.634) and anger in discussions (+0.396) {% cite hoffmann2021humanside %}. Distance degrades
-  coordination; churn degrades civility, and only the first is helped by tooling.
+Three variables have been measured in software teams — **psychological safety**, team **autonomy**
+and **stable membership** — and all three are available to whoever runs the team, while none of
+them is composition. Safety is much the strongest of the three and now has its own page:
+[Psychological Safety](safety.html), which also carries the other two.
 
 ## 4. Whose performance?
 
@@ -88,10 +76,10 @@ in [Tracking](../../track/).
 Often asserted, rarely sourced. In the largest software study — 1,118 members of 161 teams — **only
 age diversity** predicted effectiveness (β = .213, p = .041); gender, cultural background and role
 diversity did not, on effectiveness or on relational conflict {% cite verwijs2024diversity %}.
-Conflict itself did not reduce effectiveness (β = .081, p = .747), against the authors' own
-hypothesis, and psychological safety acted **directly** rather than by buffering diversity — all
-eight moderation tests failed. Take this as a reason to stop *asserting* the diversity–performance
-link, not as proof that composition is irrelevant.
+Take this as a reason to stop *asserting* the diversity–performance link, not as proof that
+composition is irrelevant — and note what did outrank every composition variable in the same
+study: [psychological safety](safety.html). The other half of that study, on conflict, is on
+[Conflict](conflict.html).
 
 ## How solid is this?
 
@@ -107,8 +95,8 @@ link, not as proof that composition is irrelevant.
   owners see functionality and lead time, members see internal code quality — and declines to
   choose between it and rater bias.
 - **Self-report throughout.** Verwijs recruited through an Agile self-diagnosis tool and measured
-  effectiveness as perception; Alami's outcomes are self-reported behaviours, not defects;
-  Hoffmann's "occasionally recomposed" item is undefined.
+  effectiveness as perception. The same caveat applies to every study behind
+  [Psychological Safety](safety.html), where it is set out in full.
 
 ---
 

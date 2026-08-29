@@ -11,8 +11,8 @@ A **team** is a small group with complementary skills whose members share one go
 each other's work to reach it. That interdependence separates a team from people who merely share
 a manager.
 
-Interdependence also makes a team expensive: it buys shared knowledge at the price of coordination.
-Thompson is careful about the trade — teams "can outperform the best
+Interdependence also makes a team expensive: it buys shared knowledge and pays in coordination.
+Thompson is careful — teams "can outperform the best
 member of the group, **but there are no guarantees** … Teams are not a panacea for organizations;
 they often fail and are frequently overused or poorly designed"
 {% cite thompson2015makingtheteam %} (p. 29).
@@ -22,11 +22,11 @@ they often fail and are frequently overused or poorly designed"
 Four shapes recur in software organisations:
 
 - **Problem-solving teams** are convened around one issue and disband when it is fixed.
-  *Example:* a group pulled together for six weeks to cut deployment from a day to an hour.
+  *Example:* a group convened for six weeks to cut deployment from a day to an hour.
 - **Cross-functional teams** put developers, designers and marketers under one objective, so
-  hand-offs happen in the room rather than between departments.
+  hand-offs happen in the room, not between departments.
 - **Self-managed teams** own their day-to-day work without a supervisor allocating it; a Scrum team
-  running its own sprints is the everyday case.
+  running its own sprints is the everyday one.
 - **Virtual teams** are spread across sites and time zones, coordinating through chat and shared
   boards.
 
@@ -45,26 +45,28 @@ Most lists of team problems are folklore; there is a measured one. **192 practit
 | 5 | Information is not made known to the team | 2.06 | 1.86 | 38% |
 
 Two readings matter more than the ranking. **Organisations mitigate the challenges that blame
-nobody** — lack of qualification 58%, missing documentation 49% — against conflicts of interest at
-management level 13% and dominating discussions 21%. And **rare is not mild**: missing respect,
+nobody** — missing documentation 49% — against conflicts of interest at management level 13%. And
+**rare is not mild**: missing respect,
 changing members and harassment sit in the bottom nine by impact, yet each carries a criticality
 median of 2, the same as the top-ranked challenge.
 
 {: .warning }
 That study is descriptive, self-reported by one member per team and 75.5% Germany-based; its impact
-score is normalised by scale points, so do not quote it as a percentage.
+score is normalised, so do not quote it as a percentage.
 
 ## Where to go next
 
 | Page | The question it answers | Anchor evidence |
 |---|---|---|
-| [Team Performance](performance.html) | Does a team beat its members working alone, and what predicts it? | Steiner; safety |
+| [Team Performance](performance.html) | Does a team beat its members working alone? | Steiner; Lindsjørn |
+| [Psychological Safety](safety.html) | What a safe team does more of, and how to produce it | Alami; Buvik |
 | [Formation](formation.html) | What to settle before the work starts, and how a team develops | Thompson; Tuckman |
-| [Motivation](motivation.html) | What makes engineers want to do the work (filed under the individual) | Herzberg; Beecham |
+| [Motivation](motivation.html) | What makes engineers want to do the work | Herzberg; Beecham |
 | [Social Loafing](loafing.html) | Why effort per person falls as a team grows | Ringelmann |
+| [Conflict](conflict.html) | Task versus relational conflict, and the C1 case | Verwijs; Amabile |
 
-**Deciding has its own area: [Decisions](decisions.html)** — half that material, from expert
-intuition to cognitive bias, is about how *one person* judges rather than how a group does.
+**Deciding has its own area: [Decisions](decisions.html)** — half that material is about how
+*one person* judges rather than how a group does.
 
 ---
 

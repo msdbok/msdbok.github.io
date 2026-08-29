@@ -2,7 +2,7 @@
 page_type: deep-dive   # evidence-dense: Herzberg + Beecham tables, Wu vs Corgnet comparison
 parent: Personality
 title: Motivation
-nav_order: 6
+nav_order: 7
 layout: default
 ---
 
