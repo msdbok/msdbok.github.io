@@ -1,10 +1,10 @@
 ---
-parent: Materials
+parent: Revision Questions
 title: RQ5
-nav_order: 5
+nav_order: 3
+page_type: question-set
 layout: default
 ---
-
 # RQ 5 - Planning, Activity, Milestones
 
 ## 1. Lecture Questions
@@ -188,3 +188,8 @@ layout: default
     How does CCPM anticipate ideas now common in **Agile** and **Lean** methods — such as flow, focus, and reduced waste?
 
 ---
+
+---
+
+{: .highlight }
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

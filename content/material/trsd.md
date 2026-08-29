@@ -1,10 +1,10 @@
 ---
-parent: Materials
+parent: Case Materials
 title: TRS Description
 nav_order: 1
+page_type: case
 layout: default
 ---
-
 # Time Reporting System — System Description
 _*Adapted from Eduardo Miranda (2014)_
 
@@ -61,7 +61,7 @@ flowchart LR
 
 ```
 
-#### 2.2 Actors at the boundary
+### 2.2 Actors at the boundary
 
 - **Employee** — performs day-to-day time reporting.
     
@@ -74,7 +74,7 @@ flowchart LR
 - **💶 Payroll System** — receives **approved** timesheets for payroll and downstream billing.
     
 
-#### 2.3 Information flow & boundary rules
+### 2.3 Information flow & boundary rules
 
 - Direction on arrows indicates who initiates and where data goes (e.g., **Perso ➜ TRS**; **TRS ➜ Payroll**).
     

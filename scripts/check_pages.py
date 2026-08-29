@@ -11,15 +11,19 @@ This reports, it does not fix. Treat it like check_citations.py: run it before
 committing a page, and use --summary to see where the site stands.
 
 Budgets (body words, excluding front matter, References, Acknowledgments, Disclaimer):
-    hub          100-250     index pages: orientation and links only
-    topic-hub    250-500     framing + comparison table + links to detail pages
-    method       400-800     the default
-    deep-dive      <=1200    evidence-carrying, must be marked
-    any            >1500     must be split into summary + one page per method
+    hub           100-250    index pages: orientation and links only
+    topic-hub     250-500    framing + comparison table + links to detail pages
+    method        400-800    the default
+    deep-dive       <=1200   evidence-carrying, must be marked
+    study-notes   800-2200   one lecture summarised for revision (SN)
+    question-set  200-2200   revision questions (RQ); the prose rules do not apply
+    case          300-1600   a case description or assignment brief
+    any             >1500    must be split (>3000 for the three Materials types)
 
 Page type is inferred: `index.md` is a hub (topic-hub if it holds a table and links),
-a page with `## How solid is this?` may run to deep-dive length, everything else is a
-method page. Override per page with `page_type:` in the front matter.
+and everything else is a method page. Override per page with `page_type:` in the front
+matter - study-notes, question-set and case must always be declared, since nothing in a
+page's shape reliably distinguishes them.
 
 Usage:
     python scripts/check_pages.py                 # problems, page by page
@@ -39,12 +43,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / 'content'
 
-BUDGETS = {           # type: (min, max, hard_split)
-    'hub':       (100, 250, 1500),
-    'topic-hub': (250, 500, 1500),
-    'method':    (400, 800, 1500),
-    'deep-dive': (400, 1200, 1500),
+BUDGETS = {             # type: (min, max, hard_split)
+    'hub':          (100, 250, 1500),
+    'topic-hub':    (250, 500, 1500),
+    'method':       (400, 800, 1500),
+    'deep-dive':    (400, 1200, 1500),
+    # Materials pages are not method pages, and judging them as one made all six
+    # report as broken - which is the same as having no check at all.
+    'study-notes':  (800, 2200, 3000),   # SN: one lecture, summarised for revision
+    'question-set': (200, 2200, 3000),   # RQ: questions, so the prose rules do not apply
+    'case':         (300, 1600, 2500),   # a case description or assignment brief
 }
+
+# Types whose content is deliberately not explanatory prose. The bullet-ratio,
+# worked-example and lead-sentence rules exist to stop a *teaching* page turning
+# into a list of labels; a question set is a list by definition.
+NON_PROSE = {'question-set', 'case'}
 
 BULLET_RE = re.compile(r'^\s*([-*+]|\d+\.)\s')
 FM_RE = re.compile(r'^---\s*$(.*?)^---\s*$', re.S | re.M)
@@ -174,7 +188,7 @@ def problems(r: dict) -> list[str]:
         out.append(f"{r['words']} words - under the {r['type']} budget ({lo}-{hi}); "
                    f"likely missing example or explanation")
 
-    if r['type'] in ('method', 'deep-dive'):
+    if r['type'] in ('method', 'deep-dive', 'study-notes'):
         if r['examples'] == 0:
             out.append('no concrete example')
         if r['bullet_pct'] > 60:
@@ -182,7 +196,7 @@ def problems(r: dict) -> list[str]:
         if not r['lead']:
             out.append('no lead sentence after the H1')
 
-    if r['n_bullets'] >= 5 and r['fragment_pct'] > 60:
+    if r['type'] not in NON_PROSE and r['n_bullets'] >= 5 and r['fragment_pct'] > 60:
         out.append(f"{r['fragment_pct']}% of bullets are bare labels - make them statements")
     if r['callouts'] > 2:
         out.append(f"{r['callouts']} callouts - at most 2")

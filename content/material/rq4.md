@@ -1,10 +1,10 @@
 ---
-parent: Materials
+parent: Revision Questions
 title: RQ4
-nav_order: 4
+nav_order: 2
+page_type: question-set
 layout: default
 ---
-
 # RQ 4 - Scope and Work Breakdown Structure
 
 ## 1. Lecture Questions on WBS

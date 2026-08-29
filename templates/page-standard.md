@@ -19,6 +19,22 @@ lecture.
 | **Deep dive** | ≤1,200 | Evidence-carrying. **Must be declared** — see below |
 | — | **>1,500 → split** | Hard cap. See §2 |
 
+Three further types exist for **Materials** only. They are not handbook pages — they
+accompany a lecture rather than explain a method — and judging them as method pages made
+every one of them report as broken, which is the same as having no check at all. All three
+**must be declared** in the front matter; nothing in a page's shape identifies them.
+
+| Type | `page_type` | Body words | Purpose |
+|---|---|---|---|
+| **Study notes** | `study-notes` | 800–2,200 | One lecture summarised for revision (SN). Prose, and the style caps in §4 all apply |
+| **Question set** | `question-set` | 200–2,200 | Revision questions (RQ). Lists are the content, so the bullet, example and lead-in rules do not apply |
+| **Case material** | `case` | 300–1,600 | A case description or assignment brief |
+
+A study note is **not** a lecture note. It is written for the student, summarises what the
+lecture argued in the order it argued it, and links to the handbook page that carries the
+detail and the sources — it does not reproduce them. Lecture notes, written for whoever
+delivers the session, live in `msd_review/lectures/`, not on the site.
+
 Body words exclude front matter, the References block, Acknowledgments and the Disclaimer.
 
 **Claiming the deep-dive budget is a deliberate act.** Put `page_type: deep-dive` in the front

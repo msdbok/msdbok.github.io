@@ -1,10 +1,10 @@
 ---
-parent: Materials
+parent: Case Materials
 title: TRS Critical Path Case
 nav_order: 3
+page_type: case
 layout: default
 ---
-
 # Time Reporting System – Critical Path and Critical Chain
 _*Adapted from Eduardo Miranda (2013)_
 

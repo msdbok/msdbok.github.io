@@ -1,10 +1,10 @@
 ---
-parent: Materials
+parent: Case Materials
 title: TRS WBS Case
 nav_order: 2
+page_type: case
 layout: default
 ---
-
 # Time Reporting System (TRS) — WBS & FPA Assignment
 _*Adapted from Eduardo Miranda (2014)_
 
@@ -42,7 +42,7 @@ Your company is bidding on a **turnkey** contract to replace an *existing* **mai
 
 ---
 
-# From UML to FPA (Quick Instructions)
+## From UML to FPA (Quick Instructions)
 
 ## 4. Set the Boundary
 
