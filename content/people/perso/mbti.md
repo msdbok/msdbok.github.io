@@ -7,254 +7,111 @@ layout: default
 
 # MBTI: An Example of Personality Typing
 
-The Myers-Briggs Type Indicator (MBTI) is a popular framework for understanding personality differences. It is based on research by **Carl Jung, Katherine C. Briggs, and Isabel Briggs Myers**.
+The Myers-Briggs Type Indicator sorts people into sixteen types along four preference pairs, and is
+the personality instrument software managers meet most often. It descends from Carl Jung, via
+Katherine C. Briggs and Isabel Briggs Myers.
 
-## Four Basic Personality Areas
+## 1. The four preference pairs
 
-- **Extraverted (E) or Introverted (I):**  
-  Where do you get your energy?  
-  - E: From external sources, social interaction, and activity  
-  - I: From within, reflection, and solitude
+Each pair asks one question; each answer contributes a letter:
 
-- **Sensing (S) or iNtuitive (N):**  
-  How do you absorb information?  
-  - S: Through the senses, focusing on facts and details  
-  - N: Via instincts, patterns, and possibilities
-
-- **Thinking (T) or Feeling (F):**  
-  How do you make decisions?  
-  - T: Using logic and objectivity  
-  - F: Using personal, subjective values and empathy
-
-- **Judging (J) or Perceiving (P):**  
-  How do you approach the external world?  
-  - J: Prefer organized, scheduled, and structured environments  
-  - P: Prefer flexible, adaptable, and open-ended environments
+- **Extraverted (E) or Introverted (I)** — where energy comes from: external activity, or
+  reflection.
+- **Sensing (S) or iNtuitive (N)** — how information arrives: through the senses, facts and detail,
+  or through instinct and patterns.
+- **Thinking (T) or Feeling (F)** — how decisions are made: by logic, or by personal values and
+  empathy.
+- **Judging (J) or Perceiving (P)** — how the outside world is met: organised and scheduled, or
+  flexible and open-ended.
 
 ![MBTI brief](image.png)
 _Myers-Briggs personality types._ ([Source](https://commons.wikimedia.org/wiki/File:MyersBriggsTypes.svg))
 
----
+## 2. Software engineers against the population
 
-## MBTI with Software Engineers
-
-Capretz {% cite capretz2003personality %} reports that the distribution of MBTI types among
-software engineers differs markedly from the general US population.
-
-{: .note }
-**Know the sample before using these numbers.** Capretz surveyed **100** people (80% men) using
-MBTI Form G — a convenience sample of students, government employees and company staff selected
-by occupation, with no sampling frame and **no significance test reported**. The US baseline
-comes from the 1998 *MBTI Manual*, while respondents were Canadian. Capretz himself notes the
-81/19 thinking–feeling split may partly reflect the 80/20 gender split. Treat the contrast as
-suggestive, not as a measured population difference. Cruz and colleagues {% cite cruz2015forty %}
-later surveyed forty years of this literature and found **no consistent software-engineering
-personality profile** across the studies that reported one.
+Capretz {% cite capretz2003personality %} compared software engineers' MBTI types against a US
+population baseline. Read *How solid is this?* before quoting either row.
 
 **MBTI distribution in the general US population:**
 
-<div style="overflow-x: auto;">
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th style="background-color: #e8f4f8;">ISTJ</th>
-<th style="background-color: #f8e8e8;">ISFJ</th>
-<th style="background-color: #e8f4f8;">INFJ</th>
-<th style="background-color: #f8e8e8;">INTJ</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>%</strong></td>
-<td style="background-color: #e8f4f8;">11.6%</td>
-<td style="background-color: #f8e8e8;">13.8%</td>
-<td style="background-color: #e8f4f8;">1.5%</td>
-<td style="background-color: #f8e8e8;">2.1%</td>
-</tr>
-<tr>
-<th>Type</th>
-<th style="background-color: #f8e8e8;">ISTP</th>
-<th style="background-color: #e8f4f8;">ISFP</th>
-<th style="background-color: #f8e8e8;">INFP</th>
-<th style="background-color: #e8f4f8;">INTP</th>
-</tr>
-<tr>
-<td><strong>%</strong></td>
-<td style="background-color: #f8e8e8;">5.4%</td>
-<td style="background-color: #e8f4f8;">8.8%</td>
-<td style="background-color: #f8e8e8;">4.4%</td>
-<td style="background-color: #e8f4f8;">3.3%</td>
-</tr>
-<tr>
-<th>Type</th>
-<th style="background-color: #e8f4f8;">ESTP</th>
-<th style="background-color: #f8e8e8;">ESFP</th>
-<th style="background-color: #e8f4f8;">ENFP</th>
-<th style="background-color: #f8e8e8;">ENTP</th>
-</tr>
-<tr>
-<td><strong>%</strong></td>
-<td style="background-color: #e8f4f8;">4.3%</td>
-<td style="background-color: #f8e8e8;">8.5%</td>
-<td style="background-color: #e8f4f8;">8.1%</td>
-<td style="background-color: #f8e8e8;">3.2%</td>
-</tr>
-<tr>
-<th>Type</th>
-<th style="background-color: #f8e8e8;">ESTJ</th>
-<th style="background-color: #e8f4f8;">ESFJ</th>
-<th style="background-color: #f8e8e8;">ENFJ</th>
-<th style="background-color: #e8f4f8;">ENTJ</th>
-</tr>
-<tr>
-<td><strong>%</strong></td>
-<td style="background-color: #f8e8e8;">8.7%</td>
-<td style="background-color: #e8f4f8;">12.3%</td>
-<td style="background-color: #f8e8e8;">2.5%</td>
-<td style="background-color: #e8f4f8;">1.8%</td>
-</tr>
-</tbody>
-</table>
-</div>
+| Type | ISTJ | ISFJ | INFJ | INTJ |
+|---|---|---|---|---|
+| **%** | 11.6% | 13.8% | 1.5% | 2.1% |
+| **Type** | **ISTP** | **ISFP** | **INFP** | **INTP** |
+| **%** | 5.4% | 8.8% | 4.4% | 3.3% |
+| **Type** | **ESTP** | **ESFP** | **ENFP** | **ENTP** |
+| **%** | 4.3% | 8.5% | 8.1% | 3.2% |
+| **Type** | **ESTJ** | **ESFJ** | **ENFJ** | **ENTJ** |
+| **%** | 8.7% | 12.3% | 2.5% | 1.8% |
 
 **MBTI distribution among software engineers:**
 
-<div style="overflow-x: auto;">
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th style="background-color: #fffacd;">ISTJ</th>
-<th style="background-color: #e6e6fa;">ISFJ</th>
-<th style="background-color: #fffacd;">INFJ</th>
-<th style="background-color: #e6e6fa;">INTJ</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>%</strong></td>
-<td style="background-color: #fffacd;">24%</td>
-<td style="background-color: #e6e6fa;">2%</td>
-<td style="background-color: #fffacd;">1%</td>
-<td style="background-color: #e6e6fa;">7%</td>
-</tr>
-<tr>
-<th>Type</th>
-<th style="background-color: #e6e6fa;">ISTP</th>
-<th style="background-color: #fffacd;">ISFP</th>
-<th style="background-color: #e6e6fa;">INFP</th>
-<th style="background-color: #fffacd;">INTP</th>
-</tr>
-<tr>
-<td><strong>%</strong></td>
-<td style="background-color: #e6e6fa;">8%</td>
-<td style="background-color: #fffacd;">5%</td>
-<td style="background-color: #e6e6fa;">2%</td>
-<td style="background-color: #fffacd;">8%</td>
-</tr>
-<tr>
-<th>Type</th>
-<th style="background-color: #fffacd;">ESTP</th>
-<th style="background-color: #e6e6fa;">ESFP</th>
-<th style="background-color: #fffacd;">ENFP</th>
-<th style="background-color: #e6e6fa;">ENTP</th>
-</tr>
-<tr>
-<td><strong>%</strong></td>
-<td style="background-color: #fffacd;">8%</td>
-<td style="background-color: #e6e6fa;">1%</td>
-<td style="background-color: #fffacd;">3%</td>
-<td style="background-color: #e6e6fa;">7%</td>
-</tr>
-<tr>
-<th>Type</th>
-<th style="background-color: #e6e6fa;">ESTJ</th>
-<th style="background-color: #fffacd;">ESFJ</th>
-<th style="background-color: #e6e6fa;">ENFJ</th>
-<th style="background-color: #fffacd;">ENTJ</th>
-</tr>
-<tr>
-<td><strong>%</strong></td>
-<td style="background-color: #e6e6fa;">15%</td>
-<td style="background-color: #fffacd;">4%</td>
-<td style="background-color: #e6e6fa;">1%</td>
-<td style="background-color: #fffacd;">4%</td>
-</tr>
-</tbody>
-</table>
-</div>
+| Type | ISTJ | ISFJ | INFJ | INTJ |
+|---|---|---|---|---|
+| **%** | 24% | 2% | 1% | 7% |
+| **Type** | **ISTP** | **ISFP** | **INFP** | **INTP** |
+| **%** | 8% | 5% | 2% | 8% |
+| **Type** | **ESTP** | **ESFP** | **ENFP** | **ENTP** |
+| **%** | 8% | 1% | 3% | 7% |
+| **Type** | **ESTJ** | **ESFJ** | **ENFJ** | **ENTJ** |
+| **%** | 15% | 4% | 1% | 4% |
 
-### Notable MBTI Differences in Software Engineers
+Four contrasts carry the comparison. **ISTJ** is about twice as common among software engineers
+(24% against 11.6%) and **INTJ** about three times as common (7% against 2.1%) — the detail-driven
+and strategy-driven variants of one preference set. In the other
+direction **ISFJ** is roughly seven times rarer (2% against 13.8%) and **ESFP** roughly eight times
+rarer (1% against 8.5%); both are the sociable, harmony-oriented types. This is self-selection into
+an occupation, not a description of any individual engineer.
 
-Research highlights significant differences between the MBTI profiles of software engineers and the general US population:
+## 3. Can you build a team from personality types?
 
-- **ISTJ:** About twice as common among software engineers (24% vs 11.6%).  
-  *ISTJs are detail-oriented, logical, and reliable—traits that fit well with the demands of software development.*
-- **ISFJ:** About seven times less common among software engineers (2% vs 13.8%).  
-  *ISFJs tend to be more focused on harmony and personal values, which may be less emphasized in technical roles.*
-- **INTJ:** Roughly three times more common among software engineers.  
-  *INTJs are strategic, independent, and enjoy solving complex problems—qualities highly valued in engineering.*
-- **ESFP:** About eight times less common among software engineers.  
-  *ESFPs are outgoing and spontaneous, preferring hands-on activities and social interaction, which are less central in most software roles.*
-
----
-
-## Why is this the case?
-
-Software engineering tends to attract people who:
-- Prefer working independently or in small groups (**Introverts**)
-- Value logic, structure, and detail (**Thinking**, **Judging**, **Sensing**)
-- Enjoy solving complex problems and thinking abstractly (**Intuitive**, **Thinking**)
-- Appreciate clear goals and organized environments (**Judging**)
-
-**Example:**  
-An ISTJ (Introverted, Sensing, Thinking, Judging) may thrive in roles requiring careful analysis, attention to detail, and methodical problem-solving—traits highly valued in software development.  
-An INTJ (Introverted, Intuitive, Thinking, Judging) might excel at designing system architecture or developing innovative solutions, thanks to their strategic and analytical mindset.
-
----
-
-## Can you build a team from personality types?
-
-This is the question managers actually want answered, and it is where the MBTI literature stops
-being able to help.
+This is the question managers want answered, and where the literature stops helping.
 
 {: .warning }
 **There is no evidence that personality composition predicts how a software team performs.**
-Soomro and colleagues {% cite soomro2016personality %} searched 22 years of literature for exactly
-this link. Of 35 studies retrieved, only **12** addressed the question at all, and only **9** of
-those measured personality. **None found an association between personality and team climate.**
+Soomro and colleagues {% cite soomro2016personality %} searched 22 years of literature for this
+link and found no association. Advice to "mix personality types" or pair particular four-letter
+codes is folk practice, not a finding — and this handbook previously presented it as guidance. The
+same applies to type-based prescriptions for communication, task assignment and motivation:
+plausible, widely repeated, untested.
 
-Read that carefully: it is *absence of evidence*, not evidence of absence. Too few studies asked
-the question, with too little consistency, to support a pooled estimate either way. What it does
-rule out is confident advice. Recommendations to "mix personality types" or to pair particular
-four-letter codes are not findings — they are folk practice, and this handbook previously
-presented them as guidance.
+What does predict team performance is a different list:
 
-The same caution applies to type-based prescriptions for communication, task assignment and
-motivation. They are plausible, widely repeated, and untested in software teams.
-
-### What the evidence does support
-
-If the goal is a team that performs well, the literature points somewhere else entirely:
-
-- **Psychological safety** — whether people can admit mistakes, ask questions and raise problems
-  without penalty — predicts team behaviour and software quality with real effect sizes
-  {% cite alami2024safety %}, and outranks every diversity variable tested
-  {% cite verwijs2024diversity %}. See [Trust and psychological safety](../teams/).
-- **Stable membership.** Occasional recomposition of a team degrades its behaviour considerably
-  more than physical distance does {% cite hoffmann2021humanside %}.
+- **Psychological safety** — whether people can admit mistakes and raise problems without penalty —
+  predicts team behaviour and software quality with real effect sizes {% cite alami2024safety %},
+  and outranks every diversity variable tested {% cite verwijs2024diversity %}. See
+  [Trust and psychological safety](../teams/).
+- **Stable membership** matters more than co-location: occasional recomposition degrades a team's
+  behaviour considerably more than distance does {% cite hoffmann2021humanside %}.
 - **Autonomy** is the work-design factor most reliably associated with psychological safety
   {% cite buvik2021safety %}.
 
-These are things a manager can change. Personality type is not.
+A manager can change all three; personality type is not one of them.
 
-### So what is MBTI good for here?
+## 4. So what is MBTI good for here?
 
-As a **vocabulary for self-reflection** and a prompt for conversations about working style, it
-has value — which is roughly how Capretz uses it. As a **selection, assignment or team-composition
-instrument**, it is unsupported, and Capretz himself notes that no personality instrument will
-reliably predict success in the field.
+As a vocabulary for self-reflection and a prompt for conversations about working style — roughly
+how Capretz uses it. **For example,** an engineer who says in a retrospective "I need the design
+written down before the meeting rather than discovered during it" has started a useful
+conversation; routing that engineer to documentation because a table says ISTJ has not. As a
+selection or team-composition instrument MBTI is unsupported, and Capretz notes that no personality
+instrument reliably predicts success in the field.
+
+## How solid is this?
+
+- **The sample behind the tables.** Capretz surveyed **100** people (80% men) with MBTI Form G — a
+  convenience sample of students, government employees and company staff selected by occupation,
+  with no sampling frame and **no significance test reported**. Respondents were Canadian; the
+  baseline is the 1998 *MBTI Manual* US figures. Capretz notes the 81/19 thinking–feeling split may
+  partly reflect the 80/20 gender split. Treat the contrast as suggestive, not as a measured
+  population difference.
+- **No profile replicates.** Cruz and colleagues {% cite cruz2015forty %} surveyed forty years of
+  this literature and found **no consistent software-engineering personality profile** across the
+  studies reporting one.
+- **Absence of evidence, not evidence of absence.** Soomro retrieved **35** studies, of which only
+  **12** addressed the personality–team-climate question at all and only **9** measured
+  personality; **none** found an association. Too few asked, too inconsistently, to support a
+  pooled estimate either way. What the review rules out is confident advice, in either direction.
 
 ---
 
@@ -270,4 +127,4 @@ This page adapts material from lectures by Eduardo Miranda and David Root
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

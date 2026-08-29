@@ -59,20 +59,36 @@ def split_page(text: str) -> tuple[dict, str]:
         for line in m.group(1).splitlines():
             if ':' in line:
                 k, _, v = line.partition(':')
+                # Strip a trailing YAML comment, as YAML does for unquoted scalars.
+                # Without this, `page_type: deep-dive  # why` parses as the whole
+                # string and silently fails to match a known type - so a declared
+                # exemption looked like no declaration at all.
+                v = re.sub(r'\s+#.*$', '', v)
                 fm[k.strip()] = v.strip()
         body = text[m.end():]
-    # drop footer: acknowledgments, references, disclaimer
+    # Drop the footer: acknowledgments, references, disclaimer.
+    #
+    # The disclaimer must be matched by its OWN text, not by the `{: .highlight }`
+    # marker that usually precedes it. An earlier version split on the first
+    # `.highlight` anywhere in the file, so any page using that callout mid-body
+    # had everything after it silently dropped from the word count - culture.md
+    # was reported as 621 words when it was really ~2,570. Measurement bugs that
+    # under-report are worse than none at all: they make a page look compliant.
     body = re.split(r'^#{2,4}\s*Acknowledg', body, flags=re.M)[0]
     body = re.split(r'^#{2,4}\s*(References|Further Reading)', body, flags=re.M)[0]
-    body = re.split(r'\{:\s*\.highlight\s*\}', body)[0]
+    body = re.sub(r'(\{:\s*\.highlight\s*\}\s*)?\n\s*\*\*Disclaimer:.*\Z', '',
+                  body, flags=re.S)
     return fm, body
 
 
 def classify(path: Path, fm: dict, body: str) -> str:
+    # `deep-dive` must be DECLARED in front matter (`page_type: deep-dive`).
+    # It used to be inferred from the presence of a `## How solid is this?`
+    # section, which was exactly backwards: adding the evidence section - the
+    # thing meant to make pages leaner - silently bought a 50% bigger budget.
+    # Claiming the larger allowance should be a visible, reviewable decision.
     if fm.get('page_type') in BUDGETS:
         return fm['page_type']
-    if re.search(r'^##\s*How solid is this\?', body, re.M):
-        return 'deep-dive'
     if path.name == 'index.md':
         has_table = bool(re.search(r'^\|', body, re.M))
         has_links = len(re.findall(r'\]\([^)]+\)', body)) >= 3
@@ -189,7 +205,10 @@ def main() -> int:
     summary = '--summary' in sys.argv
 
     roots = [ROOT / a for a in args] or [CONTENT]
-    pages = sorted(p for r in roots for p in r.rglob('*.md'))
+    # Accept a single file as well as a directory - `rglob` on a file yields
+    # nothing, so passing one used to check zero pages and report success.
+    pages = sorted({p for r in roots
+                    for p in ([r] if r.is_file() else r.rglob('*.md'))})
     if not pages:
         sys.exit('no pages found')
 

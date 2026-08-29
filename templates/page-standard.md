@@ -16,10 +16,25 @@ lecture.
 | **Hub / index** | 100–250 | Orientation and links only. No teaching content |
 | **Topic hub** | 250–500 | One paragraph of framing + a comparison table + links to detail pages |
 | **Method / concept** | **400–800** (aim ~600) | The default page. One method, one page |
-| **Deep dive** | ≤1,200 | Evidence-carrying. Must be labelled as such |
+| **Deep dive** | ≤1,200 | Evidence-carrying. **Must be declared** — see below |
 | — | **>1,500 → split** | Hard cap. See §2 |
 
 Body words exclude front matter, the References block, Acknowledgments and the Disclaimer.
+
+**Claiming the deep-dive budget is a deliberate act.** Put `page_type: deep-dive` in the front
+matter, with a short comment saying why:
+
+```yaml
+page_type: deep-dive   # both CHAOS tables plus the Eveleens critique, moved verbatim
+```
+
+The exemption was briefly inferred from the presence of a `## How solid is this?` section, which
+was exactly backwards — adding the section that exists to make pages *leaner* silently bought a
+50% larger budget. An exemption should be visible in the diff and arguable in review.
+
+**Prefer splitting to declaring.** If a page is over budget because it covers two topics, it is two
+pages (§2). Declare only when it is genuinely one topic whose evidence cannot be cut without
+deleting findings.
 
 Run `python scripts/check_pages.py` to see where a page sits.
 
