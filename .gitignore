@@ -18,3 +18,7 @@ vendor/
 .DS_Store/
 .DS_Store*
 content/verif/.DS_Store
+
+# Generated locally on x64-mingw-ucrt; CI resolves fresh on Linux via bundler-cache.
+# A platform-locked file here breaks the Pages deploy.
+Gemfile.lock
