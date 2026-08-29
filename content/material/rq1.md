@@ -152,7 +152,7 @@ The rest cover the evidence the handbook now rests on.
 
 ### 3.7 Cruz et al. (2015) and Capretz (2003)
 
-1. What question was the mapping study asking, over what period, and what did it conclude about a consistent software-engineer personality profile?
+1. What did the mapping study conclude about a consistent software-engineer personality profile, and what follows for how you use the archetype?
 2. Which MBTI types are over- and under-represented among software engineers, and what sample established that?
 3. Capretz suggests personality fit for particular software roles. Why does the later evidence make that recommendation unsafe?
 
@@ -166,7 +166,7 @@ The rest cover the evidence the handbook now rests on.
 
 1. State Steiner's equation and define each term. Which term can a manager influence?
 2. Classify a code review, a bug hunt and a release as additive, disjunctive or conjunctive, and justify each.
-3. How many stages did the 1965 paper describe, and which was added in 1977?
+3. A team is in its second week and arguing about approach. Which stage is that, what does the model say a manager should do, and what does it predict happens if the argument is smoothed over instead?
 4. What kinds of groups did Tuckman review, and why does that matter when applying the model to a software team?
 
 ### 3.10 Alami et al. (2024), Buvik & Tkalich (2022), Verwijs & Russo (2024)
