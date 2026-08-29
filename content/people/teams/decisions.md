@@ -409,7 +409,7 @@ remedies across thirty-seven biases, none of them tested. A technique can be in 
 guidance for nearly thirty years and still be unvalidated. Note too that Rebori's own gloss on
 groupthink — members suppressing dissent "because they believe no one will agree with them" — is
 closer to the **Abilene paradox** than to Janis's construct, and drops cohesion, stress and
-structural faults entirely. It is a tidy live specimen of what 't Hart complained about above. For
+structural faults entirely. It is a tidy live specimen of what ’t Hart complained about above. For
 the definition, use the groupthink section, not this one.
 
 **Problems in group decisions**
@@ -439,7 +439,7 @@ suppressed by pressure, the Abilene paradox is dissent that nobody realises exis
 #### Groupthink is contested in its own discipline
 
 Groupthink is the most famous construct in this whole block, and it is taught almost everywhere as
-settled. It is not. Paul 't Hart's review essay for *Political Psychology*'s "Classics" series
+settled. It is not. Paul ’t Hart's review essay for *Political Psychology*'s "Classics" series
 {% cite thart1991groupthink %} assessed the evidence nineteen years on and found the replications
 "their number is modest, their quality mixed and their findings only partially conclusive".
 
@@ -451,14 +451,14 @@ settled. It is not. Paul 't Hart's review essay for *Political Psychology*'s "Cl
 | **Stereotyped out-group images** — one of the eight symptoms | **Disconfirmed** by Tetlock: groupthink decision makers made no more negative references to adversary states |
 | **The founding cases** | Mixed. Barrett re-examined Vietnam escalation and argued groupthink played **no role at all** |
 
-'t Hart's own charge is **circularity**: Janis selected policy failures first and then looked for
+’t Hart's own charge is **circularity**: Janis selected policy failures first and then looked for
 groupthink, so "groupthink is inferred from policy failure and failure is explained in terms of
 groupthink." His alternative mechanism is **anticipatory compliance** — low-status members
 conforming to what they take the leader to want. Power and hierarchy, not friendliness, do the
 work. That is a considerably more plausible fit to a software team than cohesion is.
 
 {: .warning }
-**Two limits before using any of this.** First, **scope**: 't Hart states that groupthink analysis
+**Two limits before using any of this.** First, **scope**: ’t Hart states that groupthink analysis
 is meaningful only for **high-level groups facing consequential, non-routine choices**, and says
 outright that analysing "regular problem-solving groups at some lower level of management" is not
 interesting. Applying it to a sprint team is an untested extrapolation — scope it to
@@ -470,15 +470,15 @@ does not hold.
 
 {: .note }
 **Which Janis, and what is still missing.** The 1972 first edition is *Victims of Groupthink*; the
-1982 second edition is *Groupthink*. 't Hart notes the **systematic** statement of the theory —
+1982 second edition is *Groupthink*. ’t Hart notes the **systematic** statement of the theory —
 the flow chart, the antecedent/symptom/effect boxes — is in the **1982** edition. 1972 is the
 right date for the naming, the wrong one for the model. **Janis's own book is still not held
-here**, and neither is Harvey — so the eight symptoms are reported above via 't Hart, and **no
-remedy list is given**, because 't Hart does not reproduce one and inventing it is exactly the
+here**, and neither is Harvey — so the eight symptoms are reported above via ’t Hart, and **no
+remedy list is given**, because ’t Hart does not reproduce one and inventing it is exactly the
 error this page is trying to stop making. The same applies to the Abilene paradox, which does not
-appear in 't Hart at all and remains the least-sourced named claim on this page.
+appear in ’t Hart at all and remains the least-sourced named claim on this page.
 
-And there is a closing line worth quoting against ourselves. 't Hart's verdict is that the very
+And there is a closing line worth quoting against ourselves. ’t Hart's verdict is that the very
 popularity of groupthink impedes careful work, and that this "emerges clearly from the uncritical
 adoption of sections on 'the dangers of groupthink' in many policy analysis and management
 handbooks." This is a management handbook, and that is what the section above used to be.
@@ -540,7 +540,7 @@ belong on the same page rather than in separate sections:
 | Source | The same claim |
 |---|---|
 | Klein {% cite klein1998sourcesofpower %} | "Poor outcomes are different from poor decisions." |
-| 't Hart {% cite thart1991groupthink %} | "Bad procedures need not always produce bad results; decision-makers may get lucky." |
+| ’t Hart {% cite thart1991groupthink %} | "Bad procedures need not always produce bad results; decision-makers may get lucky." |
 | Mohanani et al. {% cite mohanani2018biases %} | "Demonstrating a bias in a lab is not the same as establishing a significant effect on real projects." |
 
 **Judge the process, not the outcome — and do not assume the process research transfers.** That
