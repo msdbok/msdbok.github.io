@@ -1,7 +1,7 @@
 ---
 parent: Decisions
 title: Intuition and Expertise
-nav_order: 1
+nav_order: 2
 layout: default
 ---
 

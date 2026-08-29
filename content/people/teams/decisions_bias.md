@@ -1,7 +1,7 @@
 ---
 parent: Decisions
 title: Cognitive Bias
-nav_order: 5
+nav_order: 6
 layout: default
 ---
 
