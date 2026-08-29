@@ -23,7 +23,7 @@ overused, and its measured effect on climate.
 
 | Style | When it fits | What it costs | Climate | In a software team |
 |---|---|---|---|---|
-| **Coercive** — "Do what I say" | Real crisis, turnaround, a problem employee | Kills creativity and initiative once it outlasts the crisis | **−.26** | Incident commander driving a rollback during an outage |
+| **Coercive** — "Do what I tell you" | Real crisis, turnaround, a problem employee | Kills creativity and initiative once it outlasts the crisis | **−.26** | Incident commander driving a rollback during an outage |
 | **Authoritative (visionary)** — "Come with me" | A new direction or strategic pivot | Falls flat if the leader lacks credibility with experts | **.54** | CTO sets the mission and OKRs; squads choose the implementation |
 | **Affiliative** — "People come first" | Repairing trust; high stress; after layoffs | Hard feedback goes unsaid, mediocrity is tolerated | **.46** | Team lead protecting wellbeing after a punishing release |
 | **Democratic** — "What do you think?" | Buy-in is needed, or the ideas are not yet in the room | Slow decisions, sometimes none | **.43** | Architecture settled in cross-functional design reviews |
