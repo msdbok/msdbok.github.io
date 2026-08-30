@@ -2,165 +2,107 @@
 title: Home
 layout: home
 nav_order: 1
+page_type: home
 ---
 
 <div align="center">
   <img src="/images/msdbok_logo.png" alt="MSDBOK Logo" style="width:180px; margin-bottom: 1em;" />
 </div>
 
-
 # Managing Software Development
 
-Welcome to the course notes repository for **Managing Software Development**.  
-This resource provides a comprehensive, practical, and accessible guide to the key topics in the field. Whether you are an MS student, a professional, or simply curious, these notes are designed to support your learning and growth.
-
-
-
----
-
-## Overview
-
-Explore the major areas covered in this course:
-
-```mermaid
-graph LR
-    A[Managing Software Development]
-    A --> B[People]
-    A --> C[Processes]
-    A --> F[Needs]
-    A --> D[Scope]
-    A --> E[Planning]
-    A --> G[Tracking]
-
-    B --> B1["What is a technical person?"]
-    B --> B2["Managing & motivating teams"]
-    B --> B3["Decision making"]
-
-    C --> C1["Project lifecycle stages"]
-    C --> C2["Process frameworks & models"]
-    C --> C3["Choosing the right process"]
-
-    F --> F1["Customer Expectations"]
-    F --> F2["Requirements Management"]
-    F --> F3["Risks management"]
-
-    D --> D1["Work Breakdown Structure (WBS)"]
-    D --> D2["Estimation methods"]
-
-    E --> E1["Agile vs. plan-driven"]
-    E --> E2["Milestone & activity planning"]
-    E --> E3["Critical path analysis"]
-
-    G --> G1["Progress monitoring"]
-    G --> G2["Earned Value Management"]
-    G --> G3["Burndown charts"]
-```
+A handbook for the people who have to decide: what to build, how big it is, in what order, and
+whether it is going well. It accompanies the MSD course at Innopolis University and is written to
+be read on its own — one page per method, self-contained, with its sources on it.
 
 ---
 
-## Areas Covered
+## The six areas
 
-### 1. [People](/content/people/)
-Understand what makes technical teams tick:
-- What is a "technical person"?
-- Managing and motivating teams
-- Decision making in software projects
+Each area answers one question, and each supplies the next. You cannot scope what you never
+elicited, plan what you never scoped, or track what you never planned — which is why so many
+"planning failures" were settled much earlier.
 
----
+<div align="center">
+  <img src="/images/msd-areas.svg" alt="The six areas as a chain: People, Process, Needs, Scope, Planning, Tracking" style="max-width:100%; margin: 1.5em 0;" />
+</div>
 
-### 2. [Processes](/content/proc/)
-Learn how to manage the variability of human factors:
-- Project lifecycle stages
-- Process frameworks and models
-- Choosing the right process for your context
+**[People](/content/people/) — who does the work.** What a technical person gives you and how
+to stop measuring the wrong thing; the limits of personality models; how teams form, why effort
+per person falls as they grow, and how groups decide worse than their members. *After it, you can tell which team problems are fixable by a manager.*
 
----
+**[Process](/content/proc/) — how work flows.** Lifecycle stages and process frameworks, and
+how to choose between them by context rather than by fashion. *After it, you can justify a
+process choice instead of inheriting one.*
 
-### 3. [Needs](/content/needs/)
-Master the art of managing expectations and risks:
-- Understanding customer needs
-- Requirements gathering and management
-- Risk identification and mitigation
+**[Needs](/content/needs/) — what to build.** Customer expectations and how they are set;
+requirements that can be tested; risks named early enough to act on. *After it, you can write a
+requirement someone can disagree with.*
 
----
+**[Scope](/content/scope/) — how big it is.** Work breakdown structures, and estimation from
+analogy, counting, judgement and parametric models. *After it, you can produce an estimate with
+its assumptions attached.*
 
-### 4. [Scope](/content/scope/)
-Define and estimate project boundaries:
-- Work Breakdown Structure (WBS)
-- Estimation methods for time and effort
+**[Planning](/content/plan/) — in what order.** Agile against plan-driven, milestones and
+activities, the critical path, and release planning under a fixed date. *After it, you can say
+which slip matters and which does not.*
 
----
-
-### 5. [Planning](/content/plan/)
-Plan for quality and success:
-- Agile vs. plan-driven approaches
-- Milestone and activity planning
-- Critical path analysis
-- Release planning (Buffered MoSCoW method)
+**[Tracking](/content/track/) — is it on track.** Progress monitoring, earned value, burndown,
+and reporting that survives the person being reported to. *After it, you can read a
+green dashboard sceptically.*
 
 ---
 
-### 6. [Tracking](/content/track/)
-Monitor progress and adapt:
+## Start here
 
-- Progress monitoring and metrics
-- Earned Value Management (EVM)
-- Burndown and burnup charts
+- **Revising for a session or a quiz** → [Materials](/content/material/) — a study note per
+  lecture and a set of revision questions per area.
+- **Looking up a method** → open its area above, or use the search box.
+- **Wondering whether to believe a page** → its **How solid is this?** section, at the bottom.
 
 ---
 
-### 7. [Selected Materials](/content/material/)
-Access curated resources to deepen your understanding:
-- Books
-- Research papers
-- Guides and online courses
-- Teaching materials (e.g. Assignments)
+## How this handbook is built
+
+It began as the skeleton of **Eduardo Miranda**'s and **David Root**'s *Managing Software
+Development* at Carnegie Mellon, together with the classics that course rests on — Brooks,
+Herzberg, Tuckman, Steiner, Goleman.
+
+That skeleton is re-grounded one topic at a time. Each gets a literature search and a read of
+what it turns up — the corpus stands at **24 books and 153 papers** and grows as the review moves
+through the areas. What survives becomes a short brief: one method per page, under 800 words,
+with a worked software example and at least one limitation.
+
+Two consequences show on every page. Sources are cited **where the claim is made**, not gathered
+in a bibliography nobody opens. And each page ends with **How solid is this?** — what the claim
+rests on and where it is thin. Some of the best-known ideas here are the least evidenced, and the
+handbook says so.
 
 ---
 
 ## Contributing
 
-We welcome contributions from students, practitioners, and educators!
+Corrections and additions are welcome, from students and practitioners alike.
 
-### How to Contribute
+- **Fix a content issue** — typos, wrong facts, a citation that does not check out →
+  [guidelines](https://github.com/msdbok/msdbok.github.io/blob/main/CONTRIBUTING.md)
+- **Add a method page** — one technique, following the
+  [method template](https://github.com/msdbok/msdbok.github.io/blob/main/templates/method-template.md)
+- **Write an analysis** — a comparison across methods, following the
+  [analysis template](https://github.com/msdbok/msdbok.github.io/blob/main/templates/analysis-template.md)
 
-- **Fix content issues**: typos, fact checks, source validation → [See guidelines](https://github.com/msdbok/msdbok.github.io/blob/main/CONTRIBUTING.md)
-- **Add method descriptions**: 1-2 page technique descriptions → [Use template](https://github.com/msdbok/msdbok.github.io/blob/main/templates/method-template.md)
-- **Write analysis papers**: 3-4 page comparative studies → [Use template](https://github.com/msdbok/msdbok.github.io/blob/main/templates/analysis-template.md)
-
-📖 **[Read full contribution guidelines](https://github.com/msdbok/msdbok.github.io/blob/main/CONTRIBUTING.md)**
-
----
-
-### Objective
-
-These course notes aim to:
-- Provide a structured and accessible overview of Managing Software Development topics.
-- Equip readers with insights that bridge theory and real-world application.
-- Encourage collaboration and knowledge-sharing within the software development community.
-
-**Approach:**  
-- Focus on breadth over depth, introducing a wide range of concepts and practices.
-- Present current and leading industry techniques, highlighting their strengths and limitations.
-- Emphasize understanding the differences between approaches, rather than immediate mastery.
-- Encourage critical thinking:
-    - Reason about which techniques to apply in different contexts
-    - Justify your choices with clear arguments
-    - Explicitly state your assumptions, based on available facts
-
-Our goal is to help you build a foundation for making informed decisions in software development management.
+Every page is held to [the page standard](https://github.com/msdbok/msdbok.github.io/blob/main/templates/page-standard.md).
 
 ---
 
 ## Acknowledgments
 
-Much of the content in this handbook is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach throughout the planning, processes, and materials sections reflect their teaching materials and frameworks.
-
-Pages with significant lecture-based content include an **Acknowledgments section** crediting the original instructors, along with proper citations in the **Sources section**. All content pages maintain rigorous attribution practices with full citations for frameworks, methods, and research.
+Much of this handbook is heavily inspired by and adapted from lectures by **Eduardo Miranda** and
+**David Root** on software project management — the structure, examples and pedagogical approach
+throughout reflect their teaching materials. Pages built on that material name them in an
+**Acknowledgments** section, with full citations in **References**.
 
 ---
-
-Feel free to explore, contribute, and enhance your understanding of software development management!
 
 {: .highlight }
 **Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

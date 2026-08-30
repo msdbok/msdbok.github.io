@@ -53,6 +53,9 @@ BUDGETS = {             # type: (min, max, hard_split)
     'study-notes':  (800, 2200, 3000),   # SN: one lecture, summarised for revision
     'question-set': (200, 2200, 3000),   # RQ: questions, so the prose rules do not apply
     'case':         (300, 1600, 2500),   # a case description or assignment brief
+    # The site index. Wider than a hub because it orients a first-time reader as
+    # well as linking, but it is still a front door, not a page that teaches.
+    'home':         (300, 700, 1000),
 }
 
 # Types whose content is deliberately not explanatory prose. The bullet-ratio,
@@ -130,9 +133,17 @@ def analyse(path: Path) -> dict:
     examples = len(re.findall(r'\*Example|^\s*\*\*Example|:\s*\*Example', body, re.M))
     examples += len(re.findall(r'\bFor example,|\be\.g\.,', body))
 
+    # `area` is the top folder under content/. Pages outside content/ - the site
+    # index above all - have no area; this used to raise ValueError and take the
+    # whole run down, which is why index.md had never once been checked.
+    try:
+        area = path.relative_to(CONTENT).parts[0]
+    except ValueError:
+        area = '(root)'
+
     return dict(
         path=path.relative_to(ROOT).as_posix(),
-        area=path.relative_to(CONTENT).parts[0],
+        area=area,
         type=classify(path, fm, body),
         words=words,
         bullet_pct=round(100 * bullet_words / words) if words else 0,
@@ -218,7 +229,10 @@ def main() -> int:
     quiet = '--quiet' in sys.argv
     summary = '--summary' in sys.argv
 
-    roots = [ROOT / a for a in args] or [CONTENT]
+    # Default sweep is content/ plus the site index. Without index.md here a bare
+    # run reports the site as clean while the front page goes unmeasured; the
+    # other root-level markdown (README, CONTRIBUTING) is repo docs, not pages.
+    roots = [ROOT / a for a in args] or [CONTENT, ROOT / 'index.md']
     # Accept a single file as well as a directory - `rglob` on a file yields
     # nothing, so passing one used to check zero pages and report success.
     pages = sorted({p for r in roots
