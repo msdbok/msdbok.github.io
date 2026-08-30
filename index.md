@@ -19,12 +19,11 @@ be read on its own — one page per method, self-contained, with its sources on 
 
 ## The six areas
 
-Each area answers one question, and each supplies the next. You cannot scope what you never
-elicited, plan what you never scoped, or track what you never planned — which is why so many
-"planning failures" were settled much earlier.
+Each area answers one question, and each supplies the next — which is why so many
+"planning failures" were settled long before anyone got to planning.
 
 <div align="center">
-  <img src="/images/msd-areas.svg" alt="The six areas as a chain: People, Process, Needs, Scope, Planning, Tracking" style="max-width:100%; margin: 1.5em 0;" />
+  <img src="/images/msd-areas.svg" alt="The six areas in sequence — People, Process, Needs, Scope, Planning, Tracking — each block listing its topics" style="max-width:100%; margin: 1.5em 0;" />
 </div>
 
 **[People](/content/people/) — who does the work.** What a technical person gives you and how

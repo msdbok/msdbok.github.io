@@ -1,74 +1,62 @@
-<mxfile host="Electron">
-  <diagram id="f8t8ifcdOdI6yluLwroF" name="pageWithNumber">
-    <mxGraphModel dx="-656" dy="-38" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="msdbok" agent="handwritten" version="24.0.0">
+  <diagram id="msd-areas-flow" name="MSD areas">
+    <mxGraphModel dx="1400" dy="400" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1380" pageHeight="250" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <UserObject label="1 · People&#xa;who does the work" mermaidId="n:P" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="1 · People&#xa;who does the work" id="2">
-          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="73" width="195" x="8" y="8" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="2 · Process&#xa;how work flows" mermaidId="n:R" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="2 · Process&#xa;how work flows" id="3">
-          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="73" width="171" x="253" y="8" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="3 · Needs&#xa;what to build" mermaidId="n:N" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#019546;strokeColor=#2D6E2A;fontColor=#FFFFFF;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="3 · Needs&#xa;what to build" id="4">
-          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#019546;strokeColor=#2D6E2A;fontColor=#FFFFFF;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="73" width="156" x="474" y="8" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="4 · Scope&#xa;how big it is" mermaidId="n:S" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#019546;strokeColor=#2D6E2A;fontColor=#FFFFFF;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="4 · Scope&#xa;how big it is" id="5">
-          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#019546;strokeColor=#2D6E2A;fontColor=#FFFFFF;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="73" width="147" x="680" y="8" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="5 · Planning&#xa;in what order" mermaidId="n:L" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#2D6E2A;strokeColor=#019546;fontColor=#FFFFFF;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="5 · Planning&#xa;in what order" id="6">
-          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#2D6E2A;strokeColor=#019546;fontColor=#FFFFFF;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="73" width="157" x="877" y="8" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="6 · Tracking&#xa;are we on track" mermaidId="n:T" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#2D6E2A;strokeColor=#019546;fontColor=#FFFFFF;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="6 · Tracking&#xa;are we on track" id="7">
-          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#2D6E2A;strokeColor=#019546;fontColor=#FFFFFF;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
-            <mxGeometry height="73" width="173" x="1084" y="8" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:P-&gt;R#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" mermaidBaseValue="" id="8">
-          <mxCell edge="1" parent="1" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" target="3">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:R-&gt;N#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" mermaidBaseValue="" id="9">
-          <mxCell edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" target="4">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:N-&gt;S#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" mermaidBaseValue="" id="10">
-          <mxCell edge="1" parent="1" source="4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" target="5">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:S-&gt;L#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" mermaidBaseValue="" id="11">
-          <mxCell edge="1" parent="1" source="5" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" target="6">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
-        <UserObject label="" mermaidId="e:L-&gt;T#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" mermaidBaseValue="" id="12">
-          <mxCell edge="1" parent="1" source="6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=1;exitY=0.51;entryX=0;entryY=0.51;" target="7">
-            <mxGeometry relative="1" as="geometry">
-              <Array as="points" />
-            </mxGeometry>
-          </mxCell>
-        </UserObject>
+
+        <mxCell id="p" value="&lt;span style=&quot;font-size:15px;&quot;&gt;&lt;b&gt;1 · People&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;opacity:0.9;&quot;&gt;who does the work&lt;/span&gt;"
+          style="swimlane;html=1;rounded=1;arcSize=5;startSize=44;fillColor=#dc2626;strokeColor=#dc2626;strokeWidth=1;swimlaneFillColor=#fef2f2;fontColor=#ffffff;fontSize=15;align=left;spacingLeft=12;verticalAlign=middle;swimlaneLine=0;fontFamily=Helvetica;"
+          vertex="1" parent="1"><mxGeometry x="20" y="20" width="205" height="176" as="geometry" /></mxCell>
+        <mxCell id="pb" value="&lt;div style=&quot;font-size:12px;line-height:1.75;color:#3f3f46;&quot;&gt;&lt;span style=&quot;color:#dc2626;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;The technical person&lt;br&gt;&lt;span style=&quot;color:#dc2626;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Personality &amp;amp; motivation&lt;br&gt;&lt;span style=&quot;color:#dc2626;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Teams &amp;amp; psychological safety&lt;br&gt;&lt;span style=&quot;color:#dc2626;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Social loafing&lt;br&gt;&lt;span style=&quot;color:#dc2626;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Decision making&lt;/div&gt;"
+          style="text;html=1;align=left;verticalAlign=top;spacingLeft=13;spacingTop=6;strokeColor=none;fillColor=none;fontFamily=Helvetica;"
+          vertex="1" parent="p"><mxGeometry y="44" width="205" height="132" as="geometry" /></mxCell>
+
+        <mxCell id="r" value="&lt;span style=&quot;font-size:15px;&quot;&gt;&lt;b&gt;2 · Process&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;opacity:0.9;&quot;&gt;how work flows&lt;/span&gt;"
+          style="swimlane;html=1;rounded=1;arcSize=5;startSize=44;fillColor=#ea580c;strokeColor=#ea580c;strokeWidth=1;swimlaneFillColor=#fff7ed;fontColor=#ffffff;fontSize=15;align=left;spacingLeft=12;verticalAlign=middle;swimlaneLine=0;fontFamily=Helvetica;"
+          vertex="1" parent="1"><mxGeometry x="248" y="20" width="205" height="176" as="geometry" /></mxCell>
+        <mxCell id="rb" value="&lt;div style=&quot;font-size:12px;line-height:1.75;color:#3f3f46;&quot;&gt;&lt;span style=&quot;color:#ea580c;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Lifecycle stages&lt;br&gt;&lt;span style=&quot;color:#ea580c;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Process basics — ETVX, GQM&lt;br&gt;&lt;span style=&quot;color:#ea580c;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Frameworks: Scrum, XP, SAFe&lt;br&gt;&lt;span style=&quot;color:#ea580c;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Choosing for a context&lt;/div&gt;"
+          style="text;html=1;align=left;verticalAlign=top;spacingLeft=13;spacingTop=6;strokeColor=none;fillColor=none;fontFamily=Helvetica;"
+          vertex="1" parent="r"><mxGeometry y="44" width="205" height="132" as="geometry" /></mxCell>
+
+        <mxCell id="n" value="&lt;span style=&quot;font-size:15px;&quot;&gt;&lt;b&gt;3 · Needs&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;opacity:0.9;&quot;&gt;what to build&lt;/span&gt;"
+          style="swimlane;html=1;rounded=1;arcSize=5;startSize=44;fillColor=#ca8a04;strokeColor=#ca8a04;strokeWidth=1;swimlaneFillColor=#fefce8;fontColor=#ffffff;fontSize=15;align=left;spacingLeft=12;verticalAlign=middle;swimlaneLine=0;fontFamily=Helvetica;"
+          vertex="1" parent="1"><mxGeometry x="476" y="20" width="205" height="176" as="geometry" /></mxCell>
+        <mxCell id="nb" value="&lt;div style=&quot;font-size:12px;line-height:1.75;color:#3f3f46;&quot;&gt;&lt;span style=&quot;color:#ca8a04;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Customer expectations&lt;br&gt;&lt;span style=&quot;color:#ca8a04;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Requirements engineering&lt;br&gt;&lt;span style=&quot;color:#ca8a04;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Testable statements&lt;br&gt;&lt;span style=&quot;color:#ca8a04;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Risk management&lt;/div&gt;"
+          style="text;html=1;align=left;verticalAlign=top;spacingLeft=13;spacingTop=6;strokeColor=none;fillColor=none;fontFamily=Helvetica;"
+          vertex="1" parent="n"><mxGeometry y="44" width="205" height="132" as="geometry" /></mxCell>
+
+        <mxCell id="s" value="&lt;span style=&quot;font-size:15px;&quot;&gt;&lt;b&gt;4 · Scope&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;opacity:0.9;&quot;&gt;how big it is&lt;/span&gt;"
+          style="swimlane;html=1;rounded=1;arcSize=5;startSize=44;fillColor=#0d9488;strokeColor=#0d9488;strokeWidth=1;swimlaneFillColor=#f0fdfa;fontColor=#ffffff;fontSize=15;align=left;spacingLeft=12;verticalAlign=middle;swimlaneLine=0;fontFamily=Helvetica;"
+          vertex="1" parent="1"><mxGeometry x="704" y="20" width="205" height="176" as="geometry" /></mxCell>
+        <mxCell id="sb" value="&lt;div style=&quot;font-size:12px;line-height:1.75;color:#3f3f46;&quot;&gt;&lt;span style=&quot;color:#0d9488;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Work breakdown structure&lt;br&gt;&lt;span style=&quot;color:#0d9488;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Rolling waves&lt;br&gt;&lt;span style=&quot;color:#0d9488;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Estimation — analogy, counting,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;judgement, parametric&lt;/div&gt;"
+          style="text;html=1;align=left;verticalAlign=top;spacingLeft=13;spacingTop=6;strokeColor=none;fillColor=none;fontFamily=Helvetica;"
+          vertex="1" parent="s"><mxGeometry y="44" width="205" height="132" as="geometry" /></mxCell>
+
+        <mxCell id="l" value="&lt;span style=&quot;font-size:15px;&quot;&gt;&lt;b&gt;5 · Planning&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;opacity:0.9;&quot;&gt;in what order&lt;/span&gt;"
+          style="swimlane;html=1;rounded=1;arcSize=5;startSize=44;fillColor=#2563eb;strokeColor=#2563eb;strokeWidth=1;swimlaneFillColor=#eff6ff;fontColor=#ffffff;fontSize=15;align=left;spacingLeft=12;verticalAlign=middle;swimlaneLine=0;fontFamily=Helvetica;"
+          vertex="1" parent="1"><mxGeometry x="932" y="20" width="205" height="176" as="geometry" /></mxCell>
+        <mxCell id="lb" value="&lt;div style=&quot;font-size:12px;line-height:1.75;color:#3f3f46;&quot;&gt;&lt;span style=&quot;color:#2563eb;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Agile vs plan-driven&lt;br&gt;&lt;span style=&quot;color:#2563eb;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Milestones &amp;amp; activities&lt;br&gt;&lt;span style=&quot;color:#2563eb;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Critical path &amp;amp; Gantt&lt;br&gt;&lt;span style=&quot;color:#2563eb;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Release planning — MoSCoW&lt;/div&gt;"
+          style="text;html=1;align=left;verticalAlign=top;spacingLeft=13;spacingTop=6;strokeColor=none;fillColor=none;fontFamily=Helvetica;"
+          vertex="1" parent="l"><mxGeometry y="44" width="205" height="132" as="geometry" /></mxCell>
+
+        <mxCell id="t" value="&lt;span style=&quot;font-size:15px;&quot;&gt;&lt;b&gt;6 · Tracking&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:11px;opacity:0.9;&quot;&gt;is it on track&lt;/span&gt;"
+          style="swimlane;html=1;rounded=1;arcSize=5;startSize=44;fillColor=#7c3aed;strokeColor=#7c3aed;strokeWidth=1;swimlaneFillColor=#f5f3ff;fontColor=#ffffff;fontSize=15;align=left;spacingLeft=12;verticalAlign=middle;swimlaneLine=0;fontFamily=Helvetica;"
+          vertex="1" parent="1"><mxGeometry x="1160" y="20" width="205" height="176" as="geometry" /></mxCell>
+        <mxCell id="tb" value="&lt;div style=&quot;font-size:12px;line-height:1.75;color:#3f3f46;&quot;&gt;&lt;span style=&quot;color:#7c3aed;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Progress monitoring&lt;br&gt;&lt;span style=&quot;color:#7c3aed;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Earned value management&lt;br&gt;&lt;span style=&quot;color:#7c3aed;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Burndown &amp;amp; burnup&lt;br&gt;&lt;span style=&quot;color:#7c3aed;font-weight:bold;&quot;&gt;•&lt;/span&gt;&amp;nbsp;&amp;nbsp;Control &amp;amp; reporting&lt;/div&gt;"
+          style="text;html=1;align=left;verticalAlign=top;spacingLeft=13;spacingTop=6;strokeColor=none;fillColor=none;fontFamily=Helvetica;"
+          vertex="1" parent="t"><mxGeometry y="44" width="205" height="132" as="geometry" /></mxCell>
+
+        <mxCell id="e1" style="html=1;rounded=0;strokeColor=#a1a1aa;strokeWidth=3;endArrow=blockThin;endFill=1;endSize=7;exitX=1;exitY=0.16;exitDx=0;exitDy=0;entryX=0;entryY=0.16;entryDx=0;entryDy=0;" edge="1" parent="1" source="p" target="r"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" style="html=1;rounded=0;strokeColor=#a1a1aa;strokeWidth=3;endArrow=blockThin;endFill=1;endSize=7;exitX=1;exitY=0.16;exitDx=0;exitDy=0;entryX=0;entryY=0.16;entryDx=0;entryDy=0;" edge="1" parent="1" source="r" target="n"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" style="html=1;rounded=0;strokeColor=#a1a1aa;strokeWidth=3;endArrow=blockThin;endFill=1;endSize=7;exitX=1;exitY=0.16;exitDx=0;exitDy=0;entryX=0;entryY=0.16;entryDx=0;entryDy=0;" edge="1" parent="1" source="n" target="s"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" style="html=1;rounded=0;strokeColor=#a1a1aa;strokeWidth=3;endArrow=blockThin;endFill=1;endSize=7;exitX=1;exitY=0.16;exitDx=0;exitDy=0;entryX=0;entryY=0.16;entryDx=0;entryDy=0;" edge="1" parent="1" source="s" target="l"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e5" style="html=1;rounded=0;strokeColor=#a1a1aa;strokeWidth=3;endArrow=blockThin;endFill=1;endSize=7;exitX=1;exitY=0.16;exitDx=0;exitDy=0;entryX=0;entryY=0.16;entryDx=0;entryDy=0;" edge="1" parent="1" source="l" target="t"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="cap" value="Each area supplies the next — you cannot scope what you never elicited, plan what you never scoped, or track what you never planned"
+          style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#71717a;fontStyle=2;fontFamily=Helvetica;"
+          vertex="1" parent="1"><mxGeometry x="20" y="205" width="1345" height="24" as="geometry" /></mxCell>
+
       </root>
     </mxGraphModel>
   </diagram>
