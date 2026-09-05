@@ -50,8 +50,8 @@ ranks below affiliative (.46)** — the article notes its impact "is not as high
 
 ## What the software-specific evidence adds
 
-The six styles come from a general executive population. The one leadership study in this handbook's
-corpus collected **from technical staff** finds a factor that is not among them. Thite surveyed
+The six styles come from a general executive population. A leadership study collected **from
+technical staff** finds a factor that is not among them. Thite surveyed
 Australian IS/IT project managers, their subordinates and senior IT managers with an extended
 Multifactor Leadership Questionnaire {% cite thite1999leadership %}; principal-components analysis
 produced five scales, one new and domain-derived: the **"organisational catalyst"** — shield the

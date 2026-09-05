@@ -30,7 +30,7 @@ So the question is not *"does the team trust the AI?"* Trust is an attitude; rel
 
 - **Carry the populations with the numbers.** The 52.1% figure comes from **36 school students solving math puzzles in a preprint that has not been peer-reviewed** — not from software engineers, not from code, not from a team under a deadline. It licenses a *direction*: a short literacy intervention is a weak instrument against miscalibration. It is not an effect size for professional developers.
 - **The second study is a workshop paper.** Schemmer and colleagues report a single illustrative experiment, and the RAIR/RSR metrics are defined only for classification tasks — which is not what most software work looks like.
-- **Two studies are not a literature.** They are the two this handbook holds. They agree that reliance is miscalibrated and disagree about the direction, which is enough to warn against a confident remedy and not enough to recommend one.
+- **Two studies are not a literature.** The field is young and still moving. These two agree that reliance is miscalibrated and disagree about the direction, which is enough to warn against a confident remedy and not enough to recommend one; expect the picture to change as results for professional developers arrive.
 
 ---
 

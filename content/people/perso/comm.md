@@ -60,18 +60,18 @@ team at all — influence without membership, which no media-richness account of
 
 ## How solid is this?
 
-- **The constructive/destructive material is not held.** Arredondo's book is in the bibliography
-  but no copy is available here, so the contrast and the approach/build-bridges structure come
-  through the Fall 2025 lecture deck. No page reference is given, and none should be invented.
-- **The listening material has no citation at all, deliberately.** It traces to Harris and
-  Sherblom's *Small Group and Team Communication*, which this handbook does not hold and which has no
-  bibliography key. Nothing in the reviewed corpus evaluates an active-listening technique. It is
-  kept as practitioner teaching material because the case presentations need it.
+- **The constructive/destructive contrast is practitioner advice.** Arredondo
+  {% cite arredondo2000communicating %} draws it from consulting experience; no effect size attaches
+  to it, and the claim that delivery alone flips the outcome is still to be verified.
+- **The listening material is teaching craft, not a research finding.** It descends from the
+  small-group communication literature — Harris and Sherblom's *Small Group and Team
+  Communication* — and the effect of an active-listening technique on software teams remains to be
+  measured. Use it as a practice to try, not as a demonstrated result.
 - **The hybrid-meeting finding is contested, not settled.** Christensen and colleagues studied one
   company at one Finnish site, exploratory and explicitly not causal, and their retrospectives
   result contradicts prior work that found retrospectives held online for inclusion.
 - **The virtual-teams review is narrative, not systematic**: no quality appraisal, no effect sizes,
-  and a corpus that predates 2019 and so predates mass remote work.
+  and it draws on studies that predate 2019, and so predate mass remote work.
 - **The AI result is small and not about software.** Undergraduate laboratory teams on a puzzle
   task; in one condition the "AI" was pre-recorded audio; the flagship effect is roughly one extra
   word per twenty-word utterance, and the authors state it establishes no base rate for real

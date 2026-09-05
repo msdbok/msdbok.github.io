@@ -73,14 +73,14 @@ software teams, and two of the illustrations are weaker than their popularity su
   value system. A practice with a case behind it, never a measured effect. (The title word is
   "Formulation", not "Formation" — the misquotation is common.)
 - **Protected focus time is a practice, not a finding.** That interruptions harm developer output
-  is plausible and widely repeated, but **this handbook holds no study supporting it** — measure it
-  on your own team. The nearest sourced thing is Glen's account of [flow](glen.html), itself a
-  practitioner framework.
+  is plausible and widely repeated, but it is offered here as a claim still to be verified — measure
+  it on your own team. The nearest sourced account is Glen's discussion of [flow](glen.html), itself
+  a practitioner framework.
 - **Two popular illustrations are not templates.** A company describing its own innovation days is
-  marketing, and no study here measures what they produce. The Spotify "squads and tribes" model is
-  routinely cited for the scaling row above, yet its own authors have since said it described an
-  aspiration, was never fully implemented, and had been abandoned by the time it spread — and this
-  handbook holds no source for the model or the disavowal.
+  marketing, and what such days produce has not been measured. The Spotify "squads and tribes" model
+  is routinely cited for the scaling row above, yet its own authors have since said it described an
+  aspiration, was never fully implemented, and had been abandoned by the time it spread. Both reach
+  this page through secondary accounts; treat them as anecdotes rather than as evidence.
 - **The style ratings** are correlational, from an unpublished proprietary study of executives,
   c. 1999 {% cite goleman2000leadership %} — provenance on [Leadership styles](lead.html).
 

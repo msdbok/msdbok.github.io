@@ -45,7 +45,7 @@ Options can be scored with a **T-chart**, **SWOT**, **Pareto analysis**, **pair-
 
 - **Practitioner guidance, not evidence.** Both Rebori fact sheets are four-page extension leaflets with no study, data or peer review, written for community boards, not engineering teams. The 51% and 70% thresholds are conventions, and Rebori is candid that matrices and dot votes are not "formulas that will automatically produce correct answers."
 - **The devil's advocate is unvalidated.** One of six proposed debiasing techniques in software engineering, with **no empirical evaluation** — see [Cognitive bias](decisions_bias.html).
-- **Pareto’s 80/20 is a heuristic.** "20% of bugs cause 80% of errors" says where to look first; measure the concentration in your own defect data. No figure is quoted above; none is held here.
+- **Pareto’s 80/20 is a heuristic.** "20% of bugs cause 80% of errors" says where to look first, not what the ratio is; measure the concentration in your own defect data before quoting a figure.
 
 ---
 

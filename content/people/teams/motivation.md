@@ -97,9 +97,10 @@ synthesis, not a claim either paper makes.
   distributed work were normal, and the authors warn the aggregated frequencies "need to be treated
   with caution". It found **no dominant motivation model** in software engineering, and 56% of
   studies distinguish software engineers from other occupations — so roughly half do not.
-- **What we do not hold.** Deci and Ryan's statement of self-determination theory and Vroom's *Work
-  and Motivation* are absent from this bibliography, so §3 is vocabulary with no citation rather
-  than an invented one.
+- **§3 summarises two theories rather than testing them.** Self-determination theory (Deci and
+  Ryan) and expectancy theory (Vroom) are given here as vocabulary; how well either predicts
+  behaviour on a software team is still to be verified. Go to their original statements before
+  quoting a number from them.
 - **Do not stretch the AI studies.** Wu's effect concerns the **handoff back** to unassisted work,
   on writing and idea generation, not software. Corgnet's authors state their result does not
   extend to replacing a *familiar* teammate, nor to analytical work; the arms were unbalanced

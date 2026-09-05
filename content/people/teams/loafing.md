@@ -82,9 +82,9 @@ what {% cite xu2025debt %} tests at scale and does not find.
   produced *more* effort, not less (p. 297). That is one reported study rather than a meta-analysis,
   so it is not a finding about any individual either. Loafing is contingent on
   context.
-- **Which Greenberg.** This material was long attributed to "Greenberg, 1996, *Managing Behaviors
-  in Organizations*" — a title that does not exist. The copy this handbook works from is Jerald
-  Greenberg, *Behavior in Organizations*, 10th ed., 2011 {% cite greenberg2011behavior %}.
+- **Which Greenberg.** This material is often attributed to "Greenberg, 1996, *Managing Behaviors
+  in Organizations*" — a title that does not exist. The source is Jerald Greenberg, *Behavior in
+  Organizations*, 10th ed., 2011 {% cite greenberg2011behavior %}.
 - **The virtual-assistant study has no control condition.** Every participant had the assistant and
   nobody worked alone, so no effort decrement against a solo baseline was ever measured. Two of its
   six loafing items measure *tool usefulness*, so a participant who was genuinely helped scores as

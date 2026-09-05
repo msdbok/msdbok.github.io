@@ -32,7 +32,7 @@ percentage points across the same 25,000 projects:
 
 The report states that "for the rest of this report CHAOS Resolution will refer to the Modern
 Resolution definition." Quoting a size breakdown beside a "36% succeed" headline therefore mixes the
-two — a mistake this handbook previously made.
+two — an easy mistake to make, and a common one.
 
 ## Outcomes by project size
 
@@ -106,9 +106,10 @@ unlike other engineering; and to build skills in process design, team leadership
   service, and the text beside the size table offers to "break up large software projects into
   multiple small projects". Does the report agree with itself? This one gives "25,000-plus projects"
   on page 1 and 50,000 on page 13.
-- **What we do not hold.** "Software is different", the human variable and the process response to
-  it come from the Miranda and Root lectures {% cite root2014lectures %}: teaching frameworks with
-  practice behind them, not measured findings. No study here quantifies any of them.
+- **Frameworks, not measurements.** "Software is different", the human variable and the process
+  response to it come from the Miranda and Root lectures {% cite root2014lectures %}: teaching
+  frameworks with practice behind them rather than measured findings. How much each of them
+  contributes to a project's outcome is still to be quantified.
 
 ---
 

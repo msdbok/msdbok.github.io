@@ -33,7 +33,7 @@ The central charge against it is **circularity** {% cite thart1991groupthink %}:
 
 ## 4. The Abilene paradox
 
-The **Abilene paradox** is a different failure: a group unanimously agrees on a course *no member privately favours*, each believing the others want it. Jerry B. Harvey described it in 1974; that paper is **not held here**, so it is named and dated rather than cited. Groupthink is dissent suppressed by pressure; the Abilene paradox is dissent nobody realises exists. Pressure needs cover for the dissenter; false consensus needs only that someone ask.
+The **Abilene paradox** is a different failure: a group unanimously agrees on a course *no member privately favours*, each believing the others want it. Jerry B. Harvey described it in 1974. Groupthink is dissent suppressed by pressure; the Abilene paradox is dissent nobody realises exists. Pressure needs cover for the dissenter; false consensus needs only that someone ask.
 
 ## 5. Judge the process, not the outcome
 
@@ -55,7 +55,7 @@ Read the sections above as an account of a contested construct, not as a hazard 
 - **Vintage.** That record stops at **1991**, so do not call the evidence weak full stop; say that as of 1991 its own reviewer described the replications as modest, mixed and only partially conclusive.
 - **Not among the measured biases.** Groupthink is not one of the 37 cognitive biases mapped in software engineering, and the Abilene paradox does not appear there at all {% cite mohanani2018biases %}.
 - **Rebori's groupthink is not Janis's.** The gloss used in the [group-decision](decisions_group.html) leaflets — dissent withheld "because they believe no one will agree with them" — is closer to the Abilene paradox, dropping cohesion, stress and structural faults.
-- **What we do not hold.** Janis's own books: *Victims of Groupthink* (1972) and *Groupthink* (1982), the second carrying the systematic statement, so 1972 dates the naming not the model. The eight symptoms reach this page only through the 1991 review, and **no remedy list is given** because that review reproduces none. Harvey is not held either, which makes the Abilene paradox the least-sourced claim on the page.
+- **Janis is read here at second hand.** His own books are *Victims of Groupthink* (1972) and *Groupthink* (1982), the second carrying the systematic statement — so 1972 dates the naming, not the model. The eight symptoms reach this page through the 1991 review, which is also why **no remedy list appears**: that review reproduces none. The Abilene paradox arrives the same way and is the least directly sourced claim on the page.
 
 ---
 

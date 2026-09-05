@@ -38,8 +38,8 @@ the direction Brooks's Law comes from.
 
 ## 2. Do teams outperform individuals?
 
-The familiar answer is **yes**, under the heading *synergy*. No source in this bibliography
-supports it, and the two large software studies used below cannot settle it, because **neither
+The familiar answer is **yes**, under the heading *synergy* — a claim still to be verified for
+software work. The two large software studies used below cannot settle it, because **neither
 compares a team with an individual**: Hoegl and Gemuenden interviewed 575 people in 145 German
 teams {% cite hoegl_teamwork_2001 %} and Lindsjørn and colleagues surveyed 477 members of 71 agile
 teams {% cite lindsjorn2016teamwork %}, both correlating teamwork quality with performance *within*
@@ -97,7 +97,7 @@ conflict is *expected* rather than exceptional is the storming phase — see
   common-source bias is a leading explanation for β = 0.68 and for the 41%; Lindsjørn found "no
   empirical distinction between the two concepts". Hoegl never investigated the *antecedents* of
   teamwork quality, so neither study says how to produce it, and both are cross-sectional.
-- **Rater substitution is our reading, not theirs.** Lindsjørn offers a vantage-point explanation —
+- **Rater substitution is an interpretation, not the authors' claim.** Lindsjørn offers a vantage-point explanation —
   owners see functionality and lead time, members see internal code quality — and declines to
   choose between it and rater bias.
 - **Self-report throughout.** Verwijs recruited through an Agile self-diagnosis tool and measured

@@ -35,7 +35,7 @@ to review later. See [the PEAK model](decisions_peak.html).
 |---|---|---|---|
 | [The PEAK model](decisions_peak.html) | Inputs, process, outputs | A decision has **two** outputs — solution *and* assumed risk | A framework, not a finding |
 | [Intuition and expertise](decisions_intuition.html) | Recognition-primed decisions | Experts recognise one action rather than compare options | Coded by its own research team |
-| [Thin slicing](decisions_thinslicing.html) | Snap judgment, and where it misfires | Short exposures carry the signal — and the bias | No primary source held |
+| [Thin slicing](decisions_thinslicing.html) | Snap judgment, and where it misfires | Short exposures carry the signal — and the bias | Popular retelling, not research |
 | [Group decisions](decisions_group.html) | Styles, techniques, the seven-step method | Agree *how* you will decide before you decide | Extension leaflets: guidance, no data |
 | [Groupthink](decisions_groupthink.html) | Janis's construct, and the Abilene paradox | Hierarchy, not friendliness, silences dissent | Weakest — only partly confirmed |
 | [Cognitive bias](decisions_bias.html) | 37 biases mapped across software engineering | The measured biases are individual, and land on estimation | Strongest: 65 studies, lab-heavy |
@@ -44,7 +44,7 @@ to review later. See [the PEAK model](decisions_peak.html).
 ## How solid is this?
 
 - **Where it comes from.** The levels, analysis paralysis and the input–process–output model are lecture material {% cite root2014lectures %} — vocabulary, not research findings.
-- **What we do not hold.** The "decision-driven organization" advice behind this topic is Rogers and Blenko's *Who Has the D?* and Blenko, Mankins and Rogers, *The Decision-Driven Organization*. Neither is held here, so both are named rather than cited.
+- **The "decision-driven organization" advice is consultancy practice.** It comes from Rogers and Blenko's *Who Has the D?* and Blenko, Mankins and Rogers, *The Decision-Driven Organization* — widely used, but published without measurement, so its gains are still to be verified.
 - **What is contested.** On ambiguity CHAOS 2015 reports the opposite — **vague objectives 38% successful against precise 22%** {% cite standish2015chaos %} — from a crosstab with no size control and no significance test, so it is no evidence either way. See [Why projects fail](../why.html) {% cite eveleens2010chaos %}.
 
 ---

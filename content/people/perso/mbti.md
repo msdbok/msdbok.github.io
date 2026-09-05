@@ -71,9 +71,9 @@ This is the question managers want answered, and where the literature stops help
 **There is no evidence that personality composition predicts how a software team performs.**
 Soomro and colleagues {% cite soomro2016personality %} searched 22 years of literature for this
 link and found no association. Advice to "mix personality types" or pair particular four-letter
-codes is folk practice, not a finding — and this handbook previously presented it as guidance. The
-same applies to type-based prescriptions for communication, task assignment and motivation:
-plausible, widely repeated, untested.
+codes is folk practice, not a finding, however often it is taught as one. The same applies to
+type-based prescriptions for communication, task assignment and motivation: plausible, widely
+repeated, untested.
 
 What does predict team performance is a different list:
 

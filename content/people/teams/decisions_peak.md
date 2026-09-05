@@ -61,8 +61,8 @@ that the disagreement in the room is about an assumption, not about the solution
 
 ## How solid is this?
 
-- **This is a framework, not a finding.** It organises thinking; no study is offered that teams
-  using it decide better. Treat it as a checklist for making a decision inspectable.
+- **This is a framework, not a finding.** It organises thinking; whether teams using it decide
+  better is still to be verified. Treat it as a checklist for making a decision inspectable.
 - **The value is in the discipline, not the diagram.** Naming assumptions and recording assumed
   risk is the work. A team can draw the boxes and still skip both.
 - **It says nothing about how experts actually decide under time pressure** — for that, see

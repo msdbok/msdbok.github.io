@@ -11,8 +11,9 @@ Psychological safety is the shared belief that you can raise a problem, admit a 
 obvious question without being punished or humiliated for it. It is a property of a team's climate,
 not of any member's courage.
 
-It is the strongest predictor of team performance in this handbook's evidence, and one a manager
-can act on this week. It is also narrower than it is usually sold as.
+Among the factors covered in this area it carries the strongest reported association with team
+performance, and it is one a manager can act on this week. It is also narrower than it is usually
+sold as.
 
 ## 1. It buys disclosure cheaply and invention expensively
 
