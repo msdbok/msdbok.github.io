@@ -19,16 +19,17 @@ leadership) and **L1b** (teams, safety, loafing, decisions). Summaries at
 
 ### 1.1 The technical person
 
-1. Why does managing an engineer by controlling behaviour tend to reduce the value you were trying to get?
-2. Name three elements of the "geek" archetype, and state what the archetype is legitimately used for.
-3. Why is a day interrupted by three meetings not half a day of output? Name the cost.
-4. Give two concrete practices that protect flow, and say why each is a team-level rather than an individual-level move.
-5. Forty years of research found no consistent software-engineering personality. What follows for hiring, and what does *not* follow?
+1. CHAOS puts most projects outside their own forecast. Which part of that record is a human-factors problem rather than a technical one, and what is management's usual answer — with its own failure mode?
+2. Why does managing an engineer by controlling behaviour tend to reduce the value you were trying to get?
+3. Name three elements of the "geek" archetype, and state what the archetype is legitimately used for.
+4. Why is a day interrupted by three meetings not half a day of output? Name the cost.
+5. Give two concrete practices that protect flow, and say why each is a team-level rather than an individual-level move.
+6. Forty years of research found no consistent software-engineering personality. What follows for hiring, and what does *not* follow?
 
 ### 1.2 Personality models
 
 1. What exactly does the MBTI claim to measure? State the four preference pairs.
-2. Engineers over-represent ISTJ and INTJ and under-represent the sociable types. What can you legitimately infer from this, and what can you not?
+2. **ISFJ** is among the commonest types in the general population at 13.8% and one of the rarest among software engineers at 2%. Give the most defensible explanation for the gap, and state what it does *not* license you to say about an ISFJ candidate.
 3. A review across 22 years found no association between personality and team performance. Which three common staffing practices does this rule out?
 4. Name the three factors that *do* predict team performance. What do all three have in common from a manager's point of view?
 5. A colleague proposes pairing team members by complementary MBTI types. Write the two-sentence reply you would actually give.
@@ -38,9 +39,8 @@ leadership) and **L1b** (teams, safety, loafing, decisions). Summaries at
 1. Hofstede's dimensions score countries, not people. Give one correct and one incorrect use of a country score.
 2. Name three of the five places cultural difference actually shows up in software work.
 3. In the two-lane example, why did a written procedure resolve a conflict that cultural training would not have?
-4. What is paraphrasing, and which specific listening failure does it correct?
-5. Constructive and destructive delivery can carry identical content. Name the two moves that decide which one lands.
-6. What is the test for whether a meeting should be onsite or remote? Apply it to a retrospective and to a large information-sharing session.
+4. Constructive and destructive delivery can carry identical content. Name the two moves that decide which one lands, and say which listening failure paraphrasing corrects.
+5. What is the test for whether a meeting should be onsite or remote? Apply it to a retrospective and to a large information-sharing session.
 
 ### 1.4 Motivation
 
@@ -94,18 +94,16 @@ leadership) and **L1b** (teams, safety, loafing, decisions). Summaries at
 
 ### 2.4 Decisions
 
-1. Name the three decision levels and the machinery each one earns.
-2. Why is failing to decide a more common failure than deciding badly?
-3. Describe the Recognition-Primed Decision model. What role do expectancies play?
-4. Time pressure roughly doubled the blunder rate of weaker chess players but barely moved masters'. What does this imply about deadlines on an inexperienced team?
-5. Give two conditions under which a snap judgement can be trusted and two under which it cannot.
-6. Three of the five group decision styles are traps rather than options. Name them and say why.
-7. Distinguish consensus from compromise and from unanimity.
-8. What silenced the juniors in the go/no-go example, and what are the chair's four counter-moves?
-9. Which cognitive biases are actually established in software engineering, and which famous group pathologies are not?
-10. Why does "people trust AI too much" get the reliance problem backwards? What two things should be counted instead?
-11. Name PEAK's four inputs and its two outputs. Which output do teams skip, and why does that matter later?
-12. "A release that shipped fine with no rollback plan was a bad decision." Explain.
+1. Define **analysis paralysis**, and explain why failing to decide is a more common team failure than deciding badly. What makes the question underneath it unanswerable?
+2. Describe the Recognition-Primed Decision model and the role of expectancies. Give two conditions under which a snap judgement can be trusted and two under which it cannot.
+3. Time pressure roughly doubled the blunder rate of weaker chess players but barely moved masters'. What does this imply about deadlines on an inexperienced team?
+4. Three of the five group decision styles are traps rather than options. Name them and say why.
+5. Distinguish consensus from compromise and from unanimity.
+6. Pick one of **Pareto analysis**, **SWOT**, **cost-benefit** or **pair-wise comparison**. Which decision level earns it, and how do time pressure and experience each change the answer it gives?
+7. What silenced the juniors in the go/no-go example, and what are the chair's four counter-moves?
+8. Which cognitive biases are actually established in software engineering, and which famous group pathologies are not?
+9. Why does "people trust AI too much" get the reliance problem backwards? What two things should be counted instead?
+10. Name PEAK's four inputs and its two outputs. Which output do teams skip, and why does that matter later?
 
 ---
 
@@ -124,7 +122,7 @@ The rest cover the evidence the handbook now rests on.
 
 1. How does the article characterise the "IT prima donna", and which parts of that description match the geek archetype from the lecture?
 2. What leadership style or styles, as discussed by **Goleman**, would be counterproductive when dealing with the type of engineer discussed here?
-3. How would **Glen** in *Leading Geeks* recommend managing this developer? Where does his advice differ from the article's?
+3. How would **Williams** (*What You Can Learn from the People Who Manage the People Who Write Software*) and **Glen** (*Leading Geeks*) each recommend managing this developer? Where do the two differ?
 4. The article is trade journalism built on a handful of interviews. What can it be used to support, and what can it not?
 
 ### 3.3 Thite, "Leadership: A Critical Success Factor in IT Project Management" (1999)
@@ -160,7 +158,6 @@ The rest cover the evidence the handbook now rests on.
 
 1. What ranked first among what engineers report wanting, and first among de-motivators?
 2. Where do pay and recognition sit relative to purpose, and what does that imply for how you open an assignment?
-3. This is a review of self-reported wants. What is the gap between what people report wanting and what changes their behaviour?
 
 ### 3.9 Steiner (1966), Tuckman (1965) and Tuckman & Jensen (1977)
 
