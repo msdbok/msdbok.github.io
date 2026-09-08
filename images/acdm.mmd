@@ -1,29 +1,32 @@
 flowchart TB
-    S1["1 · DISCOVER<br/>ARCHITECTURAL DRIVERS<br/>Stakeholders name the functions,<br/>constraints and quality attributes"]
-    S2["2 · ESTABLISH SCOPE<br/>Drivers specification<br/>Statement of work<br/>Preliminary plan — no build schedule"]
-    S3["3 · NOTIONAL<br/>ARCHITECTURE<br/>Run-time, code and<br/>physical views"]
-    S4["4 · ARCHITECTURAL<br/>REVIEW<br/>Find and document the risks<br/>the architecture carries"]
-    G{"5 · GO / NO-GO?"}
-    E6["6 · EXPERIMENT PLANNING<br/>One targeted prototype<br/>per open risk"]
-    E7["7 · EXPERIMENTS AND<br/>REFINEMENT<br/>Run them, record results,<br/>refine the architecture"]
-    P6["6 · PRODUCTION PLANNING<br/>Every element gets an owner,<br/>an estimate inside tolerance,<br/>a place in the schedule"]
-    P7["7 · PRODUCTION<br/>Build, integrate, test —<br/>whole system or increments"]
+    S1["1 · DISCOVER ARCHITECTURAL DRIVERS<br/>Stakeholders name the functions,<br/>constraints and quality attributes"]
+    S2["2 · ESTABLISH PROJECT SCOPE<br/>Drivers specification · statement of work<br/>Master design plan — no build schedule yet"]
+    S3["3 · CREATE / REFINE ARCHITECTURE<br/>A notional architecture, made quickly<br/>— then refined on every later pass"]
+    S4["4 · ARCHITECTURE REVIEW<br/>Evaluate the design and document<br/>the issues it carries"]
+    G{"5 · PRODUCTION<br/>GO / NO-GO?"}
+    S6["6 · EXPERIMENTATION<br/>Targeted prototypes, one per open issue<br/>— then back to stage 3"]
+    S7["7 · PRODUCTION PLANNING<br/>Estimate and schedule from the<br/>architecture's own elements"]
+    S8["8 · PRODUCTION<br/>Build, integrate and test<br/>— whole system or increments"]
     S1 --> S2
     S2 --> S3
     S3 --> S4
     S4 --> G
-    G -->|"NO-GO"| E6
-    E6 --> E7
-    E7 -.-> S4
-    G -->|"GO"| P6
-    P6 --> P7
-    P7 -.->|"iterate as necessary"| S1
+    G -->|"NO-GO"| S6
+    S6 -.->|"refine"| S3
+    G -->|"GO"| S7
+    S7 --> S8
     style S1 fill:#f0f8f0,stroke:#019546,color:#282828
     style S2 fill:#f0f8f0,stroke:#019546,color:#282828
     style S3 fill:#f0f8f0,stroke:#019546,color:#282828
     style S4 fill:#f0f8f0,stroke:#019546,color:#282828
     style G fill:#019546,stroke:#2D6E2A,color:#ffffff
-    style E6 fill:#fdf6e3,stroke:#2D6E2A,color:#282828
-    style E7 fill:#fdf6e3,stroke:#2D6E2A,color:#282828
-    style P6 fill:#f0f8f0,stroke:#019546,color:#282828
-    style P7 fill:#f0f8f0,stroke:#019546,color:#282828
+    style S6 fill:#fdf6e3,stroke:#2D6E2A,color:#282828
+    style S7 fill:#f0f8f0,stroke:#019546,color:#282828
+    style S8 fill:#f0f8f0,stroke:#019546,color:#282828
+
+%% NOTE: acdm.drawio carries two hand-added "period" brackets that Mermaid cannot
+%% express (spanning bars beside stages 1-6 and 7-8, after the book's Figure 7.1).
+%% The .drawio is the source of truth for this diagram. Re-running build-diagram.py
+%% on this .mmd regenerates the stages and DROPS the brackets - re-add them, or
+%% export the SVG from the .drawio instead:
+%%   python .claude/skills/inno-marp/scripts/build-diagram.py images/acdm.drawio
