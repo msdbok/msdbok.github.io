@@ -1,125 +1,100 @@
 ---
 parent: Basics
 title: GQM
-nav_order: 1
+nav_order: 4
 layout: default
 ---
 
+# Goal Question Metric (GQM)
 
-# Goal Question Metric (GQM) Approach by Victor Basili
+GQM is a method for deciding what to measure. You state a goal, derive the questions that would tell
+you whether the goal is met, and only then choose metrics that answer those questions — so that
+every number on the dashboard traces back to something someone wanted to know.
 
-**Sources:**  
-- Caldiera, Victor R. Basili, Gianluigi, and H. Dieter Rombach. "The goal question metric approach." Encyclopedia of software engineering (1994): 528-532. ([PDF](https://www.ecs.csun.edu/~rlingard/COMP587/gqm.pdf))  
-- Kruglov, Artem, Giancarlo Succi, and Anna Gorb. "GQM and Recommender System for Relevant Metrics." Developing Sustainable and Energy-Efficient Software Systems. Springer, 2022. ([Springer](https://link.springer.com/chapter/10.1007/978-3-031-11658-2_4))
+It was developed by Victor Basili, Gianluigi Caldiera and Dieter Rombach out of defect-evaluation
+work at NASA Goddard, and it is the measurement step inside their wider Quality Improvement Paradigm
+{% cite basili1994gqm %}.
 
----
+## 1. The point is the direction of derivation
 
-## What is GQM?
+Most measurement fails in the opposite direction: a team collects what the tooling happens to emit,
+then looks for a story in it. GQM insists the goal comes first and the metric last, which means a
+metric with no question above it has no reason to exist and should be dropped.
 
-The **Goal-Question-Metric (GQM)** approach is a structured method for defining and interpreting software metrics.  
-It was developed by Victor Basili at NASA to ensure that all measurements are tied to clear, explicit goals.
+The three levels are deliberately different in kind {% cite basili1994gqm %}:
 
-**Key Principle:**  
-> "If you cannot measure it, you cannot improve it." — Derek Huether
+- **Goal** — conceptual. What are we trying to achieve, and for whom?
+- **Question** — operational. What would we have to know to tell whether we are achieving it?
+- **Metric** — quantitative. What data answers that question?
 
+A goal in GQM is not a slogan. It is stated for an **object**, for a **purpose**, with respect to a
+**quality model**, from a **viewpoint**, in an **environment** — for instance: *improve* (purpose)
+*the timeliness* (quality model) *of change-request processing* (object) *from the project manager's
+viewpoint* (viewpoint) *in our maintenance team* (environment).
 
-![GQM](image-2.png)
-*GQM: If you cannot measure it, you cannot improve it.*
+## 2. Name the object of measurement before choosing the number
 
----
+Basili and colleagues divide objects of measurement into **products** (specifications, designs,
+programs, test suites), **processes** (specifying, designing, testing) and **resources** (personnel,
+hardware, office space) {% cite basili1994gqm %}.
 
-## How GQM Works
+This is the most useful ten seconds of the method. A team whose goal concerns a *process* will often
+propose metrics about the *code*, and naming the object exposes the mismatch immediately.
 
-GQM is a **goal-driven** framework.  
-You start by defining a high-level goal, break it down into specific questions, and then identify metrics to answer those questions.
+**Example — a goal that produces its own metrics.** Take the goal *improve the defect-catching
+effectiveness of code review, from the team's viewpoint*. The object is a **process**, so the
+questions are about that process, not about the codebase: what proportion of defects are found at
+review rather than in test? How long does a review take, and does that correlate with what it finds?
+Metrics follow directly — defects found per review, review duration, and the share of released
+defects that had passed through a review untouched. Note what this excludes: total lines of code and
+total open bugs are both easy to collect and answer neither question.
 
-### The GQM Hierarchy
+Metrics may be **objective or subjective**, and GQM treats the frame for interpreting them as part of
+the model rather than an afterthought {% cite basili1994gqm %} — which matters when the thing you
+care about is not countable at all (see [the scoreboard](scoreboard.md)).
 
-1. **Goal:**  
-   - What do you want to achieve or improve?  
-   - *Example:* “Improve defect detection in code reviews.”
+## 3. Where it falls down
 
-2. **Question:**  
-   - What do you need to know to determine if the goal is met?  
-   - *Example:* “What percentage of code review comments find defects before release?”
+The founding paper states no limitations, so the honest ones come from elsewhere — including from
+Basili himself. Writing sixteen years later on why measurement programmes fail, he and his
+co-authors describe *"disillusionment about metrics on the part of developers and managers"* ending
+in *"the eventual failure of the measurement program"* {% cite basili2010gqmstrategies %}.
 
-3. **Metric:**  
-   - What data will you collect to answer the question?  
-   - *Example:* “Number of defects found per review vs. defects found in testing.”
+The precondition GQM assumes and rarely gets is a **shared** goal. A goal can be stated, written down
+and still not be held in common, and every question derived from it then inherits the disagreement.
+And GQM says nothing about who sees the resulting numbers — which is the failure mode that does the
+real damage, covered under [process metrics](metrics.md).
 
----
+## How solid is this?
 
-## GQM in Practice
-
-A typical GQM program follows four phases:
-
-1. **Planning:**  
-   - Choose the project or process to improve and define initial goals.
-2. **Definition:**  
-   - Build the GQM model (goals → questions → metrics) and document it.
-3. **Data Collection:**  
-   - Gather and validate data according to the defined metrics.
-4. **Interpretation:**  
-   - Analyze the data to answer the questions and evaluate if goals are achieved.
-
-**GQM is iterative:**  
-Results are used to refine goals and drive continuous improvement.
-
----
-
-## Why Use GQM?
-
-- **Focus:**  
-  - Measure only what matters for your goals—avoid “vanity metrics” and information overload.
-- **Alignment:**  
-  - Ensures metrics are relevant to project objectives.
-- **Flexibility:**  
-  - Works for both plan-driven and agile teams.
-- **Continuous Improvement:**  
-  - Supports ongoing learning and process refinement.
-
----
-
-## Industry Examples
-
-### NASA (GQM Origins)
-- Used GQM to improve defect detection and overall software quality.
-- Measured defect rates at each lifecycle phase to identify process weaknesses.
-- Led to the Quality Improvement Paradigm (QIP), where GQM is the measurement step.
-
-### IBM
-- GQM for engineering teams.
-- Tracks key metrics (e.g., bugs resolved, test cases run) to monitor project health.
-- Focuses on a few impactful measures rather than many trivial ones.
-
-### Microsoft
-- Found that organizational metrics (team structure, code ownership) predicted software quality better than code metrics.
-- Uses dashboards to track build success, MTTR, and customer satisfaction.
-- GQM and Scorecards for code reviews help teams identify improvement opportunities.
-
-### Other Companies
-- HP, Intel, Ericsson use GQM for process improvement (CMMI/ISO 9001).
-- Tech giants (Google, Amazon) use dashboards to monitor team performance and system reliability.
+- **GQM is well established.** It came out of a decade of empirical work at the NASA Goddard Software
+  Engineering Laboratory, its authors are among the founders of empirical software engineering, and
+  it has been applied across industry and standards practice for thirty years. Treat it as settled
+  method, not as a proposal.
+- **The founding text is a method description, not an evaluation.** `basili1994gqm` is an
+  encyclopedia entry of roughly 3,000 words that sets out the method and — verified by search —
+  states **no limitation of any kind**. That is normal for the genre, and it is why the drawbacks
+  above are cited to later work rather than to it. Looking past a method's founding paper for its
+  weaknesses is the general habit worth copying.
+- **The drawbacks come from the same author.** `basili2010gqmstrategies` introduces a successor
+  method, GQM+Strategies, and its account of measurement programmes ending in disillusionment is a
+  first-hand observation from the people who built the original.
+- **Attribution.** GQM is Basili, Caldiera & Rombach 1994. It is sometimes credited to Park, Goethert
+  & Florac's SEI work on goal-driven measurement (1996), which is a real but **separate** publication.
 
 ---
 
-## Tips for Success
+### Acknowledgments
 
-- **Choose clear, measurable goals.**
-- **Involve stakeholders in defining questions.**
-- **Select a few meaningful metrics—less is more.**
-- **Review and refine metrics regularly.**
-- **Act on the results—metrics should drive decisions and improvements.**
+This page adapts material from lectures by **Eduardo Miranda** and **David Root**
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## Key Takeaways
-
-- GQM helps teams measure what matters, not just what’s easy to count.
-- It links every metric to a higher-level purpose, supporting better decision-making.
-- Success depends on clear goals, stakeholder buy-in, and regular review.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified
+all facts and claims. In case of an error, feel free to file an issue.

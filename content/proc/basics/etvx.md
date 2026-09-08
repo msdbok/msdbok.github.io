@@ -7,108 +7,102 @@ layout: default
 
 # Entry, Task, Validation, Exit
 
+ETVX is a way of defining one unit of work so that it can be repeated, checked and improved. Every
+activity is written as four parts: what must be true before it starts, what is done, how the result
+is checked, and what must be true before it is allowed to finish.
 
-## Sources
+It comes from Ronald Radice and colleagues at IBM, who set it out as the atomic element of a
+programming process architecture {% cite radice_programming_1985 %}.
 
-Sources:
-1. Radice, Ronald A., et al. "A programming process architecture." _IBM systems journal_ 24.2 (1985): 79-90.
-2. Bechtold, Richard. _Process Definition and Modeling Guidebook. Version 01.00. 02_. No. SPC92041CMC. 1992. ([DTIC Apps](https://apps.dtic.mil/sti/tr/pdf/ADA258967.pdf?utm_source=chatgpt.com))
-3. Fowler, P., and S. Rifkin. _Software Engineering Process Group Guide CMU_. SEI-90-TR-024. Carnegie Mellon University, Pittsburg, 1990. ( [SEI](https://www.sei.cmu.edu/documents/1014/1990_005_001_15881.pdf?utm_source=chatgpt.com))
-4. Laporte, Claude Y., and Nicola R. Papiccio. "Software and systems engineering process improvement at Oerlikon Aerospace." (1996). ([espace2.etsmtl.ca](https://espace2.etsmtl.ca/id/eprint/14241/1/Software-and-Systems-Engineering-Process-Improvement-at-Oerlikon-Aerospace.pdf?utm_source=chatgpt.com))
+## 1. The four parts, and which one does the work
 
-## Origins of ETVX
-
-- The **ETVX model** was introduced in the **1980s** by **a team at IBM**, notably **R. A. Radice and colleagues**, as part of efforts to formalize software process architecture. The model was detailed in published work such as _“A Programming Process Architecture”_ in the **IBM Systems Journal (1985)**.
-    
-- It served as a **quasi-diagrammatic method** for defining atomic-level activities within a **Process Definition Method (PDM)** or broader Programming Process Architecture.
-    
-- The ETVX paradigm then gained traction beyond IBM, being adopted in process improvement and measurement contexts— **notably within the Software Engineering Institute (SEI)**. For example, a **1993 CMU/SEI Technical Report (CMU/SEI-93-TR-16)** on software measurement processes explicitly uses ETVX diagrams to describe measurement process activities, tracing back to **Radice (1985)**.
-
-
-## Essence
+**Entry** states the preconditions — inputs, approvals, availability — that *"should be satisfied
+before beginning the tasks"*. **Task** is *"a set of task descriptions that indicate what is to be
+accomplished"*. **Validation** is *"a validation procedure to verify the quality of the work items
+produced by the tasks"*. **Exit** states what must hold for the activity to be considered done
+{% cite radice_programming_1985 %}.
 
 ```mermaid
 flowchart LR
-    A[Entry <br> • Preconditions, inputs, or triggers before process starts] --> G[Task + Validation]
-
+    A[Entry<br/>preconditions, inputs, approvals] --> G[ ]
     subgraph G[ ]
         direction TB
-        B[Task <br> • Actions or procedures to execute]
-        C[Validation <br> • Quality checks, inspections, or controls]
-        B --> C
+        B[Task<br/>what is to be accomplished] --> C[Validation<br/>check the work products]
     end
-
-    G --> D[Exit <br> • Criteria or outputs showing process is complete]
-
+    G --> D[Exit<br/>criteria that must hold to finish]
 ```
 
-**ETVX** is a structured framework used to define and operationalize subprocesses or activities. It breaks down any process into four clear phases:
+The part that changes behaviour is **Exit**. Entry and Task are usually written down somewhere
+already; explicit exit criteria are what stop work being declared complete because the calendar says
+so. An activity whose exit criteria are *"the document exists"* has not been defined, it has been
+named.
 
-- **Entry** – Preconditions, inputs, or triggers that must be met before the process starts.
-    
-- **Task** – The specific actions or procedures to be executed.
-    
-- **Validation** (or Verification) – Quality checks, inspections, or controls to verify that tasks meet desired conditions.
-    
-- **Exit** – The criteria or outputs indicating that the process is complete and can move forward.
-    
+## 2. Sequence is not the same as blocking
 
-This model is typically used for defining lower-level, atomic activities rather than end-to-end organizational workflows.
+ETVX means a stage cannot *start* until its predecessor *exits*. It is easy to read that as strict
+serialisation, and Radice explicitly says otherwise: it *"does not imply that all activities or tasks
+in a later stage must wait for completion of predecessor stages. The later stages may be functioning
+in parallel with previous stages"* {% cite radice_programming_1985 %}.
 
-## ETVX Example: Software Development Phase—“Design Review”
+That clause is why ETVX sits underneath both plan-driven and iterative work. It constrains the
+*handoff* between defined activities, not the calendar.
 
-Imagine a simplified subprocess within a software development lifecycle, such as the “Design Review” step.
+{: .note }
+**A note on the V.** Validation in ETVX means checking the work products of *this* activity — a
+design reviewed, a plan checked against its assumptions. It is often taught as "reviewing the
+artefact, not testing the software", which is a useful teaching gloss but **not Radice's own
+distinction**: he lists Unit Test, Functional Verification Test and System Verification Test among
+the stages ETVX governs, so testing sits *inside* the scheme rather than outside it.
 
-- **Entry Criteria**
-    
-    - Design specification document is complete and approved.
-        
-    - Review team (architects, developers) is available.
-        
-- **Tasks**
-    
-    - Conduct a structured walkthrough of the design.
-        
-    - Identify and log design issues or inconsistencies.
-        
-    - Resolve minor technical questions immediately.
-        
-- **Validation / Verification**
-    
-    - Ensure all critical design items are approved by at least one architect and one developer.
-        
-    - Confirm that all identified issues are documented and assigned for correction.
-        
-- **Exit Criteria**
-    
-    - Reviewed design document is approved or a formal list of revisions is created.
-        
-    - Sign-off recorded, enabling the process to flow to the next phase (e.g., coding).
-        
+## 3. What it looks like on a real activity
 
-### Example – Project Planning and Tracking Process
+**Example — estimating on a defence programme.** Oerlikon Aerospace, building a laser-guided
+air-defence system with more than sixty engineers under MIL-STD-2167A, defined eight processes at
+three levels of detail and chose ETVX *"because of its simplicity"*
+{% cite laporte_software_1996 %}. Their step SPP-120, *Prepare Project Estimates and Schedule*, is
+written as:
 
-Source. Laporte, Claude Y., and Nicola R. Papiccio. "Software and systems engineering process improvement at Oerlikon Aerospace." (1996). ([espace2.etsmtl.ca](https://espace2.etsmtl.ca/id/eprint/14241/1/Software-and-Systems-Engineering-Process-Improvement-at-Oerlikon-Aerospace.pdf?utm_source=chatgpt.com))
+- **Entry** — the RFP and statement of work, the work- and organisational-breakdown structures,
+  historical data from previous programmes, and the stated assumptions.
+- **Task** — produce estimates and a schedule using the defined estimation procedure.
+- **Validation** — review the assumptions, run the checks, and update the historical database.
+- **Exit** — an approved WBS and OBS, a schedule, cost estimates, and a list of alternatives
+  considered.
 
-- **Context:** The planning and tracking process was broken into three phases:
-    
-    1. **Proposal phase** (estimate size, cost, schedule, perform risk analysis → go/no-go decision).
-        
-    2. **Planning phase after contract award** (refine and finalize plans).
-        
-    3. **Tracking phase** (collect project data, analyze, adjust plans).
-        
-- **ETVX Example Step (SPP-120 – Prepare Project Estimates and Schedule):**
-    
-    - **Entry:** Inputs like RFP/SOW, project WBS/OBS, historical data, assumptions.
-        
-    - **Task:** Develop estimates and schedules using defined procedures.
-        
-    - **Validation:** Review assumptions, update historical database, perform checks.
-        
-    - **Exit:** Approved project WBS/OBS, schedule, cost estimates, list of alternatives.
-        
-- This ETVX structure ensured that each planning activity was **repeatable, measurable, and improvable**, supporting audits, lessons learned, and process institutionalization.
+The exit list is the interesting part. "A list of alternatives considered" cannot be produced
+retrospectively, so requiring it at exit forces the estimating to have actually happened.
+
+Radice's other lesson from deploying this is organisational rather than notational: *"Defining the
+process and getting it accepted from the bottom up were the two essential parts of the solution"*
+{% cite radice_programming_1985 %}. A process defined for a team by people who do not do the work
+gets complied with, not used — which is the subject of [defining a process](define.md).
+
+## How solid is this?
+
+- **ETVX is long-established and widely reused.** It has been the standard way of writing an atomic
+  process element since 1985, and it underpins process-definition guidance well beyond IBM.
+- **Radice's paper is an experience report from one company.** It describes a scheme and its
+  deployment; it does not compare ETVX against an alternative or measure the improvement, so it
+  supports *how to write an activity*, not *this notation outperforms others*.
+- **Oerlikon is a single industrial case** {% cite laporte_software_1996 %} — a detailed and candid
+  one, presented by its participants at a practitioner conference rather than independently
+  evaluated.
+- **The "validation is not testing" gloss is ours, not Radice's** — see the note above. Say so if you
+  teach it.
+
+---
+
+### Acknowledgments
+
+This page adapts material from lectures by **Eduardo Miranda** and **David Root**
+{% cite root2014lectures %} on software project management.
+
+### References
+
+{% bibliography --cited %}
+
+---
 
 {: .highlight }
-**Disclaimer:** AI is used for text extraction, sumarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified
+all facts and claims. In case of an error, feel free to file an issue.

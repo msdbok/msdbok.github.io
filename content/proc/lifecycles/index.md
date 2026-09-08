@@ -3,111 +3,73 @@ parent: Process
 title: Lifecycles
 nav_order: 2
 layout: default
+page_type: topic-hub
 ---
 
-# Why Care About Lifecycles?
+# Lifecycles
 
-_* adapted from Root, 2014_
+A software lifecycle is the cradle-to-grave existence of a product — initial development, repairs
+and enhancements, and eventual decommissioning. A **lifecycle model** generalises that into phases
+with associated activities and artefacts, so that a team can say where it is and what comes next.
 
-Understanding software lifecycles is essential for effective communication and project management:
+That is most of the value: a shared model lets the team discuss progress, lets management see
+status, and tells a customer what happens next.
 
-- **Communication:**  
-  - Helps team members discuss plans and progress.
-  - Enables management to track project status.
-  - Gives customers a clear idea of what happens next.
+## 1. Process, lifecycle model, framework
 
----
+These three words are used loosely and are examined precisely, so it is worth putting them on one
+ladder from most abstract to most concrete:
 
-## Definition
+- **Lifecycle model** — the phases a product passes through and the go/no-go points between them.
+  Waterfall, spiral, incremental.
+- **Framework** — a reusable structure of roles, events and practices that a team adopts. Scrum
+  describes itself as *"a container for other techniques, methodologies, and practices"*
+  {% cite schwaber2020scrumguide %}, which is exactly what a framework is and exactly what a
+  lifecycle model is not.
+- **Process** — what one organisation actually does, in detail: the specific steps, at the level
+  [ETVX](../basics/etvx.md) describes them.
 
-- **Cambridge Dictionary:**  
-  “The series of changes that a living thing goes through from the beginning of its life until death.”  
-  “The length of time that something lasts or can be used.”
+Process definitions carry more detail than lifecycle models, and a process is often defined *within*
+a lifecycle model. SWEBOK's caution belongs here too: *"There is no best software process… No ideal
+process, or set of processes, exists"* {% cite bourque_swebok_2014 %}.
 
-- **Reifer (1997):**  
-  “Period of time that begins when a software product is conceived and ends when the product is retired from use.”
+## 2. Which model, and what it optimises
 
----
+| Model | Structure | Feedback | Choose it when |
+|---|---|---|---|
+| [Waterfall](waterfall.md) | Linear, once through | Late | Requirements are stable and the work must be contractible and audited |
+| [V-Model](vmodel.md) | Waterfall, drawn to show V&V | Late, but tests designed early | Verification must be demonstrated to a regulator or customer |
+| [Incremental](incremental.md) | Usable slices, staged | Per increment | You know what to build but cannot build it all at once |
+| [Iterative](iterative.md) | Whole product, repeated | Every iteration | You do not yet know exactly what to build |
+| [Prototyping and RAD](prototyping.md) | Build to answer a question | Immediate | A specific uncertainty is cheaper to resolve by building than by analysis |
+| [Spiral](spiral.md) | Risk-driven loops | Every cycle | Risk should decide what happens next, and you control the commitment points |
 
-## Software Lifecycle
+This is a map, not a menu. In practice teams combine them — incremental delivery developed
+iteratively, with prototypes for the risky parts — and the spiral is best read as a rule for
+choosing among the others one cycle at a time.
 
-The software lifecycle describes the cradle-to-grave existence of a software product or software-intensive system.  
-It includes:
-- Initial development
-- Repairs and enhancements
-- Decommissioning
+## How solid is this?
 
-**Why is this important?**  
-Managing the entire lifecycle requires deeper knowledge than just basic development experience.  
-It involves planning for maintenance, upgrades, and eventual retirement.
-
----
-
-## Lifecycle Models
-
-Lifecycle models generalize the software development process into steps with associated activities and artifacts.
-
-- **Purpose:**  
-  - Model how a project is planned, controlled, and monitored from inception to completion.
-  - Provide a starting point for defining project activities.
-  - Help clarify what the end point of a project is.
-
----
-
-## Process vs. Lifecycle
-
-**Process:**  
-- A sequence of steps performed for a given purpose.  
-- Webster’s: “A series of actions or operations conducing to an end.”
-
-**Lifecycle:**  
-- The overall journey of a software product from conception to retirement.
-
-**Key Differences:**
-- A **process** refers to the specific steps used in an organization to build systems.
-- A **lifecycle model** is a higher-level framework that outlines phases but not detailed activities.
-- Process definitions include more detail than lifecycle models.
-- Software processes are sometimes defined within the context of a lifecycle model.
-
-**Note:**  
-The concept of software process is rarely presented in undergraduate education, but is critical for professional practice.
+These models are well-established vocabulary, and that is the right claim for them. **No source in
+this review compares lifecycle models on measured outcomes**, so the "choose it when" column is
+reasoned from what each model does, not from evidence that it wins. Each page states its own
+sourcing; the weakest are prototyping and RAD, taught here as practice with no primary study behind
+them. The ladder in §1 is a convention drawn from SWEBOK, Pressman and the Scrum Guide — citable,
+but a convention rather than a finding, and other authors draw the lines differently.
 
 ---
 
-## Common Software Lifecycle Models
+### Acknowledgments
 
-- **Ad Hoc:** No formal structure; processes are improvised.
-- **Iterative:** Development cycles through repeated refinement.
-- **Incremental:** System built in small, functional pieces.
-- **Classic (Waterfall):** Sequential phases; each must be completed before the next begins.
-- **Prototype:** Early versions built to clarify requirements.
-- **RAD (Rapid Application Development):** Emphasizes quick development and iteration.
-- **Spiral:** Combines iterative development with risk analysis.
-- **WinWin:** Focuses on stakeholder negotiation and agreement.
-- **V Model:** Emphasizes verification and validation at each stage.
-- **Chaos:** Recognizes unpredictability and adapts to change.
+These pages adapt material from lectures by **Eduardo Miranda** and **David Root**
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## Key Takeaways
-
-- Lifecycle models help teams and organizations plan, communicate, and manage software projects from start to finish.
-- Understanding the difference between process and lifecycle is crucial for defining roles, responsibilities, and activities.
-- Choosing the right lifecycle model depends on project needs, team experience, and organizational context.
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified
+all facts and claims. In case of an error, feel free to file an issue.

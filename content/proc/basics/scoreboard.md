@@ -1,150 +1,112 @@
 ---
 parent: Basics
 title: Scoreboard
-nav_order: 2
+nav_order: 6
 layout: default
 ---
 
-# Scoreboard for process measurement (Mota, 2009)
+# Scoreboard
 
-_**Based on:**  Mota, Pedro João. "Scoreboard: a support for management information needs." _MSE Reflection Paper_ (2009)._
-## 1. Core Idea
+A scoreboard collects the team's own judgement — on a short, recurring, usually anonymous
+questionnaire — and tracks it as a **trend** rather than a number. It is what you use when the thing
+that matters most is real, consequential and not countable: morale, trust, whether estimates are
+believed, whether a role is working.
 
-The **Scoreboard** is a lightweight tool to support project and team managers by collecting **qualitative insights** directly from team members.
+The method as taught here is Pedro Mota's, written up from a student team at Carnegie Mellon
+{% cite mota2009scoreboard %}.
 
-- Instead of relying only on quantitative metrics (budget, code size, defect counts), it captures **perceptions and opinions**—often the only way to assess issues like morale, cohesion, or trust.
-    
-- It’s especially useful for **distributed teams** or in areas where hard data is hard to define or too costly to measure
+## 1. The trend carries the signal, not the score
 
-## 2. How It Works
+A single week's average is close to meaningless. Two identical scores a fortnight apart mean
+something quite different from a score that has fallen three weeks running. So questions are asked
+repeatedly and in the same words, and it is the direction that triggers a conversation.
 
-1. **Design questions** – general (“How do you evaluate the Project Manager?”) + specific (“How accurate were the weekly task estimates?”).
-    
-2. **Collect answers** – usually via a web questionnaire, short (≤10 min), ideally anonymous to encourage honesty.
-    
-3. **Evaluate answers** – semantic 5-point scale (Very Bad → Very Good) with optional comments.
-    
-4. **Analyze results** – highlight worst 5 issues and downward trends.
-    
-5. **Discuss in reflection meetings** – the data itself doesn’t solve problems, but triggers conversations and commitments.
-    
-6. **Maintain scoreboard** – add/remove questions to stay relevant, avoid fatigue.
+Two kinds of question run side by side {% cite mota2009scoreboard %}. **General** questions cover
+every role and stay in the survey permanently, so their trend becomes that role's baseline.
+**Specific** questions track a current risk and are retired once the risk closes. Mota describes the
+division by what each is for: the general set acted *"like a smoke detector just to signal something
+wrong, while the specific approach focused on the concrete problems"*.
+
+Questions that had been consistently good for several weeks were removed, to keep the survey short
+enough that people kept answering it honestly.
 
 ```mermaid
 flowchart LR
-  %% Phases
   subgraph T[Think]
-    GQM(Define goals & info needs<br/>use GQM if possible)
-    QDEF(Design questions<br/>• General roles/areas<br/>• Specific issues/risks)
-    SCALE(Define scale & inputs<br/>• 5-level semantic scale<br/>• Comments<br/>• Optional “Don’t know”)
-    GQM --> QDEF --> SCALE
+    GOAL(Define goals and information needs)
+    QDEF(Design questions<br/>general roles + specific risks)
+    SCALE(5-level semantic scale<br/>+ comments)
+    GOAL --> QDEF --> SCALE
   end
-
   subgraph A[Act]
-    DIST(Distribute questionnaire<br/>web form, short)
-    RESP(Collect responses)
-    DIST --> RESP
+    DIST(Distribute short survey) --> RESP(Collect responses)
   end
-
   subgraph R[Reflect]
-    AGG(Aggregate data<br/>• Averages by question<br/>• Trends over time)
-    SELECT(Select focus<br/>• Worst ~5 items<br/>• Downward trends)
-    MEET(Reflection meeting<br/>Discuss: what/why/why missed/how prevent)
-    ACTION(Plan actions & owners)
-    AGG --> SELECT --> MEET --> ACTION
+    AGG(Aggregate: averages and trends) --> SELECT(Worst items and downward trends)
+    SELECT --> MEET(Reflection meeting) --> ACTION(Actions with owners)
   end
-
   subgraph M[Maintain]
-    UPDATE(Update questions<br/>• Add for new risks/actions<br/>• Remove stable/high items<br/>• Tune wording/scales)
-    BALANCE(Balance with quantitative metrics)
-    CHECK(Monitor adherence & trust)
-    UPDATE --> BALANCE --> CHECK
+    UPDATE(Add for new risks<br/>retire stable questions) --> CHECK(Monitor trust and response rate)
   end
-
-  %% Cross-phase flow
   SCALE --> DIST
   RESP --> AGG
   ACTION --> UPDATE
-  CHECK -.-> GQM
-
-  %% Cadence (as a node, not a note)
-  WEEK[[Weekly cadence:<br/>Thu collect → Fri reflect]]
-  DIST -. aligns .-> WEEK
-  MEET -. aligns .-> WEEK
-
+  CHECK -.-> GOAL
 ```
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor TM as Team Members
-    actor MM as Metrics Manager
-    actor PM as Project Manager
-    participant S as Survey System
+The short gap between answering and discussing is deliberate: Mota's team collected on Thursday and
+held the reflection meeting on Friday. Data nobody acts on within the week teaches the team that
+answering is pointless.
 
-    %% Think
-    MM->>MM: Prepare questionnaire<br/>(add/remove/tune questions)
-    MM->>S: Configure survey (scale, comments, anonymity)
+## 2. Cover every role, including the ones that look minor
 
-    %% Act
-    MM->>S: Distribute survey (Thu morning)
-    S-->>TM: Email with survey link
-    TM->>S: Submit answers (~10 min, honest, anonymous if possible)
-    S-->>MM: Collect responses
+**Example — the role that was left out.** Mota's team, the Mappers project, ran roughly 35 questions
+across roles and general team issues. The **Training Manager** was deliberately omitted from the
+scoreboard as *"a minor role not relevant to measure"*. That omission itself became a problem: it
+*"was a reason for some debate and concern inside the team"* {% cite mota2009scoreboard %}. The
+lesson he draws is a coverage rule — evaluate every role, because *"even minor or less relevant
+roles/activities can be the source of major problems"*.
 
-    %% Reflect
-    MM->>MM: Aggregate results (averages & trends)
-    MM->>MM: Select focus (worst 5 & downward trends)
-    MM-->>PM: Prepare report for reflection
-    PM->>TM: Facilitate reflection meeting (Fri)
-    PM->>PM: Discuss problems, causes, prevention
-    PM->>PM: Define corrective actions & assign owners
+What you decline to measure is a message too. A role left off the board has been told, in public,
+where it ranks.
 
-    %% Maintain
-    PM-->>MM: Share action items
-    MM->>MM: Update questions (add for new risks, remove stable items)
-    MM->>MM: Balance qualitative with quantitative metrics
-    MM->>MM: Monitor adherence & trust
+## 3. Anonymity is a trade, not a free good
 
-```
+The Mappers scoreboard kept answers anonymous, which buys candour. The cost is that responses can
+only be reported in aggregate, and Mota records the consequence plainly: *"averages can (and did)
+hide dispersed values, preventing problems from being detected"* {% cite mota2009scoreboard %}.
 
-## 3. Strengths
+A team split evenly between *very good* and *very bad* produces the same mean as a team that is
+uniformly indifferent, and the second is a far less urgent problem than the first. If you keep
+anonymity, watch the spread and the comment field, not the mean alone.
 
-- **Cost-efficient**: quick for members, rich data for managers.
-    
-- **Focus**: highlights most important issues for team discussion.
-    
-- **Promotes reflection**: helps individuals step back and assess (“reflection-on-action”).
-    
-- **Flexible**: can extend to risk management, training needs, or team suggestions.
+## How solid is this?
 
-## 4. Weaknesses
+- **This is grey literature.** `mota2009scoreboard` is a CMU Master of Software Engineering
+  reflection paper describing the author's own team — a careful method walkthrough, not evidence
+  that the method works. There is no comparison group and no outcome measure.
+- **The ratings are ordinal.** A 4 is not twice a 2, so averaging them is not strictly meaningful.
+  Mota raises the averaging problem in terms of hidden dispersion; the measurement-scale objection is
+  ours, and it points the same way — read the distribution.
+- **A scoreboard measures people's judgement of a process, which makes it exactly the kind of data
+  that degrades when used to appraise individuals.** Mota's role-level framing is what keeps it
+  pointed at roles rather than persons; see [process metrics](metrics.md) for why that matters.
+- **The course's slides have carried two sourcing errors** here — a "Fiber Team" and a date of 2014.
+  Neither appears anywhere in Mota's paper; the team is Mappers and the work is 2009 or later.
 
-- Can overshadow quantitative metrics if overused.
-    
-- Lack of shared meaning in scales may skew results.
-    
-- Averages can hide dissent (outliers lost in mean).
-    
-- If results aren’t acted on, team motivation to answer drops.
-    
-- Danger of being seen as **evaluating individuals** instead of roles/activities.
-    
-- Requires continuous trust and maintenance
+---
 
-## 5. Lessons from the Mappers Project
+### Acknowledgments
 
-- Weekly cycle: answer Thursday → analyze same day → discuss Friday. Short gap between answering and discussion is crucial.
-    
-- Around **35 questions** balanced between roles and general team issues.
-    
-- Questions that stabilized (consistently good for 4+ weeks) were removed to prevent fatigue.
-    
-- Checklists (Google Docs) ensured process discipline.
-    
-- The Scoreboard became the **main source of reflection input**, more than quantitative metrics.
+This page adapts material from lectures by **Eduardo Miranda** and **David Root**
+{% cite root2014lectures %} on software project management.
 
+### References
 
+{% bibliography --cited %}
+
+---
 
 {: .highlight }
-**Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified
+all facts and claims. In case of an error, feel free to file an issue.

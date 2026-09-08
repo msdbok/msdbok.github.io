@@ -2417,3 +2417,476 @@ In order to diminish social loafing from a group, several strategies could be pu
                   rather than randomized, and the human-AI teams were 2 humans plus the
                   operator against 3 humans},
 }
+
+% ============================================================================
+% Processes block — added 2026-09-08 from review/proc/ (48 summaries, 9 themes)
+% Keys follow the project convention [author][year][topic] (root CLAUDE.md) and
+% match the review summary keys exactly, so a summary and its bib entry share
+% one identifier. Works that already had a site entry are NOT duplicated here.
+% ============================================================================
+
+% --- basics: process definition, ETVX, measurement -------------------------
+
+@incollection{basili1994gqm,
+  title      = {The Goal Question Metric Approach},
+  author     = {Basili, Victor R. and Caldiera, Gianluigi and Rombach, H. Dieter},
+  booktitle  = {Encyclopedia of Software Engineering},
+  publisher  = {John Wiley \& Sons},
+  date       = {1994},
+  note       = {The primary source for GQM. Method description, not a study:
+                it reports no evaluation and states no limitations, which is
+                why the drawback question is answered from basili2010gqmstrategies.
+                Frequently misattributed to Park, Goethert \& Florac (SEI 1996),
+                which is a separate later work},
+}
+
+@article{basili2010gqmstrategies,
+  title      = {Linking Software Development and Business Strategy Through Measurement},
+  author     = {Basili, Victor R. and Heidrich, Jens and Lindvall, Mikael and
+                M{\"u}nch, J{\"u}rgen and Regardie, Myrna and Rombach, Dieter and
+                Seaman, Carolyn and Trendowicz, Adam},
+  journaltitle = {Computer},
+  volume     = {43},
+  number     = {4},
+  pages      = {57--65},
+  doi        = {10.1109/MC.2010.108},
+  date       = {2010},
+  note       = {GQM+Strategies. Its account of measurement programmes collapsing
+                into disillusionment is the limitation GQM's own founding paper
+                does not state},
+}
+
+@inproceedings{hoffman2000metrics,
+  title      = {The Darker Side of Metrics},
+  author     = {Hoffman, Douglas},
+  booktitle  = {Pacific Northwest Software Quality Conference (PNSQC)},
+  date       = {2000},
+  note       = {Practitioner conference paper; consultant experience, no dataset.
+                Source of the 25-duplicate-defect-reports case. NOTE: a different
+                author from hoffmann2021humanside --- do not conflate},
+}
+
+@misc{mota2009scoreboard,
+  title      = {Scoreboard: A Support for Management Information Needs},
+  author     = {Mota, Pedro Jo{\~a}o},
+  type       = {{MSE} Reflection Paper},
+  organization = {Carnegie Mellon University},
+  date       = {2009},
+  note       = {Grey literature: a CMU MSE student reflection paper on the
+                author's own team, not a peer-reviewed paper. A method
+                walkthrough, not evidence the method works. RQ4 cites it as
+                2008; the document references material from 2009 or later and
+                the handbook page has always dated it 2009},
+}
+
+@manual{ieee730sqa,
+  title        = {{IEEE} Standard for Software Quality Assurance Plans},
+  organization = {{IEEE} Computer Society},
+  number       = {{IEEE} Std 730-2002},
+  date         = {2002},
+  note         = {Revision of IEEE Std 730-1998. Defines the SQAP: 16 sections,
+                  10 mandatory reviews, and a clause forbidding silent omission
+                  --- an inapplicable section must say so and give reasons},
+}
+
+@incollection{fagan2002inspections,
+  title     = {A History of Software Inspections},
+  author    = {Fagan, Michael},
+  booktitle = {Software Pioneers: Contributions to Software Engineering},
+  editor    = {Broy, Manfred and Denert, Ernst},
+  publisher = {Springer},
+  pages     = {215--222},
+  date      = {2002},
+  note      = {Invited retrospective, i.e. recollection rather than evidence.
+                Companion to the sd\&m Conference 2001 talk},
+}
+
+@misc{safina_psp,
+  title        = {The Personal Software Process: Brief Introduction},
+  author       = {Safina, Larisa},
+  organization = {Innopolis University},
+  date         = {2024},
+  note         = {Grey literature: a 70-slide teaching deck. No venue, year,
+                  peer review, DOI or reference list; date is approximate},
+}
+
+% --- lifecycles ------------------------------------------------------------
+
+@inproceedings{royce1970waterfall,
+  title      = {Managing the Development of Large Software Systems},
+  author     = {Royce, Winston W.},
+  booktitle  = {Proceedings of {IEEE} {WESCON}},
+  volume     = {26},
+  pages      = {1--9},
+  date       = {1970},
+  note       = {The original. Reprinted as royce_managing_1987 (ICSE-9).
+                Contains no data --- the author calls his content
+                ``prejudices'' --- and argues the single-pass sequence is
+                ``risky and invites failure''. The word ``waterfall'' does not
+                appear in it},
+}
+
+@book{pressman2010incremental,
+  title     = {Software Engineering: A Practitioner's Approach},
+  author    = {Pressman, Roger S.},
+  edition   = {7},
+  publisher = {McGraw-Hill},
+  date      = {2010},
+  note      = {Cited for ch. 1 \S1.4 and ch. 2 \S2.3 --- the iterative/incremental
+                distinction (requirements certainty as the axis) and the V-model
+                as the classic life cycle redrawn. Chapter numbering differs from
+                pressman2005software (5e)},
+}
+
+@misc{stsc1996lifecycles,
+  title        = {System Life Cycle and Methodologies},
+  organization = {{US} Air Force Software Technology Support Center},
+  date         = {1996},
+  note         = {Grey literature: chapter 3 of a government program-manager
+                  acquisition guidebook, version 2.0, pp. 3-1--3-18. No named
+                  author. Prints a boxed note recommending against waterfall
+                  --- in 1996},
+}
+
+@techreport{lattanze_acdm,
+  title       = {The Architecture Centric Development Method},
+  author      = {Lattanze, Anthony J.},
+  institution = {School of Computer Science, Carnegie Mellon University},
+  number      = {{CMU}-{ISRI}-05-103},
+  date        = {2005},
+  note        = {February 2005. RQ5 cites this work as ``ICSOFT 2009'', which is
+                  unconfirmed and probably refers to Lattanze's 2009 CRC book},
+}
+
+@misc{walton2004iterative,
+  title     = {Iterative vs. Waterfall Software Development: Why Don't Companies Get It?},
+  author    = {Walton, Bill},
+  publisher = {Computerworld},
+  date      = {2004-02-20},
+  note      = {Grey literature: a trade-press opinion column by an independent
+                consultant, not research},
+}
+
+@misc{balduino2007openup,
+  title        = {Introduction to {OpenUP} (Open Unified Process)},
+  author       = {Balduino, Ricardo},
+  organization = {Eclipse Process Framework Project},
+  date         = {2007},
+  note         = {Grey literature: a 9-page project white paper by an IBM Rational
+                  engineer who is a committer on the project it describes},
+}
+
+% --- frameworks ------------------------------------------------------------
+
+@report{abrahamsson2002agile,
+  title       = {Agile Software Development Methods: Review and Analysis},
+  author      = {Abrahamsson, Pekka and Salo, Outi and Ronkainen, Jussi and Warsta, Juhani},
+  institution = {{VTT} Technical Research Centre of Finland},
+  number      = {{VTT} Publications 478},
+  date        = {2002},
+  note        = {The canonical survey of the agile method family; every method in
+                  the same six-part structure. Its four criteria for what makes a
+                  method agile --- including ``easy to learn and to modify'' ---
+                  are proposed, not validated: no instrument, no scoring},
+}
+
+@article{dikert2016scaling,
+  title        = {Challenges and Success Factors for Large-Scale Agile Transformations:
+                  A Systematic Literature Review},
+  author       = {Dikert, Kim and Paasivaara, Maria and Lassenius, Casper},
+  journaltitle = {Journal of Systems and Software},
+  volume       = {119},
+  pages        = {87--108},
+  doi          = {10.1016/j.jss.2016.06.013},
+  date         = {2016},
+  note         = {35 challenges, 29 success factors, from 1{,}875 screened to 52
+                  papers to 42 cases. By its authors' own count roughly 90\% of
+                  the included papers are experience reports, and they state they
+                  ``decided not to make quantitative interpretations''},
+}
+
+@article{edison2022comparing,
+  title        = {Comparing Methods for Large-Scale Agile Software Development:
+                  A Systematic Literature Review},
+  author       = {Edison, Henry and Wang, Xiaofeng and Conboy, Kieran},
+  journaltitle = {{IEEE} Transactions on Software Engineering},
+  volume       = {48},
+  number       = {8},
+  doi          = {10.1109/TSE.2021.3069039},
+  date         = {2022},
+  note         = {35{,}215 records screened to 191. Maps the scaling methods and
+                  deliberately declines to rank them},
+}
+
+@article{kuhrmann2019hybrid,
+  title        = {Hybrid Software Development Approaches in Practice: A European Perspective},
+  author       = {Kuhrmann, Marco and Diebold, Philipp and M{\"u}nch, J{\"u}rgen and
+                  Tell, Paolo and Trektere, Kitija and McCaffery, Fergal and
+                  Garousi, Vahid and Felderer, Michael and Linssen, Oliver and
+                  Hanser, Eckhart and Prause, Christian R.},
+  journaltitle = {{IEEE} Software},
+  volume       = {36},
+  number       = {4},
+  pages        = {20--31},
+  doi          = {10.1109/MS.2018.110161245},
+  date         = {2019},
+  note         = {HELENA stage 1, 69 respondents, self-selected, European, 2016.
+                  Hybrids ``emerge from the evolution of different work practices''.
+                  Its own 19.6\%/83.9\% split sums to 103.5\% --- quote both and
+                  say so. Shows hybrids are used, not that they work better:
+                  there is no outcome data. The DOI year 2018 is early access},
+}
+
+@article{middleton2012kanban,
+  title        = {Lean Software Management: {BBC} Worldwide Case Study},
+  author       = {Middleton, Peter and Joyce, David},
+  journaltitle = {{IEEE} Transactions on Engineering Management},
+  volume       = {59},
+  number       = {1},
+  pages        = {20--32},
+  doi          = {10.1109/TEM.2010.2081675},
+  date         = {2012},
+  note         = {The BBC Worldwide ``Digi-Hub'' team: lead time down 37\%,
+                  consistency up 47\%, defects down 24\%, features started
+                  84 to 64. One team, one company, twelve months, no control
+                  group. OpenAlex reports 2011, which is the early-access posting},
+}
+
+@misc{schwaber2016scrumguide,
+  title  = {The Scrum Guide},
+  author = {Schwaber, Ken and Sutherland, Jeff},
+  url    = {https://scrumguides.org/},
+  date   = {2016},
+  note   = {Superseded by schwaber2020scrumguide. Cited only where the wording
+            differs: 2016 reads ``Scrum's roles, artifacts, events, and rules
+            are immutable''; 2020 narrows this to ``The Scrum framework, as
+            outlined herein, is immutable''. 2016 still has a Development Team},
+}
+
+@misc{schwaber2020scrumguide,
+  title  = {The Scrum Guide},
+  author = {Schwaber, Ken and Sutherland, Jeff},
+  url    = {https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf},
+  date   = {2020-11},
+  note   = {The current edition, and the one to teach. One Scrum Team with three
+            accountabilities --- ``Development Team'' is gone. Still states the
+            framework is immutable and that Scrum ``functions well as a container
+            for other techniques, methodologies, and practices''. A normative
+            document written by the framework's owners and distributed by
+            organisations that certify in it --- provenance, not an attack},
+}
+
+@misc{sutherland_scrum_origins,
+  title  = {The Scrum Papers: Nuts, Bolts, and Origins of an Agile Process},
+  author = {Sutherland, Jeff and Schwaber, Ken},
+  date   = {2007},
+  note   = {Grey literature: a ~200-page compilation (draft 14 Oct 2007), not a
+            paper. Includes the OOPSLA'95 Scrum Development Process paper and
+            first-Scrum retrospectives},
+}
+
+@misc{xp_gentle_intro,
+  title  = {Extreme Programming: A Gentle Introduction},
+  author = {Wells, Don},
+  url    = {http://www.extremeprogramming.org/},
+  date   = {2013},
+  note   = {Grey literature: a personal website maintained 1999--2013, and the
+            most widely linked plain-English statement of the XP practices.
+            Not peer reviewed and not the primary source --- that is beck2004xp},
+}
+
+@misc{kotwal_cave,
+  title        = {Choose Your Cave Weapon Wisely},
+  author       = {Kotwal, Aadish K.},
+  organization = {Institute for Software Research, Carnegie Mellon University},
+  date         = {2013},
+  note         = {Grey literature: a graduate student paper, undated; the survey
+                  covers MSE 2012 and 2013 teams and its latest reference is 2012.
+                  ``Criticality of product'' is Kotwal's criterion, not Rockwood's},
+}
+
+@misc{narsu2002lessons,
+  title        = {Lessons Learned Practicing Agile Development},
+  author       = {Narsu, Uttam and Barnett, Liz},
+  organization = {Giga Information Group},
+  number       = {{RPA}-042002-00013},
+  date         = {2002-04-18},
+  note         = {Grey literature: a paid analyst ``Planning Assumption'' for
+                  enterprise IT buyers, built from interviews with six adopting
+                  organisations. Its Case Study No. 3 is probably --- but not
+                  verifiably --- the same ThoughtWorks engagement reported from
+                  the inside by elssamadisy_xp_2001},
+}
+
+% --- AI and agentic development -------------------------------------------
+
+@article{mohamed2025llm,
+  title        = {The Impact of {LLM}-Assistants on Software Developer Productivity:
+                  A Systematic Review and Mapping Study},
+  author       = {Mohamed, Amr and Assi, Maram and Guizani, Mariam},
+  doi          = {10.1145/3809494},
+  eprint       = {2507.03156},
+  eprinttype   = {arxiv},
+  date         = {2025},
+  note         = {39 peer-reviewed studies, 2014--2024. Whether LLM assistants
+                  improve or degrade code quality ``remains unresolved''; 59\% of
+                  studies are exploratory. Reviews rather than measures, and its
+                  cut-off means it covers assistants, not multi-file agents},
+}
+
+@inproceedings{chou2025dice,
+  title      = {Building Software by Rolling the Dice: A Qualitative Study of Vibe Coding},
+  author     = {Chou, Yen-Ting and Jiang, Yiwen and Chen, Yuhan and Weng, Yiyang and
+                Jackson, Cassidy and Zimmermann, Thomas and Jones, Jane},
+  booktitle  = {Proceedings of the {ACM} on Software Engineering ({FSE})},
+  eprint     = {2512.22418},
+  eprinttype = {arxiv},
+  date       = {2025},
+  note       = {Grounded-theory study of 20 videos and 254 prompts, accepted to
+                  FSE'26. Self-selected, streamed, and opinion videos are advocacy},
+}
+
+@article{terragni2024future,
+  title      = {The Future of {AI}-Driven Software Engineering},
+  author     = {Terragni, Valerio and Vella, Annie and Roop, Partha and Blincoe, Kelly},
+  journaltitle = {{ACM} Transactions on Software Engineering and Methodology},
+  doi        = {10.1145/3715003},
+  eprint     = {2406.07737},
+  eprinttype = {arxiv},
+  date       = {2024},
+  note       = {A vision paper: position and research agenda, unfalsifiable at
+                  time of writing. Cite for the open questions, not for findings},
+}
+
+@misc{bhati2026agentic,
+  title      = {Beyond Code Generation: Reliability, Verification, and Cost Economics
+                in the Agentic Software Development Lifecycle},
+  author     = {Bhati, Deepak},
+  eprint     = {2609.04681},
+  eprinttype = {arxiv},
+  date       = {2026-09-04},
+  note       = {UNREFEREED single-author preprint. Contributes vocabulary
+                (Throughput Paradox, Verification Tax) and a systems model, not
+                evidence; produces no numbers of its own and draws partly on
+                vendor and analyst material. Name a phenomenon with it; never
+                rest a claim on it},
+}
+
+% --- founding texts: named as origins, not read for this review ------------
+% These are cited where a page must name where a method comes from. No claim
+% on any page is attributed to them, because the review did not read them.
+
+@book{beck2004xp,
+  title     = {Extreme Programming Explained: Embrace Change},
+  author    = {Beck, Kent and Andres, Cynthia},
+  edition   = {2},
+  publisher = {Addison-Wesley},
+  isbn      = {978-0-321-27865-4},
+  date      = {2004},
+  note      = {The primary source for XP. Named as origin; not read for this
+                review --- XP claims here rest on abrahamsson2002agile,
+                xp_gentle_intro and elssamadisy_xp_2001},
+}
+
+@book{anderson2010kanban,
+  title     = {Kanban: Successful Evolutionary Change for Your Technology Business},
+  author    = {Anderson, David J.},
+  publisher = {Blue Hole Press},
+  isbn      = {978-0-9845214-0-1},
+  date      = {2010},
+  note      = {The primary source for Kanban in software. Named as origin; not
+                read for this review --- Kanban evidence here is middleton2012kanban},
+}
+
+@book{poppendieck2003lean,
+  title     = {Lean Software Development: An Agile Toolkit},
+  author    = {Poppendieck, Mary and Poppendieck, Tom},
+  publisher = {Addison-Wesley},
+  isbn      = {978-0-321-15078-3},
+  date      = {2003},
+  note      = {The primary source for lean software development. Named as origin;
+                not read for this review},
+}
+
+@book{leffingwell2020safe,
+  title     = {{SAFe} 5.0 Distilled: Achieving Business Agility with the Scaled Agile Framework},
+  author    = {Leffingwell, Dean},
+  publisher = {Addison-Wesley},
+  isbn      = {978-0-13-682340-7},
+  date      = {2020},
+  note      = {The framework's own definitional text, by its creator. Named as
+                origin; not read for this review --- SAFe evidence here is
+                dikert2016scaling, edison2022comparing and almeida_large-scale_2021},
+}
+
+@misc{beck2001manifesto,
+  title  = {Manifesto for Agile Software Development},
+  author = {Beck, Kent and Beedle, Mike and van Bennekum, Arie and Cockburn, Alistair
+            and Cunningham, Ward and Fowler, Martin and Grenning, James and
+            Highsmith, Jim and Hunt, Andrew and Jeffries, Ron and Kern, Jon and
+            Marick, Brian and Martin, Robert C. and Mellor, Steve and
+            Schwaber, Ken and Sutherland, Jeff and Thomas, Dave},
+  url    = {https://agilemanifesto.org/},
+  date   = {2001},
+  note   = {Four value statements and twelve principles. A position statement by
+            its seventeen signatories, not a study},
+}
+
+% --- process prehistory: cited on proc/basics/history.md -------------------
+
+@book{smith1776wealth,
+  title     = {An Inquiry into the Nature and Causes of the Wealth of Nations},
+  author    = {Smith, Adam},
+  publisher = {W. Strahan and T. Cadell},
+  date      = {1776},
+  note      = {Cited for the pin-factory passage on the division of labour ---
+                the earliest statement of the idea that specialising steps
+                raises output},
+}
+
+@book{taylor1911scientific,
+  title     = {The Principles of Scientific Management},
+  author    = {Taylor, Frederick Winslow},
+  publisher = {Harper \& Brothers},
+  date      = {1911},
+  note      = {Cited as the origin of studying work as a process. Its
+                separation of planning from execution is also the root of the
+                objections raised against process-heavy management ever since},
+}
+
+@book{deming1986crisis,
+  title     = {Out of the Crisis},
+  author    = {Deming, W. Edwards},
+  publisher = {{MIT} Center for Advanced Engineering Study},
+  date      = {1986},
+  note      = {Cited as the origin of preventing defects by improving the
+                process rather than inspecting them out at the end},
+}
+
+% --- framework primary texts: RUP and Microsoft Synchronize-and-Stabilize ---
+
+@article{cusumano1999internettime,
+  title        = {Software Development on Internet Time},
+  author       = {Cusumano, Michael A. and Yoffie, David B.},
+  journaltitle = {Computer},
+  volume       = {32},
+  number       = {10},
+  pages        = {60--69},
+  doi          = {10.1109/2.796110},
+  date         = {1999},
+  note         = {The primary account of Microsoft's synchronize-and-stabilize
+                  approach, drawn from the authors' study of Microsoft and
+                  Netscape. Observational management research, not a controlled
+                  comparison},
+}
+
+@book{kruchten2003rup,
+  title     = {The Rational Unified Process: An Introduction},
+  author    = {Kruchten, Philippe},
+  edition   = {3},
+  publisher = {Addison-Wesley},
+  isbn      = {978-0-321-19770-2},
+  date      = {2003},
+  note      = {The standard introduction to RUP, by one of its architects.
+                Named as the origin of the framework; not read for this review},
+}

@@ -3,142 +3,52 @@ parent: Process
 title: Basics
 nav_order: 1
 layout: default
+page_type: topic-hub
 ---
 
+# Basics
 
-# Defining Process
+Before choosing a lifecycle or a framework, there is a smaller question: what *is* the process this
+team runs, how would you write it down, and how would you know whether it is working? These pages
+cover that groundwork — where process thinking came from, how to define one activity precisely, and
+what happens when you start measuring the people who carry it out.
 
-_* adapted from Root, 2014_
+The measurement pages are the ones to read carefully. Deciding what to measure and deciding who sees
+the result are different problems, and the second causes more damage than the first.
 
-A well-defined process is essential for consistent results and improvement in software engineering.  
-Defining, applying, measuring, and improving processes helps teams deliver quality outcomes and adapt to change.
+## Which page to read next
 
----
+| Page | What it covers | The core claim |
+|---|---|---|
+| [Where Process Came From](history.md) | Smith, Taylor, Deming, and why software adopted them | Defects propagate, so quality has to be built upstream rather than inspected in |
+| [Defining a Process](define.md) | How to elicit, document and improve an actual process | Ask the people who do the work, and record why each step exists |
+| [ETVX](etvx.md) | The notation for one atomic activity | Explicit **exit criteria** are what stop work being declared done by the calendar |
+| [GQM](gqm.md) | Choosing metrics by deriving them from goals | Goal first, metric last — a metric with no question above it has no reason to exist |
+| [Process Metrics](metrics.md) | What measurement does to the people measured | Aim a process metric at people and it stops being a measurement |
+| [Scoreboard](scoreboard.md) | Tracking judgement when the thing that matters is not countable | Read the trend, and cover every role |
 
-## Key Steps in Process Management
+## How solid is this?
 
-1. **Define the Process:**  
-   - Clearly describe each step and its purpose.
-   - Justify why each step exists (“the why”).
-   - Avoid “just because” or “we’ve always done it that way” as sole reasons.
-
-2. **Apply Standards:**  
-   - Use industry or organizational standards to guide process definition.
-   - Standards help ensure consistency and best practices.
-
-3. **Measure Conformance and Results:**  
-   - Check if the process is followed and if it delivers expected results.
-   - Use inspections, reviews, audits, and checklists.
-
-4. **Assess:**  
-   - Analyze process effectiveness and identify areas for improvement.
-   - Use both planned and random checks (e.g., Monte Carlo sampling).
-
-5. **Suggest Improvements:**  
-   - Recommend changes based on measurement and assessment.
-   - Continuous improvement is key.
-
----
-
-## Deming Cycle — PDCA
-
-The PDCA (Plan-Do-Check-Act) cycle is a classic framework for process improvement:
-
-- **Plan:**  
-  Establish objectives and processes needed to achieve goals.
-- **Do:**  
-  Implement the plan and collect data.
-- **Check:**  
-  Analyze results, compare to expectations, and retain data.
-- **Act:**  
-  Take corrective action—change the process or metrics as needed.
-
-  ![PDCA](image-1.png)
+The material here is a mix of long-established method and thin evidence, and the pages say which is
+which. ETVX and GQM are settled practice with decades of industrial use behind them. The claims about
+*measurement dysfunction* rest on practitioner reports rather than controlled studies — they show the
+behaviours occur, not how often — and the scoreboard is documented in a single student project.
+Where a page teaches something the sources do not actually support, it says so under its own
+*How solid is this?* heading.
 
 ---
 
-## Process Definition Challenges
+### Acknowledgments
 
-- Every team has a process, but not all are formalized.
-- Formalization means documenting specific steps and their justification.
-- Avoid defining a process just for tradition’s sake.
-- The goal is to understand and improve, not just to follow blindly.
-- Don’t use lack of definition as an excuse for poor practices (“hacking”).
+These pages adapt material from lectures by **Eduardo Miranda** and **David Root**
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## How to Define a Process
-
-- Ask: “How do you do it?” or “How would I do it?”
-- Keep asking until you can describe each step clearly.
-- Good starting points:
-  - Training materials
-  - “Ride along” with experienced team members
-  - Ask the “doers,” not just managers
-
----
-
-## Measuring Your Process
-
-- Similar to product quality checks:
-  - Inspections, reviews, audits
-  - Checklist compliance
-- When to measure:
-  - Planned cycles
-  - Unannounced random checks (Monte Carlo)
-  - Postmortem analysis/evaluation
-  - Defect seeding (intentionally adding defects to test detection)
-
----
-
-### How to Measure
-
-- Use meaningful metrics:
-  - Objective or relative measures
-  - Establish a baseline (but beware of misleading baselines)
-  - Metrics should show change and be analyzable
-  - Not all metrics need to be quantitative
-- Use goals carefully—poorly chosen goals can cause problems.
-
-- Appropriate analysis:
-  - Metrics should make sense and be useful for decision-making.
-
----
-
-### Metrics Examples
-
-- **Simple Boolean:**  
-  Is the process being used or not?
-- **Count of problems encountered:**  
-  Compare to resources used to find them.
-- **Change requests:**  
-  Frequency and type.
-- **Problem frequency:**  
-  How often do issues repeat?
-- **Accuracy and consistency:**  
-  Estimation reliability.
-
----
-
-## Example: Meeting Process and Metrics
-
-- Define steps for organizing and running meetings.
-- Measure attendance, agenda adherence, action item completion.
-- Use feedback to improve future meetings.
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified
+all facts and claims. In case of an error, feel free to file an issue.
