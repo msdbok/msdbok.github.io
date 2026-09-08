@@ -12,21 +12,7 @@ test stage that will check it. Requirements pair with acceptance testing, system
 testing, module design with unit testing. Bent into a V, the sequence shows *where verification and
 validation attach* rather than merely what happens next.
 
-```mermaid
-flowchart LR
-    A[Requirements] --> B[System Design]
-    B --> C[Architectural Design]
-    C --> D[Module Design]
-    D --> E[Implementation]
-    E --> F[Unit Testing]
-    F --> G[Integration Testing]
-    G --> H[System Testing]
-    H --> I[Acceptance Testing]
-    A -.-> I
-    B -.-> H
-    C -.-> G
-    D -.-> F
-```
+<img src="/images/vmodel.svg" alt="The V-model: requirements, system design, architectural design and module design descend the left arm to implementation at the vertex, then unit, integration, system and acceptance testing ascend the right arm. Dashed lines join each design level to the test level that checks it — acceptance testing validates the requirements, the three lower pairs verify their design documents." style="max-width:100%; margin:1.5em 0;" />
 
 ## 1. It is not a different lifecycle
 
@@ -74,7 +60,7 @@ the requirements move, which is twice the churn for no extra information.
   and defence-standards practice in the 1980s.
 - **This page cites no study of the V-model**, because this review found none worth the name. It is
   taught as a widely used convention for organising verification, which is what it is.
-- **`falcao_experiences_2024` is not evidence for the V-model as a lifecycle**, despite its title. It
+- **Falcão and colleagues (2024) is not evidence for the V-model as a lifecycle**, despite its title. It
   is about using the V's *shape* to structure applied doctoral research, and this review had it
   misfiled until it was read. It is cited here only as an instance of the shape being reused, not for
   any claim about software projects — an example of why you check that a source contains what you are

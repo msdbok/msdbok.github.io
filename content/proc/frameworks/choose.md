@@ -73,12 +73,12 @@ was actually willing to pay for.
 
 ## How solid is this?
 
-- **`kuhrmann2019hybrid` is 69 self-selected European respondents**, surveyed in 2016. Quote its
+- **Kuhrmann and colleagues' survey is 69 self-selected European respondents**, surveyed in 2016. Quote its
   figures as *of 69 respondents*, and note its own 19.6%/83.9% split does not sum to 100. It shows
   hybrids are **used** — it has no outcome data and cannot show they work better.
 - **Rockwood is grey literature** — a technical report, undated in the document, whose weights are
   one author's judgement {% cite rockwood_choose_2003 %}. **Do not present the tally as objective.**
-- **`elssamadisy_xp_2001` is a participant's report on one project**, unpublished and self-dated.
+- **Elssamadisy's report is a participant's report on one project**, unpublished and self-dated.
   Read the erosion pattern as a plausible mechanism, not a measured rate.
 - **No instrument on this page has been validated.** No study shows teams that select a method
   formally do better than teams that do not.

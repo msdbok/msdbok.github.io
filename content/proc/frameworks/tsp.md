@@ -76,7 +76,7 @@ see [process metrics](../basics/metrics.md).
 
 ## How solid is this?
 
-- **`humphrey_team_2000` is an SEI technical report by the method's author** — institutionally
+- **Humphrey's TSP report is an SEI technical report by the method's author** — institutionally
   published and DoD-sponsored, but a **method definition**, not an evaluation. It describes what TSP
   is and argues for it; it is not independent evidence that it works.
 - **The PSP material here comes from a teaching deck** used at Innopolis {% cite safina_psp %} —

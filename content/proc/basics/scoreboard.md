@@ -30,29 +30,7 @@ wrong, while the specific approach focused on the concrete problems"*.
 Questions that had been consistently good for several weeks were removed, to keep the survey short
 enough that people kept answering it honestly.
 
-```mermaid
-flowchart LR
-  subgraph T[Think]
-    GOAL(Define goals and information needs)
-    QDEF(Design questions<br/>general roles + specific risks)
-    SCALE(5-level semantic scale<br/>+ comments)
-    GOAL --> QDEF --> SCALE
-  end
-  subgraph A[Act]
-    DIST(Distribute short survey) --> RESP(Collect responses)
-  end
-  subgraph R[Reflect]
-    AGG(Aggregate: averages and trends) --> SELECT(Worst items and downward trends)
-    SELECT --> MEET(Reflection meeting) --> ACTION(Actions with owners)
-  end
-  subgraph M[Maintain]
-    UPDATE(Add for new risks<br/>retire stable questions) --> CHECK(Monitor trust and response rate)
-  end
-  SCALE --> DIST
-  RESP --> AGG
-  ACTION --> UPDATE
-  CHECK -.-> GOAL
-```
+<img src="/images/scoreboard-cycle.svg" alt="The scoreboard cycle in four steps: Think — define goals, write general questions per role and specific ones per risk, fix a 5-point scale; Act — send the same short survey anonymously; Reflect — aggregate the trend and spread, pick the worst and falling items, meet and assign actions; Maintain — add questions for new risks, retire stable ones, watch the response rate. The cycle then repeats." style="max-width:100%; margin:1.5em 0;" />
 
 The short gap between answering and discussing is deliberate: Mota's team collected on Thursday and
 held the reflection meeting on Friday. Data nobody acts on within the week teaches the team that
@@ -82,7 +60,7 @@ anonymity, watch the spread and the comment field, not the mean alone.
 
 ## How solid is this?
 
-- **This is grey literature.** `mota2009scoreboard` is a CMU Master of Software Engineering
+- **This is grey literature.** Mota's paper is a CMU Master of Software Engineering
   reflection paper describing the author's own team — a careful method walkthrough, not evidence
   that the method works. There is no comparison group and no outcome measure.
 - **The ratings are ordinal.** A 4 is not twice a 2, so averaging them is not strictly meaningful.

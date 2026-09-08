@@ -63,7 +63,7 @@ which is only survivable because the milestones force it back to a working state
 
 ## How solid is this?
 
-- **`cusumano1999internettime` is observational management research** — a study of how Microsoft and
+- **Cusumano and Yoffie is observational management research** — a study of how Microsoft and
   Netscape actually worked, published in IEEE Computer. It describes a practice and argues it is
   effective; it is not a controlled comparison against another way of organising, and the authors had
   privileged access to the companies concerned.

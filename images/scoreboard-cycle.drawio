@@ -1,0 +1,58 @@
+<mxfile host="Electron">
+  <diagram id="8xljLtmTTtHgIK7SuEU3" name="pageWithNumber">
+    <mxGraphModel dx="-305" dy="-174" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="1 · THINK&#xa;Define the goals and what you need to know&#xa;Write general questions (one per role, permanent)&#xa;and specific ones (one per current risk)&#xa;Fix a 5-point scale and keep a comment box" mermaidId="n:T" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="1 · THINK&#xa;Define the goals and what you need to know&#xa;Write general questions (one per role, permanent)&#xa;and specific ones (one per current risk)&#xa;Fix a 5-point scale and keep a comment box" id="2">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="131" width="430" x="20" y="8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="2 · ACT&#xa;Send the same short survey, in the same words&#xa;Answers stay anonymous" mermaidId="n:A" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="2 · ACT&#xa;Send the same short survey, in the same words&#xa;Answers stay anonymous" id="3">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="430" x="20" y="189" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="3 · REFLECT&#xa;Aggregate: the trend per question, and the spread&#xa;Pick the worst items and anything falling&#xa;Meet, discuss, assign actions with owners" mermaidId="n:R" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="3 · REFLECT&#xa;Aggregate: the trend per question, and the spread&#xa;Pick the worst items and anything falling&#xa;Meet, discuss, assign actions with owners" id="4">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="112" width="430" x="20" y="351" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="4 · MAINTAIN&#xa;Add questions for new risks&#xa;Retire ones stable for several weeks&#xa;Watch the response rate — it measures trust" mermaidId="n:M" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="4 · MAINTAIN&#xa;Add questions for new risks&#xa;Retire ones stable for several weeks&#xa;Watch the response rate — it measures trust" id="5">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="112" width="430" x="20" y="513" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:T-&gt;A#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.29;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="6">
+          <mxCell edge="1" parent="1" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.29;exitY=1;entryX=0.5;entryY=0;" target="3">
+            <mxGeometry relative="1" as="geometry">
+              
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:A-&gt;R#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="7">
+          <mxCell edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:R-&gt;M#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.28;entryY=0;" mermaidBaseValue="" id="8">
+          <mxCell edge="1" parent="1" source="4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.28;entryY=0;" target="5">
+            <mxGeometry relative="1" as="geometry">
+              
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="next cycle" mermaidId="e:M-&gt;T#0" mermaidBaseStyle="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontColor=#282828;exitX=0.72;exitY=0;entryX=0.71;entryY=1;" mermaidBaseValue="next cycle" id="9">
+          <mxCell edge="1" parent="1" source="5" style="curved=1;dashed=1;dashPattern=2 3;fixDash=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontColor=#282828;exitX=0.72;exitY=0;entryX=0.71;entryY=1;" target="2">
+            <mxGeometry relative="1" as="geometry">
+              
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

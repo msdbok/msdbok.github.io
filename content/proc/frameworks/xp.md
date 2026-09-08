@@ -71,11 +71,11 @@ part — see [agentic](agentic.md).
   attributed to Beck.
 - **`xp_gentle_intro` is a personal website**, maintained 1999–2013 — the most widely linked
   plain-English statement of the practices, and not peer reviewed.
-- **`elssamadisy_xp_2001` is one project, reported by a participant**, unpublished and internally
+- **Elssamadisy's report is one project, reported by a participant**, unpublished and internally
   dated. The erosion pattern is a plausible mechanism observed once, not a measured rate. It is
   *probably* the same engagement an analyst report of the period describes as a success — the two
   documents do not name each other, so treat the pairing as likely rather than established.
-- **`abrahamsson2002agile` classifies methods; it does not evaluate them.** Its criteria are proposed
+- **Abrahamsson and colleagues' survey classifies methods; it does not evaluate them.** Its criteria are proposed
   rather than validated.
 - **No source here compares XP's outcomes to an alternative.**
 

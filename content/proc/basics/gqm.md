@@ -71,12 +71,11 @@ real damage, covered under [process metrics](metrics.md).
   Engineering Laboratory, its authors are among the founders of empirical software engineering, and
   it has been applied across industry and standards practice for thirty years. Treat it as settled
   method, not as a proposal.
-- **The founding text is a method description, not an evaluation.** `basili1994gqm` is an
-  encyclopedia entry of roughly 3,000 words that sets out the method and — verified by search —
-  states **no limitation of any kind**. That is normal for the genre, and it is why the drawbacks
+- **The founding text is a method description, not an evaluation.** The 1994 entry runs to roughly
+  3,000 words, sets out the method, and — verified by search — states **no limitation of any kind**. That is normal for the genre, and it is why the drawbacks
   above are cited to later work rather than to it. Looking past a method's founding paper for its
   weaknesses is the general habit worth copying.
-- **The drawbacks come from the same author.** `basili2010gqmstrategies` introduces a successor
+- **The drawbacks come from the same author.** The 2010 paper introduces a successor
   method, GQM+Strategies, and its account of measurement programmes ending in disillusionment is a
   first-hand observation from the people who built the original.
 - **Attribution.** GQM is Basili, Caldiera & Rombach 1994. It is sometimes credited to Park, Goethert

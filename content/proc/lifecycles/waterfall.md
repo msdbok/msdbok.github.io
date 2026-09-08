@@ -91,7 +91,7 @@ note recommending against it {% cite stsc1996lifecycles %}.
 - **Larman & Basili is a history, not an evaluation** {% cite larman_iterative_2003 %}. The
   comparative figures it carries are secondary citations to other studies; cite those to their
   originals.
-- **`stsc1996lifecycles` is grey literature** — a government acquisition guidebook with no named
+- **The STSC guidebook is grey literature** — a government acquisition guidebook with no named
   author, useful as evidence of what was being recommended in 1996.
 
 ---

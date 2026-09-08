@@ -1,0 +1,13 @@
+flowchart TB
+    T["1 · THINK<br/>Define the goals and what you need to know<br/>Write general questions (one per role, permanent)<br/>and specific ones (one per current risk)<br/>Fix a 5-point scale and keep a comment box"]
+    A["2 · ACT<br/>Send the same short survey, in the same words<br/>Answers stay anonymous"]
+    R["3 · REFLECT<br/>Aggregate: the trend per question, and the spread<br/>Pick the worst items and anything falling<br/>Meet, discuss, assign actions with owners"]
+    M["4 · MAINTAIN<br/>Add questions for new risks<br/>Retire ones stable for several weeks<br/>Watch the response rate — it measures trust"]
+    T --> A
+    A --> R
+    R --> M
+    M -.->|next cycle| T
+    style T fill:#f0f8f0,stroke:#019546,color:#282828
+    style A fill:#f0f8f0,stroke:#019546,color:#282828
+    style R fill:#f0f8f0,stroke:#019546,color:#282828
+    style M fill:#f0f8f0,stroke:#019546,color:#282828

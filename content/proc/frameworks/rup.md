@@ -69,7 +69,7 @@ the ceremony arrives, the benefit does not.
   it and because it anchors the plan-driven end of the [comparison](index.md), but this review did
   not read Kruchten or the RUP product documentation. The description is standard and uncontroversial;
   treat it as vocabulary rather than as evidenced claims {% cite kruchten2003rup %}.
-- **`balduino2007openup` is grey literature** — a nine-page white paper written by an IBM Rational
+- **The OpenUP white paper is grey literature** — a nine-page white paper written by an IBM Rational
   engineer who was a committer on the project it describes. Useful for what OpenUP *is*; not
   independent evidence about it.
 - **No source here compares RUP's outcomes with anything.** The "when it fits" reasoning is derived

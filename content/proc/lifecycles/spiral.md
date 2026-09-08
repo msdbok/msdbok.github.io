@@ -84,8 +84,8 @@ at the start of each cycle to establish whose objectives the risks are being jud
   indeed, most have doubled"* — measured **against cost-estimation model predictions**, not against
   a measured baseline. Never repeat the figure without that. The separate 93% reuse figure describes
   SPS itself, not the 25+ projects; keep the two apart.
-- **`mcconnell_rapid_1996` is a practitioner book** — a clean definition, not evidence.
-- **`stsc1996lifecycles` is grey literature**, a government guidebook with no named author.
+- **McConnell's *Rapid Development* is a practitioner book** — a clean definition, not evidence.
+- **The STSC guidebook is grey literature** — a US Air Force acquisition guide with no named author.
 - **Nothing here shows risk-driven selection produces better outcomes** than any other basis for
   choosing a process. It is a coherent and influential tradition, not a measured one.
 
