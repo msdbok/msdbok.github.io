@@ -1,7 +1,7 @@
 ---
 parent: Frameworks
 title: Choosing a Framework
-nav_order: 9
+nav_order: 10
 layout: default
 ---
 
@@ -46,7 +46,8 @@ traceable to the work that satisfied it. A team needing an audit trail reads tho
 
 The flaw is visible in the instrument's own words: *"the order of presentation does not imply the
 order of importance"* — in a scheme that weights every question **equally**. A project where
-criticality dominates everything else cannot say so in the total.
+criticality dominates everything else cannot say so in the total. A tally can also only rank the
+options it lists, and [ACDM](acdm.md) is not among Rockwood's five.
 
 Set that beside [Boehm and Turner](balance.md), who use five continuous axes where Rockwood uses
 eleven equal discrete questions. **The shape of the instrument changes the decision it produces**,
@@ -64,8 +65,7 @@ inspectable, which is a different and more achievable goal.
 4. **What will you stop doing?** This is the question nobody asks, and the one that makes the other
    three real.
 
-The fourth is the one that makes the others real. Adopting practices without retiring any produces a
-process with two of everything. And it happens by default if left undecided: on a large XP project
+Adopting practices without retiring any produces a process with two of everything. And it happens by default if left undecided: on a large XP project
 tracked over eighteen months, *"almost all the practices have evolved"* — the **engineering**
 practices survived while the **social** ones eroded {% cite elssamadisy_xp_2001 %}. Nobody chose
 that. A manager who does not ask what to stop finds out afterwards which practices the organisation
@@ -73,9 +73,9 @@ was actually willing to pay for.
 
 ## How solid is this?
 
-- **Kuhrmann and colleagues' survey is 69 self-selected European respondents**, surveyed in 2016. Quote its
-  figures as *of 69 respondents*, and note its own 19.6%/83.9% split does not sum to 100. It shows
-  hybrids are **used** — it has no outcome data and cannot show they work better.
+- **Kuhrmann and colleagues' survey is 69 self-selected European respondents**, surveyed in 2016.
+  Quote its figures as *of 69 respondents*, and note its own 19.6%/83.9% split does not sum to 100.
+  It shows hybrids are **used**, and has no outcome data.
 - **Rockwood is grey literature** — a technical report, undated in the document, whose weights are
   one author's judgement {% cite rockwood_choose_2003 %}. **Do not present the tally as objective.**
 - **Elssamadisy's report is a participant's report on one project**, unpublished and self-dated.

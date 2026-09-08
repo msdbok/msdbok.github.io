@@ -27,6 +27,7 @@ timeline
     section Milestone risk-driven
       Sync and Stabilize
       RUP
+      ACDM
       TSP
       SAFe
     section Heavy
@@ -38,6 +39,7 @@ timeline
 | Framework | What it optimises | Best fit | Main cost |
 |---|---|---|---|
 | [RUP and the Unified Process](rup.md) | Retiring architectural risk early | Large systems, architecture-dominant risk | Heavy unless deliberately tailored |
+| [ACDM](acdm.md) | Deriving the plan from the architecture | Work where architectural risk dominates and estimates must be defensible | A method proposal — no trial, no comparison |
 | [Synchronize and Stabilize](syncstab.md) | Parallel teams held together by frequent integration | Large commercial products, preview releases | Needs serious build and test infrastructure |
 | [TSP and PSP](tsp.md) | Predictability through measurement | Long-lived teams, high-assurance work | Training and sustained data collection |
 | [Extreme Programming](xp.md) | Very short engineering feedback loops | Small co-located teams, changing requirements | Social practices erode without protection |

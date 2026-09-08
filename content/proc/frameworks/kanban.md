@@ -1,7 +1,7 @@
 ---
 parent: Frameworks
 title: Kanban
-nav_order: 6
+nav_order: 7
 layout: default
 ---
 
