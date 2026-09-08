@@ -35,35 +35,29 @@ and removing the causes prevents defects that inspection can only catch. **Analy
 just products; collect data to find the sources of defects; act before the defect occurs.** The
 Plan-Do-Check-Act loop on [defining a process](define.md) is this idea in operational form.
 
-The obvious question is whether it transfers to software at all, given that software is not stamped
-out in identical units. The Software Engineering Institute's answer, and this course's, is that it
-does — because the *process* is repeated even when the *product* is not.
+Does that transfer to software, which is not stamped out in identical units? The Software Engineering
+Institute's answer, and this course's, is that it does — because the *process* repeats even when the
+*product* does not.
 
 ## 3. Why software needed it anyway
 
-Software has properties that make an undefined process expensive:
-
-- **Human variation** — two competent developers solve the same problem differently, and without an
-  agreed process the difference shows up in the product.
-- **Complexity and invisibility** — you cannot see a software system, so you cannot spot a defect by
-  looking at it the way you can spot a bent pin.
-- **Volatility** — requirements and environments move underneath the work.
-- **Defect propagation** — this is the decisive one.
+Software has properties that make an undefined process expensive. Two competent developers solve the
+same problem differently, and without an agreed process that variation reaches the product. You
+cannot see a software system, so you cannot spot a defect by looking the way you can spot a bent pin.
+Requirements and environments move underneath the work. And — the decisive one — defects propagate.
 
 **Example — a requirements defect that survives to release.** A misunderstanding written into a
 requirements statement is copied into the design, honoured by the code, and confirmed by tests
 written from the same misunderstanding. Every stage does its job correctly; the error is carried, not
 caught. It surfaces in production as a system that works exactly as specified and not as needed —
-and by then the fix touches the specification, the design, the code and the tests. Boehm's cost data
-is the standard reference for how steeply that escalates with the stage at which it is found
+and by then the fix touches the specification, the design, the code and the tests
 {% cite boehm_understanding_1988 %}.
 
-That is why the work products *before* the code — estimates, use cases, the requirements
-specification, the statement of work, architecture documents, test plans — are worth reviewing at
-all. Each is a place a defect can enter and then be faithfully propagated.
+That is why the work products *before* the code — estimates, requirements, architecture documents,
+test plans — are worth reviewing at all. Each is a place a defect can enter and then be faithfully
+propagated.
 
-![Defects introduced at each stage are carried into the next, so the cost of correction rises with
-how late they are found](../image.png)
+<img src="/images/defect-cost.svg" alt="Relative cost of correcting a defect, on a log scale, rising from 1× at requirements to 40–1000× once in the field. Bars show reported ranges, which widen sharply at the later stages." style="max-width:100%; margin:1.5em 0;" />
 
 ## 4. So quality assurance is about the process too
 
@@ -82,10 +76,11 @@ that testing is.
   in particular.
 - **The defect-propagation argument is well supported in principle and contested in its numbers.**
   That cost rises with the stage at which a defect is found is not seriously disputed; the specific
-  multipliers vary enormously by study and context, so quote the direction rather than a figure
-  {% cite boehm_understanding_1988 %}.
-- **The illustration on this page is uncredited** in the course material it came from and its
-  underlying data has not been traced — read it as a shape, not as a measurement.
+  multipliers vary enormously by study and context {% cite boehm_understanding_1988 %}.
+- **Read the chart as a shape, not a measurement.** The figures are the widely reproduced ones from
+  Pressman's textbook {% cite pressman2005software %}, drawn from Boehm-era data. They are plotted
+  above as **ranges**, because that is how they are reported — and the last spans 40× to 1000×, a
+  factor of twenty-five for the same stage. A range that wide means the underlying studies disagree.
 
 ---
 

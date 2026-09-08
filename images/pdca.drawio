@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="msdbok" type="device">
+  <diagram name="PDCA" id="pdca">
+    <mxGraphModel dx="560" dy="330" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="560" pageHeight="330" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="P" value="&lt;b&gt;PLAN&lt;/b&gt;&lt;br&gt;State the objective, and decide&lt;br&gt;the one change you will try&lt;br&gt;— and what you expect it to do" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;strokeWidth=1.5;fontColor=#282828;fontFamily=Tahoma;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="D" value="&lt;b&gt;DO&lt;/b&gt;&lt;br&gt;Make the change, in a small&lt;br&gt;enough step to be reversible,&lt;br&gt;and collect the data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;strokeWidth=1.5;fontColor=#282828;fontFamily=Tahoma;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="310" y="30" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="C" value="&lt;b&gt;CHECK&lt;/b&gt;&lt;br&gt;Compare what happened with&lt;br&gt;what you predicted&lt;br&gt;— this is the step that gets dropped" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4ec;strokeColor=#019546;strokeWidth=2.5;fontColor=#282828;fontFamily=Tahoma;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="310" y="200" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="A" value="&lt;b&gt;ACT&lt;/b&gt;&lt;br&gt;Adopt it, revise it, or drop it&lt;br&gt;— then go round again" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;strokeWidth=1.5;fontColor=#282828;fontFamily=Tahoma;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="30" y="200" width="220" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#019546;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="P" target="D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#019546;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="D" target="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#019546;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="C" target="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#019546;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="A" target="P">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

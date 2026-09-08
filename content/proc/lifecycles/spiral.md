@@ -16,7 +16,13 @@ Boehm states it as the defining property: *"The major distinguishing feature of 
 that it creates a risk-driven approach to the software process rather than a primarily
 document-driven or code-driven process"* {% cite boehm_spiral_1988 %}.
 
-![The spiral model](image.png)
+![The spiral model: four quadrants traversed repeatedly — determine objectives, identify and resolve
+risks, develop and test, plan the next iteration — with cumulative cost increasing outward from the
+centre](image.png)
+
+{: .fs-2 }
+Diagram after Boehm 1988 {% cite boehm_spiral_1988 %}; this rendering is reproduced from Wikimedia
+Commons.
 
 ## 1. One cycle, four moves
 

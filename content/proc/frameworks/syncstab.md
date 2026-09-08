@@ -15,8 +15,7 @@ genuinely shippable {% cite cusumano1999internettime %}.
 It was developed for Windows and Office in the 1990s, and it is the ancestor of a great deal of
 modern practice.
 
-![Feature teams work in parallel, synchronising through frequent builds and stabilising at milestone
-boundaries](image-2.png)
+<img src="/images/syncstab.svg" alt="Three milestones in sequence. In each, feature teams work in parallel while synchronising through a daily build, then buffer time, then a stabilisation period in which feature work stops and defects are driven down — ending in an alpha, beta and final release respectively. The date is fixed and the feature set is not." style="max-width:100%; margin:1.5em 0;" />
 
 ## 1. The daily build is a coordination mechanism, not a build policy
 

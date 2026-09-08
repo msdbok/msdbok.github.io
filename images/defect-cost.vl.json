@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Relative cost of correcting a defect by the stage at which it is found. Ranges, on a log scale.",
+  "background": "transparent",
+  "width": 560,
+  "height": 260,
+  "padding": 6,
+  "config": {
+    "font": "Tahoma, Verdana, DejaVu Sans, sans-serif",
+    "axis": {"labelColor": "#282828", "titleColor": "#282828", "labelFontSize": 12, "titleFontSize": 12, "grid": false},
+    "view": {"stroke": null}
+  },
+  "data": {
+    "values": [
+      {"stage": "Requirements", "low": 1,  "high": 1,    "label": "1×"},
+      {"stage": "Design",       "low": 3,  "high": 6,    "label": "3–6×"},
+      {"stage": "Code",         "low": 10, "high": 10,   "label": "10×"},
+      {"stage": "Dev. test",    "low": 15, "high": 40,   "label": "15–40×"},
+      {"stage": "System test",  "low": 30, "high": 70,   "label": "30–70×"},
+      {"stage": "In the field", "low": 40, "high": 1000, "label": "40–1000×"}
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "stage",
+      "type": "nominal",
+      "sort": null,
+      "axis": {"title": "Stage at which the defect is found", "labelAngle": 0, "labelPadding": 6}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar", "size": 44, "cornerRadiusEnd": 3, "color": "#019546", "opacity": 0.85},
+      "encoding": {
+        "y": {
+          "field": "low",
+          "type": "quantitative",
+          "scale": {"type": "log", "domain": [1, 1000]},
+          "axis": {"title": "Relative cost of correction", "values": [1, 10, 100, 1000], "format": "d"}
+        },
+        "y2": {"field": "high"}
+      }
+    },
+    {
+      "mark": {"type": "tick", "size": 44, "thickness": 2, "color": "#2D6E2A"},
+      "encoding": {"y": {"field": "low", "type": "quantitative"}}
+    },
+    {
+      "mark": {"type": "text", "dy": -10, "fontSize": 12, "color": "#282828"},
+      "encoding": {
+        "y": {"field": "high", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
+  ]
+}

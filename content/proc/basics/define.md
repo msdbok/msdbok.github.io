@@ -32,12 +32,11 @@ task, validation, exit criteria.
 
 ## 2. Improve it in a loop, not in a rewrite
 
-Process improvement inherits the Deming cycle: **Plan** the objective and the change, **Do** it and
-collect data, **Check** the result against what you expected, **Act** by adopting or revising it.
-The value is in the Check step, which is also the one most often dropped — a process changed and
-never re-examined is indistinguishable from a process changed on a hunch.
+Process improvement inherits the Deming cycle. The value is in the **Check** step, which is also the
+one most often dropped — a process changed and never re-examined is indistinguishable from a process
+changed on a hunch.
 
-![The Plan-Do-Check-Act cycle](image-1.png)
+<img src="/images/pdca.svg" alt="The Plan-Do-Check-Act cycle: plan the change and what you expect of it, do it reversibly and collect data, check the result against the prediction, then adopt, revise or drop it and repeat." style="max-width:100%; margin:1.5em 0;" />
 
 ## 3. Check conformance and results separately
 

@@ -13,7 +13,16 @@ commitments are **architecture-first** and **risk-driven**: settle the structura
 attack the riskiest elements early, while changing them is still cheap
 {% cite kruchten2003rup %}.
 
-![The RUP "hump chart": disciplines run across all four phases, with different emphasis in each](image-1.png)
+![The RUP "hump chart": the four phases run left to right across the top, while the disciplines —
+business modelling, requirements, analysis and design, implementation, test, deployment and the
+supporting disciplines — run as bands down the left. Each band's thickness shows how much of that
+discipline happens in each phase, so all of them are present throughout, in different
+proportions](image-1.png)
+
+{: .fs-2 }
+Diagram after Kruchten's presentation of the Rational Unified Process
+{% cite kruchten2003rup %}; this rendering is reproduced from a third-party source and its
+provenance has not been traced.
 
 ## 1. The phases are about risk retired, not work completed
 
