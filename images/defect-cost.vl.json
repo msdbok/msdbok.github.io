@@ -1,13 +1,20 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Relative cost of correcting a defect by the stage at which it is found. Ranges, on a log scale.",
+  "description": "Relative cost of correcting a defect by the stage at which it is found. Each stage is the REPORTED RANGE, drawn as an interval with end dots rather than a bar: the scale is logarithmic, so a bar's length would not be proportional to its value and could not be anchored at zero. The dashed line at 1x is the baseline — the cost of fixing a defect in the phase that introduced it.",
   "background": "transparent",
   "width": 560,
-  "height": 260,
+  "height": 250,
   "padding": 6,
   "config": {
     "font": "Tahoma, Verdana, DejaVu Sans, sans-serif",
-    "axis": {"labelColor": "#282828", "titleColor": "#282828", "labelFontSize": 12, "titleFontSize": 12, "grid": false},
+    "axis": {
+      "labelColor": "#282828",
+      "titleColor": "#282828",
+      "labelFontSize": 12,
+      "titleFontSize": 12,
+      "domainColor": "#c9cdd1",
+      "tickColor": "#c9cdd1"
+    },
     "view": {"stroke": null}
   },
   "data": {
@@ -25,28 +32,45 @@
       "field": "stage",
       "type": "nominal",
       "sort": null,
-      "axis": {"title": "Stage at which the defect is found", "labelAngle": 0, "labelPadding": 6}
+      "axis": {
+        "title": "Stage at which the defect is found",
+        "labelAngle": 0,
+        "labelPadding": 8,
+        "grid": false
+      }
+    },
+    "y": {
+      "field": "low",
+      "type": "quantitative",
+      "scale": {"type": "log", "domain": [0.8, 1600]},
+      "axis": {
+        "title": "Relative cost of correction",
+        "values": [1, 10, 100, 1000],
+        "format": "d",
+        "grid": true,
+        "gridColor": "#eceff1",
+        "gridWidth": 1
+      }
     }
   },
   "layer": [
     {
-      "mark": {"type": "bar", "size": 44, "cornerRadiusEnd": 3, "color": "#019546", "opacity": 0.85},
-      "encoding": {
-        "y": {
-          "field": "low",
-          "type": "quantitative",
-          "scale": {"type": "log", "domain": [1, 1000]},
-          "axis": {"title": "Relative cost of correction", "values": [1, 10, 100, 1000], "format": "d"}
-        },
-        "y2": {"field": "high"}
-      }
+      "mark": {"type": "rule", "strokeDash": [4, 4], "strokeWidth": 1, "color": "#9aa0a6"},
+      "encoding": {"x": null, "y": {"datum": 1}}
     },
     {
-      "mark": {"type": "tick", "size": 44, "thickness": 2, "color": "#2D6E2A"},
-      "encoding": {"y": {"field": "low", "type": "quantitative"}}
+      "mark": {"type": "rule", "strokeWidth": 3, "strokeCap": "round", "color": "#019546"},
+      "encoding": {"y2": {"field": "high"}}
     },
     {
-      "mark": {"type": "text", "dy": -10, "fontSize": 12, "color": "#282828"},
+      "mark": {"type": "point", "filled": true, "size": 80, "color": "#019546", "stroke": "#ffffff", "strokeWidth": 1.5}
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 80, "color": "#019546", "stroke": "#ffffff", "strokeWidth": 1.5},
+      "encoding": {"y": {"field": "high", "type": "quantitative"}}
+    },
+    {
+      "mark": {"type": "text", "dy": -14, "fontSize": 12, "fontWeight": "bold", "color": "#282828"},
       "encoding": {
         "y": {"field": "high", "type": "quantitative"},
         "text": {"field": "label"}

@@ -20,7 +20,11 @@ when you need the evidence, the caveats, or a reference to cite.
 - [SN L1a — The Technical Person](sn1a.html) covers the individual: what you are paying for, personality models and their limits, culture, communication, motivation and leadership.
 - [SN L1b — Teams and Decisions](sn1b.html) covers the group: what a team costs, how one forms, psychological safety, social loafing, and how decisions go wrong alone and together.
 
-Revision questions for the same material are in [RQ1](rq1.html).
+- [SN L2a — Process and Lifecycles](sn2a.html) covers the first Processes lecture: why a defined process pays, ETVX, measuring the process, the process/lifecycle/framework ladder, the six lifecycle models, and how to choose one.
+
+- [SN L2b — Frameworks and Choosing](sn2b.html) covers the second Processes lecture: why you adopt a framework, agile and its limits, XP, Scrum and Kanban, scaling, the RUP family, and how to choose between them.
+
+Revision questions for the People material are in [RQ1](rq1.html).
 
 ---
 

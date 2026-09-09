@@ -35,16 +35,15 @@ and removing the causes prevents defects that inspection can only catch. **Analy
 just products; collect data to find the sources of defects; act before the defect occurs.** The
 Plan-Do-Check-Act loop on [defining a process](define.md) is this idea in operational form.
 
-Does that transfer to software, which is not stamped out in identical units? The Software Engineering
-Institute's answer, and this course's, is that it does — because the *process* repeats even when the
-*product* does not.
+Does that transfer to software, which is not stamped out in identical units? The SEI's answer, and
+this course's, is that it does — because the *process* repeats even when the *product* does not.
 
 ## 3. Why software needed it anyway
 
 Software has properties that make an undefined process expensive. Two competent developers solve the
 same problem differently, and without an agreed process that variation reaches the product. You
-cannot see a software system, so you cannot spot a defect by looking the way you can spot a bent pin.
-Requirements and environments move underneath the work. And — the decisive one — defects propagate.
+cannot see a software system, so you cannot spot a defect the way you can spot a bent pin.
+Requirements move underneath the work. And — the decisive one — defects propagate.
 
 **Example — a requirements defect that survives to release.** A misunderstanding written into a
 requirements statement is copied into the design, honoured by the code, and confirmed by tests
@@ -53,11 +52,10 @@ caught. It surfaces in production as a system that works exactly as specified an
 and by then the fix touches the specification, the design, the code and the tests
 {% cite boehm_understanding_1988 %}.
 
-That is why the work products *before* the code — estimates, requirements, architecture documents,
-test plans — are worth reviewing at all. Each is a place a defect can enter and then be faithfully
-propagated.
+That is why the work products *before* the code — estimates, requirements, architecture, test
+plans — are worth reviewing: each is a place a defect can enter and then be propagated.
 
-<img src="/images/defect-cost.svg" alt="Relative cost of correcting a defect, on a log scale, rising from 1× at requirements to 40–1000× once in the field. Bars show reported ranges, which widen sharply at the later stages." style="max-width:100%; margin:1.5em 0;" />
+<img src="/images/defect-cost.svg" alt="Relative cost of correcting a defect, on a log scale: 1× at requirements rising to 40–1000× in the field. Each stage is drawn as the interval between the lowest and highest reported multiplier." style="max-width:100%; margin:1.5em 0;" />
 
 ## 4. So quality assurance is about the process too
 
@@ -75,12 +73,13 @@ that testing is.
   what they got wrong as for what they got right — Taylor's separation of planning from execution
   in particular.
 - **The defect-propagation argument is well supported in principle and contested in its numbers.**
-  That cost rises with the stage at which a defect is found is not seriously disputed; the specific
-  multipliers vary enormously by study and context {% cite boehm_understanding_1988 %}.
+  That cost rises with the stage at which a defect is found is not disputed; the multipliers vary
+  enormously by study and context {% cite boehm_understanding_1988 %}.
 - **Read the chart as a shape, not a measurement.** The figures are the widely reproduced ones from
-  Pressman's textbook {% cite pressman2005software %}, drawn from Boehm-era data. They are plotted
-  above as **ranges**, because that is how they are reported — and the last spans 40× to 1000×, a
-  factor of twenty-five for the same stage. A range that wide means the underlying studies disagree.
+  Pressman's textbook {% cite pressman2005software %}, drawn from Boehm-era data. They are drawn as
+  **intervals, not bars** — that is how they are reported, and on a log axis a bar's length is not
+  proportional to its value. The last spans 40× to 1000×: twenty-five-fold for one stage, which
+  means the studies disagree.
 
 ---
 
