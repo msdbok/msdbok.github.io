@@ -24,6 +24,8 @@ when you need the evidence, the caveats, or a reference to cite.
 
 - [SN L2b — Frameworks and Choosing](sn2b.html) covers the second Processes lecture: why you adopt a framework, agile and its limits, XP, Scrum and Kanban, scaling, the RUP family, and how to choose between them.
 
+- [SN C1 — Structured Communication](snc1.html) covers the C1 recitation and is the one note that is not about a lecture: the Minto pyramid — answer first, grouping reasons so the grouping holds, the plural-noun test, headings that state claims, and the so-what test. **Read it before any case presentation or report**, because the slide and report rules in the case handout are the output of this method.
+
 Revision questions for the People material are in [RQ1](rq1.html).
 
 ---
