@@ -15,24 +15,11 @@ process, it stops short of the detail of any one activity.
 They sit on a spectrum from light to heavy. Weight is a **cost** bought for size and criticality, not
 a virtue: see [balancing agility and discipline](balance.md).
 
-```mermaid
-timeline
-    title Process Framework Spectrum
-    section Light
-      Ad-hoc
-    section Adaptive
-      XP
-      Scrum
-      Kanban
-    section Milestone risk-driven
-      Sync and Stabilize
-      RUP
-      ACDM
-      TSP
-      SAFe
-    section Heavy
-      Inch-pebble contract
-```
+<img src="/images/spectrum.svg" alt="XP, Kanban, Scrum, AUP/OpenUP, SAFe, RUP and TSP on a spectrum from more agile to more disciplined" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+Position is **how much the framework decides for you**, not quality. The ends are solid; the middle
+ordering is a reading.
 
 ## Which page to read next
 

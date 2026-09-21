@@ -34,6 +34,12 @@ methods are *"hard to tailor down efficiently to low-criticality products"* — 
 protects a flight-control system is pure cost on an internal reporting tool. Neither direction is
 free.
 
+<img src="/images/polar-chart.svg" alt="Boehm and Turner's polar chart: five axes with agile home ground at the centre and plan-driven at the rim; an internal reporting tool plotted near the centre, an avionics programme at the rim" style="max-width:60%; margin:1.5em 0;" />
+
+{: .fs-2 }
+After Boehm and Turner {% cite boehm_balancing_2003 %}. **A**, a six-person reporting tool, is pulled
+out only by dynamism; **B**, a 200-person avionics programme, is at the rim on everything else.
+
 {: .warning }
 **The polar chart is a communication device, not a measurement.** The five axes have no units and
 are not commensurable, so the *area* enclosed by a plotted shape means nothing. It shows which axes
@@ -45,6 +51,11 @@ Boehm and Turner's personnel levels come from Alistair Cockburn, whose earlier g
 on **size against criticality** {% cite cockburn_selecting_2000 %}. Criticality runs through four
 loss zones — comfort, discretionary money, essential money, life — and size through bands from a
 handful of people to a thousand, giving cells such as C6 or L100.
+
+<img src="/images/cockburn-grid.svg" alt="Cockburn's grid: seven size bands across, four criticality zones up, every cell named, C6 and L100 outlined" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+After Cockburn's Figure 5 {% cite cockburn_selecting_2000 %}. Darker cell, heavier method.
 
 His second principle states the rule directly: *"A more critical system — one whose undetected
 defects will produce more damage — needs more publicly visible correctness in its construction."*

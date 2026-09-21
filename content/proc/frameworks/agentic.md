@@ -54,6 +54,12 @@ time from *first line written* to *running in production* is longer than it was 
 arrived — even though every individual developer is measurably faster and reports feeling more
 productive.
 
+<img src="/images/ai-review-queue.svg" alt="A board where AI-assisted development opens twenty pull requests a week, review clears ten with no WIP limit, and the review queue grows by ten a week" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+The [Kanban board](kanban.md) run backwards. The numbers are an illustration; the source says only
+*"roughly twice as many pull requests"*.
+
 That is [Kanban's](kanban.md) argument run backwards. The BBC team limited work in progress and cycle
 time fell; here, generation outpaces a downstream stage and cycle time does not improve however fast
 the code appears. It is also an [ETVX](../basics/etvx.md) exit-criterion problem — a pull request is

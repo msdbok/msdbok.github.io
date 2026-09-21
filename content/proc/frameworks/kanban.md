@@ -17,6 +17,12 @@ has a nicer wall and the same queue.
 
 ## 1. Cap the queue and the bottleneck shows itself
 
+<img src="/images/kanban-board.svg" alt="A Kanban board with WIP limits on the Ready, In Development and In Test columns; Development is full at 3 of 3, so the pull from Ready is blocked" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+Development is full at 3/3, so nothing new is *started* until Test frees up. The numbers on the
+headers are the method.
+
 The mechanism is queueing, not effort. Consider a pipeline that accepts **10 requirements a week**,
 develops **10 a week**, and tests **5 a week**. Nobody is idle or underperforming, yet work
 accumulates in front of testing indefinitely — and adding developers makes it worse.

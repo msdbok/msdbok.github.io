@@ -18,6 +18,12 @@ about how to design, test or deploy.
 
 ## 1. The framework in one pass
 
+<img src="/images/scrum-framework.svg" alt="The Scrum framework: Product Backlog and Product Goal, the Sprint container with its four events, Sprint Backlog and Sprint Goal, Increment and Definition of Done, and the three accountabilities" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+After the 2020 Guide {% cite schwaber2020scrumguide %}. Epics and user stories are dashed because
+neither word appears in it.
+
 A **Scrum Team** is one team with three accountabilities and no sub-teams: the **Product Owner**,
 accountable for maximising value and for the Product Backlog; the **Scrum Master**, accountable for
 the team's effectiveness and for the framework being understood; and the **Developers**, accountable

@@ -3,6 +3,7 @@
 
 plugins:
   - jekyll-scholar
+  - jekyll-relative-links
 #  - jekyll-mathjax
 #  - jekyll-mermaid
 

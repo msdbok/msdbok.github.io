@@ -7,6 +7,7 @@ gem "jekyll", "~> 4.4.1" # installed by `gem jekyll`
 gem "just-the-docs"        # always download the latest release
 
 gem 'jekyll-scholar'
+gem 'jekyll-relative-links'   # [text](page.md) → the rendered page; without it every in-site link 404s
 
 # gem 'jekyll-mathjax'
 # gem "jekyll-mermaid"
