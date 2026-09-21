@@ -1,0 +1,12 @@
+flowchart TB
+    L["LIFECYCLE MODEL<br/>The phases, and the go/no-go points between them<br/><br/>Waterfall · Spiral · V"]
+    F["FRAMEWORK<br/>Reusable structure — roles, events, practices —<br/>to work inside those phases<br/><br/>Scrum · RUP · Kanban"]
+    P["PROCESS<br/>What one organisation actually does, in detail<br/><br/>This team's definition of done"]
+    E["ETVX<br/>The unit any of them decomposes into<br/><br/>entry · task · validation · exit"]
+    L --> F
+    F --> P
+    P --> E
+    style L fill:#f0f8f0,stroke:#019546,color:#282828
+    style F fill:#f0f8f0,stroke:#019546,color:#282828
+    style P fill:#f0f8f0,stroke:#019546,color:#282828
+    style E fill:#019546,stroke:#2D6E2A,color:#ffffff

@@ -15,13 +15,13 @@ links to the handbook page carrying the detail and the sources.
 
 ## 1. Why adopt a framework, and what it costs
 
-A framework is bought structure. You get a shared vocabulary, defined roles, calibrated estimates and
-an easier hiring pitch. You pay a learning curve, everything **pre-decided** whether or not it fits,
-and a vocabulary that can be **performed without being used** — a stand-up where everyone speaks and
+A framework is bought structure. You get a shared vocabulary, defined roles, calibrated estimates
+and easier hiring. You pay a learning curve, everything **pre-decided** whether or not it fits, and
+a vocabulary that can be **performed without being used** — a stand-up where everyone speaks and
 nobody listens has every artefact of Scrum and the purpose of none.
 
 **Adoption fails on people, not on method.** It is hard *"because people are often resistant to
-change"*, and *"management support is required to obtain the authority and budget"*
+change"*, and needs *"management support… to obtain the authority and budget"*
 {% cite lattanze2009architecting %}. The measured version agrees: across 42 large-scale cases the
 most-reported success factors are **management support**, **choosing and customising the approach**,
 **training and coaching**, and **mindset and alignment** {% cite dikert2016scaling %}. **None is a
@@ -35,6 +35,8 @@ retrospective in week two and you have removed the only part of Scrum whose job 
 AUP/OpenUP, SAFe, RUP, TSP. The light end prescribes less and **adapts by changing the work**; the
 heavy end prescribes more and **adapts by changing the plan**. Position is not quality: **weight is
 a cost**, bought for size and criticality.
+
+<img src="/images/spectrum.svg" alt="XP, Kanban, Scrum, AUP/OpenUP, SAFe, RUP and TSP on a spectrum from more agile to more disciplined" style="max-width:100%; margin:1.5em 0;" />
 
 → [Frameworks](../proc/frameworks/index.html) · [Choosing](../proc/frameworks/choose.html)
 
@@ -91,6 +93,8 @@ a container of a month or less: Sprint Planning, Daily Scrum, Sprint Review, Spr
 are the part most often dropped and the part that does the work — a backlog with no Product Goal is a
 list, and an Increment with no Definition of Done was not finished, only stopped.
 
+<img src="/images/scrum-framework.svg" alt="The Scrum framework after the 2020 Guide: artefacts with their commitments, the Sprint container with its events, and the three accountabilities" style="max-width:100%; margin:1.5em 0;" />
+
 What adopting Scrum changes is the **commitment structure**: scope holds still for a Sprint. So ask
 whether your work is predictable enough for that — a support team taking an incident on Tuesday
 cannot. And note the tension: the Guide says implementing only parts of Scrum means *"the result is
@@ -101,7 +105,11 @@ A normative document by a framework's owners is a different kind of thing from e
 **Kanban puts a number on each column, and that number is the method** — WIP limits over whatever
 process a team runs, with no roles and no ceremonies. A pipeline taking 10 requirements a week,
 developing 10 and testing 5 has nobody idle and a queue growing by five a week for ever, **and adding
-developers makes it worse**. Cap the test column and the constraint becomes visible. **Little's Law**: **lead time = WIP ÷ throughput**, so with throughput fixed, WIP is
+developers makes it worse**. Cap the test column and the constraint becomes visible.
+
+<img src="/images/kanban-board.svg" alt="A Kanban board with WIP limits on the Ready, In Development and In Test columns; Development is full at 3 of 3, so the pull from Ready is blocked" style="max-width:100%; margin:1.5em 0;" />
+
+**Little's Law**: **lead time = WIP ÷ throughput**, so with throughput fixed, WIP is
 the only lever. **Example —** nine people at BBC Worldwide cut features **started** from 84 to **64**
 and lead time by **37%** over twelve months {% cite middleton2012kanban %}; the gain is **flow and
 predictability, not volume**.
@@ -145,6 +153,8 @@ implementation and test are **disciplines**, not phases in sequence: requirement
 when Construction starts, there is simply less of it. That is what separates *iterative* from
 waterfall with more meetings {% cite kruchten2003rup %}.
 
+<img src="/images/rup-humps.svg" alt="The RUP hump chart: four phases across the top, nine disciplines as rows, each hump a teaching schematic of how much of that discipline happens in each phase" style="max-width:100%; margin:1.5em 0;" />
+
 **A phase ends when a class of risk is retired, not when work is done.** Inception asks whether this
 should exist at all; **Elaboration** whether the architecture is provable, via an executable skeleton
 on the risky paths; **Construction** builds against a settled structure; **Transition** gets it to
@@ -154,10 +164,9 @@ and cut the artefacts {% cite balduino2007openup %}: the weight is a dial. Use R
 **architecture is the dominant risk**; an untailored RUP on a small team is the standard failure.
 
 **RUP and SAFe answer the same question, twenty years apart.** RUP (1999): too many people to
-coordinate informally, so define the **roles and artefacts** and gate on **architecture**. SAFe
-(2011): too many teams, so define the **cadence and ceremonies** and gate on a **planning
-increment**. Same structure-above-the-team, different material. **You buy coordination and pay in
-ceremony** — so ask which ceremony your risk needs.
+coordinate informally, so define **roles and artefacts** and gate on **architecture**. SAFe (2011):
+too many teams, so define **cadence and ceremonies** and gate on a **planning increment**. Same
+structure-above-the-team, different material — **you buy coordination and pay in ceremony**.
 
 → [RUP and the Unified Process](../proc/frameworks/rup.html) · [ACDM](../proc/frameworks/acdm.html)
 
@@ -176,6 +185,8 @@ lands in a named cell such as **C6** or **L100**, and heavier methods belong up 
 in its construction."* And **coordinates move while you run the project** — Chrysler's C3 *"stretched
 a D6 methodology to fit a D14 project."*
 
+<img src="/images/cockburn-grid.svg" alt="Cockburn's grid: seven size bands across, four criticality zones up, every cell named, C6 and L100 outlined" style="max-width:100%; margin:1.5em 0;" />
+
 **Five axes, and the distance from home ground is the risk** {% cite boehm_balancing_2003 %}:
 
 | Axis | Agile home ground | Plan-driven home ground |
@@ -191,6 +202,8 @@ cuts **both** ways: agile is untested tailored *up* to safety-critical work, and
 are hard to tailor *down* to low-criticality products. Most people give only the first half. Plotted
 on those axes the centre is agile home ground and the rim plan-driven — but it is a **communication
 device, not a measurement**, since the axes share no unit and the enclosed *area* means nothing.
+
+<img src="/images/polar-chart.svg" alt="Boehm and Turner's polar chart: agile home ground at the centre, plan-driven at the rim; a six-person reporting tool near the centre, a 200-person avionics programme at the rim" style="max-width:60%; margin:1.5em 0;" />
 
 **Example —** Servasport, four developers and a designer on fixed-price projects, scored environmental
 risk 3, agile 8, **plan-driven 15** → risk-based agile {% cite taylor_applying_2006 %}. **The
@@ -218,12 +231,15 @@ column — so the queue absorbs the difference and lead time gets **longer** whi
 faster. That is §3's Kanban argument run backwards. The per-framework consequence, and the bound on
 what is known, is on the handbook page.
 
+<img src="/images/ai-review-queue.svg" alt="A board where AI-assisted development opens twenty pull requests a week, review clears ten with no WIP limit, and the queue grows by ten a week; the numbers are an illustration" style="max-width:100%; margin:1.5em 0;" />
+
 → [Process under AI agents](../proc/frameworks/agentic.html)
 
 ## Where this goes next
 
 **C2 TARTAN** asks for a **recommendation, not a preference**: the four questions from §6, plus the
-risks your choice creates. The lifecycle half is [SN L2a](sn2a.html).
+risks your choice creates. The lifecycle half is [SN L2a](sn2a.html), and revision
+questions for both lectures are in [RQ2](rq2.html).
 
 ---
 

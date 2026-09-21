@@ -1,0 +1,91 @@
+<mxfile host="Electron">
+  <diagram id="7GZQS055QQXdhLFcy5Eg" name="pageWithNumber">
+    <mxGraphModel dx="-394" dy="-165" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="Requirements&#xa;known?" mermaidId="n:Q" mermaidBaseStyle="rhombus;html=1;strokeWidth=1;whiteSpace=wrap;fillColor=#019546;strokeColor=#2D6E2A;fontColor=#ffffff;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="Requirements&#xa;known?" id="2">
+          <mxCell parent="1" style="rhombus;html=1;strokeWidth=1;whiteSpace=wrap;fillColor=#019546;strokeColor=#2D6E2A;fontColor=#ffffff;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="173" width="173" x="279" y="8" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="INCREMENTAL&#xa;Requirements reasonably well defined" mermaidId="n:I1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="INCREMENTAL&#xa;Requirements reasonably well defined" id="3">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="334" x="8" y="250" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Each pass ships an&#xa;OPERATIONAL PRODUCT&#xa;— a stripped-down but usable slice" mermaidId="n:I2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="Each pass ships an&#xa;OPERATIONAL PRODUCT&#xa;— a stripped-down but usable slice" id="4">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="93" width="310" x="20" y="373" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Driver: scope, staffing, a deadline" mermaidId="n:I3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="Driver: scope, staffing, a deadline" id="5">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#f0f8f0;strokeColor=#019546;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="54" width="305" x="23" y="525" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ITERATIVE / EVOLUTIONARY&#xa;Requirements expected to change" mermaidId="n:E1" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#fdf6e3;strokeColor=#2D6E2A;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="ITERATIVE / EVOLUTIONARY&#xa;Requirements expected to change" id="6">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#fdf6e3;strokeColor=#2D6E2A;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="304" x="403" y="250" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Each pass produces an&#xa;INCREASINGLY MORE COMPLETE VERSION" mermaidId="n:E2" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#fdf6e3;strokeColor=#2D6E2A;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="Each pass produces an&#xa;INCREASINGLY MORE COMPLETE VERSION" id="7">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#fdf6e3;strokeColor=#2D6E2A;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="350" x="380" y="383" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Driver: uncertainty&#xa;— the feedback is part of the deliverable" mermaidId="n:E3" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#fdf6e3;strokeColor=#2D6E2A;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" mermaidBaseValue="Driver: uncertainty&#xa;— the feedback is part of the deliverable" id="8">
+          <mxCell parent="1" style="html=1;whiteSpace=wrap;strokeWidth=1;fillColor=#fdf6e3;strokeColor=#2D6E2A;fontColor=#282828;fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontSize=16;" vertex="1">
+            <mxGeometry height="73" width="355" x="378" y="516" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="well enough to slice" mermaidId="e:Q-&gt;I1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontColor=#282828;exitX=0;exitY=0.82;entryX=0.5;entryY=0;" mermaidBaseValue="well enough to slice" id="9">
+          <mxCell edge="1" parent="1" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontColor=#282828;exitX=0;exitY=0.82;entryX=0.5;entryY=0;" target="3">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="175" y="215" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="not yet" mermaidId="e:Q-&gt;E1#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontColor=#282828;exitX=0.99;exitY=0.82;entryX=0.5;entryY=0;" mermaidBaseValue="not yet" id="10">
+          <mxCell edge="1" parent="1" source="2" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;html=1;fontSize=16;labelBackgroundColor=light-dark(#E8E8E88D,#2a2a2a8D);fontFamily=Tahoma,Verdana,DejaVu Sans,sans-serif;fontColor=#282828;exitX=0.99;exitY=0.82;entryX=0.5;entryY=0;" target="6">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="555" y="215" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:I1-&gt;I2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="11">
+          <mxCell edge="1" parent="1" source="3" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="4">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:I2-&gt;I3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="12">
+          <mxCell edge="1" parent="1" source="4" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E1-&gt;E2#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="13">
+          <mxCell edge="1" parent="1" source="6" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="7">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="" mermaidId="e:E2-&gt;E3#0" mermaidBaseStyle="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="" id="14">
+          <mxCell edge="1" parent="1" source="7" style="curved=1;startArrow=none;endArrow=block;endSize=7;strokeColor=#2D6E2A;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="8">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

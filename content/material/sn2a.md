@@ -14,8 +14,8 @@ fits the work. Each section links to the handbook page carrying the detail and t
 
 ## 1. Why a defined process pays for itself
 
-A defined process is one you can **repeat, check and improve**. If you cannot repeat it you have a
-performance; if you cannot check it you have a belief.
+A defined process is one you can **repeat, check and improve**. Cannot repeat it? You have a
+performance. Cannot check it? You have a belief.
 
 It pays because of a property specific to software. A misunderstanding written into a requirement is
 **honoured** by the design, implemented faithfully by the code, and confirmed by tests written from
@@ -25,12 +25,17 @@ defect rises steeply with the stage it is found in, steeply enough that the stud
 the multiplier {% cite boehm_understanding_1988 %}, so treat the shape as the finding rather than the
 number.
 
+<img src="/images/defect-cost.svg" alt="Relative cost of correcting a defect on a log scale, rising from requirements to the field; each stage drawn as the range of reported multipliers" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+The range at each stage is the spread of reported multipliers. The shape is the finding.
+
 So the work products **before** the code — estimates, requirements, architecture, test plans — are
 each a place a defect can enter, which is what makes them worth reviewing. Quality assurance
 therefore covers **the product** and **the process that builds it**: the process limits how many
 defects were *injected*, and inspection only catches what the process already let in. Rework runs
-**30–80% of effort**; inspections cost **20–30% of first-half effort**, and Fagan calls the fear that
-they delay a project *"a myth"* {% cite fagan2002inspections %}.
+**30–80% of effort** and inspections cost **20–30% of first-half effort**; Fagan calls the fear they
+delay a project *"a myth"* {% cite fagan2002inspections %}.
 
 Two practical points. **Ask the doers, not the managers** — the manager's version is the process
 *designed*, the doers' is the one that *runs* {% cite radice_programming_1985 %}. And **improvement
@@ -48,6 +53,8 @@ ETVX writes a single activity as four parts {% cite radice_programming_1985 %}: 
 be true before it starts; **Task** — what is actually done; **Validation** — how the result is
 checked; **Exit** — what must hold before it may finish.
 
+<img src="/images/etvx.svg" alt="ETVX as four boxes: Entry, Task, Validation, Exit" style="max-width:100%; margin:1.5em 0;" />
+
 **Exit is the part that changes behaviour.** Entry and Task are usually written down somewhere
 already; Exit is what stops work being declared complete because the calendar says so. An activity
 whose exit criterion is *"the document exists"* has not been defined, it has been named — whereas
@@ -60,8 +67,8 @@ predecessor stages. The later stages may be functioning in parallel with previou
 constrains the **handoff** between defined activities, not the calendar — which is why it sits
 underneath plan-driven and iterative work alike.
 
-**Example —** Oerlikon Aerospace built a laser-guided air-defence system with **60+ engineers** under
-MIL-STD-2167A and chose ETVX *"because of its simplicity"* {% cite laporte_software_1996 %}. Their
+**Example —** Oerlikon Aerospace built a laser-guided air-defence system with **60+ engineers** and
+chose ETVX *"because of its simplicity"* {% cite laporte_software_1996 %}. Their
 estimation step exits on an approved WBS and OBS, a schedule, cost estimates — **and a list of the
 alternatives considered**. That last item cannot be produced retrospectively, so requiring it at exit
 forces the estimating to have actually happened.
@@ -103,8 +110,8 @@ it, and what happens to them because of it**.
 Where something matters and cannot be counted — morale, trust, whether estimates are believed — a
 short recurring anonymous questionnaire tracks **judgement as a trend** {% cite mota2009scoreboard %}.
 Read the direction, not one week's score, and cover every role: one team left the Training Manager
-off as *"a minor role not relevant to measure"*, and the omission itself caused *"debate and concern
-inside the team"*. What you decline to measure is a message too.
+off as *"a minor role not relevant to measure"*, and the omission itself caused *"debate and
+concern"*. What you decline to measure is a message too.
 
 → [GQM](../proc/basics/gqm.html) · [Metrics](../proc/basics/metrics.html) ·
 [Scoreboard](../proc/basics/scoreboard.html)
@@ -120,6 +127,8 @@ Three words get used as if they were one. They are rungs, each more concrete tha
 | **Process** | What one organisation actually does, in detail | This team's definition of done |
 | **ETVX** | The unit any of them decomposes into | entry · task · validation · exit |
 
+<img src="/images/ladder.svg" alt="Four rungs from most abstract to most concrete: lifecycle model, framework, process, ETVX" style="max-width:50%; margin:1.5em 0;" />
+
 **The one-sentence version:** a lifecycle names the phases; a framework supplies reusable structure
 to work within them. **Waterfall is a lifecycle; Scrum is a framework.** Scrum settles its own case,
 describing itself as *"a container for other techniques, methodologies, and practices"*
@@ -127,8 +136,8 @@ describing itself as *"a container for other techniques, methodologies, and prac
 phases come in, and that fortnight can sit inside a waterfall phase or an iterative one.
 
 SWEBOK licenses the whole block: *"There is no best software process… No ideal process, or set of
-processes, exists"* {% cite bourque_swebok_2014 %}. The same entry defines a process as inputs →
-activities → outputs which *"may also include its entry and exit criteria"* — ETVX restated in 2014.
+processes, exists"* {% cite bourque_swebok_2014 %} — and defines a process as inputs → activities →
+outputs that *"may also include its entry and exit criteria"*, which is ETVX restated in 2014.
 
 A software **lifecycle** is the cradle-to-grave existence of a product. Most of a lifecycle *model's*
 value is communication: the team can say where it is, management can see status, the customer can be
@@ -169,6 +178,8 @@ requirements *"reasonably well defined"* and ships an operational slice each pas
 first. Iterative expects requirements to move and produces *"an increasingly more complete version"*,
 with the feedback part of the deliverable. So choosing incremental assumes stakeholders can tell you
 *now* what the slices are — and will still want the same ones in six months.
+
+<img src="/images/inc-vs-iter.svg" alt="The requirements-certainty axis: incremental ships operational slices when requirements are known; iterative produces increasingly complete versions when they are not" style="max-width:100%; margin:1.5em 0;" />
 
 **The spiral's defining property is not the loops.** It *"creates a **risk-driven approach** to the
 software process rather than a primarily document-driven or code-driven process"*
@@ -223,6 +234,7 @@ go wrong here, and which process is built to catch that?**
 
 **L2b** makes the last row of that lineage its whole subject: the named frameworks — Scrum, XP,
 Kanban, RUP, SAFe — and Boehm and Turner's five discriminators. See [SN L2b](sn2b.html).
+Revision questions for both Processes lectures are in [RQ2](rq2.html).
 
 ---
 

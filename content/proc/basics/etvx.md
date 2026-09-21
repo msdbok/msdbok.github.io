@@ -22,15 +22,10 @@ accomplished"*. **Validation** is *"a validation procedure to verify the quality
 produced by the tasks"*. **Exit** states what must hold for the activity to be considered done
 {% cite radice_programming_1985 %}.
 
-```mermaid
-flowchart LR
-    A[Entry<br/>preconditions, inputs, approvals] --> G[ ]
-    subgraph G[ ]
-        direction TB
-        B[Task<br/>what is to be accomplished] --> C[Validation<br/>check the work products]
-    end
-    G --> D[Exit<br/>criteria that must hold to finish]
-```
+<img src="/images/etvx.svg" alt="ETVX as four boxes: Entry, what must be true before it starts; Task, what is actually done; Validation, how the result is checked; Exit, what must hold before it may finish" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+After Radice et al. {% cite radice_programming_1985 %}.
 
 The part that changes behaviour is **Exit**. Entry and Task are usually written down somewhere
 already; explicit exit criteria are what stop work being declared complete because the calendar says

@@ -15,10 +15,17 @@ with associated activities and artefacts, so that a team can say where it is and
 That is most of the value: a shared model lets the team discuss progress, lets management see
 status, and tells a customer what happens next.
 
+<img src="/images/research-lifecycle.png" alt="A model-based requirements engineering lifecycle from a real research project" style="max-width:70%; margin:1.5em 0;" />
+
+{: .fs-2 }
+A lifecycle model from a research project. © Sadovykh, Truscan, Bruneliere.
+
 ## 1. Process, lifecycle model, framework
 
 These three words are used loosely and are examined precisely, so it is worth putting them on one
 ladder from most abstract to most concrete:
+
+<img src="/images/ladder.svg" alt="Four rungs from most abstract to most concrete: lifecycle model, framework, process, ETVX" style="max-width:50%; margin:1.5em 0;" />
 
 - **Lifecycle model** — the phases a product passes through and the go/no-go points between them.
   Waterfall, spiral, incremental.

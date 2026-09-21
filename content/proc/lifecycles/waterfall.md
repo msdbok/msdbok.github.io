@@ -11,17 +11,10 @@ Waterfall runs a project as a sequence of phases — requirements, design, imple
 maintenance — each completed and signed off before the next begins. Its defining feature is not the
 order of the phases but the **exit criterion** between them.
 
-```mermaid
-gantt
-    title Waterfall Lifecycle
-    dateFormat YYYY-MM-DD
-    section Phases
-    Requirements             :a1, 2024-01-01, 60d
-    Design                   :a2, after a1, 45d
-    Implementation           :a3, after a2, 90d
-    Testing                  :a4, after a3, 40d
-    Deployment & Maintenance :a5, after a4, 120d
-```
+<img src="/images/waterfall.svg" alt="Waterfall phases in sequence, with an exit gate drawn between each pair" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+The gates between the phases are the model; the order of the phases is not.
 
 ## 1. The advantage and the disadvantage are the same property
 

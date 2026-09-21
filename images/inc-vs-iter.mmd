@@ -1,0 +1,21 @@
+flowchart TB
+    Q{"Requirements<br/>known?"}
+    I1["INCREMENTAL<br/>Requirements reasonably well defined"]
+    I2["Each pass ships an<br/>OPERATIONAL PRODUCT<br/>— a stripped-down but usable slice"]
+    I3["Driver: scope, staffing, a deadline"]
+    E1["ITERATIVE / EVOLUTIONARY<br/>Requirements expected to change"]
+    E2["Each pass produces an<br/>INCREASINGLY MORE COMPLETE VERSION"]
+    E3["Driver: uncertainty<br/>— the feedback is part of the deliverable"]
+    Q -->|"well enough to slice"| I1
+    Q -->|"not yet"| E1
+    I1 --> I2
+    I2 --> I3
+    E1 --> E2
+    E2 --> E3
+    style Q fill:#019546,stroke:#2D6E2A,color:#ffffff
+    style I1 fill:#f0f8f0,stroke:#019546,color:#282828
+    style I2 fill:#f0f8f0,stroke:#019546,color:#282828
+    style I3 fill:#f0f8f0,stroke:#019546,color:#282828
+    style E1 fill:#fdf6e3,stroke:#2D6E2A,color:#282828
+    style E2 fill:#fdf6e3,stroke:#2D6E2A,color:#282828
+    style E3 fill:#fdf6e3,stroke:#2D6E2A,color:#282828

@@ -28,6 +28,11 @@ you start** {% cite pressman2010incremental %}:
 | Process flow | linear sequences applied in a staggered fashion | iteration around the whole product |
 | Driver | scope too large for one pass; staffing; a deadline | uncertainty |
 
+<img src="/images/inc-vs-iter.svg" alt="The requirements-certainty axis: incremental ships operational slices when requirements are known; iterative produces increasingly complete versions when they are not" style="max-width:100%; margin:1.5em 0;" />
+
+{: .fs-2 }
+The axis is requirements certainty, after Pressman {% cite pressman2010incremental %}.
+
 Because each increment is a small linear pass, Pressman also calls the incremental model *"the
 iterative waterfall"* — an accurate and slightly mischievous name.
 

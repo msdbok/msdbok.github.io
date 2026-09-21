@@ -1,0 +1,27 @@
+flowchart LR
+    R["REQUIREMENTS"]
+    G1{"exit<br/>criteria"}
+    D["DESIGN"]
+    G2{"exit<br/>criteria"}
+    I["IMPLEMENTATION"]
+    G3{"exit<br/>criteria"}
+    T["TESTING<br/>the first honest feedback"]
+    G4{"exit<br/>criteria"}
+    M["MAINTENANCE"]
+    R --> G1
+    G1 --> D
+    D --> G2
+    G2 --> I
+    I --> G3
+    G3 --> T
+    T --> G4
+    G4 --> M
+    style R fill:#f0f8f0,stroke:#019546,color:#282828
+    style D fill:#f0f8f0,stroke:#019546,color:#282828
+    style I fill:#f0f8f0,stroke:#019546,color:#282828
+    style T fill:#fdf6e3,stroke:#2D6E2A,color:#282828
+    style M fill:#f0f8f0,stroke:#019546,color:#282828
+    style G1 fill:#019546,stroke:#2D6E2A,color:#ffffff
+    style G2 fill:#019546,stroke:#2D6E2A,color:#ffffff
+    style G3 fill:#019546,stroke:#2D6E2A,color:#ffffff
+    style G4 fill:#019546,stroke:#2D6E2A,color:#ffffff

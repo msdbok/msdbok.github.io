@@ -1,0 +1,12 @@
+flowchart LR
+    A["ENTRY<br/>What must be true<br/>before this starts<br/>— inputs, approvals"]
+    B["TASK<br/>What is actually<br/>done"]
+    C["VALIDATION<br/>How the result<br/>is checked"]
+    D["EXIT<br/>What must hold<br/>before it may finish"]
+    A --> B
+    B --> C
+    C --> D
+    style A fill:#f0f8f0,stroke:#019546,color:#282828
+    style B fill:#f0f8f0,stroke:#019546,color:#282828
+    style C fill:#f0f8f0,stroke:#019546,color:#282828
+    style D fill:#019546,stroke:#2D6E2A,color:#ffffff
