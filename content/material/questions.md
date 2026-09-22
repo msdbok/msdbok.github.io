@@ -18,6 +18,7 @@ paragraph making a claim and supporting it, which is also how the quizzes are ma
 your position first, then give the reasoning or the evidence for it.
 
 - [RQ1 — People](rq1.html) covers personality, culture, communication, motivation, leadership, teams, psychological safety, social loafing and decision making.
+- [RQ2 — Processes](rq2.html) covers defining and measuring a process, ETVX, the lifecycle models and how to choose one, then agile and its limits, XP, Scrum, Kanban, scaling, the RUP family and process under AI agents.
 - [RQ4 — Scope](rq4.html) covers the work breakdown structure and estimation.
 - [RQ5 — Planning](rq5.html) covers planning, activities and milestones.
 
