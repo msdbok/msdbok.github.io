@@ -30,6 +30,9 @@ Paying half a million is the **cheapest** option, because the comparison is not 
 **plus residual exposure**. That is what exposure is for: **comparing options, not measuring the
 world.**
 
+![A decision tree comparing the cost of prototyping against the exposure it removes](decision-tree.svg)
+_The $500,000 option was cheaper._ {% cite boehm1991risk %}
+
 It also answers the objection students raise immediately — *"you made those probabilities up."*
 Re-run the comparison at its break-even points: the recommendation flips if the loss falls below
 $13M, if the team reaches 0.065 on its own, or if the review costs more than $1.2M. The question is
@@ -58,6 +61,9 @@ Prioritising means *"partitioning risks or groups of risks based on the **Pareto
 terms: *"80 percent of the overall project risk… can be accounted for by only 20 percent of the
 identified risks"* {% cite pressman2010risk %}.
 
+![A Pareto curve separating the vital few from the useful many](pareto.svg)
+_The vital few._ {% cite mcconnell_rapid_1996 %}
+
 The consequence is the part students resist: **some identified risks never enter the mitigation plan
 at all.** Identification is cheap and capacity is not, so selection is the skill.
 
@@ -74,7 +80,9 @@ the input is subjective, the prioritization is subjective too."*
 
 ## 4. What the scoring scheme hides
 
-{: .warning }
+![A five by five risk matrix against expected loss, showing where they disagree](matrix-vs-el.svg)
+_Same cell, orders of magnitude apart._ {% cite cox2008matrices %}{: .warning }
+
 **Multiplying two ordinal scores is not exposure.** A red-amber-green matrix is a communication
 device, and NASA says so about its own: *"the risk matrix is not an assessment tool, but can
 facilitate risk discussions"* {% cite nasa_nasa_2007 %}. A typical matrix compares **fewer than 10%**

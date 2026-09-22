@@ -16,6 +16,9 @@ someone on the project who has not been asked.
 Three bands, and naming them tells you what to expect from the effort
 {% cite carr1993taxonomy %}:
 
+![Known and unknown risks, against who in the organisation knows them](known-unknown.svg)
+_Most risks are already known, to someone who is not you._ {% cite carr1993taxonomy %}
+
 - **Known** — risks *"one or more project personnel are aware of — if not explicitly as risks, at
   least as concerns."* The job is to get them onto one list.
 - **Unknown** — risks that *"would be surfaced… if project personnel were given the right
@@ -77,6 +80,9 @@ candidate ideas in 30 to 35 minutes** {% cite dorofee1996crm %}. Consolidate sta
 11 risk areas** sharing a mitigation strategy, then ask of each pair whether one area's conditions
 drive another's. Areas with many outgoing arrows are the **drivers**, and those are what you mitigate
 {% cite williams1999sre %}.
+
+![Sixty risks reduced to a few clustered areas](risk-digraph.svg)
+_Mitigate areas, not rows._ {% cite williams1999sre %}
 
 ## How solid is this?
 

@@ -22,6 +22,9 @@ Christel and Kang group elicitation problems into **scope**, **understanding** a
 then classify ten published problems into those three. **Seven of the ten are problems of
 understanding.** Two are scope; one is volatility.
 
+![Ten elicitation problems sorted into scope, understanding and volatility](elicitation-problems.svg)
+_Seven of ten are understanding._ {% cite christel1992elicitation %}
+
 Each class has a different repair:
 
 - **Scope** — the requirements address too much or too little. Go back to the system boundary.
@@ -48,6 +51,9 @@ Ethernet resolved it in six hours.
 A systematic review of 30 empirical studies supports three narrow statements
 {% cite dieste2011elicitation %}:
 
+![What the evidence tested against what practitioners actually use](elicitation-evidence.svg)
+_Tested against used._ {% cite dieste2011elicitation %}
+
 1. **Interview by default** — the most effective of all techniques tested, though not always the
    most efficient.
 2. **Write the questions first** — structured interviews produce more customer needs than
@@ -69,6 +75,9 @@ no technique ranking to memorise.
 A survey of **228 organisations across 10 countries** names the top three problems: **incomplete or
 hidden requirements** (109), **communication flaws with the customer** (93) and **moving targets**
 (76) {% cite mendez2017napire %}. None is a technique problem.
+
+![Requirements problems: how often cited, and how often blamed for failure](napire.svg)
+_Frequency is not damage._ {% cite mendez2017napire %}
 
 **Frequency and damage rank differently.** Communication flaws are cited less often than incomplete
 requirements but blamed for failure more often — 48% of citations against 39% — and moving targets

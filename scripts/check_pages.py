@@ -10,7 +10,9 @@ actually stops a student understanding the material.
 This reports, it does not fix. Treat it like check_citations.py: run it before
 committing a page, and use --summary to see where the site stands.
 
-Budgets (body words, excluding front matter, References, Acknowledgments, Disclaimer):
+Budgets (body words, excluding front matter, References, Acknowledgments, Disclaimer,
+and excluding markup that is not prose: image alt text and filenames, liquid tags such
+as {% cite %}, and kramdown {: .class } attribute lists. Captions are counted):
     hub           100-250    index pages: orientation and links only
     topic-hub     250-500    framing + comparison table + links to detail pages
     method        400-800    the default
@@ -113,14 +115,32 @@ def classify(path: Path, fm: dict, body: str) -> str:
     return 'method'
 
 
+# Markup that is not prose a reader reads. Counting it made a figure cost about 25
+# words - alt text, the image filename, and the {% cite %} beside it - so the budget
+# actively discouraged illustrating a page, which is backwards. Captions ARE still
+# counted: they are read. Changed 2026-09-22 while importing the L3 figures.
+IMG_MD_RE = re.compile(r'!\[[^\]]*\]\([^)]*\)')
+IMG_HTML_RE = re.compile(r'<img\b[^>]*>', re.I)
+LIQUID_RE = re.compile(r'\{%.*?%\}', re.S)
+KRAMDOWN_IAL_RE = re.compile(r'^[ \t]*\{:.*?\}[ \t]*$', re.M)
+
+
+def prose_only(text: str) -> str:
+    """Strip image markup, liquid tags and kramdown attribute lists before counting."""
+    text = IMG_MD_RE.sub(' ', text)
+    text = IMG_HTML_RE.sub(' ', text)
+    text = LIQUID_RE.sub(' ', text)
+    return KRAMDOWN_IAL_RE.sub(' ', text)
+
+
 def analyse(path: Path) -> dict:
     text = path.read_text(encoding='utf-8', errors='replace')
     fm, body = split_page(text)
 
     lines = body.splitlines()
     bullets = [l for l in lines if BULLET_RE.match(l)]
-    words = len(re.findall(r'\w+', body))
-    bullet_words = len(re.findall(r'\w+', '\n'.join(bullets)))
+    words = len(re.findall(r'\w+', prose_only(body)))
+    bullet_words = len(re.findall(r'\w+', prose_only('\n'.join(bullets))))
 
     # first 40 words after the H1, ignoring blockquotes/italic attributions
     after_h1 = re.split(r'^#\s+.*$', body, maxsplit=1, flags=re.M)

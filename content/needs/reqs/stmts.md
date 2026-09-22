@@ -59,6 +59,9 @@ requirement. *Modifiable* means nothing until it reads *"in less than two person
 Wiegers separates the two levels, and the split matters: a review checking all ten against every
 sentence is doing the wrong work twice {% cite wiegers1999quality %}.
 
+![A quality-attribute scenario in four slots, with the five-second example](qa-scenario.svg)
+_The fourth slot is the one teams skip._ {% cite barbacci2003qaw %}
+
 **On one statement:** correct · feasible · necessary · prioritised · **unambiguous** (*"the reader
 should be able to draw only one interpretation of it"*) · **verifiable**.
 

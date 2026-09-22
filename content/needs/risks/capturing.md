@@ -55,6 +55,9 @@ airline **cancelled or delayed 89% of its scheduled holiday-period departures**,
 191,000 passengers by cancellation and 78,000 by delay {% cite dotoig2005comair %}, at a cost to
 Comair and Delta of about $20 million {% cite overby2005comair %}.
 
+![The Comair crew-scheduling failure, hour by hour](comair-timeline.svg)
+_Not the storm. A hard-coded limit._ {% cite dotoig2005comair %}
+
 Every element of a register was present years in advance. A replacement was proposed in 1997,
 rejected on good grounds, deferred four times for defensible reasons — Y2K, an acquisition, a
 pilots' strike, a downturn — approved in 2004, and still in testing when the failure beat it by
@@ -66,6 +69,12 @@ that this critical system posed."*
 A risk with no owner is not managed. Planning one means choosing the control action, the
 **observables**, the **thresholds** that say performance is still acceptable, the protocol on
 exceedance, and the owner. **A mitigation with no threshold cannot trigger.**
+
+![A risk burndown, showing exposure falling as mitigations land](burndown.svg)
+_Mitigations burn risks down. Meetings do not._ {% cite dod2023rio %}
+
+![Expected monetary value across one project, March 2011 to February 2012](emv-trend.svg)
+_Growing early is good news._ {% cite shrivastava2012pmi %}
 
 The cheapest continuous practice is a **top-10 list**, and its value is one column: *last week's
 rank* {% cite boehm1991risk %}. Review it weekly with the project manager's boss present, opening

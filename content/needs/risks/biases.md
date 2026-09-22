@@ -38,6 +38,9 @@ Across **5,392 IT projects**, the median cost-overrun ratio is **1.0** and the m
 {% cite flyvbjerg2022overruns %}. Half of all projects come in at or under budget; the average is 80%
 over. **The entire gap between those two numbers is the tail.**
 
+![The distribution of IT project cost overruns, with its long right tail](overrun-histogram.svg)
+_Half are on budget. The average is 80% over._ {% cite flyvbjerg2022overruns %}
+
 Deeper in that tail the arithmetic stops working: the distribution is a power law whose exponent
 falls below 2 at the extreme cut-offs — at which point no mean exists at all. In the authors' words,
 *"the average cost overrun for IT projects does not exist."*

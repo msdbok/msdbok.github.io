@@ -18,8 +18,11 @@ them — the distinction is on [requirements engineering](eng). What a review lo
 than "read it carefully": **ambiguity**; **inconsistency and omission**,
 including anything still marked *to be determined*, since a specification containing one is not
 complete {% cite iso2018req %}; **a named source** who confirms the written form is what they meant;
-and **a way to test it**. If no process can determine whether the software meets a requirement, the
-rule is to **remove or revise it**.
+and **a way to test it**. If nothing can determine whether the software meets a requirement,
+**remove or revise it**.
+
+![A V, with validation on the way down and verification on the way up](vmodel-vv.svg)
+_Stakeholders, then the build._ {% cite nuseibeh2000roadmap %}
 
 ## 2. Traceability
 
@@ -34,6 +37,9 @@ Commercial word processors and spreadsheets grew from **under 300 function point
 ten years** {% cite jones1996creep %} — not a failure of requirements discipline, but what a product
 that survives looks like.
 
+![Maintenance effort: fixing defects against adding what users now want](maintenance-split.svg)
+_Mostly enhancement, not repair._ {% cite kelly2004change %}
+
 And most change is not repair. Corrective maintenance is only **10–15%** of maintenance work;
 functional enhancements are **over 60%** of changes, and **40% of those enhancements come from
 learning** {% cite kelly2004change %} — figures that are Edberg and Olfman's, relayed by Kelly.
@@ -45,6 +51,9 @@ Specifying a system also changes the system people want: interviewing people abo
 **Volatility** is *"the ratio of requirements change… to the total number of requirements for a
 given period of time"* — a number any project can produce from its change log
 {% cite nurmuliani2004volatility %}.
+
+![The cost of change rises, and with it the bar a change must clear](change-threshold.svg)
+_The price rises; the door stays open._ {% cite kelly2004change %}
 
 Recording *what* changed is easy. Recording **why** and **where it came from** turns a change log
 into an analysis: changes originating in design reviews mean the reviews are working; changes

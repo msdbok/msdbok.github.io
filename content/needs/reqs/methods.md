@@ -57,6 +57,9 @@ success path, alternatives and exceptions, postconditions {% cite rosson_scenari
 is worth distinguishing from a use case: a use case describes outwardly visible behaviour, and a
 scenario is *"a particular path through a use case"* {% cite nuseibeh2000roadmap %}.
 
+![Definition of Ready and Definition of Done, either side of a sprint](ready-done.svg)
+_The completeness check moved; it did not go away._ {% cite swebok2024v4 %}
+
 *Example.* *On a crowded train with intermittent mobile data, Aisha opens the app to show her QR
 ticket; when offline, the pass must still render and validate.* That one sentence surfaces an
 availability requirement no feature list would have produced.

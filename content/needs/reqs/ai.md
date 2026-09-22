@@ -22,6 +22,9 @@ fast and barely deployed: of 238 studies to May 2025, **over 90% are concept or 
 work and 1.3% reach production** {% cite cheng2026genaire %} — so the honest reading is not that it
 fails, but that almost nobody has run it in anger.
 
+![Published studies on automating requirements work, by era](re-tools-timeline.svg)
+_The fourth generation of requirements automation._ {% cite cheng2026genaire %}
+
 ## 2. Where it earns its place
 
 The tasks that work share a shape — text in, text out, a checkable answer, no whole-project context

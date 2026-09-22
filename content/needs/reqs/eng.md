@@ -35,6 +35,9 @@ requirements work; it redistributes it.
 The two words are routinely swapped, and the distinction is not cosmetic — the two questions need
 **different techniques** {% cite nuseibeh2000roadmap %}.
 
+![Elicit, model and analyse, communicate, agree, evolve, drawn as a cycle](re-cycle.svg)
+_The five activities are a cycle, not a pipeline._ {% cite nuseibeh2000roadmap %}
+
 - **Validation** asks whether these are the **right** requirements: *"the process of establishing
   that the requirements and models elicited provide an accurate account of stakeholder
   requirements."* It is a question about stakeholders, answered before and during the build.

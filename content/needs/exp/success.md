@@ -62,6 +62,7 @@ is the figure this subject should carry, and it is the one a CHAOS-only slide do
 
 ![Cost, schedule and value outcomes, all IT against software only](mckinsey.svg)
 _All large IT against software alone, on the same study._ {% cite bloch2012mckinsey %}
+
 Two further findings change decisions:
 
 - **17%** of large IT projects go so badly that *"they can threaten the very existence of the

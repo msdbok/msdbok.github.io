@@ -18,6 +18,9 @@ follow, the same in every standard: a **probability** that it occurs and a **los
 
 Three things routinely get filed as risks and are not.
 
+![Where a cause becomes a risk and a risk becomes an issue](risk-or-issue.svg)
+_No uncertainty left: an issue._ {% cite hillson2009risk %}
+
 - **An issue has already happened**, or is certain to. With no probability left to reduce, an issue
   is *resolved* rather than *mitigated*: a 100-percent-probable risk is a constraint
   {% cite pressman2010risk %}.
@@ -36,6 +39,9 @@ learning"* {% cite vanscoy1992risk %}. The manager balances a risk's consequence
 opportunity attached to it — which is why the SEI's continuous practice manages **opportunities as
 well as threats** {% cite higuera1996risk %}.
 
+![Five levels of risk-handling maturity, from crisis management to elimination](five-levels.svg)
+_Risk is not bad. Unmanaged risk is._ {% cite vanscoy1992risk %}
+
 The failure mode has a name: the *"Indiana Jones school of risk management"* — never worry about a
 problem until it happens, then react heroically {% cite pressman2010risk %}. The ladder out runs
 crisis management → fix on failure → mitigation → prevention → elimination of root causes; at the
@@ -46,6 +52,9 @@ first three levels the schedule battle is already lost {% cite mcconnell_rapid_1
 Five steps in a loop, with **communication running through all of them**: **identify → analyse →
 plan → track → control** {% cite vanscoy1992risk %}. Communication sits at the centre rather than as
 a sixth step, and it is the only element whose absence voids the approach.
+
+![Five steps round a wheel, with communication through the hub](crm-wheel.svg)
+_Communicate is the hub, not a step._ {% cite dorofee1996crm %}
 
 Three named practices sit on that loop {% cite higuera1996risk %}: a **Software Risk Evaluation** is
 an event, **Continuous Risk Management** is a habit, **Team Risk Management** adds the customer. The

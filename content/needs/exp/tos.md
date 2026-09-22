@@ -51,6 +51,7 @@ The threshold lives inside a protocol Wysocki calls **Conditions of Satisfaction
 
 ![Request, clarify, respond, clarify — repeated until it stops moving](cos-loop.svg)
 _The restatement is the test._ {% cite wysocki2003needs %} Its deliverable is a one-page **Project Overview Statement** carrying
+
 the problem, one goal in the language of the business, objectives, success criteria and assumptions.
 
 The agreement is not an artefact you file. It is re-run at every milestone, and on a change of

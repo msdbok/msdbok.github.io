@@ -29,6 +29,9 @@ The card is a token for the conversation, not a substitute — Wake calls the st
 language**, the reduced vocabulary in which a customer and a programmer can agree enough to work
 {% cite wake_invest_2003 %}.
 
+![A story as a vertical slice through the layers, not one layer](layer-cake.svg)
+_A story is a vertical slice, not a layer._ {% cite wake_invest_2003 %}
+
 **INVEST** is the usual check: **I**ndependent, **N**egotiable, **V**aluable, **E**stimable,
 **S**mall, **T**estable. *Testable* carries the most teaching: *"writing a story card carries an
 implicit promise: 'I understand what I want well enough that I could write a test for it.'"* Ask the
