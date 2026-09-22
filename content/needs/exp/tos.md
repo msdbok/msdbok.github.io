@@ -1,75 +1,107 @@
 ---
 parent: Expectations
-title: Taran TOS
-nav_order: 4
+title: Threshold of success
+nav_order: 3
 layout: default
 ---
 
-# Threshold of Success (TOS) by Gil Taran et al.
+# Threshold of Success
 
-_**Based on:** Hoover, Carol L., Mel Rosso-Llopart, and Gil Taran, _Evaluating Project Decisions: Case Studies in Software Engineering_. Addison-Wesley Professional, 2010. ISBN-13: 978‐0321544568. [O'Reilly Media](https://www.oreilly.com/library/view/evaluating-project-decisions/9780321685629/)._
+The **threshold of success** (ToS) is the set of criteria, agreed and written down in advance, that
+decide whether a project succeeded — stated in terms of **product, process and people**
+{% cite hoover_evaluating_2010 %}. It is written before the work starts, and it is what every later
+argument about "was this a success?" is settled against.
+
+## 1. Write the failure statements first, then invert them
+
+Goal statements resist precision; failure statements do not. The practical route to a threshold is
+therefore backwards:
+
+1. **Gather the stakeholders** who will be affected — customer, users, sponsor, team.
+2. **Write what failure looks like**, plainly: *"the migration ran past the December close"*,
+   *"support tickets doubled in the first month"*.
+3. **Invert each statement** into a positive criterion: *"cutover complete before 1 December"*,
+   *"support volume within 20% of the pre-migration baseline after 30 days"*.
+4. **Check each one is SMART** — specific, measurable, assignable, realistic, time-bound. The
+   criteria are Doran's, from 1981, relayed by Wysocki {% cite wysocki2003needs %}; note that the
+   **A is *assignable***, naming who is responsible, not "achievable".
+
+## 2. The test that makes a criterion a criterion
+
+Wysocki states the standard in one sentence {% cite wysocki2003needs %}: *"An ideal statement will
+have only two results — the criteria were met or the criteria were not met. There can be no
+in-between answer here."*
+
+Applied to a real threshold, the test is quick. For example, *"the reporting module will be easy to
+use"* fails — two honest people reading the same evidence could disagree. *"A new branch
+administrator completes the month-end reconciliation report unaided, in under 15 minutes, on first
+attempt"* passes, because it can only come out one way.
+
+Wysocki adds a constraint that is more useful than it looks: a business success criterion reduces to
+**increased revenue, reduced cost or improved service**. A criterion that reduces to none of the
+three — *"we delivered 47 stories"* — is measuring the project, not its purpose. *Improved service*
+usually needs a proxy measure, agreed with the sponsor before the project rather than at the review.
+
+## 3. Agreeing it: a conversation with a stopping rule
+
+The threshold lives inside a protocol Wysocki calls **Conditions of Satisfaction**: a **request**,
+the provider's **clarification** of what they heard, a **response**, then the requestor's
+**agreement** restating what they will get — repeated until neither side corrects the other. The
+stopping rule is the point. Its deliverable is a one-page **Project Overview Statement** carrying
+the problem, one goal in the language of the business, objectives, success criteria and assumptions.
+
+The agreement is not an artefact you file. It is re-run at every milestone, and on a change of
+sponsor or project manager — exactly when a project silently changes what success means without
+anyone noticing.
+
+## 4. Why risk management starts here
+
+The threshold is also the instrument that makes risk identification finite
+{% cite hoover_evaluating_2010 %}: *"The ToS serves as a catalyst in identifying risks that, if they
+were to materialize, might prevent the project from being successful."*
+
+Without it, every conceivable bad event is a candidate and the register grows until nobody reads it.
+With it, a **risk is exactly a concern that would breach the threshold**, and everything else is an
+event that might happen and would not matter. Wysocki supplies the other bound: an event you are
+certain of is not a risk but a certainty. See [risk identification](../risks/identification).
+
+## 5. Limitations and challenges
+
+- **Agreement is hard.** Stakeholders bring differing priorities and hidden assumptions, and
+  thresholds are where those surface — the point of the exercise, but it costs time.
+- **Thresholds conflict.** High quality, low cost, fast delivery and broad scope cannot all be
+  maximised; see [expectation space](quadrant).
+- **Both extremes destroy credibility.** Set them too low and they are meaningless; too high and
+  they are unachievable.
+- **Real change forces renegotiation.** A threshold defended past the point where it made sense is
+  the same failure as having none.
+- **It assumes there is a goal to agree on.** Wysocki is explicit that the method *"loses its value
+  as the goal becomes more and more elusive"* — on genuinely exploratory work, expect to re-run it
+  rather than to get it right once.
+
+## How solid is this?
+
+- **Where it comes from.** Hoover, Rosso-Llopart and Taran is a software textbook built on case
+  studies; Wysocki is a practitioner handbook. Both establish method, neither measures whether
+  defining a threshold improves outcomes.
+- **What is contested.** Nothing in the method — but the Conditions of Satisfaction dialogue is
+  worked through a manufacturing scenario in the source, so the software reading above is ours.
+- **What we do not hold.** Wysocki's project-failure statistics are asserted with no source, and the
+  same ten-item list appears in his book once as success factors and once as failure factors. None
+  of it is used here.
 
 ---
 
-## Definition & Purpose
+### Acknowledgments
 
-- The **threshold of success** (TOS) is a set of clear, pre-defined criteria that determine whether a project is considered successful.
-- TOS is established **in advance** and used to evaluate project actions, decisions, and deliverables.
-- Alternatively, you can define a **threshold of failure** (what must _not_ happen), then invert those statements to set your success criteria.
-- TOS is a powerful tool for **managing stakeholder and customer expectations**—it clarifies up front what “success” means, reducing ambiguity and future disputes.
+This page adapts material from lectures by Eduardo Miranda, David Root and Gil Taran
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## Key Dimensions
-
-When defining thresholds of success, consider these classic project management dimensions:
-
-| **Dimension** | **What it addresses**                       |
-|---------------|---------------------------------------------|
-| **Scope**     | What will be delivered (features, functions)|
-| **Time**      | Schedule, milestone dates                   |
-| **Cost**      | Budget, financial constraints               |
-| **Quality**   | Performance, reliability, usability, etc.   |
-
-Thresholds should be **unambiguous** and stated as clear requirements in each area.
-
----
-
-## How to Define a Threshold of Success
-
-1. **Gather stakeholders**  
-   - Include everyone affected: customers, users, team members, sponsors.
-2. **Build a minimum picture of failure**  
-   - Define what would make the project a failure (e.g., “delivered after date X,” “cost over Y,” “missing feature Z,” “quality below standard Q”).
-3. **List failure statements**  
-   - Collect unacceptable outcomes as negative statements.
-4. **Invert to create success thresholds**  
-   - Turn each failure statement into a positive, measurable success criterion (e.g., “delivered by date X or earlier,” “cost ≤ Y,” “includes feature Z,” “meets quality standard Q”).
-5. **Apply SMART criteria**  
-   - Make sure each threshold is Specific, Measurable, Achievable, Relevant, and Time-bound.
-6. **Set perception and credibility**  
-   - Use these thresholds to establish your professionalism and reliability with stakeholders.
-
----
-
-## How TOS Helps Manage Expectations
-
-- **Clarity:** Everyone knows exactly what must be delivered, when, at what cost, and at what quality.
-- **Alignment:** Reduces surprises and misunderstandings—expectations are explicit, not assumed.
-- **Decision criteria:** Project decisions can be evaluated against the thresholds (e.g., “Does this change violate our cost threshold?”).
-- **Negotiation tool:** If a change threatens a threshold, you can negotiate trade-offs based on the agreed criteria.
-- **Perception management:** Being explicit about thresholds demonstrates professionalism and builds trust.
-
----
-
-## Limitations & Challenges
-
-- **Agreement:** Getting all stakeholders to agree on thresholds can be difficult due to differing priorities or hidden assumptions.
-- **Conflicts:** Some thresholds may conflict (e.g., high quality vs. low cost vs. fast delivery vs. broad scope); trade-offs are often necessary.
-- **Realism:** Setting thresholds too low (meaningless) or too high (unachievable) harms credibility.
-- **Change management:** Project changes may require revisiting and renegotiating thresholds with stakeholders.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining, and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

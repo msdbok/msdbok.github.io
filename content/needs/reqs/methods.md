@@ -5,85 +5,99 @@ nav_order: 6
 layout: default
 ---
 
-# Requirements Engineering Methods Overview
+# Requirements Methods
 
-## IEEE 830 SRS (and its successor)
+Three families of method dominate practice, and they answer different questions: a **specification**
+says what the product must do in auditable form, a **user story** is a unit of work and a promise to
+talk, and a **scenario** describes the work in context. Most projects use more than one.
 
-**What it is.** IEEE Std 830 defined what a good Software Requirements Specification (SRS) looks like: structure + quality attributes (correct, unambiguous, complete, consistent, ranked, verifiable, modifiable, traceable). It’s now superseded by ISO/IEC/IEEE 29148, which generalizes to systems + software and formally defines “good requirement” constructs.
+## 1. Quick comparison
 
-**Typical structure (830-style):**
+| Dimension | Specification (29148) | User stories | Scenarios |
+|---|---|---|---|
+| **Purpose** | Complete, auditable statement of requirements | Planning and collaboration units | Understanding work and context; driving design and tests |
+| **Form** | Structured document plus a traceability matrix | *"As a … I want … so that …"* plus acceptance criteria | Narrative with context, paths and outcomes |
+| **Validation** | Review against the quality criteria; traceability | Acceptance criteria, often Given–When–Then | Walkthroughs, usability testing, architecture evaluation |
+| **Strengths** | Completeness and traceability | Speed, value focus, testability | Empathy, context, edge cases, discovering quality requirements |
+| **Main cost** | Heavy to write and to keep current | Vague without the conversation and the confirmation | Not a specification on its own; needs translating |
+| **Best when** | Regulated or contract work, complex interfaces | Evolving scope, frequent delivery | Early discovery, interaction design, architecture evaluation |
 
-- Introduction (purpose, scope, definitions)
-- Overall description (users, constraints, assumptions)
-- Specific requirements (functional, interfaces, non-functional, design constraints) + appendices & index.
+## 2. Specification: cite 29148, not 830
 
-**When to use:** Regulated/contract work, complex interfaces, and rigorous traceability (with an RTM). 29148 is the current standard to cite.
+**ISO/IEC/IEEE 29148:2018** is the current standard {% cite iso2018req %}. It supersedes
+**IEEE Std 830**, which was **withdrawn in 2011** — worth knowing because almost every SRS template
+in circulation descends from 830's outline, and course materials still cite it as current. Its
+substance on the design boundary, the project boundary and verifiability is reproduced in 29148.
 
-**Mini-example (SRS NFR):**  
-“Search must return results within **200 ms p95** for a catalog of **10M items**.”
+A typical structure: introduction (purpose, scope, definitions) → overall description (users,
+constraints, assumptions) → specific requirements (functional, interfaces, quality, design
+constraints) → appendices. For example, a quality requirement in that form reads: *"search shall
+return results within 200 ms at the 95th percentile for a catalogue of 10 million items."*
+
+Use it where an auditor, a regulator or a contract will read the result.
+
+## 3. User stories
+
+*"As a &lt;user&gt;, I want &lt;capability&gt; so that &lt;benefit&gt;."* Ron Jeffries framed the
+**3Cs** — Card, Conversation, Confirmation {% cite jeffries_essential_2001 %} — and Bill Wake's
+**INVEST** gives the quality checks: Independent, Negotiable, Valuable, Estimable, Small, Testable
+{% cite wake_invest_2003 %}. The checkable, thirteen-criterion version is on
+[documenting requirements](doc) {% cite lucassen2016qus %}.
+
+In practice: write acceptance criteria, prefer **Given–When–Then** {% cite cucumber_gherkin_2025 %},
+slice vertically, and keep the conversation rather than the card as the artefact.
+
+*Example.* *As a shopper, I want to save items to a wishlist so that I can buy them later.*
+**Given** I am logged in, **when** I click Save, **then** the item appears in My Wishlist.
+
+## 4. Scenarios
+
+A scenario is a narrative task description — actor and goal, context, preconditions, the main
+success path, alternatives and exceptions, postconditions {% cite rosson_scenario-based_2002 %}. It
+is worth distinguishing from a use case: a use case describes outwardly visible behaviour, and a
+scenario is *"a particular path through a use case"* {% cite nuseibeh2000roadmap %}.
+
+*Example.* *On a crowded train with intermittent mobile data, Aisha opens the app to show her QR
+ticket; when offline, the pass must still render and validate.* That one sentence surfaces an
+availability requirement no feature list would have produced.
+
+The same form specifies quality attributes, with a **response measure** attached — which is where
+scenarios stop being narrative and become requirements {% cite barbacci2003qaw %}. See
+[requirement statements](stmts).
+
+## 5. Choosing between them
+
+The honest position is that the form should not be discernible afterwards:
+*"downstream maintainers should not be able to discern the life cycle used in earlier development
+from the form of those requirements alone"* {% cite swebok2024v4 %}. Agile does not remove
+requirements work; it redistributes it.
+
+So the choice is driven by who must read the result and how stable the scope is — not by
+methodological preference. The failure mode of each is predictable: a specification goes stale, a
+backlog of stories loses the properties only visible across the whole set, and a scenario reads well
+and specifies nothing until a measure is attached.
+
+## How solid is this?
+
+- **Where it comes from.** A current standard, two practitioner articles that report no study, a
+  design-methods handbook chapter, and one empirical paper on user-story quality.
+- **What is contested.** Nothing compares these methods' outcomes against each other — no source
+  here shows that any one produces better software.
+- **What we do not hold.** IEEE 830 is withdrawn, so anything citing it as current is describing
+  a template's ancestry rather than a standard in force.
 
 ---
 
-## User Stories (Agile)
+### Acknowledgments
 
-**What they are.** Thin, user-value slices for planning and collaboration (XP/Scrum): _"As a \<user\>, I want \<capability\> so that \<benefit\>."_ Ron Jeffries framed the **3Cs**: Card, Conversation, Confirmation. Bill Wake's **INVEST** gives quality checks (Independent, Negotiable, Valuable, Estimable, Small, Testable).
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
-**Good practice:**
+### References
 
-- Write acceptance criteria; prefer **Given-When-Then** (BDD/Gherkin).
-- Slice vertically; keep stories small; refine via conversation.
-
-**Mini-example (story+AC):**  
-_As a_ shopper, _I want_ to save items to a wishlist _so that_ I can buy them later.  
-**AC:** Given I’m logged in, When I click “Save”, Then the item appears in My Wishlist.
-
----
-
-## User Scenarios (Scenario-Based Design)
-
-**What they are.** Narrative task descriptions capturing actor goals, context, main path + alternatives; used from discovery through design and evaluation. Also central to architecture reviews (e.g., SAAM/ATAM) via **quality attribute scenarios**.
-
-**Typical elements:** Actor & goal, context, preconditions, main success path, alternatives/exceptions, postconditions; often storyboarded or prototyped.
-
-**Mini-example (scenario):**  
-“On a crowded train (spotty 4G), _Aisha_ opens the app to pull up a QR ticket; when offline, the pass must still render and validate.”
-
----
-
-## Quick comparison
-
-| Dimension   | IEEE 830 SRS                | User Stories                   | User Scenarios                        |
-|-------------|-----------------------------|-------------------------------|---------------------------------------|
-| Purpose     | Complete, auditable specification | Planning & collaboration units | Understand work/context; drive design & tests |
-| Form        | Document with structured sections + RTM | “As a… I want… so that…” + AC | Narrative with context, paths, outcomes |
-| Validation  | Reviews vs. SRS qualities; traceability | Acceptance criteria / BDD     | Walkthroughs, usability, architecture stress |
-| Strengths   | Completeness & traceability  | Speed, value focus, testability | Empathy, context, edge cases, NFR discovery |
-| Limits      | Heavy to maintain            | Can be vague without 3Cs/INVEST | Not a spec alone; needs translation   |
-| Best when   | Regulated/contract, complex NFRs | Agile delivery, evolving scope | Early discovery, UX/HCI, architecture eval |
-
----
-
-## Methods at a glance
-
-- **SRS (830/29148-aware):** glossary → stakeholders & constraints → functional reqs grouped by feature → interfaces → measurable NFRs → RTM.
-- **User stories:** goal first → write story + acceptance criteria → check **INVEST** → automate via BDD/Gherkin.
-- **Scenarios:** identify personas/tasks → write main & alternate paths with context → storyboard/prototype → (optionally) convert to acceptance tests or quality attribute scenarios.
-
----
-
-## Sources
-
-- IEEE 830 (historic text / outline): _IEEE Recommended Practice for Software Requirements Specifications_.  
-  [math.uaa.alaska.edu](https://www.math.uaa.alaska.edu/~afkjm/cs401/IEEE830.pdf)
-- Current standard: _ISO/IEC/IEEE 29148:2018 — Requirements engineering_. ISO catalog: [ISO](https://www.iso.org/standard/72089.html) • IEEE summary: [IEEE Standards Association](https://standards.ieee.org/ieee/29148/6937/)
-- User stories — 3Cs: Ron Jeffries, “Essential XP: Card, Conversation, Confirmation” (2001) + “Three-C’s Revisited.” [ronjeffries.com](https://ronjeffries.com/xprog/articles/expcardconversationconfirmation/)
-- INVEST: Bill Wake, “INVEST in Good Stories, and SMART Tasks.” [xp123.com](https://xp123.com/invest-in-good-stories-and-smart-tasks/)
-- BDD/Gherkin reference: Cucumber docs — Gherkin Reference. [cucumber.io](https://cucumber.io/docs/gherkin/reference)
-- User stories overview: Agile Alliance — _User Stories_ and _Three C’s_. [agilealliance.org](https://agilealliance.org/glossary/user-stories/)
-- User scenarios (SBD): Rosson & Carroll, “Scenario-Based Design” (handbook chapter, PDF). [TU Delft OCW](https://ocw.tudelft.nl/wp-content/uploads/2_RossonCarrollSBDforHandbook2002.pdf)
-- Scenario-based architecture analysis: SEI — SAAM/ATAM history page; SAAM paper (PDF). [SEI](https://www.sei.cmu.edu/history-of-innovation/evaluating-system-architecture/)
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

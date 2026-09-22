@@ -1,153 +1,97 @@
 ---
 parent: Requirements
-title: Organization
-nav_order: 4
+title: Organising requirements
+nav_order: 8
 layout: default
 ---
 
-# Requirements Organization
----
+# Organising Requirements
 
-### Purposes of Organizing Requirements
+A few dozen requirements can be read as a list. A few hundred cannot, and the structure you impose on
+them decides whether anyone can find a gap, judge a change or agree a priority. Organising is not
+filing — it is how the omissions become visible.
 
-- **Verification of Completeness**  
-    Ensuring you have gathered _all_ necessary requirements; there are no holes.  
-    _Example:_ After grouping features, you notice there is no requirement for user password reset — gap identified.
-    
-- **Verification of Compatibility**  
-    Ensuring requirements do not conflict with each other; compatible in what they demand.  
-    _Example:_ One requirement wants ultra-fast response times, another wants minimal hardware cost — possible trade-offs must be surfaced.
-    
-- **Not Contradictory**  
-    Ensuring that no two requirements are mutually exclusive or create ambiguity.  
-    _Example:_ “System shall use minimal memory” vs “System shall cache lots of data to speed up performance” might conflict unless clarified.
-    
-- **Communication to Implementers**  
-    Organized requirements help developers, testers, designers understand what to do, how things depend, priorities.
-    
+## 1. The four moves
 
----
-
-### How to Organize Requirements
-
-After gathering requirements, you should document _and_ organize them. Key techniques:
-
-- **Affinity Groups**  
-    Collections of related requirement items grouped by theme, functionality, feature area, or stakeholder concern. Helps make sense of many items.  
-    _Definition:_ Grouping ideas/items that are conceptually similar.  
-    _Example:_ Group all “report generation” requirements together; group all “user authentication / security” together.
-    
-- **Hierarchies**  
-    Once grouped, structure each group so there are higher-level, more abstract requirements, and lower level, more detailed ones. Lower items elaborate on higher items, dependencies flow downward.  
-    _Example:_ High level: “User authentication” → sub-requirements: password reset; OAuth integration; two-factor authentication.
-    
-
----
-
-### Steps to Organize
-
-1. Divide requirements into **affinity groups** (themes).
-2. Within each group, build **hierarchical structure**: general → detailed.
-3. **Identify gaps**: missing requirements, unclear items, overlaps, conflicts.
-
----
-
-### Grouping
-
-- Scan all collected needs, ideas (sticky notes or cards help).
-- Identify independent themes; each theme becomes a group.
-- For each group:
-    - Give a prose (short, narrative) description of the group.
-    - Explain its high-level need or purpose (“why”).
-    - Then list or describe specific requirements that belong.
-
----
-
-### Requirements Hierarchy
-
-In each group, organize as a tree/hierarchy:
-
-- Levels of abstraction: higher (general, broad), lower (specific, detailed).
-- Prioritize: some sub-items may be more urgent / essential than others.
-- Identify constraints and dependencies.
-- Keep refining: sometimes a general requirement needs more detail.
-
----
-
-### Annotating & Clarifying Requirements
-
-Requirements often need extra information to reduce ambiguity:
-
-- **Annotations / supporting items**:
-    - Use cases / user stories
-    - Quality attribute scenarios
-    - Prototypes / mockups
-    - Equations or metrics (for performance, latency, throughput)
-    - Usability studies
-
-_Example:_ For requirement “System shall load dashboard quickly,” annotate with “Dashboard must load in ≤ 2 seconds under 500 concurrent users” (providing measurable metric).
-
----
-
-### Identifying Gaps
-
-Signs you have missing/incomplete requirements:
-
-- Ideas or requirements that are ungrouped or hard to classify.
-- Many miscellaneous groups or “Other” group.
-- Frequent “etc.” or “and so on” in descriptions.
-- Inconsistent terminology across requirements.
-- Derived requirements: requirements that are inferred rather than explicitly stated.
-
----
-
-### Adding Information & Regrouping
-
-- Add new requirements or additional detail into existing hierarchy (do not restructure everything just because of one new item).
-- Only reorganize major structure if many items no longer fit or if better themes become obvious.
-- Regrouping can disrupt traceability, so do carefully.
-
----
-
-### Prioritization
-
-Because not all requirements are equally important or feasible:
-
-- Some functionality or quality attributes are essential, others “nice-to-have”.
-- Prioritization helps set stakeholder expectations, plan tradeoffs, manage schedule & resources.
-
-Possible ways to prioritize:
-
-|Priority Levels|What They Mean|
-|---|---|
-|**Must / High / Essential**|Core features & qualities without which system fails or is unacceptable.|
-|**Medium / Should**|Important, but could be delayed or compromised.|
-|**Low / Optional / Wishful-Thinking**|Nice extras; possible in later releases.|
-
-- Methods / Tools: Voting (among stakeholders), Quality Attribute Workshop (e.g. QAW), using frameworks like QFD (Quality Function Deployment).
-
-_Example:_ Stakeholders vote on top 5 “Must have” features out of a backlog of 20.
-
----
-
-## Short Definitions + Examples
-
-|Term|Definition|Example|
+| Move | What it does | Example |
 |---|---|---|
-|**Affinity Group**|A set of requirements grouped by theme / similarity.|All security-related requirements (password, encryption, access control) grouped together.|
-|**Hierarchy**|Structuring requirements by levels: general → specific.|“User interface” → “Login page design”, “Dashboard layout”, “Error message style” sub-items.|
-|**Gap**|A missing or incompletely specified requirement, often discovered when you try to group or refine.|No requirement exists for performance under load, even though system expected to serve many users.|
-|**Annotation**|Extra clarifying information attached to requirement statements: scenarios, metrics, prototypes.|For “system shall be reliable”, annotate: “99.9% uptime, measured over 30-day period”—gives clarity.|
-|**Prioritization**|Deciding which requirements are most important / urgent.|Must have: data backup; Should have: dark mode UI; Optional: custom theme.|
+| **Affinity grouping** | Collects requirements by theme, so a theme can be reviewed as a whole | All access-control requirements — password rules, session expiry, role permissions — read together |
+| **Hierarchy** | Structures general to specific, so the level of a statement is explicit | *Reporting* → *month-end reconciliation report* → *report is produced within five seconds at peak* |
+| **Annotation** | Attaches the measure, scenario or prototype that makes a statement checkable | *"The system shall be reliable"* annotated with *99.9% uptime measured over 30 days* |
+| **Prioritisation** | Decides what gets built first, and what is dropped when time runs out | See [release planning](../../plan/release/) |
+
+## 2. Grouping is how you find the gaps
+
+The reason to group before reviewing is that **a gap is visible in a group and invisible in a
+list**. For example, collect every requirement touching the reporting module and the missing one
+stands out because its neighbours are all there — nobody specified what happens when a report is
+requested while the nightly batch is running.
+
+The same applies to levels. A requirement set that mixes *"the system shall support regional
+reporting"* with *"the report header shall show the region code"* has lost the distinction between a
+business goal and a detail, and reviewers will argue about the wrong one. Stating the level makes
+that visible.
+
+## 3. Annotation is where a quality requirement becomes real
+
+Most requirement sets carry a handful of statements that are aspirations rather than requirements —
+*reliable*, *maintainable*, *usable*. The repair is not to delete them but to annotate each with the
+scenario and **response measure** that says what it means here
+{% cite barbacci2003qaw %}: *modifiable* is meaningless until it reads *"a mid-grade engineer can
+modify this module in under two person-weeks."*
+
+That is a per-project judgement, not a lookup. As the source puts it, *"it doesn't matter what we
+call a particular quality attribute, as long as there's a scenario that describes what it means."*
+Where the attributes are contested or architecturally significant, a **quality attribute workshop**
+is the structured way to produce those scenarios with the stakeholders in the room — a one-day
+event with 5 to 30 participants, which is heavyweight for a small team. What transfers at any scale
+is the scenario form.
+
+## 4. Prioritisation belongs to planning
+
+Requirements work produces the input to prioritisation — what each item is, who wants it, what it
+depends on — but the decision is a release decision and is made against capacity, sequence and
+value. The methods live under [release planning](../../plan/release/); this page's job is to make
+sure each requirement arrives there with its source, its level and its measure attached.
+
+One thing does belong here: **prioritisation is only meaningful over comparable items**. A set
+mixing business goals with field-level details cannot be ranked, because the two are not
+alternatives to each other. That is a consequence of §2, and it is the most common reason a
+prioritisation session stalls.
+
+## 5. What organising does not achieve
+
+Structure makes a set reviewable; it does not make it correct or complete. A perfectly grouped,
+annotated, three-level requirement set can still describe the wrong product, and no amount of
+reorganisation surfaces a stakeholder nobody talked to — that is
+[stakeholder](stakeholders) and [elicitation](elicitation) work.
+
+There is also a cost. A deep hierarchy on a small project is overhead, and annotation is only worth
+doing where the statement would otherwise be untestable. Annotate the aspirations; leave the
+already-measurable ones alone.
+
+## How solid is this?
+
+- **Where it comes from.** The scenario and response-measure material is an SEI method description;
+  the grouping and hierarchy practices are conventional requirements-engineering craft rather than
+  measured findings.
+- **What is contested.** Nothing here — but note that no source in this bibliography compares
+  organising schemes or measures their effect.
+- **What we do not hold.** No evidence on how large a requirement set has to be before structure
+  pays for itself; treat the depth as a judgement about your own project.
 
 ---
 
-## Sources
+### Acknowledgments
 
-- Affinity grouping is used in Agile as technique to organize brainstormed ideas into thematic clusters. [Dee Project Manager+1](https://deeprojectmanager.com/affinity-grouping-technique/)
-- Classification of software requirements (functional / non-functional / design / interface etc.) helps in traceability, accountability, and clarity. [GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering/software-engineering-classification-of-software-requirements/)
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
+
+### References
+
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

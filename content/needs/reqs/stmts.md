@@ -1,141 +1,113 @@
 ---
 parent: Requirements
-title: Statements
-nav_order: 1
+title: Requirement statements
+nav_order: 3
 layout: default
 ---
 
 # Requirement Statements
-_*Adapted from David Root (2014)_
 
-## Types of Requirements
+A requirement statement is a single sentence asserting one property the system must exhibit, written
+so that someone can check whether it holds. Most of the craft is in that last clause: **if you
+cannot describe how you would check it, it is not a requirement yet.**
 
-- **Functional Requirements** (“What”):  
-    These define _what_ the system must do. They specify behaviors, inputs → outputs, transformations, business rules.  
-    _Example:_ “Input X produces Y” → “When user submits form A, system validates the input fields, stores data in database, and shows confirmation message.”
-    
-- **Non-Functional Requirements / Quality Attributes** (Christel & Kang etc.):  
-    These describe _how_ well the system performs its functions, under what conditions, with what constraints. Sometimes called “the ilities.”
-    
-- **Interfaces**:  
-    Requirements about how the system interacts with external actors or other systems: user interfaces, APIs, hardware, databases, etc.
-    
-- **Design Constraints**:  
-    Restrictions or mandatory conditions on design/implementation choices: technology stack, platforms, standards, regulatory constraints, performance limits, etc.
-    
-- **Implied Requirements** (Very Nebulous):  
-    Things the stakeholders _assume_ will be there but do not explicitly state. These might cover usability, security, performance levels, maintainability. It’s dangerous to leave them implicit.
-    
+## 1. Classify by concern, not by wording
 
----
+The rule usually taught — *what* the system does is functional, *how* it behaves is non-functional —
+breaks as soon as the sentence is rephrased. Glinz shows this with one security requirement written
+three ways {% cite glinz2007nfr %}:
 
-## Good Requirement Statements
+| Wording | The old rule says |
+|---|---|
+| *"The system shall prevent any unauthorized access to the customer data"* | non-functional |
+| *"The probability for successful access … shall be smaller than 10⁻⁵"* | non-functional |
+| *"The database shall grant access to the customer data only to those users that have been authorized by their user name and password"* | **functional** |
 
-What makes a requirement “good”? Key qualities:
+Same requirement, three sentences, two answers: *"the kind of a requirement depends on the way we
+represent it."*
 
-|Property|What it Means / Why It’s Important|Examples / What to Avoid|
-|---|---|---|
-|**Unambiguous**|Must mean only one thing—no confusion. Avoid vague modifiers.|Don’t use: _best, fastest, highly, etc._ Instead: “Response time shall be ≤ 2 seconds under peak load.”|
-|**Non-decomposable**|A requirement should be atomic: not mixing several things; each requirement expresses one distinct thing.|Bad: “Windows-like GUI” mixes UI style + platform reference. Better: “Provide a GUI supporting menus, dialog boxes, drag & drop.”|
-|**Testable / Measurable**|You must be able to verify whether the requirement is met; specify metrics.|“System shall handle 100 requests per second with 95 % success rate.”|
-|**Traceable**|You can map each requirement back to its source (stakeholder, business driver) and what problem it solves. Also track dependencies among requirements.|Each req has an ID, mentions “originated from stakeholder X” or “to satisfy business goal Y.”|
-|**Has Constraints / Dependencies**|Requirements often depend on or interact with other requirements; must note them explicitly.|“Requires database version 5.4”; “Depends on payment gateway being available.”|
+The repair is to ask what the requirement was stated **for**, taking the first yes:
 
----
+1. The system's **behaviour, data, input or reaction to input** — *regardless of how this is done*?
+   → **functional**.
+2. A restriction on **timing, processing speed, data volume or throughput**? → **performance**.
+3. A **particular quality** the system shall have? → **specific quality**.
+4. Any other restriction, or a prescribed solution element? → **constraint**.
 
-## Quality Attributes (the “ilities”)
+Performance gets its own box for a practical reason: time, volume and throughput have agreed
+measures and no other quality does, so elsewhere **agreeing the measure is part of the work**.
 
-Common “non-functional” / quality attributes. These are often architecturally significant.
+## 2. A quality attribute qualifies a function; it is not a parallel list
 
-- Performance
-- Modifiability / Maintainability
-- Reusability
-- Reliability
-- Stability
-- Security
+This is the relationship most often got wrong, by learning two columns — "functional requirements"
+on the left, "the ilities" on the right. A quality requirement has no meaning except as a qualifier
+of some behaviour {% cite swebok2024v4 %}.
 
-Additional ones:
+For example, *"the system shall produce reports for users"* becomes
+{% cite barbacci2003qaw %}:
 
-- Extendibility
-- Portability
-- Usability (User friendly)
-- Scalability
-- Data integrity
+> A remote user requests a database report via the Web during peak usage and receives the report
+> within five seconds.
 
-Also provocative or informal ones:
+The report's own comment is the teaching point: *"the initial requirement hasn't been lost, but the
+scenario further explores the performance aspect of this requirement."* The scenario has four slots
+— **stimulus, environment, response, response measure** — and the fourth turns an aspiration into a
+requirement. *Modifiable* means nothing until it reads *"in less than two person-weeks"*.
 
-- “Buildability” (ease with which it can be built)
-- “Wowability” (user delight / aesthetic or “wow” factor) — these are useful signals but must be made concrete if used.
+## 3. Six things you can check on a sentence, four only on a document
 
----
+Wiegers separates the two levels, and the split matters: a review checking all ten against every
+sentence is doing the wrong work twice {% cite wiegers1999quality %}.
 
-## Functional vs Quality Attributes
+**On one statement:** correct · feasible · necessary · prioritised · **unambiguous** (*"the reader
+should be able to draw only one interpretation of it"*) · **verifiable**.
 
-- Are they connected? **Yes** — functional requirements define _what_ a system does; quality attributes define _how_ those functions behave (performance, reliability, etc.). Some functional requirements may themselves be “architecturally significant” because they trigger or interact heavily with quality attributes.
-- How to describe Quality Attributes: via **scenarios** or **quality attribute scenarios** (six-part pattern): stimulus, stimulus source, artifact, environment, response, response measure.
-- Are they all testable? Ideally yes — quality attribute requirements should be specified so that they can be measured. If vague (“the system shall be fast”) they are _not testable_.
-- Traceable? Yes — each quality attribute requirement should be linked to stakeholder concerns / business drivers. Often test cases or architecture decisions depend on them.
+**On the whole document:** complete · consistent · modifiable · traceable.
 
----
+Two checks are cheap enough to use every time. **Testability sets granularity**: a few closely
+related tests means the level is right, many different kinds of test means several requirements have
+been welded together — so treat every *and* and *or* as a signal to split. And the **"call me when
+you're done" test**: read the requirement from the developer's side, mentally add that phrase, and
+notice whether it makes you nervous.
 
-## Requirement Statements / Scenarios
+Wiegers also gives a closed list of words to avoid: *user-friendly, easy, simple, rapid, efficient,
+several, state-of-the-art, improved, maximize, minimize, quick, if possible* — plus *support*, since
+*"any requirement that says the product shall 'support' something is not verifiable."*
 
-### Pattern: Stimulus, Environment, Response (plus source, artifact, measure etc.)
+## 4. The limits
 
-- **Simplified**: Stimulus → Environment → Response
-- **Complete**: Stimulus; Source of stimulus; Environment; Artifact stimulated; Response; Response measure
+None of this makes a requirement set correct. Wiegers is blunt: *"there is no formulaic way to write
+excellent requirements. It is largely a matter of experience."* The characteristics are a review
+aid, not a gate to pass at 100%.
 
-### Types of Scenarios (Examples)
+The deeper limit is structural: a **qualitative** requirement has no direct verification at all,
+only stakeholder judgement, a prototype, refinement into sub-goals, or a proxy metric. That is the
+principled reason *"the system shall be user-friendly"* is not a requirement, and it says what to do
+instead.
 
-|Scenario Type|Purpose / Use|Example|
-|---|---|---|
-|**Use-case scenario**|For functional requirements or quality under normal operation|_“Remote user requests a database report via the Web during peak period and receives it within 5 seconds.”_|
-|**Growth scenario**|To capture evolution / scale over time|_“Add a new data server to reduce latency from 5 seconds to 1 to 2.5 seconds within 1 person-week.”_|
-|**Exploratory / Fault / Failure scenario**|To check for robustness, fault tolerance, edge cases|_“Half of the servers go down during normal operation without affecting overall system availability.”_|
+## How solid is this?
 
-### Quality Attribute Scenarios
-
-- Use the same kind of scenario to specify _non-functional_ requirements. E.g.:
-    - **Modifiability scenario**:
-        > “After receipt and analysis of a requirement change, a mid-grade software engineer will be able to modify logic module X in system Y in one engineering week.”
-- Must define stimulus, source, artifact, environment, etc., and how you measure success.
+- **Where it comes from.** A terminology paper, an SEI method description and a practitioner
+  article. None reports a study or a measurement; they establish definition, classification and
+  method, which is a different kind of claim from a measured finding.
+- **What is contested.** Glinz's vocabulary is a **proposal** argued against competing definitions,
+  not a standard. The decision rule works whether or not the field adopts the terms.
+- **What we do not hold.** The six-part scenario pattern originates with Bass, Clements and Kazman
+  rather than with the SEI report quoted above; and a quality attribute workshop is a one-day event
+  with 5–30 stakeholders, so what transfers to a small team is the scenario form, not the workshop.
 
 ---
 
-## Testing & Predicting Quality Attributes
+### Acknowledgments
 
-- For QA requirements, think **ahead**: how will you test them? Can you simulate under load? Can you inject failures? Will automated tests cover this?
-- Role of Architecture: architecture decisions strongly affect whether quality attributes can be met (e.g. redundancy, modularity, caching, separation of concerns). If architecture cannot support the required reliability / modifiability etc., adding the requirement later is expensive.
-- Use trade-off analysis: quality attributes often conflict (e.g. security vs performance; ubiquity vs portability vs speed). You must prioritize and make conscious trade-offs. SEI’s “Generic Taxonomy for Quality Attributes” is useful for seeing how attributes interact.
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## Sources / References
-
-- Christel, M. & Kang, K. (1992). _Issues in Requirements Elicitation_, SEI-CMU-TR-12. (issues of scope, ambiguity, volatility, etc.)  
-  [SCIRP](https://www.scirp.org/reference/referencespapers?referenceid=1144853&utm_source=chatgpt.com)
-- SEI CMU - _Software Quality Attribute Taxonomy / Generic Taxonomy_ (Barbacci et al.) — for definitions and trade-offs among quality attributes.  
-  [sei.cmu.edu](https://www.sei.cmu.edu/documents/1142/1995_005_001_16427.pdf)
-- “Quality Attributes in Software Architecture” (Priyal Walpita) — good summary of how to treat QAs, scenario-based specification.  
-  [Medium](https://priyalwalpita.medium.com/quality-attributes-in-software-architecture-cacffe0995aa)
-- UBC “System Qualities & Scenarios (Non-functional Requirements)” lecture — defines concrete vs general scenarios, gives the 6-part scenario pattern.  
-  [Electrical and Computer Engineering](https://people.ece.ubc.ca/matei/EECE417/BASS/ch04lev1sec4.html)
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
-
----
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

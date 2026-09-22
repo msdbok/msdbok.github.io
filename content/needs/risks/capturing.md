@@ -1,93 +1,106 @@
 ---
 parent: Risks
-title: Capturing
+title: Capturing, owning and mitigating
 nav_order: 2
 layout: default
 ---
 
-## Capturing & Tracking Risks
-_*Adapted from David Root (2014)_
+# Capturing, Owning and Mitigating Risks
+
+A risk statement records a **condition that is true today** and the **concern** that follows. The
+standard form is one line {% cite gluch1994risk %}: *"Given that condition then there is concern that
+(possibly) consequence."*
+
+The minimal version needs two parts — condition plus concern. The transition may be implied; the
+condition may not. That is what separates a register entry from a fear.
+
+## 1. Start from something you can check today
+
+Students write risks as predictions: *"the vendor might be late."* The repair is to write the
+present-tense fact first. For example, on one programme the recorded conditions were **25% of the
+code written against 50% of the schedule consumed**, **five workstations for a team of ten**, and
+**the vendor's compiler two weeks late** {% cite gluch1994risk %}. Each is observable, so nobody has
+to be persuaded of the concern.
+
+This also settles the risk-versus-problem question better than "a risk has not happened yet". Both
+carry a present condition; what differs is the judgement — about the condition itself (a problem) or
+about what it may lead to (a risk).
+
+## 2. Three formats, one content
+
+*If–then*, *condition–consequence* and *because–event–consequence* carry the same three elements:
+the event or condition, the consequence, and the cause where known. Pick one and use it consistently
+— a register is readable across teams because the shape is the same
+{% cite thompson2017riskstatement %}.
+
+One from a real evaluation {% cite williams1999sre %}: *"Have to support 50 terminals with 3-second
+response time, but have only tested with 25; might have to buy more computers."*
+
+**Consequences carry a number and a unit.** *"Supplier quality problems may cause program delays"*
+is not a consequence; *"a 30-day delay to the start of testing"* is. Refinement sharpens the condition
+while holding the consequence fixed {% cite pressman2010risk %}.
+
+{: .warning }
+**A well-formed statement can still be a bad one.** *"If funding is withheld due to poor test
+results, the schedule will be jeopardised"* points away from what the team controls — the real
+subject is the test results {% cite thompson2017riskstatement %}.
+
+## 3. A worked case: Comair, December 2004
+
+Comair's crew-scheduling system was eleven years old, written in Fortran nobody at the airline was
+fluent in, and the last application on an obsolete platform. It had a **fixed ceiling of 32,000 trip
+transactions per month**. Severe weather forced more than 6,000 crew changes between 22 and 24
+December 2004; the system hit the limit and shut down just after 10 p.m. on Christmas Eve. The
+airline **cancelled or delayed 89% of its scheduled holiday-period departures**, affecting about
+191,000 passengers by cancellation and 78,000 by delay {% cite dotoig2005comair %}, at a cost to
+Comair and Delta of about $20 million {% cite overby2005comair %}.
+
+Every element of a register was present years in advance. A replacement was proposed in 1997,
+rejected on good grounds, deferred four times for defensible reasons — Y2K, an acquisition, a
+pilots' strike, a downturn — approved in 2004, and still in testing when the failure beat it by
+months. It *"could have been avoided if Comair or Delta had done a comprehensive analysis of the risk
+that this critical system posed."*
+
+## 4. Owning and tracking
+
+A risk with no owner is not managed. Planning one means choosing the control action, the
+**observables**, the **thresholds** that say performance is still acceptable, the protocol on
+exceedance, and the owner. **A mitigation with no threshold cannot trigger.**
+
+The cheapest continuous practice is a **top-10 list**, and its value is one column: *last week's
+rank* {% cite boehm1991risk %}. Review it weekly with the project manager's boss present, opening
+with every item's rank, its previous rank, how long it has been listed and what has been done since.
+Two details save it from ritual: it need not hold exactly ten, and it should carry the risks that
+**dropped off** {% cite mcconnell_rapid_1996 %}.
+
+Mitigation needs to be a plan rather than a meeting: *"risk burn-down plans should be time-phased and
+include specific measurable mitigation activities; **meetings do not burn down risks**"*
+{% cite dod2023rio %}. And **expect total exposure to rise before it falls** — on one twelve-month
+project it went from 43 days of expected delay to 46.5, then down to 3
+{% cite shrivastava2012pmi %}. A growing list early is evidence the process works; a flat or rising
+line **late** is the warning.
+
+## How solid is this?
+
+- **Where it comes from.** Two SEI reports, a defence guidance document, a textbook and a
+  practitioner conference paper. None measures whether any of this improves outcomes.
+- **What is contested.** Nothing in the format, but no source shows that condition–consequence
+  registers outperform free text.
+- **What we do not hold.** The Comair figures come from the federal audit; the decision history is
+  trade journalism, not independently corroborated here.
 
 ---
 
-### Techniques & Process (“Capturing”)
+### Acknowledgments
 
-- Use **formalized brainstorming** sessions: bring together diverse stakeholders, have prompts, facilitator/scribe/timekeeper.
-- Employ **Software Risk Evaluation** (or similar moderated sessions) to systematically assess risk candidates.
-- Use **taxonomy-based questionnaires** (risk categorization / checklists) to ensure coverage.
-- Risk forms / templates: as soon as someone identifies a concern, fill out a risk form with _condition + consequence_.
-- Ensure _everyone in any activity_ can identify and report risks—not only managers or formal roles.
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-### Assigning Responsibility
-
-- Every risk should have an **owner**: someone with authority and resources to act. Without assignment, risks tend to be ignored.
-- The owner must have:
-    1. **Responsibility** – make sure tasks related to that risk are taken.
-    2. **Authority** – ability to make decisions or escalate.
-    3. **Resources / capability** to respond.
-- For some risks, consider **transfer** (outsourcing, insurance, third parties). But even if transferred, you should still monitor it.
-
----
-
-### Mitigation Strategies
-
-- Must be **doable / realistic**: fit the project’s constraints (time, budget, people).
-- Types of mitigation strategies:
-    - **Prevention / avoidance** – eliminate the risk’s cause or reduce likelihood.
-    - **Reduction / minimization** – lessen impact if risk occurs.
-    - **Contingency planning** – what to do if risk becomes real.
-    - **Training / skill building** – reduce risk by increasing team capability.
-    - **Processes / procedural changes** – add reviews, checkpoints, quality gates etc.
-    - **Awareness raising** – ensure people know about the risk so they can act.
-
----
-
-### Tracking & Review
-
-- Risks should be **reviewed periodically**, with frequency depending on project size, criticality, stability of environment.
-- Remove risks that are no longer applicable (“no longer risks”, “obsolete”, or they’ve been resolved / mitigated).
-- Identify which risks have become **issues/problems**.
-- Monitor changes in priority, impact, or likelihood over time. Some risks decrease in impact / probability as mitigations take effect.
-- Track mitigation strategy progress: Is the planned action done? Is it helping?
-
----
-
-## Examples (Mitigation / Responsibility / Tracking)
-
-|Example #|Condition|Consequence(s)|Possible Mitigation(s) / Assigned Owner / Tracking|
-|---|---|---|---|
-|**Ex 1**|There is a puddle of water on the floor.|‒ Carpet may be ruined  <br>‒ Someone may slip and get hurt  <br>‒ Equipment (electronic) may short out|**Mitigation**: Immediate cleanup; place warning signs; identify source of water leak and repair; have a policy for floor inspections.  <br>**Owner**: Facilities or safety manager.  <br>**Tracking**: daily checks until leak fixed; weekly inspections; log incidents.|
-|**Ex 2**|Historically, project teams have lost a team member in the first 3 months.|Project scope, schedule, quality may/will change (disruption, knowledge loss)|**Mitigation**: Cross-training; knowledge documentation; backup staffing; hiring buffer; mentor pairing.  <br>**Owner**: Project manager / HR.  <br>**Tracking**: monitor staff turnover; early months stress; schedule risk reviews early.|
-|**Ex 3**|The project requires the use of C# and no one on the team has experience with it.|Delays due to learning curve; bugs; lower productivity; possibly poor design decisions|**Mitigation**: Training; bring in consultant or hire someone with C# experience; pair programming; prototyping; allocate more time for development.  <br>**Owner**: Technical lead or engineering manager.  <br>**Tracking**: track learning progress; measure productivity; adjust schedule if needed; monitor code quality.|
-
----
-
-## When & Where to Identify / Track & Where to Review
-
-- **Anytime, anywhere**: as soon as there’s a concern, during any meeting / artifact review / design work.
-- Use “statement of fact” style for capturing: helps avoid speculation / fuzzy language.
-- Scheduled reviews: decide upfront (e.g. weekly for critical/high-risk projects, monthly for stable ones) and include them in project plan.
-- Triggered reviews: after major changes (scope change, new technology, external event for project), after incidents, or after stakeholder feedback.
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- ISO 31000: risk management standard – emphasizes roles, integrating risk into decisions, monitoring, etc. [Wikipedia](https://en.wikipedia.org/wiki/ISO_31000)
-- PMI / PMBOK guides: frequency of risk review / communication depends on project nature; status updates / risk reporting schedule form part of risk management plan. [Project Management Institute](https://www.pmi.org/learning/library/project-risk-management-success-tool-6078) [Project Management Stack Exchange](https://pm.stackexchange.com/questions/1291/how-often-should-risk-management-be-analysed-and-tracked)
-- Best practices articles (e.g. AuditBoard, Everbridge, IBM) on mitigation strategies: set clear roles, involve stakeholders, use tools / templates, monitor continuously. [AuditBoard](https://auditboard.com/blog/risk-mitigation) [Everbridge](https://www.everbridge.com/blog/risk-mitigation-strategies/)
-
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

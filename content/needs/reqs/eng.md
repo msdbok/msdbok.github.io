@@ -1,134 +1,109 @@
 ---
 parent: Requirements
-title: Engineering
-nav_order: 2
+title: Requirements engineering
+nav_order: 4
 layout: default
 ---
 
 # Requirements Engineering
-_*Adapted from David Root (2014)_
 
-## Key Activities / Steps
+Requirements engineering is *"the process of discovering that purpose, by identifying stakeholders
+and their needs, and documenting these in a form that is amenable to analysis, communication, and
+subsequent implementation"* {% cite nuseibeh2000roadmap %} — where *that purpose* is what the system
+is intended for, because *"the primary measure of success of a software system is the degree to
+which it meets the purpose for which it was intended."*
 
-Tsui & K include:
+## 1. Five activities, and they are not a pipeline
 
-- Elicitation
-- Definition, categorizing, and documentation
-- Specification
-- Prototyping
-- Analysis
-- Review and Validation
-- Agreement and acceptance
+The activities are **eliciting**, **modelling and analysing**, **communicating**, **agreeing** and
+**evolving**. The authors name them in order and then immediately say the order is not real: *"while
+these activities are described independently and in a particular order, in practice, they are
+actually interleaved, iterative, and may span the entire software systems development life cycle."*
 
-Pressman includes:
+Three words this list depends on are commonly used interchangeably, and separating them makes the
+rest easier. A **process** is an instance of a process model; a **technique** *"prescribes how to
+perform one particular activity"*; a **method** *"provides a prescription for how to perform a
+collection of activities"* by integrating a related set of techniques.
 
-- Gathering
-- Modeling
-- Management
-- Validation
+Nothing here is specific to a lifecycle. SWEBOK puts the point sharply
+{% cite swebok2024v4 %}: *"downstream maintainers should not be able to discern the life cycle used
+in earlier development from the form of those requirements alone."* Agile does not remove
+requirements work; it redistributes it.
 
----
+## 2. Validation asks the stakeholders. Verification asks the build
 
-### What this all means
+The two words are routinely swapped, and the distinction is not cosmetic — the two questions need
+**different techniques** {% cite nuseibeh2000roadmap %}.
 
-- It’s a **systematic process** for getting from a fuzzy “need” → clear, agreed, testable specifications.
-- It must be **planned**: you can’t just collect requirements ad-hoc.
+- **Validation** asks whether these are the **right** requirements: *"the process of establishing
+  that the requirements and models elicited provide an accurate account of stakeholder
+  requirements."* It is a question about stakeholders, answered before and during the build.
+- **Verification** asks whether the delivered system **meets** them. It is a question about the
+  build, answered on delivery.
 
-Key sub-activities:
+The technique families follow from that, and a review meeting that has not decided which of the two
+it is doing will accomplish neither:
 
-1. **Elicit needs**
-    - Ask the right questions: _What is the problem being solved?_ _Is there actually a problem?_
-    - Engage stakeholders, use interviews, workshops, observation, prototyping, etc.
-2. **Analyze**
-    - Validate and quantify the functional requirements, quality (non-functional) attributes, and constraints.
-    - Look for consistency, feasibility, completeness.
-3. **Agree completion / acceptance criteria**
-    - Define “done”: what criteria will show that the requirements are satisfied.
-    - Establish a working agreement; define acceptance criteria, possibly statement of work.
-4. **Document**
-    - Produce the requirements specification: functional + non-functional + constraints + acceptance criteria + external interfaces + assumptions etc.
-
----
-
-## Verification vs Validation
-
-Verification ensures the _quality of the specification itself_. Validation ensures the _correctness of the specification with regard to stakeholder needs and business goals_.
-
-|Term|Definition|Example|
+| Question | What it checks | How |
 |---|---|---|
-|**Requirements Verification**|The process of checking whether the documented requirements _are correctly written_, consistent, complete, unambiguous, testable, and meet the specification standards. It is about ensuring the requirements reflect what was agreed upon and are well-formed. It is done before (or early in) development.|Example: A peer review of the requirements document to ensure that every requirement has a unique identifier, that each is measurable (e.g., “within 2 seconds” rather than “fast”), that there are no contradictory requirements.|
-|**Requirements Validation**|The process of checking that the requirements _match stakeholder needs, business goals, and the real world environment_. It's about confirming that what has been specified really is what is needed. It often involves involving stakeholders, doing prototypes, or acceptance criteria.|Example: Showing a mock-up or prototype to end users to confirm that workflows meet their needs; verifying that the system will support peak usage as the business expects; stakeholder review to confirm all essential features are included.|
+| **Coherence of the description** | Are the requirements consistent and structurally complete? | Inspection, formal analysis, automated consistency checking |
+| **Correspondence with the real world** | Have all the aspects stakeholders regard as important been covered? | Prototyping, specification animation, scenarios |
+
+The sharpest instruction in the paper is about stance: *"validation should adopt the same stance
+that software testers take: it should devise experiments to attempt to refute the current statement
+of requirements."* Not walk through the document and confirm it — which is what a requirements
+review usually looks like in practice. **A validation activity that cannot fail has not validated
+anything.**
+
+One edge case is worth knowing because it is miscalled every time it appears: where a requirement
+disagrees with a **higher-level** document — a contract, a system specification, a regulation — that
+is not an inconsistency, it is an **incorrectness** {% cite iso2018req %}.
+
+## 3. Quantification is where it gets hard
+
+Raw requirements arrive qualitative. For example, *"the system shall be modifiable"* has no context
+and no measure; it becomes checkable only as something like *"a mid-grade engineer shall be able to
+modify the logic of module X within one engineering week."* A specification should say **how big, how much,
+how fast, how often** — and the useful discipline is to start writing the test cases in parallel
+with the requirements, because a test case that cannot be written is a requirement that is not
+finished.
+
+Where no such method exists, the standard's rule is to stop pretending: if no process can determine
+whether the software meets a requirement, **remove or revise it** {% cite iso2018req %}.
+
+## 4. What this does not achieve
+
+The field's own conclusion is that completeness is not available. Nuseibeh and Easterbrook report as
+settled that *"the attempt to build consistent and complete requirements models is futile"*, and
+that RE instead has to *"analyse and resolve conflicting requirements, to support stakeholder
+negotiation, and to reason with models that contain inconsistencies."*
+
+So the practical goal is not a perfect document. It is to **manage the inconsistency** — record it,
+identify its cause, and decide what action it implies. Which is also why
+[change control](more) is a requirements activity rather than an admission of failure.
+
+## How solid is this?
+
+- **Where it comes from.** A roadmap paper written to frame a research field, and a normative body
+  of knowledge. Neither reports a study; both establish definition and method.
+- **What is contested.** The claim that front-loading requirements pays is well accepted but is
+  **not measured here** — the roadmap cites others for it rather than offering a figure of its own,
+  which is the right level of confidence to carry.
+- **What we do not hold.** No evidence in these sources that any particular validation technique
+  outperforms another.
 
 ---
 
-## Putting It All Together
+### Acknowledgments
 
-- A **systematic way** of getting from need → specification.
-- Must be planned: schedule, resources, stakeholder involvement, process of review/validation etc.
-- **Elicit needs**: clarify problem, ensure real need, not just a proposed solution.
-- **Analyze**: validate, put numbers where possible, quantify non-functional requirements and constraints.
-- **Agree completion criteria**: define “done”, acceptance, criteria, sign-off.
-- **Document**: produce a requirements spec or SRS that captures everything in a clear, testable form.
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## Quantification / Testability — Not Easy!
-
-- Raw requirements tend to be **unspecific** and qualitative (vague). Without quantification, you can’t test them well.
-- You must be able to prove that a product satisfies requirement → must be testable, measurable.
-- You should start thinking about the test plan early (often in parallel with requirements). It helps force clarity.
-- Requirements spec should say **how big, how much, how fast, how often**, etc.
-- If you omit these, you set yourself up for ambiguous expectations, failure, disappointment.
-
----
-
-## Examples
-
-### Example 1: “The System Shall Be Intuitive and Easy to Use”
-
-- **Raw requirement (bad)**:
-    > “The system shall be intuitively easy to use.” — un-testable, vague.
-- **Improved version**:
-    > _The system interface shall:_
-    > - be learnable to 90% proficiency in 2 weeks;
-    > - have an average user error rate of less than 2%;
-    > - score at least 85% on a user satisfaction test.
-- **Notes**: define what “average user” means; define context (tasks, domain, environment) so you can measure well.
-
----
-
-### Example 2: “The system shall be modifiable”
-
-- **Raw requirement (bad)**:
-    > “The system shall be modifiable.” — vague, no context or measure.
-- **Better version**:
-    > _The system shall accommodate:_
-    > - changes in the user interface without impact to other elements of the system;
-    > - changes to element X in Y staff hours.
-- **Again**: specify which “element X”, what “impact”, what is acceptable “staff hours”, in what environment / with what tools, etc.
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- GeeksforGeeks: _Requirements Engineering Process_ — definitions of verification vs validation, specification, elicitation etc.
-  [GeeksforGeeks](https://www.geeksforgeeks.org/software-engineering/software-engineering-requirements-engineering-process/)
-- Visure Solutions: guide on requirements verification and validation.
-  [visuresolutions.com](https://visuresolutions.com/alm-guide/requirements-verification-and-validation/)
-- Xebrio: Requirements engineering, how raw requirements are refined, testability etc.
-  [Xebrio | Project Management Software](https://xebrio.com/requirements-engineering/)
-- SEBoK (Wikipedia entries also good summaries) for "Verification vs Validation", "Requirements Engineering" definitions.
-  [Wikipedia](https://en.wikipedia.org/wiki/Verification_and_validation)
-
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

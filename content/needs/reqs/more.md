@@ -1,124 +1,107 @@
 ---
 parent: Requirements
-title: More activities
-nav_order: 3
+title: Validation, traceability and change
+nav_order: 7
 layout: default
 ---
 
-# More Requirements Engineering Activities
+# Validation, Traceability and Change
 
-## Requirements Validation & Verification
+Once requirements exist, three activities keep them useful: checking them, linking them to what they
+produced, and deciding what to do when they change. The third is where the arguments happen, and the
+one most often got backwards.
 
-> (Focus: checking requirements docs for quality and suitability)
+## 1. Checking a requirement set
 
-**What to examine / fix:**
+Validation asks whether these are the right requirements; verification asks whether the system meets
+them — the distinction is on [requirements engineering](eng). What a review looks for is narrower
+than "read it carefully": **ambiguity**; **inconsistency and omission**,
+including anything still marked *to be determined*, since a specification containing one is not
+complete {% cite iso2018req %}; **a named source** who confirms the written form is what they meant;
+and **a way to test it**. If no process can determine whether the software meets a requirement, the
+rule is to **remove or revise it**.
 
-- Ambiguity — wording that can be interpreted more than one way
-- Inconsistencies, omissions, and errors — missing requirements, contradictory statements
-- Conformance to standards — does it follow company / domain / regulatory / style standards
-- Scalability issues — will the requirements work as the system grows (users, data, load)
-- Done typically via formal reviews (peer review, stakeholder review)
+## 2. Traceability
 
-**Validation vs Verification (briefly):**
+Traceability tracks a requirement in two directions: **backward** to the stakeholder, document or
+regulation that motivated it, and **forward** to the design, code and tests that satisfy it. For example, *"R-005: user data shall be encrypted at rest"* traces back to a data-protection obligation,
+and forward to an encryption component and an AES-256 storage test. The backward link lets you
+re-decide the requirement when the obligation changes; the forward link tells you what breaks.
 
-- _Verification_ of requirements means checking _that the requirements document is well-formed_: unambiguous, complete, testable, consistent.
-- _Validation_ means checking _that the requirements are correct from stakeholders’ perspective_: they reflect the real needs, that nothing essential is missing, that what is specified matches what users/biz expect.
+## 3. Change is what successful products do
 
-**Example:**
+Commercial word processors and spreadsheets grew from **under 300 function points to over 5,000 in
+ten years** {% cite jones1996creep %} — not a failure of requirements discipline, but what a product
+that survives looks like.
 
-- Requirement: “Users should be able to search quickly.” → ambiguous.
-- Better version (after verification + validation): “The system shall return search results on up to 1,000 items in under 2 seconds for 95% of searches; stakeholder X agrees that ‘search quickly’ means ≤ 2 seconds.”
+And most change is not repair. Corrective maintenance is only **10–15%** of maintenance work;
+functional enhancements are **over 60%** of changes, and **40% of those enhancements come from
+learning** {% cite kelly2004change %} — figures that are Edberg and Olfman's, relayed by Kelly.
+Specifying a system also changes the system people want: interviewing people about their work
+*"will cause people to reflect on what they are doing… and whether things can be done better."*
 
----
+## 4. Measure change before arguing about it
 
-## Validation Checklist (Pressman-style)
+**Volatility** is *"the ratio of requirements change… to the total number of requirements for a
+given period of time"* — a number any project can produce from its change log
+{% cite nurmuliani2004volatility %}.
 
-For _each requirement_, check:
+Recording *what* changed is easy. Recording **why** and **where it came from** turns a change log
+into an analysis: changes originating in design reviews mean the reviews are working; changes
+originating in support calls mean the elicitation did not. In the studied release,
+volatility peaked at **16.85%** as requirements analysis completed and the reviews ran — which is
+discovery, not instability. **A project that schedules no review has the same changes, found later
+and priced higher.**
 
-| Check | What it means | Example |
-|---|---|---|
-| Stated clearly | No vague modifiers; simple clear language | Avoid “fast”, “intuitive”; use “≤ 2 seconds under load” etc. |
-| Source identified | Know where this requirement comes from (stakeholder, document, regulation) | “From user interviews”, or “Requirement derived from business goal 3.” |
-| Original source concurs | That stakeholder agrees requirement as documented | Show prototype or description and get confirmation from stakeholder. |
-| Measurable / Testable | There is a way to test or measure it | “Error rate ≤ 2%”, “uptime 99.9% over 30 days” etc. |
-| Cross referenced | It's linked to related requirements / constraints / interfaces | If requirement A depends on B, have references. |
-| Doesn’t violate domain constraints | It respects the rules / limits of domain (legality, safety, technology) | E.g. GDPR, safety regulation. |
-| Traceable to system objectives / model | The requirement maps to higher-level goals, or system architecture / business objectives | If business goal is “customer satisfaction”, this requirement improves that. |
-| Spec is understandable | Different stakeholders (dev, biz, users) can read and understand it | Perhaps have non-tech and tech descriptions if needed. |
-| Indexed | Requirements have unique IDs / numbering so they can be referenced | R-001, R-002 … etc. |
-| Association with non-functional / quality attributes | If applicable, requirement shows which qualities it's concerned with (e.g. performance, security) | “Search requirement” annotated: performance; “User login” annotated: security & usability. |
+## 5. What a late change actually costs
 
----
+Three independent methods on real aerospace programmes agree that the cost to fix an error grows
+**exponentially** with the phase in which it is found {% cite stecklein2004costs %}. One aircraft
+programme's own accounting, over 231 true errors, gives it in money: an error caught in definition
+cost **$22,632**; the same class of error found in operations cost **$3,558,215**.
 
-## Traceability
+{: .warning }
+**There is no single multiplier.** The familiar figure carries its own hedge — a problem found after
+delivery is *"**often** 100 times more expensive"* — and the same authors put small non-critical
+systems *"more like 5:1 than 100:1"* {% cite boehm2001top10 %}. Measured escalation to operations
+runs 29× on real spacecraft and 157–186× on real aircraft.
 
-**Definition**:
+The mechanism is the useful part: projects spend about **40–50% of their effort** on *avoidable
+rework*, one named source of which is *hastily specified requirements*.
 
-- Requirements traceability means tracking the life of each requirement: where it came from (source), what it led to (design, test, code), what depends on it, whether it's still needed, etc.
+## 6. The decision rule the cost curve licenses
 
-**Types of traceability**:
+Not refusal. As Kelly puts it: *"changes that come along later are more disruptive but this doesn't
+imply they are valueless, only that they must be worth more if they are to be worthwhile
+implementing."* The rule is a **rising value threshold**, not a closing door — read as a licence to
+say no, it makes you *"the people who always say 'No'"*.
 
-| Traceability Type | Meaning |
-|---|---|
-| Source traceability | Mapping a requirement back to stakeholder / document / origin |
-| Forward traceability | From requirement → design, test cases, implementation |
-| Backward traceability | From implementation or feature back to requirement, ensuring nothing extra is implemented without requirement |
-| Bidirectional traceability | Both forward + backward: full lifecycle mapping |
-| Interface traceability | Requirements connected to interfaces (external systems, APIs, UI) |
-| Dependency traceability | Requirements that depend upon one another |
+Two mechanisms implement it: a written **impact statement** listing alternatives with their costs,
+so **the decision rests with the requestor, not the manager** {% cite wysocki2003needs %}; and a
+**deferral** device, where ideas go into a bank and are decided at the next checkpoint rather than
+inside a cycle.
 
-**Tool / artifacts used**:
+## How solid is this?
 
-- Requirements Traceability Matrix (RTM) — table that maps requirements to tests, design items, code, etc.
-- Traceability graphs, lists or via ALM / requirements tools.
-
-**Example**:
-
-- Req “R-005: System must encrypt user data at rest” → traced to design component “Encryption Module”, traced to test case “Verify data at rest is encrypted using AES-256”, traced to code module implementing storage/encryption.
-
----
-
-## Requirements Change & Change Management
-
-**Why changes happen:**
-
-- Stakeholder needs evolve
-- New domain constraints discovered
-- Business priorities shift
-- Technology changes
-
-**Change impacts:**
-
-- The later in the project, the more expensive changes tend to be
-- But change isn’t always bad (can improve product, fix issues)
-
-**Managing changes (process):**
-
-1. Establish a **baseline** (e.g. version 1.0 of requirements)
-2. Set a cut-off, or “no more good ideas” date (for formal changes)
-3. Collect proposed changes: include **source**, **classification** (functional / non-functional / constraint etc.), **dates** of request and review
-4. Analyze impact: on scope, schedule, cost, quality etc.
-5. Use traceability to see what other parts are affected
-6. Renegotiate priorities, scope etc.
-
-**Best practices:**
-
-- Keep a trail (version history, who requested change, what was approved)
-- Involve stakeholders (customer, dev, QA) in deciding whether to accept changes
-- Have formal review of changes (Change Control Board or similar)
-- Communicate changes to all as needed
+- **Where it comes from.** One triangulated aerospace cost study, one single-release volatility
+  case, one synthesis column, one opinion essay whose percentages belong to a study it cites.
+- **What is contested.** The 100× figure: published studies disagree by a factor of nearly seven at
+  the test phase alone, and Boehm's own 1981 operations figure is a range of 40–1000×.
+- **What we do not hold.** The volatility percentages are one waterfall release at one company and
+  are not a benchmark.
 
 ---
 
-## Sources
+### Acknowledgments
 
-- [Wikipedia: Requirements Traceability](https://en.wikipedia.org/wiki/Requirements_traceability)
-- [GeeksforGeeks: Traceability and its Types](https://www.geeksforgeeks.org/software-engineering/traceability-and-its-types/)
-- [SAVIOM: Requirement Traceability Matrix](https://www.saviom.com/blog/requirement-traceability-matrix-and-why-is-it-important/)
-- [Edge Delta: What is System Traceability](https://edgedelta.com/company/blog/what-is-system-traceability)
-- [Jama Software: Traceability](https://www.jamasoftware.com/blog/traceability-in-requirements-management/)
-  
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
+
+### References
+
+{% bibliography --cited %}
+
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

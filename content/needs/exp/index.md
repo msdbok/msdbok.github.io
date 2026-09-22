@@ -3,80 +3,75 @@ parent: Needs
 title: Expectations
 nav_order: 1
 layout: default
+page_type: topic-hub
 ---
 
 # Customer Expectations
 
-## Objectives
+A customer's judgement of your project is a **comparison**, not a measurement: they form a standard
+before they see anything, they perceive what you delivered, and satisfaction is the gap between the
+two. The lecture states it as a ratio {% cite root2014lectures %}:
 
-- Understand **what expectations are** and how they form.
-- Explore the role of **perceptions** in shaping expectations.
-- Compare **customer vs. developer viewpoints**.
-- Consider the **impact of time** on expectations.
-- Recognize different **types of customers**.
-- Learn how to **set and manage expectations** effectively.
+$$
+\text{Customer Perception} = \frac{\text{Project Performance}}{\text{Expectations}}
+$$
 
----
+Boehm makes the same point without arithmetic {% cite boehm_requirements_1999 %}: *"A customer
+expecting a 4-second response time will consider a 3-second response time a satisfying win; a
+customer expecting a 1-second response time will consider a 3-second capability as a disappointing
+loss."* Performance is identical in both halves of that sentence. Only the expectation moved.
 
-## Why It Matters
+## 1. The denominator has parts
 
-- Expectations are **subjective and emotional**—they are shaped by personal experience, beliefs, and communication.
-- Unmanaged expectations can lead to:
-    - Loss of business
-    - Damage to reputation
-- Customers may feel:
-    - _“They hate me.”_
-    - _“The team is unrealistic.”_
+Customers do not hold one number. Research on service expectations identifies three levels held at
+once {% cite zeithaml1993expectations %}: the **desired** level they hope for, the **adequate**
+level they will accept, and the **predicted** level they think they will actually get. The space
+between desired and adequate is the **zone of tolerance**, and a delivery landing inside it produces
+no complaint at all — which is where a well-run project spends most of its time.
 
----
+Two consequences carry into every page below. The zone **moves from the bottom**: almost everything
+a manager controls acts on the adequate line, not on what the customer wants. And for some
+attributes the zone is **zero** — for example, there is no credit for exceeding an uptime target and
+only a penalty for missing it, which is the principled version of "do not gold-plate the plumbing".
 
-## Customer Expectations in Software Engineering
-_*Adapted from David Root (2014)_
+## 2. What the pages cover
 
-- **Agile Development:**  
-  Customers often see Agile as _“pay as you go”_—they expect flexibility, adaptability, and ongoing collaboration.
-- **Lowest Bidder:**  
-  Even when choosing the lowest-cost provider, customers may still expect high quality and full-featured results.
+| Page | The question it answers |
+|---|---|
+| [Expectation space and solution space](quadrant) | What can each side actually trade? |
+| [Defining success](success) | Who decides what counts as success, and when? |
+| [Threshold of success](tos) | How do you write that down so it can be checked? |
+| [Customer types](cust_types) | Why is a satisfied customer not a loyal one? |
+| [Kano classes](kano) | Why did delivering everything they asked for still disappoint them? |
+| [Setting expectations](setting) | What moves an expectation before the commitment? |
+| [Customer involvement](involvement) | How much of the customer's time should you ask for? |
 
----
+The through-line: **expectations move when information moves, not when arguments are won.** A
+prototype, a task breakdown and a fortnightly demo all work the same way — each puts something in
+front of the customer that they can evaluate themselves.
 
-## Perception of Value
+## How solid is this?
 
-- Customers ask: _“What makes this a good value?”_
-- Value is **subjective** and can be difficult to define.
-- A useful formula:
-
-    $$
-    \text{Customer Perception} = \frac{\text{Project Performance}}{\text{Expectations}}
-    $$
-
-    - **Key Point:** If expectations are set too high, even strong performance can feel disappointing.
-- Customers may expect:
-    - “New” or “cutting-edge” technology, even if it adds risk or cost.
-
----
-
-## Takeaways
-
-- Managing expectations is as important as delivering results.
-- Understand that perceptions, not just facts, drive satisfaction.
-- Set realistic, clear expectations and communicate openly to avoid misunderstandings.
+- **Where it comes from.** The three-level model is 17 propositions from 16 exploratory focus groups
+  across five US service industries — insurance, equipment repair, truck rental, auto repair and
+  hotels. There is no software in it, and the translation to software here is ours.
+- **What is contested.** The zone of tolerance has no direct measure; the authors flag
+  operationalising it as a difference score as problematic. Any number attached to a zone did not
+  come from this research.
+- **What we do not hold.** No measured effect size in software for any of these levers.
 
 ---
 
-## Acknowledgments
+### Acknowledgments
 
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## Sources
-
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
-
----
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

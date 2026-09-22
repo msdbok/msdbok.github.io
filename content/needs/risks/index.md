@@ -3,107 +3,79 @@ parent: Needs
 title: Risks
 nav_order: 3
 layout: default
+page_type: topic-hub
 ---
 
 # Risk Management
-_*Adapted from David Root (2014)_
 
----
+A **risk** is *"uncertainty that, if it occurs, will affect achievement of objectives"*
+{% cite hillson2009risk %}. Not every uncertainty is a risk: the test is whether you can **name the
+objective it would affect**. If you cannot, it does not belong in the register. Two components
+follow, the same in every standard: a **probability** that it occurs and a **loss** if it does
+{% cite vanscoy1992risk %}.
 
-### What is a Risk?
+## 1. Risk, issue, cause
 
-Definitions become more specific in software and engineering contexts:
+Three things routinely get filed as risks and are not.
 
-| Source | Definition / Key Elements |
+- **An issue has already happened**, or is certain to. With no probability left to reduce, an issue
+  is *resolved* rather than *mitigated*: a 100-percent-probable risk is a constraint
+  {% cite pressman2010risk %}.
+- **A cause is not a risk.** *"Inadequate staffing"* may produce several risks — reduced quality,
+  delays, turnover — and only those can be mitigated {% cite thompson2017riskstatement %}.
+- **The meteor is not a risk either.** Uncertainty that could not breach your
+  [threshold of success](../exp/tos) is just an event.
+
+The SEI adopted the dictionary definition — *risk is the possibility of suffering loss* — after
+printing two scholarly alternatives beside it {% cite dorofee1996crm %}: a documented choice.
+
+## 2. Risk is not bad. Unmanaged risk is
+
+*"Risk in itself is not bad; risk is essential to progress, and failure is often a key part of
+learning"* {% cite vanscoy1992risk %}. The manager balances a risk's consequences against the
+opportunity attached to it — which is why the SEI's continuous practice manages **opportunities as
+well as threats** {% cite higuera1996risk %}.
+
+The failure mode has a name: the *"Indiana Jones school of risk management"* — never worry about a
+problem until it happens, then react heroically {% cite pressman2010risk %}. The ladder out runs
+crisis management → fix on failure → mitigation → prevention → elimination of root causes; at the
+first three levels the schedule battle is already lost {% cite mcconnell_rapid_1996 %}.
+
+## 3. The paradigm
+
+Five steps in a loop, with **communication running through all of them**: **identify → analyse →
+plan → track → control** {% cite vanscoy1992risk %}. Communication sits at the centre rather than as
+a sixth step, and it is the only element whose absence voids the approach.
+
+Three named practices sit on that loop {% cite higuera1996risk %}: a **Software Risk Evaluation** is
+an event, **Continuous Risk Management** is a habit, **Team Risk Management** adds the customer. The
+frameworks a student will meet — SEI, ISO 31000, PMI, NASA, DoD, NIST's AI framework — are that same
+loop with different governance around it; NIST adopts ISO's definition outright
+{% cite nist2023airmf %}. And risk management *"cannot be an audit, a check mark on a standard, or
+something done only during 'risk management season.'"*
+
+## 4. What the pages cover
+
+| Page | The question it answers |
 |---|---|
-| **Webster’s** | • Possibility of loss or injury  <br>• The chance of loss  <br>• To expose to hazard or danger |
-| **SEI (CMU / SEI-99-TR-029)** | “Possibility of suffering loss.” Loss means impact on project: scope, quality, cost, schedule, or failure. |
-| **Charette, _Software Engineering Risk Analysis and Management_, 1989** | • Future event only  <br>• How the past can inform us  <br>• Involves change  <br>• Involves mind, opinion, actions, places  <br>• Involves choice  <br>• Uncertainty of that choice |
-| **DAU / Program Management** | Risks = potential future events or conditions with negative effect on achieving program objectives (cost, schedule, performance). |
+| [Identification](identification) | How do you find risks nobody has said out loud? |
+| [Capturing, owning and mitigating](capturing) | How do you write one, own it and track it? |
+| [Analysis and prioritisation](analysis) | Which few do you act on? |
+| [Why we misjudge risk](biases) | Why is the estimate optimistic, and what do you do? |
+| [Risk management in agile](agile) | What does this look like inside a two-week cycle? |
 
 ---
 
-### Key Properties of Risk
+### Acknowledgments
 
-- Risk is about _future_ possibilities; until something happens, it remains a risk, not a problem.
-- Involves _uncertainty_ (we don’t know whether/when, or how bad).
-- Has both _impact_ (if it happens) and _likelihood_ (probability).
-- In software projects, risks often affect _scope_, _quality_, _cost_, _schedule_, and sometimes _market_ or _reputation_.
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-### Risk vs Issue / Problem
-
-- **Risk:** Something that _might_ happen; may be positive or negative.  
-  _Example_: Adopting a new third-party library might introduce bugs or integration issues.
-- **Issue / Problem:** A risk that _has happened_—the uncertainty resolved negatively.  
-  _Example_: The third-party library fails on some interactions; now you must fix it (wrappers, patch, etc.).
-
----
-
-### Types / Categories of Risks
-
-Risk dimensions especially relevant to requirements/specification and software engineering:
-
-| Axis / Type | Examples in Requirements Context |
-|---|---|
-| **Technical Risks** | Ambiguous requirement leads to wrong interpretation; new technology doesn’t support needed non-functional constraints (e.g., performance, scalability). |
-| **Project / Managerial Risks** | Requirements creep (scope increases), poor prioritization, insufficient resources for detailed requirements specification or review. |
-| **Business / Strategic Risks** | Market shifts, business goals change so original requirements become obsolete; regulatory changes rendering some requirements noncompliant. |
-| **People / Organizational Risks** | Key stakeholder unavailable, miscommunication between requirements engineers and users, staff turnover. |
-| **Known / Unknown Risks** | Known from past projects (e.g., poor API documentation), unknown when entering new domains. |
-
-Also consider internal vs. external, tactical vs. strategic risks.
-
----
-
-### Why Do Risk Management?
-
-- **Prevent** or reduce delays, cost overruns, and quality problems.
-- **Reduce surprises** for stakeholders (increase transparency).
-- Balance risk vs. opportunity—calculated risks can lead to innovation, but unchecked risk can cause failure.
-- Document decisions and mitigation so everyone agrees on what-ifs.
-- Improve overall project confidence and planning.
-
----
-
-### Pitfalls / Downsides of Risk Management
-
-- Risk planning and mitigation can seem like overhead—sometimes “insurance” you never “use.”
-- Overly negative mindset: focusing too much on what _can_ go wrong may hinder creativity.
-- If management or stakeholders think “we already know the risks,” they may skip proper process—leading to blind spots.
-- Mitigation itself has cost and risk; trade-offs are always needed.
-
----
-
-## Sources
-
-- CMU / SEI’s work on risk (e.g., CMU/SEI-99-TR-029) for definitions.
-- _Software Risk Management: A Practical Guide_ (DOE/SQAS), for process templates and metrics.
-- Risk Management overviews in project/program management (e.g., DAU / governmental sources) define risk with respect to cost, schedule, and performance.
-- Industry blogs and recent articles for up-to-date examples and practice:
-    - “9 Risks in Software Development” (clockwise.software)
-    - “20 Common Project Risks” (TechnologyAdvice)
-    - [content1.dau.edu](https://content1.dau.edu/DAUMIG_se-brainbook_189/content/Management%20Processes/Risk-Management.html)
-    - [energy.gov](https://energy.gov/sites/prod/files/cioprod/documents/Risk_Management.pdf)
-    - [clockwise.software](https://clockwise.software/blog/software-development-risks/)
-    - [technologyadvice.com](https://technologyadvice.com/blog/project-management/project-risks-examples/)
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- Root, David. *Managing Software Development*. Lecture materials, 2014.
-
----
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

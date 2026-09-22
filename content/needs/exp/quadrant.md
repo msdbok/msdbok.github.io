@@ -1,131 +1,101 @@
 ---
 parent: Expectations
-title: Hoover Quadrant
+title: Expectation space and solution space
 nav_order: 1
 layout: default
 ---
 
-# The Hoover Approach: Customer vs. Developer Views
+# Expectation Space and Solution Space
 
-_**Based on:** Hoover, Carol L., Mel Rosso-Llopart, and Gil Taran, _Evaluating Project Decisions: Case Studies in Software Engineering_. Addison-Wesley Professional, 2010. ISBN-13: 978‐0321544568. [O'Reilly Media](https://www.oreilly.com/library/view/evaluating-project-decisions/9780321685629/)._
+The **expectation space** is the set of things a customer can actually control and therefore trade —
+scope, time, quality and cost. The **solution space** is the developer's equivalent: people, process
+and technology. Negotiation happens between the two, and each side can only offer what it holds
+{% cite hoover_evaluating_2010 %}.
 
----
+This pairing is widely taught as *"Hoover's quadrant"*, which is the name to recognise in a question
+paper. The book's own term is the expectation space, and its fourth customer-side element is
+**cost** — you will also meet it as *budget* or *resources*.
 
-![Quadrant](<quad.png>)
+![The expectation space and the solution space](quad.png)
+_Customer-controlled and developer-controlled elements._ {% cite hoover_evaluating_2010 %}
 
-## Customer’s View – _Expectation Space_
+## 1. Each side can only trade what it controls
 
-Customers typically define project success using **four core dimensions**:
+| Customer controls | Developer controls |
+|---|---|
+| **Scope** — what gets delivered | **People** — who is on the team, and their skills |
+| **Time** — when it is needed | **Process** — how the work is organised and checked |
+| **Quality** — how good it must be | **Technology** — languages, platforms, architecture |
+| **Cost** — what it may cost | |
 
-- **Scope** – What will be delivered.
-- **Budget** – How much it will cost.
-- **Time** – When it will be finished.
-- **Quality** – How good the outcome will be.
+The manager's job is translation. A developer-side decision only becomes negotiable once it is
+restated in the customer's four terms: choosing an unfamiliar framework (technology) is a **time**
+and **cost** claim; adding a code review stage (process) is a **quality** claim paid for in
+**time**.
 
-Together, these form the **expectation space**—the lens through which customers measure project success.
+Hoover's framing matters more than the grid. The object of negotiation is to **enlarge** the space —
+*"the negotiation process stimulates stakeholders to explore options that optimize the expectation
+space for all"* — not to divide a fixed budget across four corners.
 
----
+## 2. The reason the two sides cannot negotiate unaided
 
-## Developer’s View – _Solution Space_
+Boehm names the underlying problem the **Two Cultures**: neither side has a feel for what is cheap
+or expensive on the other's side {% cite boehm_requirements_1999 %}. The consequence is specific —
+*"if the customers have no idea of the relative cost and difficulty of a requirement, they are more
+likely to enter infeasible requirements as statements of need."*
 
-Developers, on the other hand, focus on how to _make the project work_:
+The blindness runs both ways. Boehm's developer-side example is the misapplied Golden Rule: build a
+friendly interface as *you* would want one, and you have built a programmer-friendly interface.
 
-- **Technology** – Tools, platforms, architectures.
-- **People** – Skills, team members, availability.
-- **Process** – Development practices, workflows, methods.
+## 3. What happens when cost becomes visible
 
-This is the **solution space**—the factors developers can directly control and adjust.
+For example, a Windows beta customer in 1992 brought two change requests to the team, both labelled *must have*
+{% cite mcconnell_rapid_1996 %}. One was a toolbar button: **half a day**. The other was hot-linked
+drag-and-drop page import, requiring full OLE support: **six to nine staff months**. Once the
+customer knew the two costs, their own response to the expensive one was *"No way! It's not that
+important."*
 
----
+Nobody negotiated and nobody refused. The information did the work, and the customer got their
+toolbar button *and* the release date — an outcome no division of a fixed pie produces. That is what
+"educate the customer" means in practice: make the cost structure legible, with a task breakdown, an
+impact statement or a prototype, rather than explaining that software is hard.
 
-## Bridging the Two Views
+## 4. Where this stops working
 
-Projects succeed when developers **translate solution decisions into customer expectations**.
+The model assumes both sides have authority to trade. A customer representative who cannot move
+scope, and a team that cannot change its own process or staffing, have no space between them to
+enlarge — the negotiation is theatre, and the real decision sits with people who are not in the
+room. Identify them before the meeting rather than after it; see
+[stakeholders](../reqs/stakeholders).
 
-- **Example:**  
-  - _Team selection_ (People) → affects _Time_ (delivery schedule).
-  - _Choice of technology_ → affects _Budget_ (costs for licenses, training, maintenance).
-  - _Process maturity_ → affects _Quality_ (defect rates, reliability).
+The four dimensions also shift in prominence as a project runs: scope dominates the early
+conversation, cost and schedule the middle, and quality the end, when the question becomes whether
+the delivered thing actually works.
 
-When issues arise, customers want to know **how the impact shows up in their terms** (scope, time, budget, quality).
+![How attention shifts across a project](quad_time.png)
+_Problem, solution and decision spaces over the life of a project._ {% cite hoover_evaluating_2010 %}
 
----
+## How solid is this?
 
-## Case Example – Hoover et al.
-
-In _Evaluating Project Decisions_, a team faced performance problems after adopting a new technology stack.
-
-- **Developer view:** The technology was innovative but required more training.
-- **Customer view:** The delay led to **missed deadlines (Time)** and **increased training costs (Budget)**.
-- **Resolution:** By explaining the trade-off in customer terms, the team gained agreement to extend the timeline, since the new technology promised **higher long-term Quality**.
-
----
-
-## Impact of Project Time on Customer–Developer Views
-
-![Quadrant - Time Impact](<quad_time.png>)
-
-*Source: Hoover et al., Evaluating Project Decisions*
-
-The diagram shows how the **focus of a project shifts over time** across three layers:
-
-### 1. Problem Space (Customer’s Expectations)
-
-Customers define the project in their terms:
-
-- **Requirements (Scope):** What features or outcomes are expected.
-- **Cost (Budget):** How much they are willing to spend.
-- **Time (Schedule):** When they need it delivered.
-- **Quality (Defects):** What level of reliability they expect.
-
-This is the **expectation space**—what success means to the customer.
-
----
-
-### 2. Solution Space (Developer’s View)
-
-Developers respond with their levers of control:
-
-- **Technology:** Tools, frameworks, platforms.
-- **People:** Skills, team composition.
-- **Process:** Methods, workflows, standards.
-
-For each area of the problem space, developers adjust these three factors to design a solution.
+- **Where it comes from.** Hoover, Rosso-Llopart and Taran is a software textbook built on case
+  studies, read here for chapters 2, 7 and 9. It establishes definitions and method; nothing in it
+  measures whether negotiating this way improves outcomes.
+- **What is contested.** Nothing substantive — but the naming is unstable. *Quadrant* is not the
+  book's word, and *budget* and *resources* both circulate for what Hoover calls *cost*.
+- **What we do not hold.** McConnell's 1992 anecdote is a practitioner account, not a study.
 
 ---
 
-### 3. Decision Space (Where Trade-offs Are Made)
+### Acknowledgments
 
-Ultimately, every project decision reduces to either:
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
-- **Task focus:** Optimize work to meet objectives (technical, efficiency-driven).
-- **Relationship focus:** Manage expectations, communicate impacts, maintain trust.
+### References
 
----
-
-## The Role of Time
-
-- **Early in the project:** Focus is broad and strategic (Requirements, Scope). Customers want clarity; developers explore technology, process, and people options.
-- **Mid-project:** Attention shifts to Cost and Schedule. Are we on budget? Are we still on track?
-- **Late in the project:** The dominant concern becomes **Quality**. Customers care less about promises and more about whether the delivered product works without defects.
-
-**In summary:**
-
-- **Start:** “What will we get?” (Scope)
-- **Middle:** “Will it be on time and on budget?”
-- **End:** “Does it actually work well?” (Quality)
-
----
-
-## Illustration – Mini Case
-
-**Mobile Banking App Project:**
-
-- **Early phase:** Customer wants clarity on features (scope). Developers select a cross-platform framework (technology) to efficiently cover requirements.
-- **Mid-project:** Training costs for the framework increase. Customers push back: _“Will this stay in budget and still hit our deadlines?”_
-- **End of project:** The app is delivered but has bugs. Now, **quality dominates expectations**: customers care less about missed deadlines and more about _“Can we trust this app with real money?”_
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining, and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
