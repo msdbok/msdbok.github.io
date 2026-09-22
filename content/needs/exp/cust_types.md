@@ -24,6 +24,9 @@ customers are completely satisfied, and 52% are up for grabs"* — the same data
 conclusion. Stated intent flatters further: 60–80% of car buyers say they will repurchase the same
 brand, and 35–40% actually do.
 
+![48% scored 5, 34% scored 4, 18% scored 3 or below](loyalty-split.svg)
+_The 82% headline, split._ {% cite jones_why_1995 %}
+
 ## 2. The types, and what they look like in software
 
 Hoover credits the taxonomy to Jones and Sasser in place {% cite hoover_evaluating_2010 %}. The

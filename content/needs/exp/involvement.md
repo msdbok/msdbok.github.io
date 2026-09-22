@@ -15,26 +15,21 @@ problems than benefits."*
 
 ## 1. What the evidence actually says
 
-The review screened 2,776 citations down to 87 studies and classifies their results, in its
-abstract, as **52 positive, 12 negative, 23 uncertain**. Involvement usually helps; it sometimes
-does not, and badly run involvement produces unrealistic expectations, communication breakdown and
-intergroup hostility.
+The review screened 2,776 citations down to 87 studies and classifies their results, in its abstract, as **52 positive, 12 negative, 23 uncertain**. Badly run involvement produces unrealistic expectations, communication breakdown and intergroup hostility.
 
-That is a more useful position than "involve the users", because it turns an exhortation into four
-design decisions the review names:
+![52 studies positive, 23 uncertain, 12 negative](involvement-evidence.svg)
+_87 studies over 32 years._ {% cite bano2015involvement %}
 
-- **Which users?** Primary (frequent hands-on), secondary (occasional, or via an intermediary),
-  tertiary (affected by the system, or influencing its purchase). A project that involved only
-  primaries has not involved its users.
+That turns an exhortation into four design decisions the review names:
+
+- **Which users?** Primary (hands-on), secondary (occasional or via an intermediary), tertiary (affected but never touching it). A project that involved only primaries has not involved its users.
 - **At what degree?** A ladder, not a switch: **informative** → **consultative** → **participative**,
   where participative means *"users influence decisions relating to the whole system"*. Promising
   participative while running informative is how involvement generates the negative results in the
   sample.
-- **For which goal?** For satisfaction and acceptance, structure participation to create a sense of
-  control; for system quality, structure it to move domain knowledge to the developers. **These are
-  different designs**, and conflating them is how involvement disappoints.
+- **For which goal?** For satisfaction, structure participation to create a sense of control; for system quality, to move domain knowledge to the developers. **These are different designs**, and conflating them is how involvement disappoints.
 - **In which phase?** Early buys accurate requirements and less resistance; design and
-  implementation buy ownership; testing buys usability and acceptance.
+  implementation buy ownership; testing buys usability.
 
 The review also states a genuine **when-not**: for routine transaction-processing systems with
 lower-level users, an analyst gathering requirements by interview is sufficient, and more
@@ -49,22 +44,20 @@ a project reporting attendance as involvement has measured the wrong thing.
 
 ## 3. When the customer will not give you the time
 
-Agile methods assume an on-site customer. A three-year study of 30 practitioners in 16 organisations
-found teams routinely working without one, and mapped what they do instead as a continuum ordered by
-directness {% cite hoda2011customer %}:
+Agile methods assume an on-site customer. A three-year study of 30 practitioners in 16 organisations found teams routinely working without one, and mapped what they do instead as a continuum ordered by directness {% cite hoda2011customer %}:
 
 **On-site Customer → Story Owner → Just Demos → E-collaboration → Customer Proxy → Extreme
 Undercover.**
 
-Knowing which rung a project is on is more useful than any advice about collaboration. Two repairs
-from the study are concrete enough to copy: a **Definition of Ready**, so unclarified
-stories are demoted rather than guessed at, and a **buffer sized from recorded velocity** rather
-than from optimism. For example, one team reserved two days of a two-week sprint on that basis, and
-ran the customer hour as **15 minutes showing software and 45 minutes discussing it**.
+![Six levels of involvement on one continuum, by directness](involvement-continuum.svg)
+_Fig. 5 — a continuum, not a ladder: the levels **may occur simultaneously**._ {% cite hoda2011customer %}
 
-The study is candid about the gap it found. Customers defaulted to hands-off and expected to review
-results months later, and customers who had **read the Scrum books** expected unlimited scope
-freedom while resisting the full-time involvement that pays for it.
+Knowing which rung a project is on is more useful than any advice about collaboration. Two repairs from the study are concrete enough to copy: a **Definition of Ready**, so unclarified stories are demoted rather than guessed at, and a **buffer sized from recorded velocity**. For example, one team reserved two days of a two-week sprint and ran the customer hour as **15 minutes showing software and 45 minutes discussing it**.
+
+Customers defaulted to hands-off; those who had **read the Scrum books** expected unlimited scope freedom while resisting the involvement that pays for it.
+
+![Causes, condition, consequences, and the strategies that answer them](covariance-chart.svg)
+_Fig. 4 — causes, condition, consequences, and the strategies that answer them._ {% cite hoda2011customer %}
 
 {: .warning }
 **Extreme Undercover is a transition aid, not a permanent substitute.** The authors are explicit,
@@ -73,15 +66,9 @@ it without that boundary would be teaching deception.
 
 ## 4. Customers can do real work — if you train them
 
-Involvement can extend into the customer doing part of the job: self-service, defect reports, forum
-answers, reviews. Intuit, for example, adds *"more than a hundred changes"* to
-each annual release of its personal-finance product from customer-service input
-{% cite heskett_ownership_2008 %}.
+Involvement can extend into the customer doing part of the job: self-service, defect reports, forum answers, reviews. Intuit adds *"more than a hundred changes"* to each annual release from customer-service input {% cite heskett_ownership_2008 %}.
 
-Two cautions come with it. **Untrained customers become antagonists** — when Southwest Airlines
-changed its boarding process it built an online "Boarding School", because a loyal customer base is
-the *hardest* to retrain. And a feedback channel that collects and then ignores is **worse than
-none**: it spends the credibility the scheme runs on.
+Two cautions. **Untrained customers become antagonists** — a loyal base is the *hardest* to retrain, which is why Southwest built a "Boarding School" before changing boarding. And a channel that collects then ignores is **worse than none**: it spends the credibility it runs on.
 
 ## How solid is this?
 

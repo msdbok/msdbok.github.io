@@ -44,6 +44,9 @@ conversation goes. It also exposes slots that are wrong rather than merely empty
 model showed two departments each believing they held purchasing authority; another hid workplace
 safety, airworthiness certification and radio regulation inside one generic *regulator* slot.
 
+![Four rings of stakeholder roles, with the unfilled slots shown](onion.svg)
+_An empty slot is a finding._ {% cite alexander2004onion %}
+
 ## 3. Prioritise on the risk of neglect, not on seniority
 
 Once the roles exist, rank them by what happens if you ignore them
@@ -66,6 +69,9 @@ the biggest problem in their own work, **541 practitioners** answered
 | Discovery — we cannot find the appropriate stakeholders | 72 (13%) |
 | Maintaining the stakeholder set | 48 (9%) |
 | Other | 27 (5%) |
+
+![What practitioners say goes wrong with stakeholders](stakeholder-concerns.svg)
+_541 practitioners. Discovery is fourth._ {% cite alexander2004onion %}
 
 Discovery came **fourth**. Together, skill and commitment account for **72%**. The hard part is not
 locating people; it is getting the people you located to engage usefully — which is what

@@ -26,6 +26,9 @@ therefore backwards:
    criteria are Doran's, from 1981, relayed by Wysocki {% cite wysocki2003needs %}; note that the
    **A is *assignable***, naming who is responsible, not "achievable".
 
+![Concerns above and below the threshold line](threshold.svg)
+_Above the line it is a risk; below it, an event._ {% cite hoover_evaluating_2010 %}
+
 ## 2. The test that makes a criterion a criterion
 
 Wysocki states the standard in one sentence {% cite wysocki2003needs %}: *"An ideal statement will
@@ -44,10 +47,10 @@ usually needs a proxy measure, agreed with the sponsor before the project rather
 
 ## 3. Agreeing it: a conversation with a stopping rule
 
-The threshold lives inside a protocol Wysocki calls **Conditions of Satisfaction**: a **request**,
-the provider's **clarification** of what they heard, a **response**, then the requestor's
-**agreement** restating what they will get — repeated until neither side corrects the other. The
-stopping rule is the point. Its deliverable is a one-page **Project Overview Statement** carrying
+The threshold lives inside a protocol Wysocki calls **Conditions of Satisfaction**, and the stopping rule is the point: the loop ends when neither side corrects the other.
+
+![Request, clarify, respond, clarify — repeated until it stops moving](cos-loop.svg)
+_The restatement is the test._ {% cite wysocki2003needs %} Its deliverable is a one-page **Project Overview Statement** carrying
 the problem, one goal in the language of the business, objectives, success criteria and assumptions.
 
 The agreement is not an artefact you file. It is re-run at every milestone, and on a change of
@@ -60,10 +63,7 @@ The threshold is also the instrument that makes risk identification finite
 {% cite hoover_evaluating_2010 %}: *"The ToS serves as a catalyst in identifying risks that, if they
 were to materialize, might prevent the project from being successful."*
 
-Without it, every conceivable bad event is a candidate and the register grows until nobody reads it.
-With it, a **risk is exactly a concern that would breach the threshold**, and everything else is an
-event that might happen and would not matter. Wysocki supplies the other bound: an event you are
-certain of is not a risk but a certainty. See [risk identification](../risks/identification).
+Without it, every conceivable bad event is a candidate and the register grows until nobody reads it. Wysocki supplies the other bound: an event you are certain of is not a risk but a certainty. See [risk identification](../risks/identification).
 
 ## 5. Limitations and challenges
 

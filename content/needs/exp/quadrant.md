@@ -16,8 +16,8 @@ This pairing is widely taught as *"Hoover's quadrant"*, which is the name to rec
 paper. The book's own term is the expectation space, and its fourth customer-side element is
 **cost** — you will also meet it as *budget* or *resources*.
 
-![The expectation space and the solution space](quad.png)
-_Customer-controlled and developer-controlled elements._ {% cite hoover_evaluating_2010 %}
+![Four customer axes and three developer axes, each with a point marked, and f(x) mapping one to the other](expectation-space.svg)
+_An expectation is a **point**, not a list; **f(x)** is the manager's job._ {% cite hoover_evaluating_2010 %}
 
 ## 1. Each side can only trade what it controls
 
@@ -59,6 +59,9 @@ Nobody negotiated and nobody refused. The information did the work, and the cust
 toolbar button *and* the release date — an outcome no division of a fixed pie produces. That is what
 "educate the customer" means in practice: make the cost structure legible, with a task breakdown, an
 impact statement or a prototype, rather than explaining that software is hard.
+
+![The visible application above the waterline and the essential software below](iceberg.svg)
+_What they price is what they can see._
 
 ## 4. Where this stops working
 

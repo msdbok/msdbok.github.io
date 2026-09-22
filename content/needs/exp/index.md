@@ -23,16 +23,15 @@ loss."* Performance is identical in both halves of that sentence. Only the expec
 
 ## 1. The denominator has parts
 
-Customers do not hold one number. Research on service expectations identifies three levels held at
-once {% cite zeithaml1993expectations %}: the **desired** level they hope for, the **adequate**
-level they will accept, and the **predicted** level they think they will actually get. The space
-between desired and adequate is the **zone of tolerance**, and a delivery landing inside it produces
-no complaint at all — which is where a well-run project spends most of its time.
+Customers do not hold one number. Research identifies three levels at once {% cite zeithaml1993expectations %}: the **desired** level they hope for, the **adequate** they will accept, and the **predicted** they think they will get. The space between them is the **zone of tolerance**: a delivery inside it draws no complaint.
 
-Two consequences carry into every page below. The zone **moves from the bottom**: almost everything
-a manager controls acts on the adequate line, not on what the customer wants. And for some
-attributes the zone is **zero** — for example, there is no credit for exceeding an uptime target and
-only a penalty for missing it, which is the principled version of "do not gold-plate the plumbing".
+![Desired, adequate and predicted service, with the zone of tolerance between the top two](zone-of-tolerance.svg)
+_The three levels, and the band between the top two._ {% cite zeithaml1993expectations %}
+
+Two consequences carry below. The zone **moves from the bottom**: almost everything a manager controls acts on the adequate line, not on what the customer wants. And for some attributes it is **zero** — no credit for exceeding an uptime target, only a penalty for missing it.
+
+![Three seconds against a four-second promise and a one-second promise](three-seconds.svg)
+_Identical performance, opposite verdicts._ {% cite boehm_requirements_1999 %}
 
 ## 2. What the pages cover
 

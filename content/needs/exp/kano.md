@@ -29,6 +29,9 @@ expectation, why did delivering everything they asked for still disappoint them?
 
 The software readings are ours; the source's examples are all skis.
 
+![Three classes of requirement plotted against how fully they are met, with the migration over time](kano.svg)
+_Industry names above, Sauerwein's below. **The migration arrows are not in the 1996 paper.**_ {% cite sauerwein1996kano %}
+
 There is a tie-break rule, and it is the practical payload: **must-be beats one-dimensional beats
 attractive beats indifferent.** Failing a must-be cannot be compensated by any amount of delight.
 

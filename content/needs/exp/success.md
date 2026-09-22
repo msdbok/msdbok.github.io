@@ -26,6 +26,9 @@ For FY2015 the same database gives **36% successful** under the first definition
 the second — the report itself puts the difference at about seven points. Nothing about the projects
 changed. When someone quotes you a failure rate, the first question is which definition produced it.
 
+![Traditional and modern resolution of the same FY2015 database](chaos-definitions.svg)
+_The same projects, scored two ways._ {% cite standish2015chaos %}
+
 ## 2. Why the definition matters more than the number
 
 Eveleens and Verhoef examined what those definitions actually measure {% cite eveleens2010chaos %}:
@@ -56,6 +59,9 @@ delivered **56% less value** than predicted.
 
 **Software projects were worse than the headline: 66% cost overrun and 33% schedule overrun.** That
 is the figure this subject should carry, and it is the one a CHAOS-only slide does not give you.
+
+![Cost, schedule and value outcomes, all IT against software only](mckinsey.svg)
+_All large IT against software alone, on the same study._ {% cite bloch2012mckinsey %}
 Two further findings change decisions:
 
 - **17%** of large IT projects go so badly that *"they can threaten the very existence of the
