@@ -161,7 +161,7 @@ This content is heavily inspired by and adapted from lectures by **Eduardo Miran
 ## Sources
 
 - NASA Systems Engineering Handbook (2007).
-- Essentials of Software Engineering, 3rd Ed., F. Tsui & O. Karam, 2022.
+- Essentials of Software Engineering, 3rd Ed., F. Tsui & O. Karam, 2013.
 - K. Rubin, _Essential Scrum: A Practical Guide to the Most Popular Agile Process_, 2012.
 - Miranda, Eduardo. *Managing Software Development*. Lecture materials, 2014.
 

@@ -18,7 +18,7 @@ yourself against it, and the case descriptions used in the on-campus sessions.
 ## Course books
 
 - **Roger S. Pressman**, *Software Engineering: A Practitioner's Approach*. McGraw-Hill, 2005.
-- **Frank Tsui, Orlando Karam, Barbara Bernal**, *Essentials of Software Engineering*. Jones & Bartlett Learning, 2022.
+- **Frank Tsui, Orlando Karam, Barbara Bernal**, *Essentials of Software Engineering*, 3rd edition. Jones & Bartlett Learning, 2013.
 
 Every other source is cited where it is used. Each content page ends with a **References**
 section listing exactly the works that page cites, generated from the site bibliography — so
