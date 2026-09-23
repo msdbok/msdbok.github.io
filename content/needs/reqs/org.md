@@ -20,6 +20,9 @@ filing — it is how the omissions become visible.
 | **Annotation** | Attaches the measure, scenario or prototype that makes a statement checkable | *"The system shall be reliable"* annotated with *99.9% uptime measured over 30 days* |
 | **Prioritisation** | Decides what gets built first, and what is dropped when time runs out | See [release planning](../../plan/release/) |
 
+![Group, level and annotate lead into prioritisation, with the gap that appears only once the set is grouped](org-moves.svg)
+_Three moves here; the fourth belongs to planning._
+
 ## 2. Grouping is how you find the gaps
 
 The reason to group before reviewing is that **a gap is visible in a group and invisible in a

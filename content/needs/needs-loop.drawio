@@ -1,0 +1,81 @@
+<mxfile host="msd_review" type="device">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="360" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="30" y="120" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="EXPECTATIONS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#2D6E2A;fontSize=17;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="44" y="132" width="212" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="What the customer will judge the delivery against" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="44" y="166" width="212" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="330" y="120" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="REQUIREMENTS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#2D6E2A;fontSize=17;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="344" y="132" width="212" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="What you agree to build, stated precisely" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="344" y="166" width="212" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="630" y="120" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="RISKS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#2D6E2A;fontSize=17;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="644" y="132" width="212" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="What could stop you meeting the threshold you agreed" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="644" y="166" width="212" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="274" y="175" as="sourcePoint" />
+            <mxPoint x="326" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n12" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="574" y="175" as="sourcePoint" />
+            <mxPoint x="626" y="175" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n13" value="agree it before you commit" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#9e9e9e;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="210" y="236" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" value="a changed requirement is how most risks materialise" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#9e9e9e;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="510" y="236" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" value="" style="endArrow=blockThin;endFill=1;html=1;strokeColor=#019546;strokeWidth=3;rounded=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="234" as="sourcePoint" />
+            <mxPoint x="750" y="234" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="150" y="320" />
+              <mxPoint x="750" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n16" value="a written &lt;b&gt;threshold of success&lt;/b&gt; makes the risk list finite" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="250" y="300" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" value="" style="endArrow=blockThin;endFill=1;html=1;strokeColor=#d32f2f;strokeWidth=2;dashed=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="116" as="sourcePoint" />
+            <mxPoint x="150" y="116" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="750" y="50" />
+              <mxPoint x="150" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n18" value="a risk that bites should reach them &lt;b&gt;from you, early&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="250" y="30" width="400" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

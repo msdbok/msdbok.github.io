@@ -41,6 +41,9 @@ believed necessary for user productivity, implying a **$100 million** custom arc
 testing showed **four seconds was satisfactory for 90% of transactions**. It was delivered on
 commercial technology at **$30 million** with a three-second response {% cite boehm_requirements_1999 %}.
 
+![A $100 million bar for the one-second requirement against a $30 million bar after the prototype](prototype-renegotiation.svg)
+_Seventy million dollars, moved by a prototype._ {% cite boehm_requirements_1999 %}
+
 The customer conceded nothing. The requirement moved once the alternative could be experienced —
 hence the rule: **when an expectation is quantitative, build the cheapest thing that lets the
 customer experience the number.**

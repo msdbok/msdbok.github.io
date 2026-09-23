@@ -1,0 +1,55 @@
+<mxfile host="msd_review" type="device">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="320" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="20" y="50" width="250" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="ONCE, AT THE START" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#2D6E2A;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="34" y="60" width="222" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="272" y="125" as="sourcePoint" />
+            <mxPoint x="296" y="125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n5" value="Half a day, whole team&lt;br&gt;~20 risks, condition–consequence&lt;br&gt;&lt;b&gt;5&lt;/b&gt; to action planning&lt;br&gt;&lt;b&gt;2&lt;/b&gt; strategies each, each with a trigger" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="34" y="88" width="222" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="Sprint 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9e9e9e;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="70" width="118" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="" style="rhombus;html=1;fillColor=#ffc107;strokeColor=#282828;" vertex="1" parent="1">
+          <mxGeometry x="416" y="113" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="Sprint 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9e9e9e;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="446" y="70" width="118" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="" style="rhombus;html=1;fillColor=#ffc107;strokeColor=#282828;" vertex="1" parent="1">
+          <mxGeometry x="562" y="113" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="Sprint 3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9e9e9e;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="592" y="70" width="118" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" value="" style="rhombus;html=1;fillColor=#ffc107;strokeColor=#282828;" vertex="1" parent="1">
+          <mxGeometry x="708" y="113" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" value="Sprint 4" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9e9e9e;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="738" y="70" width="118" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" value="" style="rhombus;html=1;fillColor=#ffc107;strokeColor=#282828;" vertex="1" parent="1">
+          <mxGeometry x="854" y="113" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" value="◆ &lt;b&gt;10–15 minutes in each iteration review&lt;/b&gt; — triggers are checked at the boundary, never mid-sprint" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="190" width="584" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" value="Mitigations enter the backlog as &lt;b&gt;small, named, estimable items&lt;/b&gt; — not one generic “risk mitigation” task that never makes the sprint" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdecea;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="300" y="244" width="584" height="56" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

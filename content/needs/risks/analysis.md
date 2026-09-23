@@ -30,7 +30,7 @@ Paying half a million is the **cheapest** option, because the comparison is not 
 **plus residual exposure**. That is what exposure is for: **comparing options, not measuring the
 world.**
 
-![A decision tree comparing the cost of prototyping against the exposure it removes](decision-tree.svg)
+![Three options for one risk, do nothing, coach the team or buy independent review, each with the exposure it leaves](decision-tree.svg)
 _The $500,000 option was cheaper._ {% cite boehm1991risk %}
 
 It also answers the objection students raise immediately — *"you made those probabilities up."*
@@ -47,10 +47,10 @@ over 10% functionality**, with critical, serious, minor and negligible below
 {% cite us_department_of_energy_software_2000 %}.
 
 The SEI's evaluation method bands impact against budget instead: roughly **more than 50%**, **about
-30%**, **about 10%** {% cite williams1999sre %}. Use whichever you like, but write the numbers down —
+30%**, **about 10%** {% cite williams1999sre %}. Use either, but write the numbers down —
 an undefined band is a word two people will use differently.
 
-Note one detail in that government table: **Medium and High prescribe exactly the same action**. A
+In that government table, **Medium and High prescribe the same action**. A
 five-level scale that acts on three levels is worth knowing about before you spend an hour arguing
 which one something is.
 
@@ -64,14 +64,17 @@ identified risks"* {% cite pressman2010risk %}.
 ![A Pareto curve separating the vital few from the useful many](pareto.svg)
 _The vital few._ {% cite mcconnell_rapid_1996 %}
 
-The consequence is the part students resist: **some identified risks never enter the mitigation plan
-at all.** Identification is cheap and capacity is not, so selection is the skill.
+The consequence is the part students resist: **some identified risks never enter the mitigation
+plan.** Identification is cheap and capacity is not, so selection is the skill.
 
 The mechanic is small — compute exposure, sort, draw a cutoff line, act above it. Two asymmetries
 around that line matter. A **catastrophic but very improbable** risk should not absorb significant
 management time, while both high-impact/moderate-probability and low-impact/high-probability items
 carry forward. And cost-benefit the response: *"if RE for a specific risk is less than the cost of
 risk mitigation, don't try to mitigate the risk but continue to monitor it."*
+
+![A five by five matrix banded diagonally into prevent, prepare and monitor, with three example risks placed on it](response-matrix.svg)
+_Where a risk sits picks the response, not its rank._ {% cite root2014lectures %}
 
 McConnell adds three cases where the sorted list is only **roughly** ordered
 {% cite mcconnell_rapid_1996 %}: a catastrophic low-probability risk outranks its position if the

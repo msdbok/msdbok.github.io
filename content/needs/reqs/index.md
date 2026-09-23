@@ -30,6 +30,9 @@ Two boundaries do more work than the definition, and both can be checked by read
   procedures and the QA plan are all real constraints, and none of them belongs in a requirements
   specification — that document is about the product, not about the process that builds it.
 
+![The space of all designs, the region the requirements still allow, one design as a point inside it, and project constraints outside](req-boundaries.svg)
+_A requirement narrows the space. A design picks a point._ {% cite iso2018req %}
+
 A third distinction saves arguments later: an **implied requirement** is one everybody assumes and
 nobody writes down. *"The system shall be secure"* is implied until it becomes *"all traffic shall
 use TLS 1.2 or later"*.

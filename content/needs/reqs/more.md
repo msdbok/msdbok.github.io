@@ -8,14 +8,13 @@ layout: default
 # Validation, Traceability and Change
 
 Once requirements exist, three activities keep them useful: checking them, linking them to what they
-produced, and deciding what to do when they change. The third is where the arguments happen, and the
-one most often got backwards.
+produced, and deciding what to do when they change. The third is the one most often got backwards.
 
 ## 1. Checking a requirement set
 
 Validation asks whether these are the right requirements; verification asks whether the system meets
 them — the distinction is on [requirements engineering](eng). What a review looks for is narrower
-than "read it carefully": **ambiguity**; **inconsistency and omission**,
+than "read it carefully": **ambiguity**; **inconsistency, omission**,
 including anything still marked *to be determined*, since a specification containing one is not
 complete {% cite iso2018req %}; **a named source** who confirms the written form is what they meant;
 and **a way to test it**. If nothing can determine whether the software meets a requirement,
@@ -34,8 +33,8 @@ re-decide the requirement when the obligation changes; the forward link tells yo
 ## 3. Change is what successful products do
 
 Commercial word processors and spreadsheets grew from **under 300 function points to over 5,000 in
-ten years** {% cite jones1996creep %} — not a failure of requirements discipline, but what a product
-that survives looks like.
+ten years** {% cite jones1996creep %} — not a failure of discipline, but what a surviving product
+looks like.
 
 ![Maintenance effort: fixing defects against adding what users now want](maintenance-split.svg)
 _Mostly enhancement, not repair._ {% cite kelly2004change %}
@@ -68,6 +67,9 @@ Three independent methods on real aerospace programmes agree that the cost to fi
 **exponentially** with the phase in which it is found {% cite stecklein2004costs %}. One aircraft
 programme's own accounting, over 231 true errors, gives it in money: an error caught in definition
 cost **$22,632**; the same class of error found in operations cost **$3,558,215**.
+
+![Cost to fix one requirements error by the phase it was found in, rising in a straight line on a log axis](cost-escalation.svg)
+_A straight line on a log axis is exponential._ {% cite stecklein2004costs %}
 
 {: .warning }
 **There is no single multiplier.** The familiar figure carries its own hedge — a problem found after

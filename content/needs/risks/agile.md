@@ -44,6 +44,9 @@ Not much, once it is set up {% cite nelson_explicit_2008 %}:
   planning with **two** strategies each.
 - **Thereafter:** **10 to 15 minutes** in each iteration review.
 
+![Half a day at the start, then a short trigger check at each sprint boundary](agile-risk-rhythm.svg)
+_Half a day once, then minutes a sprint._ {% cite nelson_explicit_2008 %}
+
 Two mechanisms make that work. Risks are identified **against an explicit
 [threshold of success](../exp/tos)** — *"a set of minimum objectives that needed to be met by
 projects' end for it to be called a success and against which those risks were identified."*

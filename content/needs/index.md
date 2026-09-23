@@ -30,6 +30,9 @@ Three topics follow from that, in the order a project meets them.
 The three are one loop rather than three phases: a written definition of success is what makes a
 risk list finite, and a changed requirement is the most common way a risk materialises.
 
+![Expectations, requirements and risks as one loop, with the threshold of success linking the first to the last](needs-loop.svg)
+_One loop, not three phases._
+
 ---
 
 ### References

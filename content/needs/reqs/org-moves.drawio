@@ -1,0 +1,88 @@
+<mxfile host="msd_review" type="device">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="316" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="196" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="GROUP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#2D6E2A;fontSize=17;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="32" y="42" width="172" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="by theme" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#9e9e9e;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="32" y="70" width="172" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="Every reporting requirement, read together" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="32" y="100" width="172" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="115" as="sourcePoint" />
+            <mxPoint x="242" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="242" y="30" width="196" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="LEVEL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#2D6E2A;fontSize=17;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="42" width="172" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="general to specific" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#9e9e9e;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="254" y="70" width="172" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="Reporting → month-end report → five seconds at peak" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="254" y="100" width="172" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="442" y="115" as="sourcePoint" />
+            <mxPoint x="464" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n12" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="464" y="30" width="196" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" value="ANNOTATE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#2D6E2A;fontSize=17;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="476" y="42" width="172" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" value="attach the measure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#9e9e9e;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="476" y="70" width="172" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" value="“reliable” → 99.9% uptime over 30 days" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="476" y="100" width="172" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="664" y="115" as="sourcePoint" />
+            <mxPoint x="686" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n17" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#9e9e9e;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="686" y="30" width="196" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" value="PRIORITISE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#9e9e9e;fontSize=17;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="698" y="42" width="172" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" value="a release decision" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#9e9e9e;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="698" y="70" width="172" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" value="Made in release planning, against capacity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="698" y="100" width="172" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" value="&lt;b&gt;The gap shows only in the group:&lt;/b&gt; nobody said what happens when a report is requested while the nightly batch runs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdecea;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="20" y="232" width="418" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="n22" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=2;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="118" y="228" as="sourcePoint" />
+            <mxPoint x="118" y="204" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n23" value="Ranking works only over &lt;b&gt;comparable&lt;/b&gt; items — a business goal and a field-level detail are not alternatives to each other" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9e9e9e;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="464" y="232" width="416" height="64" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

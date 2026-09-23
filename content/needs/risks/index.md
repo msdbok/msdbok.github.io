@@ -14,6 +14,9 @@ objective it would affect**. If you cannot, it does not belong in the register. 
 follow, the same in every standard: a **probability** that it occurs and a **loss** if it does
 {% cite vanscoy1992risk %}.
 
+![Three nested rings: all uncertainty, the part that could affect an objective, and the part that would breach your threshold](uncertainty-rings.svg)
+_Risk is the subset of uncertainty that matters._ {% cite hillson2009risk %}
+
 ## 1. Risk, issue, cause
 
 Three things routinely get filed as risks and are not.
@@ -51,7 +54,7 @@ first three levels the schedule battle is already lost {% cite mcconnell_rapid_1
 
 Five steps in a loop, with **communication running through all of them**: **identify → analyse →
 plan → track → control** {% cite vanscoy1992risk %}. Communication sits at the centre rather than as
-a sixth step, and it is the only element whose absence voids the approach.
+a sixth step; without it the approach fails.
 
 ![Five steps round a wheel, with communication through the hub](crm-wheel.svg)
 _Communicate is the hub, not a step._ {% cite dorofee1996crm %}
@@ -59,8 +62,7 @@ _Communicate is the hub, not a step._ {% cite dorofee1996crm %}
 Three named practices sit on that loop {% cite higuera1996risk %}: a **Software Risk Evaluation** is
 an event, **Continuous Risk Management** is a habit, **Team Risk Management** adds the customer. The
 frameworks a student will meet — SEI, ISO 31000, PMI, NASA, DoD, NIST's AI framework — are that same
-loop with different governance around it; NIST adopts ISO's definition outright
-{% cite nist2023airmf %}. And risk management *"cannot be an audit, a check mark on a standard, or
+loop with different governance; NIST adopts ISO's definition {% cite nist2023airmf %}. And risk management *"cannot be an audit, a check mark on a standard, or
 something done only during 'risk management season.'"*
 
 ## 4. What the pages cover
