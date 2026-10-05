@@ -9,7 +9,7 @@ layout: default
 # RQ 3 — Needs: Expectations, Requirements and Risks
 
 Covers **L3a** (customer expectations), **L3b** (requirements, plus the elicitation exercise) and
-**L3c** (risks, and the Comair case). Summaries at [SN L3a](sn3a.html), [SN L3b](sn3b.html) and [SN L3c](sn3c.html); the detail is in the
+**L3c** (risks: finding, writing, sizing, responding, tracking, and the Comair case). Summaries at [SN L3a](sn3a.html), [SN L3b](sn3b.html) and [SN L3c](sn3c.html); the detail is in the
 [Needs](../needs/) area.
 
 Answer each in a short paragraph: state your claim first, then the reasoning or the evidence, then a
@@ -117,41 +117,39 @@ concrete software example where one is asked for.
 
 ### 3.1 What risk management is
 
-1. Why is risk management a filter rather than a list?
+1. A risk must threaten a named objective. Give one worry that is a risk for a project you know and one that is only news.
 2. Is a missing GDPR assessment, found mid-project, a risk or an issue? Split the situation into its entries and name the verb for each.
-3. Which classification of risk — by what is threatened or by how much you know — tells you what a contingency reserve is for?
-4. Paying $500,000 was the cheapest option. Explain the comparison, and answer a colleague who says the probabilities were made up.
-5. Why is addressing risks at the third level of maturity still a lost schedule battle?
+3. Known, predictable, unpredictable: which go in the register, and what is the reserve for?
+4. Two risks that look nothing alike have equal exposure. What does the number let you do, and what does it hide?
+5. Paying $500,000 was the cheapest option. Explain the comparison, and answer a colleague who says the probabilities were made up.
 6. Name the steps of the SEI risk paradigm. Why is communication at the centre rather than a sixth step?
 
-### 3.2 Finding them
+### 3.2 Finding risks
 
 1. Describe the role of the threshold of success in risk identification.
-2. Why should the project manager not attend the risk identification session, and what does the SEI field study say about it?
+2. Pick a technique for each case and justify it: a planning meeting where everyone nods; a team that lists only product risks; people who will not speak in front of the boss.
 3. Why does a premortem surface risks that an ordinary planning meeting does not?
-4. What are the three classes of the SEI taxonomy for, and which ones does a team skip when left alone?
-5. Boehm's number-one risk item is personnel shortfalls. Why might that surprise an engineer, and what does it change about a register?
+4. Boehm's number-one risk item is personnel shortfalls. Why might that surprise an engineer?
 
-### 3.3 Writing one down
+### 3.3 Writing a risk down
 
-1. Write a risk as condition and consequence, where the condition is something you could check this afternoon.
-2. Why does the consequence need a number and a unit?
+1. Write a risk as condition and consequence, where the condition is something you could check this afternoon and the consequence has a unit.
+2. List the fields of a register row and say what goes wrong when the owner or the trigger is missing.
 3. "If the team does not test properly, defects will escape." Why is that not a risk?
-4. Sixty risks, five people. How do drivers and riders decide where the mitigation effort goes?
 
-### 3.4 Deciding which ones matter
+### 3.4 Deciding which risks matter
 
-1. Why is a band without a threshold just a word? Use two scales that disagree.
-2. Explain how the Pareto principle applies to risk management, with a software example.
+1. Why must a scale carry numbers beside its words?
+2. Explain how the Pareto principle applies to risk management, with a software example. What happens to the risks below the line?
 3. A risk matrix painted the smallest expected loss red. What is the matrix good for, and what settles the order instead?
 4. Half of IT projects land on budget and the average is 80% over. What does that mean for sizing contingency?
 
-### 3.5 Doing something about it
+### 3.5 Responding and tracking
 
-1. Why do the bands on a response matrix run diagonally? Place one risk in each band and name its response.
-2. Why is last week's rank the most important column on a top-ten list?
-3. "Meetings do not burn down risks." What does, and why does work already in the plan not count?
-4. A risk register's total exposure rose for two months. Good news or bad, and what shape is the real warning?
+1. Name the four responses to a risk and give a software example of each. What does a contingency need before it can start?
+2. Why do the bands on a response matrix run diagonally? Place one risk in each band and name its response.
+3. Why is last week's rank the most important column on a top list?
+4. "Meetings do not burn down risks." What does, and why does work already in the plan not count?
 5. An agile team mitigated nothing for several iterations. What was wrong with how its risk work entered the backlog, and what does the fix cost?
 
 ### 3.6 The case
