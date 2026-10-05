@@ -8,12 +8,8 @@ layout: default
 
 # RQ 3 — Needs: Expectations, Requirements and Risks
 
-Covers **L3a** (how a customer judges you, what counts as success, whose expectations they are,
-educating the customer, involving them, when it goes wrong), **L3b** (what a requirement is,
-elicitation, writing one so it can be checked, the process and the document, change, and
-requirements with LLMs, plus the PBJ exercise) and **L3c** (what risk management is, finding risks,
-writing one down, deciding which matter, doing something about them, and the Comair case).
-Summaries at [SN L3a](sn3a.html), [SN L3b](sn3b.html) and [SN L3c](sn3c.html); the detail is in the
+Covers **L3a** (customer expectations), **L3b** (requirements, plus the elicitation exercise) and
+**L3c** (risks, and the Comair case). Summaries at [SN L3a](sn3a.html), [SN L3b](sn3b.html) and [SN L3c](sn3c.html); the detail is in the
 [Needs](../needs/) area.
 
 Answer each in a short paragraph: state your claim first, then the reasoning or the evidence, then a
@@ -72,42 +68,48 @@ concrete software example where one is asked for.
 
 ### 2.1 What a requirement is
 
-1. A requirement narrows the design space without picking a point in it. Give one requirement that narrows nothing and one that picks a point, and repair both.
-2. The same security requirement, reworded, becomes functional. What does that tell you about the *what versus how* rule, and what do you ask instead?
-3. Discuss the relation between functional requirements and quality attributes. Give an example.
-4. Which of Wiegers's quality criteria can be checked on one sentence, which only on the whole set, and why does the split matter in a review?
-5. Why is a specification template descended from IEEE 830 a citation problem even when its content is sound?
+1. A good requirement leaves the designer a choice. Give one that rules out nothing and one that chooses the design, and repair both.
+2. Name the three kinds of requirement, with a software example of each, and say how each is checked.
+3. The same security requirement, reworded, sounds functional. What does that say about the *what versus how* rule, and what do you ask instead?
+4. Discuss the relation between functional requirements and quality attributes. Give an example.
+5. Which of Wiegers's criteria can be checked on one sentence, which only on the whole set, and why does the split matter in a review?
 
-### 2.2 Getting them out of people's heads
+### 2.2 Finding out what people need
 
-1. Seven of the ten classic elicitation problems are problems of understanding. What does that rule out as a fix?
-2. Why do structured interviews beat unstructured ones, and what do you prepare before one?
-3. The most frequently cited requirements problem is not the one most blamed for failure. Which is which, and what should a manager do with the difference?
-4. Real end users took part in 2 of 24 projects. What happens to a requirement each time it is relayed?
-5. What did the PBJ exercise show about writing instructions for someone who shares none of your assumptions?
+1. Seven of the ten classic elicitation problems are misunderstandings. What does that rule out as a fix?
+2. Pick a technique for each case and justify it: users who cannot describe their own work; two hundred users and three questions; a customer who must see it first.
+3. Why do prepared interview questions beat improvised ones, and what do you prepare?
+4. "The system shall save the document." Show how one verb hides several systems.
+5. Real end users took part in 2 of 24 projects. What happens to a requirement each time it is relayed?
+6. What did the elicitation exercise show about writing for someone who shares none of your assumptions?
 
-### 2.3 Writing one so it can be checked
+### 2.3 Writing a requirement you can test
 
-1. Rewrite "the system shall be reliable" as a quality-attribute scenario. Which slot is the one teams skip?
-2. What is the difference between verifying and validating requirements? Be specific, and say who you ask in each case.
-3. Why must validation be able to fail, and what does a review where everyone nods tell you?
+1. Rewrite "the system shall be reliable" as a quality-attribute scenario. Which slot do teams skip, and why is it the only one a tester can act on?
+2. Write one requirement as *condition, subject, shall, action, object, constraint*, and say what each slot stops a writer from forgetting.
+3. Turn "the app shall be intuitive" into three measurable requirements. Where do the numbers come from?
+4. What is the difference between verifying and validating requirements? Say who you ask in each case.
+5. Why must validation be able to fail, and what does a review where everyone nods tell you?
 
-### 2.4 The process, and the document
+### 2.4 The process and the document
 
 1. Why are the five requirements-engineering activities a cycle and not a pipeline?
-2. A story card is deliberately thin. Where does the requirement actually live, and what does the card promise?
-3. Why group requirements before ranking them, and why rank on the cost of being wrong?
+2. List the sections of a requirements document and say what goes wrong when each is missing.
+3. Write a user story and its Given–When–Then for a feature you know. What does the *so that* clause buy the team?
+4. Compare the Definition of Ready with a requirements inspection. What moved, and what did not change?
+5. Why group requirements before ranking them, and why rank on the cost of being wrong?
 
-### 2.5 Requirements move
+### 2.5 Requirements change
 
 1. Word processors grew from 300 to 5,000 function points in a decade. Why is that not a requirements failure?
-2. What three fields should a change log carry, and what does the *origin* field tell a manager?
-3. "Late changes must be worth more." Explain the rule, and who should decide whether a late change is worth its price.
+2. Describe the five steps for handling a change, and what *type, reason and origin* tell a manager six months later.
+3. "Late changes must be worth more." Explain the rule, and who decides whether a late change is worth its price.
+4. Which direction of traceability do teams skip, and what question can only that direction answer?
 
-### 2.6 RE with LLMs
+### 2.6 Requirements with AI tools
 
 1. Where does a language model help with requirements work, and where did one make a requirement worse without saying so?
-2. Explain the Specification Paradox. Why is a specification not a prompt?
+2. "A vague requirement given to AI becomes vague code." Explain the argument, and why a specification is not a prompt.
 
 ---
 
