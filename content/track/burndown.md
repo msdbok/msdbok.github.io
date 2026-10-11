@@ -1,84 +1,109 @@
 ---
 parent: Tracking
-title: Burndown Chart
+title: Burndown and burn-up charts
 nav_order: 4
 layout: default
+page_type: method
 ---
 
-# Burndown Chart
+# Burndown and burn-up charts
 
-## 1. What is a burndown chart?
+A burndown chart plots the work still remaining against time: its slope shows how fast the team is
+finishing, and extending the line to zero gives a forecast {% cite rubin2012tracking %}. A burn-up
+chart shows the same progress climbing, with total scope drawn as a separate line.
 
-A burndown chart is a visual tool that shows how much work remains (vertical axis) versus time (horizontal axis).
+Use either for work delivered in short iterations and sized in points or hours. Neither fits a
+fixed-date release with open scope: both *"assume you know how much total scope you have to burn down
+or burn up"* {% cite rubin2012tracking %}.
 
-- Y-axis: remaining work (story points, hours, backlog items).  
-- X-axis: time (days in a sprint; weeks or sprints in a release).  
-- Typical elements: an ideal line (straight) and an actual line showing team progress.  
-- Comparing actual to ideal shows whether the team is on track, ahead, or behind.
+## 1. Two burndowns answer two questions
 
-![Release Burndown Chart](burn.png)
+The **iteration (sprint) burndown** is summed daily from the task board. The **release burndown** is
+updated once per sprint. Most misreadings come from mixing them up.
+
+| | Iteration burndown | Release burndown |
+|---|---|---|
+| **Unit** | effort-hours or tasks | story points on backlog items |
+| **Cadence** | daily | once per sprint |
+| **Who reads it** | the development team | product owner, stakeholders, management |
+| **Question** | will we finish this sprint's commitment? | when will the release be done, and with what? |
+
+The iteration burndown steers the team. The release burndown forecasts: its drop over a sprint is
+that sprint's velocity, and its trend gives a date, best quoted as a range (see
+[Velocity and flow](agile.md)).
+
+## 2. Reading "actual above the ideal line"
+
+The ideal line runs straight from the starting total to zero at the end. When the actual line sits
+above it, more work remains than the plan expected. **The chart does not say why.**
+
+On a sprint burndown, a rise is often an estimate getting better. In Rubin's example sprint, remaining
+work went from 180 to 190 effort-hours on day 3 because one task was re-estimated from 8 to 16 hours
+{% cite rubin2012tracking %}. Nobody slowed down; the task board shows whether tasks grew or nothing
+finished.
+
+On a release burndown, a flat line has two causes that draw the same picture: the team finished less,
+or scope was added as fast as the team finished it. They call for opposite responses. A slow team
+needs its impediment found. Growing scope is the product owner's call, to cut scope or move the date;
+pushing or enlarging the team makes it worse.
+
+## 3. The burn-up separates the causes
+
+A burn-up chart draws **work done** and **total scope** as two lines. *"Some people prefer to use the
+burnup format because it can easily show a change in scope for the release"*: when scope is added,
+the target line moves up in the sprint where it arrived {% cite rubin2012tracking %}. Slow work
+flattens the done line; added scope lifts the target.
+
+![The same data drawn twice: the burndown barely falls and looks stuck, while the burn-up shows steady delivery into rising scope](burnup-vs-burndown.svg)
+_An illustration, not real data: a made-up team finishes 20 points a sprint while 18 are added. The
+burndown creeps from 100 to 88; the burn-up shows 120 points done against scope rising from 100 to 208._
+
+A burndown can do the same if the line is stepped up where scope is added
+{% cite cabri2006agilereporting %}.
+
+## 4. Example: a newspaper site that looked stuck
+
+Slovenia's largest publisher rebuilt its daily newspaper's website in 2011, in nine three-week sprints
+with six to eight people. By sprint 7 the release burndown sat far above ideal. Yet the team had
+completed **about 155 points** in six sprints, while remaining work fell only **from about 64 to about
+52**. The reason: *"emerging requirements, which were not part of the initial Product Backlog, but were
+constantly added by the Product Owner during the project"* {% cite mahnic2012scrum %}.
+
+Read alone, the chart said the team had done almost nothing; its velocity said it delivered steadily
+while scope more than doubled. The company used the burndown to simulate cuts and
+*"successfully launched a reduced release after 9 Sprints"*, against seven expected. When it did add
+two developers, in sprint 5, velocity fell to about 8 against 39 planned. **Before you push the team,
+check whether the target moved.**
+
+## 5. What a burndown does not show
+
+A burndown holds estimates of what remains and nothing else: *"The sprint backlog and the sprint
+burndown charts always use estimated effort remaining. They do not capture actual effort expended"*
+{% cite rubin2012tracking %}. So it cannot show cost; a budget owner needs a different instrument
+(see [Choosing a tracking instrument](choosing.md)). Nor does it show value or quality.
+
+## How solid is this?
+
+- **Where it comes from.** The definitions and constructed examples are from one practitioner
+  textbook {% cite rubin2012tracking %}; the only real project is the newspaper site, measured by its
+  own coach.
+- **What is contested.** Little about the mechanics. The newspaper figures are read off the paper's
+  charts to about two points, and "more than doubled" is our arithmetic, hence "about".
+- **What we do not hold.** No study shows that teams using burn-ups deliver better. The argument for
+  the burn-up is that it shows something the burndown hides, not that it improves outcomes.
 
 ---
 
-## 2. Why use burndown charts?
+### Acknowledgments
 
-Benefits:
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite miranda_managing_2014 root2014lectures %} on software project management.
 
-- Provide transparency into remaining work and completion rate.  
-- Detect problems early (actual above ideal indicates risk).  
-- Support forecasting: project remaining sprints given current velocity.  
-- Support retrospective learning: inspect curve behaviour and causes of deviation.
+### References
 
----
-
-## 3. Types: Sprint/Iteration Burndown vs Release Burndown
-
-### 3.1 Sprint (Iteration) Burndown
-
-- Focuses on one iteration (e.g., a 2-week sprint) and shows remaining work each day.  
-- Useful for daily progress visibility, mid-sprint adjustment, and managing sprint commitment.  
-- Example: start with X story points; update remaining points daily and plot the curve.
-
-### 3.2 Release Burndown
-
-- Focuses on the release horizon (may span several sprints).  
-- X-axis: sprints; Y-axis: total remaining work for the release.  
-- Helps track overall progress toward release goals, scope changes, and forecasting needed sprints.  
-- Analogous to the sprint burndown but at the requirement level.
-
----
-
-## 4. How to construct and read a burndown chart
-
-### 4.1 Construction steps (iteration view)
-
-1. At iteration start, estimate total work (story points, hours). This is the Y-intercept.  
-2. Plot the ideal remaining-work line: straight line from initial work to zero at iteration end.  
-3. Each day, update remaining work and plot the actual remaining-work line.  
-4. Optionally mark scope changes (added/removed work) which may cause upward jumps.
-
-### 4.2 Reading / interpreting
-
-- Actual above ideal: more work remains than planned → risk of missing commitment.  
-- Actual below ideal: team is ahead (or under-committed).  
-- Actual jumps up: indicates added scope or re-estimation — should be visible to decision-makers.  
-- At iteration/release end, actual should reach zero; otherwise analyse causes (under-estimation, blocked work, etc.).
-
----
-
-## 5. Common pitfalls & limitations
-
-- Shows remaining work, not delivered value or quality.  
-- Poor estimates reduce predictive value.  
-- Frequent scope changes can mislead the chart; track scope changes separately.  
-- For long release horizons, many variables (team changes, dependencies) affect accuracy.  
-- Use the chart as insight, not as strict enforcement.
-
-## References
-
-1. Essential Scrum by Kenneth S. Rubin. [PDF](https://libdoc.dpu.ac.th/eBook/113642.pdf)
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

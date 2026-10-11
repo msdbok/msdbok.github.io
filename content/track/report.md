@@ -1,167 +1,111 @@
 ---
 parent: Tracking
-title: Reporting
+title: Reporting progress
 nav_order: 1
 layout: default
+page_type: method
 ---
 
-# Reporting
+# Reporting progress
 
-## 1. Purpose of Reporting
+A progress report tells the people who fund and steer a project where it stands against the plan,
+and what they must decide. It goes wrong in two ways: progress was counted badly, or it was known
+and not said.
 
-Reporting turns tracked data into **communication and decision support**.  
-Its goal is not just to describe the project’s status, but to:
+## 1. Why "90% done" lasts so long
 
-- Keep sponsors and stakeholders informed.  
-- Provide early warnings of problems.  
-- Support evidence-based decisions about what to do next.
+The 90% syndrome is a project that reaches about 90% on schedule, then stalls and finishes at about
+twice the planned duration {% cite ford2003ninety %}. Subjective reporting is the second cause. The
+first is **rework nobody has found yet**.
 
-> **In essence:** Tracking generates data; reporting transforms it into _insight_.
+Ford and Sterman's Python project, a chip design rather than software, counted progress in lines of
+design code. It was 73% complete at its week-39 deadline, its rate halved, and it finished in
+week 69. Work was marked done, its errors surfaced later in testing, and everything built on it went round
+again: *"the downstream phases outrun the discovery of inherited rework requirements."*
 
----
+For example, in our software reading, a word-processor team marks export features done when merged.
+Integration testing in week 30 finds the file layer mishandles three character encodings, and every
+feature that writes a file goes back. The board said 90%; nothing about the count was subjective.
 
-## 2. Characteristics of Effective Reporting
+So "done" has to include tested. Brooks wants milestones *"defined with knife-edge sharpness"*
+{% cite brooks_mythical_1995 %}; McConnell makes them binary, done or not done
+{% cite mcconnell_rapid_1996 %}. Percent complete is calculated, never asked for: finished tasks
+over all tasks, work under way counting zero {% cite wysocki2003tracking %}.
 
-Good reporting is:
+## 2. Reports fail more from silence than from ignorance
 
-- **Timely** – occurs at regular, predictable intervals.  
-- **Consistent** – uses standardized formats for comparability.  
-- **Tailored** – fits the audience (technical for engineers, summarized for executives).  
-- **Action-oriented** – highlights what decisions or actions are needed.
+Snow and Keil split status error in two: the project manager may *misperceive* the true status, or
+perceive it and *report it better* {% cite snow2002status %}. Under moderate good-news bias, their
+model has a truly Red high-risk project reach the executive as Green about half the time, and halving
+the perception error barely changes that. Distortion is *"likely to be significantly higher in
+organizations where 'bad news gets you killed.'"* The reader of the reports owns the climate.
 
-Reports that only describe, without interpretation or recommendation, waste everyone’s time.
+Silence is the norm. 85% of Milliken's interviewees had held back an important issue, most often
+someone's competence, mostly for fear of being labelled a troublemaker
+{% cite milliken_exploratory_2003 %}. In Keil's experiment, willingness to report fell at each step
+up the hierarchy, and further where messengers had been punished {% cite keil2004badnews %}.
 
----
+A manager can change four things:
 
-## 3. Typical Project Status Report Structure
+- Walk around and ask *"can you show me?"*, which turns a percentage into done or not done.
+- Act on what you hear, or say why not; people stop telling a manager who does nothing.
+- Ask for one light per dimension (cost, schedule, function), since one overall colour is easy to
+  round up {% cite snow2002status %}.
+- Print what the colours mean: Yellow comes with a get-well plan, Red has none and asks for help
+  {% cite wysocki2003tracking %}.
 
-A standard **project status report** includes several essential sections:
+## 3. Example: a status report that answers first
 
-| Section | Purpose |
-|---|---|
-| **Context** | Summarizes scope, schedule, major milestones, and budget. |
-| **Reporting Period** | Specifies the time window being covered (start/end dates, number of workdays). |
-| **Achievements** | Lists milestones or deliverables completed in the current period. |
-| **Outstanding Items** | Identifies milestones _not achieved_ and describes the impact on the overall plan. |
-| **Next Period Outlook** | Lists upcoming milestones or goals for the next reporting cycle. |
-| **Forecasts** | Updates projections for scope, schedule, cost, quality, and resource usage. |
-| **Comparison with Previous Forecasts** | Highlights trends or deviations from earlier expectations. |
-| **Baseline Updates** | Notes any approved scope or schedule changes since the last report. |
-| **Performance Indicators** | Includes metrics such as SPI, CPI, defect rates, or milestone variance. |
-| **Change Requests** | Summarizes pending or approved changes and their implications. |
-| **Issues and Actions** | Lists current problems, responsible owners, and target resolution dates. |
-| **Risks** | Identifies new or changing risks and their mitigation status. |
+A status report asks its reader to decide, so it takes the [Minto pyramid](../people/perso/minto.md):
+answer, then reasons, then evidence. The usual template puts the decision needed in its last line.
+Reordered, the word processor's report opens:
 
-> _Tip:_ Each section should be concise but evidence-based — “show, don’t tell.”
+> **Schedule Yellow: export slips two weeks unless release 1 drops RTF import. Decision needed by
+> Friday. Cost and function Green.**
+>
+> *Schedule, Yellow.* 9 of 12 milestones done; integration found an encoding defect, two weeks of
+> rework. Get-well plan: move RTF import to release 2.
+>
+> *Cost, Green.* 410 hours spent on work budgeted at 450.
+>
+> *Function, Green.* Every release 1 feature but export passes its acceptance tests.
 
----
+Below the lights, the standard contents become evidence: forecasts, baseline and change requests,
+indicators such as [earned value](evm.md), issues, risks, and the period's chronicle last. Nothing is
+added or cut; only the order changes.
 
-## 4. The Role of Milestone Tracking
+**Milestone trend analysis** belongs there too. At each report, plot every milestone's forecast
+date. A flat line is stable; a climbing line is a milestone slipping in small steps, which is how a
+project gets a year late, *"one day at a time"* {% cite brooks_mythical_1995 %}.
 
-**Milestone tracking reports** focus on key project events and deliverables rather than detailed activities. They answer:
+## 4. When to use it, and when not
 
-- Are we hitting key delivery points on time?  
-- What delays are accumulating?  
-- How do these affect the final completion date?
+Use answer-first for any report that asks a sponsor to decide. Do not use it where chronology is the
+content, such as an incident timeline. And no ordering rescues a climate where Red is unsafe.
 
-### 4.1 Milestone Trend Analysis (MTA)
+## How solid is this?
 
-Common visual: **Milestone Trend Analysis (MTA)**
-
-- X-axis: reporting periods.  
-- Y-axis: predicted completion dates.  
-- Flat line → milestone remains stable.  
-- Rising line → milestone slipping.
-
-> **Interpretation:** Consistent upward trends show systematic schedule risk; early correction is critical.
-
----
-
-## 5. Earned Value Reporting
-
-Earned Value Management (EVM) data is often a key feature of progress reports.  
-It allows managers to **compare planned, actual, and earned progress** over time.
-
-| Term | Meaning |
-|---|---|
-| **Planned Value (PV)** | Work that _should_ have been completed by now. |
-| **Actual Cost (AC)** | Money _actually spent_ so far. |
-| **Earned Value (EV)** | Value of work _actually accomplished._ |
-
-These three curves — PV, EV, and AC — form the backbone of EVM reporting.
-
-> **At-a-glance reading:**  
-> - EV < PV → behind schedule.  
-> - AC > EV → over budget.  
-> - EV close to AC → efficient use of resources.
-
-Weekly or biweekly charts showing these trends allow trend-based decision-making rather than crisis response.
+- **Where it comes from.** Ford and Sterman's cases are chip projects and a simulation; the software
+  readings are ours. Brooks, McConnell and Wysocki assert their rules from practice.
+- **What is contested.** Snow and Keil's figures come from a model built on five experts' estimates:
+  "about half" is a direction, not a measured rate. Keil's study is a role-play; Milliken's, 40
+  interviews.
+- **What we do not hold.** Evidence that answer-first reports or walking around reduce distortion, or
+  that binary milestones prevent the syndrome rather than reveal it sooner. Applying Minto to status
+  reports is our step.
 
 ---
 
-## 6. Using EVM Data for Forecasting
+### Acknowledgments
 
-From EVM data, we can calculate:
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite miranda_managing_2014 root2014lectures %} on software project management.
 
-- **Schedule Performance Index (SPI)** = EV / PV  
-- **Cost Performance Index (CPI)** = EV / AC
+### References
 
-These allow predictions such as:
-
-- **Estimate at Completion (EAC):** expected total cost.  
-- **Estimate to Complete (ETC):** how much more will be needed.  
-- **Time to Complete:** projected finish date based on SPI trend.
-
-> **Key insight:** Reporting isn’t about today’s numbers — it’s about what they say about tomorrow.
-
----
-
-## 7. Visual Tools for Reporting
-
-1. **Milestone charts** – Show deliverable completion vs. plan.  
-2. **Earned value curves (PV, EV, AC)** – Reveal integrated performance.  
-3. **Burndown charts (Agile)** – Track remaining work over time.  
-4. **Dashboards** – Summarize multiple metrics in one view for management.
-
-Visual reports make trends and risks visible instantly, which is why they’re the standard in both predictive and agile environments.
-
----
-
-## 8. Audience Adaptation
-
-Different stakeholders need different depths of reporting:
-
-- **Executives:** summarized visuals, exceptions, decisions required.  
-- **Project managers:** detailed metrics, root-cause insights.  
-- **Developers or testers:** actionable items related to their work.
-
-> **Rule:** The higher the audience level, the shorter and more interpretive the report.
-
----
-
-## 9. Common Pitfalls in Reporting
-
-1. **Data without context:** Reporting numbers without interpretation.  
-2. **Irregular cadence:** Inconsistent reporting leads to loss of trust.  
-3. **Blame culture:** Reports used for punishment discourage honesty.  
-4. **Overload:** Too many metrics obscure what matters.
-
-> Reporting should support _learning and alignment_, not control through fear.
-
----
-
-## 10. Summary of Reporting
-
-**Good reporting = Right information + Right timing + Right audience.**
-
-It connects:
-
-- **Tracking** → the factual state of the project, and  
-- **Controlling** → the managerial decisions that follow.
-
-Reporting is both **technical** (accuracy of data) and **social** (clarity, persuasion, and relevance).
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

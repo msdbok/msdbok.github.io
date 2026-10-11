@@ -1,145 +1,121 @@
 ---
 parent: Tracking
-title: Controlling
+title: Controlling a project
 nav_order: 2
 layout: default
+page_type: method
 ---
 
-# Controlling
+# Controlling a project
 
-## 1. Purpose of Controlling
+Controlling a project is doing something about what the [progress report](report.md) shows:
+*"Controls are actions taken as a result of reports"* {% cite wysocki2003tracking %}. It decides
+which variance gets action, which action, and when a project should stop.
 
-Controlling is the active part of project management — it means taking action based on what tracking and reporting reveal.  
-It’s how managers steer a project toward its goals, rather than merely observing or describing it.
+## 1. Set the threshold before the number arrives
 
-Controlling answers the question:
+A line agreed at the start stops *"we'll catch up next period"* from winning. A **magnitude**
+line catches a large gap: Wysocki treats a 10% cost variance as *"the most allowed"*
+{% cite wysocki2003tracking %}, and a construction convention puts Green under 3% impact on
+schedule or cost, Yellow at 3–5% and Red above 5% {% cite snow2002status %}. A **trend** line, such
+as a milestone slipping report after report, fires earlier, and early matters: cumulative CPI
+settles by about 20% complete {% cite christensen1998evm %}.
 
-> “What should we do about what we’ve learned?”
+Crossing a line starts an analysis, not an action: *"the conditions must be analyzed to identify why
+the variance exists"* {% cite nasa_nasa_2007 %}. A slow team and a growing scope draw the same late
+number and need opposite responses.
 
-Key aspects of control include:
-- Decision‑making: choosing how to respond to deviations.
-- Correction: implementing actions to fix or prevent problems.
-- Learning: using data to improve estimates, methods, and team behavior.
+## 2. Every corrective action spends something
 
----
+![Overtime lifts productivity, but lowers quality; the rework flows back into effort, schedule and cost, and the project is behind again](control-loop.svg)
+_Overtime is the lever._
 
-## 2. The Feedback Loop
+Overtime gives a short gain, then *"an aggressive decline in velocity along with a simultaneous
+decline in quality"* {% cite rubin2012tracking %}, and the rework flows back into schedule and
+cost. **Overtime buys a week now and rework later.** Adding people has the same
+shape: *"Adding manpower to a late software project makes it later"*
+{% cite brooks_mythical_1995 %}.
 
-Tracking, reporting, and controlling form a continuous feedback cycle:
+Wysocki orders the alternatives by who pays, cheapest first {% cite wysocki2003tracking %}:
 
-| Stage     | Function                 | Output                     |
-|-----------|--------------------------|----------------------------|
-| Tracking  | Collect data on current state | Facts and metrics      |
-| Reporting | Communicate and interpret    | Insights and forecasts  |
-| Controlling | Decide and act             | Adjustments and improvements |
+1. Leave the slip alone if the task has float.
+2. Overlap tasks planned end to end.
+3. Reassign people from non-critical work.
+4. Ask resource managers for more.
+5. Offer the customer the key features on the date, the rest later.
+6. Ask for more time, which *"offers the customer nothing in trade."*
 
-The loop must be frequent and transparent — otherwise, issues grow faster than responses.
+For example, a word processor's export module is a week behind on the critical path; the
+spell-checker is behind too, but has float, so it is left alone. The team overlaps export's
+file-format and UI work, borrows a spell-checker developer, and if that fails ships two export
+formats on the date. Nobody works weekends.
 
----
+## 3. Predictive and agile control steer different things
 
-## 3. Corrective Actions
+Both run a feedback loop, but they let different variables move.
 
-When tracking shows a deviation, managers can respond in several ways:
+| | Predictive control | Agile control |
+|---|---|---|
+| **Held fixed** | scope, the baseline | the time box: date, budget, team |
+| **Steered** | cost and schedule, back to the baseline | scope, by reordering the backlog |
+| **Where** | variance review, weekly or monthly | sprint review; daily scrum |
 
-| Type of Deviation | Typical Actions |
-|-------------------|-----------------|
-| Schedule delay    | Re-sequence tasks, fast-track, add resources, reduce scope |
-| Cost overrun      | Re-estimate, optimize resource mix, re-scope noncritical features |
-| Quality issues    | Pause for defect removal, strengthen reviews or testing |
-| Scope creep       | Re-negotiate requirements, tighten change control |
-| Team performance  | Coaching, reassignments, improve communication |
+On one newspaper site the release burndown sat far above ideal; the company simulated cuts and
+*"successfully launched a reduced release after 9 Sprints"* {% cite mahnic2012scrum %}. Before
+acting on a stalled [burndown](burndown.md), ask whether the team slowed or the target moved.
 
-Control is not about punishment — it’s about recovery and learning.
+## 4. Stopping a failing project
 
----
+Here **escalation** means raising a problem to someone who can fix it; Wysocki's six steps are the
+*escalation ladder*, and **escalation of commitment**, never shortened, is continuing a failing
+course despite negative information {% cite keil2004badnews keil1995escalation %}.
 
-## 4. Managing Baseline Changes
+CONFIG, a sales-configuration expert system, was funded for more than a decade while its
+usage fell from about 2.3% of quotations to about 0.1% {% cite keil1995escalation %}. One manager
+wrote three whistle-blowing memos; a sales rep said *"The problem is nobody is willing to kill it."*
+It ended when its champion died: nobody had written down what failure looked like.
 
-When the baseline plan becomes outdated, changes must be formalized and traceable:
+A stop rule is a threshold on what the project is for, set before anyone is attached. Keil's
+outsider question: *"If I took over this job for the first time today and found this project
+going on, would I support it or get rid of it?"* Escalate the problem early, so nobody escalates
+the commitment later.
 
-1. Document the change — describe what and why.  
-2. Identify source of funding — management reserve, new budget, or reallocation.  
-3. Adjust the baseline — update scope, schedule, or cost targets.  
-4. Maintain history — record the evolution.
+## 5. When measurement bites back
 
-Never change the baseline just to hide poor performance.
+A number used to judge a team moves toward its target. Bouwers et al. name four failures: a metric
+without context, changes made only to move a metric, one metric alone, and too many to read
+{% cite bouwers2012measure %}; see [Process metrics](../proc/basics/metrics.md) and
+[Velocity and flow](agile.md). DeMarco grants his *"You can't control what you can't measure"* a
+*"real truth"*, but *"strict control is something that matters a lot on relatively useless projects
+and much less on useful projects"* {% cite demarco2009idea %}.
 
----
+## 6. When to use it, and when not
 
-## 5. Control in Agile Projects
+Set thresholds and a stop rule at the start of any project with a budget or a committed date,
+tightest where the value margin is thin. Where it is wide, keep control light.
 
-Control in Agile frameworks is embedded in iteration cycles rather than done periodically.
+## How solid is this?
 
-| Predictive (Plan‑Driven) | Agile (Iterative) |
-|--------------------------|-------------------|
-| Control via scheduled reviews and variance reports | Control via sprint reviews and retrospectives |
-| Formal change requests | Continuous backlog refinement |
-| Focus on variance from plan | Focus on adaptability and flow efficiency |
-
-Agile teams use burndown charts, cumulative flow diagrams, and task boards for immediate, team‑owned control.
-
----
-
-## 6. Visual Tools for Control
-
-- Burndown charts: downward slope shows progress; flat/rising slope signals stagnation.  
-- Task boards: highlight WIP and bottlenecks.  
-- Cumulative flow diagrams: reveal congestion or healthy flow.
-
-Visual control enables rapid feedback — the essence of agility.
-
----
-
-## 7. Controlling Quality: Testing & Fixing
-
-Key metrics and levers:
-- Test coverage — are we validating enough?  
-- Defect trends — improving or regressing?  
-- Time‑to‑fix and reopen rate — fix efficiency and quality.
-
-When defect rates rise, options include freezing new features, focusing on stabilization, or adding reviews.
-
----
-
-## 8. Human Aspects of Control
-
-Effective control involves people:
-
-- Explain why corrective actions are needed.  
-- Involve the team in deciding how to fix issues.  
-- Balance accountability with psychological safety.
-
-When control is punitive, teams hide problems; when collaborative, they surface them early.
+- **Where it comes from.** Thresholds are rules of thumb from a textbook, space flight and
+  construction; none shows that its value is right.
+- **What is contested.** Brooks calls his law *"Oversimplifying outrageously"*. The loop is lecture
+  material; its signs are our reading.
+- **What we do not hold.** Evidence that thresholds, the ladder or stop rules improve outcomes.
+  Stopping rests on one case.
 
 ---
 
-## 9. Governance and Escalation
+### Acknowledgments
 
-Control feeds into governance:
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite miranda_managing_2014 root2014lectures %} on software project management, including the
+control loop.
 
-- Steering meetings review variances and approve changes.  
-- Thresholds define when deviations are escalated (e.g., >10% overrun).  
-- Lessons learned are logged for future improvements.
+### References
 
-Control ensures alignment with organizational strategy.
-
----
-
-## 10. Summary
-
-Controlling closes the loop between tracking and planning: it transforms awareness into action.
-
-| Step     | Purpose            | Outcome      |
-|----------|--------------------|--------------|
-| Tracking | Observe and measure| Facts        |
-| Reporting| Communicate        | Understanding|
-| Controlling | Decide and act  | Improvement  |
-
-You can’t control what you don’t track — and tracking is pointless unless it leads to control.
-
----
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
