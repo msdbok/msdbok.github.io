@@ -15,7 +15,7 @@ and the actual spend, it shows how much of the planned work is done and what tha
 ## 1. Three numbers
 
 Earned value management tracks three curves, in money or in person-hours, the unit a software team
-plans in {% cite humphreys__associates_basic_2012 pressman2010tracking %}. **Planned value** (PV, or
+plans in {% cite anbari2003evm humphreys__associates_basic_2012 pressman2010tracking %}. **Planned value** (PV, or
 BCWS) is the budget of the work scheduled to be done by now. **Earned value** (EV, or BCWP) is the
 budget of the work actually finished by now. **Actual cost** (AC, or ACWP) is what the finished work
 cost.
@@ -56,6 +56,8 @@ For example, in a software textbook exercise 12 tasks are done where the schedul
 is not slow: it is short of people or started late, and the fix is staffing, not pressure. An SPI
 above 1 can mislead too, if the extra work is off the critical path {% cite lukas_earned_2008 %}. Act
 early: cumulative CPI settles by about 20% complete and rarely improves {% cite christensen1998evm %}.
+If that efficiency holds, the cost ends at budget / CPI and the duration at plan / SPI
+{% cite anbari2003evm %}.
 
 ## 4. Value is earned by a rule
 
