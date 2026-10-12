@@ -1,148 +1,83 @@
 ---
 parent: Planning
-title: Release
-nav_order: 5
+title: Release planning
+nav_order: 10
 layout: default
+page_type: topic-hub
+has_children: true
 ---
 
-# Release Planning
+# Release planning
 
-_* adapted from Miranda, 2014_
+**Release planning** decides which features go into which release, across a sequence of releases,
+under limits of effort, budget and dependencies {% cite ruhe2005release %}. A release is *"a
+collection of features that the customer values"*; the plan commits firmly to the next one and
+sketches the rest {% cite greer_software_2004 %}.
 
----
+## 1. Release or iteration
 
-## 1. The Problem: Fixed Dates, Flexible Content
+A release is what the customer gets: *"a coherent deliverable to customers or users"*. An iteration,
+or sprint, is how the team gets there: *"a short-duration, timeboxed iteration"*, and *"a release is
+typically composed of multiple sprints"*. Rubin gives typical ranges of three (or fewer) to nine
+months for a release and one week to one calendar month for a sprint {% cite rubin_essential_2012 %}.
+An iteration must end in working software; a release must be useful. Some teams release every
+timebox, as one e-store did every three weeks {% cite jalote2004timeboxing %}.
 
-In most real-world projects, **release dates are fixed** — the customer or sponsor expects delivery at a specific time.  
-However, **what** will be ready by that date is uncertain.
+![Three release cadences: one release made of several sprints, a release at the end of every sprint, and a release of every single feature](fig-release-cadences.svg)
 
-This situation creates tension in both **predictive** (“big up-front”) and **Agile** approaches:
+*Rubin 2012, Fig. 18.1.*
 
-- The **sponsor** must accept that they may get **less functionality** than they initially hoped for.  
-- The **development team** must decide how to use limited time and resources most effectively.  
-- The **manager’s challenge** is to choose **where to focus** and **what to postpone**, while still meeting business goals.
+Both are timeboxes, so in both **the date holds and the scope moves**. Take Quill, a fictional word
+processor due for its publisher's spring list. After the third sprint's demo the customer moves
+*comments* above *mail merge*. The change waits for the next sprint's planning, the customer decides
+on value while the team advises on cost and risk {% cite racheva2010agileprio %}, *mail merge* drops
+below the release line, and the spring-list date stays put. Moving the date is the sponsor's separate
+decision, never a side-effect of reprioritising.
 
-Think of it as *negotiating the content of a fixed delivery box.*
+Releasing early also changes when the money comes back. In Denne and Cleland-Huang's example, one
+year of development has a net present value of −$24K as one release and +$205K as four quarterly ones
+{% cite denne_incremental_2004 %}.
 
----
+## 2. Approaches compared
 
-## 2. Releases vs. Iterations
+| Approach | What it optimises | Inputs needed | Main cost |
+|---|---|---|---|
+| **MoSCoW** {% cite clegg_case_1994 dsdm2014moscow %} | a guaranteed minimum plus contingency | a category per feature; Musts at most 60% of effort | the Should/Could line is judgement |
+| **Buffered MoSCoW** {% cite miranda_time_2011 %} | delivery certainty by a fixed date | the customer's order; a normal and a safe estimate per feature | conservative; promises stop at *"short of a calamity"* |
+| **Cost–value (AHP)** {% cite karlsson1997costvalue %} | value per unit of cost | pairwise value (customers) and cost (engineers) judgements | n(n−1)/2 comparisons; ignores dependencies |
+| **EVOLVE** {% cite greer_software_2004 %} | stakeholder urgency against business value, increment by increment | weighted stakeholders' ranks; effort; precedence | data collection; a person picks among several plans |
+| **IFM** {% cite denne_incremental_2004 %} | the project's net present value | Minimum Marketable Features; cost and revenue per period | per-feature revenue forecasts from the business |
 
-Modern software projects deliver value **incrementally**, not all at once.
+Buffered MoSCoW simplifies SPID, which plans the first increment at about 95% confidence and
+re-plans it at 50% {% cite miranda_planning_2002 %}.
 
-| Concept | Purpose | Typical Duration |
-|:--|:--|:--|
-| **Iteration / Sprint** | A short cycle that delivers partial progress and collects feedback. | 1–4 weeks |
-| **Release** | A bundle of several iterations that becomes a usable product version for customers. | Several weeks to a few months |
+## 3. Pages
 
-### Why this matters
+| Page | The question it answers |
+|---|---|
+| [Prioritising features](prioritisation) | When not everything fits, what goes in first? |
+| [Buffered MoSCoW](moscow) | How many features can a fixed date honestly promise? |
+| [Contracts and incentives](incentives) | Who pays when only part of the release arrives? |
 
-- Each **iteration** helps manage technical and requirement uncertainty.  
-- Each **release** provides a **sense of accomplishment** and customer validation.  
-- Working in short cycles **limits Work in Progress (WIP)** — preventing teams from spreading effort too thin.  
+## How solid is this?
 
-> **Key principle:** Deliver *something valuable soon* and *learn from it.*
-
----
-
-### Example
-
-A university develops a **Student Portal** in two major releases per year.
-Each release includes four short iterations:
-
-1. Login and dashboard
-2. Course registration
-3. Grades and transcripts
-4. Notifications and helpdesk
-
-After each **iteration**, students test new features and give feedback.
-Each release delivers a usable version with progressively richer functionality.
-
----
-
-## 3. Defining Release Content
-
-> **Release planning** means deciding *when* and *with what features* a working version of the software will be released.
-
-Each release must balance three competing forces:
-
-1. **Business objectives** – What’s most valuable to the customer or business?  
-2. **Technical dependencies** – Which features depend on others?  
-3. **Resource constraints** – How much time, money, and people do we have?
-
-In other words, *what gives the most value for the effort we can afford?*
+- **Where it comes from.** Rubin's ranges are typical values from practice. Denne and
+  Cleland-Huang's project is hypothetical.
+- **What is thin.** Of 24 published release-planning models, four have reports of full-scale
+  industrial use {% cite svahnberg2010release %}.
 
 ---
 
-###  The Knapsack Analogy
+### Acknowledgments
 
-Imagine you are packing a **backpack (knapsack)** for a trip:
+This page adapts material from lectures by Eduardo Miranda {% cite miranda_managing_2014 %}
+on software project management.
 
-- Each item (feature) has a **value** (importance) and a **weight** (effort or cost).  
-- The backpack (time box) has a **limited capacity** (e.g., 3 months or 500 hours).  
+### References
 
-Your goal is to **maximize the total value** of items that fit **without exceeding** the available time.
-
-> _“You can’t take everything on the trip — so take what’s most valuable.”_
-
-This analogy explains why **release planning** is both a **technical** and **strategic** decision.
-
----
-
-## 4. Overview of Release Planning Methods
-
-Over time, several methods have been developed to help managers balance value and effort.
-
-| Method | Description | Typical Use |
-|:--|:--|:--|
-| **MoSCoW** (Clegg, 1994; DSDM Consortium) | Qualitative ranking of features into **Must**, **Should**, **Could**, and **Won’t Have**. Usually applied across three releases. | Simple prioritization for Agile or incremental projects. |
-| **SPID** (*Statistically Planned Incremental Delivery*, Miranda 2002) | Quantitative method using subjective probabilities to ensure that the most important features fit within the worst-case estimates — without wasting buffer time. | Projects needing statistical confidence in delivery. |
-| **EVOLVE** (Greer & Ruhe 2003) | Uses a **genetic algorithm** to search for the best combination of features maximizing value and minimizing risk. | Research and optimization-based planning. |
-| **IFM** (*Incremental Funding Method*, Denne & Cleland-Huang 2004) | Breaks the system into **Minimal Marketable Features (MMFs)** and **Architectural Elements (AEs)**, maximizing **Weighted Sequence-Adjusted NPV**. | Financially-driven product planning. |
-| **Buffered MoSCoW Rules** (Miranda 2011) | Simplified quantitative approach that combines MoSCoW prioritization with **buffers** for uncertainty. | Practical for Agile teams — the focus of this lecture. |
-
----
-
-### Summary of Method Evolution
-
-| Generation | Example | Key Idea |
-|:--|:--|:--|
-| **Qualitative (1990s)** | MoSCoW | Rely on expert judgment and clear communication with stakeholders. |
-| **Quantitative (2000s)** | SPID, EVOLVE | Add mathematical/statistical assurance for better predictability. |
-| **Value-Based (2004+)** | IFM | Combine economic metrics with release planning. |
-| **Practical Hybrid (2011+)** | Buffered MoSCoW | Bring structure and realism to Agile planning by buffering for uncertainty. |
-
----
-
-###  Why “Buffered” Matters
-
-The Buffered MoSCoW approach recognizes that **estimates are never exact**.  
-By explicitly reserving some capacity for the unexpected, the team avoids late stress and broken promises.
-
-> “Plan for uncertainty — don’t pretend it doesn’t exist.”
-
-
-## References
-
-1. M. Denne and J. Cleland-Huang, "The incremental funding method: data-driven software development," IEEE Software, vol. 21, no. 3, pp. 39–47, May 2004, doi: 10.1109/MS.2004.1293071.
-2. D. Greer and G. Ruhe, "Software release planning: an evolutionary and iterative approach," Information and Software Technology, vol. 46, no. 4, pp. 243–253, Mar. 2004, doi: 10.1016/j.infsof.2003.07.002.
-3. E. Miranda, "Improving subjective estimates using paired comparisons," IEEE Software, vol. 18, no. 1, pp. 87–91, Jan. 2001, doi: 10.1109/52.903173.
-4. E. Miranda, "Planning and executing time-bound projects," Computer, vol. 35, no. 3, pp. 73–79, Mar. 2002, doi: 10.1109/2.989933.
-5. E. Miranda, "Time boxing planning: buffered moscow rules," SIGSOFT Softw. Eng. Notes, vol. 36, no. 6, pp. 1–5, Nov. 2011, doi: 10.1145/2047414.2047428.
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- Miranda, Eduardo. *Managing Software Development*. Lecture materials, 2014.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

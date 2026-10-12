@@ -94,7 +94,11 @@ def split_page(text: str) -> tuple[dict, str]:
     # was reported as 621 words when it was really ~2,570. Measurement bugs that
     # under-report are worse than none at all: they make a page look compliant.
     body = re.split(r'^#{2,4}\s*Acknowledg', body, flags=re.M)[0]
-    body = re.split(r'^#{2,4}\s*(References|Further Reading)', body, flags=re.M)[0]
+    # A numbered footer heading (`## 7. Sources`) used to slip past this split, so the
+    # whole reference list counted as body and an under-floor page read as compliant.
+    # Found 2026-10-11 by the Planning review on plan/chain.md.
+    body = re.split(r'^#{2,4}\s*(\d+\.\s*)?(References|Further Reading|Sources)\b', body,
+                    flags=re.M)[0]
     body = re.sub(r'(\{:\s*\.highlight\s*\}\s*)?\n\s*\*\*Disclaimer:.*\Z', '',
                   body, flags=re.S)
     return fm, body
@@ -123,10 +127,15 @@ IMG_MD_RE = re.compile(r'!\[[^\]]*\]\([^)]*\)')
 IMG_HTML_RE = re.compile(r'<img\b[^>]*>', re.I)
 LIQUID_RE = re.compile(r'\{%.*?%\}', re.S)
 KRAMDOWN_IAL_RE = re.compile(r'^[ \t]*\{:.*?\}[ \t]*$', re.M)
+# Fenced code - in practice Mermaid diagrams - is not prose either. Counting it charged a
+# small network ~80 words, the same backwards incentive against figures as above, and put
+# in-budget Planning pages over the line. Changed 2026-10-11.
+FENCE_RE = re.compile(r'^[ \t]*(```|~~~).*?^[ \t]*\1[ \t]*$', re.M | re.S)
 
 
 def prose_only(text: str) -> str:
-    """Strip image markup, liquid tags and kramdown attribute lists before counting."""
+    """Strip code fences, image markup, liquid tags and kramdown IALs before counting."""
+    text = FENCE_RE.sub(' ', text)
     text = IMG_MD_RE.sub(' ', text)
     text = IMG_HTML_RE.sub(' ', text)
     text = LIQUID_RE.sub(' ', text)
@@ -152,6 +161,9 @@ def analyse(path: Path) -> dict:
     # an example is a marked Example, or a "for example"/"e.g." with a concrete noun
     examples = len(re.findall(r'\*Example|^\s*\*\*Example|:\s*\*Example', body, re.M))
     examples += len(re.findall(r'\bFor example,|\be\.g\.,', body))
+    # a section headed as the worked example (`## 2. Example: ...`) is the strongest
+    # marker of all, and was not recognised. Added 2026-10-11.
+    examples += len(re.findall(r'^#{2,3}\s*(\d+\.\s*)?(Worked )?Example\b', body, re.M | re.I))
 
     # `area` is the top folder under content/. Pages outside content/ - the site
     # index above all - have no area; this used to raise ValueError and take the

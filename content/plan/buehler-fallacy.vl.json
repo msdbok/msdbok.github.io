@@ -1,0 +1,98 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": 560,
+ "height": 260,
+ "data": {
+  "values": [
+   {
+    "k": "Best guess",
+    "v": 33.9,
+    "c": "#81c784"
+   },
+   {
+    "k": "Worst-case guess",
+    "v": 48.6,
+    "c": "#2D6E2A"
+   },
+   {
+    "k": "Actual",
+    "v": 55.5,
+    "c": "#d32f2f"
+   }
+  ]
+ },
+ "encoding": {
+  "y": {
+   "field": "k",
+   "type": "nominal",
+   "sort": null,
+   "title": null,
+   "axis": {
+    "labelLimit": 420,
+    "labelFontSize": 19
+   }
+  },
+  "x": {
+   "field": "v",
+   "type": "quantitative",
+   "title": "Days to finish the thesis",
+   "scale": {
+    "domain": [
+     0,
+     62
+    ]
+   }
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 4,
+    "height": {
+     "band": 0.7
+    }
+   },
+   "encoding": {
+    "color": {
+     "field": "c",
+     "type": "nominal",
+     "scale": null
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "left",
+    "dx": 8,
+    "fontSize": 22,
+    "fontWeight": "bold"
+   },
+   "encoding": {
+    "text": {
+     "field": "v",
+     "type": "quantitative",
+     "format": ".1f"
+    }
+   }
+  }
+ ],
+ "config": {
+  "font": "Tahoma, Verdana, sans-serif",
+  "axis": {
+   "labelFontSize": 18,
+   "titleFontSize": 20,
+   "labelColor": "#282828",
+   "titleColor": "#282828",
+   "grid": false
+  },
+  "legend": {
+   "labelFontSize": 18,
+   "titleFontSize": 18
+  },
+  "view": {
+   "stroke": null
+  }
+ }
+}

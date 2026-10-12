@@ -2,13 +2,27 @@
 title: Scope
 nav_order: 5
 layout: default
+page_type: hub
 ---
 
-## Scope and Estimates
+# Scope
 
-Defining project scope and making accurate estimates are two of the biggest challenges in engineering and project management. Scope sets the boundaries for what will be delivered, while estimates help teams plan resources, schedules, and budgets. Misunderstandings or changes in scope can lead to missed deadlines, cost overruns, and frustration for everyone involved.
+This area is about two questions every plan has to answer before it can promise anything: **what
+exactly will be delivered**, and **how big is it**. They come in that order, because the second is
+asked of the first. A work breakdown structure turns a vague scope into a complete list of
+deliverables; estimation then sizes that list and derives effort and schedule from the size. RAND's
+review of cost estimating puts the weight where it belongs: the chance that an estimate lands far
+from the actual cost *"depends more on accurate size estimates than on any other cost-related
+parameter"* {% cite pfleeger2005rand %}.
 
-The Dilbert comics below humorously illustrate common pitfalls and misunderstandings in scope definition and estimation—reminding us that clear communication and realistic planning are essential for project success.
+Two sections follow, in the order a project meets them.
+
+- **[WBS](wbs/)** — how to decompose a project into deliverables so that nothing is missing and
+  nothing is counted twice, and which orientation answers which management question.
+- **[Estimates](estimates/)** — how to turn that scope into size, effort and schedule: expert
+  judgment, group techniques, function points and parametric models, and how to combine them.
+
+The strips below are a reminder of what happens when either step is skipped.
 
 ![Dilbert Scope and Estimates](image-3.png)
 
@@ -20,5 +34,11 @@ The Dilbert comics below humorously illustrate common pitfalls and misunderstand
 
 ---
 
+### References
+
+{% bibliography --cited %}
+
+---
+
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

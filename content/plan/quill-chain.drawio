@@ -1,0 +1,94 @@
+<mxfile host="msd_review" type="device">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1070" pageHeight="380" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#282828;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="92" width="90" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="Release date" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#282828;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="92" width="120" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="&lt;b&gt;Citation-engine fix&lt;/b&gt;&lt;br&gt;Dana, 6 d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdecea;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="150" y="78" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="&lt;b&gt;Citation styles&lt;/b&gt;&lt;br&gt;Dana, 7 d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdecea;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="360" y="78" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="&lt;b&gt;Release build&lt;/b&gt;&lt;br&gt;2 d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdecea;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="570" y="78" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="&lt;b&gt;Project buffer&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#ffc107;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;strokeWidth=2;dashed=1;dashPattern=6 4;" vertex="1" parent="1">
+          <mxGeometry x="780" y="78" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="&lt;b&gt;PDF export&lt;/b&gt;&lt;br&gt;Ana, 10 d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="255" y="238" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="&lt;b&gt;Feeding buffer&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#ffc107;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=14;strokeWidth=2;dashed=1;dashPattern=6 4;" vertex="1" parent="1">
+          <mxGeometry x="465" y="238" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="118" as="sourcePoint" />
+            <mxPoint x="150" y="118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n11" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="118" as="sourcePoint" />
+            <mxPoint x="360" y="118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n12" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="118" as="sourcePoint" />
+            <mxPoint x="570" y="118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n13" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="118" as="sourcePoint" />
+            <mxPoint x="780" y="118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n14" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="118" as="sourcePoint" />
+            <mxPoint x="930" y="118" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n15" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=2;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="65" y="144" as="sourcePoint" />
+            <mxPoint x="255" y="278" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="65" y="278" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n16" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=2;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="278" as="sourcePoint" />
+            <mxPoint x="465" y="278" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n17" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=2;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="585" y="278" as="sourcePoint" />
+            <mxPoint x="655" y="158" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="655" y="278" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n18" value="&lt;b&gt;The critical chain is Dana’s: her two tasks in sequence, 15 days.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#d32f2f;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="150" y="20" width="900" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" value="Counted by dependencies alone, the longest path ran through PDF export, 12 days. Once Dana is counted as one person, the chain moves to her." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#616161;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="150" y="334" width="760" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

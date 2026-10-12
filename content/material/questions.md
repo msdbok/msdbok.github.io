@@ -21,7 +21,8 @@ your position first, then give the reasoning or the evidence for it.
 - [RQ2 — Processes](rq2.html) covers defining and measuring a process, ETVX, the lifecycle models and how to choose one, then agile and its limits, XP, Scrum, Kanban, scaling, the RUP family and process under AI agents.
 - [RQ3 — Needs](rq3.html) covers customer expectations and success, stakeholders, requirements from elicitation to change, requirements with LLMs, and risk from identification to tracking.
 - [RQ4 — Scope](rq4.html) covers the work breakdown structure and estimation.
-- [RQ5 — Planning](rq5.html) covers planning, activities and milestones.
+- [RQ5 — Planning](rq5.html) covers why and how projects plan, milestones, activity networks, float and levelling, Gantt charts and DSM, why schedules run late, and critical chain.
+- [RQ6 — Tracking](rq6.html) covers release planning: releases and iterations, prioritisation, Buffered MoSCoW, time boxes and incentives. Monitoring and EVM will be added after that lecture.
 
 Study notes for the same material are under [Study Notes](notes.html).
 

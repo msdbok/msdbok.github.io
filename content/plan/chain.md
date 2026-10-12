@@ -1,118 +1,115 @@
 ---
 parent: Planning
-title: Critical Chain
-nav_order: 4
+title: Critical chain
+nav_order: 8
 layout: default
 ---
 
-# Critical Chain Project Management (CCPM)
+# Critical chain
 
-Goldratt applies his Theory of Constraints (TOC) to project management and presents the “critical chain” scheduling approach. [ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S0263786399000198)
+**Critical chain project management (CCPM)** schedules a project on its **critical chain**, the
+tasks that fix the project's duration once both precedence and shared resources are counted, and
+protects the date with pooled buffers instead of safety hidden in each task {% cite herroelen2001ccpm %}.
+Eliyahu Goldratt proposed it in *Critical Chain* (1997), a business novel {% cite rand_critical_2000 %}.
+
+## 1. Where the safety goes
+
+In Rand's summary, *"Goldratt argues that the main reason for project overrun is because of the
+misuse of the safety time created within the estimated times for each activity."*
+{% cite rand_critical_2000 %}. The padding is not the cause; it is wasted, in three ways:
+
+- work starts late because the safety is known to be there, which Goldratt calls the *student
+  syndrome*, *"leaving everything to the last minute"*;
+- a task finished early is not reported, since that invites a shorter estimate next time;
+- multitasking pulls people off a task once it has started.
+
+![Three projects sharing one analyst, designer and developer: juggled, they finish at 48, 50 and 52 days; done one at a time, at 20, 28 and 36](zultner-multitask.svg)
+
+*Zultner 2003, Figs. 9–10.*
+
+The second is usually credited to Parkinson: *"It is a commonplace observation that work expands so
+as to fill the time available for its completion."* {% cite parkinson1955law %}. The behaviour has
+been measured under neither name: students given one week for a one-hour task finished it after 4.3
+days on average, and those given two weeks after 9.1 {% cite buehler1994fallacy %}.
+
+## 2. Pool the safety, then find the chain
+
+For example, Zultner takes three 10-day tasks, each five days of work and five of safety: 30 days. Pool the safety, as insurers pool risk, and one 8.66-day buffer gives the same 90%
+protection: about 24 days. Half the tasks will then overrun:
+*"The only way you will get accurate 50% likely expected task times is if it is OK to exceed them."*
+{% cite lynch_critical_2003 %}
+
+The chain is the longest path once tasks sharing a person are sequenced, a *"leveled critical
+path"* {% cite raz2003ccpm %}; see [Critical path](critical-path) and [Resource planning](resources).
+
+## 3. Buffers and relay runners
+
+The pooled safety goes into a **project buffer** at the end of the chain; **feeding buffers** where
+other paths join it, so chain tasks never wait; and **resource buffers**, which are advance warnings
+rather than time {% cite rand_critical_2000 %} {% cite herroelen2001ccpm %}. Feeding buffers answer
+merge bias, where a merge point *"passes on the longest delay"* {% cite leach1999ccpm %}; see
+[PERT and merge bias](pert).
+
+People on the chain work like relay runners: start the moment the predecessor finishes, work flat
+out, hand off at once, and give the next runner a countdown {% cite lynch_critical_2003 %}. Nobody is
+criticised for one late task. The manager watches the buffer instead, in thirds: while the first third
+is used, do nothing; in the middle third, plan a response; in the last third, act
+{% cite leach1999ccpm %}. Abbott Diagnostics, Brandt reports, reviewed its buffers weekly
+{% cite lynch_critical_2003 %}.
+
+## 4. Example: one developer moves the date
+
+Quill is a fictional word processor. Before its 2-day release build come Ana's PDF export (10 days)
+and Dana's citation-engine fix (6) and citation styles (7). The critical path runs through PDF export,
+12 days, so everyone watches Ana. But Dana cannot do both her tasks at once; in sequence they make
+the longest path, 15 days. The chain is Dana's, and PDF export becomes a feeding path.
+
+![Dana's citation-engine fix and citation styles in sequence form the 15-day critical chain; PDF export joins through a feeding buffer, and a project buffer protects the release date](quill-chain.svg)
+
+So the manager watches Dana's queue, not Ana's progress.
+
+Gelbwaks describes Segway running critical chain over agile iterations: agile decided what each
+iteration held, while a chain of stories decided when hardware, software and mechanics
+came together {% cite lynch_critical_2003 %}.
+
+## 5. When to use it, and what to keep
+
+Raz and colleagues would adopt the whole package only where planning is weak, many similar projects
+share people, and deadlines dominate; not in mature organisations or one-off work
+{% cite raz2003ccpm %}. Elsewhere, keep the buffers and drop the rules sold with them. Size buffers
+from the chain's risk, not as half its length. Re-identify the chain when delays change the
+schedule; it moves {% cite herroelen2001ccpm %}. Treat "cut every estimate by half"
+as a guess about your own people, not a law.
+
+## How solid is this?
+
+- **The premises.** Goldratt argues from a novel. The student syndrome has no
+  study behind it, and Parkinson's Law proper is about headcount.
+- **Are estimates padded?** Leach says people pad, then finish on the date {% cite leach1999ccpm %}.
+  In one IS department, of over 500 tasks 8% finished on estimate, about 60% early and 32% late
+  {% cite raz2003ccpm %}.
+- **The arithmetic.** Simulated, the 50% rule added a 65% buffer to the scheduled duration,
+  against 42% for risk-sized buffers; one update in three produced a resource conflict
+  {% cite herroelen2001ccpm %}.
+- **Does it work?** Of 140 CCPM papers, 8% are empirical; 20 case reports average 40% shorter,
+  uncontrolled {% cite ghaffari_current_2015 %}. No comparative study shows adopters outperform
+  {% cite raz2003ccpm %}.
+- **The cases are advocacy** from vendors and adopters. Abbott's projects are measured against
+  their own CCPM schedules, which shows reliability, not speed. Gelbwaks:
+  *"It is hard to tell how much time the CCS approach has saved Segway"* {% cite lynch_critical_2003 %}.
 
 ---
 
-## 1. Background & Context
+### Acknowledgments
 
-- TOC: Every system is limited by a few key constraints. 
-- Goldratt extended TOC to project management; CPM often ignores resource limits. 
-- In 1997, Goldratt introduced the “Critical Chain” method (CCPM).
+This page adapts material from lectures by Eduardo Miranda {% cite miranda_managing_2014 %}
+on software project management.
 
----
+### References
 
-## 2. Core Concepts
-
-### 2.1 Critical Chain Definition
-
-- The “critical chain” is the longest sequence of tasks considering both **task dependencies** and **resource constraints**. 
-- CPM looks only at dependencies/durations; CCPM adds resource limits. 
-
-### 2.2 Key Differences from CPM
-
-- Traditional schedules pad each task for uncertainty, leading to “student syndrome” and Parkinson’s Law. 
-- CCPM uses shorter, more aggressive durations and protects the schedule with buffers.
-- Multitasking is discouraged; focus on one task at a time for critical resources.
-
-### 2.3 Buffer Management
-
-- **Project Buffer:** at the end of the critical chain, protects the finish date. 
-- **Feeding Buffers:** where non-critical paths join the chain, protect against delays.
-- **Resource Buffers:** ensure resources are ready for critical tasks.
-
-### 2.4 Monitoring & Control
-
-- Monitor buffer consumption, not just task deadlines. 
-- Focus is on protecting the chain and finishing on time.
-
----
-
-## 3. Implementation Steps
-
-1. Define scope & build a task network (WBS).
-2. Estimate realistic task durations (remove padding).
-3. Assign and level resources; avoid multitasking.
-4. Identify the critical chain.
-5. Insert project, feeding, and resource buffers.
-6. Execute and monitor buffer consumption.
-7. Review and improve for future projects.
-
----
-
-## 4. Benefits & Challenges
-
-### 4.1 Benefits
-
-- Handles resource constraints better.
-- Can reduce project duration and improve reliability.
-- Reduces multitasking and context-switching.
-- Focuses on overall schedule protection.
-
-### 4.2 Challenges
-
-- Requires cultural change and buy-in.
-- Needs accurate estimates and resource planning.
-- May not suit all project types.
-- May require new tools and practices.
-
----
-
-## 5. Summary Table
-
-| Item              | Description                                                                 |
-|-------------------|-----------------------------------------------------------------------------|
-| Critical Chain    | Longest sequence of tasks considering dependencies and resources.            |
-| Buffers           | Time protection at project end, feeding paths, and resource readiness.       |
-| Resource Leveling | Avoids over-committing critical resources.                                  |
-| Monitoring        | Focuses on buffer consumption, not just task deadlines.                      |
-| Goal              | Reliable, fast project completion by protecting the chain.                   |
-| Primary Source    | Goldratt, _Critical Chain_, 1997.                                            |
-
----
-
-## 6. Suggested Further Reading
-
-- Globerson, S. “PMBOK® and the Critical Chain.” _PM Network_, vol. 14(5), May 2000. [PMI](https://www.pmi.org/learning/library/pmbok-critical-chain-approach-4646)
-- “Research on Critical Chain Project Management”, PM World Library. [PM World Library](https://pmworldlibrary.net/wp-content/uploads/2015/09/pmwj38-Sep2015-Ghaffari-Emsley-research-on-critical-chain-second-edition.pdf)
-- “The Basics of Critical Chain Project Management” (Asana blog). [Asana](https://asana.com/resources/critical-chain-project-management)
-
----
-
-## 7. Sources
-
-- Goldratt, Eliyahu M. _Critical Chain_. North River Press, 1997.
-- Rand, Graham K. “Critical Chain: The Theory of Constraints Applied to Project Management.” International Journal of Project Management, vol. 18, no. 3, June 2000, pp. 173–77.
-[ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0263786399000198?casa_token=jvcAGR40TdgAAAAA:lywZ-XFcSy8AkA2wjyR09YpCI9j42YAf2mYOKwGtW1RJAz3WieLA8h0wEAtVf1AzY8gkNmIq6aI)
-- Ghaffari, Mahdi, and Margaret W. Emsley. “Current Status and Future Potential of the Research on Critical Chain Project Management.” Surveys in Operations Research and Management Science, vol. 20, no. 2, Dec. 2015, pp. 43–54.
- [PM World Library](https://pmworldlibrary.net/wp-content/uploads/2015/09/pmwj38-Sep2015-Ghaffari-Emsley-research-on-critical-chain-second-edition.pdf)
-- [Wikipedia](https://en.wikipedia.org/wiki/Critical_Chain_%28novel%29)
-- [Project Management Institute](https://www.pmi.org/learning/library/pmbok-critical-chain-approach-4646)
-
-- [marris-consulting.com](https://www.marris-consulting.com/en/faq/what-is-critical-chain-project-management)
-- [critical-chain-projects.com](https://www.critical-chain-projects.com/the-method)
-- [ProjectManager](https://www.projectmanager.com/blog/critical-chain-in-project-management-a-quick-guide)
-
-- [Asana](https://asana.com/resources/critical-chain-project-management)
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

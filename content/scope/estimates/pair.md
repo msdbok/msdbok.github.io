@@ -1,197 +1,105 @@
 ---
 parent: Estimates
 title: Paired Comparison
-nav_order: 3
+nav_order: 4
 layout: default
+page_type: method
 ---
 
-# Paired Comparison Estimation Method
+# Paired Comparison
 
-## 1. Concept and Aim
+**Paired comparison** sizes a set of items — modules, features, user stories — by judging them two
+at a time (*how much bigger is X than Y?*) and deriving one consistent ratio scale from all the
+judgments, with an index that flags the judgments that do not fit {% cite miranda_improving_2001 %}.
+A reference item of known size turns the scale into absolute numbers.
 
-The **Paired Comparison Estimation Method (PCEM)** helps derive **consistent size estimates** of software modules or user stories by comparing them **two at a time**.
+## 1. Why compare instead of size
 
-Instead of asking “How big is module X?”, the method asks,
+Over 30 software professionals and graduate students sized eight data structures both ways, and *"the
+paired-comparisons method improves both the accuracy and the precision of estimates"*
+{% cite miranda_improving_2001 %}. The method guarantees consistency, not correctness: *"The
+mathematics behind the method are foolproof, but the judgments on which the calculations are based
+are not."*
 
-> “Is module X bigger or smaller than module Y — and by how much?”
+## 2. When to use it, and when not
 
-From these _relative judgments_, the method produces:
+Use it early, when knowledge is still qualitative, and for items unlike the rest of a backlog —
+architecture or infrastructure work that has no comparable story for [Planning Poker](poker). Do not
+use it when the judges do not understand the technology being sized, or to compare items more than
+ten times apart, *"because our ability to accurately discriminate size diminishes as the difference
+between the entities becomes larger."*
 
-- 📏 **Estimated absolute magnitudes** (e.g., story points, SLOC, effort)
-- ⚖️ **A measure of internal consistency** among judgments
+## 3. How it works
 
-> ✅ The method guarantees **consistency**, not correctness.  
-> 🔍 Inconsistent comparisons must be reviewed until the Inconsistency Index is acceptable.
+Miranda's process has five steps {% cite miranda_improving_2001 %}:
 
----
+![Rank the items, compare them in pairs to build a judgment matrix, derive a ratio scale and an inconsistency index, review inconsistent judgments in a loop, then convert using a reference of known size](paired-comparison-process.svg)
+_Judgments are revised until the matrix is consistent enough; only then are sizes converted._
 
-## 2. Core Idea
+Each cell of the judgment matrix, a<sub>ij</sub>, says how many times bigger item i is than item j,
+with a<sub>ji</sub> = 1/a<sub>ij</sub>. The matrix is perfectly consistent when
+a<sub>ij</sub> × a<sub>jk</sub> = a<sub>ik</sub>. The geometric mean of each row gives the ratio
+scale. Three rules keep the judgments sound: choose a reference near the middle of the range, because
+*"Entities with sizes in either extreme of the scale tend to amplify any bias that might affect the
+judgments"*; keep compared items within 10× of each other; and split a large set among judges, at
+most n/3 of them, to reduce single-judge bias.
 
-People are more accurate at **comparing relative magnitudes** than assigning absolute numbers (Hihn & Lum, 2004).  
-Each comparison expresses a ratio (e.g., “Story A is twice Story B”).  
-These ratios fill a **Judgment Matrix**, from which the relative scale is derived mathematically.
+## 4. Example
 
----
+For example, an estimator judges four modules, A to D:
 
-## 3. Basic Process
+| Pair | A/B | A/C | A/D | B/C | B/D | C/D |
+|---|---|---|---|---|---|---|
+| Judged ratio | 2 | 3 | 4 | 1.5 | 2 | 1.5 |
 
-```mermaid
-flowchart LR
-  %% Supporting inputs
-  A[Artifacts to be sized]
-  R[Reference artifacts]
-  S[Replication factor, verbal scale]
-  
-  %% Main flow (in parentheses)
-  subgraph main_flow [Main flow]
-    M1((Rank artifacts from largest to smallest))
-    M2((Compare artifacts pairwise, establishing their relative size))
-    M3((Compare absolute sizes and compute inconsistency index))
-    M4((Review inconsistent judgments))
-  end
-  
-  %% Output
-  G[Sized Artifacts]
-  
-  %% Judgment matrix intermediate
-  D[Judgment matrix]
-  
-  %% Connect supporting inputs into main flow
-  A --> M1
-  R --> M1
-  S --> M2
-  
-  %% Connect main flow
-  M1 --> M2
-  M2 --> D
-  D --> M3
-  M2 --> M3
-  M3 --> M4
-  M4 --> G
-```
+The geometric means of the matrix rows are A 2.21, B 1.11, C 0.76 and D 0.54. With C as a reference
+of 2,000 SLOC, A is about 5,826 SLOC, B 2,913 and D 1,414. The judgments are slightly inconsistent:
+A/C × C/D gives 4.5 where A/D was judged 4. The inconsistency index measures exactly that.
 
----
+## 5. Inconsistency, and how many comparisons
 
-## 4. Step-by-Step Explanation
+An inconsistency index of 0.35 or less *"would produce satisfactory results in most cases"* for four
+or more items — a threshold from Aguarón and Moreno-Jiménez, cited by Miranda, Bourque and Abran
+{% cite miranda2009sizing %}. In their example, correcting one judgment cut the index from 0.94
+(±47%) to 0.27 (±14%).
 
-| Step | Description | Example |
-|------|-------------|---------|
-| **1. Rank artifacts** | List the items (modules or user stories) roughly from largest to smallest. | Story D > Story B > Story C > Story A |
-| **2. Pairwise comparison** | Compare each pair and record how much larger/smaller one is (e.g., 2×, 0.5×). Fill the upper triangle of a _Judgment Matrix_. | A vs. B = 3 means A is 3× larger than B. |
-| **3. Compute consistency** | Use the **geometric mean** to compute each item’s relative magnitude and derive an **Inconsistency Index**. | Inconsistency ≤ 0.35 is acceptable (Miranda, 2009). |
-| **4. Review inconsistencies** | Re-examine comparisons that violate logical consistency (if A>B and B>C, then A>C). | If not, revise A–C comparison. |
-| **5. Normalize results** | Pick a **reference artifact** with a known size to convert relative magnitudes into actual units. | If reference = 2000 SLOC, multiply ratios to get estimates. |
+Comparing every pair takes n(n−1)/2 judgments, 45 for ten user stories. An **incomplete cyclic
+design** compares each story with r others, n × r / 2 judgments: 20 at r = 4. On ten stories, r = 4
+gave a project total of 54.9 points against 44.6 for the full design, while r = 2 — the
+triangulation common in agile practice — gave 99.7. Hence: *"comparing one user story to another, or
+to two others, is not good enough to produce reliable estimates"* {% cite miranda2009sizing %}.
 
----
+## 6. Limitations
 
-## 5. Probabilistic Extension (NASA–JPL)
+People *"tend to become discouraged by the underlying mathematics"*, so keep it behind a spreadsheet.
+Several judges can share the comparisons, but the method never reconciles two judges' views of the
+same pair. And it cannot remove a bias the judges share: it is consistent *"as long as they are not
+biased"* {% cite miranda2000paired %}.
 
-**Hihn & Lum (2004)** expanded the method by:
+## How solid is this?
 
-- Treating each pairwise judgment as a **distribution** (triangular: min, mode, max)
-- Running **Monte Carlo simulations** to propagate uncertainty
-- Allowing **multiple reference modules** (each with its own known size)
-
-Result: a **probability distribution** for each size estimate — not just a single number.
-
-> This makes the method especially useful in early project phases with uncertainty.
+- **The evidence is the author's own small studies.** The 2001 article calls its results *"not
+  conclusive"*; the 2000 paper tested data structures and geometric figures; the 2009 paper checked
+  reduced designs against a full design by one senior developer, not against actual effort.
+- **The 0.35 threshold** comes from simulations published in operations research, not from software
+  data.
+- **A probabilistic variant** is cited by Miranda et al. 2009, but its record is unresolved in this
+  bibliography, so it is not described here.
+- **Using it for architecture items** is a teaching recommendation; the 2009 paper argues for user
+  stories.
 
 ---
 
-## 6. Example (Simplified)
+### Acknowledgments
 
-Suppose we have 4 modules (A, B, C, D).  
-An estimator judges:
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
-| Compared Modules | Relative Size |
-|------------------|--------------|
-| A / B            | 2            |
-| A / C            | 3            |
-| A / D            | 4            |
-| B / C            | 1.5          |
-| B / D            | 2            |
-| C / D            | 1.5          |
+### References
 
-From these ratios, a **Judgment Matrix** is formed.  
-The **geometric mean** of each row gives relative magnitudes:
-
-| Module | Geometric Mean | Relative Scale |
-|--------|----------------|---------------|
-| A      | 2.21           | 2.21          |
-| B      | 1.11           | 1.11          |
-| C      | 0.76           | 0.76          |
-| D      | 0.54           | 0.54          |
-
-If C = 2000 SLOC (reference), then:
-
-- A = 5826 SLOC
-- B = 2913 SLOC
-- D = 1414 SLOC
-
----
-
-## 7. Managing Inconsistency
-
-The **Inconsistency Index (II)** measures how logically consistent the comparisons are.  
-A perfectly consistent matrix satisfies:
-
-$$a_{ij} \times a_{jk} = a_{ik}​$$
-
-When II ≤ 0.35 → results are considered reliable.  
-Higher values mean the estimator should review their judgments.
-
----
-
-## 8. Reduced Comparison Designs (Miranda et al., 2009)
-
-In large projects, comparing every pair (Full Factorial) becomes overwhelming.  
-Miranda’s team introduced **Incomplete Cyclic Designs (ICDs)** to:
-
-- Limit the number of required comparisons
-- Still maintain balanced, connected comparisons
-- Maintain acceptable accuracy (correlation ≈ 0.9 with full set)
-
-> Example: For 10 user stories, instead of 45 comparisons, only ~20 may be required (r = 4).
-
----
-
-## 9. Strengths
-
-- Relies on **explicit, rational comparisons**
-- Provides a **mathematical consistency check**
-- **Empirically validated** (Miranda, Hihn, Bozóki)
-- Encourages estimator **commitment and reflection**
-
----
-
-## 10. Weaknesses
-
-- No built-in mechanism to **aggregate multiple estimators**’ opinions
-- May suffer from **anchoring bias** (first comparisons influence later ones)
-- Full designs can be **time-consuming or tedious**
-
----
-
-## 11. Practical Takeaway
-
-PCEM bridges **expert judgment** and **quantitative reasoning**.  
-It’s particularly suited for:
-
-- Early estimation when little data exist
-- Agile user-story sizing
-- Research on consistency and cognitive estimation
-
-> In essence: _compare wisely, check consistency, iterate._
-
----
-
-## 12. Sources
-
-1. Miranda, E., Bourque, P., & Abran, A. (2009). _Sizing User Stories Using Paired Comparisons._ Information and Software Technology.
-2. Hihn, J., & Lum, K. (2004). _Improving Software Size Estimates by Using Probabilistic Pairwise Comparison Matrices._ IEEE Int. Symposium on Software Metrics.
-3. Miranda, E. (2001). _Improving Subjective Estimates Using Paired Comparisons._ IEEE Software, 18(1), 87–91.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

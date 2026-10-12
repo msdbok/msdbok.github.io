@@ -1,309 +1,125 @@
 ---
 parent: Planning
-title: Milestones
-nav_order: 1
+title: Milestone planning
+nav_order: 2
 layout: default
 ---
 
-# Milestone Planning
+# Milestone planning
 
-_*Adapted from Eduardo Miranda (2014)_
+A **milestone** is *"a result to be achieved"*: a state the project should reach by a certain time,
+which the sponsor can check {% cite andersen_warning_1996 %}. **Milestone planning** orders those
+results and dates them before anyone plans the activities that produce them.
 
----
+## 1. Results, not activities
 
-## 1. What Is a Milestone
+*"A milestone describes what is to be fulfilled, but not the method to fulfil it"*
+{% cite andersen_warning_1996 %}. Andersen writes every milestone as a state beginning "When…", and
+the habit is a test. For example, in Quill, a fictional word processor,
+*"coding finished"* is an activity; *"When a 500-page manuscript opens in two seconds on the
+publisher's laptop"* is a result. A row of iterations is a
+[developer-oriented plan](approaches), not a milestone plan.
 
-A **milestone** is an **outcome or state** —  
-**verifiable** and **relevant to the project sponsor** —  
-that results from completing one or more tasks which the project should **reach or deliver by a specific time**.
+![Andersen's milestone plan for a workplace-improvement project: six milestones in sequence, each a state beginning "When", from a description of the present work situation to an action plan submitted to the managing director](fig-andersen-fig2.svg)
 
-**Examples**
+*Andersen 1996, Fig. 2.*
 
-- **Outcome:** a document, a partial or total system capability
-- **Desired state:** an approval or measurable attainment (e.g., throughput, number of users trained)
+| | Milestone planning | Activity planning |
+|---|---|---|
+| Plans | the results, and their order | the work, and who does it |
+| Needs | only the logic of the results | the outcomes of earlier work, not yet known |
+| Done | early, for the whole project | per milestone, just before work on it starts |
+| Stability | robust, rarely changed {% cite andersen2006milestone %} | revised as work goes on |
 
-**Milestone planning** defines:
+A project is unique, so *"it is impossible to know all the activities of the project at the initial
+planning stage"* {% cite andersen_warning_1996 %}. Milestones depend **finish-to-finish**: the
+project must reach one state before the next, but work towards a later milestone may start early
+{% cite andersen2006milestone miranda_managing_2014 %}. The work itself is [activity planning](activities).
 
-1. The **order** in which outcomes or states must occur
-2. The **dates** by which they must be achieved
+## 2. Make every milestone sharp
 
-This plan is what **sponsors and stakeholders** should see and use to track progress.  
-If a milestone’s **date** or **success criteria** change, the plan must be **re-negotiated** and the change made **visible**.
+*"Milestones must be concrete, specific, measurable events, defined with knife-edge sharpness.
+Coding, for a counterexample, is ‘90 percent finished’ for half of the total coding time"*
+{% cite brooks_mythical_1995 %}. McConnell's **miniature milestones**, a day or two long, apply it
+inside the team: *"The only two statuses are ‘done’ and ‘not done.’ Percentages are not
+used"* {% cite mcconnell_rapid_1996 %}.
 
----
+So a project needs two kinds: **result milestones**, months apart, for the sponsor, and **control
+milestones**, days apart, for the team. The lecture's checklist for both: **specific, verifiable,
+relevant, timely**.
 
-## 2. Not Milestones – Bad Examples
+Sharpness is written down as **exit criteria**: the work items, their state, the quality reached.
+[ETVX](../proc/basics/etvx) defined exit criteria for a process activity
+{% cite radice_programming_1985 %}. Scrum's **Definition of Done** plays the same role for an
+increment: *"a formal description of the state of the Increment when it meets the quality measures
+required for the product"* {% cite schwaber2020scrumguide %}.
 
-### 2.1 Iterations Sequence
+## 3. Three anchor points
 
-```mermaid
-graph LR
-    A["Iteration 1"] --> B["Iteration 2"] --> C["..."] --> D["Iteration n-1"] --> E["Iteration n"]
-    style A fill:#bfbfbf,stroke:#999
-    style B fill:#bfbfbf,stroke:#999
-    style C fill:#bfbfbf,stroke:#999
-    style D fill:#bfbfbf,stroke:#999
-    style E fill:#bfbfbf,stroke:#999
-```
+Boehm proposed three milestones for any process {% cite boehm1996anchoring %}:
 
-**Why not milestones?**
+- **LCO, life-cycle objectives**: stakeholders agree the objectives, and a feasible architecture
+  exists.
+- **LCA, life-cycle architecture**: one architecture is chosen and every major risk resolved or
+  covered by the risk plan; otherwise *"do not proceed into full-scale development."*
+- **IOC, initial operational capability**: software, site and users are ready, *"the milestone with
+  the most serious consequences of neglect."*
 
-Iterations mark **timeboxes of work**, not **verifiable outcomes**.  
-Completing “Iteration 2” just ends a cycle — it doesn’t mean the project achieved something the sponsor can verify.
+![Boehm's table of what must exist at LCO and at LCA for each element: operational concept, requirements, architecture, life-cycle plan and feasibility rationale; at LCA every major risk must be resolved or covered](fig-boehm-table1.svg)
 
-- **No clear outcome:** “Iteration complete” isn’t tangible
-- **Not verifiable:** Sponsors can’t confirm progress
-- **Process-focused:** Tracks _effort_, not _achievement_
+*Boehm 1996, Table 1.*
 
-**Good milestone examples:**  
-“Prototype approved by client” or “Core capability demo completed.”
+## 4. Example: Quill's sponsor-oriented plan
 
----
+A **hard date** is imposed by a third party, and the result loses most of its value if late; a
+**soft date** is agreed between the parties and can move {% cite miranda_managing_2014 %}.
 
-### 2.2 Development Phases
-
-```mermaid
-graph LR
-    A["High level design"] --> B["Low level design"] --> C["Code & unit testing"] --> D["Integration"] --> E["System testing"]
-    style A fill:#ff3b30,stroke:#c00,color:#fff
-    style B fill:#0066ff,stroke:#0033aa,color:#fff
-    style C fill:#bb33ff,stroke:#660099,color:#fff
-    style D fill:#00c37a,stroke:#007a4f,color:#fff
-    style E fill:#002b6f,stroke:#001d4f,color:#fff
-```
-
-Phases describe **activities**, not **project states**.
-
-- **Activity-oriented:** “Low-level design done” is internal work, not a verified deliverable
-- **Not sponsor-relevant:** Reflects _how_ the team works, not _what_ the sponsor gets
-- **No clear success criteria:** Completion is subjective
-
-**Good milestone examples:**  
-“System design approved,” “Beta version deployed,” “Acceptance test passed.”
-
----
-
-## 3. A Better Example – Sponsor-Oriented Plan
-
-| **Date** | **Client** | **Team** | **Milestone Description** |
+| Week | Path | Milestone | Date |
 |---|---|---|---|
-| Oct-1 | ⬤ | | Project kick-off |
-| Nov-15 | ⬤──▶ | | Design concept approved |
-| Nov-30 | | ⬤ | Infrastructure selected |
-| Dec-15 | | ⬤ | Design completed |
-| Jan-30 | | ⬤ | Release 1: CL*, BD, AC, CO, Data Base |
-| Feb-15 | ⬤──▶ | | Cloud infrastructure available |
-| Mar-1 | | ⬤ | Release 2: CBL, RC, SM |
-| Mar-10 | | ⬤ | Beta testing launched |
-| Mar-30 | ⬤──▶ | | Beta testing results reviewed |
-| Apr-15 | | ⬤ | Release 3: PD, PP |
-| Apr-20 | ⬤──▶ | | Acceptance testing procedure approved |
-| May-15 | | ⬤ | Acceptance test completed |
-| May-30 | | ⬤ | System deployed |
-| Jun-30 | ⬤ | | Customer sign-off |
-| _* Features listed in the WBS_ | | | |
+| 2 | Publisher | When the Quill 1.0 feature list is agreed | soft |
+| 6 | Team | When the architecture is chosen and its major risks are covered | soft |
+| 18 | Publisher | When the EU data centre contract is signed | soft |
+| 23 | Team | When a 500-page manuscript opens in two seconds on the publisher's laptop | soft |
+| 25 | Publisher | When the editors start the spring list on Quill | **hard** |
 
-**Why this works**
+Week 25 is hard because the publisher has announced its spring list to booksellers. Week 6 is
+Quill's LCA: the two-second promise, tested only on 100-page documents, is proven or covered. The
+last nine weeks appear as a [Gantt chart](gantt).
 
-- **Outcome-oriented:** Each milestone marks a verifiable state (e.g., “Design concept approved”)
-- **Verifiable:** Sponsors can see tangible proof (documents, software, approvals)
-- **Stakeholder-focused:** Represents business value, not internal effort
-- **Transparent:** Any change in dates or criteria must be re-negotiated and visible
+Place hard dates first, fit soft ones around them within the [hours available](resources), and let
+buffers protect hard milestones first {% cite miranda_managing_2014 %}.
 
----
+## 5. When to use it, and its limits
 
-## 4. Activity Planning vs Milestone Planning
+Milestone planning fits best where the route is unclear; Andersen calls it *"not so relevant in
+projects with well defined goals and well defined methods"* {% cite andersen_warning_1996 %}. It
+says nothing about how the work is done, and soft milestones slip quietly. An underestimated task
+looks on schedule until about three weeks before it is due {% cite brooks_mythical_1995 %}, which is
+why result milestones need control milestones underneath.
 
-| **Aspect** | **Activity Planning** | **Milestone Planning** |
-|---|---|---|
-| **Definition** | Decomposes project into tasks and their execution order | Breaks project into logical states or outcomes |
-| **Requires** | Detailed project knowledge | High-level outcome understanding |
-| **Volatility** | Highly volatile | Relatively stable |
-| **Focus** | Task execution | Deliverables, approvals, commitments |
-| **When used** | Later in lifecycle | Early in lifecycle |
+## How solid is this?
 
-**In short:**  
-_Activities_ describe what the team **does**.  
-_Milestones_ describe what the project **achieves and can verify**.
+- **Where it comes from.** Andersen argues for his own method, with a constructed example. Boehm's claim that the anchor points correlate with success rests on his own review of
+  projects, with no counts.
+- **Whose words.** *Specific* and *measurable* are Brooks's; *relevant* and *timely*, and the
+  result/control pairing, are the lecture's. The three-week figure is a 1967 non-software study,
+  via Brooks.
+- **What was dropped.** No source shows the Definition of Done descending from ETVX.
+- **What is ours.** The Quill plan is invented; the date-setting method is Miranda's course
+  practice, not a tested method.
 
 ---
 
-### 4.1 Example
+### Acknowledgments
 
-| **Milestones** | **Activities** |
-|---|---|
-| Statement of Work signed | Identify requirements <br> Document major deliverables <br> Negotiate termination conditions <br> Write SOW <br> Legal review |
-| Architecture approved | Perform Quality Attribute Workshop <br> Identify architectural drivers <br> Design <br> Study trade-offs <br> Review document |
-| “Must-have” features completed | Design <br> Code <br> Test <br> Integrate |
+This page adapts material from lectures by Eduardo Miranda {% cite miranda_managing_2014 %}
+on software project management.
 
----
+### References
 
-## 5. Milestone Plan Semantics
-
-- Milestone dependencies are often **Finish-to-Finish (FF)**
-- To reach Milestone 4, the project must have reached the **state** of Milestone 2
-- Tasks for Milestone 4 can start **before** all work in 2 is done
-
-```mermaid
-graph LR
-    %% Finish-to-Finish (FF) dependencies between milestones
-    M1(("1<br/>Hard<br/>Milestone")) -.-> M2(("2<br/>Soft<br/> Milestone"))
-    M1 -.->  M3(("3<br/>Hard<br/>Milestone"))
-    M2 -.->  M3
-    M2 -.->  M4(("4<br/>Hard<br/>Milestone"))
-    M3 -.->  M5
-    M4 -.->  M5(("5<br/>Hard<br/>Milestone"))   
-    %% Styling
-    style M1 fill:#ff4d4d,stroke:#c00,color:#fff
-    style M2 fill:#ffffff,stroke:#ff4d4d,stroke-dasharray:4 2
-    style M3 fill:#ff4d4d,stroke:#c00,color:#fff
-    style M4 fill:#ff4d4d,stroke:#c00,color:#fff
-    style M5 fill:#ff4d4d,stroke:#c00,color:#fff
-```
-
----
-
-## 6. Defining a Milestone Plan
-
-```mermaid
-flowchart TD
-  %% Compact Milestone Planning (grouped)
-
-  subgraph G1["Define scope & order"]
-    direction LR
-    A1["Identify outcomes<br/>(milestones)"] --> A2["Sequence them"]
-  end
-
-  subgraph G2["Commit dates"]
-    direction LR
-    B1["Add resource demands<br/>and <b>hard</b> dates"] --> B2["Add <b>soft</b> milestone dates"]
-  end
-
-  subgraph G3["Protect & refine"]
-    direction LR
-    C1["Add buffers"] --> C2["Iterate"] --> C3["<i>(Optional)</i> planning waves"]
-  end
-
-  G1 --> G2 --> G3
-
-  %% Styling
-  classDef step fill:#fff7d6,stroke:#f39c12,stroke-width:1.5px,color:#333;
-  classDef hard fill:#ffe8e6,stroke:#e74c3c,stroke-width:2px,color:#2c3e50;
-  classDef soft fill:#e8f4ff,stroke:#1f78d1,stroke-dasharray:6 3,stroke-width:2px,color:#2c3e50;
-
-  class A1,A2,C1,C2,C3 step;
-  class B1 hard;
-  class B2 soft;
-```
-
----
-
-## 7. Before Starting
-
-### 7.1 What Is Needed
-
-- The **outcome** or **state** to be achieved (think WBS)
-- The **evaluation criteria** to judge realization (exit criteria or Definition of Done)
-- A **delivery date**
-    - **Hard date:** imposed by a third party or loses value if late
-    - **Soft date:** mutually agreed and flexible
-- The **beneficiary or area of work**
-- The **individual or organization** responsible for the milestone (think resource plan)
-
----
-
-## 8. Milestone Exit Criteria / Definition of Done
-
-**Origin:**
-
-- Based on **ETVX (Entry, Task, Verification, eXit)**, Radice et al. (1985)
-- Reintroduced by Agile as **Definition of Done (DoD)** around 2006
-
-**DoD must be objectively decidable**, and includes:
-
-- List of work items to be completed
-- State or quantity to achieve
-- Defined quality level, such as:
-    - Acceptable bug counts
-    - Quality attributes at required levels
-    - Passing specific test cases
-    - Reaching required test coverage
-
----
-
-### 8.1 Example – Evolving Definition of Done
-
-_Source: Sumeet Madan, 2019 ([https://www.scrum.org/](https://www.scrum.org/resources/blog/done-understanding-definition-done))_
-
-| **Initial DoD** | **Mature DoD** | **Stringent DoD** |
-|---|---|---|
-| **All acceptance criteria met** | **All business functionality and acceptance criteria met** | **All business functionality and acceptance criteria met** |
-| Unit test coverage > 85% | **No dependence unattended** | **No dependence unattended** |
-| Functional test passed | Unit test coverage > 85% | No build failures |
-| No known defects | No coding-standard errors | Integration testing passed |
-| Peer code review | Technical debts < 5 days (subjective) | Unit test coverage > 85% |
-| Peer code review passed | Maintainability index > 90 | No coding-standard errors |
-| Documentation completed | Functional test automation > 75% | Technical debts < 5 days (subjective) |
-| | Functional test passed | Maintainability index > 90 |
-| | No known defects | Functional test automation 75% |
-| | Peer review passed | Functional test passed |
-| | Documentation completed | Regression, PEN, Load, and Performance tests passed |
-| | | No known defects |
-| | | Peer review passed |
-| | | Documentation completed |
-| | | Compliance and regulatory documents complete |
-| | | UAT approved |
-
----
-
-## 9. Guidance: Milestone Selection
-
-Milestones must be:
-
-- **Specific** – clearly defined outcome
-- **Verifiable** – objectively measurable
-- **Relevant** – meaningful to sponsor or customer
-- **Timely** – achieved at the right moment in the schedule
-
-**Typical examples**
-
-- Life Cycle Objective (LCO)
-- Life Cycle Architecture (LCA)
-- Core Capability Demo (CCD)
-- Initial Operational Capability (IOC)
-- Incremental deliveries
-- Proof-of-concept demos
-- Key documents completed
-- Technical performance levels reached
-- Risk mitigation actions done
-- Stakeholder commitments fulfilled
-
----
-
-## 10. Creating the Resource Plan
-
-- Draw the **resource-use curve** over time, _y = f(t) = number of FTEs_
-- The **area under the curve** equals total effort
-- Account for **holidays, absences, and training**
-- Match **available skills** to **task needs**
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- Radice, R. A., et al. "A Programming Process Architecture." *IBM Systems Journal*, vol. 24, no. 2, 1985, pp. 79–90.
-
-- Madan, Sumeet. "Done - Understanding Definition of Done." *Scrum.org*, 2019. [https://www.scrum.org/resources/blog/done-understanding-definition-done](https://www.scrum.org/resources/blog/done-understanding-definition-done)
-
-- Miranda, Eduardo. *Managing Software Development*. Lecture materials, 2014.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

@@ -698,10 +698,15 @@ Publisher: {INFORMS}},
 	note = {Publisher: Atlantis Press},
 }
 
-@article{gunti_function_nodate,
-	title = {Function Point Analysis Examined},
-	author = {Gunti, Naveen},
-	langid = {english},
+@report{gunti_function_nodate,
+  title     = {Function Point Analysis Examined},
+  author    = {Gunti, Naveen},
+  institution = {Avenue A | Razorfish},
+  type      = {White paper},
+  date      = {2006-09},
+  langid    = {english},
+  note      = {Corporate white paper in the series ``Art of Software
+               Engineering''; not a journal article and not peer-reviewed},
 }
 
 @article{sutherland_nut_nodate,
@@ -781,19 +786,30 @@ Publisher: {INFORMS}},
 
 @book{noauthor_scheduling_nodate,
 	title = {Scheduling Guide for Program Managers},
+	editor = {Bahnmaier, William W.},
+	publisher = {Defense Systems Management College Press},
+	location = {Fort Belvoir, VA},
+	date = {2001-10},
 	isbn = {978-1-4289-8094-5},
 	pagetotal = {96},
-	publisher = {{DIANE} Publishing},
 	langid = {english},
-	note = {Google-Books-{ID}: {oR}\_TVAZfZRQC},
+	note = {Corrected 2026-10-11 from the guide's own title page (the entry was a stub with no
+	        author or date). Third version; revises Acker et al. 1986 and Bahnmaier and McMahon
+	        1994. Covers network scheduling, CPM, PERT and bar charts; it contains no Design
+	        Structure Matrix material.},
 }
 
 @article{lynch_critical_2003,
-	title = {Critical Chain Project Management: Coming to a Radar Screen Near You},
-	volume = {37},
-	journaltitle = {Cutter {IT} Journal: The Journal of Information Technology Management, 16 (3)},
-	author = {Lynch, B},
-	date = {2003},
+	title = {Critical Chain Project Management: Coming to a Radar Screen Near You!},
+	author = {Lynch, Bill},
+	journal = {Cutter {IT} Journal},
+	volume = {16},
+	number = {3},
+	date = {2003-03},
+	note = {Corrected 2026-10-11 (the entry gave volume 37). A themed issue of six articles,
+	        Lynch as guest editor: Higgins, Zultner, Brandt (Abbott Diagnostics), Gelbwaks (Segway)
+	        and Newbold. Practitioner trade press, largely by critical-chain vendors; cite each
+	        article's author in prose.},
 }
 
 @book{clegg_case_1994,
@@ -905,9 +921,11 @@ Publisher: {INFORMS}},
 	langid = {english},
 }
 
-@article{barton_reporting_nodate,
+@misc{barton_reporting_nodate,
 	title = {Reporting Scrum Project Progress to Executive Management through Metrics},
 	author = {Barton, Brent and Schwaber, Ken and Rawsthorne, Dan},
+	date = {2005-01},
+	note = {Unpublished summary from a Scrum Gathering; the document's own date},
 	langid = {english},
 }
 
@@ -1489,14 +1507,16 @@ In order to diminish social loafing from a group, several strategies could be pu
 }
 
 @inproceedings{githens_rolling_1998,
-	location = {Long Beach, California, {USA}},
-	title = {Rolling Wave Project Planning},
-	url = {https://www.wcu.edu/pmi/1998/NP02.PDF},
-	pages = {9--15},
-	booktitle = {Proceedings of the 29th Annual Project Management Institute Seminars \& Symposium},
-	publisher = {Project Management Institute},
-	author = {Githens, Gregory D.},
-	date = {1998-10},
+  location  = {Long Beach, California, {USA}},
+  title     = {Rolling Wave Project Planning},
+  url       = {https://www.wcu.edu/pmi/1998/NP02.PDF},
+  booktitle = {Proceedings of the 29th Annual Project Management Institute 1998
+               Seminars \& Symposium},
+  publisher = {Project Management Institute},
+  author    = {Githens, Gregory D.},
+  date      = {1998-10},
+  note      = {Five-page paper; it prints no proceedings page numbers. The
+               symposium ran 9--15 October 1998},
 }
 
 @book{rubin_essential_2012,
@@ -1528,12 +1548,17 @@ In order to diminish social loafing from a group, several strategies could be pu
 }
 
 @book{woodward_project_2001,
-	edition = {1st},
-	title = {Project Management Institute Practice Standard for Work Breakdown Structures},
-	isbn = {978-1-880410-81-3},
-	publisher = {Project Management Institute},
-	author = {Woodward, H. and Institute, Project Management},
-	date = {2001},
+  title     = {Project Management Institute Practice Standard for Work Breakdown
+               Structures},
+  author    = {{Project Management Institute}},
+  edition   = {1},
+  publisher = {Project Management Institute},
+  location  = {Newtown Square, PA},
+  isbn      = {1-880410-81-8},
+  date      = {2001},
+  note      = {A PMI standard with a corporate author. Hugh Woodward, Chair of the
+               PMI Board, wrote only the Foreword; the project team was led by
+               Kim Colenso. The 1st edition does not name the ``100\% rule''},
 }
 
 @report{sadler_nasa_2021,
@@ -3626,4 +3651,936 @@ In order to diminish social loafing from a group, several strategies could be pu
   note      = {A position paper, not a study: 8 pp arguing that generative AI redistributes
                Brooks's essential complexity toward specification rather than removing it.
                Coins \emph{Specification Overfitting} and \emph{Specification Debt}.},
+}
+
+% ---------------------------------------------------------------------------
+% Scope review (WBS, estimation) - added 2026-10-11, validated: review/scope/bib-staging-log.md
+% ---------------------------------------------------------------------------
+
+@article{albrecht1983fpa,
+  title     = {Software Function, Source Lines of Code, and Development Effort
+               Prediction: A Software Science Validation},
+  author    = {Albrecht, Allan J. and Gaffney, Jr., John E.},
+  journaltitle = {IEEE Transactions on Software Engineering},
+  volume    = {SE-9},
+  number    = {6},
+  pages     = {639--648},
+  doi       = {10.1109/TSE.1983.235271},
+  date      = {1983-11},
+  note      = {The journal publication of the function-point counting rules; the
+               1979 symposium original is not cited here. The PDF also carries the
+               first page of the next article in the issue (Behrens, p. 648)},
+}
+
+
+@article{symons1988fpa,
+  title     = {Function Point Analysis: Difficulties and Improvements},
+  author    = {Symons, Charles R.},
+  journaltitle = {IEEE Transactions on Software Engineering},
+  volume    = {14},
+  number    = {1},
+  pages     = {2--11},
+  doi       = {10.1109/32.4618},
+  date      = {1988-01},
+  note      = {The origin of Mark II function points. Dated 1988, not 2002},
+}
+
+
+@article{kemerer1993fp,
+  title     = {Reliability of Function Points Measurement: A Field Experiment},
+  author    = {Kemerer, Chris F.},
+  journaltitle = {Communications of the ACM},
+  volume    = {36},
+  number    = {2},
+  pages     = {85--97},
+  doi       = {10.1145/151220.151230},
+  date      = {1993-02},
+}
+
+
+@report{park1992size,
+  title     = {Software Size Measurement: A Framework for Counting Source
+               Statements},
+  author    = {Park, Robert E.},
+  institution = {Software Engineering Institute, Carnegie Mellon University},
+  location  = {Pittsburgh, PA},
+  type      = {Technical Report},
+  number    = {CMU/SEI-92-TR-020},
+  doi       = {10.21236/ADA258304},
+  date      = {1992-09},
+  note      = {Also numbered ESC-TR-92-020. Written with the Size Subgroup of the
+               Software Metrics Definition Working Group and the Software Process
+               Measurement Project Team. A definition framework, not an empirical
+               study. The DOI is the DTIC record of the same report},
+}
+
+
+@manual{longstreet2002fpa,
+  title     = {Function Points Analysis Training Course},
+  author    = {Longstreet, David},
+  organization = {Longstreet Consulting Inc},
+  pagetotal = {111},
+  note      = {Undated training booklet (www.SoftwareMetrics.Com). Nothing inside
+               dates it later than 1999 and it cites the IFPUG 4.1 manual, so
+               read it as c. 2000; the 2002 in the key is not supported by the
+               document. Not the SN4 reading, which is longstreet2004fundamentals.
+               Commercial training material, not peer-reviewed},
+}
+
+
+@misc{longstreet2004fundamentals,
+  title     = {Fundamentals of Function Point Analysis},
+  author    = {Longstreet, David},
+  organization = {Longstreet Consulting Inc},
+  date      = {2004},
+  url       = {https://www.math.unipd.it/~tullio/IS-1/2004/Approfondimenti/Function_Point_Analysis.pdf},
+  urldate   = {2026-10-11},
+  note      = {The page states ``Originally published in Software Development
+               Magazine'' (issue not given) and ``Copyright Longstreet Consulting
+               Inc. 2004''. Practitioner article; the SN4 assigned reading},
+}
+
+
+@article{jorgensen2004expert,
+  title     = {A Review of Studies on Expert Estimation of Software Development
+               Effort},
+  author    = {Jørgensen, Magne},
+  journaltitle = {Journal of Systems and Software},
+  volume    = {70},
+  number    = {1--2},
+  pages     = {37--60},
+  doi       = {10.1016/S0164-1212(02)00156-5},
+  date      = {2004-02},
+}
+
+
+@article{jorgensen2004topdown,
+  title     = {Top-down and Bottom-up Expert Estimation of Software Development
+               Effort},
+  author    = {Jørgensen, Magne},
+  journaltitle = {Information and Software Technology},
+  volume    = {46},
+  number    = {1},
+  pages     = {3--16},
+  doi       = {10.1016/S0950-5849(03)00093-4},
+  date      = {2004-01},
+}
+
+
+@inproceedings{aranda2005anchoring,
+  title     = {Anchoring and Adjustment in Software Estimation},
+  author    = {Aranda, Jorge and Easterbrook, Steve},
+  booktitle = {Proceedings of the 10th European Software Engineering Conference
+               Held Jointly with 13th ACM SIGSOFT International Symposium on
+               Foundations of Software Engineering (ESEC/FSE '05)},
+  location  = {Lisbon, Portugal},
+  publisher = {ACM},
+  pages     = {346--355},
+  doi       = {10.1145/1081706.1081761},
+  date      = {2005-09},
+  note      = {Proceedings version. CrossRef also holds a SIGSOFT Software
+               Engineering Notes record of the same paper
+               (10.1145/1095430.1081761); cite this one},
+}
+
+
+@article{grimstad2006babel,
+  title     = {Software Effort Estimation Terminology: The Tower of Babel},
+  author    = {Grimstad, Stein and Jørgensen, Magne and Moløkken-Østvold, Kjetil},
+  journaltitle = {Information and Software Technology},
+  volume    = {48},
+  number    = {4},
+  pages     = {302--310},
+  doi       = {10.1016/j.infsof.2005.04.004},
+  date      = {2006-04},
+}
+
+
+@article{halkjelsvik2012origami,
+  title     = {From Origami to Software Development: A Review of Studies on
+               Judgment-Based Predictions of Performance Time},
+  author    = {Halkjelsvik, Torleif and Jørgensen, Magne},
+  journaltitle = {Psychological Bulletin},
+  volume    = {138},
+  number    = {2},
+  pages     = {238--271},
+  doi       = {10.1037/a0025996},
+  date      = {2012},
+  note      = {Published Online First in 2011},
+}
+
+
+@inproceedings{molokken2003surveys,
+  title     = {A Review of Surveys on Software Effort Estimation},
+  author    = {Moløkken, Kjetil and Jørgensen, Magne},
+  booktitle = {Proceedings of the 2003 International Symposium on Empirical
+               Software Engineering (ISESE 2003)},
+  publisher = {IEEE Computer Society},
+  pages     = {223--230},
+  doi       = {10.1109/ISESE.2003.1237981},
+  date      = {2003},
+  note      = {Title as printed on the paper. CrossRef registers it as ``A review of
+               software surveys on software effort estimation''},
+}
+
+
+@article{molokken2004group,
+  title     = {Group Processes in Software Effort Estimation},
+  author    = {Moløkken-Østvold, Kjetil and Jørgensen, Magne},
+  journaltitle = {Empirical Software Engineering},
+  volume    = {9},
+  number    = {4},
+  pages     = {315--334},
+  doi       = {10.1023/B:EMSE.0000039882.39206.5a},
+  date      = {2004-12},
+}
+
+
+@book{hubbard2010intangibles,
+  title     = {How to Measure Anything},
+  author    = {Hubbard, Douglas W.},
+  edition   = {2},
+  publisher = {Wiley},
+  isbn      = {978-0-470-53939-2},
+  date      = {2010},
+  note      = {Cited for ch. 3, ``The Illusion of Intangibles: Why Immeasurables
+               Aren't'' (pp. 21--43), the only chapter read. Chapter 3 does not
+               cover calibration (that is ch. 5). Not the 3rd edition (2014)},
+}
+
+
+@article{jorgensen2014know,
+  title     = {What We Do and Don't Know about Software Development Effort
+               Estimation},
+  author    = {Jørgensen, Magne},
+  journaltitle = {IEEE Software},
+  volume    = {31},
+  number    = {2},
+  pages     = {37--40},
+  doi       = {10.1109/MS.2014.49},
+  date      = {2014},
+  note      = {``Voice of Evidence'' column, March/April 2014: a four-page evidence
+               summary, not a study},
+}
+
+
+@misc{grenning2002poker,
+  title     = {Planning Poker or How to Avoid Analysis Paralysis while Release
+               Planning},
+  author    = {Grenning, James W.},
+  organization = {Renaissance Software Consulting},
+  version   = {1.1},
+  date      = {2002-04},
+  url       = {https://wingman-sw.com/papers/PlanningPoker-v1.1.pdf},
+  urldate   = {2026-10-11},
+  note      = {Practitioner paper, 3 pages plus a card deck; no peer review, no
+               DOI. The copy read is version 1.1. The paper itself names no
+               publisher: the firm is taken from how usman2014agile and
+               mahnic2012poker cite it},
+}
+
+
+@inproceedings{haugen2006poker,
+  title     = {An Empirical Study of Using Planning Poker for User Story
+               Estimation},
+  author    = {Haugen, Nils C.},
+  booktitle = {Proceedings of AGILE 2006 Conference (AGILE'06)},
+  location  = {Minneapolis, MN, USA},
+  publisher = {IEEE Computer Society},
+  pages     = {23--34},
+  doi       = {10.1109/AGILE.2006.16},
+  date      = {2006},
+  note      = {Pages as CrossRef gives them. The PDF has 9 pages and the paper
+               prints no page numbers; usman2014agile cites it as pp. 23--31},
+}
+
+
+@article{molokken2008poker,
+  title     = {Using Planning Poker for Combining Expert Estimates in Software
+               Projects},
+  author    = {Moløkken-Østvold, Kjetil and Haugen, Nils Christian and
+               Benestad, Hans Christian},
+  journaltitle = {Journal of Systems and Software},
+  volume    = {81},
+  number    = {12},
+  pages     = {2106--2117},
+  doi       = {10.1016/j.jss.2008.03.058},
+  date      = {2008-12},
+}
+
+
+@article{mahnic2012poker,
+  title     = {On Using Planning Poker for Estimating User Stories},
+  author    = {Mahnič, Viljan and Hovelja, Tomaž},
+  journaltitle = {Journal of Systems and Software},
+  volume    = {85},
+  number    = {9},
+  pages     = {2086--2095},
+  doi       = {10.1016/j.jss.2012.04.005},
+  date      = {2012-09},
+}
+
+
+@inproceedings{miranda2000paired,
+  title     = {An Evaluation of the Paired Comparisons Method for Software Sizing},
+  author    = {Miranda, Eduardo},
+  booktitle = {Proceedings of the 22nd International Conference on Software
+               Engineering (ICSE '00)},
+  location  = {Limerick, Ireland},
+  publisher = {ACM},
+  pages     = {597--604},
+  doi       = {10.1145/337180.337477},
+  date      = {2000},
+}
+
+
+@article{miranda2009sizing,
+  title     = {Sizing User Stories Using Paired Comparisons},
+  author    = {Miranda, Eduardo and Bourque, Pierre and Abran, Alain},
+  journaltitle = {Information and Software Technology},
+  volume    = {51},
+  number    = {9},
+  pages     = {1327--1337},
+  doi       = {10.1016/j.infsof.2009.04.003},
+  date      = {2009-09},
+}
+
+
+@inproceedings{usman2014agile,
+  title     = {Effort Estimation in Agile Software Development: A Systematic
+               Literature Review},
+  author    = {Usman, Muhammad and Mendes, Emilia and Weidt, Francila and
+               Britto, Ricardo},
+  booktitle = {Proceedings of the 10th International Conference on Predictive
+               Models in Software Engineering (PROMISE '14)},
+  publisher = {ACM},
+  pages     = {82--91},
+  doi       = {10.1145/2639490.2639503},
+  date      = {2014-09},
+  note      = {The copy read is the authors' accepted version},
+}
+
+
+@online{shetty2026llm,
+  title     = {Agile Story Point Estimation with Large Language Models},
+  author    = {Shetty, Pranam Prakash and Balakrishnan, Adarsh and Xu, Mengqiao
+               and Xi, Xiaoyin and Yu, Zhe},
+  eprint    = {2603.06276},
+  eprinttype = {arxiv},
+  eprintclass = {cs.SE},
+  version   = {2},
+  doi       = {10.48550/arXiv.2603.06276},
+  date      = {2026-04-08},
+  note      = {UNREFEREED PREPRINT. Title as printed on page 1 of v2; the arXiv
+               listing gives ``Story Point Estimation Using Large Language
+               Models''},
+}
+
+
+@article{shepperd1997analogy,
+  title     = {Estimating Software Project Effort Using Analogies},
+  author    = {Shepperd, Martin and Schofield, Chris},
+  journaltitle = {IEEE Transactions on Software Engineering},
+  volume    = {23},
+  number    = {11},
+  pages     = {736--743},
+  doi       = {10.1109/32.637387},
+  date      = {1997-11},
+  note      = {The PDF running header reads ``Vol. 23, No. 12, November 1997'';
+               CrossRef and the author's 2025 retrospective give issue 11},
+}
+
+
+@article{shepperd2025reflections,
+  title     = {``Estimating Software Project Effort Using Analogies'': Reflections
+               After 28 Years},
+  author    = {Shepperd, Martin},
+  journaltitle = {IEEE Transactions on Software Engineering},
+  volume    = {51},
+  number    = {3},
+  pages     = {778--782},
+  doi       = {10.1109/TSE.2025.3534032},
+  date      = {2025-03},
+  note      = {The copy read is the arXiv preprint, arXiv:2501.14582v2
+               (30 January 2025)},
+}
+
+
+@article{jorgensen2007review,
+  title     = {A Systematic Review of Software Development Cost Estimation
+               Studies},
+  author    = {Jørgensen, Magne and Shepperd, Martin},
+  journaltitle = {IEEE Transactions on Software Engineering},
+  volume    = {33},
+  number    = {1},
+  pages     = {33--53},
+  doi       = {10.1109/TSE.2007.256943},
+  date      = {2007-01},
+}
+
+
+@article{jones1996rules,
+  title     = {By Popular Demand: Software Estimating Rules of Thumb},
+  author    = {Jones, Capers},
+  journaltitle = {Computer},
+  volume    = {29},
+  number    = {3},
+  pages     = {116--118},
+  doi       = {10.1109/MC.1996.485905},
+  date      = {1996-03},
+  note      = {Three-page magazine column. Every rule is the author's own
+               approximation, and he says the rules are not accurate},
+}
+
+
+@manual{usc2000cocomo,
+  title     = {{COCOMO II} Model Definition Manual},
+  author    = {{Center for Software Engineering, USC}},
+  organization = {Center for Software Engineering, University of Southern
+                  California},
+  version   = {2.1},
+  date      = {2000},
+  note      = {Copyright 1995--2000. The manual carries no byline; its
+               acknowledgements credit Boehm, Abts, Brown, Chulani, Clark,
+               Horowitz, Madachy, Reifer and Steece},
+}
+
+
+@report{pfleeger2005rand,
+  title     = {Software Cost Estimation and Sizing Methods: Issues and Guidelines},
+  author    = {Pfleeger, Shari Lawrence and Wu, Felicia and Lewis, Rosalind},
+  institution = {RAND Corporation},
+  location  = {Santa Monica, CA},
+  type      = {Monograph},
+  number    = {MG-269},
+  isbn      = {0-8330-3713-7},
+  date      = {2005},
+  note      = {Prepared for the United States Air Force (RAND Project AIR FORCE).
+               Built from a literature review and analyst interviews, not new
+               data},
+}
+
+
+@book{pressman2010estimation,
+  title     = {Software Engineering: A Practitioner's Approach},
+  author    = {Pressman, Roger S.},
+  edition   = {7},
+  publisher = {McGraw-Hill},
+  isbn      = {978-0-07-337597-7},
+  date      = {2010},
+  note      = {Cited here for chapter 26, Estimation for Software Projects
+               (printed p. 691 ff.)},
+}
+
+
+@report{nasa2010wbs,
+  title     = {{NASA} Work Breakdown Structure ({WBS}) Handbook},
+  author    = {{National Aeronautics and Space Administration}},
+  institution = {NASA Headquarters},
+  location  = {Washington, DC},
+  type      = {{NASA} Special Publication},
+  number    = {NASA/SP-2010-3404},
+  url       = {https://ntrs.nasa.gov/citations/20110012671},
+  date      = {2010-01},
+  note      = {The basic issue of the handbook; superseded by NASA/SP-3404
+               (nasa2019wbs)},
+}
+
+
+@report{nasa2019wbs,
+  title     = {{NASA} Work Breakdown Structure ({WBS}) Handbook},
+  author    = {{National Aeronautics and Space Administration}},
+  institution = {National Aeronautics and Space Administration},
+  type      = {{NASA} Special Publication},
+  number    = {NASA/SP-3404},
+  url       = {https://ntrs.nasa.gov/citations/20200000300},
+  date      = {2019-11-01},
+  note      = {Revision C (September 2019) of the January 2010 basic issue,
+               NASA/SP-2010-3404 (nasa2010wbs). Not the record behind
+               sadler_nasa_2021 (NTRS 20210021481). NTRS lists Stefanie M.
+               Terrell as author; the handbook itself prints no author},
+}
+
+
+% --- Planning review (content/plan), added 2026-10-11. DOI entries built from CrossRef records;
+% validated with msd_review/scripts/validate_bib.py (21/24 verified; 3 grey sources not indexed).
+
+@article{maccrimmon1964pert,
+  title     = {An Analytical Study of the {PERT} Assumptions},
+  author    = {MacCrimmon, Kenneth R. and Ryavec, Charles A.},
+  journal   = {Operations Research},
+  volume    = {12},
+  number    = {1},
+  pages     = {16--37},
+  date      = {1964},
+  doi       = {10.1287/opre.12.1.16},
+  note      = {First issued as RAND Memorandum RM-3408-PR, December 1962; the review read
+               the memorandum (image-only scan, cited to its printed pages). The source of
+               the merge-bias result: PERT's computed project mean is never greater than
+               the true mean.},
+}
+
+@inproceedings{kelley1959cpm,
+  title     = {Critical-Path Planning and Scheduling},
+  author    = {Kelley, Jr., James E. and Walker, Morgan R.},
+  booktitle = {Papers Presented at the December 1--3, 1959, Eastern Joint {IRE}-{AIEE}-{ACM}
+               Computer Conference},
+  publisher = {ACM},
+  pages     = {160--173},
+  date      = {1959},
+  doi       = {10.1145/1460299.1460318},
+  note      = {The CPM original (du Pont). Defines total, free, independent and interfering float.},
+}
+
+@article{malcolm1959pert,
+  title     = {Application of a Technique for Research and Development Program Evaluation},
+  author    = {Malcolm, D. G. and Roseboom, J. H. and Clark, C. E. and Fazar, W.},
+  journal   = {Operations Research},
+  volume    = {7},
+  number    = {5},
+  pages     = {646--669},
+  date      = {1959},
+  doi       = {10.1287/opre.7.5.646},
+  note      = {The PERT original (Polaris). PERT first stood for Program Evaluation Research Task.},
+}
+
+@article{buehler1994fallacy,
+  title     = {Exploring the ``Planning Fallacy'': Why People Underestimate Their Task
+               Completion Times},
+  author    = {Buehler, Roger and Griffin, Dale and Ross, Michael},
+  journal   = {Journal of Personality and Social Psychology},
+  volume    = {67},
+  number    = {3},
+  pages     = {366--381},
+  date      = {1994},
+  doi       = {10.1037/0022-3514.67.3.366},
+}
+
+@article{parkinson1955law,
+  title     = {Parkinson's Law},
+  author    = {Parkinson, C. Northcote},
+  journal   = {The Economist},
+  date      = {1955-11-19},
+  url       = {https://www.economist.com/news/1955/11/19/parkinsons-law},
+  note      = {A satirical essay on the growth of officialdom. ``Work expands so as to fill
+               the time available for its completion'' is its opening premise, not the Law
+               it names.},
+}
+
+@article{leach1999ccpm,
+  title     = {Critical Chain Project Management Improves Project Performance},
+  author    = {Leach, Larry P.},
+  journal   = {Project Management Journal},
+  volume    = {30},
+  number    = {2},
+  pages     = {39--51},
+  date      = {1999},
+  doi       = {10.1177/875697289903000207},
+  note      = {An advocate's account; its evidence is anecdotal by the author's own note.
+               Read with Raz, Barnes and Dvir 2003.},
+}
+
+@article{raz2003ccpm,
+  title     = {A Critical Look at Critical Chain Project Management},
+  author    = {Raz, Tzvi and Barnes, Robert and Dvir, Dov},
+  journal   = {Project Management Journal},
+  volume    = {34},
+  number    = {4},
+  pages     = {24--32},
+  date      = {2003},
+  doi       = {10.1177/875697280303400404},
+}
+
+@article{herroelen2001ccpm,
+  title     = {On the Merits and Pitfalls of Critical Chain Scheduling},
+  author    = {Herroelen, Willy and Leus, Roel},
+  journal   = {Journal of Operations Management},
+  volume    = {19},
+  number    = {5},
+  pages     = {559--577},
+  date      = {2001},
+  doi       = {10.1016/S0272-6963(01)00054-7},
+}
+
+@article{browning2001dsm,
+  title     = {Applying the Design Structure Matrix to System Decomposition and Integration
+               Problems: A Review and New Directions},
+  author    = {Browning, Tyson R.},
+  journal   = {IEEE Transactions on Engineering Management},
+  volume    = {48},
+  number    = {3},
+  pages     = {292--306},
+  date      = {2001},
+  doi       = {10.1109/17.946528},
+}
+
+@article{steward1981dsm,
+  title     = {The Design Structure System: A Method for Managing the Design of Complex Systems},
+  author    = {Steward, Donald V.},
+  journal   = {IEEE Transactions on Engineering Management},
+  volume    = {EM-28},
+  number    = {3},
+  pages     = {71--74},
+  date      = {1981},
+  doi       = {10.1109/TEM.1981.6448589},
+}
+
+@article{wilson2003gantt,
+  title     = {Gantt Charts: A Centenary Appreciation},
+  author    = {Wilson, James M.},
+  journal   = {European Journal of Operational Research},
+  volume    = {149},
+  number    = {2},
+  pages     = {430--437},
+  date      = {2003},
+  doi       = {10.1016/S0377-2217(02)00769-5},
+}
+
+@article{boehm1996anchoring,
+  title     = {Anchoring the Software Process},
+  author    = {Boehm, Barry},
+  journal   = {IEEE Software},
+  volume    = {13},
+  number    = {4},
+  pages     = {73--82},
+  date      = {1996},
+  doi       = {10.1109/52.526834},
+}
+
+@article{espinosa2007coordination,
+  title     = {Team Knowledge and Coordination in Geographically Distributed Software
+               Development},
+  author    = {Espinosa, J. Alberto and Slaughter, Sandra A. and Kraut, Robert E. and
+               Herbsleb, James D.},
+  journal   = {Journal of Management Information Systems},
+  volume    = {24},
+  number    = {1},
+  pages     = {135--169},
+  date      = {2007},
+  doi       = {10.2753/MIS0742-1222240104},
+}
+
+@article{herbsleb1995ooad,
+  title     = {Object-Oriented Analysis and Design in Software Project Teams},
+  author    = {Herbsleb, James D. and Klein, Helen and Olson, Gary M. and Brunner, Hans
+               and Olson, Judith S. and Harding, Joe},
+  journal   = {Human--Computer Interaction},
+  volume    = {10},
+  number    = {2--3},
+  pages     = {249--292},
+  date      = {1995},
+  doi       = {10.1207/s15327051hci1002&3_4},
+}
+
+@article{ruhe2005release,
+  title     = {The Art and Science of Software Release Planning},
+  author    = {Ruhe, G{\"u}nther and Saliu, Moshood Omolade},
+  journal   = {IEEE Software},
+  volume    = {22},
+  number    = {6},
+  pages     = {47--53},
+  date      = {2005},
+  doi       = {10.1109/MS.2005.164},
+}
+
+@article{karlsson1997costvalue,
+  title     = {A Cost-Value Approach for Prioritizing Requirements},
+  author    = {Karlsson, Joachim and Ryan, Kevin},
+  journal   = {IEEE Software},
+  volume    = {14},
+  number    = {5},
+  pages     = {67--74},
+  date      = {1997},
+  doi       = {10.1109/52.605933},
+}
+
+@article{svahnberg2010release,
+  title     = {A Systematic Review on Strategic Release Planning Models},
+  author    = {Svahnberg, Mikael and Gorschek, Tony and Feldt, Robert and Torkar, Richard
+               and Saleem, Saad Bin and Shafique, Muhammad Usman},
+  journal   = {Information and Software Technology},
+  volume    = {52},
+  number    = {3},
+  pages     = {237--248},
+  date      = {2010},
+  doi       = {10.1016/j.infsof.2009.11.006},
+}
+
+@article{achimugu2014prioritization,
+  title     = {A Systematic Literature Review of Software Requirements Prioritization Research},
+  author    = {Achimugu, Philip and Selamat, Ali and Ibrahim, Roliana and Mahrin, Mohd Naz'ri},
+  journal   = {Information and Software Technology},
+  volume    = {56},
+  number    = {6},
+  pages     = {568--585},
+  date      = {2014},
+  doi       = {10.1016/j.infsof.2014.02.001},
+}
+
+@inproceedings{racheva2010agileprio,
+  title     = {A Conceptual Model and Process for Client-Driven Agile Requirements
+               Prioritization},
+  author    = {Racheva, Zornitza and Daneva, Maya and Herrmann, Andrea and Wieringa, Roel J.},
+  booktitle = {Fourth International Conference on Research Challenges in Information
+               Science ({RCIS})},
+  publisher = {IEEE},
+  pages     = {287--298},
+  date      = {2010},
+  doi       = {10.1109/RCIS.2010.5507388},
+}
+
+@article{jalote2004timeboxing,
+  title     = {Timeboxing: A Process Model for Iterative Software Development},
+  author    = {Jalote, Pankaj and Palit, Aveejeet and Kurien, Priya and Peethamber, V. T.},
+  journal   = {Journal of Systems and Software},
+  volume    = {70},
+  number    = {1--2},
+  pages     = {117--127},
+  date      = {2004},
+  doi       = {10.1016/S0164-1212(03)00010-4},
+}
+
+@inproceedings{miranda2022moscow,
+  title     = {Moscow Rules: A Quantitative Expos{\'e}},
+  author    = {Miranda, Eduardo},
+  booktitle = {Agile Processes in Software Engineering and Extreme Programming ({XP} 2022)},
+  series    = {Lecture Notes in Business Information Processing},
+  publisher = {Springer},
+  pages     = {19--34},
+  date      = {2022},
+  doi       = {10.1007/978-3-031-08169-9_2},
+  note      = {A simulation of DSDM's 60/20/20 MoSCoW guidance, not of the 2011
+               two-estimate Buffered MoSCoW method.},
+}
+
+@book{dsdm2014moscow,
+  title     = {The {DSDM} Agile Project Framework},
+  author    = {{DSDM Consortium}},
+  publisher = {Dynamic Systems Development Method Limited},
+  date      = {2014},
+  url       = {https://www.agilebusiness.org/wp-content/uploads/2026/05/DSDM-Agile-Project-Framework-Handbook.pdf},
+  note      = {Handbook; the review read the MoSCoW Prioritisation and Timeboxing chapters.
+               Must Have ``no more than 60\%'' of effort, Could ``around 20\%''; it gives no
+               Should Have figure.},
+}
+
+@misc{sami2024llmprio,
+  title     = {Prioritizing Software Requirements Using Large Language Models},
+  author    = {Sami, Malik Abdul and Rasheed, Zeeshan and Waseem, Muhammad and Zhang, Zheying
+               and Herda, Tomas and Abrahamsson, Pekka},
+  date      = {2024},
+  eprint    = {2405.01564},
+  eprinttype = {arxiv},
+  url       = {https://arxiv.org/abs/2405.01564},
+  note      = {Unrefereed preprint.},
+}
+
+@inproceedings{andersen2006milestone,
+  title     = {Milestone Planning --- A Different Planning Approach},
+  author    = {Andersen, Erling S.},
+  booktitle = {PMI Global Congress 2006 --- Asia Pacific},
+  location  = {Bangkok, Thailand},
+  publisher = {Project Management Institute},
+  date      = {2006},
+  url       = {https://www.pmi.org/learning/library/milestone-different-planning-approach-7635},
+  note      = {Practitioner congress paper, no DOI. Restates Andersen 1996 and adds the milestone
+               plan as a robust plan, result paths, and scheduling by synchronising with the
+               base organisation.},
+}
+
+% ---- Tracking review (review/track/bib-new.bib), merged 2026-10-11 ----
+
+@inproceedings{sulaiman2006agileevm,
+  title     = {{AgileEVM} -- Earned Value Management in {Scrum} Projects},
+  author    = {Sulaiman, Tamara and Barton, Brent and Blackburn, Thomas},
+  booktitle = {Proceedings of {AGILE} 2006 ({AGILE}'06)},
+  pages     = {7--16},
+  publisher = {IEEE},
+  date      = {2006},
+  doi       = {10.1109/AGILE.2006.15},
+}
+
+@inproceedings{cabri2006agilereporting,
+  title     = {Earned Value and Agile Reporting},
+  author    = {Cabri, Anthony and Griffiths, Mike},
+  booktitle = {Proceedings of {AGILE} 2006 ({AGILE}'06)},
+  pages     = {17--22},
+  publisher = {IEEE},
+  date      = {2006},
+  doi       = {10.1109/AGILE.2006.21},
+  note      = {Practitioner paper with sample charts; it reports no case},
+}
+
+@article{lipke2003schedule,
+  title        = {Schedule Is Different},
+  author       = {Lipke, Walt},
+  journaltitle = {The Measurable News},
+  date         = {2003-03},
+  pages        = {10--15},
+  url          = {https://www.earnedschedule.com/Docs/Schedule%20is%20Different.pdf},
+  note         = {College of Performance Management. Part 2 appeared in the Summer 2003 issue;
+                  the PDF on earnedschedule.com is a consolidated version and prints no venue.
+                  Venue and pages from secondary bibliographies, not from the PDF},
+}
+
+@article{ford2003ninety,
+  title        = {Overcoming the 90\% Syndrome: Iteration Management in Concurrent Development Projects},
+  author       = {Ford, David N. and Sterman, John D.},
+  journaltitle = {Concurrent Engineering: Research and Applications},
+  volume       = {11},
+  number       = {3},
+  pages        = {177--186},
+  date         = {2003},
+  doi          = {10.1177/106329303038031},
+}
+
+@article{snow2002status,
+  title        = {The Challenge of Accurate Software Project Status Reporting: A Two-Stage Model Incorporating Status Errors and Reporting Bias},
+  author       = {Snow, Andrew P. and Keil, Mark},
+  journaltitle = {IEEE Transactions on Engineering Management},
+  volume       = {49},
+  number       = {4},
+  pages        = {491--504},
+  date         = {2002},
+  doi          = {10.1109/TEM.2002.807290},
+}
+
+@article{keil2004badnews,
+  title        = {``{Why Didn't Somebody Tell Me}?'': Climate, Information Asymmetry, and Bad News about Troubled Projects},
+  author       = {Keil, Mark and Smith, H. Jeff and Pawlowski, Suzanne and Jin, Leigh},
+  journaltitle = {ACM SIGMIS Database: the DATABASE for Advances in Information Systems},
+  volume       = {35},
+  number       = {2},
+  pages        = {65--84},
+  date         = {2004},
+  doi          = {10.1145/1007965.1007971},
+}
+
+@article{keil1995escalation,
+  title        = {Pulling the Plug: Software Project Management and the Problem of Project Escalation},
+  author       = {Keil, Mark},
+  journaltitle = {MIS Quarterly},
+  volume       = {19},
+  number       = {4},
+  pages        = {421--447},
+  date         = {1995},
+  doi          = {10.2307/249627},
+}
+
+@article{christensen1998evm,
+  title        = {The Costs and Benefits of the Earned Value Management Process},
+  author       = {Christensen, David S.},
+  journaltitle = {Journal of Parametrics},
+  volume       = {18},
+  number       = {2},
+  pages        = {1--16},
+  date         = {1998},
+  doi          = {10.1080/10157891.1998.10462568},
+  note         = {A review by an advocate; it states no study had compared EVM's costs with its benefits},
+}
+
+@article{kupiainen2015agilemetrics,
+  title        = {Using Metrics in Agile and Lean Software Development -- A Systematic Literature Review of Industrial Studies},
+  author       = {Kupiainen, Eetu and M{\"a}ntyl{\"a}, Mika V. and Itkonen, Juha},
+  journaltitle = {Information and Software Technology},
+  volume       = {62},
+  pages        = {143--163},
+  date         = {2015},
+  doi          = {10.1016/j.infsof.2015.02.005},
+}
+
+@article{mahnic2012scrum,
+  title        = {Measuring Progress of {Scrum}-based Software Projects},
+  author       = {Mahni{\v{c}}, Viljan and {\v{Z}}abkar, Nata{\v{s}}a},
+  journaltitle = {Elektronika ir Elektrotechnika},
+  volume       = {18},
+  number       = {8},
+  pages        = {73--76},
+  date         = {2012},
+  doi          = {10.5755/j01.eee.18.8.2630},
+}
+
+@article{bouwers2012measure,
+  title        = {Getting What You Measure},
+  author       = {Bouwers, Eric and Visser, Joost and van Deursen, Arie},
+  journaltitle = {Communications of the ACM},
+  volume       = {55},
+  number       = {7},
+  pages        = {54--59},
+  date         = {2012},
+  doi          = {10.1145/2209249.2209266},
+  note         = {Also published in ACM Queue 10(5), 2012},
+}
+
+@inproceedings{kaner2004metrics,
+  title     = {Software Engineering Metrics: What Do They Measure and How Do We Know?},
+  author    = {Kaner, Cem and Bond, Walter P.},
+  booktitle = {10th International Software Metrics Symposium ({METRICS} 2004)},
+  date      = {2004},
+  url       = {https://kaner.com/pdfs/metrics2004.pdf},
+  note      = {Cited from the authors' version, which prints no page numbers},
+}
+
+@article{demarco2009idea,
+  title        = {Software Engineering: An Idea Whose Time Has Come and Gone?},
+  author       = {DeMarco, Tom},
+  journaltitle = {IEEE Software},
+  volume       = {26},
+  number       = {4},
+  pages        = {95--96},
+  date         = {2009},
+  doi          = {10.1109/MS.2009.101},
+}
+
+@article{stevens1946scales,
+  title        = {On the Theory of Scales of Measurement},
+  author       = {Stevens, S. S.},
+  journaltitle = {Science},
+  volume       = {103},
+  number       = {2684},
+  pages        = {677--680},
+  date         = {1946},
+  doi          = {10.1126/science.103.2684.677},
+}
+
+@book{pressman2010tracking,
+  title     = {Software Engineering: A Practitioner's Approach},
+  author    = {Pressman, Roger S.},
+  edition   = {7},
+  publisher = {McGraw-Hill},
+  isbn      = {978-0-07-337597-7},
+  date      = {2010},
+  note      = {Cited here for \S27.6, Earned Value Analysis (printed pp. 739--742). A textbook;
+               its figures are illustrative worked values},
+}
+
+@book{wysocki2003tracking,
+  title     = {Effective Project Management: Traditional, Adaptive, Extreme},
+  author    = {Wysocki, Robert K. and McGary, Rudd},
+  edition   = {3},
+  publisher = {Wiley Publishing},
+  location  = {Indianapolis},
+  isbn      = {0-471-43221-0},
+  date      = {2003},
+  note      = {Cited here for chapter 10, Monitoring and Controlling Progress. A practitioner handbook},
+}
+
+@book{rubin2012tracking,
+  title     = {Essential Scrum: A Practical Guide to the Most Popular Agile Process},
+  author    = {Rubin, Kenneth S.},
+  publisher = {Addison-Wesley},
+  date      = {2012},
+  note      = {Cited here for velocity, sprint execution and release tracking. A practitioner textbook},
+}
+
+
+@article{anbari2003evm,
+  title        = {Earned Value Project Management Method and Extensions},
+  author       = {Anbari, Frank T.},
+  journaltitle = {Project Management Journal},
+  volume       = {34},
+  number       = {4},
+  pages        = {12--23},
+  date         = {2003},
+  doi          = {10.1177/875697280303400403},
 }

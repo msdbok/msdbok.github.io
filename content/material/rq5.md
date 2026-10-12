@@ -5,189 +5,171 @@ nav_order: 5
 page_type: question-set
 layout: default
 ---
-# RQ 5 - Planning, Activity, Milestones
 
-## 1. Lecture Questions
+# RQ 5 — Planning: Milestones, Activities and Critical Chain
 
-### 1.1 Planning Intro
+Covers **L5a** (why plan, predictive and agile planning, sponsor plans, milestones and how to date
+them) and **L5b** (activity planning, the critical path, float and levelling, views of a plan, why
+schedules run late, and critical chain). Summaries at [SN L5a](sn5a.html) and [SN L5b](sn5b.html);
+the detail is in the [Planning](../plan/) area.
 
-1. **Mechanisms of Coordination**  
-    Compare the three main coordination mechanisms — **hierarchies**, **shared representations**, and **communication** — giving an example of each in software teams.
-2. **Purpose of Planning**  
-    Beyond scheduling and budgeting, what are the key functions of planning in aligning people, work, and expectations?
-3. **Qualities of a Good Plan**  
-    The lecture says “a good plan is like a good program.” Explain this analogy using two of the listed plan properties (e.g., reliability, robustness, extensibility).
-4. **Predictive vs. Agile Planning**  
-    How do predictive and agile approaches differ in how they decide _what_, _when_, and _who_ — especially regarding task timing and team structure?
-5. **Tracking and Reporting**  
-    What are the main tracking artifacts used in predictive vs. agile planning, and what does each measure?
-6. **Coordination and Control Philosophy**  
-    Contrast the **control styles** and **goals** of predictive and agile approaches. How do they each achieve coordination?
-7. **Sponsor-Oriented Planning**  
-    What distinguishes a sponsor-oriented plan from a developer-oriented one? Why is this distinction important for project success?
-
-### 1.2 Milestones
-
-8. **Definition and Purpose**  
-    What is a milestone in project planning, and how does it differ from a regular task or activity?
-9. **Sponsor Perspective**  
-    Why must a milestone be _verifiable_ and _relevant to the sponsor_? Give an example of each.
-10. **Bad Milestone Examples**  
-    Why are “Iteration 2 completed” or “Low-level design finished” considered poor milestone definitions?
-11. **Outcome vs. Activity**  
-    Summarize the key differences between **activity planning** and **milestone planning** in terms of focus, volatility, and required information.
-12. **Sponsor-Oriented Plan**  
-    In the example milestone table, what features make it a good sponsor-oriented plan rather than an internal schedule?
-13. **Milestone Dependencies**  
-    What does a **Finish-to-Finish (FF)** dependency between milestones mean, and how does it allow flexibility in scheduling?
-14. **Hard vs. Soft Dates**  
-    Explain the difference between a **hard date** and a **soft date** in milestone planning. Provide an example of each.
-15. **Definition of Done (DoD)**  
-    What is the role of the **Definition of Done** in verifying milestone completion, and how did it evolve from the ETVX model?
-16. **Good Milestone Criteria**  
-    What four attributes should every milestone meet (hint: Specific, Verifiable, Relevant, Timely)?  
-    Why are these essential for project tracking?
-17. **Resource and Effort Planning**  
-    How is the **resource-use curve** used in milestone planning, and what factors should be considered when estimating total effort?
-
-### 1.3 Activities
-
-18. **Purpose of Activity Planning**  
-    What is the main purpose of activity planning, and how does it convert milestones into an executable schedule?
-19. **Visibility and Control**  
-    What three aspects of project execution does activity planning make visible, and why are they essential for coordination?
-20. **Pull vs. Push Mechanisms**  
-    Explain the difference between the **pull** mechanism used in Scrum and the **push** mechanism used in plan-oriented approaches.  
-    How do these mechanisms influence team autonomy and accountability?
-21. **Scrum Planning Artifacts**  
-    Which Scrum artifacts (e.g., Sprint Backlog, Task Board) support activity planning, and how do they help track progress daily?
-22. **Rolling Wave Planning**  
-    In plan-oriented projects, what is **rolling wave planning** and why is it used instead of defining all tasks at the project start?
-23. **Dependency Types**  
-    Describe the four primary dependency relationships: **Finish-to-Start (FS)**, **Finish-to-Finish (FF)**, **Start-to-Start (SS)**, and **Start-to-Finish (SF)**.  
-    Give a practical software example for one of them.
-24. **Definition and Role**  
-    Define the **critical path**. Why do activities on this path have **zero float**, and how does this affect project risk?
-25. **Calculations**  
-    What is the difference between the **forward pass** and **backward pass** in CPM analysis?
-26. **Float Concepts**  
-    Distinguish between **total float** and **free float**. Which one is more useful for task-level decision making?
-27. **Limitations of CPM (1)**  
-    Why can CPM understate project completion time when there is **uncertainty** in activity durations?
-28. **Limitations of CPM (2)**  
-    What are the main assumptions behind CPM that make it unrealistic for complex software projects (e.g., fixed durations, independence, perfect estimates)?
-29. **Limitations of CPM (3)**  
-    Why can CPM fail to capture **iteration, rework, or overlapping tasks**, and how does this affect software project planning accuracy?
-30. **Limitations of CPM (4)**  
-    How does **merge path bias** distort CPM’s predicted finish date? Illustrate using a small example with parallel paths.
-31. **Gantt Chart Complement**  
-    How does a Gantt chart complement an activity network? What kind of additional information does it provide for managers and stakeholders?
-32. **CCPM vs. CPM**  
-    What additional factors does CCPM consider beyond task dependencies, and how does this change scheduling priorities?
-33. **Merge Bias and Critical Chain**  
-    Explain what **merge path bias** is and how **Critical Chain Project Management (CCPM)** helps mitigate its effects.
-34. **Types of Buffers**  
-    List and describe the three main types of buffers in CCPM — **project buffer**, **feeding buffer**, and **resource buffer**.  
-    What purpose does each serve?
-35. **Focus on Resources**  
-    How does CCPM handle **resource contention** differently from CPM?
-36. **Human Behavior Factors**  
-    CCPM was designed partly to address “Parkinson’s Law” and “Student Syndrome.”  
-    Explain what these mean and how CCPM mitigates their effects.
-37. **Buffer Management**  
-    In CCPM, how does monitoring **buffer consumption** help teams control progress and uncertainty during project execution?
-38. **Advantages of CCPM**  
-    Summarize three key advantages CCPM provides compared to traditional CPM under conditions of uncertainty and multitasking.
-39. **Limitations of CCPM**  
-    What assumptions in CCPM may not hold in practice (e.g., individual safety times, independence of task risks)?  
-    How could these limit its effectiveness in real-world software projects?
+Answer each in a short paragraph: state your claim first, then the reasoning or the evidence, then a
+concrete software example where one is asked for.
 
 ---
 
-## 2. Reading Questions
+## 1. Lecture Questions — L5a
 
-### 2.1 Andersen, “Warning: Activity Planning is Hazardous to Your Project’s Health!” (1996)
+### 1.1 Why plan
 
-1. **Core Argument**  
-    Why does Andersen argue that early, detailed **activity planning** is hazardous to a project’s health?
-2. **Uniqueness of Projects**  
-    How does the uniqueness of most projects make it impossible to define all activities meaningfully at the start?
-3. **Four Illusions of Activity Planning**  
-    Andersen lists several reasons why planners believe early activity plans are possible (e.g., reuse of past projects, technical focus).  
-    Which of these assumptions are most problematic in software or organizational projects?
-4. **Focus Shift**  
-    According to Andersen, how does activity planning divert attention from the more important question of **results**?
-5. **Defining Milestones**  
-    How does Andersen redefine a **milestone**, and in what way does this differ from the common “end of activity” view?
-6. **Result Paths and Logical Planning**  
-    What are **result paths**, and how do they help represent multiple, interdependent project outcomes?
-7. **Responsibility and Ownership**  
-    How does a **milestone responsibility chart** improve accountability compared to assigning responsibility for individual tasks?
-8. **Scheduling Without Activities**  
-    How can project time schedules be created without first listing every activity?  
-    What criteria does Andersen suggest for allocating time between milestones?
-9. **Timing of Activity Planning**  
-    Andersen does not reject activity planning completely.  
-    When should it be performed, and why should it wait until close to milestone execution?
-10. **Modern Relevance**  
-    In what ways does Andersen’s milestone-based approach anticipate ideas later found in **Agile** or **iterative** project planning?
+1. A plan is coordination prepared in advance. Compare it with the other three mechanisms: reference to a higher level, shared representations and communication. Give a software-team example of each.
+2. "We plan to stop the client changing course." Why is this a wrong reason to plan, and what does a plan let you do when a change arrives?
+3. A good plan has the properties of a good program. Pick two of them and show what a bug of each kind looks like in a plan.
 
-### 2.2 DSMC Scheduling Guide For Program Managers
+### 1.2 Predictive and agile planning
 
-11. **Purpose and Context**  
-    What problem in traditional **activity planning** does the DSM method aim to solve in complex engineering or software projects?
-12. **Representation of Dependencies**  
-    How does the **Design Structure Matrix (DSM)** represent task dependencies differently from an **Activity Network (CPM or PERT)**?
-13. **Iterative and Coupled Activities**  
-    Why are **iterations and feedback loops** difficult to capture in classical activity networks?  
-    How does DSM make these visible?
-14. **Information Flow Perspective**  
-    DSM treats development as an **information flow problem**.  
-    How does this view help identify more realistic sequencing of activities?
-15. **Matrix Partitioning and Sequencing**  
-    What is the goal of **partitioning** the DSM, and how does it assist planners in organizing and sequencing interdependent tasks?
-16. **Clusters and Subsystems**  
-    DSM often reveals **clusters of highly coupled tasks**.  
-    How can recognizing these clusters improve planning and coordination compared to traditional work breakdowns?
-17. **Iterative Loops and Planning Trade-offs**  
-    When DSM identifies feedback loops, what are the typical management responses?  
-    (e.g., restructuring tasks, overlapping iterations, or planning “design cycles.”)
-18. **Comparison to Critical Path Method (CPM)**  
-    In what ways is DSM more suitable than CPM for planning **research, design, or software development** projects?
-19. **Activity Sequencing Under Uncertainty**  
-    How can DSM support **rolling-wave or adaptive planning**, aligning with modern agile practices?
-20. **Integration with Project Tools**  
-    How might DSM complement or improve upon traditional activity planning tools like **Gantt charts** or **network diagrams**?
+1. Both approaches decide what, when and who. Compare when each approach takes these decisions, and who takes them.
+2. Predictive control acts on deviations from a baseline; Scrum inspects an increment each sprint. Which suits a project whose requirements change often, and why?
+3. "Agile teams do not plan." Use the five planning levels to argue against this claim.
+4. Why are commitments planned before activities? What goes wrong when a team plans tasks before it agrees what it will deliver?
 
-### 2.3 Critical Chain Project Management: Coming to a Radar Screen Near You!” (Cutter IT Journal, 2003)
+### 1.3 Two plans, two readers
 
-21. **Adoption Gap**  
-    Why was Critical Chain Project Management (CCPM) initially slow to spread among project managers,  
-    despite claims of major performance improvements?
-22. **Limits of Activity Planning**  
-    What key weaknesses of traditional activity-based planning does CCPM attempt to overcome?
-23. **The “Hurry-Up-and-Wait” Cycle**  
-    What behavioral patterns like _student syndrome_ and _Parkinson’s Law_ cause project safety margins to fail?
-24. **Pooled Safety Concept**  
-    How does pooling safety time into a **project buffer** make schedules shorter and more reliable?
-25. **Behavioral Change**  
-    What does “relay-runner behavior” mean in CCPM, and how does it differ from typical task management in Gantt-based planning?
-26. **Resource Constraints**  
-    In multiproject environments, why does **bad multitasking** drastically reduce throughput,  
-    even when every resource appears “fully utilized”?
-27. **Organizational Case**  
-    In the Abbott Diagnostics Division example, what cultural and structural changes were needed  
-    to make CCPM succeed across multiple sites?
-28. **Agile Integration**  
-    How did the Segway project combine **Agile iteration** with **Critical Chain scheduling**,  
-    and what benefits resulted from this hybrid approach?
-29. **Bridging the “Reality Gap”**  
-    According to Robert Newbold, what is the difference between the **Old Game** and the **New Game** of project management,  
-    and how does CCPM support the latter?
-30. **Modern Relevance**  
-    How does CCPM anticipate ideas now common in **Agile** and **Lean** methods — such as flow, focus, and reduced waste?
+1. What separates a sponsor-oriented plan from a developer-oriented one? Why is a changed task order the team's business, but a changed date a renegotiation?
+2. Why do "Iteration 2 completed" and "Low-level design finished" tell a sponsor nothing? Rewrite one as a result she could check.
+3. Why does a sponsor-oriented plan such as AmazonLite's list the client's milestones beside the team's?
+
+### 1.4 What a milestone is
+
+1. Andersen defines a milestone as a result, not the end of a task. How does writing each milestone as "When…" enforce this?
+2. Compare milestone planning and activity planning on focus, information needed and stability. Why can milestones be planned early when activities cannot?
+3. Milestones depend on each other finish-to-finish. Why does this stop a milestone plan from becoming a waterfall?
+4. Why assign responsibility per milestone rather than per task? What does a responsibility chart that is hard to fill in tell you?
+
+### 1.5 Writing good milestones
+
+1. Why does a team need control milestones a day or two apart, when the sponsor needs result milestones weeks apart? Connect your answer to reporting "done" or "not done", never percentages.
+2. A milestone must be specific, verifiable, relevant and timely. Write one for a software project that fails one test, then repair it.
+3. Exit criteria and Scrum's Definition of Done do the same job. What is that job, and what happens in a milestone review without them?
+4. Boehm says: do not start full-scale development before the LCA milestone is met. What does LCA check that LCO does not, and why is skipping it dangerous?
+5. "Ownership decides, not the calendar." Explain this rule for hard and soft dates, with one software example of each.
+
+### 1.6 Planning milestones, worked
+
+1. Why start from the hours that actually exist, not from headcount times forty? What does a resource plan show that a headcount hides?
+2. Why place the hard-milestone work first? Why is white space in a schedule not a buffer?
+3. Drawn to scale, AmazonLite needed one more month. Why did drawing it show this, and what other options did the planner have?
+4. Programme managers hold a reserve out of sight. Why not hand it out with the schedule?
 
 ---
+
+## 2. Lecture Questions — L5b
+
+### 2.1 How teams plan activities
+
+1. Compare pull in Scrum with push in plan-driven planning. Who picks a task, who answers for it, and how does each typically fail?
+2. Why is the sprint backlog a commitment of the team, not a list of personal tasks? Why does the team commit only to hours it has measured?
+3. Why is rolling wave the plan-driven answer to early ignorance? How does it match Andersen's advice on when to plan activities?
+
+### 2.2 Networks and the critical path
+
+1. A network records who waits, not who works. What does it leave out, and why does that matter when you read its finish date?
+2. Why is finish-to-start the safe default between tasks? What do you buy, and risk, when you relax a link to start-to-start?
+3. Why do tasks on the critical path have zero float? What does that mean for the risks on those tasks?
+4. On DuPont's first test only about one job in ten was critical. Why does that make the network worth drawing?
+5. Without formulas, explain what the forward and backward passes give each task. Why must you recheck the critical path after every change?
+
+### 2.3 Float and levelling
+
+1. Distinguish free float from total float. Why is free float safer to give away to a developer?
+2. Why does levelling almost always stretch the schedule? Why spend free float first and overtime last?
+
+### 2.4 Views of a plan
+
+1. "Report with the Gantt chart; decide with the network." Explain why, and say what a Gantt chart cannot show about resources.
+2. Why can a DSM show a design loop that a network cannot draw? Give a software example of two tasks that need each other's outputs.
+3. Which view answers which question: what the sponsor gets by March, which slip moves the date, where design work loops back? Say what each view leaves out.
+
+### 2.5 Why schedules run late
+
+1. Why is the CPM finish date a floor and not a forecast? Take two of its assumptions that fail in software work, and say what answers each.
+2. Why is the most likely duration not a likely date? What should you ask an estimator for instead?
+3. Explain merge bias. Why do merging paths pass on delays but seldom pass on savings?
+4. Students' best guesses ran short even when they knew their past record. What does this suggest about how to get a better estimate?
+5. Explain Parkinson's Law and the student syndrome. How much evidence stands behind each?
+6. Why does juggling three projects make all three late, with the same people and the same work?
+
+### 2.6 Critical chain
+
+1. What does critical chain count that CPM does not? Why does the longest path move once shared people are counted?
+2. Why does pooled safety protect the date in less time than safety padded into each task? Which assumption must hold for pooling to work?
+3. Name the three buffers and the threat each one guards against. How does the feeding buffer answer merge bias?
+4. Critical chain removes task dates and asks people to work like relay runners. How does this weaken Parkinson's Law and the student syndrome?
+5. With no task dates, how does a manager control the project? Why is one late task not news, while a fast-burning buffer is?
+6. Pick two risks that CPM and critical chain share. Why does switching method not remove them?
+7. What survives of critical chain after the simulation and the data on estimates, and what does not? Answer for buffer size and for cutting every estimate by half.
+
+---
+
+## 3. Reading Questions
+
+Cite the reading you used, with a page number where you have one.
+
+### 3.1 Andersen, "Warning: Activity Planning is Hazardous to Your Project's Health!" (1996)
+
+*International Journal of Project Management* 14(2), 89–94 {% cite andersen_warning_1996 %}.
+
+1. Why does Andersen argue that early, detailed activity planning is hazardous to a project? Does the argument hold for software?
+2. Why does the uniqueness of a project make it impossible to list its activities meaningfully at the start? Give a software example.
+3. Andersen gives four reasons why planners still draw full activity networks early. Which two are most dangerous on a software project, and why?
+4. How does activity planning pull attention away from results? What does a team lose when it reports on tasks instead?
+5. How does Andersen's milestone differ from the common "end of an activity" view? Use his Figure 2 or a software example.
+6. What are result paths? Why do the dependencies between paths matter?
+7. How does a milestone responsibility chart improve accountability compared with responsibility per task?
+8. How can a time schedule be made without listing every activity first? Explain the two ways Andersen allocates time between milestones.
+9. Andersen does not reject activity planning. When should it be done, and why close to the work on each milestone?
+10. The 1996 paper never mentions iterative methods. Which of its ideas would an agile team recognise, and where does the comparison break down?
+
+### 3.2 Browning, "Applying the Design Structure Matrix to System Decomposition and Integration Problems: A Review and New Directions" (2001)
+
+*IEEE Transactions on Engineering Management* 48(3), 292–306 {% cite browning2001dsm %}.
+
+1. What problem in design and development work does the Design Structure Matrix (DSM) help to solve? Use Browning's explanation of where rework comes from.
+2. How does a DSM show a dependency between two activities? How can you tell a feed-forward mark from a feedback mark?
+3. Browning says the activity DSM shows iteration and coupled activities, which PERT/CPM cannot. How does a feedback loop appear in the matrix, and what does a coupled block look like?
+4. Browning treats activities as steps that receive and produce information. How does this view lead to a better order of activities? What happens when planners overlap activities without checking their information needs?
+5. What is the goal of partitioning an activity DSM? How does the result help planners decide which activities must be planned together?
+6. Browning separates static DSMs (components, teams) from time-based DSMs (activities, parameters). Why are static DSMs clustered, while time-based DSMs are sequenced? Use the Ford or the engine-team example.
+7. Partitioning can leave a block of coupled activities. Explain aggregation, decomposition and tearing. Why does Browning not recommend aggregation?
+8. Why does Browning see DSM as better suited than PERT/CPM to design and development work? Does a DSM replace the CPM schedule, or feed it?
+9. Whom should you ask to build an activity DSM, and which four questions do you ask them? Why can the answers be unreliable?
+10. Browning names two things a single DSM does not show. What are they, and how do a Gantt chart or a simulation fill the gap?
+
+### 3.3 *Cutter IT Journal*, "Critical Chain Project Management: Coming to a Radar Screen Near You!" (2003)
+
+*Cutter IT Journal* 16(3), a themed issue edited by Bill Lynch {% cite lynch_critical_2003 %}. Name the article's author when you cite it.
+
+1. Why was critical chain slow to spread among project managers, despite claims of large improvements? Use Higgins's article.
+2. What weaknesses of traditional activity-based planning does critical chain try to overcome?
+3. How do the student syndrome and Parkinson's Law make safety margins in task estimates fail?
+4. How does pooling safety into a project buffer make a schedule both shorter and more reliable?
+5. What does relay-runner behaviour mean, and how does it differ from managing tasks against Gantt-chart dates?
+6. In a multiproject setting, why does bad multitasking cut throughput even when every resource looks fully used?
+7. What cultural and structural changes did Abbott Diagnostics need to make critical chain work across several sites?
+8. How did the Segway project combine agile iterations with critical-chain scheduling, and what did the combination give it?
+9. What is the difference between Newbold's Old Game and New Game of project management? How does critical chain support the New Game?
+10. Zultner separates a 50%-likely estimate from a 90%-likely commitment. Why does critical chain plan tasks at 50% estimates, and why must people be allowed to overrun them without blame?
+
+---
+
+### Acknowledgments
+
+These questions build on the Fall 2025 study-notes selection (SN5) and on lectures by Eduardo
+Miranda {% cite miranda_managing_2014 %}.
+
+### References
+
+{% bibliography --cited %}
 
 ---
 

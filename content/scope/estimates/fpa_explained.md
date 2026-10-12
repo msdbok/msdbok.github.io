@@ -1,329 +1,166 @@
 ---
 parent: Estimates
 title: FPA Explained
-nav_order: 5
+nav_order: 6
 layout: default
+page_type: deep-dive   # the three IFPUG matrices plus one complete, correct worked count; cutting either loses the page's purpose
 ---
 
-# Function Point Analysis (FPA) Explained
+# FPA Explained
 
-## 1. Why size with Function Points?
+A **function-point count** sizes an application in five steps: draw its boundary, classify what lies
+inside as five kinds of component, rate each component from a few counting units, add up the
+weights, and adjust for fourteen system characteristics. Why and when to use FPA is on
+[Function Point Analysis](fpa).
 
-- Estimation is hard and important.
-- LOC isn’t great (language-dependent, easy to game, not known early).
-- Function Points (FP) size what the user gets, not how it’s coded.
+## 1. Why count functions, not lines
 
----
+Lines of code are unknown when the estimate is due and ill-defined afterwards: without a counting
+rule, *"Our software activity produced 163,000 source code instructions on that job"* can be
+misunderstood *"by a factor of three or more"* {% cite park1992size %}. Function points count what the user gets, so the same screens, reports and files score the same whether the
+system is written in C++ or in Clarion {% cite longstreet2002fpa %}.
 
-## 2. What is a Function Point?
+## 2. Step 1 — Draw the boundary
 
-A Function Point measures the amount of business functionality delivered to a user.  
-It’s technology-independent and user-visible.
+*"This boundary must be drawn according to the user’s point of view"*
+{% cite longstreet2004fundamentals %} — the user being someone *"that would provide requirements or
+does acceptance testing"*. A web client and its server sit inside one boundary; a new front end is
+not a new application {% cite longstreet2002fpa %}. The boundary decides what a file is: a customer
+file that application A maintains is internal to A and external to B, which only reads it.
 
----
+## 3. Step 2 — Find the five components
 
-## 3. Overall Model (UFP → AFP)
+Files are **data at rest**; transactions are **data in motion** {% cite longstreet2002fpa %}. A
+transaction is an *elementary process*, *"similar to an acceptance test case"* — the smallest
+activity meaningful to the user.
 
-```mermaid
-flowchart LR
-  subgraph G1[Unadjusted Functional Size]
-    D["Unadjusted Function Points (UFP)"]
-    G[Measurement of Data]
-    H[Measurement of Transactions]
-    G --|+|--> D
-    H --|+|--> D
-  end
+| Component | Rule |
+|---|---|
+| **ILF** internal logical file | a user-recognisable group of data, maintained inside the boundary |
+| **EIF** external interface file | the same, but only referenced; another application maintains it |
+| **EI** external input | data crossing inward that maintains a file; add, change and delete are three EIs |
+| **EO** external output | data crossing outward with derived values; never maintains a file |
+| **EQ** external inquiry | retrieval only — no calculated values, no update |
 
-  subgraph G2[Adjustment Factor]
-    E["14 General System Characteristics (GSCs)"]
-    I["Value Adjustment Factor (VAF)"]
-    E --|+ ratings|--> I
-  end
+Two questions classify every transaction. *Does it change a stored file?* Then it is an **EI**,
+whatever else it computes: *"The only component that maintains an internal logical file is an
+external input."* If not, *does it derive data?* Then it is an **EO**; otherwise an **EQ**
+{% cite longstreet2002fpa %}.
 
-  subgraph G3[Adjusted Size]
-    F["Adjusted Function Points (AFP)"]
-  end
+## 4. Step 3 — Count DETs, RETs and FTRs
 
-  D --|×|--> F
-  I --|×|--> F
-```
+*"A record element type is a user recognizable subgroup of data elements within an ILF or EIF. A
+data element type is a unique user recognizable, nonrecursive, field"*
+{% cite longstreet2004fundamentals %}. A **file type referenced (FTR)** is an ILF or EIF that a
+transaction reads or maintains. Three rules follow.
 
-- **UFP = Data FPs + Transaction FPs**
-- **AFP = UFP × VAF**
+- **RETs count subgroup types, not records.** A department holding 20 employees has **2** RETs —
+  department and employee — not 21 {% cite gunti_function_nodate %}. A file with no subgroups is
+  itself one RET {% cite kang_estimating_2018 %}.
+- **DETs count each field once.** *"If a DET is recursive then only the first occurrence of the
+  DET is considered not every occurrence"* {% cite longstreet2002fpa %}.
+- **A transaction's DETs include its buttons and messages**, and an EO or EQ counts the unique
+  fields of its input and output sides together {% cite longstreet2002fpa %}.
 
----
+The rules are not pedantry. A customer file with 5 fields, holding three credit cards of 7 fields
+each, counted per instance is 26 DETs and 4 RETs — Average, 10 FP. Counted by Longstreet’s rules it
+is 12 DETs and 2 RETs — Low, 7 FP: a **43% overcount** on one file.
 
-## 4. Data Functions
+## 5. Step 4 — Rate and weigh
 
-### 4.1 Types
+Each component is rated from its counting units {% cite longstreet2002fpa kang_estimating_2018 %}.
+Early in a project, rate everything Average and refine later.
 
-- **ILF (Internal Logical File):** logical data the application maintains.
-- **EIF (External Interface File):** logical data the application uses but does not maintain.
+| ILF, EIF | 1–19 DET | 20–50 DET | 51+ DET |
+|---|---|---|---|
+| 1 RET | Low | Low | Average |
+| 2–5 RET | Low | Average | High |
+| 6+ RET | Average | High | High |
 
-```mermaid
-classDiagram
-class DATA_FUNCTIONS
-class INTERNAL_LOGICAL_FILES
-class EXTERNAL_INTERFACE_FILES
+| EO, EQ | 1–5 DET | 6–19 DET | 20+ DET |
+|---|---|---|---|
+| 0–1 FTR | Low | Low | Average |
+| 2–3 FTR | Low | Average | High |
+| 4+ FTR | Average | High | High |
 
-DATA_FUNCTIONS <|-- INTERNAL_LOGICAL_FILES : specializes
-DATA_FUNCTIONS <|-- EXTERNAL_INTERFACE_FILES : specializes
-```
+| EI | 1–4 DET | 5–15 DET | 16+ DET |
+|---|---|---|---|
+| 0–1 FTR | Low | Low | Average |
+| 2 FTR | Low | Average | High |
+| 3+ FTR | Average | High | High |
 
-**Boundary matters:** The same physical file can be ILF for one app and EIF for another.
+Weights, Low / Average / High: **ILF 7/10/15 · EIF 5/7/10 · EI 3/4/6 · EO 4/5/7 · EQ 3/4/6**. The
+sum is the unadjusted count, UFP.
 
-```mermaid
-flowchart TD
-  A[Application A] -->|Maintains → ILF| B[Customer Records]
-  C[Application B] -->|References → EIF| B
-```
+## 6. Step 5 — Adjust for the 14 characteristics
 
-### 4.2 DETs and RETs
+The fourteen general system characteristics are data communications, distributed data processing,
+performance, heavily used configuration, transaction rate, on-line data entry, end-user efficiency,
+on-line update, complex processing, reusability, installation ease, operational ease, multiple
+sites and facilitate change. Each is rated 0 (no influence) to 5 (strong influence throughout); the
+total gives `VAF = 0.65 + total / 100`, between 0.65 and 1.35, and `FP = UFP × VAF`
+{% cite longstreet2002fpa %}.
 
-- **DET (Data Element Type):** user-recognizable field (name, date, amount).
-- **RET (Record Element Type):** subgroup within a file (e.g., header/details).
+## 7. A worked count: an online bookshop's customer accounts
 
-```mermaid
-classDiagram
-class DATA_FUNCTION
-class RECORD_ELEMENT_TYPE
-class DATA_ELEMENT_TYPE
+**Example.** The customer-account module of a fictional online bookshop stores each customer's
+details (name, surname, phone, gender, date of birth), their credit cards (number, type, issue date,
+valid-thru date, valid flag, owner ID, name on card) and their addresses (street, town, country). It
+checks each new card against a card-issuer table that the payment provider maintains. The example is
+adapted from Miranda {% cite miranda_managing_2014 %}.
 
-DATA_FUNCTION *-- "1..*" RECORD_ELEMENT_TYPE
-RECORD_ELEMENT_TYPE *-- "1..*" DATA_ELEMENT_TYPE
-```
+A card or an address means nothing without its customer, so the module has **one** customer ILF with
+three subgroups — however many cards and addresses a customer holds.
 
-### 4.3 Example (Customer, Credit Card, Address)
+| Component | Type | DET | RET / FTR | Rating | FP |
+|---|---|---|---|---|---|
+| Customer file | ILF | 5 + 7 + 3 = 15 | 3 RET | Low | 7 |
+| Card-issuer table | EIF | 3 | 1 RET | Low | 5 |
+| Register customer | EI | 5 + 3 fields, Save, message = 10 | 1 FTR | Low | 3 |
+| Change customer details | EI | 10 | 1 FTR | Low | 3 |
+| Delete customer | EI | name, surname, Delete, *"Are you sure?"* = 4 | 1 FTR | Low | 3 |
+| Add credit card | EI | 5 card fields, Save, message = 7 | 2 FTR | Average | 4 |
+| Remove credit card | EI | card number, Remove, message = 3 | 1 FTR | Low | 3 |
+| View profile | EQ | 8 customer fields + 2 card fields = 10 | 1 FTR | Low | 3 |
+| Card-expiry report | EO | 4 stored fields + days left = 5 | 1 FTR | Low | 4 |
 
-```mermaid
-classDiagram
-class Customer {
-  -name
-  -surname
-  -phoneNumber
-  -gender
-  -born
-}
-class CreditCard {
-  -cardNumber
-  -cardType
-  -issueDate
-  -validThru
-  -valid
-  -ownerId
-  -nameOnCard
-}
-class Address {
-  -street
-  -city
-  -country
-}
-Customer "1" --> "*" CreditCard : creditCard / owner
-Customer "1" --> "*" Address : lives at
+UFP = 12 for files + 23 for transactions = **35**. On-line data entry and on-line update rate 5,
+multiple sites 0, and the fourteen total 34, so `VAF = 0.99` and the module is about
+**35 FP**. Counted per instance instead — a customer with three cards and two addresses — the
+customer file becomes 6 RETs and 32 DETs, High, 15 FP, and the module grows to 43: a 23% overcount
+from one file.
 
-note for Customer "ILF with 2+ RET<br>DET=5"
-note for Address "If 2 addresses → 2 RETs<br>each DET=3"
-note for CreditCard "ILF if stored separately<br>DET=7 for each stored card"
-```
+## 8. When it is worth the effort
 
-- Customer is an ILF (system maintains it), with DETs=5 and 2+ RETs (e.g., personal info + repeated related info).
-- Address may be additional RETs under Customer (each address DET=3) or a separate ILF/EIF if maintained elsewhere.
-- CreditCard is a separate ILF if this app maintains it; otherwise it’s an EIF.
+Count when the size must be defended to someone else — a bid, a contract, a productivity
+comparison; a trained counter needs about one work-hour per 100 FP {% cite kemerer1993fp %}. A team
+planning its own sprints is better served by a relative unit such as story points
+{% cite rubin_essential_2012 %}.
 
-**Quick table:**
+## How solid is this?
 
-| Entity     | Type | RETs                        | DETs |
-|------------|------|----------------------------|------|
-| Customer   | ILF  | ≥2 (personal, related sets) | 5    |
-| Address    | RETs under Customer or separate ILF/EIF | 2 (in example) | 3    |
-| CreditCard | ILF (if maintained) / EIF (if external) | n (per stored card) | 7    |
-
-**Card illustration:**
-
-```mermaid
-flowchart LR
-  subgraph CC[Credit Card]
-    direction TB
-    CC1["Card number: 9999 8888 7777 6666<br/>Card Type: STANDARD VISA<br/>Issue Date: 03/15/2020<br/>Valid thru: 03/2025<br/>Valid: true<br/>Card Owner ID: 100 200<br/>Name on card: Alex Doe<br/><b>DET=7</b>"]
-  end
-
-  subgraph C[Customer]
-    direction TB
-    C1["Name: Alex<br/>Surname: Doe<br/>Phone number: +1 555 123 4567<br/>Gender: Non-binary<br/>Born: 05/10/1990<br/><b>DET=5</b>"]
-    C2["Business Address<br/>Address: 10 Oak Avenue<br/>Town: Greenfield<br/>Country: US<br/><b>DET=3</b>"]
-    C3["Home Address<br/>Address: 22 Maple Street<br/>Town: Riverdale<br/>Country: US<br/><b>DET=3</b>"]
-  end
-```
+- **Where it comes from.** Longstreet sells FPA training; the rules here come from his IFPUG
+  4.1-era booklet, which goes beyond IFPUG in places {% cite longstreet2002fpa %}. The core rules
+  match Albrecht 1983, Gunti and Kang {% cite albrecht1983fpa %}.
+- **Modelling is a judgement call.** Treating cards as a second ILF is defensible if a card means
+  something without its owner. Such choices are part of the median **12%** between two trained
+  counters {% cite kemerer1993fp %}.
+- **What not to copy.** Gunti rates an EQ by the higher of its input and output sides — Albrecht's
+  1983 rule, since superseded {% cite gunti_function_nodate %}.
+- **The 43% and 23% overcounts** are computed from the rules, not measured.
 
 ---
 
-## 5. Data Complexity & Weights
+### Acknowledgments
 
-### 5.1 ILF/EIF Complexity Matrix
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
-| RETs \ DETs | 1–19 | 20–50 | 51+   |
-|-------------|------|-------|-------|
-| 1           | Low  | Low   | Avg   |
-| 2–5         | Low  | Avg   | High  |
-| 6+          | Avg  | High  | High  |
+### References
 
-### 5.2 Weights (IFPUG typical)
-
-| Data Function | Low | Avg | High |
-|---------------|-----|-----|------|
-| ILF           | 7   | 10  | 15   |
-| EIF           | 5   | 7   | 10   |
-
-Use the matrix to get complexity, then convert to FPs using the weights.
+{% bibliography --cited %}
 
 ---
-
-## 6. Transactional Functions
-
-### 6.1 Types
-
-| Type | What it does |
-|------|-------------|
-| EI   | Data/control enters the system. |
-| EO   | Processed/derived data leaves the system. |
-| EQ   | Retrieves data (input→output) with no significant processing. |
-
-```mermaid
-flowchart LR
-  EI["External Input (EI)"] -->|Processes| IN[(Input Data)]
-  EO["External Output (EO)"] -->|Produces| OUT[(Reports / Displays)]
-  EQ["External Inquiry (EQ)"] -->|Retrieves| DATA[(Stored Data)]
-```
-
-### 6.2 Taxonomy
-
-```mermaid
-classDiagram
-class TRANSACTIONAL_FUNCTIONS
-class EXTERNAL_INPUTS
-class EXTERNAL_OUTPUTS
-class EXTERNAL_INQUIRIES
-
-TRANSACTIONAL_FUNCTIONS <|-- EXTERNAL_INPUTS : specializes
-TRANSACTIONAL_FUNCTIONS <|-- EXTERNAL_OUTPUTS : specializes
-TRANSACTIONAL_FUNCTIONS <|-- EXTERNAL_INQUIRIES : specializes
-```
-
-### 6.3 What defines a transaction (FTRs & DETs)
-
-- **FTRs (File Type References):** ILFs/EIFs the transaction reads/writes.
-- **DETs:** user-recognizable input/output fields.
-
-```mermaid
-classDiagram
-class TRANSACTIONAL_FUNCTION
-class FILE_TYPE_REFERENCE
-class DATA_ELEMENT_TYPE
-
-TRANSACTIONAL_FUNCTION *-- "*" FILE_TYPE_REFERENCE
-FILE_TYPE_REFERENCE *-- "1..*" DATA_ELEMENT_TYPE
-```
-
-### 6.4 Mini Shopping Example (EI / EO / EQ)
-
-```mermaid
-sequenceDiagram
-participant User
-participant WebApp
-participant OrderSvc
-participant CatalogSvc as CatalogSvc (external)
-
-User->>WebApp: PlaceOrder (EI)
-Note over User,WebApp: DETs ≈ 8 (customerId, items[],<br> shippingAddr, paymentMethod, <br> contactEmail, promoCode, <br> notes, clientTxnId)
-WebApp->>OrderSvc: createOrder (EI)
-OrderSvc->>CatalogSvc: getProductPrices (FTR: PRODUCT - EIF)
-CatalogSvc-->>OrderSvc: priceList
-OrderSvc->>OrderSvc: write CUSTOMER, ORDER_HEADER, ORDER_LINE (FTRs: 3 ILFs)
-OrderSvc-->>WebApp: orderId, status, total (EO, DETs ≈ 4)
-WebApp-->>User: Order confirmation (EO)
-
-User->>WebApp: GetOrderStatus (EQ)
-WebApp->>OrderSvc: read ORDER_HEADER (FTR: 1 ILF)
-OrderSvc-->>WebApp: orderId, status, eta (DETs ≈ 3)
-WebApp-->>User: Status display (EQ)
-```
-
-**One-liners:**
-
-- EI PlaceOrder → FTRs=3–4, DETs≈8
-- EO Confirmation → FTRs=2–3, DETs≈4
-- EQ GetOrderStatus → FTRs=1, DETs≈3
-
----
-
-## 7. Complexity & Weights for Transactions
-
-### 7.1 EO/EQ Complexity (by FTR & DET)
-
-| FTRs \ DETs | 1–5 | 6–19 | 20+   |
-|-------------|-----|------|-------|
-| 0–1         | Low | Low  | Avg   |
-| 2–3         | Low | Avg  | High  |
-| 4+          | Avg | High | High  |
-
-**Weights:**
-
-- EO: Low 4, Avg 5, High 7
-- EQ: Low 3, Avg 4, High 6
-
-### 7.2 EI Complexity (by FTR & DET)
-
-| FTRs \ DETs | 1–4 | 5–15 | 16+   |
-|-------------|-----|------|-------|
-| 0–1         | Low | Low  | Avg   |
-| 2           | Low | Avg  | High  |
-| 3+          | Avg | High | High  |
-
-**Weights:**
-
-- EI: Low 3, Avg 4, High 6
-
----
-
-## 8. Putting it Together
-
-```mermaid
-flowchart TD
-  D["Data Functions (ILF, EIF)"] --> A[Unadjusted Function Points]
-  T["Transactional Functions (EI, EO, EQ)"] --> A
-  A --> VAF["Value Adjustment Factor (14 GSCs)"]
-  VAF --> AFP[Adjusted Function Points]
-```
-
-- **UFP = Data FP + Transaction FP**
-- **AFP = UFP × VAF**
-
----
-
-## 9. VAF (Value Adjustment Factor) — Quick View
-
-- What: Multiplier from 14 GSCs rated 0–5.
-- Formula: **VAF = 0.65 + 0.01 × (sum of 14 ratings)**
-- Range: ~0.65–1.35. If your process ignores VAF, treat it as 1.00 (UFP-only).
-- Rule of thumb: Think “each GSC point ≈ 1% change.”
-- Example: Average ratings (3 each) → total 42 → VAF = 0.65 + 0.42 = 1.07 (~+7%).
-
----
-
-## 10. Quick Checklist (for Students)
-
-1. Identify ILFs/EIFs (watch the application boundary).
-2. For each file: count RETs and DETs → get complexity → map to FP.
-3. Identify EIs/EOs/EQs; for each, count FTRs and DETs → complexity → FP.
-4. UFP = sum of all data + transactional FPs.
-5. If required, rate GSCs → compute VAF → AFP.
-
----
-
-## 11. Sources
-
-1. Gunti,Naveen. "Functional Points Examined", 2006. [ku.edu](https://people.eecs.ku.edu/~hossein/810/Readings/fun-point-analysis-explained.pdf)
-2. Kang, Byeongdo, and Jongseok Lee. “Estimating Procedure for Function Point and Development Cost in South Korea.” _International Journal of Networked and Distributed Computing_, vol. 6, no. 3, July 2018, pp. 185–94. [Atlantis Press](https://www.atlantis-press.com/journals/ijndc/25905549/view)
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

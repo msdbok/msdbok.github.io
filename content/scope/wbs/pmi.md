@@ -5,172 +5,94 @@ nav_order: 5
 layout: default
 ---
 
-# PMI Work Breakdown Structure (WBS)
+# PMI Practice Standard for Work Breakdown Structures
 
-## 1. Definition and Concept
+PMI's first *Practice Standard for Work Breakdown Structures* (2001) adopts the PMBOK Guide 2000
+definition: *"A deliverable-oriented grouping of project elements that organizes and defines the
+total work scope of the project. Each descending level represents an increasingly detailed definition
+of the project work"* {% cite woodward_project_2001 %}.
 
-- **WBS (Work Breakdown Structure):**
-    > A **deliverable-oriented hierarchical decomposition** of the project scope that organizes and defines the total work to be completed.
-- Each level of the WBS provides an increasingly detailed definition of the project work.
-- Purpose: Divide large, complex projects into **manageable components** (“bite-sized pieces”).
+## 1. Why use one
 
-### Key Features
+The standard derives two goals from scope management: *"To ensure that the project includes all the
+work needed."* and *"To ensure that the project includes no unnecessary work."* Together they are the
+[100% rule](building_wbs) in all but name. The WBS then feeds activity definition, resource planning,
+cost estimating, cost budgeting and risk planning. Skipping it is a named risk: *"Omitting WBS
+development and proceeding directly to the network diagram (such as a Gantt chart, CPM Schedule, or
+Precedence Diagram) may lead to unforeseen and unexpected difficulty, including project delay."* Its
+metaphor: *"The WBS is the technique for dividing “the elephant” into bite-sized pieces."*
 
-- Hierarchical structure.
-- Focused on **deliverables**, not just tasks.
-- Each WBS element represents a **tangible outcome** (not just effort).
-- Lowest level: **Work Package**, which can be scheduled, budgeted, and assigned.
+## 2. How to build one
 
----
+The standard gives four steps: identify the final products from the statement of work and the
+requirements; define the major deliverables, including predecessors such as a design specification;
+decompose to the level needed for management and control; and review and refine until stakeholders
+agree that planning can be completed. Three structural rules apply throughout:
 
-## 2. Objectives of the WBS
+- *"Each WBS element should represent an aggregation of all subordinate WBS elements listed
+  immediately below it."*
+- *"Each WBS element must have one person who is clearly accountable for its completion."*
+- *"Separate WBS elements should be included for integration tasks where several components are
+  being brought together to create a higher-level WBS element."*
 
-- Provide **clarity** on what is included in project scope.
-- Support **planning, scheduling, and budgeting**.
-- Ensure **accountability** by linking deliverables to responsible units.
-- Create a **framework for communication** and **progress reporting**.
+How deep to go is set by fifteen "decompose further?" questions, such as whether a finer split would
+improve estimates, or whether an element hides more than one owner or deliverable. Go at least one
+level below the reporting requirement, but *"Excessive WBS levels may require unrealistic levels of
+maintenance and reporting."* Rolling wave planning gets one sentence (see [Planning waves](waves)).
 
----
+## 3. Deliverable-led, not deliverable-only
 
-## 3. Why Use a WBS? (Benefits)
+The standard warns that *"WBS elements that are not deliverable-focused may lead to project
+failure"*, naming a WBS structured strictly by process or organisation. The same section still asks
+for elements for opening and closing stages such as planning and testing, and for project management
+as level-of-effort work. Its drafting team split over the point: *"a controversy developed within the
+project team on whether or not an activity was or should be part of the WBS"*. The
+[Orientation](orient) page takes up both sides.
 
-- **Communication tool:** Clarifies project scope and deliverables for stakeholders.
-- **Reporting framework:** Allows reporting by life-cycle phase, deliverable, or work package.
-- **Integration:** Links scope, schedule, cost, and risk into one structure.
-- **Control:** Helps track progress, performance, and resource allocation.
-- **Risk management:** By decomposition, high-risk areas are identified early.
+## 4. Example: two software WBSs in one standard
 
----
+*"Eleven WBS examples were approved and incorporated as Appendices E through O of this Practice
+Standard"* {% cite woodward_project_2001 %}, from offshore oil platforms to telecom and government design-bid-build. Two are software.
 
-## 4. How to Create a WBS
+Appendix K, *Web Design*, builds an internal e-commerce site and is deliverable-led. Features each
+split into code and test, and integration has its own branch, as the standard requires:
 
-### General Process
+![An internal e-commerce site broken into web design, hardware, software, communication, integration and logistics, with the software and integration branches decomposed](pmi-appendix-k.svg)
+_Deliverable-led, with integration as a branch of its own._
 
-1. **Identify final deliverables** (review scope docs, SOW, requirements).
-2. **Define major deliverables** (e.g., design documents, subsystems).
-3. **Decompose deliverables** into smaller, manageable components.
-4. **Refine until stakeholders agree** scope and planning are sufficient.
+Appendix O, *Software Implementation*, is phase-led: Project Management, Product Requirements, Detail
+Software Design, System Construction, Integration & Test, with leaves such as "Create Draft Software
+Requirements". It reads as a lifecycle, the shape the standard's own warning targets. Appendix K
+has the opposite gap: no project-management branch, although the standard asks for one. The standard
+itself cautions that *"None of the examples should be taken as the only right WBS for that type of
+project."*
 
-### Guidelines for Preparation
+## 5. When to use it, and its limits
 
-- **Think deliverables, not activities.**
-- **Think with the end in mind.**
-- Review: “How do the pieces fit together?” → “How does one eat an elephant? One bite at a time.”
+Use the standard for plan-driven, contracted projects where scope must be agreed and traced. It says
+nothing about iterative or agile delivery beyond one rolling-wave sentence. It is also the first of
+three editions: the second (2006) names the 100% rule and the outcome types that much teaching
+material cites, and the third appeared in 2019.
 
-### Factors to Consider
+## How solid is this?
 
-- Each element should represent a **single tangible deliverable**.
-- Each child element belongs to **only one parent** (no overlaps).
-- Completeness: all project work must be represented.
-
----
-
-## 5. Measurement & Control
-
-- WBS links to cost, schedule, and performance to create a **Performance Baseline**.
-- Enables integrated analysis of **cost + schedule + scope**.
-- Work must be:
-    - **Estimated**
-    - **Resourced**
-    - **Scheduled**
-    - **Budgeted**
-    - **Controlled**
-
----
-
-## 6. Challenges
-
-- **Balancing detail vs. usability:** Too much decomposition → excessive maintenance.
-- **Defining logical relationships:** Must align with project dependencies.
-- **Avoid skipping WBS:** Jumping directly to scheduling tools (e.g., Gantt charts) risks overlooking deliverables.
+- **Where it comes from.** A volunteer-drafted consensus standard, with 488 public review comments,
+  citing only five references. It records accepted practice, not evidence that the practice works.
+- **What we do not hold.** The 2006 and 2019 editions. Rules worded in those editions, including the
+  name "100% rule", are not attributed to this one.
 
 ---
 
-## 7. Life-Cycle and Risk Considerations
+### Acknowledgments
 
-- WBS evolves with project phases (rolling-wave planning).
-- Complex projects require deeper decomposition.
-- WBS aids **risk identification**:
-    - Links risk to deliverables.
-    - Highlights high-risk areas needing detail.
-    - Supports assumption validation and contingency planning.
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## 8. Resource Planning
-
-- WBS integrates with **Organizational Breakdown Structure (OBS)** and **Responsibility Assignment Matrix (RAM)** to assign ownership.
-- Facilitates workload distribution and accountability.
-
----
-
-## 9. Industry Examples
-
-PMI provides **11 WBS examples** for domains such as Oil & Gas, Environmental Management, Process Improvement, Pharmaceuticals, Telecom, Web Design, Government, and Software Implementation.  
-Demonstrates adaptability of WBS across industries.
-
----
-
-## 10. Summary (PMI View)
-
-- WBS is **the backbone of project planning and control**.
-- **Deliverable-based decomposition** ensures clarity, accountability, and integration.
-- Serves as the foundation for **scope definition, scheduling, budgeting, risk management, and reporting**.
-- Must balance **detail vs. practicality**, and evolve with the project life cycle.
-
----
-
-```mermaid
-graph TD
-  %% Root Deliverable
-  P["Project Deliverables"]
-
-  %% Major Deliverables
-  P --> D1["1.0 Project Management"]
-  P --> D2["2.0 Design & Development"]
-  P --> D3["3.0 Implementation"]
-  P --> D4["4.0 Testing & Verification"]
-  P --> D5["5.0 Deployment & Closure"]
-
-  %% Sub-deliverables under Project Management
-  D1 --> D1_1["1.1 Planning"]
-  D1 --> D1_2["1.2 Monitoring & Control"]
-  D1 --> D1_3["1.3 Reporting"]
-
-  %% Sub-deliverables under Design & Development
-  D2 --> D2_1["2.1 Requirements Analysis"]
-  D2 --> D2_2["2.2 System Design"]
-  D2 --> D2_3["2.3 Prototypes"]
-
-  %% Sub-deliverables under Implementation
-  D3 --> D3_1["3.1 Software/Hardware Build"]
-  D3 --> D3_2["3.2 Integration"]
-  D3 --> D3_3["3.3 Documentation"]
-
-  %% Sub-deliverables under Testing & Verification
-  D4 --> D4_1["4.1 Unit Testing"]
-  D4 --> D4_2["4.2 System Testing"]
-  D4 --> D4_3["4.3 Acceptance Testing"]
-
-  %% Sub-deliverables under Deployment & Closure
-  D5 --> D5_1["5.1 Training & Handover"]
-  D5 --> D5_2["5.2 Deployment"]
-  D5 --> D5_3["5.3 Project Closure"]
-
-  %% Work Packages Example
-  D2_2 --> WP1["2.2.1 High-Level Design Document"]
-  D2_2 --> WP2["2.2.2 Detailed Design Document"]
-  D3_1 --> WP3["3.1.1 Software Module A"]
-  D3_1 --> WP4["3.1.2 Software Module B"]
-```
-
----
-
-## Source
-
-Woodward, H. "Project Management Institute practice standard for work breakdown structures. 2001, Newton Square: Project Management Institute."
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

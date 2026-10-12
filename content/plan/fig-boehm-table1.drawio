@@ -1,0 +1,70 @@
+<mxfile host="msd_review" type="device">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1140" pageHeight="448" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" value="TABLE 1. ELEMENTS OF CRITICAL FRONT-END MILESTONES" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1a1a1a;strokeColor=#1a1a1a;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#ffffff;fontSize=19;align=center;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="1120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="Milestone element" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#d9d9d9;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=18;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="50" width="250" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="Life-cycle objectives (LCO)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#d9d9d9;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=18;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="50" width="410" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="Life-cycle architecture (LCA)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d9d9d9;strokeColor=#d9d9d9;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=18;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=6;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="50" width="460" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="Definition of operational concept" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="10" y="86" width="250" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="• Top-level system objectives and scope&lt;br&gt;• Operational concept" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="86" width="410" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="• Elaboration of system objectives and scope by increment&lt;br&gt;• Elaboration of operational concept by increment" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="670" y="86" width="460" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="Definition of system requirements" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="10" y="138" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" value="• Top-level functions, interfaces, quality attribute levels&lt;br&gt;• Stakeholders' concurrence on essentials" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="138" width="410" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" value="• Elaboration of functions, interfaces, quality attributes by increment&lt;br&gt;• Stakeholders' concurrence on their priority concerns" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="670" y="138" width="460" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" value="Definition of system and software architecture" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="10" y="208" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" value="• Top-level definition of at least one feasible architecture&lt;br&gt;• Identification of infeasible architecture options" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="208" width="410" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" value="• Choice of architecture and elaboration by increment&lt;br&gt;• Architecture evolution parameters" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="670" y="208" width="460" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" value="Definition of life-cycle plan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="10" y="278" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" value="• Identification of life-cycle stakeholders&lt;br&gt;• Identification of life-cycle process model&lt;br&gt;• Top-level WWWWWHH* by stage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="278" width="410" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" value="• Elaboration of WWWWWHH* for IOC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="670" y="278" width="460" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" value="Feasibility rationale" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="10" y="348" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" value="• Assurance of consistency among elements above&lt;br&gt;• Business case analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="348" width="410" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" value="• Assurance of consistency among elements above&lt;br&gt;• &lt;b&gt;All major risks resolved or covered by risk-management plan&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f2f2f2;strokeColor=#ffffff;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=16;align=left;verticalAlign=top;spacingLeft=6;spacingRight=6;" vertex="1" parent="1">
+          <mxGeometry x="670" y="348" width="460" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" value="* WWWWWHH: Why, What, When, Who, Where, How, How Much" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#616161;fontSize=14;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="420" width="1120" height="22" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

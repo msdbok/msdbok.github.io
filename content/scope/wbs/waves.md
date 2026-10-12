@@ -5,130 +5,107 @@ nav_order: 3
 layout: default
 ---
 
-# Planning Waves (PMI)
+# Planning Waves
 
-## 1. Work Breakdown Structure (WBS) Recap
+**Rolling wave planning** keeps the top of the WBS complete from the first day and details only the
+next horizon: *"the plan is detailed for the immediately upcoming work only and work far in the
+future is defined at a high level until later in the project life cycle"*
+{% cite woodward_project_2001 %}.
 
-- **Definition:**  
-    A **deliverable-oriented hierarchical decomposition** of project scope into smaller, manageable elements.  
-    ➝ Goal: Ensure **all work is captured** and **no unnecessary work is included**.
+## 1. Detail where you can see
 
-- **Structure:**
-    - **Level 1:** Project / Final Deliverable
-    - **Level 2:** Major Deliverables or Phases
-    - **Level 3+:** Sub-deliverables → Work Packages
-    - **Lowest Level:** Work Package = tangible, schedulable, assignable unit.
+Githens states the core: *"A core premise of RWPP is the use of
+time-phased structure at the high level of the WBS. At the end of each phase, the team develops the
+work for the next phase"* {% cite githens_rolling_1998 %}.
 
-- **Functions:**
-    - Provides framework for **scope definition, scheduling, cost estimating, risk management, and reporting**.
-    - Enables **progressive decomposition**—breaking work down “one bite at a time.”
+Visibility comes from **completeness at the top**: every deliverable is in the tree with a budget,
+so the [100% rule](building_wbs) always holds. Flexibility comes from **deferring detail at the
+bottom**. The tree is lopsided by design, deep where the team knows enough and shallow elsewhere.
 
----
+## 2. Work packages and planning packages
 
-## 2. Planning Waves (Rolling Wave Planning)
+NASA names the two kinds of leaf: *"A WP provides further detail on work content that is considered
+near-term, while a PP defines far-term work at a summary level"* {% cite nasa2010wbs %}.
 
-- **Definition:**  
-    A **progressive elaboration technique** where near-term work is planned in detail, while future work is kept at a higher level until closer in time.
-    - **Short-term:** Detailed WBS decomposition.
-    - **Long-term:** High-level WBS placeholders refined later.
+| | Work package | Planning package |
+|---|---|---|
+| Horizon | the current wave | a later wave |
+| Detail | decomposed into tasks | one summary element |
+| Estimate | bottom-up | top-down, from what is known now |
+| Next step | executed and tracked | decomposed at the next replanning |
 
-- **Why use planning waves?**
-    - Large or long-duration projects cannot be fully detailed at the start.
-    - Helps manage **uncertainty** and **complexity**.
-    - Balances **flexibility** with **control**.
-    - Allows project managers to adapt as more information becomes available.
+The budget makes a planning package more than a placeholder; without it the estimate has a
+hole.
 
----
+## 3. Running the waves
 
-## 3. WBS Life-Cycle Considerations
+Githens gives seven steps. Check that the development strategy suits rolling wave; set the time
+buckets, meaning how many horizons and how long; give every horizon a high-level estimate, and *"Do
+not drill down to details or attempt bottom up estimating"*; detail the first wave bottom-up;
+baseline with the sponsors; execute; then assess what was learned and replan the next horizon. *"The
+work scope baseline (WBS) is modified to reflect the added detail."*
 
-- **Level of Detail Depends On:**
-    - Project size and complexity.
-    - Risks associated with deliverables.
-    - Project manager’s need for control.
+How long is a wave? Githens answers with a boat crossing an unknown sea: with the horizon twenty miles
+off and the crossing ninety to a hundred and ten, you reset the course at least five times. A wave is
+as long as you can see ahead.
 
-- **Different Levels Across Project:**
-    - Some parts of WBS may be highly detailed (near-term work).
-    - Other parts remain summarized (future work, pending clarity).
+## 4. The replanning is a work package
 
-- **Short-duration projects:**
-    - Full decomposition possible upfront.
+Rolling wave fails predictably: the replanning does not happen. Githens's defence is to
+*"Establish a work package and fixed date for replanning"*, triggered by a date, a deliverable or a
+percent complete. *"The deliverable of the replanning work package is an updated RWPP plan."* It
+costs several hours to several days. Skipped, it gives way to *"code-like-hell"* practices.
 
-- **Long-duration projects:**
-    - Decomposition delayed for some deliverables until later in the life cycle.
+Each wave changes the WBS, so keep it under configuration management with stable element codes
+{% cite globerson_impact_1994 %}; wave 1's costs must still roll up in wave 4.
 
----
+## 5. Example: Quill 1.0 and 2.0
 
-## 4. Risk and Planning Waves
+Quill is an invented word processor for a publishing house. The first wave details its 1.0 branches
+into work packages. The customer has already asked for tracked changes in Quill 2.0; that stays one
+planning package with a purpose, an owner, a summary budget and a tentative date, but no tasks. The
+sponsor sees the whole scope and cost; nobody decomposes work that depends on how 1.0 turns out.
 
-- **WBS and Risk Management:**
-    - High-risk areas → need **greater detail early** (better assumptions, estimates, and control).
-    - WBS supports linking risks to specific deliverables for **targeted mitigation**.
+![Quill as a rolling-wave WBS: version 1.0 decomposed in detail, version 2.0 tracked changes held as a dashed planning package with one prototype work package, and a replanning work package with a fixed date](quill-rolling-wave.svg)
+_Detail the next wave; hold the rest as a planning package._
 
-- **Rolling Wave + Risk:**
-    - Allows project managers to refine scope in risky areas when more data is available.
-    - Reduces waste from over-planning uncertain tasks.
+Tracked changes is also risky, because a 500-page document must still open within 2 seconds. So the
+first wave adds one work package, a prototype on a 500-page document, whose deliverable is the
+knowledge needed to decompose the package at the next replanning. Do not detail the guess; schedule
+the learning. A Scrum backlog is *detailed appropriately* in the same way, its large items split just
+in time {% cite rubin_essential_2012 %}.
 
----
+## 6. When not to use it
 
-## 5. Practical Guidelines
+Githens lists four assumptions behind linear planning {% cite githens_rolling_1998 %}: problems are
+solved by splitting them, planning and doing are separate, the future is predictable, and projects are
+simple. On compact, well-defined, modular work they hold: plan up front, because rolling wave only
+adds replanning overhead. Where they fail, roll: *"You can't schedule a technological
+breakthrough."* The price is discomfort, as teams manage precise and imprecise data at once.
 
-When creating WBS with planning waves in mind:
+## How solid is this?
 
-1. **Start high-level:** Identify the final deliverables.
-2. **Detail near-term work:** Break down immediate phases into work packages.
-3. **Leave future work flexible:** Keep as high-level placeholders until execution nears.
-4. **Iteratively refine:** Update decomposition as scope, risk, and requirements become clearer.
-5. **Balance detail vs usability:** Too much detail = overhead; too little = loss of control.
-
----
-
-## 6. Example – Rolling Wave WBS
-
-Imagine a **3-year IT program**:
-
-- **Near-term (Year 1):**
-    - Detailed work packages for requirements gathering, architecture, prototypes.
-- **Mid-term (Year 2):**
-    - High-level WBS entries like “System Development” → later decomposed into module builds.
-- **Long-term (Year 3):**
-    - Placeholder “Deployment & Support” → later detailed into training, rollout, stabilization.
-
-```mermaid
-graph TD
-  P["Project (Level 1)"]
-
-  %% Wave 1 - Near Term (Detailed)
-  P --> W1["1.0 Requirements & Design (Near-Term, Detailed)"]
-  W1 --> W1_1["1.1 Requirements Gathering"]
-  W1 --> W1_2["1.2 System Architecture"]
-  W1 --> W1_3["1.3 Prototype Development"]
-
-  %% Wave 2 - Mid Term (Medium Detail)
-  P --> W2["2.0 Development (Mid-Term, Medium Detail)"]
-  W2 --> W2_1["2.1 Module A"]
-  W2 --> W2_2["2.2 Module B"]
-  %% note: not fully decomposed yet
-
-  %% Wave 3 - Long Term (High Level / Placeholder)
-  P --> W3["3.0 Deployment & Support (Long-Term, High-Level)"]
-  %% Placeholder – decomposition will come later
-```
+- **Where it comes from.** Githens is a consultant's conference paper. Its only data is an informal
+  poll of practitioners, and the method is not evaluated. Cite it for what rolling wave is and how to
+  run it, not as evidence that it improves outcomes.
+- **Where the terms come from.** "Planning package" is NASA's earned-value vocabulary; it does not
+  occur in Githens or in PMI 2001. Rubin never says "rolling wave"; the link to his backlog rule is
+  ours.
+- **What is illustrative.** "At least five times" is the boat analogy's arithmetic, not a measured
+  rate. Quill is a constructed example.
 
 ---
 
-**Summary:**
+### Acknowledgments
 
-- The **WBS is the backbone** of project planning and integrates scope, cost, schedule, and risk.
-- **Planning waves (rolling wave planning)** recognize that not all future work can be fully decomposed at the start.
-- Near-term = detailed, future = high-level, refined later.
-- This approach increases adaptability, reduces planning waste, and helps manage **uncertainty in complex, long-duration projects**.
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
-## Source
+### References
 
-Woodward, H. "Project Management Institute practice standard for work breakdown structures. 2001, Newton Square: Project Management Institute."
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

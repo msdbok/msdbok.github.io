@@ -5,232 +5,124 @@ nav_order: 2
 layout: default
 ---
 
-# WBS Building Process
+# Building a WBS
 
-## What is a WBS (in one line)
+Building a WBS means decomposing the project's **outcomes**, and the work that produces them, into
+elements that one person can own, estimate and track, while every level holds all the work of its
+parent and nothing else.
 
-A **Work Breakdown Structure** is a hierarchical decomposition of the **project’s outcomes** and the **work needed to produce them**, organized with a **consistent orientation** (rule for breaking things down).
+## 1. What goes in
 
----
+Outcomes come in four kinds {% cite miranda_managing_2014 %}: **products** (software, documents),
+**services** (training, data migration), **processes** (an installation procedure) and
+**capabilities** (the organisation can operate the new system). Under an outcome sits the work that
+realises it. An **activity** is a mixed bundle of tasks with one purpose; a **task** is homogeneous
+work. A **work package** is an outcome or activity plus the tasks that realise it, such as *Fork:
+Design, Build, Test* below.
 
-## What counts as a “project outcome”
+![A new-bike project as a WBS: the bicycle and its assemblies, manufacturing instructions, sourcing, a marketing campaign and project management, each decomposed below](new-bike-wbs.svg)
+_The new-bike WBS._
 
-Use these as legal “things” at the top levels of a WBS:
+*Project Management* appears once, at Level 2, because it serves every outcome; *Design* and
+*Integration* sit under *Bicycle* because they serve its parts. A tree can also be written as an
+outline, and *"Both convey exactly the same information"* {% cite wysocki2003needs %}. Quill 1.0,
+an invented word processor for a publishing house, as an outline:
 
-- **Products** – tangible deliverables (documents, software, hardware)
-- **Services** – activities performed to satisfy a need (e.g., training, database migration, CMMI assessment)
-- **Processes** – instructions/procedures (e.g., installation guide, business process)
-- **Capabilities** – abilities the organization gains (e.g., “can operate the new system”, “reduced cycle time”)
-
-**Activities vs Tasks**
-
-- **Activity** = a _heterogeneous_ bundle of tasks with a common purpose (e.g., “Design subsystem”, “Test integration”)
-- **Task** = _homogeneous_ work (e.g., “Create schema”, “Write test cases”)
-
----
-
-## Example
-
-```mermaid
-flowchart TB
-  %% Root
-  ROOT["New Bike"]
-
-  %% Top-level Groups
-  subgraph BIC["Bicycle"]
-    direction LR
-    ROOT_B["Bicycle"]
-
-    %% Subsystems
-    BCG["Crank & Gears"]
-    BAC["Accessories"]
-    subgraph BPM["Project Management"]
-        direction LR
-        PM1["Planning, Tracking & Controlling"]
-        PM2["Team meetings"]
-        PM3["Configuration Management"]
-        PM4["Quality assurance"]
-    end
-    BBR["Brakes"]
-    subgraph BASI["Assembly instructions"]
-      direction LR
-      ASI_W["Write"]
-      ASI_R["Review"]
-    end
-    subgraph FA["Frame Assembly"]
-      direction LR
-      ROOT_FA["Frame Assembly"]
-      subgraph FR["Frame"]
-        direction LR
-        FR_D["Design"]
-        FR_B["Build"]
-        FR_T["Test"]
-      end
-      subgraph HA["Handle"]
-        direction LR
-        HA_D["Design"]
-        HA_B["Build"]
-        HA_T["Test"]
-      end
-      subgraph FO["Fork"]
-        direction LR
-        FO_D["Design"]
-        FO_B["Build"]
-        FO_T["Test"]
-      end
-    end
-    BDES["Design"]
-    BINT["Integration"]
-  end
-
-  MFG["Manufacturing instructions"]
-  SRC["Sourcing"]
-  MKT["Marketing campaign"]
-  PM["Project Management"]
-
-  %% Connections
-  ROOT --> ROOT_B
-  ROOT --> MFG
-  ROOT --> SRC
-  ROOT --> MKT
-  ROOT --> PM
-
-  %% Bycicle connections
-  ROOT_B --> ROOT_FA
-  ROOT_B --> BCG
-  ROOT_B --> BBR
-  ROOT_B --> BAC
-  ROOT_B --> BASI
-  ROOT_B --> BDES
-  ROOT_B --> BINT
-  ROOT_B --> BPM
-
-  %% Frame Assembly connections
-  ROOT_FA --> FR
-  ROOT_FA --> HA
-  ROOT_FA --> FO
-
-  %% Styling
-  classDef root fill:#FFD54F,stroke:#F9A825,stroke-width:3,color:#000;
-  classDef group fill:#FFF176,stroke:#FBC02D,stroke-width:2,color:#000;
-  classDef leaf fill:#FFF9C4,stroke:#FDD835,color:#000;
-
-  class ROOT root;
-  class BIC,MFG,SRC,MKT,PM,FA,FR,HA,FO,ASI group;
-  class FR_D,FR_B,FR_T,HA_D,HA_B,HA_T,FO_D,FO_B,FO_T,BCG,BBR,BAC,BDES,BINT,ASI_W,ASI_R,SRC1,MKT1,PM1,PM2,PM3,PM4 leaf;
+```text
+1      Quill 1.0
+1.1    Project management
+1.2    Systems engineering: requirements baseline, notional architecture, risk register
+1.3    Quality assurance: reviews; accessibility review of the citation dialog
+1.4    Editor: styles, tables, comments
+1.5    Big-document engine: layout cache; performance test at 500 pages
+1.6    Citations: citation library; ten publisher styles; citation dialog
+1.7    PDF export: vendor engine (select, learn, set up, adapt, interface); licence
+1.8    Cloud sync: sync service; EU data-centre set-up
+1.9    Document store: used by 1.4, 1.6 and 1.8, so it sits under none of them
+1.10   System integration & test: integration builds; acceptance run at the publisher
+1.11   Release: user guide, installer, delivery to the publisher
+1.12   Quill 2.0, tracked changes: planning package
 ```
 
-**Interpreting the example**
+Elements 1.1 to 1.3 are enabling work, 1.4 to 1.9 the product, 1.10 the integration.
 
-- **Outcomes:**  
-    - _Product_ → **Bicycle** (and its subsystems)
-    - _Process_ → **Manufacturing instructions**
-    - _Capability_ → **Sourcing**
-    - _Service_ → **Marketing campaign**
-- **Activity → Tasks:**  
-    _Project Management_ (activity) contains tasks like _Configuration Management_, _Quality Assurance_, etc.
-- **Work package** = _Outcome or Activity_ **plus** the tasks to realize it (e.g., “Fork → Design, Build, Test”)
+## 2. The 100% rule
 
----
+PMI's 2001 standard states the rule in parts, not by name {% cite woodward_project_2001 %}: *"Each
+WBS element should represent an aggregation of all subordinate WBS elements listed immediately below
+it"*, and each element has a single parent. It also prices each failure: *"If necessary work is
+omitted, the project will almost certainly be delayed and may experience cost overruns. If
+unnecessary work is performed, the customer's time and money will be wasted."*
 
-## Rolling Wave & Packages
+The "100%" wording is NASA's checklist: *"Does the overall WBS structure include 100% of the project
+scope of work?"*, counting project management and systems engineering as scope {% cite nasa2010wbs %}.
+The converse is no double counting. Cost rolls up *"without allocation of a single element of work
+scope to two or more WBS elements"* {% cite nasa2019wbs %}, so a parent equals the sum of its
+children only when nothing is missing and nothing appears twice. The WBS dictionary exists for
+*"ensuring that all work scope has been identified and to eliminate duplication and overlap"*.
 
-> Plan what you know now; detail the near wave; keep future waves coarse.
+## 3. Where the integrative work goes
 
-- **Work packages**
-    - Smallest agreed unit for estimating/scheduling
-    - One clear **outcome**, explicit tasks, one **owner**
-- **Planning packages**
-    - Placeholders for later decomposition; have a purpose and tentative dates
-    - Convert to work packages as information becomes available  
-      _Source:_ Githens (1998), _Rolling Wave Project Planning_
+The rule is broken by omission. Integration, cutover, data conversion, installation, reviews,
+training and meetings are what estimates leave out {% cite mcconnell_rapid_1996 %}, so give that work
+a branch before anyone estimates. *"Separate WBS elements should be included for integration tasks
+where several components are being brought together to create a higher-level WBS element"*
+{% cite woodward_project_2001 %}. Work serving several siblings sits beside them; work serving one
+element sits under it {% cite miranda_managing_2014 %}.
 
----
+For example, in a clinic-booking app, *Booking* and *Reminders* both send messages through one
+notification service. Under both features it is estimated twice; under neither, it is missed.
+Beside them, it is counted once, as Quill's document store is.
 
-## Prerequisites (what you must know or assume—and write down)
+## 4. When to stop
 
-- **Start & end** of the project; deployment responsibility (single/multi-site)
-- **Requirements** (or plan to elicit): purpose, stakeholders, functions, interfaces
-- **Quality attributes** (performance, security, modifiability, reliability, usability) that might create new tasks
-- **Notional architecture** (DBs, services, GUIs, servers, middleware; make/buy/reuse)
-- **Execution approach** (“how to” at a high level: phases/activities)
+Wysocki's stopping rule has six criteria {% cite wysocki2003needs %}: status is measurable, start and
+end are clear, completion yields a visible deliverable, the work can be estimated, the duration is
+acceptable (he suggests under two calendar weeks), and once started it runs without waiting for
+input. *"As soon as every activity in the WBS possesses these six characteristics, the WBS is defined
+as complete."* PMI adds: *"Each WBS element must have one person who is clearly accountable for its
+completion"*, and warns that *"Excessive WBS levels may require unrealistic levels of maintenance and
+reporting"* {% cite woodward_project_2001 %}.
 
----
+Depth is uneven by design. Far-term work can stop at a **planning package**: *"far-term effort which
+can be identified and budgeted in early baseline planning at a higher level, but can not yet be
+adequately defined into a WP"* {% cite nasa2010wbs %}. [Planning waves](waves) shows how it is
+decomposed later.
 
-## The WBS-Building Process (10 focused steps)
+In sequence {% cite miranda_managing_2014 %}: write down the scope, choose the Level 2
+[orientation](orient), list the outcomes, add integrative and shared architectural elements,
+decompose to work packages with a dictionary entry each, tag rather than duplicate, and walk the tree
+with stakeholders.
 
-1. **Frame the scope**  
-    Draft a scope statement and list stakeholders, constraints, and assumptions.
-2. **Choose an orientation for Level-2**  
-    Prefer **Outcome-oriented** for sponsor discussions. (You can mix later levels, but one rule per level.)
-3. **List outcomes** (products, services, processes, capabilities)  
-    Use the **100% Rule**: siblings collectively and uniquely cover the parent.
-4. **Sketch the first cut WBS (outcomes only)**  
-    Keep levels shallow; avoid giant nodes that dominate the tree.
-5. **Add integrative outcomes/activities**  
-    Don’t forget **Design, Integration, Project Management, Quality Assurance**.
-6. **Add architectural elements**  
-    Insert shared components (e.g., databases) at the right level—not under one feature that merely uses them.
-7. **Decompose to work packages**  
-    Each has: outcome, tasks, acceptance, estimate, owner, risks, references → captured in a **WBS Dictionary** entry.
-8. **Tag, don’t duplicate**  
-    Use **tags** (phase, discipline, account, site, vendor) instead of cloning nodes. Maintain a **crosswalk** to schedule and cost tools.
-9. **Apply rolling waves**  
-    Convert planning packages to detailed work packages as the next wave approaches.
-10. **Validate**  
-    Walk the tree with stakeholders: check **completeness**, **MECE** (no overlaps), grammar consistency, and traceability to requirements and architecture.
+## 5. When the WBS is not enough
 
----
+A WBS says what, not when. *"Unfortunately, the WBS does not contain scheduling or sequencing
+information"* {% cite wysocki2003needs %}; the schedule is built from it afterwards. Common faults
+are changing the splitting rule within a level, forgetting integration work, copying a shared
+component under each feature, and detailing far-term work too early.
 
-## Quality Rules & Semantics
+## How solid is this?
 
-- **100% Rule** and **Mutual Exclusivity** (MECE) for siblings
-- **Consistent grammar with orientation:**
-    - Outcome level → nouns (“Fork”, “Index”, “Training”)
-    - Task level → verb–noun (“Generate Index”, “Train Users”)
-- **Edges meaning (pick and stick to it):**
-    - “**Consists of**” (for outcomes)
-    - “**Is realized by**” (outcome → activities/tasks)
-    - “**Is performed by**” (activity → discipline/role)
-- **Sizing guidance:** aim for elements you can **prioritize**, **schedule**, and **remove** independently
-- **Numbering/coding** (1.2.3) + **WBS Dictionary** for definitions
+- **Where it comes from.** Practice standards and textbooks; none tests whether the rule improves
+  outcomes.
+- **Which edition says what.** The name "100% rule" and the four outcome kinds come from PMI's 2006
+  second edition, which this bibliography does not hold. The 2001 edition states only the rule's
+  parts; NASA's checklist is the earliest "100%" wording held.
+- **Rules of thumb.** Wysocki's two weeks and six criteria are his own. Quill and the clinic app are
+  constructed examples.
 
 ---
 
-## Common mistakes → quick fixes
+### Acknowledgments
 
-- _Orientation drift within a level_ → restate the rule; refactor nodes
-- _Forgetting integration/PM/QA_ → add explicit branches
-- _Duplicating cross-cutting components_ → elevate them; use tags/crosswalks
-- _Too detailed early_ → replace with **planning packages**; detail in the next wave
-- _Scope invisibility in phase-oriented WBS_ → add an outcome view at Level-2
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## Mini WBS Dictionary Template (one page per work package)
-
-- **Code & Title:** 2.3.1 Fork – Build
-- **Type:** Product / Service / Process / Capability
-- **Outcome Description & Acceptance:** …
-- **Tasks (bullet list):** …
-- **Owner (single point):** …
-- **Inputs/Interfaces:** …
-- **Assumptions/Constraints:** …
-- **Estimates (Effort/Cost/Duration):** …
-- **Risks & QA:** …
-- **Tags:** Phase=Build, Discipline=Mechanical, Account=CAPEX, Site=Plant-A
+{% bibliography --cited %}
 
 ---
-
-## Sources
-
-- Woodward, H. _Project Management Institute Practice Standard for Work Breakdown Structures._ PMI, 2001.
-- Githens, Gregory D. “Rolling Wave Project Planning.” _Proceedings of the 29th Annual Project Management Institute Seminars & Symposium_, 1998.
-
----
-
-**Quick check (one question):**  
-If your sponsor asks, “What exactly will I get for Phase 1?”, which orientation should your **Level-2** WBS use—and why?
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

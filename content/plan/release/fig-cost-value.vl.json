@@ -1,0 +1,866 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "width": 600,
+ "height": 440,
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "line": "ratio 2",
+      "cost": 0,
+      "value": 0
+     },
+     {
+      "line": "ratio 2",
+      "cost": 12.5,
+      "value": 25
+     },
+     {
+      "line": "ratio 0.5",
+      "cost": 0,
+      "value": 0
+     },
+     {
+      "line": "ratio 0.5",
+      "cost": 28,
+      "value": 14
+     }
+    ]
+   },
+   "mark": {
+    "type": "line",
+    "color": "#282828",
+    "strokeWidth": 2,
+    "clip": true
+   },
+   "encoding": {
+    "x": {
+     "field": "cost",
+     "type": "quantitative",
+     "title": "Cost (percent)",
+     "scale": {
+      "domain": [
+       0,
+       28
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "y": {
+     "field": "value",
+     "type": "quantitative",
+     "title": "Value (percent)",
+     "scale": {
+      "domain": [
+       0,
+       25
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "detail": {
+     "field": "line"
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "req": "1",
+      "cost": 1,
+      "value": 12,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "2",
+      "cost": 2,
+      "value": 6,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "3",
+      "cost": 3,
+      "value": 5,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "4",
+      "cost": 4,
+      "value": 7,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "5",
+      "cost": 6,
+      "value": 12,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "6",
+      "cost": 11,
+      "value": 16,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "7",
+      "cost": 4,
+      "value": 3,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "8",
+      "cost": 6,
+      "value": 3,
+      "cls": "low",
+      "dx": 0,
+      "drop": false
+     },
+     {
+      "req": "9",
+      "cost": 7,
+      "value": 4,
+      "cls": "low",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "10",
+      "cost": 12,
+      "value": 5,
+      "cls": "low",
+      "dx": 12,
+      "drop": true
+     },
+     {
+      "req": "11",
+      "cost": 4,
+      "value": 1,
+      "cls": "low",
+      "dx": -18,
+      "drop": true
+     },
+     {
+      "req": "12",
+      "cost": 6,
+      "value": 1,
+      "cls": "low",
+      "dx": 12,
+      "drop": true
+     },
+     {
+      "req": "13",
+      "cost": 23,
+      "value": 21,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "14",
+      "cost": 10,
+      "value": 3,
+      "cls": "low",
+      "dx": 12,
+      "drop": false
+     }
+    ]
+   },
+   "mark": {
+    "type": "point",
+    "filled": true,
+    "size": 160,
+    "stroke": "#282828",
+    "strokeWidth": 2.5,
+    "opacity": 1
+   },
+   "encoding": {
+    "x": {
+     "field": "cost",
+     "type": "quantitative",
+     "title": "Cost (percent)",
+     "scale": {
+      "domain": [
+       0,
+       28
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "y": {
+     "field": "value",
+     "type": "quantitative",
+     "title": "Value (percent)",
+     "scale": {
+      "domain": [
+       0,
+       25
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "fill": {
+     "field": "cls",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "high",
+       "medium",
+       "low"
+      ],
+      "range": [
+       "#9e9e9e",
+       "#ffffff",
+       "#282828"
+      ]
+     },
+     "legend": null
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "req": "1",
+      "cost": 1,
+      "value": 12,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "2",
+      "cost": 2,
+      "value": 6,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "3",
+      "cost": 3,
+      "value": 5,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "4",
+      "cost": 4,
+      "value": 7,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "5",
+      "cost": 6,
+      "value": 12,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "6",
+      "cost": 11,
+      "value": 16,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "7",
+      "cost": 4,
+      "value": 3,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "8",
+      "cost": 6,
+      "value": 3,
+      "cls": "low",
+      "dx": 0,
+      "drop": false
+     },
+     {
+      "req": "9",
+      "cost": 7,
+      "value": 4,
+      "cls": "low",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "10",
+      "cost": 12,
+      "value": 5,
+      "cls": "low",
+      "dx": 12,
+      "drop": true
+     },
+     {
+      "req": "11",
+      "cost": 4,
+      "value": 1,
+      "cls": "low",
+      "dx": -18,
+      "drop": true
+     },
+     {
+      "req": "12",
+      "cost": 6,
+      "value": 1,
+      "cls": "low",
+      "dx": 12,
+      "drop": true
+     },
+     {
+      "req": "13",
+      "cost": 23,
+      "value": 21,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "14",
+      "cost": 10,
+      "value": 3,
+      "cls": "low",
+      "dx": 12,
+      "drop": false
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.dx > 0"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 18,
+    "align": "left",
+    "baseline": "middle",
+    "dx": 12
+   },
+   "encoding": {
+    "x": {
+     "field": "cost",
+     "type": "quantitative",
+     "title": "Cost (percent)",
+     "scale": {
+      "domain": [
+       0,
+       28
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "y": {
+     "field": "value",
+     "type": "quantitative",
+     "title": "Value (percent)",
+     "scale": {
+      "domain": [
+       0,
+       25
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "text": {
+     "field": "req"
+    },
+    "color": {
+     "field": "drop",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       true,
+       false
+      ],
+      "range": [
+       "#d32f2f",
+       "#282828"
+      ]
+     },
+     "legend": null
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "req": "1",
+      "cost": 1,
+      "value": 12,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "2",
+      "cost": 2,
+      "value": 6,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "3",
+      "cost": 3,
+      "value": 5,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "4",
+      "cost": 4,
+      "value": 7,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "5",
+      "cost": 6,
+      "value": 12,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "6",
+      "cost": 11,
+      "value": 16,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "7",
+      "cost": 4,
+      "value": 3,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "8",
+      "cost": 6,
+      "value": 3,
+      "cls": "low",
+      "dx": 0,
+      "drop": false
+     },
+     {
+      "req": "9",
+      "cost": 7,
+      "value": 4,
+      "cls": "low",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "10",
+      "cost": 12,
+      "value": 5,
+      "cls": "low",
+      "dx": 12,
+      "drop": true
+     },
+     {
+      "req": "11",
+      "cost": 4,
+      "value": 1,
+      "cls": "low",
+      "dx": -18,
+      "drop": true
+     },
+     {
+      "req": "12",
+      "cost": 6,
+      "value": 1,
+      "cls": "low",
+      "dx": 12,
+      "drop": true
+     },
+     {
+      "req": "13",
+      "cost": 23,
+      "value": 21,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "14",
+      "cost": 10,
+      "value": 3,
+      "cls": "low",
+      "dx": 12,
+      "drop": false
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.dx < 0"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 18,
+    "align": "right",
+    "baseline": "middle",
+    "dx": -12
+   },
+   "encoding": {
+    "x": {
+     "field": "cost",
+     "type": "quantitative",
+     "title": "Cost (percent)",
+     "scale": {
+      "domain": [
+       0,
+       28
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "y": {
+     "field": "value",
+     "type": "quantitative",
+     "title": "Value (percent)",
+     "scale": {
+      "domain": [
+       0,
+       25
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "text": {
+     "field": "req"
+    },
+    "color": {
+     "field": "drop",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       true,
+       false
+      ],
+      "range": [
+       "#d32f2f",
+       "#282828"
+      ]
+     },
+     "legend": null
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "req": "1",
+      "cost": 1,
+      "value": 12,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "2",
+      "cost": 2,
+      "value": 6,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "3",
+      "cost": 3,
+      "value": 5,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "4",
+      "cost": 4,
+      "value": 7,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "5",
+      "cost": 6,
+      "value": 12,
+      "cls": "high",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "6",
+      "cost": 11,
+      "value": 16,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "7",
+      "cost": 4,
+      "value": 3,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "8",
+      "cost": 6,
+      "value": 3,
+      "cls": "low",
+      "dx": 0,
+      "drop": false
+     },
+     {
+      "req": "9",
+      "cost": 7,
+      "value": 4,
+      "cls": "low",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "10",
+      "cost": 12,
+      "value": 5,
+      "cls": "low",
+      "dx": 12,
+      "drop": true
+     },
+     {
+      "req": "11",
+      "cost": 4,
+      "value": 1,
+      "cls": "low",
+      "dx": -18,
+      "drop": true
+     },
+     {
+      "req": "12",
+      "cost": 6,
+      "value": 1,
+      "cls": "low",
+      "dx": 12,
+      "drop": true
+     },
+     {
+      "req": "13",
+      "cost": 23,
+      "value": 21,
+      "cls": "medium",
+      "dx": 12,
+      "drop": false
+     },
+     {
+      "req": "14",
+      "cost": 10,
+      "value": 3,
+      "cls": "low",
+      "dx": 12,
+      "drop": false
+     }
+    ]
+   },
+   "transform": [
+    {
+     "filter": "datum.dx == 0"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "fontSize": 18,
+    "align": "center",
+    "baseline": "bottom",
+    "dy": -12
+   },
+   "encoding": {
+    "x": {
+     "field": "cost",
+     "type": "quantitative",
+     "title": "Cost (percent)",
+     "scale": {
+      "domain": [
+       0,
+       28
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "y": {
+     "field": "value",
+     "type": "quantitative",
+     "title": "Value (percent)",
+     "scale": {
+      "domain": [
+       0,
+       25
+      ]
+     },
+     "axis": {
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       25
+      ]
+     }
+    },
+    "text": {
+     "field": "req"
+    },
+    "color": {
+     "field": "drop",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       true,
+       false
+      ],
+      "range": [
+       "#d32f2f",
+       "#282828"
+      ]
+     },
+     "legend": null
+    }
+   }
+  }
+ ],
+ "config": {
+  "font": "Tahoma, Verdana, sans-serif",
+  "axis": {
+   "labelFontSize": 18,
+   "titleFontSize": 20,
+   "labelColor": "#282828",
+   "titleColor": "#282828",
+   "grid": false
+  },
+  "legend": {
+   "labelFontSize": 16,
+   "titleFontSize": 16
+  },
+  "view": {
+   "stroke": "#282828"
+  }
+ }
+}

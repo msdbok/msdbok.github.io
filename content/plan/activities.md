@@ -1,254 +1,103 @@
 ---
 parent: Planning
-title: Activities
-nav_order: 2
+title: Activity planning
+nav_order: 3
 layout: default
 ---
 
-# Activity Planning
-_*Adapted from Eduardo Miranda (2014)_
+# Activity planning
 
----
+**Activity planning** turns a milestone plan into tasks: who does which piece of work, in what order,
+and what each task must wait for. The inventors of the critical-path method kept order and time apart:
+*"We defined planning as the act of stating what activities must occur in a project and in what order
+these activities must take place."* Dates come afterwards {% cite kelley1959cpm %}.
 
-## 1. Introduction
+## 1. Who commits to a task: pull or push
 
-**Purpose of activity planning**  
-Activity planning defines **how work will be done** and **in what sequence**, turning project scope and milestones into an executable schedule.
+In Scrum the team **pulls**. The development team decides what it can deliver, and the ScrumMaster
+*"cannot decide on behalf of the development team what commitment to make"*. Rubin warns that
+*"assigning tasks to individuals might be harmful if doing so reduces team ownership of the tasks"*
+{% cite rubin_essential_2012 %}. Capacity is measured first. For example, a team averaging 40 points
+plans about 20 for a sprint full of holidays, and checks skills as well as hours.
 
-It provides visibility into:
-- **Dependencies** among tasks  
-- **Order and duration** of activities  
-- **Responsibility allocation**
+In a plan-driven project the manager **pushes**: *"Every task that is scheduled should be assigned to a
+specific team member."* Its companion is effort validation: three engineers cannot carry seven parallel
+half-day tasks {% cite pressman2010incremental %}.
 
-Two major styles exist:
-- **Agile (Scrum-based)** — lightweight, pull-driven, adaptive  
-- **Plan-oriented** — structured, push-driven, dependency- and date-based
+Under pull the team holds the autonomy and answers to itself for the sprint. Under push the manager
+holds the commitment and answers for the whole schedule.
 
----
+## 2. When: one wave at a time
 
-## 2. Activity Planning in Scrum and Plan-Oriented Approaches
+Both styles plan the detail late. Scrum fixes the work for a sprint *"at the last responsible
+moment—the sprint planning for that sprint"* {% cite rubin_essential_2012 %}. In a plan-driven project,
+*"The activity planning for achieving a specific milestone may wait until close to the starting of the
+work on this milestone"*, because planning early means *"the planner chooses early solutions, not
+optimal solutions"* {% cite andersen_warning_1996 %}. That is
+[rolling wave planning](../scope/wbs/waves) {% cite githens_rolling_1998 %}.
 
-### 2.1 Scrum-Based Activity Planning
+## 3. The activity network
 
-| **When** | **Artifacts / Events** | **Characteristics** |
+An **activity network** records which task waits for which. The 1959 method drew tasks as arrows and
+needed dummy activities; today's activity-on-node form puts tasks in boxes and needs none
+{% cite wysocki2003needs %}. It can also carry lags and percent-complete conditions
+{% cite noauthor_scheduling_nodate %}.
+
+![Kelley and Walker's 1959 project diagram: jobs A to I are arrows between numbered events 0 to 7, and two delivery arrows run straight from the start to events 2 and 5](kelley-fig1.svg)
+
+*Kelley and Walker 1959, Fig. 1.*
+
+People are left out on purpose: *"Considerations of available
+manpower and equipment are conspicuous by their absence"* {% cite kelley1959cpm %}. What the network
+gives instead, in Brooks's words: *"Such a network shows who waits for what."*
+{% cite brooks_mythical_1995 %}
+
+## 4. Example: four dependency types in Quill
+
+Quill is a fictional word processor going live at a publishing house. Each dependency has a reason:
+
+| Type | Quill example | Reason |
 |---|---|---|
-| Sprint Planning | Sprint Backlog | Defines stories and tasks for the sprint. |
-| Daily Scrum | Task Board | Tasks are “pulled” as the team progresses. |
+| **Finish-to-start (FS)** | Tuning for 500-page documents starts when the new PDF engine is in | Technical: nothing to tune before |
+| **Start-to-start (SS)**, 1-week lag | Translating the help centre starts a week after writing it starts | Management: accept rework to save time |
+| **Finish-to-finish (FF)** | The citation-style guide cannot finish before the last style does | The guide covers every style |
+| **Start-to-finish (SF)** | The old word-processor licences end only after Quill goes live | The legacy system stops once the new one runs |
 
-**Key features:**
-- No explicit global sequencing or individual resource allocation.  
-- **Pull mechanism:** team members select tasks as they become available.  
-- **Collective ownership:** the team is responsible as a whole (discourages “I did my part”).  
-- **Adaptive execution:** work evolves based on current task states.
+The reason decides whether a link can change: management dependencies *"can be reversed, while
+technical dependencies cannot"*. Wysocki calls FS *"the simplest and most risk-averse of the four
+types"*, so start with FS everywhere and relax a link to SS or FF only when the date demands it
+{% cite wysocki2003needs %}. Relaxing buys time with the risk of rework.
 
-**Process summary:**
-1. Determine hours available in the sprint.  
-2. Estimate stories and set sprint “budget.”  
-3. Move selected stories and tasks to the sprint backlog.  
-4. Reprioritize or defer unselected stories.  
-5. During Scrum, update task status and pull new ones as needed.
+## 5. When to use it, and where it misleads
 
----
+Use a network when several people's work interlocks and the order is not obvious. Skip it inside a
+sprint, where the team sequences its own tasks.
 
-### 2.2 Plan-Oriented Activity Planning
+Expect the first draft to be wrong: *"The first chart is always terrible."* Drawing it is still the most
+valuable part, because it forces dependencies into the open {% cite brooks_mythical_1995 %}. And a
+network gives no dates by itself. The [critical path](critical-path) computes them, [PERT](pert) shows
+why they come out early, [resource planning](resources) fits them to people, and a
+[Gantt chart](gantt) displays them.
 
-| **When** | **Mechanism** | **Artifacts** |
-|---|---|---|
-| Beginning of project (rare) or rolling waves | **Push mechanism** | Activity networks, Gantt charts, Responsibility matrices |
+## How solid is this?
 
-**Characteristics:**
-- Explicit task **sequencing**, **scheduling**, and **responsibility** allocation.  
-- Activities are executed according to a **predefined order and dates**.  
-- Updated periodically via **rolling wave planning** cycles.
-
----
-
-## 3. Activity Networks (Nodes)
-
-**Purpose:** show how tasks depend on one another — the **flow of work** via dependencies.
-
-**Two representations:**
-1. **Activity on Node (AoN)** — tasks are nodes, arrows are dependencies.  
-   _Pros:_ no dummy activities; activity emphasis.  
-   _Cons:_ path tracing can be harder on large graphs.
-2. **Activity on Arrow (AoA)** — tasks are arrows, nodes are events.  
-   _Pros:_ path tracing often easier; highlights events.  
-   _Cons:_ may require dummy activities; de-emphasizes task details.
-
-**Primary attributes:**
-- **Dependencies:** informational or material links between tasks.  
-- **Duration:** estimated effort/elapsed time per task.
-
-**Precedence relationships:**
-- **Finish-to-Start (FS):** B starts after A finishes (default).  
-- **Finish-to-Finish (FF):** B finishes after A finishes.  
-- **Start-to-Start (SS):** B starts when A starts.  
-- **Start-to-Finish (SF):** B finishes after A starts (rare).  
-- **Percent-complete gate:** e.g., B starts when A is 70% done.
+- **Where it comes from.** The inventors' 1959 report, practitioner and software engineering textbooks,
+  a defence-acquisition guide and a Scrum practitioner book. No study compares pull with push.
+- **What is ours.** *Pull* and *push* are the lecture's words; Rubin and Pressman supply the
+  mechanisms without using them. The Quill dependencies are constructed for teaching.
 
 ---
 
-## 4. Critical Path
+### Acknowledgments
 
-**Definition:** the **longest path** through the activity network — determines the **minimum project duration**.
+This page adapts material from lectures by Eduardo Miranda {% cite miranda_managing_2014 %}
+on software project management.
 
-**Key points:**
-- There may be **multiple** critical paths.  
-- Tasks on the CP have **zero float (slack)**.  
-- Changing any CP task duration changes the project duration.  
-- Crashing non‑critical tasks has no impact on finish date.
+### References
 
-**Calculations:**
-- **Forward Pass**: ES₀=0; EFᵢ=ESᵢ+durᵢ; ESₖ=Max(EFⱼ), j∈Predₖ.  
-- **Backward Pass**: LFₙ=EFₙ; LSₖ=LFₖ−durₖ; LFₖ=Min(LSⱼ), j∈Succₖ.  
-- **Float**: Total Float=delay w/o affecting project finish (0 on CP). Free Float=delay w/o delaying any successor.
-
----
-
-## 5. Gantt Charts
-
-**What it is:** a task‑oriented view that uses horizontal bars on a time scale to depict:  
-- When tasks are **planned** to run  
-- When they **actually** ran and finish  
-- Who is assigned (optional)
-
-**Key concepts:**
-- Incorporates **resource availability**  
-- Anchored in time; shows **absolute dates**  
-- Supports **roll‑up** (summary) and **drill‑down**  
-- Common presentation tool (e.g., **MS Project**)
-
-**Limitations of CPM (context for Gantt):** under uncertainty, CPM can understate finish; cannot directly model alternatives/iterations — complements like buffers or probabilistic methods are helpful.
-
-```mermaid
-
-gantt
-    title Website MVP Plan
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %d
-    excludes    weekends
-
-    section Inception
-    Kickoff workshop       :done, a1, 2025-10-27, 2d
-    Vision & scope         :done,a2, after a1, 2d
-    Go/No-Go Gate          :milestone, m1, after a2, 0d
-
-    section Build
-    Backend API    :crit, b1, 2025-11-03, 7d
-    Frontend UI     :crit, b2, after b1, 7d
-    Payments integration   :b3, after b1, 5d
-
-    section Test & Release
-    System testing  :crit, c1, after b2, 3d
-    Integration testing    :c2, after b3, 3d
-    Fix & hardening        :crit, c3, after c1, 3d
-    Release Candidate      :milestone, m2, after c3, 0d
-    Production Launch      :milestone, m3, after c2, 0d
-```
-
-**Legend suggestion:**  
-- _done_ = (gray) completed as planned  
-- _active_ = (blue) in progress
-- _critical_ = (reg) critical path
-- unstyled = planned (not yet started)
-
----
-
-## 6. Alternatives to CPM
-
-| Method | Description | Distinct Feature |
-|---|---|---|
-| **CPM** | Critical Path Method (DuPont, 1956) | Deterministic durations |
-| **PERT** | Program Evaluation and Review Technique (US Navy, 1958) | Probabilistic durations: E=(O+4M+P)/6; σ=(P−O)/6 |
-| **DSM / GERT** | Design Structure Matrix / Graphical E&RT | Handles conditional branching, iteration, overlap |
-| **Critical Chain (Goldratt, 1997)** | Adds buffers; considers resources & multitasking | Aggregated buffers; focus on uncertainty |
-
----
-
-## 7. Merge Bias and Critical Chain
-
-### 7.1 Merge Path Bias (why CPM underestimates)
-Definition. In networks where multiple parallel paths merge into one successor, the project’s completion time depends on the maximum of those path durations. Using only expected path times (as in vanilla PERT) underestimates the true expected completion time — this is merge path bias.
-
-Why it happens (intuition). At a merge, all predecessors must finish. With variability, there’s a good chance at least one path runs late → the merge waits → project finish skews later than the longest mean path.
-
-```mermaid
-flowchart LR
-    A[Start] --> B[Task B]
-    A --> C[Task C]
-    B --> D[Merge → D]
-    C --> D
-    D --> E[Finish]
-```
-
-Tiny example.  
-Two parallel paths before D:
-
-- Path 1 mean = 10 weeks (σ ≈ 2)
-- Path 2 mean = 9 weeks (σ ≈ 2)
-
-Naively, finish ≈ 10 weeks.  
-With a merge, expected finish is > 10 because finish = max(Path1, Path2).
-
-When it grows. More merges, more parallel variability → stronger bias.
-
----
-
-### 7.2 Critical Chain Project Planning (CCPM)
-
-**Premises (Goldratt):** uncertainty is pervasive; people add safety; Parkinson’s Law; Student Syndrome; resource contention matters; merging paths pass delays; multitasking hurts.
-
-**Core ideas:**
-- **Critical chain** = longest sequence considering both **task** and **resource** dependencies.  
-- Add **buffers** to absorb variation: **project buffer** (end), **feeder buffers** (non‑critical joins), **resource buffers** (alerts).
-
-**Illustration – Critical Chain with Buffers & Resources**
-```mermaid
-gantt
-    title Critical Chain — Just-in-Time Feeds & Buffers
-    dateFormat  YYYY-MM-DD
-    axisFormat  %b %d
-    excludes    weekends
-
-    section Plan (Chain + Feeds)
-
-    %% Critical chain starts
-    Design A                            :crit, a2, 2025-10-27, 9d
-
-    %% Feed for C runs in parallel and lands just before C
-    Feature B → feeds C                 :active, b2,   2025-10-30, 4d
-    Feed Buffer → C                     :fb1b, after b2,   2d
-    Build C (after FB→C)                :crit, c2,   after fb1b, 4d
-
-    %% Feed for E runs in parallel and lands just before E
-    Feature D → feeds E                 :active, d2,   2025-11-04, 6d
-    Feed Buffer → E                     :fb2b, after d2,   2d
-    Integrate & Test E (after FB→E)     :crit, e2,   after fb2b, 10d
-
-    %% Finish with project buffer & release
-    Project Buffer                      :pb,   after e2,   4d
-    Release                             :milestone, rel, after pb, 0d
-
-    
-```
-    Note: Critical chain is in light red.
-
-**Pros:** safety made explicit; aggregated protection; focus and single‑tasking; control via **buffer consumption**.  
-**Cons:** assumes everyone adds safety; does not model correlated risks across tasks.
-
----
-
-## Acknowledgments
-
-This content is heavily inspired by and adapted from lectures by **Eduardo Miranda** and **David Root** on software project management. The structure, examples, and pedagogical approach reflect their teaching materials and frameworks.
-
----
-
-## Sources
-
-- Miranda, Eduardo. *Managing Software Development*. Lecture materials, 2014.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

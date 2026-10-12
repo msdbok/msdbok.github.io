@@ -1,0 +1,99 @@
+<mxfile host="msd_review" type="device">
+  <diagram id="d1" name="Page-1">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="960" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" value="&lt;b&gt;A. Integrate PDF engine&lt;/b&gt;&lt;br&gt;3 wk&lt;br&gt;&lt;font style='font-size:12px' color='#616161'&gt;weeks 0–3 · float 0 / 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdecea;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" value="&lt;b&gt;B. Tune for 500 pages&lt;/b&gt;&lt;br&gt;4 wk&lt;br&gt;&lt;font style='font-size:12px' color='#616161'&gt;weeks 3–7 · float 0 / 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdecea;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="310" y="60" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" value="&lt;b&gt;C. Set up EU data centre&lt;/b&gt;&lt;br&gt;2 wk&lt;br&gt;&lt;font style='font-size:12px' color='#616161'&gt;weeks 0–2 · float 1 / 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="200" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" value="&lt;b&gt;D. Cloud sync, EU&lt;/b&gt;&lt;br&gt;4 wk&lt;br&gt;&lt;font style='font-size:12px' color='#616161'&gt;weeks 2–6 · float 1 / 1&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="200" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" value="&lt;b&gt;E. Ten citation styles&lt;/b&gt;&lt;br&gt;2 wk&lt;br&gt;&lt;font style='font-size:12px' color='#616161'&gt;weeks 0–2 · float 4 / 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="30" y="340" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" value="&lt;b&gt;F. Accessibility review&lt;/b&gt;&lt;br&gt;1 wk&lt;br&gt;&lt;font style='font-size:12px' color='#616161'&gt;weeks 2–3 · float 4 / 4&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f8f0;strokeColor=#019546;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="310" y="340" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" value="&lt;b&gt;G. Acceptance run&lt;/b&gt;&lt;br&gt;2 wk&lt;br&gt;&lt;font style='font-size:12px' color='#616161'&gt;weeks 7–9 · float 0 / 0&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fdecea;strokeColor=#d32f2f;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="112" as="sourcePoint" />
+            <mxPoint x="310" y="112" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n10" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="112" as="sourcePoint" />
+            <mxPoint x="600" y="230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="565" y="112" />
+              <mxPoint x="565" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n11" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=2;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="252" as="sourcePoint" />
+            <mxPoint x="310" y="252" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n12" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=2;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="252" as="sourcePoint" />
+            <mxPoint x="600" y="252" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n13" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=2;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="392" as="sourcePoint" />
+            <mxPoint x="310" y="392" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n14" value="" style="endArrow=blockThin;html=1;strokeColor=#2D6E2A;strokeWidth=2;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="392" as="sourcePoint" />
+            <mxPoint x="600" y="274" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="565" y="392" />
+              <mxPoint x="565" y="274" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n15" value="" style="endArrow=blockThin;html=1;strokeColor=#d32f2f;strokeWidth=3;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;dashed=0;curved=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="252" as="sourcePoint" />
+            <mxPoint x="870" y="252" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n16" value="" style="rhombus;whiteSpace=wrap;html=1;fillColor=#282828;strokeColor=#282828;" vertex="1" parent="1">
+          <mxGeometry x="870" y="228" width="48" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" value="Go-live, week 9" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="282" width="110" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" value="&lt;b&gt;Critical path A → B → G: nine weeks, zero float.&lt;/b&gt; Every other path can slip by its float." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="30" y="10" width="900" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d32f2f;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="468" width="40" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" value="critical: a week lost here is a week lost on go-live" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#282828;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="80" y="456" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" value="float shown as total / free, in weeks" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Tahoma,Verdana,sans-serif;fontColor=#616161;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="470" y="456" width="460" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

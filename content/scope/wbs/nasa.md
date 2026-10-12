@@ -5,143 +5,110 @@ nav_order: 4
 layout: default
 ---
 
-# NASA Work Breakdown Structure (WBS) Method
+# NASA Work Breakdown Structure
 
-## 1. What is a WBS?
+NASA defines a WBS as *"a product-oriented family tree that identifies the hardware, software,
+services, and all other deliverables required to achieve an end project objective"*
+{% cite nasa2019wbs %}. Its distinctive rule: the product tree also carries the work of integrating
+the products.
 
-- **Definition**: A Work Breakdown Structure (WBS) is a **hierarchical decomposition** of all work required to accomplish a project’s objectives.
-- **Focus**: NASA stresses a **product-based WBS**, meaning it breaks down deliverables (hardware, software, services) rather than functions or activities.
-- **Goal**: Provide a logical, consistent framework for planning, budgeting, scheduling, and tracking project progress.
+## 1. Products plus the work that holds them together
 
----
+The Systems Engineering Handbook derives the WBS from the product breakdown structure (PBS): *"The
+WBS is built, in part, from the PBS by adding, at each branch point of the PBS, any necessary service
+elements, such as management, systems engineering, Integration and Verification (I&V), and integrated
+logistics support"* {% cite nasa_nasa_2007 %}. Its figure carries the caption *"The whole takes more
+work than the sum of the parts."*
 
-## 2. Relationship to Other Structures
+![A system broken into product components A to D, alongside management, systems engineering, integration and verification, and logistics support](nasa-product-plus-enabling.svg)
+_Product tree plus integration work._
 
-- **PBS (Product Breakdown Structure)**: Shows _what_ products are needed.
-- **WBS**: Adds the _work to create, integrate, and manage_ those products (e.g., systems engineering, integration & verification, logistics, management).
-- **Key idea**:  
-    _PBS = system components_  
-    _WBS = PBS + work needed to realize/integrate them_
+The WBS Handbook turns this into a template (Fig. 3-2). A project WBS, *"while being predominantly
+product-oriented, must also reflect all the effort that is in the approved scope of work. Because of
+this, common elements of work must be included that are not necessarily product-oriented"*
+{% cite nasa2019wbs %}. Level 2 holds common enabling work (management, systems engineering, safety
+and mission assurance), the products, and a systems integration and testing element. Inside each
+product the enabling stacks recur *"as necessary"*. So "what goes where" has a definite answer:
 
----
+| Where | What | In NASA's software example |
+|---|---|---|
+| Level 2, common | management, systems engineering, assurance, system integration and test | four of the nine Level 2 elements |
+| Inside each product | its own design, build and test | *Functional Unit "A"*: Design · Code · Unit Test |
+| Nowhere, as a grouping | phases, functions, disciplines, labour categories | *"None are appropriate as WBS elements"* |
 
-## 3. Role of WBS in NASA Projects
+## 2. Branch points show how the system is integrated
 
-- **Organizing backbone** for:
-    - Technical planning and scheduling
-    - Cost estimation and earned value management (EVM)
-    - Defining scope of Statements of Work (SOW) and contracts
-    - Status reporting (cost, schedule, performance)
-    - Documentation (SEMP, specifications, drawings)
-- Provides a **shared vocabulary** across NASA, contractors, and stakeholders.
+*"Branch points in the hierarchy should show how the PBS elements are to be integrated"*
+{% cite nasa_nasa_2007 %}. Each branch says: these children are put together here, and the parent's
+owner answers for it. NASA's second common error splits the tree one way while the team integrates
+another. In a distributed system whose software is integrated with its hardware low down, *"It would
+then be inappropriate to separate hardware and software as if they were separate systems to be
+integrated at the system level."* The cost: nobody is accountable for that integration, and its cost
+cannot be seen. Integrated testing of whole Level 2 systems belongs under Systems Integration and
+Testing {% cite nasa2019wbs %}.
 
----
+## 3. Fix the top, let the bottom change
 
-## 4. WBS Levels & Hierarchy
+*"The top two levels of a project WBS are dictated and controlled by the Agency through standard,
+level-two WBS templates"*; levels 3 and below belong to the project {% cite nasa2019wbs %}, and cost
+history stays comparable across projects. Product orientation makes change local: *"If
+there is a schedule slip in one element of a WBS, an observer can determine which other WBS elements
+are most likely to be affected"* {% cite nasa_nasa_2007 %}.
 
-- **Top level**: Project’s prime product(s) (e.g., spacecraft, payload, ground system).
-- **Mid levels**: Subsystems, segments, and enabling elements.
-- **Lowest level**: Tangible items (hardware, software, documents) with a responsible engineer/manager.
-- Each element:
-    - Has a **WBS code** (numbering system)
-    - Is described in a **WBS dictionary** (title, objective, description, dependencies).
+## 4. Example: add a function, and one branch grows
 
----
+NASA's sample software WBS (Fig. 3-10, *Software Project XYZ*) has nine Level 2 elements: Project
+Management, Systems Engineering, Safety & Mission Assurance, Systems/Modules Development, Sys
+Software Integration & Test, Security Validation, System Deployment, Operational Site Implementation,
+and Outreach & Education {% cite nasa2019wbs %}. Under development sit *Functional Unit "A"* and
+*"B"*. Add a third unit:
 
-## 5. Development Techniques
+| What changes | Where | Kind of change |
+|---|---|---|
+| *Functional Unit "C"*: Design · Code · Unit Test | new Level 3 under development | one new branch, carrying its own cost |
+| testing C together with A and B | Sys Software Integration & Test | existing element grows |
+| C's pages in the user manuals, help-desk scripts | System Deployment | existing element grows |
+| training on C | existing training elements | existing element grows |
+| the nine Level 2 elements | — | unchanged |
 
-- **Top-down iterative process**:
-    1. Define system architecture → preliminary PBS.
-    2. Add required services (management, I&V, SE, logistics).
-    3. Decompose recursively until reaching cost account level.
-- **Involve responsible engineers** for lower-level elements to ensure completeness.
-- **Alternative**: Build complete PBS in one design step, then expand into WBS (risk: missing items).
+The new function's cost reads off a few named lines; the structure stays. In a
+phase-organised tree the change spreads across every phase, its cost hidden.
 
-```mermaid
-graph TD
-  SYS["System"]
+The same blocks fit Quill 1.0, an invented word processor:
 
-  %% System Components
-  SYS --> A["A"]
-  SYS --> B["B"]
-  SYS --> C["C"]
-  SYS --> D["D"]
+![Quill 1.0 at Level 2: enabling work, the product components, and system integration and test as separate branches](quill-level-two.svg)
+_A new feature grows only the product branch._
 
-  %% Work to integrate
-  SYS --> MGMT["Mgmt"]
-  SYS --> SE["SE"]
-  SYS --> IV["I&V"]
-  SYS --> ILS["ILS"]
+## 5. When to use it, and its limits
 
-  subgraph INTEGRATE["<font size='1'>Work to integrate the components into a system</font>"]
-    MGMT & SE & IV & ILS
-  end
-  subgraph PRODUCE["<font size='1'>Work to produce the individual system components</font>"]
-   A & B & C & D
-  end
-```
+The approach suits contracted, multi-organisation work, and any team that wants comparable estimates
+across projects: fix Level 2 first, and put each change at the lowest level that holds it. Much of the
+handbook is NASA plumbing (a
+seven-level finance limit, coding and approval chains); borrow the structure, not the bureaucracy. The
+current edition is NASA/SP-3404 (2019), its core text unchanged since 2010 {% cite nasa2010wbs %}.
 
----
+## How solid is this?
 
-## 6. Common Errors to Avoid
-
-1. **Functions, not products**
-    - Wrong: “Design, Fabrication, Test”
-    - Right: “Spacecraft Bus, Payload, Ground Station”
-2. **Branching inconsistent with integration**
-    - Wrong: Separating hardware and software when they integrate at subsystem level.
-3. **WBS inconsistent with PBS**
-    - Leads to gaps in implementation and mismanagement.
-
----
-
-## 7. Life-Cycle Use of WBS
-
-- Used **throughout all project phases**:
-    - Early: conceptual framework for objectives & scope.
-    - Mid: refined with detailed subsystems, cost accounts, and work packages.
-    - Later: updated continuously to track changes in scope, cost, and risk.
-- **Baseline WBS** becomes part of program plan and is controlled/configured like any other project artifact.
+- **Where it comes from.** Agency handbooks, silent on whether the practice works. The IT template
+  is still marked DRAFT.
+- **Whose label.** "Hybrid" is not NASA's word; the handbooks have no hit for it. It is the teaching
+  label in Miranda's material {% cite miranda_managing_2014 %} for what NASA calls "predominantly
+  product-oriented" plus "common elements of work".
+- **What is our inference.** The add-a-function example chains four quoted rules; the handbook
+  never states the chain itself. Quill is a constructed example.
 
 ---
 
-## 8. NASA Standard WBS (per NPR 7120.5)
+### Acknowledgments
 
-- NASA mandates a **standardized high-level WBS** for spaceflight projects:
-    - Includes prime products (payload, spacecraft, ground systems).
-    - Includes enabling/support products (management, systems engineering, safety, mission ops, education).
-- Ensures **consistency** with NASA accounting, acquisition, and reporting systems.
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
----
+### References
 
-## 9. Integration with Other Processes
-
-- **Systems Engineering**: Ensures WBS reflects architecture and traceability.
-- **Cost & Schedule Management**: WBS ties directly into EVM (Budgeted Cost of Work Scheduled, Earned Value).
-- **Risk Management**: WBS granularity adapted to risk (high-risk items → detailed WBS).
-- **Configuration Management**: WBS and dictionary under formal control, updated as project evolves.
-
----
-
-## 10. Key Takeaways / Review
-
-- WBS is **product-based**, not function-based.
-- Combines **PBS + enabling services**.
-- Provides **structure for cost, schedule, and technical integration**.
-- Must be **kept consistent** with PBS and updated through life cycle.
-- Avoids pitfalls by:
-    - Keeping product focus.
-    - Aligning with integration strategy.
-    - Ensuring completeness.
-
----
-
-## Sources
-
-1. NASA Systems Engineering Handbook (2007).
-2. Sadler, Christopher Lewis. "NASA work breakdown structure (WBS) handbook." (2021).
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.

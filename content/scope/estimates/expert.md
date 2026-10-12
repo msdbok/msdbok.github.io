@@ -1,129 +1,106 @@
 ---
 parent: Estimates
 title: Expert Judgment
-nav_order: 1
+nav_order: 2
 layout: default
+page_type: method
 ---
 
-# **Expert Judgment in Software Effort Estimation**
+# Expert Judgment
 
-## 1. What It Is
+**Expert judgment** is estimation in which a person, not a formula, produces the number: *"Expert
+estimation can be described as estimation conducted by persons recognised as experts where important
+parts of the estimation process is based on non-explicit, non-recoverable reasoning processes, i.e.
+‘intuition’."* {% cite jorgensen2004topdown %}
 
-Expert judgment (or _expert-based estimation_) means estimating effort or cost by relying on the **experience, intuition, and tacit knowledge** of one or more professionals.  
-The reasoning process is usually **non-explicit and non-recoverable** — the expert cannot fully explain _how_ they arrived at the number.
+It is how most software is estimated. At JPL, 83% of estimators named informal analogy as their
+primary technique and 7% named models, and a review found no survey in which most estimates came from
+models {% cite jorgensen2004expert %}.
 
-> “Estimation conducted by persons recognised as experts where important parts of the estimation process are based on non-explicit, non-recoverable reasoning processes, i.e., intuition.” — Jørgensen (2004)
+## 1. Top-down or bottom-up
 
----
+An expert works in one of two ways {% cite jorgensen2004expert jorgensen2004topdown %}:
 
-## 2. Why It Is Used
+| | Top-down | Bottom-up |
+|---|---|---|
+| **How** | the project as a whole, compared with completed projects | activities from a WBS, each estimated, then summed |
+| **Strength** | fast, cheap, encourages the use of history | builds an understanding of how the work will be done |
+| **Weakness** | needs a very similar past project | forgets activities and underestimates surprises |
 
-- It is **the most common software estimation approach** in both research and practice.
-- Often **no formal model** fits the context or sufficient data are lacking.
-- Expert methods are **flexible**, quick, and work with incomplete information.
-- Empirical comparisons show **no consistent accuracy advantage** for formal models like COCOMO; roughly one-third of studies favour experts, one-third models, one-third show no difference (Jørgensen 2004).
+Seven professional teams estimated two real projects each way. Bottom-up erred by 23% and 31%,
+top-down by 45% and 55%. Only two of the seven top-down teams recalled a similar project whose actual
+effort they knew, and theirs were among the most accurate, at 12%. The rule that follows:
+*"software companies should apply the bottom-up strategy unless the estimators have experience from,
+or access to, very similar projects."* {% cite jorgensen2004topdown %}
 
----
+## 2. When to use it, and when not
 
-## 3. Levels of Structure
+Use it when the expert knows something no model has an input for — *"a serious conflict between the
+project leader Peter and his best programmer Paul"* {% cite jorgensen_software_2009 %} — when no
+model has been calibrated to your organisation, and when the specification is too vague to count. Do
+not rely on it alone when the estimate must hold under pressure to lower it, or after someone has
+already said a number.
 
-| Form                   | Description                                                      | Example Methods                       |
-|------------------------|------------------------------------------------------------------|---------------------------------------|
-| **Unaided individual** | “Finger-in-the-wind” or gut feeling; based purely on personal experience. | A project manager gives a one-number estimate based on past projects. |
-| **Structured individual** | Expert uses simple aids like checklists or historical tables.  | A developer adjusts a previous project’s effort by ±20%.              |
-| **Structured group**   | Several experts reason together using explicit elicitation and aggregation rules. | **Wideband Delphi**, **Planning Poker**, **Paired Comparisons**.      |
+## 3. Four biases, and a countermeasure for each
 
-All share the same cognitive basis — intuitive pattern-matching from past experience — but differ in how transparently that intuition is elicited and combined.
+The countermeasures that survive the evidence change what the estimator sees, not who the estimator
+is:
 
----
+| Bias | What it looks like | Countermeasure |
+|---|---|---|
+| **Availability** | only the activities that come to mind are counted | an activity checklist and searchable project history {% cite jorgensen2004expert %} |
+| **Anchoring** | a number heard first — the sponsor's guess, the budget | someone else removes numbers from the brief before it is estimated {% cite halkjelsvik2012origami %} |
+| **Representativeness** | "it is just like the last one" | documented data from many past tasks, not the single closest {% cite jorgensen2004expert %} |
+| **Confirmation** | the estimator argues for their own plan | an independent second estimate, and listing why your own could be wrong {% cite jorgensen2004expert %} |
 
-## 4. Levels of Application
+All four feed **overconfidence**. Jørgensen's teams believed their ranges had an 86% chance of holding
+the actual; 43% did {% cite jorgensen2004topdown %}. Set ranges from your own historical error, or
+mechanically at 50% to 200% of the most likely value {% cite jorgensen2004expert %}.
 
-Expert judgment can be applied at:
+For example, Aranda and Easterbrook gave 23 estimators the same brief for a statistics system,
+changing one sentence from a client manager: *"I admit I have no experience with software projects,
+but I guess this will take about 2 months to finish."* Mean estimates were 6.8 months with that
+sentence, 8.3 with no guess, and 17.4 when the manager guessed 20 months
+{% cite aranda2005anchoring %}. Forewarning barely helps: *"Ideally, estimators should be shielded
+from anchors."*
 
-- **Project level** → estimate total effort or cost.
-- **Task level** → estimate specific WBS activities.
-- **Deliverable level** → estimate a feature, report, or module.
+## 4. Expert or model?
 
----
+Of 15 studies comparing the two, five favoured experts, five found no difference and five favoured
+models: *"there is no substantial evidence in favour of either model or expert-based estimates"*
+{% cite jorgensen2004expert %}. The pattern matters more than the tally. Experts beat
+**uncalibrated** models in every such experiment, and **calibrated** models matched or beat experts
+in every one. A later count found judgment more accurate in 10 of 16 studies
+{% cite jorgensen_software_2009 %}.
 
-## 5. Top-Down vs Bottom-Up Expert Estimation
+Jørgensen and Boehm's debate gives each side one sentence. Boehm: *"A major advantage of a parametric
+model is that it doesn't modify its estimates when customers, managers, or marketers apply
+pressure."* Jørgensen: *"All meaningful estimation models require judgment to produce the input to
+the models."* Both conclude for combining the two, as [estimation approaches](approaches) describes.
 
-_(from Jørgensen 2004)_
+## How solid is this?
 
-| Aspect         | **Top-Down**                                         | **Bottom-Up**                                         |
-|----------------|------------------------------------------------------|-------------------------------------------------------|
-| **Basis**      | Analogy with whole projects (“This looks like our 2023 payroll app.”) | Sum of detailed task estimates (“UI = 200 h, DB = 100 h …”) |
-| **When used**  | Early stages with vague specs.                       | Later stages with detailed WBS.                       |
-| **Needs**      | Memory or database of **similar past projects**.     | Technical understanding of component activities.      |
-| **Accuracy in study** | Less accurate unless close analogies found.   | Generally more accurate; promotes better understanding of requirements. |
-| **Effort to produce** | Faster, cheaper.                              | Slower, more effortful.                               |
-
-**Key empirical finding:**
-
-> Top-down estimates were only accurate when estimators recalled _very similar previous projects_; otherwise bottom-up estimates performed better.
-
----
-
-## 6. Strengths of Expert Judgment
-
-- Works even with incomplete or qualitative data.
-- Incorporates context, risks, and “soft” factors.
-- Quick to produce; adaptable during re-estimation.
-- Encourages discussion and consensus in teams (Delphi, Planning Poker).
-
----
-
-## 7. Typical Weaknesses and Biases
-
-- **Overconfidence:** experts give too-narrow ranges of uncertainty.
-- **Anchoring:** early guesses influence final numbers.
-- **Availability bias:** recall of recent or vivid projects skews judgment.
-- **Regression toward the mean:** small projects often over-estimated, large ones under-estimated.
-- **Limited transfer:** experience with dissimilar projects leads to large errors.
-
----
-
-## 8. Improving Expert Estimation
-
-- Use **structured group techniques** (Delphi, Planning Poker) to average biases.
-- Provide **calibrated feedback** comparing past estimates vs actuals.
-- Maintain a **searchable project history database** so experts can find valid analogies.
-- Combine with **model or data-based approaches** (e.g., expert + COCOMO hybrid).
-- Elicit and record **ranges** (minimum, most likely, maximum) instead of single points.
+- **The top-down and bottom-up figures** come from seven teams and two small projects that both
+  strategies over-estimated; the process observations transfer better than the percentages.
+- **The 15 studies** are convenience samples, many with students. The 5/5/5 and the 10 of 16 count
+  different things and must not be merged.
+- **The anchoring experiment** had 23 participants, mostly graduate students; the low anchor's effect
+  was not significant, only the high one's.
+- **The countermeasures rest mostly on psychology.** Training, feedback and asking an outside observer
+  did not improve accuracy in the studies reviewed {% cite halkjelsvik2012origami %}.
 
 ---
 
-## 9. Example in Practice
+### Acknowledgments
 
-A project manager estimating a new online-banking feature:
+This page adapts material from lectures by Eduardo Miranda and David Root
+{% cite root2014lectures %} on software project management.
 
-1. Thinks of a similar mobile-app feature (analogy).
-2. Adjusts for added security layers (+20%).
-3. Discusses with peers via Planning Poker; consensus ≈ 480 hours.
-4. Adds ±25% uncertainty range.
+### References
 
-This process is expert judgment: intuitive, experience-based, but made more reliable by structure and group reasoning.
-
----
-
-## 10. Summary Table
-
-| Criterion         | Expert Judgment         | Model-Based (e.g., COCOMO) |
-|-------------------|------------------------|----------------------------|
-| Input needed      | Informal experience    | Quantitative drivers       |
-| Transparency      | Low (tacit reasoning)  | High (explicit formula)    |
-| Flexibility       | High                   | Low–medium                |
-| Accuracy (empirical median) | ≈ ±30 % MRE (typical) | Similar                  |
-| Best suited for   | Early estimation, unique projects | Repetitive, data-rich domains |
-
----
-
-## Source
-
-Jørgensen, Magne. "Top-down and bottom-up expert estimation of software development effort." _Information and Software Technology_ 46.1 (2004): 3-16.
+{% bibliography --cited %}
 
 ---
 
 {: .highlight }
-**Disclaimer:** AI is used for text summarization, explaining and formatting. Authors have verified all facts and claims. In case of an error, feel free to file an issue or fix with a pull request.
+**Disclaimer:** AI is used for text summarization, polishing and explaining. Authors have verified all facts and claims. In case of an error, feel free to file an issue.
