@@ -65,19 +65,17 @@ Answer each in a short paragraph, claim first.
 
 **3.** The budget is fixed at 600 hours before anyone estimates. What does that imply, and how do you check it?
 
-### 2.2 Sizing the product
+### 2.2 The map of methods
 
-**1.** Why estimate size before effort, and why count functions rather than lines of code?
+**1.** Why estimate size before effort, and where on the size → effort → schedule chain does each family of methods sit?
 
-**2.** When is counting preferable to analogy or judgment, and why is an estimate from a count still a range?
+**2.** What separates the six families of estimation methods, and why does that make them easy to combine?
 
 ### 2.3 Expert judgment
 
-**1.** What separates the six families of estimation methods, and why does that make them easy to combine?
+**1.** Your company keeps a project database nobody can search. Which estimating strategy does that hurt, and why?
 
-**2.** Your company keeps a project database nobody can search. Which estimating strategy does that hurt, and why?
-
-**3.** Why do bias fixes change what estimators see instead of asking them to try harder?
+**2.** Why do bias fixes change what estimators see instead of asking them to try harder?
 
 ### 2.4 Estimating as a group
 
@@ -89,17 +87,25 @@ Answer each in a short paragraph, claim first.
 
 **4.** What is the advantage of story points, and what is the trade-off?
 
-### 2.5 Parametric models
+### 2.5 Function points
 
-**1.** Why must a published model be calibrated before you trust it?
+**1.** Why count functions rather than lines of code?
 
-**2.** Why does effort grow faster than size, and which of COCOMO's scale factors can a manager change?
+**2.** In the Workopolis count, recruiter accounts are an external file although recruiters log in. Why, and what changes if you decide otherwise?
+
+**3.** Why convert a count to hours with your own delivery rate, as a range, and why say what the rate covers?
+
+**4.** COCOMO gave Workopolis about 2,500 hours, the team's rate 1,200 to 1,800. Why must a published model be calibrated before you trust it, and why does its effort grow faster than size?
+
+**5.** Why is a function-point count more trustworthy than an effort estimate made from it?
 
 ### 2.6 Combining methods
 
 **1.** No history, incomplete requirements: which methods would you combine, and why?
 
 **2.** Why read the spread of independent estimates rather than average them?
+
+**3.** A rule of thumb gives Workopolis about 580 hours, close to the sponsor's 600. Does that agreement support the budget? Why or why not?
 
 ---
 

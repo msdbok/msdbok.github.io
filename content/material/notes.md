@@ -21,7 +21,7 @@ one before a quiz or a case, or after missing the session.
 - [SN L3b — Requirements Engineering](sn3b.html): elicitation, testable statements, change, requirements with LLMs.
 - [SN L3c — Risk Management](sn3c.html): finding, writing, ranking and tracking risks, and the Comair case.
 - [SN L4a — Work Breakdown Structure](sn4a.html): the 100% rule, orientation, product plus enabling work, building, rolling wave, keeping it alive.
-- [SN L4b — Estimation](sn4b.html): sizing, judgment, Planning Poker, models, combining.
+- [SN L4b — Estimation](sn4b.html): the map of methods, judgment, Planning Poker, function points to hours, combining.
 - [SN L5a — Planning and Milestones](sn5a.html): coordination, predictive and agile plans, milestones.
 - [SN L5b — Activities, Critical Path and Critical Chain](sn5b.html): networks, float, late schedules, critical chain.
 - [SN L6a — Release Planning](sn6a.html): prioritising, Buffered MoSCoW, contracts and incentives.
