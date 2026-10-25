@@ -162,7 +162,7 @@ The count is reliable; an estimate from it is not. Two trained counters differ b
 {% cite kemerer1993fp %}, while Albrecht's formula from function points to effort typically missed one
 project by about 85% {% cite albrecht1983fpa %}. Quote the effort as a range.
 
-→ [Function Point Analysis](../scope/estimates/fpa) · [FPA explained](../scope/estimates/fpa_explained) · [COCOMO](../scope/estimates/cocomo)
+→ [Function Point Analysis](../scope/estimates/fpa) · [FPA explained](../scope/estimates/fpa_explained) · [COCOMO](../scope/estimates/cocomo) · [Workopolis, rated in full](workopolis_fp)
 
 ## 6. Combining methods
 
