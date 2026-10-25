@@ -140,10 +140,10 @@ count is constructed for the course; the stories are Miranda, Bourque & Abran's
 | EIF, only read | recruiter accounts: no story creates or changes them | 1 × 7 | 7 |
 | EI | register; upload, delete resume; create, suspend, delete alert; post, edit, delete job | 9 × 4 | 36 |
 | EQ | search jobs; two log-ins | 3 × 4 | 12 |
-| EO | notify job seekers of matching posts | 1 × 5 | 5 |
+| EO | notify job seekers: an e-mail with the count of matches | 1 × 5 | 5 |
 | | log-outs move no data: not counted | | **90** |
 
-The choices move the count a little: Notify as an EQ gives 89, recruiters as a kept file 93. Write
+The choices move the count a little: alerts folded into the job seeker give 80, Notify without a count (EQ) 89, recruiters as a kept file 93. Write
 each choice down.
 
 **From size to hours, with your own rate.** At an example company's 8 to 12 FP per person-month,

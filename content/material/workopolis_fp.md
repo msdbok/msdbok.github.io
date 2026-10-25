@@ -19,8 +19,10 @@ no fields, so the data model below is **constructed** for the example. The rules
 
 Workopolis keeps three groups of data and reads one that another system maintains. No story creates
 or changes a recruiter account, so for this application it is an external interface file. A resume
-exists only inside a job seeker, so it is a **subgroup** (a record element type) of that file, not a
-file of its own.
+is part of a job seeker's profile, so it is a **subgroup** (a record element type) of that file, not a
+file of its own. A career alert is a saved search the user manages as a list, so it is counted as a
+file. Both are judgements about how the user sees the data; the other choices are counted in
+section 3.
 
 | File | Type | Fields | DET | RET | Rating | FP |
 |---|---|---|--:|--:|---|--:|
@@ -66,7 +68,7 @@ fields.
 
 Rating every item Average is the honest default when the stories carry no fields
 {% cite longstreet2002fpa %}. Once the fields are known, Workopolis rates mostly Low and the count
-falls by 22%. The open classification choices move it much less: *Notify* without the count, an inquiry, gives 69,
+falls by 22%. The open classification choices move it much less: career alerts treated as part of the job seeker (a subgroup) give 62, the resume as a file of its own 77, *Notify* without the count, an inquiry, gives 69,
 recruiter accounts as an internal file 72, log-ins left out 64. After the boundary, the rating is the
 biggest lever, so a count should record every rating and the fields behind it.
 
