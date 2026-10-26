@@ -51,3 +51,20 @@ callouts:
     color: red
 
 
+
+# Working files that live in the repo but must not be published.
+# Setting `exclude` replaces Jekyll's defaults, so those are listed too.
+exclude:
+  - templates/
+  - docs/
+  - scripts/
+  - README.md
+  - CONTRIBUTING.md
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile.lock.old
+  - node_modules/
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
