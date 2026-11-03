@@ -16,9 +16,16 @@ a separate brief for each piece of work asked of you.
 Read the system description once and keep it to hand; the assignment pages assume it rather
 than repeating it.
 
-- [TRS Description](trsd.html) is the system itself — what it is for, who uses it, and what it has to do.
-- [TRS WBS Case](trswbs.html) asks for a work breakdown structure and a function point count over that system.
-- [TRS Critical Path Case](trscp.html) asks for the schedule: activities, dependencies, the critical path and the critical chain.
+- [TRS Description](trsd.html) is the system itself — what it is for, who uses it, what it has
+  to do, the contract, the function list and the team.
+- [TRS Case 4: the bid](trswbs.html) asks for a work breakdown structure, a function point count
+  and the effort to bid.
+- [TRS Case 5: the first increment](trscp.html) asks for the schedule: the network, the critical
+  path, the critical chain and the demonstration date to promise.
+- [TRS Case 6: the release plan](trsrel.html) asks what ships by the deadline: a Buffered MoSCoW
+  release plan, a milestone plan and how to see a slip.
+
+The case rules, the deadlines and the grading are on Moodle.
 
 ---
 
