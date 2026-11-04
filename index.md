@@ -12,7 +12,7 @@ page_type: home
 # Managing Software Development
 
 A handbook for the people who have to decide: what to build, how big it is, in what order, and
-whether it is going well. It accompanies the MSD course at Innopolis University and is written to
+whether it is going well. It accompanies the MSD course and is written to
 be read on its own — one page per method, self-contained, with its sources on it.
 
 ---
