@@ -19,6 +19,9 @@ vendor/
 .DS_Store*
 content/verif/.DS_Store
 
+# Editor / local assistant tooling, not part of the published site
+.idea/
+.claude/
 # macOS AppleDouble metadata (created on the external volume)
 ._*
 
